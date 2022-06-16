@@ -25,7 +25,7 @@ class DataUploadApiController extends Controller
     {
         $dataUpload = DataUpload::create($request->validated());
 
-        if ($media = $request->input('data_excel', [])) {
+        if ($media = $request->input('data_mahasiswa', [])) {
             Media::whereIn('id', data_get($media, '*.id'))
                 ->where('model_id', 0)
                 ->update(['model_id' => $dataUpload->id]);
@@ -56,7 +56,7 @@ class DataUploadApiController extends Controller
     {
         $dataUpload->update($request->validated());
 
-        $dataUpload->updateMedia($request->input('data_excel', []), 'data_upload_data_excel');
+        $dataUpload->updateMedia($request->input('data_mahasiswa', []), 'data_upload_data_mahasiswa');
 
         return (new DataUploadResource($dataUpload))
             ->response()

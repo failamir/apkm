@@ -17,15 +17,15 @@ class StoreDataUploadRequest extends FormRequest
     public function rules()
     {
         return [
-            'nama_data' => [
+            'nama' => [
                 'string',
                 'nullable',
             ],
-            'data_excel' => [
+            'data_mahasiswa' => [
                 'array',
                 'nullable',
             ],
-            'data_excel.*.id' => [
+            'data_mahasiswa.*.id' => [
                 'integer',
                 'exists:media,id',
             ],

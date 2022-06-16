@@ -23,33 +23,33 @@
                   <div
                     class="form-group bmd-form-group"
                     :class="{
-                      'has-items': entry.nama_data,
-                      'is-focused': activeField == 'nama_data'
+                      'has-items': entry.nama,
+                      'is-focused': activeField == 'nama'
                     }"
                   >
                     <label class="bmd-label-floating">{{
-                      $t('cruds.dataUpload.fields.nama_data')
+                      $t('cruds.dataUpload.fields.nama')
                     }}</label>
                     <input
                       class="form-control"
                       type="text"
-                      :value="entry.nama_data"
-                      @input="updateNamaData"
-                      @focus="focusField('nama_data')"
+                      :value="entry.nama"
+                      @input="updateNama"
+                      @focus="focusField('nama')"
                       @blur="clearFocus"
                     />
                   </div>
                   <div class="form-group">
                     <label>{{
-                      $t('cruds.dataUpload.fields.data_excel')
+                      $t('cruds.dataUpload.fields.data_mahasiswa')
                     }}</label>
                     <attachment
                       :route="getRoute('data-uploads')"
-                      :collection-name="'data_upload_data_excel'"
-                      :media="entry.data_excel"
+                      :collection-name="'data_upload_data_mahasiswa'"
+                      :media="entry.data_mahasiswa"
                       :max-file-size="32"
-                      @file-uploaded="insertDataExcelFile"
-                      @file-removed="removeDataExcelFile"
+                      @file-uploaded="insertDataMahasiswaFile"
+                      @file-removed="removeDataMahasiswaFile"
                       :max-files="1"
                     />
                   </div>
@@ -97,12 +97,12 @@ export default {
     ...mapActions('DataUploadsSingle', [
       'storeData',
       'resetState',
-      'setNamaData',
-      'insertDataExcelFile',
-      'removeDataExcelFile'
+      'setNama',
+      'insertDataMahasiswaFile',
+      'removeDataMahasiswaFile'
     ]),
-    updateNamaData(e) {
-      this.setNamaData(e.target.value)
+    updateNama(e) {
+      this.setNama(e.target.value)
     },
     getRoute(name) {
       return `${axios.defaults.baseURL}${name}/media`

@@ -194,30 +194,6 @@ const routes = [
         meta: { title: 'cruds.jurusan.title' }
       },
       {
-        path: 'data-uploads',
-        name: 'data_uploads.index',
-        component: () => import('@cruds/DataUploads/Index.vue'),
-        meta: { title: 'cruds.dataUpload.title' }
-      },
-      {
-        path: 'data-uploads/create',
-        name: 'data_uploads.create',
-        component: () => import('@cruds/DataUploads/Create.vue'),
-        meta: { title: 'cruds.dataUpload.title' }
-      },
-      {
-        path: 'data-uploads/:id',
-        name: 'data_uploads.show',
-        component: () => import('@cruds/DataUploads/Show.vue'),
-        meta: { title: 'cruds.dataUpload.title' }
-      },
-      {
-        path: 'data-uploads/:id/edit',
-        name: 'data_uploads.edit',
-        component: () => import('@cruds/DataUploads/Edit.vue'),
-        meta: { title: 'cruds.dataUpload.title' }
-      },
-      {
         path: 'upload-data-mahasiswa-histories',
         name: 'upload_data_mahasiswa_histories.index',
         component: () =>
@@ -255,6 +231,30 @@ const routes = [
         name: 'tentang_aplikasis.index',
         component: () => import('@cruds/TentangAplikasis/Index.vue'),
         meta: { title: 'cruds.tentangAplikasi.title' }
+      },
+      {
+        path: 'data-uploads',
+        name: 'data_uploads.index',
+        component: () => import('@cruds/DataUploads/Index.vue'),
+        meta: { title: 'cruds.dataUpload.title' }
+      },
+      {
+        path: 'data-uploads/create',
+        name: 'data_uploads.create',
+        component: () => import('@cruds/DataUploads/Create.vue'),
+        meta: { title: 'cruds.dataUpload.title' }
+      },
+      {
+        path: 'data-uploads/:id',
+        name: 'data_uploads.show',
+        component: () => import('@cruds/DataUploads/Show.vue'),
+        meta: { title: 'cruds.dataUpload.title' }
+      },
+      {
+        path: 'data-uploads/:id/edit',
+        name: 'data_uploads.edit',
+        component: () => import('@cruds/DataUploads/Edit.vue'),
+        meta: { title: 'cruds.dataUpload.title' }
       }
     ]
   }
