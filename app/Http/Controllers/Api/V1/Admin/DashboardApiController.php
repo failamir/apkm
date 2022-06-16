@@ -15,7 +15,7 @@ class DashboardApiController extends Controller
             'model'            => 'App\Models\Mahasiswa',
             'group_by_field'   => 'created_at',
             'group_by_period'  => 'day',
-            'column_class'     => 'col-md-12',
+            'column_class'     => 'col-md-6',
             'filter_by_field'  => 'created_at',
             'filter_by_period' => 7,
         ]);
