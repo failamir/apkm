@@ -233,28 +233,28 @@ const routes = [
         meta: { title: 'cruds.tentangAplikasi.title' }
       },
       {
-        path: 'data-uploads',
-        name: 'data_uploads.index',
-        component: () => import('@cruds/DataUploads/Index.vue'),
-        meta: { title: 'cruds.dataUpload.title' }
+        path: 'data-mahasiswas',
+        name: 'data_mahasiswas.index',
+        component: () => import('@cruds/DataMahasiswas/Index.vue'),
+        meta: { title: 'cruds.dataMahasiswa.title' }
       },
       {
-        path: 'data-uploads/create',
-        name: 'data_uploads.create',
-        component: () => import('@cruds/DataUploads/Create.vue'),
-        meta: { title: 'cruds.dataUpload.title' }
+        path: 'data-mahasiswas/create',
+        name: 'data_mahasiswas.create',
+        component: () => import('@cruds/DataMahasiswas/Create.vue'),
+        meta: { title: 'cruds.dataMahasiswa.title' }
       },
       {
-        path: 'data-uploads/:id',
-        name: 'data_uploads.show',
-        component: () => import('@cruds/DataUploads/Show.vue'),
-        meta: { title: 'cruds.dataUpload.title' }
+        path: 'data-mahasiswas/:id',
+        name: 'data_mahasiswas.show',
+        component: () => import('@cruds/DataMahasiswas/Show.vue'),
+        meta: { title: 'cruds.dataMahasiswa.title' }
       },
       {
-        path: 'data-uploads/:id/edit',
-        name: 'data_uploads.edit',
-        component: () => import('@cruds/DataUploads/Edit.vue'),
-        meta: { title: 'cruds.dataUpload.title' }
+        path: 'data-mahasiswas/:id/edit',
+        name: 'data_mahasiswas.edit',
+        component: () => import('@cruds/DataMahasiswas/Edit.vue'),
+        meta: { title: 'cruds.dataMahasiswa.title' }
       }
     ]
   }
