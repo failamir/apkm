@@ -225,6 +225,12 @@ const routes = [
             meta: { title: 'cruds.dataMahasiswaOnGoing.title' }
           }
         ]
+      },
+      {
+        path: 'tentang-aplikasis',
+        name: 'tentang_aplikasis.index',
+        component: () => import('@cruds/TentangAplikasis/Index.vue'),
+        meta: { title: 'cruds.tentangAplikasi.title' }
       }
     ]
   }

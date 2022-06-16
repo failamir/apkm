@@ -43,4 +43,7 @@ Route::group(['prefix' => 'v1', 'as' => 'api.', 'namespace' => 'Api\V1\Admin', '
 
     // Upload Data Mahasiswa History
     Route::apiResource('upload-data-mahasiswa-histories', 'UploadDataMahasiswaHistoryApiController', ['only' => ['index']]);
+
+    // Tentang Aplikasi
+    Route::apiResource('tentang-aplikasis', 'TentangAplikasiApiController', ['only' => ['index']]);
 });

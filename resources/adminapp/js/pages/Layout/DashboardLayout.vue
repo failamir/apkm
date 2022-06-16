@@ -114,6 +114,12 @@ export default {
               gate: 'data_mahasiswa_on_going_access'
             }
           ]
+        },
+        {
+          title: 'cruds.tentangAplikasi.title',
+          icon: 'table_view',
+          path: { name: 'tentang_aplikasis.index' },
+          gate: 'tentang_aplikasi_access'
         }
       ]
     }
