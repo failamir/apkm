@@ -121,6 +121,13 @@ __webpack_require__.r(__webpack_exports__);
         },
         gate: 'jurusan_access'
       }, {
+        title: 'cruds.dataMahasiswa.title',
+        icon: 'table_view',
+        path: {
+          name: 'data_mahasiswas.index'
+        },
+        gate: 'data_mahasiswa_access'
+      }, {
         title: 'cruds.uploadDataMahasiswaHistory.title',
         icon: 'table_view',
         path: {
@@ -163,13 +170,6 @@ __webpack_require__.r(__webpack_exports__);
           name: 'tentang_aplikasis.index'
         },
         gate: 'tentang_aplikasi_access'
-      }, {
-        title: 'cruds.dataMahasiswa.title',
-        icon: 'table_view',
-        path: {
-          name: 'data_mahasiswas.index'
-        },
-        gate: 'data_mahasiswa_access'
       }]
     };
   }

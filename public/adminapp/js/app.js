@@ -43,7 +43,7 @@
 /******/
 /******/ 	// script path function
 /******/ 	function jsonpScriptSrc(chunkId) {
-/******/ 		return __webpack_require__.p + "adminapp/js/chunks/" + ({}[chunkId]||chunkId) + ".js?id=" + {"0":"0c8674f46a6768a32c51","1":"3cd49b4dc0196faa31fa","2":"e06b5eeabb65e04a49dc","3":"b4abfe09246e052024ca","4":"464a6ce52d258542080a","5":"45159491eab04ac82565","6":"4e3ce89135404941490e","7":"c43dd946bd8ce4724aee","8":"d2252c22e7ad02feb0f9","9":"13681da036ae17a1a761","10":"fbaf8686bd9742bff41d","11":"626a762e90d2d38df066","12":"415a7d4e9aa0a065c274","13":"5776b24c4aabed8bfb24","14":"6904e59f84129472243b","15":"d4ee155edfcdd8dac383","16":"5f9a5d3fe30022814cb6","17":"d49ce685d5e8cea1bf68","18":"1aa6a6f3b19b07aab089","19":"76203b296f4f8ca9256f","20":"f66297fc4d5224354059","21":"a52740527b8c268fbe00","22":"f82edcbfa109f69850a9","23":"044b04db3f26a0ed69ee","24":"d1166cc4fdfc6f72e914","25":"27a7282c041b026e1e09","26":"3f6fe88b3f3eee9d254a","27":"67bae8b434c40bbefb14","28":"a55e84e183990d4f8251","29":"190da9fa1bcac880947e","30":"d2e3643a60b518fc4e34","31":"57dc7fc647bf9aa598b3","32":"3e7f7588d09fdf5bbf0c","33":"a1c9855b9b3edbd1e4cc","34":"c3b103ca162f4a692538","35":"227602da7fad5dc3e94a","36":"03f4b2c233e1db527254","37":"352b1428d34160409c42","38":"a99f671f090e035f7dcb","39":"f02b095ffd20c7eb6c21","40":"1e75fb52dc1abbd9c70b","41":"f4f75d23a04312da1381","42":"ce38d892e0b37b476008"}[chunkId] + ""
+/******/ 		return __webpack_require__.p + "adminapp/js/chunks/" + ({}[chunkId]||chunkId) + ".js?id=" + {"0":"0c8674f46a6768a32c51","1":"3cd49b4dc0196faa31fa","2":"e06b5eeabb65e04a49dc","3":"b4abfe09246e052024ca","4":"464a6ce52d258542080a","5":"916dd2bacb2f4ca32bd9","6":"4e3ce89135404941490e","7":"c43dd946bd8ce4724aee","8":"53563d9d82e5672cba2c","9":"b4597d9ded0e6474a9d2","10":"fbaf8686bd9742bff41d","11":"626a762e90d2d38df066","12":"415a7d4e9aa0a065c274","13":"5776b24c4aabed8bfb24","14":"6904e59f84129472243b","15":"d4ee155edfcdd8dac383","16":"5f9a5d3fe30022814cb6","17":"d49ce685d5e8cea1bf68","18":"1aa6a6f3b19b07aab089","19":"76203b296f4f8ca9256f","20":"5c507c192bdde063a931","21":"806f7741f7d8df20b2c7","22":"f82edcbfa109f69850a9","23":"044b04db3f26a0ed69ee","24":"d1166cc4fdfc6f72e914","25":"27a7282c041b026e1e09","26":"3f6fe88b3f3eee9d254a","27":"67bae8b434c40bbefb14","28":"a55e84e183990d4f8251","29":"190da9fa1bcac880947e","30":"d2e3643a60b518fc4e34","31":"57dc7fc647bf9aa598b3","32":"3e7f7588d09fdf5bbf0c","33":"a1c9855b9b3edbd1e4cc","34":"c3b103ca162f4a692538","35":"227602da7fad5dc3e94a","36":"03f4b2c233e1db527254","37":"352b1428d34160409c42","38":"a99f671f090e035f7dcb","39":"f02b095ffd20c7eb6c21","40":"1e75fb52dc1abbd9c70b","41":"f4f75d23a04312da1381","42":"ce38d892e0b37b476008"}[chunkId] + ""
 /******/ 	}
 /******/
 /******/ 	// The require function
@@ -55544,6 +55544,42 @@ var routes = [{
       title: 'cruds.jurusan.title'
     }
   }, {
+    path: 'data-mahasiswas',
+    name: 'data_mahasiswas.index',
+    component: function component() {
+      return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(8)]).then(__webpack_require__.bind(null, /*! @cruds/DataMahasiswas/Index.vue */ "./resources/adminapp/js/cruds/DataMahasiswas/Index.vue"));
+    },
+    meta: {
+      title: 'cruds.dataMahasiswa.title'
+    }
+  }, {
+    path: 'data-mahasiswas/create',
+    name: 'data_mahasiswas.create',
+    component: function component() {
+      return Promise.all(/*! import() */[__webpack_require__.e(2), __webpack_require__.e(1), __webpack_require__.e(20)]).then(__webpack_require__.bind(null, /*! @cruds/DataMahasiswas/Create.vue */ "./resources/adminapp/js/cruds/DataMahasiswas/Create.vue"));
+    },
+    meta: {
+      title: 'cruds.dataMahasiswa.title'
+    }
+  }, {
+    path: 'data-mahasiswas/:id',
+    name: 'data_mahasiswas.show',
+    component: function component() {
+      return __webpack_require__.e(/*! import() */ 9).then(__webpack_require__.bind(null, /*! @cruds/DataMahasiswas/Show.vue */ "./resources/adminapp/js/cruds/DataMahasiswas/Show.vue"));
+    },
+    meta: {
+      title: 'cruds.dataMahasiswa.title'
+    }
+  }, {
+    path: 'data-mahasiswas/:id/edit',
+    name: 'data_mahasiswas.edit',
+    component: function component() {
+      return Promise.all(/*! import() */[__webpack_require__.e(2), __webpack_require__.e(1), __webpack_require__.e(21)]).then(__webpack_require__.bind(null, /*! @cruds/DataMahasiswas/Edit.vue */ "./resources/adminapp/js/cruds/DataMahasiswas/Edit.vue"));
+    },
+    meta: {
+      title: 'cruds.dataMahasiswa.title'
+    }
+  }, {
     path: 'upload-data-mahasiswa-histories',
     name: 'upload_data_mahasiswa_histories.index',
     component: function component() {
@@ -55595,42 +55631,6 @@ var routes = [{
     },
     meta: {
       title: 'cruds.tentangAplikasi.title'
-    }
-  }, {
-    path: 'data-mahasiswas',
-    name: 'data_mahasiswas.index',
-    component: function component() {
-      return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(8)]).then(__webpack_require__.bind(null, /*! @cruds/DataMahasiswas/Index.vue */ "./resources/adminapp/js/cruds/DataMahasiswas/Index.vue"));
-    },
-    meta: {
-      title: 'cruds.dataMahasiswa.title'
-    }
-  }, {
-    path: 'data-mahasiswas/create',
-    name: 'data_mahasiswas.create',
-    component: function component() {
-      return Promise.all(/*! import() */[__webpack_require__.e(2), __webpack_require__.e(1), __webpack_require__.e(20)]).then(__webpack_require__.bind(null, /*! @cruds/DataMahasiswas/Create.vue */ "./resources/adminapp/js/cruds/DataMahasiswas/Create.vue"));
-    },
-    meta: {
-      title: 'cruds.dataMahasiswa.title'
-    }
-  }, {
-    path: 'data-mahasiswas/:id',
-    name: 'data_mahasiswas.show',
-    component: function component() {
-      return __webpack_require__.e(/*! import() */ 9).then(__webpack_require__.bind(null, /*! @cruds/DataMahasiswas/Show.vue */ "./resources/adminapp/js/cruds/DataMahasiswas/Show.vue"));
-    },
-    meta: {
-      title: 'cruds.dataMahasiswa.title'
-    }
-  }, {
-    path: 'data-mahasiswas/:id/edit',
-    name: 'data_mahasiswas.edit',
-    component: function component() {
-      return Promise.all(/*! import() */[__webpack_require__.e(2), __webpack_require__.e(1), __webpack_require__.e(21)]).then(__webpack_require__.bind(null, /*! @cruds/DataMahasiswas/Edit.vue */ "./resources/adminapp/js/cruds/DataMahasiswas/Edit.vue"));
-    },
-    meta: {
-      title: 'cruds.dataMahasiswa.title'
     }
   }]
 }];
@@ -55898,6 +55898,7 @@ function initialState() {
       id: null,
       nama: '',
       data_mahasiswa: [],
+      batas_nilai: '',
       created_at: '',
       updated_at: '',
       deleted_at: ''
@@ -55991,34 +55992,38 @@ var actions = {
     var commit = _ref5.commit;
     commit('removeDataMahasiswaFile', file);
   },
-  setCreatedAt: function setCreatedAt(_ref6, value) {
+  setBatasNilai: function setBatasNilai(_ref6, value) {
     var commit = _ref6.commit;
+    commit('setBatasNilai', value);
+  },
+  setCreatedAt: function setCreatedAt(_ref7, value) {
+    var commit = _ref7.commit;
     commit('setCreatedAt', value);
   },
-  setUpdatedAt: function setUpdatedAt(_ref7, value) {
-    var commit = _ref7.commit;
+  setUpdatedAt: function setUpdatedAt(_ref8, value) {
+    var commit = _ref8.commit;
     commit('setUpdatedAt', value);
   },
-  setDeletedAt: function setDeletedAt(_ref8, value) {
-    var commit = _ref8.commit;
+  setDeletedAt: function setDeletedAt(_ref9, value) {
+    var commit = _ref9.commit;
     commit('setDeletedAt', value);
   },
-  fetchEditData: function fetchEditData(_ref9, id) {
-    var commit = _ref9.commit,
-        dispatch = _ref9.dispatch;
+  fetchEditData: function fetchEditData(_ref10, id) {
+    var commit = _ref10.commit,
+        dispatch = _ref10.dispatch;
     axios.get("".concat(route, "/").concat(id, "/edit")).then(function (response) {
       commit('setEntry', response.data.data);
     });
   },
-  fetchShowData: function fetchShowData(_ref10, id) {
-    var commit = _ref10.commit,
-        dispatch = _ref10.dispatch;
+  fetchShowData: function fetchShowData(_ref11, id) {
+    var commit = _ref11.commit,
+        dispatch = _ref11.dispatch;
     axios.get("".concat(route, "/").concat(id)).then(function (response) {
       commit('setEntry', response.data.data);
     });
   },
-  resetState: function resetState(_ref11) {
-    var commit = _ref11.commit;
+  resetState: function resetState(_ref12) {
+    var commit = _ref12.commit;
     commit('resetState');
   }
 };
@@ -56036,6 +56041,9 @@ var mutations = {
     state.entry.data_mahasiswa = state.entry.data_mahasiswa.filter(function (item) {
       return item.id !== file.id;
     });
+  },
+  setBatasNilai: function setBatasNilai(state, value) {
+    state.entry.batas_nilai = value;
   },
   setCreatedAt: function setCreatedAt(state, value) {
     state.entry.created_at = value;

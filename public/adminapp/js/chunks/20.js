@@ -92,6 +92,26 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -108,9 +128,12 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
   beforeDestroy: function beforeDestroy() {
     this.resetState();
   },
-  methods: _objectSpread(_objectSpread({}, Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapActions"])('DataMahasiswasSingle', ['storeData', 'resetState', 'setNama', 'insertDataMahasiswaFile', 'removeDataMahasiswaFile'])), {}, {
+  methods: _objectSpread(_objectSpread({}, Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapActions"])('DataMahasiswasSingle', ['storeData', 'resetState', 'setNama', 'insertDataMahasiswaFile', 'removeDataMahasiswaFile', 'setBatasNilai'])), {}, {
     updateNama: function updateNama(e) {
       this.setNama(e.target.value);
+    },
+    updateBatasNilai: function updateBatasNilai(e) {
+      this.setBatasNilai(e.target.value);
     },
     getRoute: function getRoute(name) {
       return "".concat(axios.defaults.baseURL).concat(name, "/media");
@@ -268,6 +291,39 @@ var render = function () {
                           }),
                         ],
                         1
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        {
+                          staticClass: "form-group bmd-form-group",
+                          class: {
+                            "has-items": _vm.entry.batas_nilai,
+                            "is-focused": _vm.activeField == "batas_nilai",
+                          },
+                        },
+                        [
+                          _c("label", { staticClass: "bmd-label-floating" }, [
+                            _vm._v(
+                              _vm._s(
+                                _vm.$t("cruds.dataMahasiswa.fields.batas_nilai")
+                              )
+                            ),
+                          ]),
+                          _vm._v(" "),
+                          _c("input", {
+                            staticClass: "form-control",
+                            attrs: { type: "number", step: "1" },
+                            domProps: { value: _vm.entry.batas_nilai },
+                            on: {
+                              input: _vm.updateBatasNilai,
+                              focus: function ($event) {
+                                return _vm.focusField("batas_nilai")
+                              },
+                              blur: _vm.clearFocus,
+                            },
+                          }),
+                        ]
                       ),
                     ]),
                   ]),
