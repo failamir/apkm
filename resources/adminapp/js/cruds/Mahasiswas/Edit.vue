@@ -134,8 +134,7 @@
                     }}</label>
                     <input
                       class="form-control"
-                      type="number"
-                      step="1"
+                      type="text"
                       :value="entry.no_hp"
                       @input="updateNoHp"
                       @focus="focusField('no_hp')"

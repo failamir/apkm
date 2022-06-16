@@ -43,9 +43,7 @@ class UpdateMahasiswaRequest extends FormRequest
                 'nullable',
             ],
             'no_hp' => [
-                'integer',
-                'min:-2147483648',
-                'max:2147483647',
+                'string',
                 'nullable',
             ],
         ];
