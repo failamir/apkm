@@ -122,10 +122,10 @@ export default {
           gate: 'tentang_aplikasi_access'
         },
         {
-          title: 'cruds.dataUpload.title',
+          title: 'cruds.dataMahasiswa.title',
           icon: 'table_view',
-          path: { name: 'data_uploads.index' },
-          gate: 'data_upload_access'
+          path: { name: 'data_mahasiswas.index' },
+          gate: 'data_mahasiswa_access'
         }
       ]
     }

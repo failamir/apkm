@@ -181,9 +181,9 @@ return [
         'title'          => 'Tentang Aplikasi',
         'title_singular' => 'Tentang Aplikasi',
     ],
-    'dataUpload' => [
-        'title'          => 'Data Upload',
-        'title_singular' => 'Data Upload',
+    'dataMahasiswa' => [
+        'title'          => 'Data Mahasiswa',
+        'title_singular' => 'Data Mahasiswa',
         'fields'         => [
             'id'                    => 'ID',
             'id_helper'             => ' ',
