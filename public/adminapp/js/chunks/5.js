@@ -164,12 +164,12 @@ __webpack_require__.r(__webpack_exports__);
         },
         gate: 'tentang_aplikasi_access'
       }, {
-        title: 'cruds.dataUpload.title',
+        title: 'cruds.dataMahasiswa.title',
         icon: 'table_view',
         path: {
-          name: 'data_uploads.index'
+          name: 'data_mahasiswas.index'
         },
-        gate: 'data_upload_access'
+        gate: 'data_mahasiswa_access'
       }]
     };
   }
