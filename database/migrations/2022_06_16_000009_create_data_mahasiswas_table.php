@@ -11,6 +11,7 @@ class CreateDataMahasiswasTable extends Migration
         Schema::create('data_mahasiswas', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('nama')->nullable();
+            $table->integer('batas_nilai')->nullable();
             $table->timestamps();
             $table->softDeletes();
         });

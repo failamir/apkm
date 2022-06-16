@@ -53,6 +53,26 @@
                       :max-files="1"
                     />
                   </div>
+                  <div
+                    class="form-group bmd-form-group"
+                    :class="{
+                      'has-items': entry.batas_nilai,
+                      'is-focused': activeField == 'batas_nilai'
+                    }"
+                  >
+                    <label class="bmd-label-floating">{{
+                      $t('cruds.dataMahasiswa.fields.batas_nilai')
+                    }}</label>
+                    <input
+                      class="form-control"
+                      type="number"
+                      step="1"
+                      :value="entry.batas_nilai"
+                      @input="updateBatasNilai"
+                      @focus="focusField('batas_nilai')"
+                      @blur="clearFocus"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
@@ -99,10 +119,14 @@ export default {
       'resetState',
       'setNama',
       'insertDataMahasiswaFile',
-      'removeDataMahasiswaFile'
+      'removeDataMahasiswaFile',
+      'setBatasNilai'
     ]),
     updateNama(e) {
       this.setNama(e.target.value)
+    },
+    updateBatasNilai(e) {
+      this.setBatasNilai(e.target.value)
     },
     getRoute(name) {
       return `${axios.defaults.baseURL}${name}/media`

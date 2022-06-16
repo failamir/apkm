@@ -49,6 +49,14 @@
                           </datatable-attachments>
                         </td>
                       </tr>
+                      <tr>
+                        <td class="text-primary">
+                          {{ $t('cruds.dataMahasiswa.fields.batas_nilai') }}
+                        </td>
+                        <td>
+                          {{ entry.batas_nilai }}
+                        </td>
+                      </tr>
                     </tbody>
                   </div>
                 </div>
