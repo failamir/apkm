@@ -20,6 +20,17 @@ class DashboardApiController extends Controller
             'filter_by_period' => 7,
         ]);
 
-        return response()->json(compact('line0'));
+        $bar1 = new ChartsService([
+            'title'            => 'Contoh Report	2',
+            'chart_type'       => 'bar',
+            'model'            => 'App\Models\Dosen',
+            'group_by_field'   => 'created_at',
+            'group_by_period'  => 'day',
+            'column_class'     => 'col-md-6',
+            'filter_by_field'  => 'created_at',
+            'filter_by_period' => 7,
+        ]);
+
+        return response()->json(compact('line0', 'bar1'));
     }
 }
