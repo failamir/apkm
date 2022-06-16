@@ -46,4 +46,8 @@ Route::group(['prefix' => 'v1', 'as' => 'api.', 'namespace' => 'Api\V1\Admin', '
 
     // Tentang Aplikasi
     Route::apiResource('tentang-aplikasis', 'TentangAplikasiApiController', ['only' => ['index']]);
+
+    // Data Upload
+    Route::post('data-uploads/media', 'DataUploadApiController@storeMedia')->name('data-uploads.storeMedia');
+    Route::resource('data-uploads', 'DataUploadApiController');
 });

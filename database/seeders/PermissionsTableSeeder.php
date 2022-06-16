@@ -258,6 +258,26 @@ class PermissionsTableSeeder extends Seeder
                 'id'    => 62,
                 'title' => 'tentang_aplikasi_access',
             ],
+            [
+                'id'    => 63,
+                'title' => 'data_upload_create',
+            ],
+            [
+                'id'    => 64,
+                'title' => 'data_upload_edit',
+            ],
+            [
+                'id'    => 65,
+                'title' => 'data_upload_show',
+            ],
+            [
+                'id'    => 66,
+                'title' => 'data_upload_delete',
+            ],
+            [
+                'id'    => 67,
+                'title' => 'data_upload_access',
+            ],
         ];
 
         Permission::insert($permissions);
