@@ -22,6 +22,7 @@ import UploadDataMahasiswaOnGoings from './cruds/UploadDataMahasiswaOnGoings'
 import DataMahasiswaHistories from './cruds/DataMahasiswaHistories'
 import DataMahasiswaOnGoings from './cruds/DataMahasiswaOnGoings'
 import UploadDataMahasiswaHistories from './cruds/UploadDataMahasiswaHistories'
+import TentangAplikasis from './cruds/TentangAplikasis'
 
 Vue.use(Vuex)
 
@@ -48,7 +49,8 @@ export default new Vuex.Store({
     UploadDataMahasiswaOnGoings,
     DataMahasiswaHistories,
     DataMahasiswaOnGoings,
-    UploadDataMahasiswaHistories
+    UploadDataMahasiswaHistories,
+    TentangAplikasis
   },
   strict: debug
 })

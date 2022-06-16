@@ -177,4 +177,8 @@ return [
         'title'          => 'Upload Data Mahasiswa History',
         'title_singular' => 'Upload Data Mahasiswa History',
     ],
+    'tentangAplikasi' => [
+        'title'          => 'Tentang Aplikasi',
+        'title_singular' => 'Tentang Aplikasi',
+    ],
 ];
