@@ -238,6 +238,26 @@ class PermissionsTableSeeder extends Seeder
                 'id'    => 57,
                 'title' => 'upload_data_mahasiswa_history_access',
             ],
+            [
+                'id'    => 58,
+                'title' => 'tentang_aplikasi_create',
+            ],
+            [
+                'id'    => 59,
+                'title' => 'tentang_aplikasi_edit',
+            ],
+            [
+                'id'    => 60,
+                'title' => 'tentang_aplikasi_show',
+            ],
+            [
+                'id'    => 61,
+                'title' => 'tentang_aplikasi_delete',
+            ],
+            [
+                'id'    => 62,
+                'title' => 'tentang_aplikasi_access',
+            ],
         ];
 
         Permission::insert($permissions);
