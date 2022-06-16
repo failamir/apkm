@@ -23,6 +23,8 @@ import DataMahasiswaHistories from './cruds/DataMahasiswaHistories'
 import DataMahasiswaOnGoings from './cruds/DataMahasiswaOnGoings'
 import UploadDataMahasiswaHistories from './cruds/UploadDataMahasiswaHistories'
 import TentangAplikasis from './cruds/TentangAplikasis'
+import DataUploadsIndex from './cruds/DataUploads'
+import DataUploadsSingle from './cruds/DataUploads/single'
 
 Vue.use(Vuex)
 
@@ -50,7 +52,9 @@ export default new Vuex.Store({
     DataMahasiswaHistories,
     DataMahasiswaOnGoings,
     UploadDataMahasiswaHistories,
-    TentangAplikasis
+    TentangAplikasis,
+    DataUploadsIndex,
+    DataUploadsSingle
   },
   strict: debug
 })
