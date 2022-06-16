@@ -20,17 +20,17 @@ class DataUpload extends Model implements HasMedia
     public $table = 'data_uploads';
 
     protected $appends = [
-        'data_excel',
+        'data_mahasiswa',
     ];
 
     protected $orderable = [
         'id',
-        'nama_data',
+        'nama',
     ];
 
     protected $filterable = [
         'id',
-        'nama_data',
+        'nama',
     ];
 
     protected $dates = [
@@ -40,15 +40,15 @@ class DataUpload extends Model implements HasMedia
     ];
 
     protected $fillable = [
-        'nama_data',
+        'nama',
         'created_at',
         'updated_at',
         'deleted_at',
     ];
 
-    public function getDataExcelAttribute()
+    public function getDataMahasiswaAttribute()
     {
-        return $this->getMedia('data_upload_data_excel')->map(function ($item) {
+        return $this->getMedia('data_upload_data_mahasiswa')->map(function ($item) {
             $media = $item->toArray();
             $media['url'] = $item->getUrl();
 

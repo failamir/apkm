@@ -2,8 +2,8 @@ function initialState() {
   return {
     entry: {
       id: null,
-      nama_data: '',
-      data_excel: [],
+      nama: '',
+      data_mahasiswa: [],
       created_at: '',
       updated_at: '',
       deleted_at: ''
@@ -83,14 +83,14 @@ const actions = {
         })
     })
   },
-  setNamaData({ commit }, value) {
-    commit('setNamaData', value)
+  setNama({ commit }, value) {
+    commit('setNama', value)
   },
-  insertDataExcelFile({ commit }, file) {
-    commit('insertDataExcelFile', file)
+  insertDataMahasiswaFile({ commit }, file) {
+    commit('insertDataMahasiswaFile', file)
   },
-  removeDataExcelFile({ commit }, file) {
-    commit('removeDataExcelFile', file)
+  removeDataMahasiswaFile({ commit }, file) {
+    commit('removeDataMahasiswaFile', file)
   },
   setCreatedAt({ commit }, value) {
     commit('setCreatedAt', value)
@@ -120,14 +120,14 @@ const mutations = {
   setEntry(state, entry) {
     state.entry = entry
   },
-  setNamaData(state, value) {
-    state.entry.nama_data = value
+  setNama(state, value) {
+    state.entry.nama = value
   },
-  insertDataExcelFile(state, file) {
-    state.entry.data_excel.push(file)
+  insertDataMahasiswaFile(state, file) {
+    state.entry.data_mahasiswa.push(file)
   },
-  removeDataExcelFile(state, file) {
-    state.entry.data_excel = state.entry.data_excel.filter(item => {
+  removeDataMahasiswaFile(state, file) {
+    state.entry.data_mahasiswa = state.entry.data_mahasiswa.filter(item => {
       return item.id !== file.id
     })
   },

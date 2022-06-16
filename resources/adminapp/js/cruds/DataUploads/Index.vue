@@ -90,14 +90,14 @@ export default {
           colStyle: 'width: 100px;'
         },
         {
-          title: 'cruds.dataUpload.fields.nama_data',
-          field: 'nama_data',
+          title: 'cruds.dataUpload.fields.nama',
+          field: 'nama',
           thComp: TranslatedHeader,
           sortable: true
         },
         {
-          title: 'cruds.dataUpload.fields.data_excel',
-          field: 'data_excel',
+          title: 'cruds.dataUpload.fields.data_mahasiswa',
+          field: 'data_mahasiswa',
           thComp: TranslatedHeader,
           tdComp: DatatableAttachments
         },
