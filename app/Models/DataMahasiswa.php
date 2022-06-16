@@ -26,11 +26,13 @@ class DataMahasiswa extends Model implements HasMedia
     protected $orderable = [
         'id',
         'nama',
+        'batas_nilai',
     ];
 
     protected $filterable = [
         'id',
         'nama',
+        'batas_nilai',
     ];
 
     protected $dates = [
@@ -41,6 +43,7 @@ class DataMahasiswa extends Model implements HasMedia
 
     protected $fillable = [
         'nama',
+        'batas_nilai',
         'created_at',
         'updated_at',
         'deleted_at',

@@ -84,6 +84,12 @@ export default {
           gate: 'jurusan_access'
         },
         {
+          title: 'cruds.dataMahasiswa.title',
+          icon: 'table_view',
+          path: { name: 'data_mahasiswas.index' },
+          gate: 'data_mahasiswa_access'
+        },
+        {
           title: 'cruds.uploadDataMahasiswaHistory.title',
           icon: 'table_view',
           path: { name: 'upload_data_mahasiswa_histories.index' },
@@ -120,12 +126,6 @@ export default {
           icon: 'table_view',
           path: { name: 'tentang_aplikasis.index' },
           gate: 'tentang_aplikasi_access'
-        },
-        {
-          title: 'cruds.dataMahasiswa.title',
-          icon: 'table_view',
-          path: { name: 'data_mahasiswas.index' },
-          gate: 'data_mahasiswa_access'
         }
       ]
     }
