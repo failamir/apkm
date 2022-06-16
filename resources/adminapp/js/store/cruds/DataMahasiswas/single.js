@@ -4,6 +4,7 @@ function initialState() {
       id: null,
       nama: '',
       data_mahasiswa: [],
+      batas_nilai: '',
       created_at: '',
       updated_at: '',
       deleted_at: ''
@@ -92,6 +93,9 @@ const actions = {
   removeDataMahasiswaFile({ commit }, file) {
     commit('removeDataMahasiswaFile', file)
   },
+  setBatasNilai({ commit }, value) {
+    commit('setBatasNilai', value)
+  },
   setCreatedAt({ commit }, value) {
     commit('setCreatedAt', value)
   },
@@ -130,6 +134,9 @@ const mutations = {
     state.entry.data_mahasiswa = state.entry.data_mahasiswa.filter(item => {
       return item.id !== file.id
     })
+  },
+  setBatasNilai(state, value) {
+    state.entry.batas_nilai = value
   },
   setCreatedAt(state, value) {
     state.entry.created_at = value

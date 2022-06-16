@@ -102,6 +102,12 @@ export default {
           tdComp: DatatableAttachments
         },
         {
+          title: 'cruds.dataMahasiswa.fields.batas_nilai',
+          field: 'batas_nilai',
+          thComp: TranslatedHeader,
+          sortable: true
+        },
+        {
           title: 'global.actions',
           thComp: TranslatedHeader,
           tdComp: DatatableActions,

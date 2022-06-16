@@ -197,6 +197,8 @@ return [
             'updated_at_helper'     => ' ',
             'deleted_at'            => 'Deleted at',
             'deleted_at_helper'     => ' ',
+            'batas_nilai'           => 'batas nilai akhir kelulusan',
+            'batas_nilai_helper'    => ' ',
         ],
     ],
 ];

@@ -194,6 +194,30 @@ const routes = [
         meta: { title: 'cruds.jurusan.title' }
       },
       {
+        path: 'data-mahasiswas',
+        name: 'data_mahasiswas.index',
+        component: () => import('@cruds/DataMahasiswas/Index.vue'),
+        meta: { title: 'cruds.dataMahasiswa.title' }
+      },
+      {
+        path: 'data-mahasiswas/create',
+        name: 'data_mahasiswas.create',
+        component: () => import('@cruds/DataMahasiswas/Create.vue'),
+        meta: { title: 'cruds.dataMahasiswa.title' }
+      },
+      {
+        path: 'data-mahasiswas/:id',
+        name: 'data_mahasiswas.show',
+        component: () => import('@cruds/DataMahasiswas/Show.vue'),
+        meta: { title: 'cruds.dataMahasiswa.title' }
+      },
+      {
+        path: 'data-mahasiswas/:id/edit',
+        name: 'data_mahasiswas.edit',
+        component: () => import('@cruds/DataMahasiswas/Edit.vue'),
+        meta: { title: 'cruds.dataMahasiswa.title' }
+      },
+      {
         path: 'upload-data-mahasiswa-histories',
         name: 'upload_data_mahasiswa_histories.index',
         component: () =>
@@ -231,30 +255,6 @@ const routes = [
         name: 'tentang_aplikasis.index',
         component: () => import('@cruds/TentangAplikasis/Index.vue'),
         meta: { title: 'cruds.tentangAplikasi.title' }
-      },
-      {
-        path: 'data-mahasiswas',
-        name: 'data_mahasiswas.index',
-        component: () => import('@cruds/DataMahasiswas/Index.vue'),
-        meta: { title: 'cruds.dataMahasiswa.title' }
-      },
-      {
-        path: 'data-mahasiswas/create',
-        name: 'data_mahasiswas.create',
-        component: () => import('@cruds/DataMahasiswas/Create.vue'),
-        meta: { title: 'cruds.dataMahasiswa.title' }
-      },
-      {
-        path: 'data-mahasiswas/:id',
-        name: 'data_mahasiswas.show',
-        component: () => import('@cruds/DataMahasiswas/Show.vue'),
-        meta: { title: 'cruds.dataMahasiswa.title' }
-      },
-      {
-        path: 'data-mahasiswas/:id/edit',
-        name: 'data_mahasiswas.edit',
-        component: () => import('@cruds/DataMahasiswas/Edit.vue'),
-        meta: { title: 'cruds.dataMahasiswa.title' }
       }
     ]
   }
