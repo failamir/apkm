@@ -31,20 +31,20 @@
                       </tr>
                       <tr>
                         <td class="text-primary">
-                          {{ $t('cruds.dataUpload.fields.nama_data') }}
+                          {{ $t('cruds.dataUpload.fields.nama') }}
                         </td>
                         <td>
-                          {{ entry.nama_data }}
+                          {{ entry.nama }}
                         </td>
                       </tr>
                       <tr>
                         <td class="text-primary">
-                          {{ $t('cruds.dataUpload.fields.data_excel') }}
+                          {{ $t('cruds.dataUpload.fields.data_mahasiswa') }}
                         </td>
                         <td>
                           <datatable-attachments
                             :row="entry"
-                            :field="'data_excel'"
+                            :field="'data_mahasiswa'"
                           >
                           </datatable-attachments>
                         </td>

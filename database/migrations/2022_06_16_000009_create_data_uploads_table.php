@@ -10,7 +10,7 @@ class CreateDataUploadsTable extends Migration
     {
         Schema::create('data_uploads', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('nama_data')->nullable();
+            $table->string('nama')->nullable();
             $table->timestamps();
             $table->softDeletes();
         });
