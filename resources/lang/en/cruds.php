@@ -181,4 +181,22 @@ return [
         'title'          => 'Tentang Aplikasi',
         'title_singular' => 'Tentang Aplikasi',
     ],
+    'dataUpload' => [
+        'title'          => 'Data Upload',
+        'title_singular' => 'Data Upload',
+        'fields'         => [
+            'id'                => 'ID',
+            'id_helper'         => ' ',
+            'nama_data'         => 'Nama Data',
+            'nama_data_helper'  => ' ',
+            'data_excel'        => 'Data Excel',
+            'data_excel_helper' => ' ',
+            'created_at'        => 'Created at',
+            'created_at_helper' => ' ',
+            'updated_at'        => 'Updated at',
+            'updated_at_helper' => ' ',
+            'deleted_at'        => 'Deleted at',
+            'deleted_at_helper' => ' ',
+        ],
+    ],
 ];
