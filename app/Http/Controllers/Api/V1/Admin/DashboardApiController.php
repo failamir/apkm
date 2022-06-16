@@ -31,6 +31,17 @@ class DashboardApiController extends Controller
             'filter_by_period' => 7,
         ]);
 
-        return response()->json(compact('line0', 'bar1'));
+        $line2 = new ChartsService([
+            'title'            => 'Data Upload',
+            'chart_type'       => 'line',
+            'model'            => 'App\Models\DataUpload',
+            'group_by_field'   => 'created_at',
+            'group_by_period'  => 'day',
+            'column_class'     => 'col-md-6',
+            'filter_by_field'  => 'created_at',
+            'filter_by_period' => 7,
+        ]);
+
+        return response()->json(compact('line0', 'bar1', 'line2'));
     }
 }
