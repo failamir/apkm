@@ -17,7 +17,7 @@ class DataMahasiswaApiController extends Controller
     public function index()
     {
         abort_if(Gate::denies('data_mahasiswa_access'), Response::HTTP_FORBIDDEN, '403 Forbidden');
-
+        // var_dump(new DataMahasiswaResource(DataMahasiswa::advancedFilter()));
         return new DataMahasiswaResource(DataMahasiswa::advancedFilter());
     }
 
