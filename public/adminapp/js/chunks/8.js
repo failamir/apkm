@@ -126,6 +126,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
     HeaderSettings: _components_Datatables_HeaderSettings__WEBPACK_IMPORTED_MODULE_3__["default"]
   },
   data: function data() {
+    console.log('data_mahasiswa');
     return {
       columns: [{
         title: 'cruds.dataMahasiswa.fields.id',
@@ -148,6 +149,11 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
         field: 'batas_nilai',
         thComp: _components_Datatables_TranslatedHeader__WEBPACK_IMPORTED_MODULE_2__["default"],
         sortable: true
+      }, {
+        title: 'Hitung Prediksi',
+        field: 'proses',
+        thComp: _components_Datatables_TranslatedHeader__WEBPACK_IMPORTED_MODULE_2__["default"],
+        sortable: false
       }, {
         title: 'global.actions',
         thComp: _components_Datatables_TranslatedHeader__WEBPACK_IMPORTED_MODULE_2__["default"],

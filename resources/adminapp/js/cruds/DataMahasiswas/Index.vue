@@ -80,6 +80,7 @@ export default {
     HeaderSettings
   },
   data() {
+    console.log('data_mahasiswa');
     return {
       columns: [
         {
@@ -106,6 +107,12 @@ export default {
           field: 'batas_nilai',
           thComp: TranslatedHeader,
           sortable: true
+        },
+        {
+          title: 'Hitung Prediksi',
+          field: 'proses',
+          thComp: TranslatedHeader,
+          sortable: false
         },
         {
           title: 'global.actions',
