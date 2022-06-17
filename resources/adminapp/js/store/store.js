@@ -25,6 +25,8 @@ import UploadDataMahasiswaHistories from './cruds/UploadDataMahasiswaHistories'
 import TentangAplikasis from './cruds/TentangAplikasis'
 import DataMahasiswasIndex from './cruds/DataMahasiswas'
 import DataMahasiswasSingle from './cruds/DataMahasiswas/single'
+import DataDummiesIndex from './cruds/DataDummies'
+import DataDummiesSingle from './cruds/DataDummies/single'
 
 Vue.use(Vuex)
 
@@ -54,7 +56,9 @@ export default new Vuex.Store({
     UploadDataMahasiswaHistories,
     TentangAplikasis,
     DataMahasiswasIndex,
-    DataMahasiswasSingle
+    DataMahasiswasSingle,
+    DataDummiesIndex,
+    DataDummiesSingle
   },
   strict: debug
 })

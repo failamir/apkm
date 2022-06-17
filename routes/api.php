@@ -50,4 +50,7 @@ Route::group(['prefix' => 'v1', 'as' => 'api.', 'namespace' => 'Api\V1\Admin', '
     // Data Mahasiswa
     Route::post('data-mahasiswas/media', 'DataMahasiswaApiController@storeMedia')->name('data-mahasiswas.storeMedia');
     Route::resource('data-mahasiswas', 'DataMahasiswaApiController');
+
+    // Data Dummy
+    Route::resource('data-dummies', 'DataDummyApiController');
 });

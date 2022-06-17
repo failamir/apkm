@@ -278,6 +278,26 @@ class PermissionsTableSeeder extends Seeder
                 'id'    => 67,
                 'title' => 'data_mahasiswa_access',
             ],
+            [
+                'id'    => 68,
+                'title' => 'data_dummy_create',
+            ],
+            [
+                'id'    => 69,
+                'title' => 'data_dummy_edit',
+            ],
+            [
+                'id'    => 70,
+                'title' => 'data_dummy_show',
+            ],
+            [
+                'id'    => 71,
+                'title' => 'data_dummy_delete',
+            ],
+            [
+                'id'    => 72,
+                'title' => 'data_dummy_access',
+            ],
         ];
 
         Permission::insert($permissions);

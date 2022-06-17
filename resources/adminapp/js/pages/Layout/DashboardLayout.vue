@@ -126,6 +126,12 @@ export default {
           icon: 'table_view',
           path: { name: 'tentang_aplikasis.index' },
           gate: 'tentang_aplikasi_access'
+        },
+        {
+          title: 'cruds.dataDummy.title',
+          icon: 'table_view',
+          path: { name: 'data_dummies.index' },
+          gate: 'data_dummy_access'
         }
       ]
     }
