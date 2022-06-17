@@ -43,7 +43,7 @@
 /******/
 /******/ 	// script path function
 /******/ 	function jsonpScriptSrc(chunkId) {
-/******/ 		return __webpack_require__.p + "adminapp/js/chunks/" + ({}[chunkId]||chunkId) + ".js?id=" + {"0":"0c8674f46a6768a32c51","1":"3cd49b4dc0196faa31fa","2":"e06b5eeabb65e04a49dc","3":"b4abfe09246e052024ca","4":"464a6ce52d258542080a","5":"1a7557c086cb71a80b74","6":"4e3ce89135404941490e","7":"c43dd946bd8ce4724aee","8":"53563d9d82e5672cba2c","9":"b4597d9ded0e6474a9d2","10":"fbaf8686bd9742bff41d","11":"626a762e90d2d38df066","12":"415a7d4e9aa0a065c274","13":"5776b24c4aabed8bfb24","14":"6904e59f84129472243b","15":"d4ee155edfcdd8dac383","16":"5f9a5d3fe30022814cb6","17":"d49ce685d5e8cea1bf68","18":"1aa6a6f3b19b07aab089","19":"76203b296f4f8ca9256f","20":"5c507c192bdde063a931","21":"806f7741f7d8df20b2c7","22":"f82edcbfa109f69850a9","23":"044b04db3f26a0ed69ee","24":"d1166cc4fdfc6f72e914","25":"27a7282c041b026e1e09","26":"3f6fe88b3f3eee9d254a","27":"67bae8b434c40bbefb14","28":"a55e84e183990d4f8251","29":"190da9fa1bcac880947e","30":"d2e3643a60b518fc4e34","31":"57dc7fc647bf9aa598b3","32":"3e7f7588d09fdf5bbf0c","33":"a1c9855b9b3edbd1e4cc","34":"c3b103ca162f4a692538","35":"227602da7fad5dc3e94a","36":"03f4b2c233e1db527254","37":"352b1428d34160409c42","38":"a99f671f090e035f7dcb","39":"f02b095ffd20c7eb6c21","40":"1e75fb52dc1abbd9c70b","41":"f4f75d23a04312da1381","42":"ce38d892e0b37b476008","43":"5c3a3ea4cfc293310150","44":"a473ec0b42134492c8d9","45":"58b3f5864fe4b4e140a0","46":"ab597bbe283ad393e111"}[chunkId] + ""
+/******/ 		return __webpack_require__.p + "adminapp/js/chunks/" + ({}[chunkId]||chunkId) + ".js?id=" + {"0":"0c8674f46a6768a32c51","1":"3cd49b4dc0196faa31fa","2":"e06b5eeabb65e04a49dc","3":"b4abfe09246e052024ca","4":"464a6ce52d258542080a","5":"1a7557c086cb71a80b74","6":"4e3ce89135404941490e","7":"c43dd946bd8ce4724aee","8":"53563d9d82e5672cba2c","9":"b4597d9ded0e6474a9d2","10":"fbaf8686bd9742bff41d","11":"626a762e90d2d38df066","12":"415a7d4e9aa0a065c274","13":"5776b24c4aabed8bfb24","14":"6904e59f84129472243b","15":"d4ee155edfcdd8dac383","16":"5f9a5d3fe30022814cb6","17":"d49ce685d5e8cea1bf68","18":"1aa6a6f3b19b07aab089","19":"76203b296f4f8ca9256f","20":"5c507c192bdde063a931","21":"806f7741f7d8df20b2c7","22":"f82edcbfa109f69850a9","23":"044b04db3f26a0ed69ee","24":"d1166cc4fdfc6f72e914","25":"27a7282c041b026e1e09","26":"3f6fe88b3f3eee9d254a","27":"67bae8b434c40bbefb14","28":"a55e84e183990d4f8251","29":"190da9fa1bcac880947e","30":"d2e3643a60b518fc4e34","31":"57dc7fc647bf9aa598b3","32":"3e7f7588d09fdf5bbf0c","33":"a1c9855b9b3edbd1e4cc","34":"c3b103ca162f4a692538","35":"227602da7fad5dc3e94a","36":"03f4b2c233e1db527254","37":"352b1428d34160409c42","38":"a99f671f090e035f7dcb","39":"f02b095ffd20c7eb6c21","40":"1e75fb52dc1abbd9c70b","41":"f4f75d23a04312da1381","42":"ce38d892e0b37b476008","43":"da39eafa89541d2ce4fc","44":"266eba8f5e6e35b65369","46":"7eee9aa2bc6885a1aba0","47":"43bc304ee52e50efaaee"}[chunkId] + ""
 /******/ 	}
 /******/
 /******/ 	// The require function
@@ -55636,7 +55636,7 @@ var routes = [{
     path: 'data-dummies',
     name: 'data_dummies.index',
     component: function component() {
-      return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(45)]).then(__webpack_require__.bind(null, /*! @cruds/DataDummies/Index.vue */ "./resources/adminapp/js/cruds/DataDummies/Index.vue"));
+      return __webpack_require__.e(/*! import() */ 47).then(__webpack_require__.bind(null, /*! @cruds/DataDummies/Index.vue */ "./resources/adminapp/js/cruds/DataDummies/Index.vue"));
     },
     meta: {
       title: 'cruds.dataDummy.title'
@@ -55707,91 +55707,9 @@ var _AbilityBuilder = new _casl_ability__WEBPACK_IMPORTED_MODULE_0__["AbilityBui
   !*** ./resources/adminapp/js/store/cruds/DataDummies/index.js ***!
   \****************************************************************/
 /*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports) {
 
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-var set = function set(key) {
-  return function (state, val) {
-    state[key] = val;
-  };
-};
-
-function initialState() {
-  return {
-    data: [],
-    total: 0,
-    query: {},
-    loading: false
-  };
-}
-
-var route = 'data-dummies';
-var getters = {
-  data: function data(state) {
-    return state.data;
-  },
-  total: function total(state) {
-    return state.total;
-  },
-  loading: function loading(state) {
-    return state.loading;
-  }
-};
-var actions = {
-  fetchIndexData: function fetchIndexData(_ref) {
-    var commit = _ref.commit,
-        state = _ref.state;
-    commit('setLoading', true);
-    axios.get(route, {
-      params: state.query
-    }).then(function (response) {
-      commit('setData', response.data.data);
-      commit('setTotal', response.data.total);
-    })["catch"](function (error) {
-      message = error.response.data.message || error.message; // TODO error handling
-    })["finally"](function () {
-      commit('setLoading', false);
-    });
-  },
-  destroyData: function destroyData(_ref2, id) {
-    var commit = _ref2.commit,
-        state = _ref2.state,
-        dispatch = _ref2.dispatch;
-    axios["delete"]("".concat(route, "/").concat(id)).then(function (response) {
-      dispatch('fetchIndexData');
-    })["catch"](function (error) {
-      message = error.response.data.message || error.message; // TODO error handling
-    });
-  },
-  setQuery: function setQuery(_ref3, value) {
-    var commit = _ref3.commit;
-    commit('setQuery', _.cloneDeep(value));
-  },
-  resetState: function resetState(_ref4) {
-    var commit = _ref4.commit;
-    commit('resetState');
-  }
-};
-var mutations = {
-  setData: set('data'),
-  setTotal: set('total'),
-  setQuery: function setQuery(state, query) {
-    query.page = (query.offset + query.limit) / query.limit;
-    state.query = query;
-  },
-  setLoading: set('loading'),
-  resetState: function resetState(state) {
-    Object.assign(state, initialState());
-  }
-};
-/* harmony default export */ __webpack_exports__["default"] = ({
-  namespaced: true,
-  state: initialState,
-  getters: getters,
-  actions: actions,
-  mutations: mutations
-});
+throw new Error("Module build failed (from ./node_modules/babel-loader/lib/index.js):\nError: ENOENT: no such file or directory, open '/Users/macbook/GitHub/apkm/resources/adminapp/js/store/cruds/DataDummies/index.js'");
 
 /***/ }),
 
@@ -55800,177 +55718,9 @@ var mutations = {
   !*** ./resources/adminapp/js/store/cruds/DataDummies/single.js ***!
   \*****************************************************************/
 /*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports) {
 
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-function initialState() {
-  return {
-    entry: {
-      id: null,
-      lulus: '',
-      tidak_lulus: '',
-      observers: '',
-      created_at: '',
-      updated_at: '',
-      deleted_at: ''
-    },
-    loading: false
-  };
-}
-
-var route = 'data-dummies';
-var getters = {
-  entry: function entry(state) {
-    return state.entry;
-  },
-  loading: function loading(state) {
-    return state.loading;
-  }
-};
-var actions = {
-  storeData: function storeData(_ref) {
-    var commit = _ref.commit,
-        state = _ref.state,
-        dispatch = _ref.dispatch;
-    commit('setLoading', true);
-    dispatch('Alert/resetState', null, {
-      root: true
-    });
-    return new Promise(function (resolve, reject) {
-      var params = objectToFormData(state.entry, {
-        indices: true,
-        booleansAsIntegers: true
-      });
-      axios.post(route, params).then(function (response) {
-        resolve(response);
-      })["catch"](function (error) {
-        var message = error.response.data.message || error.message;
-        var errors = error.response.data.errors;
-        dispatch('Alert/setAlert', {
-          message: message,
-          errors: errors,
-          color: 'danger'
-        }, {
-          root: true
-        });
-        reject(error);
-      })["finally"](function () {
-        commit('setLoading', false);
-      });
-    });
-  },
-  updateData: function updateData(_ref2) {
-    var commit = _ref2.commit,
-        state = _ref2.state,
-        dispatch = _ref2.dispatch;
-    commit('setLoading', true);
-    dispatch('Alert/resetState', null, {
-      root: true
-    });
-    return new Promise(function (resolve, reject) {
-      var params = objectToFormData(state.entry, {
-        indices: true,
-        booleansAsIntegers: true
-      });
-      params.set('_method', 'PUT');
-      axios.post("".concat(route, "/").concat(state.entry.id), params).then(function (response) {
-        resolve(response);
-      })["catch"](function (error) {
-        var message = error.response.data.message || error.message;
-        var errors = error.response.data.errors;
-        dispatch('Alert/setAlert', {
-          message: message,
-          errors: errors,
-          color: 'danger'
-        }, {
-          root: true
-        });
-        reject(error);
-      })["finally"](function () {
-        commit('setLoading', false);
-      });
-    });
-  },
-  setLulus: function setLulus(_ref3, value) {
-    var commit = _ref3.commit;
-    commit('setLulus', value);
-  },
-  setTidakLulus: function setTidakLulus(_ref4, value) {
-    var commit = _ref4.commit;
-    commit('setTidakLulus', value);
-  },
-  setObservers: function setObservers(_ref5, value) {
-    var commit = _ref5.commit;
-    commit('setObservers', value);
-  },
-  setCreatedAt: function setCreatedAt(_ref6, value) {
-    var commit = _ref6.commit;
-    commit('setCreatedAt', value);
-  },
-  setUpdatedAt: function setUpdatedAt(_ref7, value) {
-    var commit = _ref7.commit;
-    commit('setUpdatedAt', value);
-  },
-  setDeletedAt: function setDeletedAt(_ref8, value) {
-    var commit = _ref8.commit;
-    commit('setDeletedAt', value);
-  },
-  fetchEditData: function fetchEditData(_ref9, id) {
-    var commit = _ref9.commit,
-        dispatch = _ref9.dispatch;
-    axios.get("".concat(route, "/").concat(id, "/edit")).then(function (response) {
-      commit('setEntry', response.data.data);
-    });
-  },
-  fetchShowData: function fetchShowData(_ref10, id) {
-    var commit = _ref10.commit,
-        dispatch = _ref10.dispatch;
-    axios.get("".concat(route, "/").concat(id)).then(function (response) {
-      commit('setEntry', response.data.data);
-    });
-  },
-  resetState: function resetState(_ref11) {
-    var commit = _ref11.commit;
-    commit('resetState');
-  }
-};
-var mutations = {
-  setEntry: function setEntry(state, entry) {
-    state.entry = entry;
-  },
-  setLulus: function setLulus(state, value) {
-    state.entry.lulus = value;
-  },
-  setTidakLulus: function setTidakLulus(state, value) {
-    state.entry.tidak_lulus = value;
-  },
-  setObservers: function setObservers(state, value) {
-    state.entry.observers = value;
-  },
-  setCreatedAt: function setCreatedAt(state, value) {
-    state.entry.created_at = value;
-  },
-  setUpdatedAt: function setUpdatedAt(state, value) {
-    state.entry.updated_at = value;
-  },
-  setDeletedAt: function setDeletedAt(state, value) {
-    state.entry.deleted_at = value;
-  },
-  setLoading: function setLoading(state, loading) {
-    state.loading = loading;
-  },
-  resetState: function resetState(state) {
-    state = Object.assign(state, initialState());
-  }
-};
-/* harmony default export */ __webpack_exports__["default"] = ({
-  namespaced: true,
-  state: initialState,
-  getters: getters,
-  actions: actions,
-  mutations: mutations
-});
+throw new Error("Module build failed (from ./node_modules/babel-loader/lib/index.js):\nError: ENOENT: no such file or directory, open '/Users/macbook/GitHub/apkm/resources/adminapp/js/store/cruds/DataDummies/single.js'");
 
 /***/ }),
 
