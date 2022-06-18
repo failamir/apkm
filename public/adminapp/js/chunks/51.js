@@ -575,7 +575,9 @@ var render = function () {
                     ]),
                     _vm._v(" "),
                     _c("p", { staticClass: "font-weight-bold" }, [
-                      _vm._v("Obervers : " + _vm._s(_vm.entry.Obervers) + " "),
+                      _vm._v(
+                        "Observers : " + _vm._s(_vm.entry.Observers) + " "
+                      ),
                     ]),
                     _vm._v(" "),
                     _c("p", { staticClass: "font-weight-bold" }, [

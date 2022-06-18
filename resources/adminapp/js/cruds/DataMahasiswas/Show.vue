@@ -84,7 +84,7 @@
             <p class="font-weight-bold">Lulus : {{ entry.Lulus}} </p>
             <p class="font-weight-bold">Tidak Lulus : {{ entry.TidakLulus}} </p>
             <p class="font-weight-bold">Active : {{ entry.Active}} </p>
-            <p class="font-weight-bold">Obervers : {{ entry.Obervers}} </p>
+            <p class="font-weight-bold">Observers : {{ entry.Observers}} </p>
                 <p class="font-weight-bold">Accuracy : {{ entry.Accuracy}} </p>
                 <p class="font-weight-bold">Recall Lulus : {{ entry.RecallLulus}} </p>
                 <p class="font-weight-bold">Recall Tidak Lulus : {{ entry.RecallTidakLulus}} </p>
