@@ -8,14 +8,55 @@
               <i class="material-icons">assignment</i>
             </div>
             <h4 class="card-title">
-              {{ $t('global.view') }}
+              {{ $t('global.table') }}
               <strong>{{ $t('cruds.dataMahasiswaOnGoing.title') }}</strong>
             </h4>
           </div>
           <div class="card-body">
+            <router-link
+              class="btn btn-primary"
+              v-if="$can(xprops.permission_prefix + 'create')"
+              :to="{ name: xprops.route + '.create' }"
+            >
+              <i class="material-icons">
+                add
+              </i>
+              {{ $t('global.add') }}
+            </router-link>
+            <button
+              type="button"
+              class="btn btn-default"
+              @click="fetchIndexData"
+              :disabled="loading"
+              :class="{ disabled: loading }"
+            >
+              <i class="material-icons" :class="{ 'fa-spin': loading }">
+                refresh
+              </i>
+              {{ $t('global.refresh') }}
+            </button>
+          </div>
+          <div class="card-body">
             <div class="row">
               <div class="col-md-12">
-                {{ message }}
+                <div class="table-overlay" v-show="loading">
+                  <div class="table-overlay-container">
+                    <material-spinner></material-spinner>
+                    <span>Loading...</span>
+                  </div>
+                </div>
+                <datatable
+                  :columns="columns"
+                  :data="data"
+                  :total="total"
+                  :query="query"
+                  :xprops="xprops"
+                  :HeaderSettings="false"
+                  :pageSizeOptions="[10, 25, 50, 100]"
+                >
+                  <global-search :query="query" class="pull-left" />
+                  <header-settings :columns="columns" class="pull-right" />
+                </datatable>
               </div>
             </div>
           </div>
@@ -27,22 +68,84 @@
 
 <script>
 import { mapGetters, mapActions } from 'vuex'
+import DatatableActions from '@components/Datatables/DatatableActions'
+import TranslatedHeader from '@components/Datatables/TranslatedHeader'
+import HeaderSettings from '@components/Datatables/HeaderSettings'
+import GlobalSearch from '@components/Datatables/GlobalSearch'
+import DatatableAttachments from '@components/Datatables/DatatableAttachments'
 
 export default {
-  data() {
-    return {}
+  components: {
+    GlobalSearch,
+    HeaderSettings
   },
-  created() {
-    this.fetchIndexData()
+  data() {
+    return {
+      columns: [
+        {
+          title: 'cruds.dataMahasiswaOnGoing.fields.id',
+          field: 'id',
+          thComp: TranslatedHeader,
+          sortable: true,
+          colStyle: 'width: 100px;'
+        },
+        {
+          title: 'cruds.dataMahasiswaOnGoing.fields.nama',
+          field: 'nama',
+          thComp: TranslatedHeader,
+          sortable: true
+        },
+        {
+          title: 'cruds.dataMahasiswaOnGoing.fields.data_mahasiswa',
+          field: 'data_mahasiswa',
+          thComp: TranslatedHeader,
+          tdComp: DatatableAttachments
+        },
+        {
+          title: 'cruds.dataMahasiswaOnGoing.fields.hasil_prediksi',
+          field: 'hasil_prediksi',
+          thComp: TranslatedHeader,
+          sortable: true
+        },
+        {
+          title: 'global.actions',
+          thComp: TranslatedHeader,
+          tdComp: DatatableActions,
+          visible: true,
+          thClass: 'text-right',
+          tdClass: 'text-right td-actions',
+          colStyle: 'width: 150px;'
+        }
+      ],
+      query: { sort: 'id', order: 'desc', limit: 100, s: '' },
+      xprops: {
+        module: 'DataMahasiswaOnGoingsIndex',
+        route: 'data_mahasiswa_on_goings',
+        permission_prefix: 'data_mahasiswa_on_going_'
+      }
+    }
   },
   beforeDestroy() {
     this.resetState()
   },
   computed: {
-    ...mapGetters('DataMahasiswaOnGoings', ['message'])
+    ...mapGetters('DataMahasiswaOnGoingsIndex', ['data', 'total', 'loading'])
+  },
+  watch: {
+    query: {
+      handler(query) {
+        this.setQuery(query)
+        this.fetchIndexData()
+      },
+      deep: true
+    }
   },
   methods: {
-    ...mapActions('DataMahasiswaOnGoings', ['fetchIndexData', 'resetState'])
+    ...mapActions('DataMahasiswaOnGoingsIndex', [
+      'fetchIndexData',
+      'setQuery',
+      'resetState'
+    ])
   }
 }
 </script>

@@ -156,147 +156,107 @@ class PermissionsTableSeeder extends Seeder
             ],
             [
                 'id'    => 37,
-                'title' => 'upload_data_mahasiswa_on_going_create',
-            ],
-            [
-                'id'    => 38,
-                'title' => 'upload_data_mahasiswa_on_going_edit',
-            ],
-            [
-                'id'    => 39,
-                'title' => 'upload_data_mahasiswa_on_going_show',
-            ],
-            [
-                'id'    => 40,
-                'title' => 'upload_data_mahasiswa_on_going_delete',
-            ],
-            [
-                'id'    => 41,
-                'title' => 'upload_data_mahasiswa_on_going_access',
-            ],
-            [
-                'id'    => 42,
                 'title' => 'report_access',
             ],
             [
-                'id'    => 43,
+                'id'    => 38,
                 'title' => 'data_mahasiswa_history_create',
             ],
             [
-                'id'    => 44,
+                'id'    => 39,
                 'title' => 'data_mahasiswa_history_edit',
             ],
             [
-                'id'    => 45,
+                'id'    => 40,
                 'title' => 'data_mahasiswa_history_show',
             ],
             [
-                'id'    => 46,
+                'id'    => 41,
                 'title' => 'data_mahasiswa_history_delete',
             ],
             [
-                'id'    => 47,
+                'id'    => 42,
                 'title' => 'data_mahasiswa_history_access',
             ],
             [
-                'id'    => 48,
-                'title' => 'data_mahasiswa_on_going_create',
-            ],
-            [
-                'id'    => 49,
-                'title' => 'data_mahasiswa_on_going_edit',
-            ],
-            [
-                'id'    => 50,
-                'title' => 'data_mahasiswa_on_going_show',
-            ],
-            [
-                'id'    => 51,
-                'title' => 'data_mahasiswa_on_going_delete',
-            ],
-            [
-                'id'    => 52,
-                'title' => 'data_mahasiswa_on_going_access',
-            ],
-            [
-                'id'    => 53,
-                'title' => 'upload_data_mahasiswa_history_create',
-            ],
-            [
-                'id'    => 54,
-                'title' => 'upload_data_mahasiswa_history_edit',
-            ],
-            [
-                'id'    => 55,
-                'title' => 'upload_data_mahasiswa_history_show',
-            ],
-            [
-                'id'    => 56,
-                'title' => 'upload_data_mahasiswa_history_delete',
-            ],
-            [
-                'id'    => 57,
-                'title' => 'upload_data_mahasiswa_history_access',
-            ],
-            [
-                'id'    => 58,
+                'id'    => 43,
                 'title' => 'tentang_aplikasi_create',
             ],
             [
-                'id'    => 59,
+                'id'    => 44,
                 'title' => 'tentang_aplikasi_edit',
             ],
             [
-                'id'    => 60,
+                'id'    => 45,
                 'title' => 'tentang_aplikasi_show',
             ],
             [
-                'id'    => 61,
+                'id'    => 46,
                 'title' => 'tentang_aplikasi_delete',
             ],
             [
-                'id'    => 62,
+                'id'    => 47,
                 'title' => 'tentang_aplikasi_access',
             ],
             [
-                'id'    => 63,
+                'id'    => 48,
                 'title' => 'data_mahasiswa_create',
             ],
             [
-                'id'    => 64,
+                'id'    => 49,
                 'title' => 'data_mahasiswa_edit',
             ],
             [
-                'id'    => 65,
+                'id'    => 50,
                 'title' => 'data_mahasiswa_show',
             ],
             [
-                'id'    => 66,
+                'id'    => 51,
                 'title' => 'data_mahasiswa_delete',
             ],
             [
-                'id'    => 67,
+                'id'    => 52,
                 'title' => 'data_mahasiswa_access',
             ],
             [
-                'id'    => 68,
+                'id'    => 53,
                 'title' => 'data_dummy_create',
             ],
             [
-                'id'    => 69,
+                'id'    => 54,
                 'title' => 'data_dummy_edit',
             ],
             [
-                'id'    => 70,
+                'id'    => 55,
                 'title' => 'data_dummy_show',
             ],
             [
-                'id'    => 71,
+                'id'    => 56,
                 'title' => 'data_dummy_delete',
             ],
             [
-                'id'    => 72,
+                'id'    => 57,
                 'title' => 'data_dummy_access',
+            ],
+            [
+                'id'    => 58,
+                'title' => 'data_mahasiswa_on_going_create',
+            ],
+            [
+                'id'    => 59,
+                'title' => 'data_mahasiswa_on_going_edit',
+            ],
+            [
+                'id'    => 60,
+                'title' => 'data_mahasiswa_on_going_show',
+            ],
+            [
+                'id'    => 61,
+                'title' => 'data_mahasiswa_on_going_delete',
+            ],
+            [
+                'id'    => 62,
+                'title' => 'data_mahasiswa_on_going_access',
             ],
         ];
 

@@ -157,10 +157,6 @@ return [
             'no_hp_helper'      => ' ',
         ],
     ],
-    'uploadDataMahasiswaOnGoing' => [
-        'title'          => 'Upload Data Mahasiswa On Going',
-        'title_singular' => 'Upload Data Mahasiswa On Going',
-    ],
     'report' => [
         'title'          => 'Report',
         'title_singular' => 'Report',
@@ -169,21 +165,13 @@ return [
         'title'          => 'Data Mahasiswa History',
         'title_singular' => 'Data Mahasiswa History',
     ],
-    'dataMahasiswaOnGoing' => [
-        'title'          => 'Data Mahasiswa On Going',
-        'title_singular' => 'Data Mahasiswa On Going',
-    ],
-    'uploadDataMahasiswaHistory' => [
-        'title'          => 'Upload Data Mahasiswa History',
-        'title_singular' => 'Upload Data Mahasiswa History',
-    ],
     'tentangAplikasi' => [
         'title'          => 'Tentang Aplikasi',
         'title_singular' => 'Tentang Aplikasi',
     ],
     'dataMahasiswa' => [
-        'title'          => 'Data Mahasiswa',
-        'title_singular' => 'Data Mahasiswa',
+        'title'          => 'Data Mahasiswa History',
+        'title_singular' => 'Data Mahasiswa History',
         'fields'         => [
             'id'                    => 'ID',
             'id_helper'             => ' ',
@@ -219,6 +207,26 @@ return [
             'updated_at_helper'  => ' ',
             'deleted_at'         => 'Deleted at',
             'deleted_at_helper'  => ' ',
+        ],
+    ],
+    'dataMahasiswaOnGoing' => [
+        'title'          => 'Data Mahasiswa On Going',
+        'title_singular' => 'Data Mahasiswa On Going',
+        'fields'         => [
+            'id'                    => 'ID',
+            'id_helper'             => ' ',
+            'nama'                  => 'Nama',
+            'nama_helper'           => ' ',
+            'data_mahasiswa'        => 'Data Mahasiswa',
+            'data_mahasiswa_helper' => ' ',
+            'hasil_prediksi'        => 'Hasil Prediksi',
+            'hasil_prediksi_helper' => ' ',
+            'created_at'            => 'Created at',
+            'created_at_helper'     => ' ',
+            'updated_at'            => 'Updated at',
+            'updated_at_helper'     => ' ',
+            'deleted_at'            => 'Deleted at',
+            'deleted_at_helper'     => ' ',
         ],
     ],
 ];
