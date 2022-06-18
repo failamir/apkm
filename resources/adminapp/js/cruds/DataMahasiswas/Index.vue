@@ -68,7 +68,7 @@
 
 <script>
 import { mapGetters, mapActions } from 'vuex'
-import DatatableActions from '@components/Datatables/DatatableActions'
+import DatatableActions from '@components/Datatables/DatatableActionsAndri'
 import TranslatedHeader from '@components/Datatables/TranslatedHeader'
 import HeaderSettings from '@components/Datatables/HeaderSettings'
 import GlobalSearch from '@components/Datatables/GlobalSearch'
@@ -108,12 +108,12 @@ export default {
           thComp: TranslatedHeader,
           sortable: true
         },
-        {
-          title: 'Hitung Prediksi',
-          field: 'proses',
-          thComp: TranslatedHeader,
-          sortable: false
-        },
+        // {
+        //   title: 'Hitung Prediksi',
+        //   field: 'proses',
+        //   thComp: TranslatedHeader,
+        //   sortable: false
+        // },
         {
           title: 'global.actions',
           thComp: TranslatedHeader,

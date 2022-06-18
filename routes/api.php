@@ -10,6 +10,7 @@ Route::group(['prefix' => 'v1', 'as' => 'api.', 'namespace' => 'Api\V1\Admin', '
 
     // Dashboard
     Route::get('dashboard', 'DashboardApiController@index')->name('dashboard');
+    Route::get('andri', 'ProsesApiController@index')->name('andri');
 
     // Permissions
     Route::resource('permissions', 'PermissionsApiController');
@@ -50,6 +51,7 @@ Route::group(['prefix' => 'v1', 'as' => 'api.', 'namespace' => 'Api\V1\Admin', '
     // Data Mahasiswa
     Route::post('data-mahasiswas/media', 'DataMahasiswaApiController@storeMedia')->name('data-mahasiswas.storeMedia');
     Route::resource('data-mahasiswas', 'DataMahasiswaApiController');
+    Route::get('data-mahasiswas/{dataMahasiswa}/proses', 'DataMahasiswaApiController@proses')->name('data-mahasiswas.proses');
 
     // Data Dummy
     Route::resource('data-dummies', 'DataDummyApiController');

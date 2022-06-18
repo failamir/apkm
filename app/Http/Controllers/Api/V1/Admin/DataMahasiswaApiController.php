@@ -49,6 +49,17 @@ class DataMahasiswaApiController extends Controller
     {
         abort_if(Gate::denies('data_mahasiswa_show'), Response::HTTP_FORBIDDEN, '403 Forbidden');
 
+        // $dataMahasiswa->andri = 'cantik';
+        return new DataMahasiswaResource($dataMahasiswa);
+    }
+
+    public function proses(DataMahasiswa $dataMahasiswa)
+    {
+        abort_if(Gate::denies('data_dummy_show'), Response::HTTP_FORBIDDEN, '403 Forbidden');
+        // $d = new stdClass();
+        // $d->andri = 'cantik';
+        // array_push($dataDummy,$d);
+        $dataMahasiswa->andri = 'cantik';
         return new DataMahasiswaResource($dataMahasiswa);
     }
 

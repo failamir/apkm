@@ -10,6 +10,9 @@ const routes = [
     path: '/',
     component: () => import('@pages/Layout/DashboardLayout.vue'),
     redirect: 'dashboard',
+    // path: '/andri',
+    // component: () => import('@cruds/DataMahasiswas/Proses.vue'),
+    // redirect: 'andri',
     children: [
       {
         path: 'dashboard',
@@ -17,6 +20,12 @@ const routes = [
         component: () => import('@pages/Dashboard.vue'),
         meta: { title: 'global.dashboard' }
       },
+      // {
+      //   path: 'andri',
+      //   name: 'andri',
+      //   component: () => import('@cruds/DataMahasiswas/Proses.vue'),
+      //   meta: { title: 'global.dashboard' }
+      // },
       {
         path: 'user-management',
         name: 'user_management',
@@ -209,6 +218,12 @@ const routes = [
         path: 'data-mahasiswas/:id',
         name: 'data_mahasiswas.show',
         component: () => import('@cruds/DataMahasiswas/Show.vue'),
+        meta: { title: 'cruds.dataMahasiswa.title' }
+      },
+      {
+        path: 'data-mahasiswas/:id/proses',
+        name: 'data_mahasiswas.proses',
+        component: () => import('@cruds/DataMahasiswas/Proses.vue'),
         meta: { title: 'cruds.dataMahasiswa.title' }
       },
       {
