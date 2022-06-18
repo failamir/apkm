@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:8889
--- Generation Time: Jun 16, 2022 at 10:22 PM
+-- Generation Time: Jun 17, 2022 at 06:15 PM
 -- Server version: 5.7.34
 -- PHP Version: 8.0.8
 
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `apkm`
+-- Database: `apkm_bk`
 --
 
 -- --------------------------------------------------------
@@ -30,6 +30,7 @@ SET time_zone = "+00:00";
 CREATE TABLE `data_mahasiswas` (
   `id` bigint(20) UNSIGNED NOT NULL,
   `nama` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `batas_nilai` int(11) NOT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL,
   `deleted_at` timestamp NULL DEFAULT NULL
@@ -39,8 +40,9 @@ CREATE TABLE `data_mahasiswas` (
 -- Dumping data for table `data_mahasiswas`
 --
 
-INSERT INTO `data_mahasiswas` (`id`, `nama`, `created_at`, `updated_at`, `deleted_at`) VALUES
-(1, 'qwerty', '2022-06-16 15:13:06', '2022-06-16 15:13:06', NULL);
+INSERT INTO `data_mahasiswas` (`id`, `nama`, `batas_nilai`, `created_at`, `updated_at`, `deleted_at`) VALUES
+(1, 'qwerty', 60, '2022-06-16 15:13:06', '2022-06-16 15:43:05', NULL),
+(2, '2', 50, '2022-06-16 15:30:05', '2022-06-16 15:42:54', NULL);
 
 -- --------------------------------------------------------
 
@@ -197,7 +199,8 @@ CREATE TABLE `media` (
 --
 
 INSERT INTO `media` (`id`, `model_type`, `model_id`, `uuid`, `collection_name`, `name`, `file_name`, `mime_type`, `disk`, `conversions_disk`, `size`, `manipulations`, `custom_properties`, `generated_conversions`, `responsive_images`, `order_column`, `created_at`, `updated_at`) VALUES
-(1, 'App\\Models\\DataMahasiswa', 1, '62cf10f3-8828-4bc7-b42c-65ad3b0d1158', 'data_mahasiswa_data_mahasiswa', 'Contoh Data ICE On Going', 'Contoh-Data-ICE-On-Going.xlsx', 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'public', 'public', 8831, '[]', '[]', '[]', '[]', 1, '2022-06-16 15:13:03', '2022-06-16 15:13:06');
+(1, 'App\\Models\\DataMahasiswa', 1, '62cf10f3-8828-4bc7-b42c-65ad3b0d1158', 'data_mahasiswa_data_mahasiswa', 'Contoh Data ICE On Going', 'Contoh-Data-ICE-On-Going.xlsx', 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'public', 'public', 8831, '[]', '[]', '[]', '[]', 1, '2022-06-16 15:13:03', '2022-06-16 15:13:06'),
+(2, 'App\\Models\\DataMahasiswa', 2, 'fd86d670-5517-492a-ba45-b035148b9db8', 'data_mahasiswa_data_mahasiswa', 'Data LMS + Nilai - ICEI Rev 21.03.2021 (1)', 'Data-LMS-+-Nilai---ICEI-Rev-21.03.2021-(1).xlsx', 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'public', 'public', 396687, '[]', '[]', '[]', '[]', 1, '2022-06-16 15:30:04', '2022-06-16 15:30:05');
 
 -- --------------------------------------------------------
 
@@ -667,7 +670,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `data_mahasiswas`
 --
 ALTER TABLE `data_mahasiswas`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `dosens`
@@ -697,7 +700,7 @@ ALTER TABLE `mata_kuliahs`
 -- AUTO_INCREMENT for table `media`
 --
 ALTER TABLE `media`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `migrations`

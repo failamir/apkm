@@ -1,4 +1,4 @@
-(window["webpackJsonp"] = window["webpackJsonp"] || []).push([[13],{
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([[48],{
 
 /***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/components/Datatables/DatatableAttachments.vue?vue&type=script&lang=js&":
 /*!***************************************************************************************************************************************************************************************************!*\
@@ -25,10 +25,10 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/cruds/DataMahasiswas/Show.vue?vue&type=script&lang=js&":
-/*!**********************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/adminapp/js/cruds/DataMahasiswas/Show.vue?vue&type=script&lang=js& ***!
-  \**********************************************************************************************************************************************************************************/
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/cruds/DataMahasiswas/Proses.vue?vue&type=script&lang=js&":
+/*!************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/adminapp/js/cruds/DataMahasiswas/Proses.vue?vue&type=script&lang=js& ***!
+  \************************************************************************************************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -36,6 +36,11 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vuex__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vuex */ "./node_modules/vuex/dist/vuex.esm.js");
 /* harmony import */ var _components_Datatables_DatatableAttachments__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @components/Datatables/DatatableAttachments */ "./resources/adminapp/js/components/Datatables/DatatableAttachments.vue");
+/* harmony import */ var _components_Charts_Bar__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @components/Charts/Bar */ "./resources/adminapp/js/components/Charts/Bar.vue");
+/* harmony import */ var _components_Charts_Line__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @components/Charts/Line */ "./resources/adminapp/js/components/Charts/Line.vue");
+/* harmony import */ var _components_Charts_Pie__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @components/Charts/Pie */ "./resources/adminapp/js/components/Charts/Pie.vue");
+/* harmony import */ var _components_Charts_Stats__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @components/Charts/Stats */ "./resources/adminapp/js/components/Charts/Stats.vue");
+/* harmony import */ var _components_Charts_Latest__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @components/Charts/Latest */ "./resources/adminapp/js/components/Charts/Latest.vue");
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
 
 function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { _defineProperty(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
@@ -113,15 +118,60 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+
+
+
 
  // console.log(DataMahasiswasSingle);
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {
-    DatatableAttachments: _components_Datatables_DatatableAttachments__WEBPACK_IMPORTED_MODULE_1__["default"]
+    DatatableAttachments: _components_Datatables_DatatableAttachments__WEBPACK_IMPORTED_MODULE_1__["default"],
+    BarChart: _components_Charts_Bar__WEBPACK_IMPORTED_MODULE_2__["default"],
+    LineChart: _components_Charts_Line__WEBPACK_IMPORTED_MODULE_3__["default"],
+    PieChart: _components_Charts_Pie__WEBPACK_IMPORTED_MODULE_4__["default"],
+    StatsCard: _components_Charts_Stats__WEBPACK_IMPORTED_MODULE_5__["default"],
+    LatestCard: _components_Charts_Latest__WEBPACK_IMPORTED_MODULE_6__["default"]
   },
   data: function data() {
-    return {};
+    return {
+      datacollection: null,
+      charts: null
+    };
   },
   beforeDestroy: function beforeDestroy() {
     this.resetState();
@@ -132,11 +182,25 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       immediate: true,
       handler: function handler() {
         this.resetState();
-        this.fetchShowData(this.$route.params.id);
+        this.fetchProsesData(this.$route.params.id);
       }
     }
   },
-  methods: _objectSpread({}, Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapActions"])('DataMahasiswasSingle', ['fetchShowData', 'resetState']))
+  methods: _objectSpread({}, Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapActions"])('DataMahasiswasSingle', ['fetchProsesData', 'resetState'])),
+  created: function created() {
+    var _this = this;
+
+    axios.get('andri').then(function (response) {
+      _this.charts = response.data;
+      response.data.pie2.labels[0] = 'Lulus';
+      response.data.pie2.labels[1] = 'Tidak Lulus';
+      response.data.pie2.labels[2] = 'Observes';
+      response.data.pie2.labels[3] = '';
+      response.data.pie2.labels[4] = '';
+      console.log(response.data.pie2.datasets[0].data);
+      console.log(response.data);
+    });
+  }
 });
 
 /***/ }),
@@ -229,10 +293,10 @@ render._withStripped = true
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/cruds/DataMahasiswas/Show.vue?vue&type=template&id=5de1551e&":
-/*!**************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/adminapp/js/cruds/DataMahasiswas/Show.vue?vue&type=template&id=5de1551e& ***!
-  \**************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/cruds/DataMahasiswas/Proses.vue?vue&type=template&id=3ab03216&":
+/*!****************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/adminapp/js/cruds/DataMahasiswas/Proses.vue?vue&type=template&id=3ab03216& ***!
+  \****************************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -355,7 +419,7 @@ var render = function () {
                           _vm._v(
                             "\n                        " +
                               _vm._s(_vm.entry.batas_nilai) +
-                              "\n                      "
+                              "\n                        "
                           ),
                         ]),
                       ]),
@@ -368,6 +432,68 @@ var render = function () {
         ]),
       ]),
     ]),
+    _vm._v(" "),
+    _c(
+      "div",
+      { staticClass: "row" },
+      [
+        _vm._l(_vm.charts, function (chart, key) {
+          return [
+            _c(
+              "div",
+              { key: key, class: chart.column_class },
+              [
+                chart.type === "Stats"
+                  ? _c("stats-card", { attrs: { "chart-data": chart } })
+                  : chart.type === "Latest"
+                  ? _c("latest-card", { attrs: { "chart-data": chart } })
+                  : _c("div", { staticClass: "card" }, [
+                      _c(
+                        "div",
+                        {
+                          staticClass:
+                            "card-header card-header-primary card-header-icon",
+                        },
+                        [
+                          _c("div", { staticClass: "card-icon" }, [
+                            _c("i", { staticClass: "material-icons" }, [
+                              _vm._v(_vm._s(chart.icon)),
+                            ]),
+                          ]),
+                          _vm._v(" "),
+                          _c("h4", { staticClass: "card-title" }, [
+                            _vm._v(
+                              "\n              " +
+                                _vm._s(chart.title) +
+                                "\n            "
+                            ),
+                          ]),
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        { staticClass: "card-body" },
+                        [
+                          _c(chart.type + "Chart", {
+                            tag: "component",
+                            attrs: {
+                              "chart-data": chart,
+                              options: chart.options,
+                            },
+                          }),
+                        ],
+                        1
+                      ),
+                    ]),
+              ],
+              1
+            ),
+          ]
+        }),
+      ],
+      2
+    ),
   ])
 }
 var staticRenderFns = [
@@ -473,17 +599,17 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./resources/adminapp/js/cruds/DataMahasiswas/Show.vue":
-/*!*************************************************************!*\
-  !*** ./resources/adminapp/js/cruds/DataMahasiswas/Show.vue ***!
-  \*************************************************************/
+/***/ "./resources/adminapp/js/cruds/DataMahasiswas/Proses.vue":
+/*!***************************************************************!*\
+  !*** ./resources/adminapp/js/cruds/DataMahasiswas/Proses.vue ***!
+  \***************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Show_vue_vue_type_template_id_5de1551e___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Show.vue?vue&type=template&id=5de1551e& */ "./resources/adminapp/js/cruds/DataMahasiswas/Show.vue?vue&type=template&id=5de1551e&");
-/* harmony import */ var _Show_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Show.vue?vue&type=script&lang=js& */ "./resources/adminapp/js/cruds/DataMahasiswas/Show.vue?vue&type=script&lang=js&");
+/* harmony import */ var _Proses_vue_vue_type_template_id_3ab03216___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Proses.vue?vue&type=template&id=3ab03216& */ "./resources/adminapp/js/cruds/DataMahasiswas/Proses.vue?vue&type=template&id=3ab03216&");
+/* harmony import */ var _Proses_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Proses.vue?vue&type=script&lang=js& */ "./resources/adminapp/js/cruds/DataMahasiswas/Proses.vue?vue&type=script&lang=js&");
 /* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
@@ -493,9 +619,9 @@ __webpack_require__.r(__webpack_exports__);
 /* normalize component */
 
 var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
-  _Show_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _Show_vue_vue_type_template_id_5de1551e___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _Show_vue_vue_type_template_id_5de1551e___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  _Proses_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _Proses_vue_vue_type_template_id_3ab03216___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Proses_vue_vue_type_template_id_3ab03216___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
   null,
   null,
@@ -505,38 +631,38 @@ var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_
 
 /* hot reload */
 if (false) { var api; }
-component.options.__file = "resources/adminapp/js/cruds/DataMahasiswas/Show.vue"
+component.options.__file = "resources/adminapp/js/cruds/DataMahasiswas/Proses.vue"
 /* harmony default export */ __webpack_exports__["default"] = (component.exports);
 
 /***/ }),
 
-/***/ "./resources/adminapp/js/cruds/DataMahasiswas/Show.vue?vue&type=script&lang=js&":
-/*!**************************************************************************************!*\
-  !*** ./resources/adminapp/js/cruds/DataMahasiswas/Show.vue?vue&type=script&lang=js& ***!
-  \**************************************************************************************/
+/***/ "./resources/adminapp/js/cruds/DataMahasiswas/Proses.vue?vue&type=script&lang=js&":
+/*!****************************************************************************************!*\
+  !*** ./resources/adminapp/js/cruds/DataMahasiswas/Proses.vue?vue&type=script&lang=js& ***!
+  \****************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Show_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../node_modules/vue-loader/lib??vue-loader-options!./Show.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/cruds/DataMahasiswas/Show.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Show_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Proses_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../node_modules/vue-loader/lib??vue-loader-options!./Proses.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/cruds/DataMahasiswas/Proses.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Proses_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
 
 /***/ }),
 
-/***/ "./resources/adminapp/js/cruds/DataMahasiswas/Show.vue?vue&type=template&id=5de1551e&":
-/*!********************************************************************************************!*\
-  !*** ./resources/adminapp/js/cruds/DataMahasiswas/Show.vue?vue&type=template&id=5de1551e& ***!
-  \********************************************************************************************/
+/***/ "./resources/adminapp/js/cruds/DataMahasiswas/Proses.vue?vue&type=template&id=3ab03216&":
+/*!**********************************************************************************************!*\
+  !*** ./resources/adminapp/js/cruds/DataMahasiswas/Proses.vue?vue&type=template&id=3ab03216& ***!
+  \**********************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Show_vue_vue_type_template_id_5de1551e___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../node_modules/vue-loader/lib??vue-loader-options!./Show.vue?vue&type=template&id=5de1551e& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/cruds/DataMahasiswas/Show.vue?vue&type=template&id=5de1551e&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Show_vue_vue_type_template_id_5de1551e___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Proses_vue_vue_type_template_id_3ab03216___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../node_modules/vue-loader/lib??vue-loader-options!./Proses.vue?vue&type=template&id=3ab03216& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/cruds/DataMahasiswas/Proses.vue?vue&type=template&id=3ab03216&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Proses_vue_vue_type_template_id_3ab03216___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Show_vue_vue_type_template_id_5de1551e___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Proses_vue_vue_type_template_id_3ab03216___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 
