@@ -110,6 +110,11 @@ const actions = {
       commit('setEntry', response.data.data)
     })
   },
+  fetchProsesData({ commit, dispatch }, id) {
+    axios.get(`${route}/${id}/proses`).then(response => {
+      commit('setEntry', response.data.data)
+    })
+  },
   fetchShowData({ commit, dispatch }, id) {
     axios.get(`${route}/${id}`).then(response => {
       commit('setEntry', response.data.data)

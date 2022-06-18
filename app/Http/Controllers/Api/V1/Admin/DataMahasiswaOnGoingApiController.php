@@ -17,7 +17,7 @@ class DataMahasiswaOnGoingApiController extends Controller
     public function index()
     {
         abort_if(Gate::denies('data_mahasiswa_on_going_access'), Response::HTTP_FORBIDDEN, '403 Forbidden');
-
+        $DataMahasiswaOnGoingResource['andri'] = 'cantik';
         return new DataMahasiswaOnGoingResource(DataMahasiswaOnGoing::advancedFilter());
     }
 
@@ -30,7 +30,20 @@ class DataMahasiswaOnGoingApiController extends Controller
                 ->where('model_id', 0)
                 ->update(['model_id' => $dataMahasiswaOnGoing->id]);
         }
+        $dataMahasiswaOnGoing->andri = 'cantik';
+        // $a = $request->input('batas_nilai');
+        $a = '../../../../public/storage/'.$request->input('data_mahasiswa')[0]["id"].'/'.$request->input('data_mahasiswa')[0]["file_name"];
+        // var_dump($a);
+        // var_dump($b);
+        $date = date('dmYhsi');
 
+        // echo $process->getOutput();
+        $py = env('PYPATH',);
+        $andri=exec("'$py' ../../../../ProsesOngoing.py '$a' '$date'  2>&1", $out, $ret);
+        // $andri = exec("python3 ../../../../Proses.py '$a' '$date'", $out, $ret);
+        // var_dump($andri);
+        $text = str_replace("'", '"', $andri);
+        var_dump(json_decode($text));
         return (new DataMahasiswaOnGoingResource($dataMahasiswaOnGoing))
             ->response()
             ->setStatusCode(Response::HTTP_CREATED);
@@ -52,12 +65,22 @@ class DataMahasiswaOnGoingApiController extends Controller
         return new DataMahasiswaOnGoingResource($dataMahasiswaOnGoing);
     }
 
+    public function proses(DataMahasiswaOnGoing $dataMahasiswa)
+    {
+        abort_if(Gate::denies('data_mahasiswa_on_going_show'), Response::HTTP_FORBIDDEN, '403 Forbidden');
+        // $d = new stdClass();
+        // $d->andri = 'cantik';
+        // array_push($dataDummy,$d);
+        $dataMahasiswa->andri = 'cantik';
+        return new DataMahasiswaOnGoingResource($dataMahasiswa);
+    }
+
     public function update(UpdateDataMahasiswaOnGoingRequest $request, DataMahasiswaOnGoing $dataMahasiswaOnGoing)
     {
         $dataMahasiswaOnGoing->update($request->validated());
 
         $dataMahasiswaOnGoing->updateMedia($request->input('data_mahasiswa', []), 'data_mahasiswa_on_going_data_mahasiswa');
-
+        $dataMahasiswaOnGoing->andri = 'cantik';
         return (new DataMahasiswaOnGoingResource($dataMahasiswaOnGoing))
             ->response()
             ->setStatusCode(Response::HTTP_ACCEPTED);

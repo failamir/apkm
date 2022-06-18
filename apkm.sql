@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:8889
--- Generation Time: Jun 17, 2022 at 06:15 PM
+-- Generation Time: Jun 18, 2022 at 02:49 PM
 -- Server version: 5.7.34
 -- PHP Version: 8.0.8
 
@@ -18,8 +18,50 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `apkm_bk`
+-- Database: `apkm`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `data_dummies`
+--
+
+CREATE TABLE `data_dummies` (
+  `id` bigint(20) UNSIGNED NOT NULL,
+  `lulus` int(11) DEFAULT NULL,
+  `tidak_lulus` int(11) DEFAULT NULL,
+  `observers` int(11) DEFAULT NULL,
+  `created_at` timestamp NULL DEFAULT NULL,
+  `updated_at` timestamp NULL DEFAULT NULL,
+  `deleted_at` timestamp NULL DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `data_dummies`
+--
+
+INSERT INTO `data_dummies` (`id`, `lulus`, `tidak_lulus`, `observers`, `created_at`, `updated_at`, `deleted_at`) VALUES
+(1, 23, 34, 3, '2022-06-13 18:21:18', '2022-06-17 11:17:47', NULL),
+(2, 25, 11, 6, '2022-06-14 18:21:26', '2022-06-17 11:18:00', NULL),
+(3, 56, 42, 15, '2022-06-15 18:21:30', '2022-06-17 11:18:11', NULL),
+(4, 103, 21, 12, '2022-06-16 18:21:34', '2022-06-17 11:18:46', NULL),
+(5, 12, 23, 45, '2022-06-17 18:21:37', '2022-06-17 11:19:01', NULL),
+(6, 113, 23, 14, '2022-06-17 18:21:41', '2022-06-17 11:19:19', NULL),
+(7, 45, 15, 17, '2022-06-04 11:19:31', '2022-06-17 11:19:31', NULL),
+(8, 25, 11, 6, '2022-06-14 18:21:26', '2022-06-17 11:18:00', NULL),
+(9, 103, 21, 12, '2022-06-16 18:21:34', '2022-06-17 11:18:46', NULL),
+(10, 113, 23, 14, '2022-06-17 18:21:41', '2022-06-17 11:19:19', NULL),
+(11, 23, 34, 3, '2022-06-13 18:21:18', '2022-06-17 11:17:47', NULL),
+(12, 25, 11, 6, '2022-06-14 18:21:26', '2022-06-17 11:18:00', NULL),
+(13, 56, 42, 15, '2022-06-15 18:21:30', '2022-06-17 11:18:11', NULL),
+(14, 103, 21, 12, '2022-06-16 18:21:34', '2022-06-17 11:18:46', NULL),
+(15, 12, 23, 45, '2022-06-17 18:21:37', '2022-06-17 11:19:01', NULL),
+(16, 113, 23, 14, '2022-06-17 18:21:41', '2022-06-17 11:19:19', NULL),
+(17, 45, 15, 17, '2022-06-04 11:19:31', '2022-06-17 11:19:31', NULL),
+(18, 25, 11, 6, '2022-06-14 18:21:26', '2022-06-17 11:18:00', NULL),
+(19, 103, 21, 12, '2022-06-16 18:21:34', '2022-06-17 11:18:46', NULL),
+(20, 113, 23, 14, '2022-06-17 18:21:41', '2022-06-17 11:19:19', NULL);
 
 -- --------------------------------------------------------
 
@@ -30,7 +72,7 @@ SET time_zone = "+00:00";
 CREATE TABLE `data_mahasiswas` (
   `id` bigint(20) UNSIGNED NOT NULL,
   `nama` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `batas_nilai` int(11) NOT NULL,
+  `batas_nilai` int(11) DEFAULT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL,
   `deleted_at` timestamp NULL DEFAULT NULL
@@ -41,8 +83,8 @@ CREATE TABLE `data_mahasiswas` (
 --
 
 INSERT INTO `data_mahasiswas` (`id`, `nama`, `batas_nilai`, `created_at`, `updated_at`, `deleted_at`) VALUES
-(1, 'qwerty', 60, '2022-06-16 15:13:06', '2022-06-16 15:43:05', NULL),
-(2, '2', 50, '2022-06-16 15:30:05', '2022-06-16 15:42:54', NULL);
+(1, 'qwerty', 60, '2022-06-16 08:13:06', '2022-06-16 08:43:05', NULL),
+(2, '2', 50, '2022-06-16 08:30:05', '2022-06-16 08:42:54', NULL);
 
 -- --------------------------------------------------------
 
@@ -67,7 +109,7 @@ CREATE TABLE `dosens` (
 --
 
 INSERT INTO `dosens` (`id`, `id_dosen`, `nama_dosen`, `title`, `email`, `no_hp`, `created_at`, `updated_at`, `deleted_at`) VALUES
-(1, 1112, 'Bang Umar', 'S3', 'bangumar@gmail.com', '0812311231231', '2022-06-16 09:49:03', '2022-06-16 09:49:03', NULL);
+(1, 1112, 'Bang Umar', 'S3', 'bangumar@gmail.com', '0812311231231', '2022-06-16 02:49:03', '2022-06-16 02:49:03', NULL);
 
 -- --------------------------------------------------------
 
@@ -110,10 +152,10 @@ CREATE TABLE `jurusans` (
 --
 
 INSERT INTO `jurusans` (`id`, `id_jurusan`, `nama_jurusan`, `created_at`, `updated_at`, `deleted_at`) VALUES
-(1, '09876', 'Informatika', '2022-06-16 09:45:53', '2022-06-16 09:45:53', NULL),
-(2, '09877', 'Seni Rupa', '2022-06-16 09:46:07', '2022-06-16 09:46:17', NULL),
-(3, '0988', 'Matematika Murni', '2022-06-16 09:46:30', '2022-06-16 09:46:30', NULL),
-(4, '0989', 'Sistem Infomasi', '2022-06-16 09:46:45', '2022-06-16 09:46:45', NULL);
+(1, '09876', 'Informatika', '2022-06-16 02:45:53', '2022-06-16 02:45:53', NULL),
+(2, '09877', 'Seni Rupa', '2022-06-16 02:46:07', '2022-06-16 02:46:17', NULL),
+(3, '0988', 'Matematika Murni', '2022-06-16 02:46:30', '2022-06-16 02:46:30', NULL),
+(4, '0989', 'Sistem Infomasi', '2022-06-16 02:46:45', '2022-06-16 02:46:45', NULL);
 
 -- --------------------------------------------------------
 
@@ -139,8 +181,8 @@ CREATE TABLE `mahasiswas` (
 --
 
 INSERT INTO `mahasiswas` (`id`, `id_mahasiswa`, `nama`, `angkatan`, `email`, `no_hp`, `created_at`, `updated_at`, `deleted_at`, `jurusan_id`) VALUES
-(1, 1234, 'Fafa', 2017, 'fail.amir@students.amikom.ac.id', '083148263597', '2022-06-16 09:47:10', '2022-06-16 09:47:10', NULL, 1),
-(2, 1235, 'Erik \r\nSudirjo', 2012, 'smartbroadcast.io@gmail.com', '083456765412', '2022-06-16 09:47:43', '2022-06-16 09:47:43', NULL, 2);
+(1, 1234, 'Fafa', 2017, 'fail.amir@students.amikom.ac.id', '083148263597', '2022-06-16 02:47:10', '2022-06-16 02:47:10', NULL, 1),
+(2, 1235, 'Erik \r\nSudirjo', 2012, 'smartbroadcast.io@gmail.com', '083456765412', '2022-06-16 02:47:43', '2022-06-16 02:47:43', NULL, 2);
 
 -- --------------------------------------------------------
 
@@ -164,8 +206,8 @@ CREATE TABLE `mata_kuliahs` (
 --
 
 INSERT INTO `mata_kuliahs` (`id`, `id_mtk`, `nama_mtk`, `jumlah_sks`, `created_at`, `updated_at`, `deleted_at`, `jurusan_id`) VALUES
-(1, 5678, 'RPL', 12, '2022-06-16 09:47:59', '2022-06-16 09:47:59', NULL, 1),
-(2, 5679, 'Flow Chart', 8, '2022-06-16 09:48:38', '2022-06-16 09:48:38', NULL, 4);
+(1, 5678, 'RPL', 12, '2022-06-16 02:47:59', '2022-06-16 02:47:59', NULL, 1),
+(2, 5679, 'Flow Chart', 8, '2022-06-16 02:48:38', '2022-06-16 02:48:38', NULL, 4);
 
 -- --------------------------------------------------------
 
@@ -199,8 +241,8 @@ CREATE TABLE `media` (
 --
 
 INSERT INTO `media` (`id`, `model_type`, `model_id`, `uuid`, `collection_name`, `name`, `file_name`, `mime_type`, `disk`, `conversions_disk`, `size`, `manipulations`, `custom_properties`, `generated_conversions`, `responsive_images`, `order_column`, `created_at`, `updated_at`) VALUES
-(1, 'App\\Models\\DataMahasiswa', 1, '62cf10f3-8828-4bc7-b42c-65ad3b0d1158', 'data_mahasiswa_data_mahasiswa', 'Contoh Data ICE On Going', 'Contoh-Data-ICE-On-Going.xlsx', 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'public', 'public', 8831, '[]', '[]', '[]', '[]', 1, '2022-06-16 15:13:03', '2022-06-16 15:13:06'),
-(2, 'App\\Models\\DataMahasiswa', 2, 'fd86d670-5517-492a-ba45-b035148b9db8', 'data_mahasiswa_data_mahasiswa', 'Data LMS + Nilai - ICEI Rev 21.03.2021 (1)', 'Data-LMS-+-Nilai---ICEI-Rev-21.03.2021-(1).xlsx', 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'public', 'public', 396687, '[]', '[]', '[]', '[]', 1, '2022-06-16 15:30:04', '2022-06-16 15:30:05');
+(1, 'App\\Models\\DataMahasiswa', 1, '62cf10f3-8828-4bc7-b42c-65ad3b0d1158', 'data_mahasiswa_data_mahasiswa', 'Contoh Data ICE On Going', 'Contoh-Data-ICE-On-Going.xlsx', 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'public', 'public', 8831, '[]', '[]', '[]', '[]', 1, '2022-06-16 08:13:03', '2022-06-16 08:13:06'),
+(2, 'App\\Models\\DataMahasiswa', 2, 'fd86d670-5517-492a-ba45-b035148b9db8', 'data_mahasiswa_data_mahasiswa', 'Data LMS + Nilai - ICEI Rev 21.03.2021 (1)', 'Data-LMS-+-Nilai---ICEI-Rev-21.03.2021-(1).xlsx', 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'public', 'public', 396687, '[]', '[]', '[]', '[]', 1, '2022-06-16 08:30:04', '2022-06-16 08:30:05');
 
 -- --------------------------------------------------------
 
@@ -221,20 +263,21 @@ CREATE TABLE `migrations` (
 INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
 (1, '2014_10_12_100000_create_password_resets_table', 1),
 (2, '2019_12_14_000001_create_personal_access_tokens_table', 1),
-(3, '2022_06_16_000001_create_media_table', 1),
-(4, '2022_06_16_000002_create_permissions_table', 1),
-(5, '2022_06_16_000003_create_roles_table', 1),
-(6, '2022_06_16_000004_create_users_table', 1),
-(7, '2022_06_16_000005_create_mahasiswas_table', 1),
-(8, '2022_06_16_000006_create_mata_kuliahs_table', 1),
-(9, '2022_06_16_000007_create_jurusans_table', 1),
-(10, '2022_06_16_000008_create_dosens_table', 1),
-(11, '2022_06_16_000009_create_data_mahasiswas_table', 1),
-(12, '2022_06_16_000010_create_permission_role_pivot_table', 1),
-(13, '2022_06_16_000011_create_role_user_pivot_table', 1),
-(14, '2022_06_16_000012_create_dosen_jurusan_pivot_table', 1),
-(15, '2022_06_16_000013_add_relationship_fields_to_mahasiswas_table', 1),
-(16, '2022_06_16_000014_add_relationship_fields_to_mata_kuliahs_table', 1);
+(3, '2022_06_17_000001_create_media_table', 1),
+(4, '2022_06_17_000002_create_permissions_table', 1),
+(5, '2022_06_17_000003_create_roles_table', 1),
+(6, '2022_06_17_000004_create_users_table', 1),
+(7, '2022_06_17_000005_create_mahasiswas_table', 1),
+(8, '2022_06_17_000006_create_mata_kuliahs_table', 1),
+(9, '2022_06_17_000007_create_jurusans_table', 1),
+(10, '2022_06_17_000008_create_dosens_table', 1),
+(11, '2022_06_17_000009_create_data_mahasiswas_table', 1),
+(12, '2022_06_17_000010_create_data_dummies_table', 1),
+(13, '2022_06_17_000011_create_permission_role_pivot_table', 1),
+(14, '2022_06_17_000012_create_role_user_pivot_table', 1),
+(15, '2022_06_17_000013_create_dosen_jurusan_pivot_table', 1),
+(16, '2022_06_17_000014_add_relationship_fields_to_mahasiswas_table', 1),
+(17, '2022_06_17_000015_add_relationship_fields_to_mata_kuliahs_table', 1);
 
 -- --------------------------------------------------------
 
@@ -333,7 +376,12 @@ INSERT INTO `permissions` (`id`, `title`, `created_at`, `updated_at`, `deleted_a
 (64, 'data_mahasiswa_edit', NULL, NULL, NULL),
 (65, 'data_mahasiswa_show', NULL, NULL, NULL),
 (66, 'data_mahasiswa_delete', NULL, NULL, NULL),
-(67, 'data_mahasiswa_access', NULL, NULL, NULL);
+(67, 'data_mahasiswa_access', NULL, NULL, NULL),
+(68, 'data_dummy_create', NULL, NULL, NULL),
+(69, 'data_dummy_edit', NULL, NULL, NULL),
+(70, 'data_dummy_show', NULL, NULL, NULL),
+(71, 'data_dummy_delete', NULL, NULL, NULL),
+(72, 'data_dummy_access', NULL, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -418,6 +466,11 @@ INSERT INTO `permission_role` (`role_id`, `permission_id`) VALUES
 (1, 65),
 (1, 66),
 (1, 67),
+(1, 68),
+(1, 69),
+(1, 70),
+(1, 71),
+(1, 72),
 (2, 17),
 (2, 18),
 (2, 19),
@@ -468,7 +521,12 @@ INSERT INTO `permission_role` (`role_id`, `permission_id`) VALUES
 (2, 64),
 (2, 65),
 (2, 66),
-(2, 67);
+(2, 67),
+(2, 68),
+(2, 69),
+(2, 70),
+(2, 71),
+(2, 72);
 
 -- --------------------------------------------------------
 
@@ -551,11 +609,17 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `remember_token`, `created_at`, `updated_at`, `deleted_at`) VALUES
-(1, 'Admin', 'admin@admin.com', NULL, '$2y$10$jo66lqMygjYlHtOnLmc48u.hkq.Rw3fh8ocMiTxCM9S9VOb84avxW', NULL, NULL, NULL, NULL);
+(1, 'Admin', 'admin@admin.com', NULL, '$2y$10$jJPN9HaAWoC54kyqLyhGfuNq8DOKwIb/y.asQKlAmL84J4/6LYaUe', NULL, NULL, NULL, NULL);
 
 --
 -- Indexes for dumped tables
 --
+
+--
+-- Indexes for table `data_dummies`
+--
+ALTER TABLE `data_dummies`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `data_mahasiswas`
@@ -667,6 +731,12 @@ ALTER TABLE `users`
 --
 
 --
+-- AUTO_INCREMENT for table `data_dummies`
+--
+ALTER TABLE `data_dummies`
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
+
+--
 -- AUTO_INCREMENT for table `data_mahasiswas`
 --
 ALTER TABLE `data_mahasiswas`
@@ -706,13 +776,13 @@ ALTER TABLE `media`
 -- AUTO_INCREMENT for table `migrations`
 --
 ALTER TABLE `migrations`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 
 --
 -- AUTO_INCREMENT for table `permissions`
 --
 ALTER TABLE `permissions`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=68;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=73;
 
 --
 -- AUTO_INCREMENT for table `personal_access_tokens`

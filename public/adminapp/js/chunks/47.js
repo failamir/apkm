@@ -1,20 +1,211 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([[47],{
 
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/cruds/DataMahasiswas/Proses.vue?vue&type=script&lang=js&":
-/*!************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/adminapp/js/cruds/DataMahasiswas/Proses.vue?vue&type=script&lang=js& ***!
-  \************************************************************************************************************************************************************************************/
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/cruds/Users/Edit.vue?vue&type=script&lang=js&":
+/*!*************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/adminapp/js/cruds/Users/Edit.vue?vue&type=script&lang=js& ***!
+  \*************************************************************************************************************************************************************************/
 /*! exports provided: default */
-/***/ (function(module, exports) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-throw new Error("Module build failed (from ./node_modules/babel-loader/lib/index.js):\nSyntaxError: /Users/macbook/GitHub/apkm/resources/adminapp/js/cruds/DataMahasiswas/Proses.vue: Unexpected token (149:32)\n\n\u001b[0m \u001b[90m 147 |\u001b[39m     axios\u001b[33m.\u001b[39m\u001b[36mget\u001b[39m(\u001b[32m'andri'\u001b[39m)\u001b[33m.\u001b[39mthen(response \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[0m \u001b[90m 148 |\u001b[39m       \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mcharts \u001b[33m=\u001b[39m response\u001b[33m.\u001b[39mdata\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 149 |\u001b[39m       console\u001b[33m.\u001b[39mlog(response\u001b[33m.\u001b[39mdata\u001b[33m.\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m     |\u001b[39m                                 \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 150 |\u001b[39m     })\u001b[0m\n\u001b[0m \u001b[90m 151 |\u001b[39m   }\u001b[0m\n\u001b[0m \u001b[90m 152 |\u001b[39m }\u001b[0m\n    at instantiate (/Users/macbook/GitHub/apkm/node_modules/@babel/parser/lib/index.js:72:32)\n    at constructor (/Users/macbook/GitHub/apkm/node_modules/@babel/parser/lib/index.js:358:12)\n    at Parser.raise (/Users/macbook/GitHub/apkm/node_modules/@babel/parser/lib/index.js:3341:19)\n    at Parser.unexpected (/Users/macbook/GitHub/apkm/node_modules/@babel/parser/lib/index.js:3379:16)\n    at Parser.parseIdentifierName (/Users/macbook/GitHub/apkm/node_modules/@babel/parser/lib/index.js:14080:18)\n    at Parser.parseIdentifier (/Users/macbook/GitHub/apkm/node_modules/@babel/parser/lib/index.js:14060:23)\n    at Parser.parseMember (/Users/macbook/GitHub/apkm/node_modules/@babel/parser/lib/index.js:12722:28)\n    at Parser.parseSubscript (/Users/macbook/GitHub/apkm/node_modules/@babel/parser/lib/index.js:12696:21)\n    at Parser.parseSubscripts (/Users/macbook/GitHub/apkm/node_modules/@babel/parser/lib/index.js:12660:19)\n    at Parser.parseExprSubscripts (/Users/macbook/GitHub/apkm/node_modules/@babel/parser/lib/index.js:12649:17)\n    at Parser.parseUpdate (/Users/macbook/GitHub/apkm/node_modules/@babel/parser/lib/index.js:12622:21)\n    at Parser.parseMaybeUnary (/Users/macbook/GitHub/apkm/node_modules/@babel/parser/lib/index.js:12593:23)\n    at Parser.parseMaybeUnaryOrPrivate (/Users/macbook/GitHub/apkm/node_modules/@babel/parser/lib/index.js:12387:61)\n    at Parser.parseExprOps (/Users/macbook/GitHub/apkm/node_modules/@babel/parser/lib/index.js:12394:23)\n    at Parser.parseMaybeConditional (/Users/macbook/GitHub/apkm/node_modules/@babel/parser/lib/index.js:12364:23)\n    at Parser.parseMaybeAssign (/Users/macbook/GitHub/apkm/node_modules/@babel/parser/lib/index.js:12316:21)\n    at /Users/macbook/GitHub/apkm/node_modules/@babel/parser/lib/index.js:12274:39\n    at Parser.allowInAnd (/Users/macbook/GitHub/apkm/node_modules/@babel/parser/lib/index.js:14347:12)\n    at Parser.parseMaybeAssignAllowIn (/Users/macbook/GitHub/apkm/node_modules/@babel/parser/lib/index.js:12274:17)\n    at Parser.parseExprListItem (/Users/macbook/GitHub/apkm/node_modules/@babel/parser/lib/index.js:14052:18)\n    at Parser.parseCallExpressionArguments (/Users/macbook/GitHub/apkm/node_modules/@babel/parser/lib/index.js:12869:22)\n    at Parser.parseCoverCallAndAsyncArrowHead (/Users/macbook/GitHub/apkm/node_modules/@babel/parser/lib/index.js:12766:29)\n    at Parser.parseSubscript (/Users/macbook/GitHub/apkm/node_modules/@babel/parser/lib/index.js:12691:19)\n    at Parser.parseSubscripts (/Users/macbook/GitHub/apkm/node_modules/@babel/parser/lib/index.js:12660:19)\n    at Parser.parseExprSubscripts (/Users/macbook/GitHub/apkm/node_modules/@babel/parser/lib/index.js:12649:17)\n    at Parser.parseUpdate (/Users/macbook/GitHub/apkm/node_modules/@babel/parser/lib/index.js:12622:21)\n    at Parser.parseMaybeUnary (/Users/macbook/GitHub/apkm/node_modules/@babel/parser/lib/index.js:12593:23)\n    at Parser.parseMaybeUnaryOrPrivate (/Users/macbook/GitHub/apkm/node_modules/@babel/parser/lib/index.js:12387:61)\n    at Parser.parseExprOps (/Users/macbook/GitHub/apkm/node_modules/@babel/parser/lib/index.js:12394:23)\n    at Parser.parseMaybeConditional (/Users/macbook/GitHub/apkm/node_modules/@babel/parser/lib/index.js:12364:23)\n    at Parser.parseMaybeAssign (/Users/macbook/GitHub/apkm/node_modules/@babel/parser/lib/index.js:12316:21)\n    at Parser.parseExpressionBase (/Users/macbook/GitHub/apkm/node_modules/@babel/parser/lib/index.js:12252:23)\n    at /Users/macbook/GitHub/apkm/node_modules/@babel/parser/lib/index.js:12246:39\n    at Parser.allowInAnd (/Users/macbook/GitHub/apkm/node_modules/@babel/parser/lib/index.js:14341:16)\n    at Parser.parseExpression (/Users/macbook/GitHub/apkm/node_modules/@babel/parser/lib/index.js:12246:17)\n    at Parser.parseStatementContent (/Users/macbook/GitHub/apkm/node_modules/@babel/parser/lib/index.js:14781:23)");
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var vuex__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vuex */ "./node_modules/vuex/dist/vuex.esm.js");
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { _defineProperty(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  data: function data() {
+    return {
+      status: '',
+      activeField: ''
+    };
+  },
+  computed: _objectSpread({}, Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapGetters"])('UsersSingle', ['entry', 'loading', 'lists'])),
+  beforeDestroy: function beforeDestroy() {
+    this.resetState();
+  },
+  watch: {
+    '$route.params.id': {
+      immediate: true,
+      handler: function handler() {
+        this.resetState();
+        this.fetchEditData(this.$route.params.id);
+      }
+    }
+  },
+  methods: _objectSpread(_objectSpread({}, Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapActions"])('UsersSingle', ['fetchEditData', 'updateData', 'resetState', 'setName', 'setEmail', 'setPassword', 'setRoles'])), {}, {
+    updateName: function updateName(e) {
+      this.setName(e.target.value);
+    },
+    updateEmail: function updateEmail(e) {
+      this.setEmail(e.target.value);
+    },
+    updatePassword: function updatePassword(e) {
+      this.setPassword(e.target.value);
+    },
+    updateRoles: function updateRoles(value) {
+      this.setRoles(value);
+    },
+    submitForm: function submitForm() {
+      var _this = this;
+
+      this.updateData().then(function () {
+        _this.$router.push({
+          name: 'users.index'
+        });
+
+        _this.$eventHub.$emit('update-success');
+      })["catch"](function (error) {
+        _this.status = 'failed';
+
+        _.delay(function () {
+          _this.status = '';
+        }, 3000);
+      });
+    },
+    focusField: function focusField(name) {
+      this.activeField = name;
+    },
+    clearFocus: function clearFocus() {
+      this.activeField = '';
+    }
+  })
+});
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/cruds/DataMahasiswas/Proses.vue?vue&type=template&id=3ab03216&":
-/*!****************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/adminapp/js/cruds/DataMahasiswas/Proses.vue?vue&type=template&id=3ab03216& ***!
-  \****************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/cruds/Users/Edit.vue?vue&type=template&id=83330428&":
+/*!*****************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/adminapp/js/cruds/Users/Edit.vue?vue&type=template&id=83330428& ***!
+  \*****************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -27,192 +218,245 @@ var render = function () {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "container-fluid" }, [
-    _c("div", { staticClass: "row" }, [
-      _c("div", { staticClass: "col-md-12" }, [
-        _c("div", { staticClass: "card" }, [
-          _c(
-            "div",
-            { staticClass: "card-header card-header-primary card-header-icon" },
-            [
-              _vm._m(0),
-              _vm._v(" "),
-              _c("h4", { staticClass: "card-title" }, [
-                _vm._v(
-                  "\n            " +
-                    _vm._s(_vm.$t("global.view")) +
-                    "\n            "
-                ),
-                _c("strong", [
-                  _vm._v(_vm._s(_vm.$t("cruds.dataMahasiswa.title_singular"))),
-                ]),
-              ]),
-            ]
-          ),
-          _vm._v(" "),
-          _c("div", { staticClass: "card-body" }, [_c("back-button")], 1),
-          _vm._v(" "),
-          _c("div", { staticClass: "card-body" }, [
-            _c("div", { staticClass: "row" }, [
-              _c("div", { staticClass: "col-md-12" }, [
-                _c("div", { staticClass: "table-responsive" }, [
-                  _c("div", { staticClass: "table" }, [
-                    _c("tbody", [
-                      _c("tr", [
-                        _c("td", { staticClass: "text-primary" }, [
-                          _vm._v(
-                            "\n                        " +
-                              _vm._s(_vm.$t("cruds.dataMahasiswa.fields.id")) +
-                              "\n                      "
-                          ),
-                        ]),
-                        _vm._v(" "),
-                        _c("td", [
-                          _vm._v(
-                            "\n                        " +
-                              _vm._s(_vm.entry.id) +
-                              "\n                      "
-                          ),
-                        ]),
-                      ]),
-                      _vm._v(" "),
-                      _c("tr", [
-                        _c("td", { staticClass: "text-primary" }, [
-                          _vm._v(
-                            "\n                        " +
-                              _vm._s(
-                                _vm.$t("cruds.dataMahasiswa.fields.nama")
-                              ) +
-                              "\n                      "
-                          ),
-                        ]),
-                        _vm._v(" "),
-                        _c("td", [
-                          _vm._v(
-                            "\n                        " +
-                              _vm._s(_vm.entry.nama) +
-                              "\n                      "
-                          ),
-                        ]),
-                      ]),
-                      _vm._v(" "),
-                      _c("tr", [
-                        _c("td", { staticClass: "text-primary" }, [
-                          _vm._v(
-                            "\n                        " +
-                              _vm._s(
-                                _vm.$t(
-                                  "cruds.dataMahasiswa.fields.data_mahasiswa"
-                                )
-                              ) +
-                              "\n                      "
-                          ),
-                        ]),
-                        _vm._v(" "),
-                        _c(
-                          "td",
-                          [
-                            _c("datatable-attachments", {
-                              attrs: {
-                                row: _vm.entry,
-                                field: "data_mahasiswa",
-                              },
-                            }),
-                          ],
-                          1
-                        ),
-                      ]),
-                      _vm._v(" "),
-                      _c("tr", [
-                        _c("td", { staticClass: "text-primary" }, [
-                          _vm._v(
-                            "\n                        " +
-                              _vm._s(
-                                _vm.$t("cruds.dataMahasiswa.fields.batas_nilai")
-                              ) +
-                              "\n                      "
-                          ),
-                        ]),
-                        _vm._v(" "),
-                        _c("td", [
-                          _vm._v(
-                            "\n                        " +
-                              _vm._s(_vm.entry.batas_nilai) +
-                              "\n                        " +
-                              _vm._s(_vm.entry) +
-                              "\n                      "
-                          ),
-                        ]),
-                      ]),
+    _c(
+      "form",
+      {
+        on: {
+          submit: function ($event) {
+            $event.preventDefault()
+            return _vm.submitForm.apply(null, arguments)
+          },
+        },
+      },
+      [
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col-md-12" }, [
+            _c("div", { staticClass: "card" }, [
+              _c(
+                "div",
+                {
+                  staticClass:
+                    "card-header card-header-primary card-header-icon",
+                },
+                [
+                  _vm._m(0),
+                  _vm._v(" "),
+                  _c("h4", { staticClass: "card-title" }, [
+                    _vm._v(
+                      "\n              " +
+                        _vm._s(_vm.$t("global.edit")) +
+                        "\n              "
+                    ),
+                    _c("strong", [
+                      _vm._v(_vm._s(_vm.$t("cruds.user.title_singular"))),
                     ]),
                   ]),
-                ]),
-              ]),
-            ]),
-          ]),
-        ]),
-      ]),
-    ]),
-    _vm._v(" "),
-    _c(
-      "div",
-      { staticClass: "row" },
-      [
-        _vm._l(_vm.charts, function (chart, key) {
-          return [
-            _c(
-              "div",
-              { key: key, class: chart.column_class },
-              [
-                chart.type === "Stats"
-                  ? _c("stats-card", { attrs: { "chart-data": chart } })
-                  : chart.type === "Latest"
-                  ? _c("latest-card", { attrs: { "chart-data": chart } })
-                  : _c("div", { staticClass: "card" }, [
+                ]
+              ),
+              _vm._v(" "),
+              _c("div", { staticClass: "card-body" }, [_c("back-button")], 1),
+              _vm._v(" "),
+              _c(
+                "div",
+                { staticClass: "card-body" },
+                [
+                  _c("bootstrap-alert"),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "row" }, [
+                    _c("div", { staticClass: "col-md-12" }, [
                       _c(
                         "div",
                         {
-                          staticClass:
-                            "card-header card-header-primary card-header-icon",
+                          staticClass: "form-group bmd-form-group",
+                          class: {
+                            "has-items": _vm.entry.name,
+                            "is-focused": _vm.activeField == "name",
+                          },
                         },
                         [
-                          _c("div", { staticClass: "card-icon" }, [
-                            _c("i", { staticClass: "material-icons" }, [
-                              _vm._v(_vm._s(chart.icon)),
-                            ]),
-                          ]),
+                          _c(
+                            "label",
+                            { staticClass: "bmd-label-floating required" },
+                            [_vm._v(_vm._s(_vm.$t("cruds.user.fields.name")))]
+                          ),
                           _vm._v(" "),
-                          _c("h4", { staticClass: "card-title" }, [
-                            _vm._v(
-                              "\n              " +
-                                _vm._s(chart.title) +
-                                "\n            "
-                            ),
-                          ]),
+                          _c("input", {
+                            staticClass: "form-control",
+                            attrs: { type: "text", required: "" },
+                            domProps: { value: _vm.entry.name },
+                            on: {
+                              input: _vm.updateName,
+                              focus: function ($event) {
+                                return _vm.focusField("name")
+                              },
+                              blur: _vm.clearFocus,
+                            },
+                          }),
                         ]
                       ),
                       _vm._v(" "),
                       _c(
                         "div",
-                        { staticClass: "card-body" },
+                        {
+                          staticClass: "form-group bmd-form-group",
+                          class: {
+                            "has-items": _vm.entry.email,
+                            "is-focused": _vm.activeField == "email",
+                          },
+                        },
                         [
-                          _c(chart.type + "Chart", {
-                            tag: "component",
+                          _c(
+                            "label",
+                            { staticClass: "bmd-label-floating required" },
+                            [_vm._v(_vm._s(_vm.$t("cruds.user.fields.email")))]
+                          ),
+                          _vm._v(" "),
+                          _c("input", {
+                            staticClass: "form-control",
+                            attrs: { type: "text", required: "" },
+                            domProps: { value: _vm.entry.email },
+                            on: {
+                              input: _vm.updateEmail,
+                              focus: function ($event) {
+                                return _vm.focusField("email")
+                              },
+                              blur: _vm.clearFocus,
+                            },
+                          }),
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        {
+                          staticClass: "form-group bmd-form-group",
+                          class: {
+                            "has-items": _vm.entry.password,
+                            "is-focused": _vm.activeField == "password",
+                          },
+                        },
+                        [
+                          _c("label", { staticClass: "bmd-label-floating" }, [
+                            _vm._v(
+                              _vm._s(_vm.$t("cruds.user.fields.password"))
+                            ),
+                          ]),
+                          _vm._v(" "),
+                          _c("input", {
+                            staticClass: "form-control",
+                            attrs: { type: "password" },
+                            domProps: { value: _vm.entry.password },
+                            on: {
+                              input: _vm.updatePassword,
+                              focus: function ($event) {
+                                return _vm.focusField("password")
+                              },
+                              blur: _vm.clearFocus,
+                            },
+                          }),
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        {
+                          staticClass: "form-group bmd-form-group",
+                          class: {
+                            "has-items": _vm.entry.roles.length !== 0,
+                            "is-focused": _vm.activeField == "roles",
+                          },
+                        },
+                        [
+                          _c(
+                            "label",
+                            { staticClass: "bmd-label-floating required" },
+                            [_vm._v(_vm._s(_vm.$t("cruds.user.fields.roles")))]
+                          ),
+                          _vm._v(" "),
+                          _c("v-select", {
+                            key: "roles-field",
                             attrs: {
-                              "chart-data": chart,
-                              options: chart.options,
+                              name: "roles",
+                              label: "title",
+                              value: _vm.entry.roles,
+                              options: _vm.lists.roles,
+                              closeOnSelect: false,
+                              multiple: "",
+                            },
+                            on: {
+                              input: _vm.updateRoles,
+                              search: [
+                                function ($event) {
+                                  if (
+                                    !$event.type.indexOf("key") &&
+                                    _vm._k(
+                                      $event.keyCode,
+                                      "focus",
+                                      undefined,
+                                      $event.key,
+                                      undefined
+                                    )
+                                  ) {
+                                    return null
+                                  }
+                                  return _vm.focusField("roles")
+                                },
+                                function ($event) {
+                                  if (
+                                    !$event.type.indexOf("key") &&
+                                    _vm._k(
+                                      $event.keyCode,
+                                      "blur",
+                                      undefined,
+                                      $event.key,
+                                      undefined
+                                    )
+                                  ) {
+                                    return null
+                                  }
+                                  return _vm.clearFocus.apply(null, arguments)
+                                },
+                              ],
                             },
                           }),
                         ],
                         1
                       ),
                     ]),
-              ],
-              1
-            ),
-          ]
-        }),
-      ],
-      2
+                  ]),
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                { staticClass: "card-footer" },
+                [
+                  _c(
+                    "vue-button-spinner",
+                    {
+                      staticClass: "btn-primary",
+                      attrs: {
+                        status: _vm.status,
+                        isLoading: _vm.loading,
+                        disabled: _vm.loading,
+                      },
+                    },
+                    [
+                      _vm._v(
+                        "\n              " +
+                          _vm._s(_vm.$t("global.save")) +
+                          "\n            "
+                      ),
+                    ]
+                  ),
+                ],
+                1
+              ),
+            ]),
+          ]),
+        ]),
+      ]
     ),
   ])
 }
@@ -222,7 +466,7 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "card-icon" }, [
-      _c("i", { staticClass: "material-icons" }, [_vm._v("remove_red_eye")]),
+      _c("i", { staticClass: "material-icons" }, [_vm._v("edit")]),
     ])
   },
 ]
@@ -232,17 +476,17 @@ render._withStripped = true
 
 /***/ }),
 
-/***/ "./resources/adminapp/js/cruds/DataMahasiswas/Proses.vue":
-/*!***************************************************************!*\
-  !*** ./resources/adminapp/js/cruds/DataMahasiswas/Proses.vue ***!
-  \***************************************************************/
+/***/ "./resources/adminapp/js/cruds/Users/Edit.vue":
+/*!****************************************************!*\
+  !*** ./resources/adminapp/js/cruds/Users/Edit.vue ***!
+  \****************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Proses_vue_vue_type_template_id_3ab03216___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Proses.vue?vue&type=template&id=3ab03216& */ "./resources/adminapp/js/cruds/DataMahasiswas/Proses.vue?vue&type=template&id=3ab03216&");
-/* harmony import */ var _Proses_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Proses.vue?vue&type=script&lang=js& */ "./resources/adminapp/js/cruds/DataMahasiswas/Proses.vue?vue&type=script&lang=js&");
+/* harmony import */ var _Edit_vue_vue_type_template_id_83330428___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Edit.vue?vue&type=template&id=83330428& */ "./resources/adminapp/js/cruds/Users/Edit.vue?vue&type=template&id=83330428&");
+/* harmony import */ var _Edit_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Edit.vue?vue&type=script&lang=js& */ "./resources/adminapp/js/cruds/Users/Edit.vue?vue&type=script&lang=js&");
 /* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
@@ -252,9 +496,9 @@ __webpack_require__.r(__webpack_exports__);
 /* normalize component */
 
 var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
-  _Proses_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _Proses_vue_vue_type_template_id_3ab03216___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _Proses_vue_vue_type_template_id_3ab03216___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  _Edit_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _Edit_vue_vue_type_template_id_83330428___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Edit_vue_vue_type_template_id_83330428___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
   null,
   null,
@@ -264,38 +508,38 @@ var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_
 
 /* hot reload */
 if (false) { var api; }
-component.options.__file = "resources/adminapp/js/cruds/DataMahasiswas/Proses.vue"
+component.options.__file = "resources/adminapp/js/cruds/Users/Edit.vue"
 /* harmony default export */ __webpack_exports__["default"] = (component.exports);
 
 /***/ }),
 
-/***/ "./resources/adminapp/js/cruds/DataMahasiswas/Proses.vue?vue&type=script&lang=js&":
-/*!****************************************************************************************!*\
-  !*** ./resources/adminapp/js/cruds/DataMahasiswas/Proses.vue?vue&type=script&lang=js& ***!
-  \****************************************************************************************/
+/***/ "./resources/adminapp/js/cruds/Users/Edit.vue?vue&type=script&lang=js&":
+/*!*****************************************************************************!*\
+  !*** ./resources/adminapp/js/cruds/Users/Edit.vue?vue&type=script&lang=js& ***!
+  \*****************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Proses_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../node_modules/vue-loader/lib??vue-loader-options!./Proses.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/cruds/DataMahasiswas/Proses.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Proses_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Edit_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../node_modules/vue-loader/lib??vue-loader-options!./Edit.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/cruds/Users/Edit.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Edit_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
 
 /***/ }),
 
-/***/ "./resources/adminapp/js/cruds/DataMahasiswas/Proses.vue?vue&type=template&id=3ab03216&":
-/*!**********************************************************************************************!*\
-  !*** ./resources/adminapp/js/cruds/DataMahasiswas/Proses.vue?vue&type=template&id=3ab03216& ***!
-  \**********************************************************************************************/
+/***/ "./resources/adminapp/js/cruds/Users/Edit.vue?vue&type=template&id=83330428&":
+/*!***********************************************************************************!*\
+  !*** ./resources/adminapp/js/cruds/Users/Edit.vue?vue&type=template&id=83330428& ***!
+  \***********************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Proses_vue_vue_type_template_id_3ab03216___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../node_modules/vue-loader/lib??vue-loader-options!./Proses.vue?vue&type=template&id=3ab03216& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/cruds/DataMahasiswas/Proses.vue?vue&type=template&id=3ab03216&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Proses_vue_vue_type_template_id_3ab03216___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Edit_vue_vue_type_template_id_83330428___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../node_modules/vue-loader/lib??vue-loader-options!./Edit.vue?vue&type=template&id=83330428& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/cruds/Users/Edit.vue?vue&type=template&id=83330428&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Edit_vue_vue_type_template_id_83330428___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Proses_vue_vue_type_template_id_3ab03216___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Edit_vue_vue_type_template_id_83330428___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 

@@ -43,7 +43,7 @@
 /******/
 /******/ 	// script path function
 /******/ 	function jsonpScriptSrc(chunkId) {
-/******/ 		return __webpack_require__.p + "adminapp/js/chunks/" + ({}[chunkId]||chunkId) + ".js?id=" + {"0":"f219259f996a7d239986","1":"3cd49b4dc0196faa31fa","2":"e06b5eeabb65e04a49dc","3":"b4abfe09246e052024ca","4":"82bc177cce83af40f64f","5":"dd6725237eec45b914f2","6":"0ec9f2b2ace60b4ad807","7":"64153f356b50e6cf6f1c","8":"92c93734f503a58aa128","9":"c7aeb36473e5ecda2f6d","10":"ffa0d493e4f6cff4cb77","11":"0fa0bc308061dcf00c78","12":"06f0a746fd40c3767221","13":"a667098fe96c9f6683c1","14":"0fc26f477d1b46dbf0c4","15":"d3c9b44c3e1a0840b664","16":"a775dcf1d256724d29af","17":"d49ce685d5e8cea1bf68","18":"7a12cf41ec7a4bdc1594","19":"542ba91b37c699eed4ec","20":"94dd378efc933a13181e","21":"e2b59b25c76eedb31e02","22":"d88fc3aa4db1c53c56fe","23":"c4be71187ff0ecc7437a","24":"589a7e9f0b99c0318d51","25":"7b01c5f053f0672f64fd","26":"61f56290cf9579a0cb52","27":"ec236bec87d18a5e3ed7","28":"7c8f3cf2acd482da8d78","29":"d5a6b16d91d31ff98e3d","30":"84de0f548301d530fe3d","31":"b2d95c46ac441e46c14d","32":"b138a475bc2204e21955","33":"628ab90cacdf004b3797","34":"82400d23fcb36dad1dd7","35":"a69ad5cfced95a7a596e","36":"c377074c5d5dd677822d","37":"6e63a85d5428d2b464ce","38":"bb7afc77baf364ef66b0","39":"98f0c77bc3bbef422326","40":"85a6b7d0ac6d69e62d8b","41":"bf31d75d472ec91d47ce","42":"78353f674bf93e278736","43":"b3ce6186f9fdc8c8095c","44":"13471f78cccc45cc1dda","45":"076683ce9896bb9cdcd1","46":"c7aad032636070bb1ad1","48":"6db423503fe44d64806d","49":"7f01b4659bc9efa1bfb6"}[chunkId] + ""
+/******/ 		return __webpack_require__.p + "adminapp/js/chunks/" + ({}[chunkId]||chunkId) + ".js?id=" + {"0":"0c8674f46a6768a32c51","1":"3cd49b4dc0196faa31fa","2":"e06b5eeabb65e04a49dc","3":"b4abfe09246e052024ca","4":"82bc177cce83af40f64f","5":"73063845fe3647c81e70","6":"4e3ce89135404941490e","7":"c43dd946bd8ce4724aee","8":"c7df697cbed33e51883a","9":"4369d39b5e495649427d","10":"e7a96a8964b180d186b4","11":"8df51b4718d271a9647c","12":"dafd1a64f95eb2cbf923","13":"38ae197e12e56ace30cf","14":"5a97c1c3f9848071cfe8","15":"d3c9b44c3e1a0840b664","16":"6eee5c87aff536ce8bff","17":"c4ff099dde6732188b99","18":"8343f62faf281ddd6374","19":"5aad4c77bffbe2c4015b","20":"2e727c2978db2a104d03","21":"44a54d769382a551520c","22":"fab45b1e6e9a839614f5","23":"c4be71187ff0ecc7437a","24":"589a7e9f0b99c0318d51","25":"28c47fc44906265749e2","26":"45b272fa1f4dbb18a4af","27":"4a7dd5f62ad6fe68c5c1","28":"aee09f1d8bb25cf5174f","29":"76c7323da7502a3d7184","30":"a624d1172ce855baf758","31":"1884bfe63110b95d1746","32":"a9dd0eab3a40eff3b6c9","33":"9dd84e6afc0eefea59e2","34":"3118e2aa4d36e186bb17","35":"9ac7e56414b0f8e34547","36":"ff574cc56365f789378e","37":"d285268e597b430c01b9","38":"204bac360a212d7febef","39":"219f193354a006433adf","40":"27b5f1a3139b9436c133","41":"e4c06b19e748b7901ede","42":"691e0a026af828e2658a","43":"978d80e132ff73d67f9c","44":"05601b8d4b382f1ebf1b","45":"dc9a72985bd034190212","46":"42db12bca4d95a880ad9","47":"5538875e9dcc1c2d4612","48":"6db423503fe44d64806d","49":"7f01b4659bc9efa1bfb6","50":"58660efa8a2624f9ee9b","51":"186483a4da21a0750ec8"}[chunkId] + ""
 /******/ 	}
 /******/
 /******/ 	// The require function
@@ -55271,12 +55271,9 @@ var View = {
 var routes = [{
   path: '/',
   component: function component() {
-    return __webpack_require__.e(/*! import() */ 6).then(__webpack_require__.bind(null, /*! @pages/Layout/DashboardLayout.vue */ "./resources/adminapp/js/pages/Layout/DashboardLayout.vue"));
+    return __webpack_require__.e(/*! import() */ 5).then(__webpack_require__.bind(null, /*! @pages/Layout/DashboardLayout.vue */ "./resources/adminapp/js/pages/Layout/DashboardLayout.vue"));
   },
   redirect: 'dashboard',
-  // path: '/andri',
-  // component: () => import('@cruds/DataMahasiswas/Proses.vue'),
-  // redirect: 'andri',
   children: [{
     path: 'dashboard',
     name: 'dashboard',
@@ -55286,133 +55283,11 @@ var routes = [{
     meta: {
       title: 'global.dashboard'
     }
-  }, // {
-  //   path: 'andri',
-  //   name: 'andri',
-  //   component: () => import('@cruds/DataMahasiswas/Proses.vue'),
-  //   meta: { title: 'global.dashboard' }
-  // },
-  {
-    path: 'user-management',
-    name: 'user_management',
-    component: View,
-    redirect: {
-      name: 'permissions.index'
-    },
-    children: [{
-      path: 'permissions',
-      name: 'permissions.index',
-      component: function component() {
-        return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(20)]).then(__webpack_require__.bind(null, /*! @cruds/Permissions/Index.vue */ "./resources/adminapp/js/cruds/Permissions/Index.vue"));
-      },
-      meta: {
-        title: 'cruds.permission.title'
-      }
-    }, {
-      path: 'permissions/create',
-      name: 'permissions.create',
-      component: function component() {
-        return __webpack_require__.e(/*! import() */ 37).then(__webpack_require__.bind(null, /*! @cruds/Permissions/Create.vue */ "./resources/adminapp/js/cruds/Permissions/Create.vue"));
-      },
-      meta: {
-        title: 'cruds.permission.title'
-      }
-    }, {
-      path: 'permissions/:id',
-      name: 'permissions.show',
-      component: function component() {
-        return __webpack_require__.e(/*! import() */ 39).then(__webpack_require__.bind(null, /*! @cruds/Permissions/Show.vue */ "./resources/adminapp/js/cruds/Permissions/Show.vue"));
-      },
-      meta: {
-        title: 'cruds.permission.title'
-      }
-    }, {
-      path: 'permissions/:id/edit',
-      name: 'permissions.edit',
-      component: function component() {
-        return __webpack_require__.e(/*! import() */ 38).then(__webpack_require__.bind(null, /*! @cruds/Permissions/Edit.vue */ "./resources/adminapp/js/cruds/Permissions/Edit.vue"));
-      },
-      meta: {
-        title: 'cruds.permission.title'
-      }
-    }, {
-      path: 'roles',
-      name: 'roles.index',
-      component: function component() {
-        return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(7)]).then(__webpack_require__.bind(null, /*! @cruds/Roles/Index.vue */ "./resources/adminapp/js/cruds/Roles/Index.vue"));
-      },
-      meta: {
-        title: 'cruds.role.title'
-      }
-    }, {
-      path: 'roles/create',
-      name: 'roles.create',
-      component: function component() {
-        return __webpack_require__.e(/*! import() */ 40).then(__webpack_require__.bind(null, /*! @cruds/Roles/Create.vue */ "./resources/adminapp/js/cruds/Roles/Create.vue"));
-      },
-      meta: {
-        title: 'cruds.role.title'
-      }
-    }, {
-      path: 'roles/:id',
-      name: 'roles.show',
-      component: function component() {
-        return __webpack_require__.e(/*! import() */ 14).then(__webpack_require__.bind(null, /*! @cruds/Roles/Show.vue */ "./resources/adminapp/js/cruds/Roles/Show.vue"));
-      },
-      meta: {
-        title: 'cruds.role.title'
-      }
-    }, {
-      path: 'roles/:id/edit',
-      name: 'roles.edit',
-      component: function component() {
-        return __webpack_require__.e(/*! import() */ 41).then(__webpack_require__.bind(null, /*! @cruds/Roles/Edit.vue */ "./resources/adminapp/js/cruds/Roles/Edit.vue"));
-      },
-      meta: {
-        title: 'cruds.role.title'
-      }
-    }, {
-      path: 'users',
-      name: 'users.index',
-      component: function component() {
-        return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(8)]).then(__webpack_require__.bind(null, /*! @cruds/Users/Index.vue */ "./resources/adminapp/js/cruds/Users/Index.vue"));
-      },
-      meta: {
-        title: 'cruds.user.title'
-      }
-    }, {
-      path: 'users/create',
-      name: 'users.create',
-      component: function component() {
-        return __webpack_require__.e(/*! import() */ 45).then(__webpack_require__.bind(null, /*! @cruds/Users/Create.vue */ "./resources/adminapp/js/cruds/Users/Create.vue"));
-      },
-      meta: {
-        title: 'cruds.user.title'
-      }
-    }, {
-      path: 'users/:id',
-      name: 'users.show',
-      component: function component() {
-        return __webpack_require__.e(/*! import() */ 15).then(__webpack_require__.bind(null, /*! @cruds/Users/Show.vue */ "./resources/adminapp/js/cruds/Users/Show.vue"));
-      },
-      meta: {
-        title: 'cruds.user.title'
-      }
-    }, {
-      path: 'users/:id/edit',
-      name: 'users.edit',
-      component: function component() {
-        return __webpack_require__.e(/*! import() */ 46).then(__webpack_require__.bind(null, /*! @cruds/Users/Edit.vue */ "./resources/adminapp/js/cruds/Users/Edit.vue"));
-      },
-      meta: {
-        title: 'cruds.user.title'
-      }
-    }]
   }, {
     path: 'mahasiswas',
     name: 'mahasiswas.index',
     component: function component() {
-      return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(9)]).then(__webpack_require__.bind(null, /*! @cruds/Mahasiswas/Index.vue */ "./resources/adminapp/js/cruds/Mahasiswas/Index.vue"));
+      return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(16)]).then(__webpack_require__.bind(null, /*! @cruds/Mahasiswas/Index.vue */ "./resources/adminapp/js/cruds/Mahasiswas/Index.vue"));
     },
     meta: {
       title: 'cruds.mahasiswa.title'
@@ -55421,7 +55296,7 @@ var routes = [{
     path: 'mahasiswas/create',
     name: 'mahasiswas.create',
     component: function component() {
-      return __webpack_require__.e(/*! import() */ 33).then(__webpack_require__.bind(null, /*! @cruds/Mahasiswas/Create.vue */ "./resources/adminapp/js/cruds/Mahasiswas/Create.vue"));
+      return __webpack_require__.e(/*! import() */ 35).then(__webpack_require__.bind(null, /*! @cruds/Mahasiswas/Create.vue */ "./resources/adminapp/js/cruds/Mahasiswas/Create.vue"));
     },
     meta: {
       title: 'cruds.mahasiswa.title'
@@ -55430,7 +55305,7 @@ var routes = [{
     path: 'mahasiswas/:id',
     name: 'mahasiswas.show',
     component: function component() {
-      return __webpack_require__.e(/*! import() */ 16).then(__webpack_require__.bind(null, /*! @cruds/Mahasiswas/Show.vue */ "./resources/adminapp/js/cruds/Mahasiswas/Show.vue"));
+      return __webpack_require__.e(/*! import() */ 17).then(__webpack_require__.bind(null, /*! @cruds/Mahasiswas/Show.vue */ "./resources/adminapp/js/cruds/Mahasiswas/Show.vue"));
     },
     meta: {
       title: 'cruds.mahasiswa.title'
@@ -55439,7 +55314,7 @@ var routes = [{
     path: 'mahasiswas/:id/edit',
     name: 'mahasiswas.edit',
     component: function component() {
-      return __webpack_require__.e(/*! import() */ 34).then(__webpack_require__.bind(null, /*! @cruds/Mahasiswas/Edit.vue */ "./resources/adminapp/js/cruds/Mahasiswas/Edit.vue"));
+      return __webpack_require__.e(/*! import() */ 36).then(__webpack_require__.bind(null, /*! @cruds/Mahasiswas/Edit.vue */ "./resources/adminapp/js/cruds/Mahasiswas/Edit.vue"));
     },
     meta: {
       title: 'cruds.mahasiswa.title'
@@ -55448,7 +55323,7 @@ var routes = [{
     path: 'mata-kuliahs',
     name: 'mata_kuliahs.index',
     component: function component() {
-      return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(10)]).then(__webpack_require__.bind(null, /*! @cruds/MataKuliahs/Index.vue */ "./resources/adminapp/js/cruds/MataKuliahs/Index.vue"));
+      return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(18)]).then(__webpack_require__.bind(null, /*! @cruds/MataKuliahs/Index.vue */ "./resources/adminapp/js/cruds/MataKuliahs/Index.vue"));
     },
     meta: {
       title: 'cruds.mataKuliah.title'
@@ -55457,7 +55332,7 @@ var routes = [{
     path: 'mata-kuliahs/create',
     name: 'mata_kuliahs.create',
     component: function component() {
-      return __webpack_require__.e(/*! import() */ 35).then(__webpack_require__.bind(null, /*! @cruds/MataKuliahs/Create.vue */ "./resources/adminapp/js/cruds/MataKuliahs/Create.vue"));
+      return __webpack_require__.e(/*! import() */ 37).then(__webpack_require__.bind(null, /*! @cruds/MataKuliahs/Create.vue */ "./resources/adminapp/js/cruds/MataKuliahs/Create.vue"));
     },
     meta: {
       title: 'cruds.mataKuliah.title'
@@ -55466,7 +55341,7 @@ var routes = [{
     path: 'mata-kuliahs/:id',
     name: 'mata_kuliahs.show',
     component: function component() {
-      return __webpack_require__.e(/*! import() */ 17).then(__webpack_require__.bind(null, /*! @cruds/MataKuliahs/Show.vue */ "./resources/adminapp/js/cruds/MataKuliahs/Show.vue"));
+      return __webpack_require__.e(/*! import() */ 19).then(__webpack_require__.bind(null, /*! @cruds/MataKuliahs/Show.vue */ "./resources/adminapp/js/cruds/MataKuliahs/Show.vue"));
     },
     meta: {
       title: 'cruds.mataKuliah.title'
@@ -55475,7 +55350,7 @@ var routes = [{
     path: 'mata-kuliahs/:id/edit',
     name: 'mata_kuliahs.edit',
     component: function component() {
-      return __webpack_require__.e(/*! import() */ 36).then(__webpack_require__.bind(null, /*! @cruds/MataKuliahs/Edit.vue */ "./resources/adminapp/js/cruds/MataKuliahs/Edit.vue"));
+      return __webpack_require__.e(/*! import() */ 38).then(__webpack_require__.bind(null, /*! @cruds/MataKuliahs/Edit.vue */ "./resources/adminapp/js/cruds/MataKuliahs/Edit.vue"));
     },
     meta: {
       title: 'cruds.mataKuliah.title'
@@ -55484,7 +55359,7 @@ var routes = [{
     path: 'dosens',
     name: 'dosens.index',
     component: function component() {
-      return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(5)]).then(__webpack_require__.bind(null, /*! @cruds/Dosens/Index.vue */ "./resources/adminapp/js/cruds/Dosens/Index.vue"));
+      return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(6)]).then(__webpack_require__.bind(null, /*! @cruds/Dosens/Index.vue */ "./resources/adminapp/js/cruds/Dosens/Index.vue"));
     },
     meta: {
       title: 'cruds.dosen.title'
@@ -55493,7 +55368,7 @@ var routes = [{
     path: 'dosens/create',
     name: 'dosens.create',
     component: function component() {
-      return __webpack_require__.e(/*! import() */ 28).then(__webpack_require__.bind(null, /*! @cruds/Dosens/Create.vue */ "./resources/adminapp/js/cruds/Dosens/Create.vue"));
+      return __webpack_require__.e(/*! import() */ 29).then(__webpack_require__.bind(null, /*! @cruds/Dosens/Create.vue */ "./resources/adminapp/js/cruds/Dosens/Create.vue"));
     },
     meta: {
       title: 'cruds.dosen.title'
@@ -55502,7 +55377,7 @@ var routes = [{
     path: 'dosens/:id',
     name: 'dosens.show',
     component: function component() {
-      return __webpack_require__.e(/*! import() */ 12).then(__webpack_require__.bind(null, /*! @cruds/Dosens/Show.vue */ "./resources/adminapp/js/cruds/Dosens/Show.vue"));
+      return __webpack_require__.e(/*! import() */ 7).then(__webpack_require__.bind(null, /*! @cruds/Dosens/Show.vue */ "./resources/adminapp/js/cruds/Dosens/Show.vue"));
     },
     meta: {
       title: 'cruds.dosen.title'
@@ -55511,7 +55386,7 @@ var routes = [{
     path: 'dosens/:id/edit',
     name: 'dosens.edit',
     component: function component() {
-      return __webpack_require__.e(/*! import() */ 29).then(__webpack_require__.bind(null, /*! @cruds/Dosens/Edit.vue */ "./resources/adminapp/js/cruds/Dosens/Edit.vue"));
+      return __webpack_require__.e(/*! import() */ 30).then(__webpack_require__.bind(null, /*! @cruds/Dosens/Edit.vue */ "./resources/adminapp/js/cruds/Dosens/Edit.vue"));
     },
     meta: {
       title: 'cruds.dosen.title'
@@ -55520,7 +55395,7 @@ var routes = [{
     path: 'jurusans',
     name: 'jurusans.index',
     component: function component() {
-      return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(19)]).then(__webpack_require__.bind(null, /*! @cruds/Jurusans/Index.vue */ "./resources/adminapp/js/cruds/Jurusans/Index.vue"));
+      return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(33)]).then(__webpack_require__.bind(null, /*! @cruds/Jurusans/Index.vue */ "./resources/adminapp/js/cruds/Jurusans/Index.vue"));
     },
     meta: {
       title: 'cruds.jurusan.title'
@@ -55529,7 +55404,7 @@ var routes = [{
     path: 'jurusans/create',
     name: 'jurusans.create',
     component: function component() {
-      return __webpack_require__.e(/*! import() */ 30).then(__webpack_require__.bind(null, /*! @cruds/Jurusans/Create.vue */ "./resources/adminapp/js/cruds/Jurusans/Create.vue"));
+      return __webpack_require__.e(/*! import() */ 31).then(__webpack_require__.bind(null, /*! @cruds/Jurusans/Create.vue */ "./resources/adminapp/js/cruds/Jurusans/Create.vue"));
     },
     meta: {
       title: 'cruds.jurusan.title'
@@ -55538,7 +55413,7 @@ var routes = [{
     path: 'jurusans/:id',
     name: 'jurusans.show',
     component: function component() {
-      return __webpack_require__.e(/*! import() */ 32).then(__webpack_require__.bind(null, /*! @cruds/Jurusans/Show.vue */ "./resources/adminapp/js/cruds/Jurusans/Show.vue"));
+      return __webpack_require__.e(/*! import() */ 34).then(__webpack_require__.bind(null, /*! @cruds/Jurusans/Show.vue */ "./resources/adminapp/js/cruds/Jurusans/Show.vue"));
     },
     meta: {
       title: 'cruds.jurusan.title'
@@ -55547,7 +55422,7 @@ var routes = [{
     path: 'jurusans/:id/edit',
     name: 'jurusans.edit',
     component: function component() {
-      return __webpack_require__.e(/*! import() */ 31).then(__webpack_require__.bind(null, /*! @cruds/Jurusans/Edit.vue */ "./resources/adminapp/js/cruds/Jurusans/Edit.vue"));
+      return __webpack_require__.e(/*! import() */ 32).then(__webpack_require__.bind(null, /*! @cruds/Jurusans/Edit.vue */ "./resources/adminapp/js/cruds/Jurusans/Edit.vue"));
     },
     meta: {
       title: 'cruds.jurusan.title'
@@ -55556,7 +55431,7 @@ var routes = [{
     path: 'data-mahasiswas',
     name: 'data_mahasiswas.index',
     component: function component() {
-      return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(11)]).then(__webpack_require__.bind(null, /*! @cruds/DataMahasiswas/Index.vue */ "./resources/adminapp/js/cruds/DataMahasiswas/Index.vue"));
+      return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(10)]).then(__webpack_require__.bind(null, /*! @cruds/DataMahasiswas/Index.vue */ "./resources/adminapp/js/cruds/DataMahasiswas/Index.vue"));
     },
     meta: {
       title: 'cruds.dataMahasiswa.title'
@@ -55565,7 +55440,7 @@ var routes = [{
     path: 'data-mahasiswas/create',
     name: 'data_mahasiswas.create',
     component: function component() {
-      return Promise.all(/*! import() */[__webpack_require__.e(2), __webpack_require__.e(1), __webpack_require__.e(26)]).then(__webpack_require__.bind(null, /*! @cruds/DataMahasiswas/Create.vue */ "./resources/adminapp/js/cruds/DataMahasiswas/Create.vue"));
+      return Promise.all(/*! import() */[__webpack_require__.e(2), __webpack_require__.e(1), __webpack_require__.e(27)]).then(__webpack_require__.bind(null, /*! @cruds/DataMahasiswas/Create.vue */ "./resources/adminapp/js/cruds/DataMahasiswas/Create.vue"));
     },
     meta: {
       title: 'cruds.dataMahasiswa.title'
@@ -55574,7 +55449,16 @@ var routes = [{
     path: 'data-mahasiswas/:id',
     name: 'data_mahasiswas.show',
     component: function component() {
-      return __webpack_require__.e(/*! import() */ 13).then(__webpack_require__.bind(null, /*! @cruds/DataMahasiswas/Show.vue */ "./resources/adminapp/js/cruds/DataMahasiswas/Show.vue"));
+      return Promise.all(/*! import() */[__webpack_require__.e(11), __webpack_require__.e(51)]).then(__webpack_require__.bind(null, /*! @cruds/DataMahasiswas/Show.vue */ "./resources/adminapp/js/cruds/DataMahasiswas/Show.vue"));
+    },
+    meta: {
+      title: 'cruds.dataMahasiswa.title'
+    }
+  }, {
+    path: 'data-mahasiswas/:id/edit',
+    name: 'data_mahasiswas.edit',
+    component: function component() {
+      return Promise.all(/*! import() */[__webpack_require__.e(2), __webpack_require__.e(1), __webpack_require__.e(28)]).then(__webpack_require__.bind(null, /*! @cruds/DataMahasiswas/Edit.vue */ "./resources/adminapp/js/cruds/DataMahasiswas/Edit.vue"));
     },
     meta: {
       title: 'cruds.dataMahasiswa.title'
@@ -55589,31 +55473,49 @@ var routes = [{
       title: 'cruds.dataMahasiswa.title'
     }
   }, {
-    path: 'data-mahasiswas/:id/edit',
-    name: 'data_mahasiswas.edit',
+    path: 'data-mahasiswa-on-goings',
+    name: 'data_mahasiswa_on_goings.index',
     component: function component() {
-      return Promise.all(/*! import() */[__webpack_require__.e(2), __webpack_require__.e(1), __webpack_require__.e(27)]).then(__webpack_require__.bind(null, /*! @cruds/DataMahasiswas/Edit.vue */ "./resources/adminapp/js/cruds/DataMahasiswas/Edit.vue"));
+      return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(8)]).then(__webpack_require__.bind(null, /*! @cruds/DataMahasiswaOnGoings/Index.vue */ "./resources/adminapp/js/cruds/DataMahasiswaOnGoings/Index.vue"));
     },
     meta: {
-      title: 'cruds.dataMahasiswa.title'
+      title: 'cruds.dataMahasiswaOnGoing.title'
     }
   }, {
-    path: 'upload-data-mahasiswa-histories',
-    name: 'upload_data_mahasiswa_histories.index',
+    path: 'data-mahasiswas-on-goings/:id/proses',
+    name: 'data_mahasiswas-on-goings.proses',
     component: function component() {
-      return __webpack_require__.e(/*! import() */ 43).then(__webpack_require__.bind(null, /*! @cruds/UploadDataMahasiswaHistories/Index.vue */ "./resources/adminapp/js/cruds/UploadDataMahasiswaHistories/Index.vue"));
+      return Promise.all(/*! import() */[__webpack_require__.e(3), __webpack_require__.e(4), __webpack_require__.e(50)]).then(__webpack_require__.bind(null, /*! @cruds/DataMahasiswaOnGoings/Proses.vue */ "./resources/adminapp/js/cruds/DataMahasiswaOnGoings/Proses.vue"));
     },
     meta: {
-      title: 'cruds.uploadDataMahasiswaHistory.title'
+      title: 'cruds.DataMahasiswaOnGoings.title'
     }
   }, {
-    path: 'upload-data-mahasiswa-on-goings',
-    name: 'upload_data_mahasiswa_on_goings.index',
+    path: 'data-mahasiswa-on-goings/create',
+    name: 'data_mahasiswa_on_goings.create',
     component: function component() {
-      return __webpack_require__.e(/*! import() */ 44).then(__webpack_require__.bind(null, /*! @cruds/UploadDataMahasiswaOnGoings/Index.vue */ "./resources/adminapp/js/cruds/UploadDataMahasiswaOnGoings/Index.vue"));
+      return Promise.all(/*! import() */[__webpack_require__.e(2), __webpack_require__.e(1), __webpack_require__.e(25)]).then(__webpack_require__.bind(null, /*! @cruds/DataMahasiswaOnGoings/Create.vue */ "./resources/adminapp/js/cruds/DataMahasiswaOnGoings/Create.vue"));
     },
     meta: {
-      title: 'cruds.uploadDataMahasiswaOnGoing.title'
+      title: 'cruds.dataMahasiswaOnGoing.title'
+    }
+  }, {
+    path: 'data-mahasiswa-on-goings/:id',
+    name: 'data_mahasiswa_on_goings.show',
+    component: function component() {
+      return __webpack_require__.e(/*! import() */ 9).then(__webpack_require__.bind(null, /*! @cruds/DataMahasiswaOnGoings/Show.vue */ "./resources/adminapp/js/cruds/DataMahasiswaOnGoings/Show.vue"));
+    },
+    meta: {
+      title: 'cruds.dataMahasiswaOnGoing.title'
+    }
+  }, {
+    path: 'data-mahasiswa-on-goings/:id/edit',
+    name: 'data_mahasiswa_on_goings.edit',
+    component: function component() {
+      return Promise.all(/*! import() */[__webpack_require__.e(2), __webpack_require__.e(1), __webpack_require__.e(26)]).then(__webpack_require__.bind(null, /*! @cruds/DataMahasiswaOnGoings/Edit.vue */ "./resources/adminapp/js/cruds/DataMahasiswaOnGoings/Edit.vue"));
+    },
+    meta: {
+      title: 'cruds.dataMahasiswaOnGoing.title'
     }
   }, {
     path: 'report',
@@ -55631,21 +55533,128 @@ var routes = [{
       meta: {
         title: 'cruds.dataMahasiswaHistory.title'
       }
-    }, {
-      path: 'data-mahasiswa-on-goings',
-      name: 'data_mahasiswa_on_goings.index',
+    }]
+  }, {
+    path: 'user-management',
+    name: 'user_management',
+    component: View,
+    redirect: {
+      name: 'permissions.index'
+    },
+    children: [{
+      path: 'permissions',
+      name: 'permissions.index',
       component: function component() {
-        return __webpack_require__.e(/*! import() */ 25).then(__webpack_require__.bind(null, /*! @cruds/DataMahasiswaOnGoings/Index.vue */ "./resources/adminapp/js/cruds/DataMahasiswaOnGoings/Index.vue"));
+        return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(41)]).then(__webpack_require__.bind(null, /*! @cruds/Permissions/Index.vue */ "./resources/adminapp/js/cruds/Permissions/Index.vue"));
       },
       meta: {
-        title: 'cruds.dataMahasiswaOnGoing.title'
+        title: 'cruds.permission.title'
+      }
+    }, {
+      path: 'permissions/create',
+      name: 'permissions.create',
+      component: function component() {
+        return __webpack_require__.e(/*! import() */ 39).then(__webpack_require__.bind(null, /*! @cruds/Permissions/Create.vue */ "./resources/adminapp/js/cruds/Permissions/Create.vue"));
+      },
+      meta: {
+        title: 'cruds.permission.title'
+      }
+    }, {
+      path: 'permissions/:id',
+      name: 'permissions.show',
+      component: function component() {
+        return __webpack_require__.e(/*! import() */ 42).then(__webpack_require__.bind(null, /*! @cruds/Permissions/Show.vue */ "./resources/adminapp/js/cruds/Permissions/Show.vue"));
+      },
+      meta: {
+        title: 'cruds.permission.title'
+      }
+    }, {
+      path: 'permissions/:id/edit',
+      name: 'permissions.edit',
+      component: function component() {
+        return __webpack_require__.e(/*! import() */ 40).then(__webpack_require__.bind(null, /*! @cruds/Permissions/Edit.vue */ "./resources/adminapp/js/cruds/Permissions/Edit.vue"));
+      },
+      meta: {
+        title: 'cruds.permission.title'
+      }
+    }, {
+      path: 'roles',
+      name: 'roles.index',
+      component: function component() {
+        return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(12)]).then(__webpack_require__.bind(null, /*! @cruds/Roles/Index.vue */ "./resources/adminapp/js/cruds/Roles/Index.vue"));
+      },
+      meta: {
+        title: 'cruds.role.title'
+      }
+    }, {
+      path: 'roles/create',
+      name: 'roles.create',
+      component: function component() {
+        return __webpack_require__.e(/*! import() */ 43).then(__webpack_require__.bind(null, /*! @cruds/Roles/Create.vue */ "./resources/adminapp/js/cruds/Roles/Create.vue"));
+      },
+      meta: {
+        title: 'cruds.role.title'
+      }
+    }, {
+      path: 'roles/:id',
+      name: 'roles.show',
+      component: function component() {
+        return __webpack_require__.e(/*! import() */ 13).then(__webpack_require__.bind(null, /*! @cruds/Roles/Show.vue */ "./resources/adminapp/js/cruds/Roles/Show.vue"));
+      },
+      meta: {
+        title: 'cruds.role.title'
+      }
+    }, {
+      path: 'roles/:id/edit',
+      name: 'roles.edit',
+      component: function component() {
+        return __webpack_require__.e(/*! import() */ 44).then(__webpack_require__.bind(null, /*! @cruds/Roles/Edit.vue */ "./resources/adminapp/js/cruds/Roles/Edit.vue"));
+      },
+      meta: {
+        title: 'cruds.role.title'
+      }
+    }, {
+      path: 'users',
+      name: 'users.index',
+      component: function component() {
+        return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(14)]).then(__webpack_require__.bind(null, /*! @cruds/Users/Index.vue */ "./resources/adminapp/js/cruds/Users/Index.vue"));
+      },
+      meta: {
+        title: 'cruds.user.title'
+      }
+    }, {
+      path: 'users/create',
+      name: 'users.create',
+      component: function component() {
+        return __webpack_require__.e(/*! import() */ 46).then(__webpack_require__.bind(null, /*! @cruds/Users/Create.vue */ "./resources/adminapp/js/cruds/Users/Create.vue"));
+      },
+      meta: {
+        title: 'cruds.user.title'
+      }
+    }, {
+      path: 'users/:id',
+      name: 'users.show',
+      component: function component() {
+        return __webpack_require__.e(/*! import() */ 15).then(__webpack_require__.bind(null, /*! @cruds/Users/Show.vue */ "./resources/adminapp/js/cruds/Users/Show.vue"));
+      },
+      meta: {
+        title: 'cruds.user.title'
+      }
+    }, {
+      path: 'users/:id/edit',
+      name: 'users.edit',
+      component: function component() {
+        return __webpack_require__.e(/*! import() */ 47).then(__webpack_require__.bind(null, /*! @cruds/Users/Edit.vue */ "./resources/adminapp/js/cruds/Users/Edit.vue"));
+      },
+      meta: {
+        title: 'cruds.user.title'
       }
     }]
   }, {
     path: 'tentang-aplikasis',
     name: 'tentang_aplikasis.index',
     component: function component() {
-      return __webpack_require__.e(/*! import() */ 42).then(__webpack_require__.bind(null, /*! @cruds/TentangAplikasis/Index.vue */ "./resources/adminapp/js/cruds/TentangAplikasis/Index.vue"));
+      return __webpack_require__.e(/*! import() */ 45).then(__webpack_require__.bind(null, /*! @cruds/TentangAplikasis/Index.vue */ "./resources/adminapp/js/cruds/TentangAplikasis/Index.vue"));
     },
     meta: {
       title: 'cruds.tentangAplikasi.title'
@@ -55654,7 +55663,7 @@ var routes = [{
     path: 'data-dummies',
     name: 'data_dummies.index',
     component: function component() {
-      return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(18)]).then(__webpack_require__.bind(null, /*! @cruds/DataDummies/Index.vue */ "./resources/adminapp/js/cruds/DataDummies/Index.vue"));
+      return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(22)]).then(__webpack_require__.bind(null, /*! @cruds/DataDummies/Index.vue */ "./resources/adminapp/js/cruds/DataDummies/Index.vue"));
     },
     meta: {
       title: 'cruds.dataDummy.title'
@@ -55663,7 +55672,7 @@ var routes = [{
     path: 'data-dummies/create',
     name: 'data_dummies.create',
     component: function component() {
-      return __webpack_require__.e(/*! import() */ 21).then(__webpack_require__.bind(null, /*! @cruds/DataDummies/Create.vue */ "./resources/adminapp/js/cruds/DataDummies/Create.vue"));
+      return __webpack_require__.e(/*! import() */ 20).then(__webpack_require__.bind(null, /*! @cruds/DataDummies/Create.vue */ "./resources/adminapp/js/cruds/DataDummies/Create.vue"));
     },
     meta: {
       title: 'cruds.dataDummy.title'
@@ -55681,7 +55690,7 @@ var routes = [{
     path: 'data-dummies/:id/edit',
     name: 'data_dummies.edit',
     component: function component() {
-      return __webpack_require__.e(/*! import() */ 22).then(__webpack_require__.bind(null, /*! @cruds/DataDummies/Edit.vue */ "./resources/adminapp/js/cruds/DataDummies/Edit.vue"));
+      return __webpack_require__.e(/*! import() */ 21).then(__webpack_require__.bind(null, /*! @cruds/DataDummies/Edit.vue */ "./resources/adminapp/js/cruds/DataDummies/Edit.vue"));
     },
     meta: {
       title: 'cruds.dataDummy.title'
@@ -56071,39 +56080,265 @@ var set = function set(key) {
 
 function initialState() {
   return {
-    data: {
-      message: ''
-    }
+    data: [],
+    total: 0,
+    query: {},
+    loading: false
   };
 }
 
 var route = 'data-mahasiswa-on-goings';
 var getters = {
-  message: function message(state) {
-    return state.data.message;
+  data: function data(state) {
+    return state.data;
+  },
+  total: function total(state) {
+    return state.total;
+  },
+  loading: function loading(state) {
+    return state.loading;
   }
 };
 var actions = {
   fetchIndexData: function fetchIndexData(_ref) {
     var commit = _ref.commit,
         state = _ref.state;
+    commit('setLoading', true);
     axios.get(route, {
       params: state.query
     }).then(function (response) {
       commit('setData', response.data.data);
+      commit('setTotal', response.data.total);
+    })["catch"](function (error) {
+      message = error.response.data.message || error.message; // TODO error handling
+    })["finally"](function () {
+      commit('setLoading', false);
+    });
+  },
+  destroyData: function destroyData(_ref2, id) {
+    var commit = _ref2.commit,
+        state = _ref2.state,
+        dispatch = _ref2.dispatch;
+    axios["delete"]("".concat(route, "/").concat(id)).then(function (response) {
+      dispatch('fetchIndexData');
     })["catch"](function (error) {
       message = error.response.data.message || error.message; // TODO error handling
     });
   },
-  resetState: function resetState(_ref2) {
-    var commit = _ref2.commit;
+  setQuery: function setQuery(_ref3, value) {
+    var commit = _ref3.commit;
+    commit('setQuery', _.cloneDeep(value));
+  },
+  resetState: function resetState(_ref4) {
+    var commit = _ref4.commit;
     commit('resetState');
   }
 };
 var mutations = {
   setData: set('data'),
+  setTotal: set('total'),
+  setQuery: function setQuery(state, query) {
+    query.page = (query.offset + query.limit) / query.limit;
+    state.query = query;
+  },
+  setLoading: set('loading'),
   resetState: function resetState(state) {
     Object.assign(state, initialState());
+  }
+};
+/* harmony default export */ __webpack_exports__["default"] = ({
+  namespaced: true,
+  state: initialState,
+  getters: getters,
+  actions: actions,
+  mutations: mutations
+});
+
+/***/ }),
+
+/***/ "./resources/adminapp/js/store/cruds/DataMahasiswaOnGoings/single.js":
+/*!***************************************************************************!*\
+  !*** ./resources/adminapp/js/store/cruds/DataMahasiswaOnGoings/single.js ***!
+  \***************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+function initialState() {
+  return {
+    entry: {
+      id: null,
+      nama: '',
+      data_mahasiswa: [],
+      hasil_prediksi: '',
+      created_at: '',
+      updated_at: '',
+      deleted_at: ''
+    },
+    loading: false
+  };
+}
+
+var route = 'data-mahasiswa-on-goings';
+var getters = {
+  entry: function entry(state) {
+    return state.entry;
+  },
+  loading: function loading(state) {
+    return state.loading;
+  }
+};
+var actions = {
+  storeData: function storeData(_ref) {
+    var commit = _ref.commit,
+        state = _ref.state,
+        dispatch = _ref.dispatch;
+    commit('setLoading', true);
+    dispatch('Alert/resetState', null, {
+      root: true
+    });
+    return new Promise(function (resolve, reject) {
+      var params = objectToFormData(state.entry, {
+        indices: true,
+        booleansAsIntegers: true
+      });
+      axios.post(route, params).then(function (response) {
+        resolve(response);
+      })["catch"](function (error) {
+        var message = error.response.data.message || error.message;
+        var errors = error.response.data.errors;
+        dispatch('Alert/setAlert', {
+          message: message,
+          errors: errors,
+          color: 'danger'
+        }, {
+          root: true
+        });
+        reject(error);
+      })["finally"](function () {
+        commit('setLoading', false);
+      });
+    });
+  },
+  updateData: function updateData(_ref2) {
+    var commit = _ref2.commit,
+        state = _ref2.state,
+        dispatch = _ref2.dispatch;
+    commit('setLoading', true);
+    dispatch('Alert/resetState', null, {
+      root: true
+    });
+    return new Promise(function (resolve, reject) {
+      var params = objectToFormData(state.entry, {
+        indices: true,
+        booleansAsIntegers: true
+      });
+      params.set('_method', 'PUT');
+      axios.post("".concat(route, "/").concat(state.entry.id), params).then(function (response) {
+        resolve(response);
+      })["catch"](function (error) {
+        var message = error.response.data.message || error.message;
+        var errors = error.response.data.errors;
+        dispatch('Alert/setAlert', {
+          message: message,
+          errors: errors,
+          color: 'danger'
+        }, {
+          root: true
+        });
+        reject(error);
+      })["finally"](function () {
+        commit('setLoading', false);
+      });
+    });
+  },
+  setNama: function setNama(_ref3, value) {
+    var commit = _ref3.commit;
+    commit('setNama', value);
+  },
+  insertDataMahasiswaFile: function insertDataMahasiswaFile(_ref4, file) {
+    var commit = _ref4.commit;
+    commit('insertDataMahasiswaFile', file);
+  },
+  removeDataMahasiswaFile: function removeDataMahasiswaFile(_ref5, file) {
+    var commit = _ref5.commit;
+    commit('removeDataMahasiswaFile', file);
+  },
+  setHasilPrediksi: function setHasilPrediksi(_ref6, value) {
+    var commit = _ref6.commit;
+    commit('setHasilPrediksi', value);
+  },
+  setCreatedAt: function setCreatedAt(_ref7, value) {
+    var commit = _ref7.commit;
+    commit('setCreatedAt', value);
+  },
+  setUpdatedAt: function setUpdatedAt(_ref8, value) {
+    var commit = _ref8.commit;
+    commit('setUpdatedAt', value);
+  },
+  setDeletedAt: function setDeletedAt(_ref9, value) {
+    var commit = _ref9.commit;
+    commit('setDeletedAt', value);
+  },
+  fetchEditData: function fetchEditData(_ref10, id) {
+    var commit = _ref10.commit,
+        dispatch = _ref10.dispatch;
+    axios.get("".concat(route, "/").concat(id, "/edit")).then(function (response) {
+      commit('setEntry', response.data.data);
+    });
+  },
+  fetchProsesData: function fetchProsesData(_ref11, id) {
+    var commit = _ref11.commit,
+        dispatch = _ref11.dispatch;
+    axios.get("".concat(route, "/").concat(id, "/proses")).then(function (response) {
+      commit('setEntry', response.data.data);
+    });
+  },
+  fetchShowData: function fetchShowData(_ref12, id) {
+    var commit = _ref12.commit,
+        dispatch = _ref12.dispatch;
+    axios.get("".concat(route, "/").concat(id)).then(function (response) {
+      commit('setEntry', response.data.data);
+    });
+  },
+  resetState: function resetState(_ref13) {
+    var commit = _ref13.commit;
+    commit('resetState');
+  }
+};
+var mutations = {
+  setEntry: function setEntry(state, entry) {
+    state.entry = entry;
+  },
+  setNama: function setNama(state, value) {
+    state.entry.nama = value;
+  },
+  insertDataMahasiswaFile: function insertDataMahasiswaFile(state, file) {
+    state.entry.data_mahasiswa.push(file);
+  },
+  removeDataMahasiswaFile: function removeDataMahasiswaFile(state, file) {
+    state.entry.data_mahasiswa = state.entry.data_mahasiswa.filter(function (item) {
+      return item.id !== file.id;
+    });
+  },
+  setHasilPrediksi: function setHasilPrediksi(state, value) {
+    state.entry.hasil_prediksi = value;
+  },
+  setCreatedAt: function setCreatedAt(state, value) {
+    state.entry.created_at = value;
+  },
+  setUpdatedAt: function setUpdatedAt(state, value) {
+    state.entry.updated_at = value;
+  },
+  setDeletedAt: function setDeletedAt(state, value) {
+    state.entry.deleted_at = value;
+  },
+  setLoading: function setLoading(state, loading) {
+    state.loading = loading;
+  },
+  resetState: function resetState(state) {
+    state = Object.assign(state, initialState());
   }
 };
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -58187,130 +58422,6 @@ var mutations = {
 
 /***/ }),
 
-/***/ "./resources/adminapp/js/store/cruds/UploadDataMahasiswaHistories/index.js":
-/*!*********************************************************************************!*\
-  !*** ./resources/adminapp/js/store/cruds/UploadDataMahasiswaHistories/index.js ***!
-  \*********************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-var set = function set(key) {
-  return function (state, val) {
-    state[key] = val;
-  };
-};
-
-function initialState() {
-  return {
-    data: {
-      message: ''
-    }
-  };
-}
-
-var route = 'upload-data-mahasiswa-histories';
-var getters = {
-  message: function message(state) {
-    return state.data.message;
-  }
-};
-var actions = {
-  fetchIndexData: function fetchIndexData(_ref) {
-    var commit = _ref.commit,
-        state = _ref.state;
-    axios.get(route, {
-      params: state.query
-    }).then(function (response) {
-      commit('setData', response.data.data);
-    })["catch"](function (error) {
-      message = error.response.data.message || error.message; // TODO error handling
-    });
-  },
-  resetState: function resetState(_ref2) {
-    var commit = _ref2.commit;
-    commit('resetState');
-  }
-};
-var mutations = {
-  setData: set('data'),
-  resetState: function resetState(state) {
-    Object.assign(state, initialState());
-  }
-};
-/* harmony default export */ __webpack_exports__["default"] = ({
-  namespaced: true,
-  state: initialState,
-  getters: getters,
-  actions: actions,
-  mutations: mutations
-});
-
-/***/ }),
-
-/***/ "./resources/adminapp/js/store/cruds/UploadDataMahasiswaOnGoings/index.js":
-/*!********************************************************************************!*\
-  !*** ./resources/adminapp/js/store/cruds/UploadDataMahasiswaOnGoings/index.js ***!
-  \********************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-var set = function set(key) {
-  return function (state, val) {
-    state[key] = val;
-  };
-};
-
-function initialState() {
-  return {
-    data: {
-      message: ''
-    }
-  };
-}
-
-var route = 'upload-data-mahasiswa-on-goings';
-var getters = {
-  message: function message(state) {
-    return state.data.message;
-  }
-};
-var actions = {
-  fetchIndexData: function fetchIndexData(_ref) {
-    var commit = _ref.commit,
-        state = _ref.state;
-    axios.get(route, {
-      params: state.query
-    }).then(function (response) {
-      commit('setData', response.data.data);
-    })["catch"](function (error) {
-      message = error.response.data.message || error.message; // TODO error handling
-    });
-  },
-  resetState: function resetState(_ref2) {
-    var commit = _ref2.commit;
-    commit('resetState');
-  }
-};
-var mutations = {
-  setData: set('data'),
-  resetState: function resetState(state) {
-    Object.assign(state, initialState());
-  }
-};
-/* harmony default export */ __webpack_exports__["default"] = ({
-  namespaced: true,
-  state: initialState,
-  getters: getters,
-  actions: actions,
-  mutations: mutations
-});
-
-/***/ }),
-
 /***/ "./resources/adminapp/js/store/cruds/Users/index.js":
 /*!**********************************************************!*\
   !*** ./resources/adminapp/js/store/cruds/Users/index.js ***!
@@ -58825,16 +58936,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _cruds_Jurusans_single__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./cruds/Jurusans/single */ "./resources/adminapp/js/store/cruds/Jurusans/single.js");
 /* harmony import */ var _cruds_Dosens__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./cruds/Dosens */ "./resources/adminapp/js/store/cruds/Dosens/index.js");
 /* harmony import */ var _cruds_Dosens_single__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./cruds/Dosens/single */ "./resources/adminapp/js/store/cruds/Dosens/single.js");
-/* harmony import */ var _cruds_UploadDataMahasiswaOnGoings__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./cruds/UploadDataMahasiswaOnGoings */ "./resources/adminapp/js/store/cruds/UploadDataMahasiswaOnGoings/index.js");
-/* harmony import */ var _cruds_DataMahasiswaHistories__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./cruds/DataMahasiswaHistories */ "./resources/adminapp/js/store/cruds/DataMahasiswaHistories/index.js");
-/* harmony import */ var _cruds_DataMahasiswaOnGoings__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./cruds/DataMahasiswaOnGoings */ "./resources/adminapp/js/store/cruds/DataMahasiswaOnGoings/index.js");
-/* harmony import */ var _cruds_UploadDataMahasiswaHistories__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./cruds/UploadDataMahasiswaHistories */ "./resources/adminapp/js/store/cruds/UploadDataMahasiswaHistories/index.js");
-/* harmony import */ var _cruds_TentangAplikasis__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./cruds/TentangAplikasis */ "./resources/adminapp/js/store/cruds/TentangAplikasis/index.js");
-/* harmony import */ var _cruds_DataMahasiswas__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./cruds/DataMahasiswas */ "./resources/adminapp/js/store/cruds/DataMahasiswas/index.js");
-/* harmony import */ var _cruds_DataMahasiswas_single__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./cruds/DataMahasiswas/single */ "./resources/adminapp/js/store/cruds/DataMahasiswas/single.js");
-/* harmony import */ var _cruds_DataDummies__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./cruds/DataDummies */ "./resources/adminapp/js/store/cruds/DataDummies/index.js");
-/* harmony import */ var _cruds_DataDummies_single__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./cruds/DataDummies/single */ "./resources/adminapp/js/store/cruds/DataDummies/single.js");
-
+/* harmony import */ var _cruds_DataMahasiswaHistories__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./cruds/DataMahasiswaHistories */ "./resources/adminapp/js/store/cruds/DataMahasiswaHistories/index.js");
+/* harmony import */ var _cruds_TentangAplikasis__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./cruds/TentangAplikasis */ "./resources/adminapp/js/store/cruds/TentangAplikasis/index.js");
+/* harmony import */ var _cruds_DataMahasiswas__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./cruds/DataMahasiswas */ "./resources/adminapp/js/store/cruds/DataMahasiswas/index.js");
+/* harmony import */ var _cruds_DataMahasiswas_single__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./cruds/DataMahasiswas/single */ "./resources/adminapp/js/store/cruds/DataMahasiswas/single.js");
+/* harmony import */ var _cruds_DataDummies__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./cruds/DataDummies */ "./resources/adminapp/js/store/cruds/DataDummies/index.js");
+/* harmony import */ var _cruds_DataDummies_single__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./cruds/DataDummies/single */ "./resources/adminapp/js/store/cruds/DataDummies/single.js");
+/* harmony import */ var _cruds_DataMahasiswaOnGoings__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./cruds/DataMahasiswaOnGoings */ "./resources/adminapp/js/store/cruds/DataMahasiswaOnGoings/index.js");
+/* harmony import */ var _cruds_DataMahasiswaOnGoings_single__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./cruds/DataMahasiswaOnGoings/single */ "./resources/adminapp/js/store/cruds/DataMahasiswaOnGoings/single.js");
 
 
 
@@ -58881,15 +58990,14 @@ var debug = "development" !== 'production';
     JurusansSingle: _cruds_Jurusans_single__WEBPACK_IMPORTED_MODULE_15__["default"],
     DosensIndex: _cruds_Dosens__WEBPACK_IMPORTED_MODULE_16__["default"],
     DosensSingle: _cruds_Dosens_single__WEBPACK_IMPORTED_MODULE_17__["default"],
-    UploadDataMahasiswaOnGoings: _cruds_UploadDataMahasiswaOnGoings__WEBPACK_IMPORTED_MODULE_18__["default"],
-    DataMahasiswaHistories: _cruds_DataMahasiswaHistories__WEBPACK_IMPORTED_MODULE_19__["default"],
-    DataMahasiswaOnGoings: _cruds_DataMahasiswaOnGoings__WEBPACK_IMPORTED_MODULE_20__["default"],
-    UploadDataMahasiswaHistories: _cruds_UploadDataMahasiswaHistories__WEBPACK_IMPORTED_MODULE_21__["default"],
-    TentangAplikasis: _cruds_TentangAplikasis__WEBPACK_IMPORTED_MODULE_22__["default"],
-    DataMahasiswasIndex: _cruds_DataMahasiswas__WEBPACK_IMPORTED_MODULE_23__["default"],
-    DataMahasiswasSingle: _cruds_DataMahasiswas_single__WEBPACK_IMPORTED_MODULE_24__["default"],
-    DataDummiesIndex: _cruds_DataDummies__WEBPACK_IMPORTED_MODULE_25__["default"],
-    DataDummiesSingle: _cruds_DataDummies_single__WEBPACK_IMPORTED_MODULE_26__["default"]
+    DataMahasiswaHistories: _cruds_DataMahasiswaHistories__WEBPACK_IMPORTED_MODULE_18__["default"],
+    TentangAplikasis: _cruds_TentangAplikasis__WEBPACK_IMPORTED_MODULE_19__["default"],
+    DataMahasiswasIndex: _cruds_DataMahasiswas__WEBPACK_IMPORTED_MODULE_20__["default"],
+    DataMahasiswasSingle: _cruds_DataMahasiswas_single__WEBPACK_IMPORTED_MODULE_21__["default"],
+    DataDummiesIndex: _cruds_DataDummies__WEBPACK_IMPORTED_MODULE_22__["default"],
+    DataDummiesSingle: _cruds_DataDummies_single__WEBPACK_IMPORTED_MODULE_23__["default"],
+    DataMahasiswaOnGoingsIndex: _cruds_DataMahasiswaOnGoings__WEBPACK_IMPORTED_MODULE_24__["default"],
+    DataMahasiswaOnGoingsSingle: _cruds_DataMahasiswaOnGoings_single__WEBPACK_IMPORTED_MODULE_25__["default"]
   },
   strict: debug
 }));

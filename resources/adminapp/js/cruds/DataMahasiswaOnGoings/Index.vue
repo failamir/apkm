@@ -45,6 +45,7 @@
                     <span>Loading...</span>
                   </div>
                 </div>
+                <!-- {{ data }} -->
                 <datatable
                   :columns="columns"
                   :data="data"
@@ -68,6 +69,7 @@
 
 <script>
 import { mapGetters, mapActions } from 'vuex'
+// import DatatableActions from '@components/Datatables/DatatableActionsKelsi'
 import DatatableActions from '@components/Datatables/DatatableActions'
 import TranslatedHeader from '@components/Datatables/TranslatedHeader'
 import HeaderSettings from '@components/Datatables/HeaderSettings'
@@ -80,6 +82,7 @@ export default {
     HeaderSettings
   },
   data() {
+    
     return {
       columns: [
         {
@@ -148,4 +151,5 @@ export default {
     ])
   }
 }
+// console.log(data);
 </script>
