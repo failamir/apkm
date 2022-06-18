@@ -68,7 +68,7 @@
 
 <script>
 import { mapGetters, mapActions } from 'vuex'
-import DatatableActions from '@components/Datatables/DatatableActionsAndri'
+import DatatableActions from '@components/Datatables/DatatableActions'
 import TranslatedHeader from '@components/Datatables/TranslatedHeader'
 import HeaderSettings from '@components/Datatables/HeaderSettings'
 import GlobalSearch from '@components/Datatables/GlobalSearch'
@@ -80,7 +80,6 @@ export default {
     HeaderSettings
   },
   data() {
-    console.log('data_mahasiswa');
     return {
       columns: [
         {
@@ -108,12 +107,6 @@ export default {
           thComp: TranslatedHeader,
           sortable: true
         },
-        // {
-        //   title: 'Hitung Prediksi',
-        //   field: 'proses',
-        //   thComp: TranslatedHeader,
-        //   sortable: false
-        // },
         {
           title: 'global.actions',
           thComp: TranslatedHeader,

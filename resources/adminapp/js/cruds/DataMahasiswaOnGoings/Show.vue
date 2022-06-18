@@ -9,7 +9,9 @@
             </div>
             <h4 class="card-title">
               {{ $t('global.view') }}
-              <strong>{{ $t('cruds.dataMahasiswa.title_singular') }}</strong>
+              <strong>{{
+                $t('cruds.dataMahasiswaOnGoing.title_singular')
+              }}</strong>
             </h4>
           </div>
           <div class="card-body">
@@ -23,7 +25,7 @@
                     <tbody>
                       <tr>
                         <td class="text-primary">
-                          {{ $t('cruds.dataMahasiswa.fields.id') }}
+                          {{ $t('cruds.dataMahasiswaOnGoing.fields.id') }}
                         </td>
                         <td>
                           {{ entry.id }}
@@ -31,7 +33,7 @@
                       </tr>
                       <tr>
                         <td class="text-primary">
-                          {{ $t('cruds.dataMahasiswa.fields.nama') }}
+                          {{ $t('cruds.dataMahasiswaOnGoing.fields.nama') }}
                         </td>
                         <td>
                           {{ entry.nama }}
@@ -39,7 +41,11 @@
                       </tr>
                       <tr>
                         <td class="text-primary">
-                          {{ $t('cruds.dataMahasiswa.fields.data_mahasiswa') }}
+                          {{
+                            $t(
+                              'cruds.dataMahasiswaOnGoing.fields.data_mahasiswa'
+                            )
+                          }}
                         </td>
                         <td>
                           <datatable-attachments
@@ -51,10 +57,14 @@
                       </tr>
                       <tr>
                         <td class="text-primary">
-                          {{ $t('cruds.dataMahasiswa.fields.batas_nilai') }}
+                          {{
+                            $t(
+                              'cruds.dataMahasiswaOnGoing.fields.hasil_prediksi'
+                            )
+                          }}
                         </td>
                         <td>
-                          {{ entry.batas_nilai }}
+                          {{ entry.hasil_prediksi }}
                         </td>
                       </tr>
                     </tbody>
@@ -84,7 +94,7 @@ export default {
     this.resetState()
   },
   computed: {
-    ...mapGetters('DataMahasiswasSingle', ['entry'])
+    ...mapGetters('DataMahasiswaOnGoingsSingle', ['entry'])
   },
   watch: {
     '$route.params.id': {
@@ -96,7 +106,10 @@ export default {
     }
   },
   methods: {
-    ...mapActions('DataMahasiswasSingle', ['fetchShowData', 'resetState'])
+    ...mapActions('DataMahasiswaOnGoingsSingle', [
+      'fetchShowData',
+      'resetState'
+    ])
   }
 }
 </script>

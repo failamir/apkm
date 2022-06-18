@@ -10,101 +10,12 @@ const routes = [
     path: '/',
     component: () => import('@pages/Layout/DashboardLayout.vue'),
     redirect: 'dashboard',
-    // path: '/andri',
-    // component: () => import('@cruds/DataMahasiswas/Proses.vue'),
-    // redirect: 'andri',
     children: [
       {
         path: 'dashboard',
         name: 'dashboard',
         component: () => import('@pages/Dashboard.vue'),
         meta: { title: 'global.dashboard' }
-      },
-      // {
-      //   path: 'andri',
-      //   name: 'andri',
-      //   component: () => import('@cruds/DataMahasiswas/Proses.vue'),
-      //   meta: { title: 'global.dashboard' }
-      // },
-      {
-        path: 'user-management',
-        name: 'user_management',
-        component: View,
-        redirect: { name: 'permissions.index' },
-        children: [
-          {
-            path: 'permissions',
-            name: 'permissions.index',
-            component: () => import('@cruds/Permissions/Index.vue'),
-            meta: { title: 'cruds.permission.title' }
-          },
-          {
-            path: 'permissions/create',
-            name: 'permissions.create',
-            component: () => import('@cruds/Permissions/Create.vue'),
-            meta: { title: 'cruds.permission.title' }
-          },
-          {
-            path: 'permissions/:id',
-            name: 'permissions.show',
-            component: () => import('@cruds/Permissions/Show.vue'),
-            meta: { title: 'cruds.permission.title' }
-          },
-          {
-            path: 'permissions/:id/edit',
-            name: 'permissions.edit',
-            component: () => import('@cruds/Permissions/Edit.vue'),
-            meta: { title: 'cruds.permission.title' }
-          },
-          {
-            path: 'roles',
-            name: 'roles.index',
-            component: () => import('@cruds/Roles/Index.vue'),
-            meta: { title: 'cruds.role.title' }
-          },
-          {
-            path: 'roles/create',
-            name: 'roles.create',
-            component: () => import('@cruds/Roles/Create.vue'),
-            meta: { title: 'cruds.role.title' }
-          },
-          {
-            path: 'roles/:id',
-            name: 'roles.show',
-            component: () => import('@cruds/Roles/Show.vue'),
-            meta: { title: 'cruds.role.title' }
-          },
-          {
-            path: 'roles/:id/edit',
-            name: 'roles.edit',
-            component: () => import('@cruds/Roles/Edit.vue'),
-            meta: { title: 'cruds.role.title' }
-          },
-          {
-            path: 'users',
-            name: 'users.index',
-            component: () => import('@cruds/Users/Index.vue'),
-            meta: { title: 'cruds.user.title' }
-          },
-          {
-            path: 'users/create',
-            name: 'users.create',
-            component: () => import('@cruds/Users/Create.vue'),
-            meta: { title: 'cruds.user.title' }
-          },
-          {
-            path: 'users/:id',
-            name: 'users.show',
-            component: () => import('@cruds/Users/Show.vue'),
-            meta: { title: 'cruds.user.title' }
-          },
-          {
-            path: 'users/:id/edit',
-            name: 'users.edit',
-            component: () => import('@cruds/Users/Edit.vue'),
-            meta: { title: 'cruds.user.title' }
-          }
-        ]
       },
       {
         path: 'mahasiswas',
@@ -221,29 +132,34 @@ const routes = [
         meta: { title: 'cruds.dataMahasiswa.title' }
       },
       {
-        path: 'data-mahasiswas/:id/proses',
-        name: 'data_mahasiswas.proses',
-        component: () => import('@cruds/DataMahasiswas/Proses.vue'),
-        meta: { title: 'cruds.dataMahasiswa.title' }
-      },
-      {
         path: 'data-mahasiswas/:id/edit',
         name: 'data_mahasiswas.edit',
         component: () => import('@cruds/DataMahasiswas/Edit.vue'),
         meta: { title: 'cruds.dataMahasiswa.title' }
       },
       {
-        path: 'upload-data-mahasiswa-histories',
-        name: 'upload_data_mahasiswa_histories.index',
-        component: () =>
-          import('@cruds/UploadDataMahasiswaHistories/Index.vue'),
-        meta: { title: 'cruds.uploadDataMahasiswaHistory.title' }
+        path: 'data-mahasiswa-on-goings',
+        name: 'data_mahasiswa_on_goings.index',
+        component: () => import('@cruds/DataMahasiswaOnGoings/Index.vue'),
+        meta: { title: 'cruds.dataMahasiswaOnGoing.title' }
       },
       {
-        path: 'upload-data-mahasiswa-on-goings',
-        name: 'upload_data_mahasiswa_on_goings.index',
-        component: () => import('@cruds/UploadDataMahasiswaOnGoings/Index.vue'),
-        meta: { title: 'cruds.uploadDataMahasiswaOnGoing.title' }
+        path: 'data-mahasiswa-on-goings/create',
+        name: 'data_mahasiswa_on_goings.create',
+        component: () => import('@cruds/DataMahasiswaOnGoings/Create.vue'),
+        meta: { title: 'cruds.dataMahasiswaOnGoing.title' }
+      },
+      {
+        path: 'data-mahasiswa-on-goings/:id',
+        name: 'data_mahasiswa_on_goings.show',
+        component: () => import('@cruds/DataMahasiswaOnGoings/Show.vue'),
+        meta: { title: 'cruds.dataMahasiswaOnGoing.title' }
+      },
+      {
+        path: 'data-mahasiswa-on-goings/:id/edit',
+        name: 'data_mahasiswa_on_goings.edit',
+        component: () => import('@cruds/DataMahasiswaOnGoings/Edit.vue'),
+        meta: { title: 'cruds.dataMahasiswaOnGoing.title' }
       },
       {
         path: 'report',
@@ -256,12 +172,86 @@ const routes = [
             name: 'data_mahasiswa_histories.index',
             component: () => import('@cruds/DataMahasiswaHistories/Index.vue'),
             meta: { title: 'cruds.dataMahasiswaHistory.title' }
+          }
+        ]
+      },
+      {
+        path: 'user-management',
+        name: 'user_management',
+        component: View,
+        redirect: { name: 'permissions.index' },
+        children: [
+          {
+            path: 'permissions',
+            name: 'permissions.index',
+            component: () => import('@cruds/Permissions/Index.vue'),
+            meta: { title: 'cruds.permission.title' }
           },
           {
-            path: 'data-mahasiswa-on-goings',
-            name: 'data_mahasiswa_on_goings.index',
-            component: () => import('@cruds/DataMahasiswaOnGoings/Index.vue'),
-            meta: { title: 'cruds.dataMahasiswaOnGoing.title' }
+            path: 'permissions/create',
+            name: 'permissions.create',
+            component: () => import('@cruds/Permissions/Create.vue'),
+            meta: { title: 'cruds.permission.title' }
+          },
+          {
+            path: 'permissions/:id',
+            name: 'permissions.show',
+            component: () => import('@cruds/Permissions/Show.vue'),
+            meta: { title: 'cruds.permission.title' }
+          },
+          {
+            path: 'permissions/:id/edit',
+            name: 'permissions.edit',
+            component: () => import('@cruds/Permissions/Edit.vue'),
+            meta: { title: 'cruds.permission.title' }
+          },
+          {
+            path: 'roles',
+            name: 'roles.index',
+            component: () => import('@cruds/Roles/Index.vue'),
+            meta: { title: 'cruds.role.title' }
+          },
+          {
+            path: 'roles/create',
+            name: 'roles.create',
+            component: () => import('@cruds/Roles/Create.vue'),
+            meta: { title: 'cruds.role.title' }
+          },
+          {
+            path: 'roles/:id',
+            name: 'roles.show',
+            component: () => import('@cruds/Roles/Show.vue'),
+            meta: { title: 'cruds.role.title' }
+          },
+          {
+            path: 'roles/:id/edit',
+            name: 'roles.edit',
+            component: () => import('@cruds/Roles/Edit.vue'),
+            meta: { title: 'cruds.role.title' }
+          },
+          {
+            path: 'users',
+            name: 'users.index',
+            component: () => import('@cruds/Users/Index.vue'),
+            meta: { title: 'cruds.user.title' }
+          },
+          {
+            path: 'users/create',
+            name: 'users.create',
+            component: () => import('@cruds/Users/Create.vue'),
+            meta: { title: 'cruds.user.title' }
+          },
+          {
+            path: 'users/:id',
+            name: 'users.show',
+            component: () => import('@cruds/Users/Show.vue'),
+            meta: { title: 'cruds.user.title' }
+          },
+          {
+            path: 'users/:id/edit',
+            name: 'users.edit',
+            component: () => import('@cruds/Users/Edit.vue'),
+            meta: { title: 'cruds.user.title' }
           }
         ]
       },

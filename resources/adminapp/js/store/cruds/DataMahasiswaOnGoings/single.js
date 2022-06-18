@@ -4,7 +4,7 @@ function initialState() {
       id: null,
       nama: '',
       data_mahasiswa: [],
-      batas_nilai: '',
+      hasil_prediksi: '',
       created_at: '',
       updated_at: '',
       deleted_at: ''
@@ -13,7 +13,7 @@ function initialState() {
   }
 }
 
-const route = 'data-mahasiswas'
+const route = 'data-mahasiswa-on-goings'
 
 const getters = {
   entry: state => state.entry,
@@ -93,8 +93,8 @@ const actions = {
   removeDataMahasiswaFile({ commit }, file) {
     commit('removeDataMahasiswaFile', file)
   },
-  setBatasNilai({ commit }, value) {
-    commit('setBatasNilai', value)
+  setHasilPrediksi({ commit }, value) {
+    commit('setHasilPrediksi', value)
   },
   setCreatedAt({ commit }, value) {
     commit('setCreatedAt', value)
@@ -135,8 +135,8 @@ const mutations = {
       return item.id !== file.id
     })
   },
-  setBatasNilai(state, value) {
-    state.entry.batas_nilai = value
+  setHasilPrediksi(state, value) {
+    state.entry.hasil_prediksi = value
   },
   setCreatedAt(state, value) {
     state.entry.created_at = value
