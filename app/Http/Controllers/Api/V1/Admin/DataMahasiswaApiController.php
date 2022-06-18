@@ -65,7 +65,7 @@ class DataMahasiswaApiController extends Controller
         $py = env('PYPATH',);
         $andri=exec("'$py' Proses.py '$a' '$b' '$date'  2>&1", $out, $ret);
         // $andri = exec("python3 ../../../../Proses.py '$a' '$date'", $out, $ret);
-        // var_dump($andri);
+        var_dump($andri);
         $text = str_replace("'", '"', $andri);
         $andri = json_decode($text);
         
