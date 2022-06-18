@@ -81,11 +81,15 @@
                   
             <div v-if="seen" id="hide">
             <br>
-                <p class="font-weight-bold">Accuracy {{ entry.Accuracy}} </p>
-                <p class="font-weight-bold">Recall Lulus {{ entry.RecallLulus}} </p>
-                <p class="font-weight-bold">Recall Tidak Lulus {{ entry.RecallTidakLulus}} </p>
-                <p class="font-weight-bold">Precision Lulus {{ entry.PrecisionLulus}} </p>
-                <p class="font-weight-bold">Precision Tidak Lulus {{ entry.PrecisionTidakLulus}} </p>
+            <p class="font-weight-bold">Lulus : {{ entry.Lulus}} </p>
+            <p class="font-weight-bold">Tidak Lulus : {{ entry.TidakLulus}} </p>
+            <p class="font-weight-bold">Active : {{ entry.Active}} </p>
+            <p class="font-weight-bold">Obervers : {{ entry.Obervers}} </p>
+                <p class="font-weight-bold">Accuracy : {{ entry.Accuracy}} </p>
+                <p class="font-weight-bold">Recall Lulus : {{ entry.RecallLulus}} </p>
+                <p class="font-weight-bold">Recall Tidak Lulus : {{ entry.RecallTidakLulus}} </p>
+                <p class="font-weight-bold">Precision Lulus : {{ entry.PrecisionLulus}} </p>
+                <p class="font-weight-bold">Precision Tidak Lulus : {{ entry.PrecisionTidakLulus}} </p>
                 
             </div>
           </div>

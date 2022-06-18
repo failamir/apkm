@@ -144,6 +144,10 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
+//
+//
+//
+//
 
 
  // import show from './show.js';
@@ -557,18 +561,36 @@ var render = function () {
                     _c("br"),
                     _vm._v(" "),
                     _c("p", { staticClass: "font-weight-bold" }, [
-                      _vm._v("Accuracy " + _vm._s(_vm.entry.Accuracy) + " "),
+                      _vm._v("Lulus : " + _vm._s(_vm.entry.Lulus) + " "),
                     ]),
                     _vm._v(" "),
                     _c("p", { staticClass: "font-weight-bold" }, [
                       _vm._v(
-                        "Recall Lulus " + _vm._s(_vm.entry.RecallLulus) + " "
+                        "Tidak Lulus : " + _vm._s(_vm.entry.TidakLulus) + " "
+                      ),
+                    ]),
+                    _vm._v(" "),
+                    _c("p", { staticClass: "font-weight-bold" }, [
+                      _vm._v("Active : " + _vm._s(_vm.entry.Active) + " "),
+                    ]),
+                    _vm._v(" "),
+                    _c("p", { staticClass: "font-weight-bold" }, [
+                      _vm._v("Obervers : " + _vm._s(_vm.entry.Obervers) + " "),
+                    ]),
+                    _vm._v(" "),
+                    _c("p", { staticClass: "font-weight-bold" }, [
+                      _vm._v("Accuracy : " + _vm._s(_vm.entry.Accuracy) + " "),
+                    ]),
+                    _vm._v(" "),
+                    _c("p", { staticClass: "font-weight-bold" }, [
+                      _vm._v(
+                        "Recall Lulus : " + _vm._s(_vm.entry.RecallLulus) + " "
                       ),
                     ]),
                     _vm._v(" "),
                     _c("p", { staticClass: "font-weight-bold" }, [
                       _vm._v(
-                        "Recall Tidak Lulus " +
+                        "Recall Tidak Lulus : " +
                           _vm._s(_vm.entry.RecallTidakLulus) +
                           " "
                       ),
@@ -576,7 +598,7 @@ var render = function () {
                     _vm._v(" "),
                     _c("p", { staticClass: "font-weight-bold" }, [
                       _vm._v(
-                        "Precision Lulus " +
+                        "Precision Lulus : " +
                           _vm._s(_vm.entry.PrecisionLulus) +
                           " "
                       ),
@@ -584,7 +606,7 @@ var render = function () {
                     _vm._v(" "),
                     _c("p", { staticClass: "font-weight-bold" }, [
                       _vm._v(
-                        "Precision Tidak Lulus " +
+                        "Precision Tidak Lulus : " +
                           _vm._s(_vm.entry.PrecisionTidakLulus) +
                           " "
                       ),
