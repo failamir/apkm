@@ -145,12 +145,13 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
         field: 'data_mahasiswa',
         thComp: _components_Datatables_TranslatedHeader__WEBPACK_IMPORTED_MODULE_2__["default"],
         tdComp: _components_Datatables_DatatableAttachments__WEBPACK_IMPORTED_MODULE_5__["default"]
-      }, {
-        title: 'cruds.dataMahasiswaOnGoing.fields.hasil_prediksi',
-        field: 'hasil_prediksi',
-        thComp: _components_Datatables_TranslatedHeader__WEBPACK_IMPORTED_MODULE_2__["default"],
-        sortable: true
-      }, {
+      }, // {
+      //   title: 'cruds.dataMahasiswaOnGoing.fields.hasil_prediksi',
+      //   field: 'hasil_prediksi',
+      //   thComp: TranslatedHeader,
+      //   sortable: true
+      // },
+      {
         title: 'global.actions',
         thComp: _components_Datatables_TranslatedHeader__WEBPACK_IMPORTED_MODULE_2__["default"],
         tdComp: _components_Datatables_DatatableActions__WEBPACK_IMPORTED_MODULE_1__["default"],

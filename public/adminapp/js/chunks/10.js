@@ -123,6 +123,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -367,10 +368,10 @@ var render = function () {
                         ]),
                         _vm._v(" "),
                         _c("td", [
-                          _vm._v(
-                            "\n                        " +
-                              _vm._s(_vm.entry.hasil_prediksi) +
-                              "\n                      "
+                          _c(
+                            "a",
+                            { attrs: { href: "/" + _vm.entry.hasil_prediksi } },
+                            [_vm._v(" Download ")]
                           ),
                         ]),
                       ]),

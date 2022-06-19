@@ -104,12 +104,12 @@ export default {
           thComp: TranslatedHeader,
           tdComp: DatatableAttachments
         },
-        {
-          title: 'cruds.dataMahasiswaOnGoing.fields.hasil_prediksi',
-          field: 'hasil_prediksi',
-          thComp: TranslatedHeader,
-          sortable: true
-        },
+        // {
+        //   title: 'cruds.dataMahasiswaOnGoing.fields.hasil_prediksi',
+        //   field: 'hasil_prediksi',
+        //   thComp: TranslatedHeader,
+        //   sortable: true
+        // },
         {
           title: 'global.actions',
           thComp: TranslatedHeader,

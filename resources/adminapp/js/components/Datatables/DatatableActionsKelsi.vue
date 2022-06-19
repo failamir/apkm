@@ -13,7 +13,7 @@
       :to="{ name: xprops.route + '.proses', params: { id: row.id } }"
       class="btn btn-round btn-link text-azure"
     >
-      Hitung Prediksi <i class="material-icons">send</i>
+      Download <i class="material-icons">send</i>
     </router-link>
 
     <router-link
