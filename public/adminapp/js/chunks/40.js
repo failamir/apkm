@@ -1,9 +1,9 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([[40],{
 
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/cruds/MataKuliahs/Edit.vue?vue&type=script&lang=js&":
-/*!*******************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/adminapp/js/cruds/MataKuliahs/Edit.vue?vue&type=script&lang=js& ***!
-  \*******************************************************************************************************************************************************************************/
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/cruds/Roles/Edit.vue?vue&type=script&lang=js&":
+/*!*************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/adminapp/js/cruds/Roles/Edit.vue?vue&type=script&lang=js& ***!
+  \*************************************************************************************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -101,46 +101,6 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
@@ -149,7 +109,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       activeField: ''
     };
   },
-  computed: _objectSpread({}, Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapGetters"])('MataKuliahsSingle', ['entry', 'loading', 'lists'])),
+  computed: _objectSpread({}, Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapGetters"])('RolesSingle', ['entry', 'loading', 'lists'])),
   beforeDestroy: function beforeDestroy() {
     this.resetState();
   },
@@ -162,25 +122,19 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       }
     }
   },
-  methods: _objectSpread(_objectSpread({}, Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapActions"])('MataKuliahsSingle', ['fetchEditData', 'updateData', 'resetState', 'setIdMtk', 'setNamaMtk', 'setJurusan', 'setJumlahSks'])), {}, {
-    updateIdMtk: function updateIdMtk(e) {
-      this.setIdMtk(e.target.value);
+  methods: _objectSpread(_objectSpread({}, Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapActions"])('RolesSingle', ['fetchEditData', 'updateData', 'resetState', 'setTitle', 'setPermissions'])), {}, {
+    updateTitle: function updateTitle(e) {
+      this.setTitle(e.target.value);
     },
-    updateNamaMtk: function updateNamaMtk(e) {
-      this.setNamaMtk(e.target.value);
-    },
-    updateJurusan: function updateJurusan(value) {
-      this.setJurusan(value);
-    },
-    updateJumlahSks: function updateJumlahSks(e) {
-      this.setJumlahSks(e.target.value);
+    updatePermissions: function updatePermissions(value) {
+      this.setPermissions(value);
     },
     submitForm: function submitForm() {
       var _this = this;
 
       this.updateData().then(function () {
         _this.$router.push({
-          name: 'mata_kuliahs.index'
+          name: 'roles.index'
         });
 
         _this.$eventHub.$emit('update-success');
@@ -203,10 +157,10 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/cruds/MataKuliahs/Edit.vue?vue&type=template&id=6eee3c10&":
-/*!***********************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/adminapp/js/cruds/MataKuliahs/Edit.vue?vue&type=template&id=6eee3c10& ***!
-  \***********************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/cruds/Roles/Edit.vue?vue&type=template&id=04ff78d7&":
+/*!*****************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/adminapp/js/cruds/Roles/Edit.vue?vue&type=template&id=04ff78d7& ***!
+  \*****************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -249,7 +203,7 @@ var render = function () {
                         "\n              "
                     ),
                     _c("strong", [
-                      _vm._v(_vm._s(_vm.$t("cruds.mataKuliah.title_singular"))),
+                      _vm._v(_vm._s(_vm.$t("cruds.role.title_singular"))),
                     ]),
                   ]),
                 ]
@@ -270,66 +224,25 @@ var render = function () {
                         {
                           staticClass: "form-group bmd-form-group",
                           class: {
-                            "has-items": _vm.entry.id_mtk,
-                            "is-focused": _vm.activeField == "id_mtk",
+                            "has-items": _vm.entry.title,
+                            "is-focused": _vm.activeField == "title",
                           },
                         },
                         [
                           _c(
                             "label",
                             { staticClass: "bmd-label-floating required" },
-                            [
-                              _vm._v(
-                                _vm._s(_vm.$t("cruds.mataKuliah.fields.id_mtk"))
-                              ),
-                            ]
-                          ),
-                          _vm._v(" "),
-                          _c("input", {
-                            staticClass: "form-control",
-                            attrs: { type: "number", step: "1", required: "" },
-                            domProps: { value: _vm.entry.id_mtk },
-                            on: {
-                              input: _vm.updateIdMtk,
-                              focus: function ($event) {
-                                return _vm.focusField("id_mtk")
-                              },
-                              blur: _vm.clearFocus,
-                            },
-                          }),
-                        ]
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "div",
-                        {
-                          staticClass: "form-group bmd-form-group",
-                          class: {
-                            "has-items": _vm.entry.nama_mtk,
-                            "is-focused": _vm.activeField == "nama_mtk",
-                          },
-                        },
-                        [
-                          _c(
-                            "label",
-                            { staticClass: "bmd-label-floating required" },
-                            [
-                              _vm._v(
-                                _vm._s(
-                                  _vm.$t("cruds.mataKuliah.fields.nama_mtk")
-                                )
-                              ),
-                            ]
+                            [_vm._v(_vm._s(_vm.$t("cruds.role.fields.title")))]
                           ),
                           _vm._v(" "),
                           _c("input", {
                             staticClass: "form-control",
                             attrs: { type: "text", required: "" },
-                            domProps: { value: _vm.entry.nama_mtk },
+                            domProps: { value: _vm.entry.title },
                             on: {
-                              input: _vm.updateNamaMtk,
+                              input: _vm.updateTitle,
                               focus: function ($event) {
-                                return _vm.focusField("nama_mtk")
+                                return _vm.focusField("title")
                               },
                               blur: _vm.clearFocus,
                             },
@@ -342,30 +255,33 @@ var render = function () {
                         {
                           staticClass: "form-group bmd-form-group",
                           class: {
-                            "has-items": _vm.entry.jurusan_id !== null,
-                            "is-focused": _vm.activeField == "jurusan",
+                            "has-items": _vm.entry.permissions.length !== 0,
+                            "is-focused": _vm.activeField == "permissions",
                           },
                         },
                         [
-                          _c("label", { staticClass: "bmd-label-floating" }, [
-                            _vm._v(
-                              _vm._s(_vm.$t("cruds.mataKuliah.fields.jurusan"))
-                            ),
-                          ]),
+                          _c(
+                            "label",
+                            { staticClass: "bmd-label-floating required" },
+                            [
+                              _vm._v(
+                                _vm._s(_vm.$t("cruds.role.fields.permissions"))
+                              ),
+                            ]
+                          ),
                           _vm._v(" "),
                           _c("v-select", {
-                            key: "jurusan-field",
+                            key: "permissions-field",
                             attrs: {
-                              name: "jurusan",
-                              label: "nama_jurusan",
-                              value: _vm.entry.jurusan_id,
-                              options: _vm.lists.jurusan,
-                              reduce: function (entry) {
-                                return entry.id
-                              },
+                              name: "permissions",
+                              label: "title",
+                              value: _vm.entry.permissions,
+                              options: _vm.lists.permissions,
+                              closeOnSelect: false,
+                              multiple: "",
                             },
                             on: {
-                              input: _vm.updateJurusan,
+                              input: _vm.updatePermissions,
                               search: [
                                 function ($event) {
                                   if (
@@ -380,7 +296,7 @@ var render = function () {
                                   ) {
                                     return null
                                   }
-                                  return _vm.focusField("jurusan")
+                                  return _vm.focusField("permissions")
                                 },
                                 function ($event) {
                                   if (
@@ -402,39 +318,6 @@ var render = function () {
                           }),
                         ],
                         1
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "div",
-                        {
-                          staticClass: "form-group bmd-form-group",
-                          class: {
-                            "has-items": _vm.entry.jumlah_sks,
-                            "is-focused": _vm.activeField == "jumlah_sks",
-                          },
-                        },
-                        [
-                          _c("label", { staticClass: "bmd-label-floating" }, [
-                            _vm._v(
-                              _vm._s(
-                                _vm.$t("cruds.mataKuliah.fields.jumlah_sks")
-                              )
-                            ),
-                          ]),
-                          _vm._v(" "),
-                          _c("input", {
-                            staticClass: "form-control",
-                            attrs: { type: "number", step: "1" },
-                            domProps: { value: _vm.entry.jumlah_sks },
-                            on: {
-                              input: _vm.updateJumlahSks,
-                              focus: function ($event) {
-                                return _vm.focusField("jumlah_sks")
-                              },
-                              blur: _vm.clearFocus,
-                            },
-                          }),
-                        ]
                       ),
                     ]),
                   ]),
@@ -490,17 +373,17 @@ render._withStripped = true
 
 /***/ }),
 
-/***/ "./resources/adminapp/js/cruds/MataKuliahs/Edit.vue":
-/*!**********************************************************!*\
-  !*** ./resources/adminapp/js/cruds/MataKuliahs/Edit.vue ***!
-  \**********************************************************/
+/***/ "./resources/adminapp/js/cruds/Roles/Edit.vue":
+/*!****************************************************!*\
+  !*** ./resources/adminapp/js/cruds/Roles/Edit.vue ***!
+  \****************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Edit_vue_vue_type_template_id_6eee3c10___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Edit.vue?vue&type=template&id=6eee3c10& */ "./resources/adminapp/js/cruds/MataKuliahs/Edit.vue?vue&type=template&id=6eee3c10&");
-/* harmony import */ var _Edit_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Edit.vue?vue&type=script&lang=js& */ "./resources/adminapp/js/cruds/MataKuliahs/Edit.vue?vue&type=script&lang=js&");
+/* harmony import */ var _Edit_vue_vue_type_template_id_04ff78d7___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Edit.vue?vue&type=template&id=04ff78d7& */ "./resources/adminapp/js/cruds/Roles/Edit.vue?vue&type=template&id=04ff78d7&");
+/* harmony import */ var _Edit_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Edit.vue?vue&type=script&lang=js& */ "./resources/adminapp/js/cruds/Roles/Edit.vue?vue&type=script&lang=js&");
 /* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
@@ -511,8 +394,8 @@ __webpack_require__.r(__webpack_exports__);
 
 var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
   _Edit_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _Edit_vue_vue_type_template_id_6eee3c10___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _Edit_vue_vue_type_template_id_6eee3c10___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  _Edit_vue_vue_type_template_id_04ff78d7___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Edit_vue_vue_type_template_id_04ff78d7___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
   null,
   null,
@@ -522,38 +405,38 @@ var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_
 
 /* hot reload */
 if (false) { var api; }
-component.options.__file = "resources/adminapp/js/cruds/MataKuliahs/Edit.vue"
+component.options.__file = "resources/adminapp/js/cruds/Roles/Edit.vue"
 /* harmony default export */ __webpack_exports__["default"] = (component.exports);
 
 /***/ }),
 
-/***/ "./resources/adminapp/js/cruds/MataKuliahs/Edit.vue?vue&type=script&lang=js&":
-/*!***********************************************************************************!*\
-  !*** ./resources/adminapp/js/cruds/MataKuliahs/Edit.vue?vue&type=script&lang=js& ***!
-  \***********************************************************************************/
+/***/ "./resources/adminapp/js/cruds/Roles/Edit.vue?vue&type=script&lang=js&":
+/*!*****************************************************************************!*\
+  !*** ./resources/adminapp/js/cruds/Roles/Edit.vue?vue&type=script&lang=js& ***!
+  \*****************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Edit_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../node_modules/vue-loader/lib??vue-loader-options!./Edit.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/cruds/MataKuliahs/Edit.vue?vue&type=script&lang=js&");
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Edit_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../node_modules/vue-loader/lib??vue-loader-options!./Edit.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/cruds/Roles/Edit.vue?vue&type=script&lang=js&");
 /* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Edit_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
 
 /***/ }),
 
-/***/ "./resources/adminapp/js/cruds/MataKuliahs/Edit.vue?vue&type=template&id=6eee3c10&":
-/*!*****************************************************************************************!*\
-  !*** ./resources/adminapp/js/cruds/MataKuliahs/Edit.vue?vue&type=template&id=6eee3c10& ***!
-  \*****************************************************************************************/
+/***/ "./resources/adminapp/js/cruds/Roles/Edit.vue?vue&type=template&id=04ff78d7&":
+/*!***********************************************************************************!*\
+  !*** ./resources/adminapp/js/cruds/Roles/Edit.vue?vue&type=template&id=04ff78d7& ***!
+  \***********************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Edit_vue_vue_type_template_id_6eee3c10___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../node_modules/vue-loader/lib??vue-loader-options!./Edit.vue?vue&type=template&id=6eee3c10& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/cruds/MataKuliahs/Edit.vue?vue&type=template&id=6eee3c10&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Edit_vue_vue_type_template_id_6eee3c10___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Edit_vue_vue_type_template_id_04ff78d7___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../node_modules/vue-loader/lib??vue-loader-options!./Edit.vue?vue&type=template&id=04ff78d7& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/cruds/Roles/Edit.vue?vue&type=template&id=04ff78d7&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Edit_vue_vue_type_template_id_04ff78d7___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Edit_vue_vue_type_template_id_6eee3c10___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Edit_vue_vue_type_template_id_04ff78d7___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 

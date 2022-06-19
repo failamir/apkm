@@ -71,6 +71,7 @@ class DataMahasiswa extends Model implements HasMedia
         'recall_tidak_lulus',
         'precision_tidak_lulus',
         'precision_lulus',
+        'location',
         'created_at',
         'updated_at',
         'deleted_at',

@@ -9491,7 +9491,7 @@ a.text-dark:focus {
 
 .btn.btn-primary {
   color: #fff;
-  background-color: #9c27b0;
+  background-color: #ce1545;
   border-color: #9c27b0;
   box-shadow: 0 2px 2px 0 rgba(156, 39, 176, 0.14), 0 3px 1px -2px rgba(156, 39, 176, 0.2), 0 1px 5px 0 rgba(156, 39, 176, 0.12);
 }
@@ -9499,6 +9499,7 @@ a.text-dark:focus {
 .btn.btn-primary:hover {
   color: #fff;
   background-color: #9124a3;
+  background-color: #ef6775;
   border-color: #701c7e;
 }
 
@@ -15280,7 +15281,7 @@ fieldset[disabled] .form-group.is-focused .togglebutton label {
   border-left: 4px solid transparent;
 }
 
-.sidebar[data-background-color=black] {
+.sidebar[data-background-color=red] {
   background-color: #191919;
 }
 
@@ -15524,43 +15525,43 @@ fieldset[disabled] .form-group.is-focused .togglebutton label {
   height: 60px;
 }
 
-.sidebar[data-background-color=black] .nav .nav-item .nav-link {
+.sidebar[data-background-color=red] .nav .nav-item .nav-link {
   color: #fff;
 }
 
-.sidebar[data-background-color=black] .nav .nav-item i {
+.sidebar[data-background-color=red] .nav .nav-item i {
   color: rgba(255, 255, 255, 0.8);
 }
 
-.sidebar[data-background-color=black] .nav .nav-item.active [data-toggle=collapse],
-.sidebar[data-background-color=black] .nav .nav-item:hover [data-toggle=collapse] {
+.sidebar[data-background-color=red] .nav .nav-item.active [data-toggle=collapse],
+.sidebar[data-background-color=red] .nav .nav-item:hover [data-toggle=collapse] {
   color: #fff;
 }
 
-.sidebar[data-background-color=black] .nav .nav-item.active [data-toggle=collapse] i,
-.sidebar[data-background-color=black] .nav .nav-item:hover [data-toggle=collapse] i {
+.sidebar[data-background-color=red] .nav .nav-item.active [data-toggle=collapse] i,
+.sidebar[data-background-color=red] .nav .nav-item:hover [data-toggle=collapse] i {
   color: rgba(255, 255, 255, 0.8);
 }
 
-.sidebar[data-background-color=black] .user a {
+.sidebar[data-background-color=red] .user a {
   color: #fff;
 }
 
-.sidebar[data-background-color=black] .simple-text {
+.sidebar[data-background-color=red] .simple-text {
   color: #fff;
 }
 
-.sidebar[data-background-color=black] .sidebar-background:after {
+.sidebar[data-background-color=red] .sidebar-background:after {
   background: #000;
   opacity: 0.8;
 }
 
-.sidebar[data-background-color=black] .nav li .dropdown-menu .dropdown-item {
+.sidebar[data-background-color=red] .nav li .dropdown-menu .dropdown-item {
   color: #fff;
 }
 
 .sidebar[data-color=purple] li.active > a {
-  background-color: #9c27b0;
+  background-color: #ce1545;
   box-shadow: 0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(156, 39, 176, 0.4);
 }
 
@@ -17575,7 +17576,7 @@ html[dir=rtl] .form-check .form-check-sign .check:before {
 .card.bg-primary,
 .card.card-rotate.bg-primary .front,
 .card.card-rotate.bg-primary .back {
-  background: linear-gradient(60deg, #ab47bc, #8e24aa);
+  background: linear-gradient(60deg, #cc0f43, #f67072);
 }
 
 .card .card-header-info .card-icon,

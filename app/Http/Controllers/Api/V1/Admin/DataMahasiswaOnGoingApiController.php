@@ -6,8 +6,8 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests\StoreDataMahasiswaOnGoingRequest;
 use App\Http\Requests\UpdateDataMahasiswaOnGoingRequest;
 use App\Http\Resources\Admin\DataMahasiswaOnGoingResource;
-use App\Models\DataMahasiswa;
 use App\Models\DataMahasiswaOnGoing;
+use App\Models\DataMahasiswa;
 use Gate;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
@@ -18,20 +18,85 @@ class DataMahasiswaOnGoingApiController extends Controller
     public function index()
     {
         abort_if(Gate::denies('data_mahasiswa_on_going_access'), Response::HTTP_FORBIDDEN, '403 Forbidden');
-
+        $DataMahasiswaOnGoingResource['andri'] = 'cantik';
         return new DataMahasiswaOnGoingResource(DataMahasiswaOnGoing::with(['dataHistory'])->advancedFilter());
     }
 
     public function store(StoreDataMahasiswaOnGoingRequest $request)
     {
-        $dataMahasiswaOnGoing = DataMahasiswaOnGoing::create($request->validated());
+        $dataMahasiswaOnGoing = DataMahasiswaOnGoing::create(array_merge(
+            $request->validated(),
+            ['lulus' => 123],
+            ['tidaklulus' => 123],
+            ['active' => 123],
+            ['observers' => 123],
+            ['accuracy' => 123],
+            ['recall_lulus' => 123],
+            ['recall_tidak_lulus' => 123],
+            ['precision_lulus' => 123],
+            ['precision_tidak_lulus' => 123],
+            ['hasil_prediksi' => 'url'],
+            ['data_history_id' => $request->input('data_history_id')],
+        ));
 
         if ($media = $request->input('data_mahasiswa', [])) {
             Media::whereIn('id', data_get($media, '*.id'))
                 ->where('model_id', 0)
                 ->update(['model_id' => $dataMahasiswaOnGoing->id]);
         }
+        // $dataMahasiswaOnGoing->andri = 'cantik';
+        // $a = $request->input('batas_nilai');
+        // $a = '../../../../public/storage/'.$request->input('data_mahasiswa')[0]["id"].'/'.$request->input('data_mahasiswa')[0]["file_name"];
+        // var_dump($a);
+        // var_dump($b);
+        var_dump($request->input('data_history_id'));
+        $andri = DataMahasiswa::find($request->input('data_history_id'));
+        var_dump($andri);
+        // die;
+        $a = $andri->batas_nilai;
+        // $c = public_path().'/storage/'.$request->input('data_mahasiswa')[0]["id"].'/'.$request->input('data_mahasiswa')[0]["file_name"];
+        // $a = $request->input('data_mahasiswa')[0]["file_name"];
 
+        // $batas = '40';
+        $b = $andri->location;
+        var_dump($b);
+        $c = public_path() . '/storage/' . $request->input('data_mahasiswa')[0]["id"] . '/' . $request->input('data_mahasiswa')[0]["file_name"];
+        var_dump($c);
+        $date = date('dmYhsi');
+        var_dump($date);
+        $u = $date . 'HasilPrediksi.xlsx';
+        var_dump($u);
+        // $process = new Process(["python3", "Proses.py '$a' '$b' '$date'"]);
+        // $process = new Process(["python3", "ProsesH.py '$a' '$b' '$date'"]);
+        // $process->run();
+
+        // executes after the command finishes
+        // if (!$process->isSuccessful()) {
+        //     throw new ProcessFailedException($process);
+        // }
+
+        // echo $process->getOutput();
+        $py = env('PYPATH',);
+        $andri = exec("'$py' ProsesOngoing.py '$a' '$b' '$c' '$date'  2>&1", $out, $ret);
+        // $andri = exec("python3 ../../../../Proses.py '$a' '$date'", $out, $ret);
+        var_dump($andri);
+        $text = str_replace("'", '"', $andri);
+        $andri = json_decode($text);
+
+        $dataMahasiswaOnGoing->update(array_merge(
+            $request->validated(),
+            ['lulus' => $andri->LulusdanTidakLulus[0]],
+            ['tidak_lulus' => $andri->LulusdanTidakLulus[1]],
+            ['active' => $andri->MahasiswaActivedanObservers[0]],
+            ['observers' => $andri->MahasiswaActivedanObservers[1]],
+            ['accuracy' => $andri->Accuracy],
+            ['recall_lulus' => $andri->RecallLulus],
+            ['recall_tidak_lulus' => $andri->RecallTidakLulus],
+            ['precision_lulus' => $andri->PrecisionLulus],
+            ['precision_tidak_lulus' => $andri->PrecisionTidakLulus],
+            ['hasil_prediksi' => $u],
+            ['data_history_id' => $request->input('data_history_id')],
+        ));
         return (new DataMahasiswaOnGoingResource($dataMahasiswaOnGoing))
             ->response()
             ->setStatusCode(Response::HTTP_CREATED);
@@ -55,12 +120,22 @@ class DataMahasiswaOnGoingApiController extends Controller
         return new DataMahasiswaOnGoingResource($dataMahasiswaOnGoing->load(['dataHistory']));
     }
 
+    public function proses(DataMahasiswaOnGoing $dataMahasiswa)
+    {
+        abort_if(Gate::denies('data_mahasiswa_on_going_show'), Response::HTTP_FORBIDDEN, '403 Forbidden');
+        // $d = new stdClass();
+        // $d->andri = 'cantik';
+        // array_push($dataDummy,$d);
+        $dataMahasiswa->andri = 'cantik';
+        return new DataMahasiswaOnGoingResource($dataMahasiswa);
+    }
+
     public function update(UpdateDataMahasiswaOnGoingRequest $request, DataMahasiswaOnGoing $dataMahasiswaOnGoing)
     {
         $dataMahasiswaOnGoing->update($request->validated());
 
         $dataMahasiswaOnGoing->updateMedia($request->input('data_mahasiswa', []), 'data_mahasiswa_on_going_data_mahasiswa');
-
+        $dataMahasiswaOnGoing->andri = 'cantik';
         return (new DataMahasiswaOnGoingResource($dataMahasiswaOnGoing))
             ->response()
             ->setStatusCode(Response::HTTP_ACCEPTED);
@@ -71,10 +146,8 @@ class DataMahasiswaOnGoingApiController extends Controller
         abort_if(Gate::denies('data_mahasiswa_on_going_edit'), Response::HTTP_FORBIDDEN, '403 Forbidden');
 
         return response([
-            'data' => new DataMahasiswaOnGoingResource($dataMahasiswaOnGoing->load(['dataHistory'])),
-            'meta' => [
-                'data_history' => DataMahasiswa::get(['id', 'nama']),
-            ],
+            'data' => new DataMahasiswaOnGoingResource($dataMahasiswaOnGoing),
+            'meta' => ['data_history' => DataMahasiswa::get(['id', 'nama']),],
         ]);
     }
 
