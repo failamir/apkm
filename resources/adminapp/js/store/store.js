@@ -22,8 +22,6 @@ import DataMahasiswaHistories from './cruds/DataMahasiswaHistories'
 import TentangAplikasis from './cruds/TentangAplikasis'
 import DataMahasiswasIndex from './cruds/DataMahasiswas'
 import DataMahasiswasSingle from './cruds/DataMahasiswas/single'
-import DataDummiesIndex from './cruds/DataDummies'
-import DataDummiesSingle from './cruds/DataDummies/single'
 import DataMahasiswaOnGoingsIndex from './cruds/DataMahasiswaOnGoings'
 import DataMahasiswaOnGoingsSingle from './cruds/DataMahasiswaOnGoings/single'
 
@@ -53,8 +51,6 @@ export default new Vuex.Store({
     TentangAplikasis,
     DataMahasiswasIndex,
     DataMahasiswasSingle,
-    DataDummiesIndex,
-    DataDummiesSingle,
     DataMahasiswaOnGoingsIndex,
     DataMahasiswaOnGoingsSingle
   },

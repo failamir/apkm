@@ -220,42 +220,22 @@ class PermissionsTableSeeder extends Seeder
             ],
             [
                 'id'    => 53,
-                'title' => 'data_dummy_create',
-            ],
-            [
-                'id'    => 54,
-                'title' => 'data_dummy_edit',
-            ],
-            [
-                'id'    => 55,
-                'title' => 'data_dummy_show',
-            ],
-            [
-                'id'    => 56,
-                'title' => 'data_dummy_delete',
-            ],
-            [
-                'id'    => 57,
-                'title' => 'data_dummy_access',
-            ],
-            [
-                'id'    => 58,
                 'title' => 'data_mahasiswa_on_going_create',
             ],
             [
-                'id'    => 59,
+                'id'    => 54,
                 'title' => 'data_mahasiswa_on_going_edit',
             ],
             [
-                'id'    => 60,
+                'id'    => 55,
                 'title' => 'data_mahasiswa_on_going_show',
             ],
             [
-                'id'    => 61,
+                'id'    => 56,
                 'title' => 'data_mahasiswa_on_going_delete',
             ],
             [
-                'id'    => 62,
+                'id'    => 57,
                 'title' => 'data_mahasiswa_on_going_access',
             ],
         ];

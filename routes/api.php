@@ -43,9 +43,6 @@ Route::group(['prefix' => 'v1', 'as' => 'api.', 'namespace' => 'Api\V1\Admin', '
     Route::resource('data-mahasiswas', 'DataMahasiswaApiController');
     Route::get('data-mahasiswas/{dataMahasiswa}/proses', 'DataMahasiswaApiController@proses')->name('data-mahasiswas.proses');
 
-    // Data Dummy
-    Route::resource('data-dummies', 'DataDummyApiController');
-
     // Data Mahasiswa On Going
     Route::get('data-mahasiswas-on-goings/{dataMahasiswa}/proses', 'DataMahasiswaOnGoingApiController@proses')->name('data-mahasiswas-on-goings.proses');
     Route::post('data-mahasiswa-on-goings/media', 'DataMahasiswaOnGoingApiController@storeMedia')->name('data-mahasiswa-on-goings.storeMedia');

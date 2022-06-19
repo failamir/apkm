@@ -23,26 +23,47 @@ class DataMahasiswaOnGoing extends Model implements HasMedia
         'data_mahasiswa',
     ];
 
-    protected $orderable = [
-        'id',
-        'nama',
-        'hasil_prediksi',
-    ];
-
-    protected $filterable = [
-        'id',
-        'nama',
-        'hasil_prediksi',
-    ];
-
     protected $dates = [
         'created_at',
         'updated_at',
         'deleted_at',
     ];
 
+    protected $orderable = [
+        'id',
+        'nama',
+        'data_history.nama',
+        'hasil_prediksi',
+        'lulus',
+        'tidak_lulus',
+        'active',
+        'observers',
+        'accuracy',
+        'recall_lulus',
+        'recall_tidak_lulus',
+        'precision_tidak_lulus',
+        'precision_lulus',
+    ];
+
+    protected $filterable = [
+        'id',
+        'nama',
+        'data_history.nama',
+        'hasil_prediksi',
+        'lulus',
+        'tidak_lulus',
+        'active',
+        'observers',
+        'accuracy',
+        'recall_lulus',
+        'recall_tidak_lulus',
+        'precision_tidak_lulus',
+        'precision_lulus',
+    ];
+
     protected $fillable = [
         'nama',
+        'data_history_id',
         'hasil_prediksi',
         'Lulus',
         'TidakLulus',
@@ -57,6 +78,11 @@ class DataMahasiswaOnGoing extends Model implements HasMedia
         'updated_at',
         'deleted_at',
     ];
+
+    public function dataHistory()
+    {
+        return $this->belongsTo(DataMahasiswa::class);
+    }
 
     public function getDataMahasiswaAttribute()
     {

@@ -57,6 +57,84 @@
                           {{ entry.batas_nilai }}
                         </td>
                       </tr>
+                      <tr>
+                        <td class="text-primary">
+                          {{ $t('cruds.dataMahasiswa.fields.lulus') }}
+                        </td>
+                        <td>
+                          {{ entry.lulus }}
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="text-primary">
+                          {{ $t('cruds.dataMahasiswa.fields.tidaklulus') }}
+                        </td>
+                        <td>
+                          {{ entry.tidaklulus }}
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="text-primary">
+                          {{ $t('cruds.dataMahasiswa.fields.active') }}
+                        </td>
+                        <td>
+                          {{ entry.active }}
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="text-primary">
+                          {{ $t('cruds.dataMahasiswa.fields.observers') }}
+                        </td>
+                        <td>
+                          {{ entry.observers }}
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="text-primary">
+                          {{ $t('cruds.dataMahasiswa.fields.accuracy') }}
+                        </td>
+                        <td>
+                          {{ entry.accuracy }}
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="text-primary">
+                          {{ $t('cruds.dataMahasiswa.fields.recall_lulus') }}
+                        </td>
+                        <td>
+                          {{ entry.recall_lulus }}
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="text-primary">
+                          {{
+                            $t('cruds.dataMahasiswa.fields.recall_tidak_lulus')
+                          }}
+                        </td>
+                        <td>
+                          {{ entry.recall_tidak_lulus }}
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="text-primary">
+                          {{
+                            $t(
+                              'cruds.dataMahasiswa.fields.precision_tidak_lulus'
+                            )
+                          }}
+                        </td>
+                        <td>
+                          {{ entry.precision_tidak_lulus }}
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="text-primary">
+                          {{ $t('cruds.dataMahasiswa.fields.precision_lulus') }}
+                        </td>
+                        <td>
+                          {{ entry.precision_lulus }}
+                        </td>
+                      </tr>
                     </tbody>
                   </div>
                 </div>

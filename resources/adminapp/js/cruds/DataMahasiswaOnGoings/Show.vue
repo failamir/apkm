@@ -42,6 +42,20 @@
                       <tr>
                         <td class="text-primary">
                           {{
+                            $t('cruds.dataMahasiswaOnGoing.fields.data_history')
+                          }}
+                        </td>
+                        <td>
+                          <datatable-single
+                            :row="entry"
+                            field="data_history.nama"
+                          >
+                          </datatable-single>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="text-primary">
+                          {{
                             $t(
                               'cruds.dataMahasiswaOnGoing.fields.data_mahasiswa'
                             )
@@ -68,6 +82,96 @@
                           <!-- {{ entry.hasil_prediksi }} -->
                         </td>
                       </tr>
+                      <tr>
+                        <td class="text-primary">
+                          {{ $t('cruds.dataMahasiswaOnGoing.fields.lulus') }}
+                        </td>
+                        <td>
+                          {{ entry.lulus }}
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="text-primary">
+                          {{
+                            $t('cruds.dataMahasiswaOnGoing.fields.tidak_lulus')
+                          }}
+                        </td>
+                        <td>
+                          {{ entry.tidak_lulus }}
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="text-primary">
+                          {{ $t('cruds.dataMahasiswaOnGoing.fields.active') }}
+                        </td>
+                        <td>
+                          {{ entry.active }}
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="text-primary">
+                          {{
+                            $t('cruds.dataMahasiswaOnGoing.fields.observers')
+                          }}
+                        </td>
+                        <td>
+                          {{ entry.observers }}
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="text-primary">
+                          {{ $t('cruds.dataMahasiswaOnGoing.fields.accuracy') }}
+                        </td>
+                        <td>
+                          {{ entry.accuracy }}
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="text-primary">
+                          {{
+                            $t('cruds.dataMahasiswaOnGoing.fields.recall_lulus')
+                          }}
+                        </td>
+                        <td>
+                          {{ entry.recall_lulus }}
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="text-primary">
+                          {{
+                            $t(
+                              'cruds.dataMahasiswaOnGoing.fields.recall_tidak_lulus'
+                            )
+                          }}
+                        </td>
+                        <td>
+                          {{ entry.recall_tidak_lulus }}
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="text-primary">
+                          {{
+                            $t(
+                              'cruds.dataMahasiswaOnGoing.fields.precision_tidak_lulus'
+                            )
+                          }}
+                        </td>
+                        <td>
+                          {{ entry.precision_tidak_lulus }}
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="text-primary">
+                          {{
+                            $t(
+                              'cruds.dataMahasiswaOnGoing.fields.precision_lulus'
+                            )
+                          }}
+                        </td>
+                        <td>
+                          {{ entry.precision_lulus }}
+                        </td>
+                      </tr>
                     </tbody>
                   </div>
                 </div>
@@ -82,10 +186,12 @@
 
 <script>
 import { mapGetters, mapActions } from 'vuex'
+import DatatableSingle from '@components/Datatables/DatatableSingle'
 import DatatableAttachments from '@components/Datatables/DatatableAttachments'
 
 export default {
   components: {
+    DatatableSingle,
     DatatableAttachments
   },
   data() {
