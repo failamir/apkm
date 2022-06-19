@@ -80,6 +80,12 @@ export default {
               icon: 'table_view',
               path: { name: 'data_mahasiswa_histories.index' },
               gate: 'data_mahasiswa_history_access'
+            },
+            {
+              title: 'cruds.tentangAplikasi.title',
+              icon: 'table_view',
+              path: { name: 'tentang_aplikasis.index' },
+              gate: 'tentang_aplikasi_access'
             }
           ]
         },
@@ -108,12 +114,6 @@ export default {
               gate: 'user_access'
             }
           ]
-        },
-        {
-          title: 'cruds.tentangAplikasi.title',
-          icon: 'table_view',
-          path: { name: 'tentang_aplikasis.index' },
-          gate: 'tentang_aplikasi_access'
         }
       ]
     }

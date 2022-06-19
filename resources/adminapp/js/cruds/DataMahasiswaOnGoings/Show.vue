@@ -78,8 +78,7 @@
                           }}
                         </td>
                         <td>
-                          <a :href="'/' + entry.hasil_prediksi"> Download </a>
-                          <!-- {{ entry.hasil_prediksi }} -->
+                          {{ entry.hasil_prediksi }}
                         </td>
                       </tr>
                       <tr>

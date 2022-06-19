@@ -77,7 +77,7 @@
                       :max-files="1"
                     />
                   </div>
-                  <!-- <div
+                  <div
                     class="form-group bmd-form-group"
                     :class="{
                       'has-items': entry.hasil_prediksi,
@@ -277,7 +277,7 @@
                       @focus="focusField('precision_lulus')"
                       @blur="clearFocus"
                     />
-                  </div> -->
+                  </div>
                 </div>
               </div>
             </div>
@@ -290,7 +290,6 @@
               >
                 {{ $t('global.save') }}
               </vue-button-spinner>
-            </div>
             </div>
           </div>
         </div>
