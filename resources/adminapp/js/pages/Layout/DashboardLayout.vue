@@ -34,6 +34,18 @@ export default {
           path: { name: 'dashboard' }
         },
         {
+          title: 'cruds.dataMahasiswa.title',
+          icon: 'table_view',
+          path: { name: 'data_mahasiswas.index' },
+          gate: 'data_mahasiswa_access'
+        },
+        {
+          title: 'cruds.dataMahasiswaOnGoing.title',
+          icon: 'table_view',
+          path: { name: 'data_mahasiswa_on_goings.index' },
+          gate: 'data_mahasiswa_on_going_access'
+        },
+        {
           title: 'cruds.mahasiswa.title',
           icon: 'table_view',
           path: { name: 'mahasiswas.index' },
@@ -56,18 +68,6 @@ export default {
           icon: 'table_view',
           path: { name: 'jurusans.index' },
           gate: 'jurusan_access'
-        },
-        {
-          title: 'cruds.dataMahasiswa.title',
-          icon: 'table_view',
-          path: { name: 'data_mahasiswas.index' },
-          gate: 'data_mahasiswa_access'
-        },
-        {
-          title: 'cruds.dataMahasiswaOnGoing.title',
-          icon: 'table_view',
-          path: { name: 'data_mahasiswa_on_goings.index' },
-          gate: 'data_mahasiswa_on_going_access'
         },
         {
           title: 'cruds.report.title',

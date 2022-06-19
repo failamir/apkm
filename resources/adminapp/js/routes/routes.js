@@ -18,6 +18,54 @@ const routes = [
         meta: { title: 'global.dashboard' }
       },
       {
+        path: 'data-mahasiswas',
+        name: 'data_mahasiswas.index',
+        component: () => import('@cruds/DataMahasiswas/Index.vue'),
+        meta: { title: 'cruds.dataMahasiswa.title' }
+      },
+      {
+        path: 'data-mahasiswas/create',
+        name: 'data_mahasiswas.create',
+        component: () => import('@cruds/DataMahasiswas/Create.vue'),
+        meta: { title: 'cruds.dataMahasiswa.title' }
+      },
+      {
+        path: 'data-mahasiswas/:id',
+        name: 'data_mahasiswas.show',
+        component: () => import('@cruds/DataMahasiswas/Show.vue'),
+        meta: { title: 'cruds.dataMahasiswa.title' }
+      },
+      {
+        path: 'data-mahasiswas/:id/edit',
+        name: 'data_mahasiswas.edit',
+        component: () => import('@cruds/DataMahasiswas/Edit.vue'),
+        meta: { title: 'cruds.dataMahasiswa.title' }
+      },
+      {
+        path: 'data-mahasiswa-on-goings',
+        name: 'data_mahasiswa_on_goings.index',
+        component: () => import('@cruds/DataMahasiswaOnGoings/Index.vue'),
+        meta: { title: 'cruds.dataMahasiswaOnGoing.title' }
+      },
+      {
+        path: 'data-mahasiswa-on-goings/create',
+        name: 'data_mahasiswa_on_goings.create',
+        component: () => import('@cruds/DataMahasiswaOnGoings/Create.vue'),
+        meta: { title: 'cruds.dataMahasiswaOnGoing.title' }
+      },
+      {
+        path: 'data-mahasiswa-on-goings/:id',
+        name: 'data_mahasiswa_on_goings.show',
+        component: () => import('@cruds/DataMahasiswaOnGoings/Show.vue'),
+        meta: { title: 'cruds.dataMahasiswaOnGoing.title' }
+      },
+      {
+        path: 'data-mahasiswa-on-goings/:id/edit',
+        name: 'data_mahasiswa_on_goings.edit',
+        component: () => import('@cruds/DataMahasiswaOnGoings/Edit.vue'),
+        meta: { title: 'cruds.dataMahasiswaOnGoing.title' }
+      },
+      {
         path: 'mahasiswas',
         name: 'mahasiswas.index',
         component: () => import('@cruds/Mahasiswas/Index.vue'),
@@ -112,54 +160,6 @@ const routes = [
         name: 'jurusans.edit',
         component: () => import('@cruds/Jurusans/Edit.vue'),
         meta: { title: 'cruds.jurusan.title' }
-      },
-      {
-        path: 'data-mahasiswas',
-        name: 'data_mahasiswas.index',
-        component: () => import('@cruds/DataMahasiswas/Index.vue'),
-        meta: { title: 'cruds.dataMahasiswa.title' }
-      },
-      {
-        path: 'data-mahasiswas/create',
-        name: 'data_mahasiswas.create',
-        component: () => import('@cruds/DataMahasiswas/Create.vue'),
-        meta: { title: 'cruds.dataMahasiswa.title' }
-      },
-      {
-        path: 'data-mahasiswas/:id',
-        name: 'data_mahasiswas.show',
-        component: () => import('@cruds/DataMahasiswas/Show.vue'),
-        meta: { title: 'cruds.dataMahasiswa.title' }
-      },
-      {
-        path: 'data-mahasiswas/:id/edit',
-        name: 'data_mahasiswas.edit',
-        component: () => import('@cruds/DataMahasiswas/Edit.vue'),
-        meta: { title: 'cruds.dataMahasiswa.title' }
-      },
-      {
-        path: 'data-mahasiswa-on-goings',
-        name: 'data_mahasiswa_on_goings.index',
-        component: () => import('@cruds/DataMahasiswaOnGoings/Index.vue'),
-        meta: { title: 'cruds.dataMahasiswaOnGoing.title' }
-      },
-      {
-        path: 'data-mahasiswa-on-goings/create',
-        name: 'data_mahasiswa_on_goings.create',
-        component: () => import('@cruds/DataMahasiswaOnGoings/Create.vue'),
-        meta: { title: 'cruds.dataMahasiswaOnGoing.title' }
-      },
-      {
-        path: 'data-mahasiswa-on-goings/:id',
-        name: 'data_mahasiswa_on_goings.show',
-        component: () => import('@cruds/DataMahasiswaOnGoings/Show.vue'),
-        meta: { title: 'cruds.dataMahasiswaOnGoing.title' }
-      },
-      {
-        path: 'data-mahasiswa-on-goings/:id/edit',
-        name: 'data_mahasiswa_on_goings.edit',
-        component: () => import('@cruds/DataMahasiswaOnGoings/Edit.vue'),
-        meta: { title: 'cruds.dataMahasiswaOnGoing.title' }
       },
       {
         path: 'report',
