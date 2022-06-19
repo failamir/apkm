@@ -1,14 +1,18 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([[12],{
 
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/components/Datatables/DatatableEnum.vue?vue&type=script&lang=js&":
-/*!********************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/adminapp/js/components/Datatables/DatatableEnum.vue?vue&type=script&lang=js& ***!
-  \********************************************************************************************************************************************************************************************/
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/components/Datatables/DatatableAttachments.vue?vue&type=script&lang=js&":
+/*!***************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/adminapp/js/components/Datatables/DatatableAttachments.vue?vue&type=script&lang=js& ***!
+  \***************************************************************************************************************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
 //
 //
 //
@@ -21,61 +25,22 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/components/Datatables/DatatableList.vue?vue&type=script&lang=js&":
-/*!********************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/adminapp/js/components/Datatables/DatatableList.vue?vue&type=script&lang=js& ***!
-  \********************************************************************************************************************************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-/* harmony default export */ __webpack_exports__["default"] = ({
-  props: ['field', 'row'],
-  computed: {
-    entry: function entry() {
-      var s = _.split(this.field, '.');
-
-      return {
-        key: s[0],
-        field: s[1]
-      };
-    }
-  }
-});
-
-/***/ }),
-
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/cruds/Dosens/Show.vue?vue&type=script&lang=js&":
-/*!**************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/adminapp/js/cruds/Dosens/Show.vue?vue&type=script&lang=js& ***!
-  \**************************************************************************************************************************************************************************/
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/cruds/DataMahasiswas/Proses.vue?vue&type=script&lang=js&":
+/*!************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/adminapp/js/cruds/DataMahasiswas/Proses.vue?vue&type=script&lang=js& ***!
+  \************************************************************************************************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vuex__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vuex */ "./node_modules/vuex/dist/vuex.esm.js");
-/* harmony import */ var _components_Datatables_DatatableList__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @components/Datatables/DatatableList */ "./resources/adminapp/js/components/Datatables/DatatableList.vue");
-/* harmony import */ var _components_Datatables_DatatableEnum__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @components/Datatables/DatatableEnum */ "./resources/adminapp/js/components/Datatables/DatatableEnum.vue");
+/* harmony import */ var _components_Datatables_DatatableAttachments__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @components/Datatables/DatatableAttachments */ "./resources/adminapp/js/components/Datatables/DatatableAttachments.vue");
+/* harmony import */ var _components_Charts_Bar__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @components/Charts/Bar */ "./resources/adminapp/js/components/Charts/Bar.vue");
+/* harmony import */ var _components_Charts_Line__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @components/Charts/Line */ "./resources/adminapp/js/components/Charts/Line.vue");
+/* harmony import */ var _components_Charts_Pie__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @components/Charts/Pie */ "./resources/adminapp/js/components/Charts/Pie.vue");
+/* harmony import */ var _components_Charts_Stats__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @components/Charts/Stats */ "./resources/adminapp/js/components/Charts/Stats.vue");
+/* harmony import */ var _components_Charts_Latest__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @components/Charts/Latest */ "./resources/adminapp/js/components/Charts/Latest.vue");
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
 
 function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { _defineProperty(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
@@ -178,39 +143,72 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
 
 
+
+
+
+
+ // console.log(DataMahasiswasSingle);
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {
-    DatatableList: _components_Datatables_DatatableList__WEBPACK_IMPORTED_MODULE_1__["default"],
-    DatatableEnum: _components_Datatables_DatatableEnum__WEBPACK_IMPORTED_MODULE_2__["default"]
+    DatatableAttachments: _components_Datatables_DatatableAttachments__WEBPACK_IMPORTED_MODULE_1__["default"],
+    BarChart: _components_Charts_Bar__WEBPACK_IMPORTED_MODULE_2__["default"],
+    LineChart: _components_Charts_Line__WEBPACK_IMPORTED_MODULE_3__["default"],
+    PieChart: _components_Charts_Pie__WEBPACK_IMPORTED_MODULE_4__["default"],
+    StatsCard: _components_Charts_Stats__WEBPACK_IMPORTED_MODULE_5__["default"],
+    LatestCard: _components_Charts_Latest__WEBPACK_IMPORTED_MODULE_6__["default"]
   },
   data: function data() {
-    return {};
+    return {
+      datacollection: null,
+      charts: null
+    };
   },
   beforeDestroy: function beforeDestroy() {
     this.resetState();
   },
-  computed: _objectSpread({}, Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapGetters"])('DosensSingle', ['entry'])),
+  computed: _objectSpread({}, Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapGetters"])('DataMahasiswasSingle', ['entry'])),
   watch: {
     '$route.params.id': {
       immediate: true,
       handler: function handler() {
         this.resetState();
-        this.fetchShowData(this.$route.params.id);
+        this.fetchProsesData(this.$route.params.id);
       }
     }
   },
-  methods: _objectSpread({}, Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapActions"])('DosensSingle', ['fetchShowData', 'resetState']))
+  methods: _objectSpread({}, Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapActions"])('DataMahasiswasSingle', ['fetchProsesData', 'resetState'])),
+  created: function created() {
+    var _this = this;
+
+    axios.get('andri').then(function (response) {
+      _this.charts = response.data;
+      response.data.pie2.labels[0] = 'Lulus';
+      response.data.pie2.labels[1] = 'Tidak Lulus';
+      response.data.pie2.labels[2] = 'Observes';
+      response.data.pie2.labels[3] = '';
+      response.data.pie2.labels[4] = '';
+      console.log(response.data.pie2.datasets[0].data);
+      console.log(response.data);
+    });
+  }
 });
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/components/Datatables/DatatableList.vue?vue&type=style&index=0&id=730e136a&scoped=true&lang=css&":
-/*!***************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader??ref--6-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/adminapp/js/components/Datatables/DatatableList.vue?vue&type=style&index=0&id=730e136a&scoped=true&lang=css& ***!
-  \***************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/components/Datatables/DatatableAttachments.vue?vue&type=style&index=0&id=28a596d8&scoped=true&lang=css&":
+/*!**********************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader??ref--6-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/adminapp/js/components/Datatables/DatatableAttachments.vue?vue&type=style&index=0&id=28a596d8&scoped=true&lang=css& ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -219,22 +217,22 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, "\n.badge[data-v-730e136a] {\n  font-size: 0.875rem;\n  font-weight: 500;\n  text-transform: none;\n}\n", ""]);
+exports.push([module.i, "\na[data-v-28a596d8] {\n  font-size: 13px;\n  font-weight: 500;\n  color: #202124;\n}\na[data-v-28a596d8]:hover {\n  color: #9c27b0;\n  text-decoration: underline;\n}\n", ""]);
 
 // exports
 
 
 /***/ }),
 
-/***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/components/Datatables/DatatableList.vue?vue&type=style&index=0&id=730e136a&scoped=true&lang=css&":
-/*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/style-loader!./node_modules/css-loader??ref--6-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/adminapp/js/components/Datatables/DatatableList.vue?vue&type=style&index=0&id=730e136a&scoped=true&lang=css& ***!
-  \*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/components/Datatables/DatatableAttachments.vue?vue&type=style&index=0&id=28a596d8&scoped=true&lang=css&":
+/*!**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/style-loader!./node_modules/css-loader??ref--6-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/adminapp/js/components/Datatables/DatatableAttachments.vue?vue&type=style&index=0&id=28a596d8&scoped=true&lang=css& ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-var content = __webpack_require__(/*! !../../../../../node_modules/css-loader??ref--6-1!../../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../../node_modules/postcss-loader/src??ref--6-2!../../../../../node_modules/vue-loader/lib??vue-loader-options!./DatatableList.vue?vue&type=style&index=0&id=730e136a&scoped=true&lang=css& */ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/components/Datatables/DatatableList.vue?vue&type=style&index=0&id=730e136a&scoped=true&lang=css&");
+var content = __webpack_require__(/*! !../../../../../node_modules/css-loader??ref--6-1!../../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../../node_modules/postcss-loader/src??ref--6-2!../../../../../node_modules/vue-loader/lib??vue-loader-options!./DatatableAttachments.vue?vue&type=style&index=0&id=28a596d8&scoped=true&lang=css& */ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/components/Datatables/DatatableAttachments.vue?vue&type=style&index=0&id=28a596d8&scoped=true&lang=css&");
 
 if(typeof content === 'string') content = [[module.i, content, '']];
 
@@ -256,36 +254,10 @@ if(false) {}
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/components/Datatables/DatatableEnum.vue?vue&type=template&id=b127e366&":
-/*!************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/adminapp/js/components/Datatables/DatatableEnum.vue?vue&type=template&id=b127e366& ***!
-  \************************************************************************************************************************************************************************************************************************************/
-/*! exports provided: render, staticRenderFns */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
-var render = function () {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c("div", [
-    _vm._v("\n  " + _vm._s(_vm.row[_vm.field + "_label"]) + "\n"),
-  ])
-}
-var staticRenderFns = []
-render._withStripped = true
-
-
-
-/***/ }),
-
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/components/Datatables/DatatableList.vue?vue&type=template&id=730e136a&scoped=true&":
-/*!************************************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/adminapp/js/components/Datatables/DatatableList.vue?vue&type=template&id=730e136a&scoped=true& ***!
-  \************************************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/components/Datatables/DatatableAttachments.vue?vue&type=template&id=28a596d8&scoped=true&":
+/*!*******************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/adminapp/js/components/Datatables/DatatableAttachments.vue?vue&type=template&id=28a596d8&scoped=true& ***!
+  \*******************************************************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -299,22 +271,19 @@ var render = function () {
   var _c = _vm._self._c || _h
   return _c(
     "div",
-    [
-      _vm._l(_vm.row[_vm.entry.key], function (item, key) {
-        return _c(
-          "span",
-          { key: key, staticClass: "badge badge-pill badge-azure mr-1" },
-          [_vm._v("\n    " + _vm._s(item[_vm.entry.field]) + "\n  ")]
-        )
-      }),
-      _vm._v(" "),
-      _vm.row[_vm.entry.key].length === 0
-        ? _c("span", { staticClass: "badge badge-pill badge-orange" }, [
-            _vm._v("\n    Not Assigned\n  "),
-          ])
-        : _vm._e(),
-    ],
-    2
+    _vm._l(_vm.row[_vm.field], function (item) {
+      return _c("div", { key: item.id, staticClass: "mb-1" }, [
+        _c(
+          "a",
+          { attrs: { href: item.url, title: item.name, target: "_blank" } },
+          [
+            _c("i", { staticClass: "material-icons mr-1" }, [_vm._v("link")]),
+            _vm._v(_vm._s(item.file_name) + "\n    "),
+          ]
+        ),
+      ])
+    }),
+    0
   )
 }
 var staticRenderFns = []
@@ -324,10 +293,10 @@ render._withStripped = true
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/cruds/Dosens/Show.vue?vue&type=template&id=542f925f&":
-/*!******************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/adminapp/js/cruds/Dosens/Show.vue?vue&type=template&id=542f925f& ***!
-  \******************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/cruds/DataMahasiswas/Proses.vue?vue&type=template&id=3ab03216&":
+/*!****************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/adminapp/js/cruds/DataMahasiswas/Proses.vue?vue&type=template&id=3ab03216& ***!
+  \****************************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -356,7 +325,7 @@ var render = function () {
                     "\n            "
                 ),
                 _c("strong", [
-                  _vm._v(_vm._s(_vm.$t("cruds.dosen.title_singular"))),
+                  _vm._v(_vm._s(_vm.$t("cruds.dataMahasiswa.title_singular"))),
                 ]),
               ]),
             ]
@@ -374,7 +343,7 @@ var render = function () {
                         _c("td", { staticClass: "text-primary" }, [
                           _vm._v(
                             "\n                        " +
-                              _vm._s(_vm.$t("cruds.dosen.fields.id")) +
+                              _vm._s(_vm.$t("cruds.dataMahasiswa.fields.id")) +
                               "\n                      "
                           ),
                         ]),
@@ -392,7 +361,9 @@ var render = function () {
                         _c("td", { staticClass: "text-primary" }, [
                           _vm._v(
                             "\n                        " +
-                              _vm._s(_vm.$t("cruds.dosen.fields.id_dosen")) +
+                              _vm._s(
+                                _vm.$t("cruds.dataMahasiswa.fields.nama")
+                              ) +
                               "\n                      "
                           ),
                         ]),
@@ -400,7 +371,7 @@ var render = function () {
                         _c("td", [
                           _vm._v(
                             "\n                        " +
-                              _vm._s(_vm.entry.id_dosen) +
+                              _vm._s(_vm.entry.nama) +
                               "\n                      "
                           ),
                         ]),
@@ -410,25 +381,11 @@ var render = function () {
                         _c("td", { staticClass: "text-primary" }, [
                           _vm._v(
                             "\n                        " +
-                              _vm._s(_vm.$t("cruds.dosen.fields.nama_dosen")) +
-                              "\n                      "
-                          ),
-                        ]),
-                        _vm._v(" "),
-                        _c("td", [
-                          _vm._v(
-                            "\n                        " +
-                              _vm._s(_vm.entry.nama_dosen) +
-                              "\n                      "
-                          ),
-                        ]),
-                      ]),
-                      _vm._v(" "),
-                      _c("tr", [
-                        _c("td", { staticClass: "text-primary" }, [
-                          _vm._v(
-                            "\n                        " +
-                              _vm._s(_vm.$t("cruds.dosen.fields.jurusan")) +
+                              _vm._s(
+                                _vm.$t(
+                                  "cruds.dataMahasiswa.fields.data_mahasiswa"
+                                )
+                              ) +
                               "\n                      "
                           ),
                         ]),
@@ -436,10 +393,10 @@ var render = function () {
                         _c(
                           "td",
                           [
-                            _c("datatable-list", {
+                            _c("datatable-attachments", {
                               attrs: {
                                 row: _vm.entry,
-                                field: "jurusan.nama_jurusan",
+                                field: "data_mahasiswa",
                               },
                             }),
                           ],
@@ -451,27 +408,9 @@ var render = function () {
                         _c("td", { staticClass: "text-primary" }, [
                           _vm._v(
                             "\n                        " +
-                              _vm._s(_vm.$t("cruds.dosen.fields.title")) +
-                              "\n                      "
-                          ),
-                        ]),
-                        _vm._v(" "),
-                        _c(
-                          "td",
-                          [
-                            _c("datatable-enum", {
-                              attrs: { row: _vm.entry, field: "title" },
-                            }),
-                          ],
-                          1
-                        ),
-                      ]),
-                      _vm._v(" "),
-                      _c("tr", [
-                        _c("td", { staticClass: "text-primary" }, [
-                          _vm._v(
-                            "\n                        " +
-                              _vm._s(_vm.$t("cruds.dosen.fields.email")) +
+                              _vm._s(
+                                _vm.$t("cruds.dataMahasiswa.fields.batas_nilai")
+                              ) +
                               "\n                      "
                           ),
                         ]),
@@ -479,26 +418,8 @@ var render = function () {
                         _c("td", [
                           _vm._v(
                             "\n                        " +
-                              _vm._s(_vm.entry.email) +
-                              "\n                      "
-                          ),
-                        ]),
-                      ]),
-                      _vm._v(" "),
-                      _c("tr", [
-                        _c("td", { staticClass: "text-primary" }, [
-                          _vm._v(
-                            "\n                        " +
-                              _vm._s(_vm.$t("cruds.dosen.fields.no_hp")) +
-                              "\n                      "
-                          ),
-                        ]),
-                        _vm._v(" "),
-                        _c("td", [
-                          _vm._v(
-                            "\n                        " +
-                              _vm._s(_vm.entry.no_hp) +
-                              "\n                      "
+                              _vm._s(_vm.entry.batas_nilai) +
+                              "\n                        "
                           ),
                         ]),
                       ]),
@@ -511,6 +432,68 @@ var render = function () {
         ]),
       ]),
     ]),
+    _vm._v(" "),
+    _c(
+      "div",
+      { staticClass: "row" },
+      [
+        _vm._l(_vm.charts, function (chart, key) {
+          return [
+            _c(
+              "div",
+              { key: key, class: chart.column_class },
+              [
+                chart.type === "Stats"
+                  ? _c("stats-card", { attrs: { "chart-data": chart } })
+                  : chart.type === "Latest"
+                  ? _c("latest-card", { attrs: { "chart-data": chart } })
+                  : _c("div", { staticClass: "card" }, [
+                      _c(
+                        "div",
+                        {
+                          staticClass:
+                            "card-header card-header-primary card-header-icon",
+                        },
+                        [
+                          _c("div", { staticClass: "card-icon" }, [
+                            _c("i", { staticClass: "material-icons" }, [
+                              _vm._v(_vm._s(chart.icon)),
+                            ]),
+                          ]),
+                          _vm._v(" "),
+                          _c("h4", { staticClass: "card-title" }, [
+                            _vm._v(
+                              "\n              " +
+                                _vm._s(chart.title) +
+                                "\n            "
+                            ),
+                          ]),
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        { staticClass: "card-body" },
+                        [
+                          _c(chart.type + "Chart", {
+                            tag: "component",
+                            attrs: {
+                              "chart-data": chart,
+                              options: chart.options,
+                            },
+                          }),
+                        ],
+                        1
+                      ),
+                    ]),
+              ],
+              1
+            ),
+          ]
+        }),
+      ],
+      2
+    ),
   ])
 }
 var staticRenderFns = [
@@ -529,87 +512,18 @@ render._withStripped = true
 
 /***/ }),
 
-/***/ "./resources/adminapp/js/components/Datatables/DatatableEnum.vue":
-/*!***********************************************************************!*\
-  !*** ./resources/adminapp/js/components/Datatables/DatatableEnum.vue ***!
-  \***********************************************************************/
+/***/ "./resources/adminapp/js/components/Datatables/DatatableAttachments.vue":
+/*!******************************************************************************!*\
+  !*** ./resources/adminapp/js/components/Datatables/DatatableAttachments.vue ***!
+  \******************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _DatatableEnum_vue_vue_type_template_id_b127e366___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./DatatableEnum.vue?vue&type=template&id=b127e366& */ "./resources/adminapp/js/components/Datatables/DatatableEnum.vue?vue&type=template&id=b127e366&");
-/* harmony import */ var _DatatableEnum_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./DatatableEnum.vue?vue&type=script&lang=js& */ "./resources/adminapp/js/components/Datatables/DatatableEnum.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
-
-
-
-
-
-/* normalize component */
-
-var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
-  _DatatableEnum_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _DatatableEnum_vue_vue_type_template_id_b127e366___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _DatatableEnum_vue_vue_type_template_id_b127e366___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
-  false,
-  null,
-  null,
-  null
-  
-)
-
-/* hot reload */
-if (false) { var api; }
-component.options.__file = "resources/adminapp/js/components/Datatables/DatatableEnum.vue"
-/* harmony default export */ __webpack_exports__["default"] = (component.exports);
-
-/***/ }),
-
-/***/ "./resources/adminapp/js/components/Datatables/DatatableEnum.vue?vue&type=script&lang=js&":
-/*!************************************************************************************************!*\
-  !*** ./resources/adminapp/js/components/Datatables/DatatableEnum.vue?vue&type=script&lang=js& ***!
-  \************************************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_DatatableEnum_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../node_modules/vue-loader/lib??vue-loader-options!./DatatableEnum.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/components/Datatables/DatatableEnum.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_DatatableEnum_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
-
-/***/ }),
-
-/***/ "./resources/adminapp/js/components/Datatables/DatatableEnum.vue?vue&type=template&id=b127e366&":
-/*!******************************************************************************************************!*\
-  !*** ./resources/adminapp/js/components/Datatables/DatatableEnum.vue?vue&type=template&id=b127e366& ***!
-  \******************************************************************************************************/
-/*! exports provided: render, staticRenderFns */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_DatatableEnum_vue_vue_type_template_id_b127e366___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../node_modules/vue-loader/lib??vue-loader-options!./DatatableEnum.vue?vue&type=template&id=b127e366& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/components/Datatables/DatatableEnum.vue?vue&type=template&id=b127e366&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_DatatableEnum_vue_vue_type_template_id_b127e366___WEBPACK_IMPORTED_MODULE_0__["render"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_DatatableEnum_vue_vue_type_template_id_b127e366___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
-
-
-
-/***/ }),
-
-/***/ "./resources/adminapp/js/components/Datatables/DatatableList.vue":
-/*!***********************************************************************!*\
-  !*** ./resources/adminapp/js/components/Datatables/DatatableList.vue ***!
-  \***********************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _DatatableList_vue_vue_type_template_id_730e136a_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./DatatableList.vue?vue&type=template&id=730e136a&scoped=true& */ "./resources/adminapp/js/components/Datatables/DatatableList.vue?vue&type=template&id=730e136a&scoped=true&");
-/* harmony import */ var _DatatableList_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./DatatableList.vue?vue&type=script&lang=js& */ "./resources/adminapp/js/components/Datatables/DatatableList.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport *//* harmony import */ var _DatatableList_vue_vue_type_style_index_0_id_730e136a_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./DatatableList.vue?vue&type=style&index=0&id=730e136a&scoped=true&lang=css& */ "./resources/adminapp/js/components/Datatables/DatatableList.vue?vue&type=style&index=0&id=730e136a&scoped=true&lang=css&");
+/* harmony import */ var _DatatableAttachments_vue_vue_type_template_id_28a596d8_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./DatatableAttachments.vue?vue&type=template&id=28a596d8&scoped=true& */ "./resources/adminapp/js/components/Datatables/DatatableAttachments.vue?vue&type=template&id=28a596d8&scoped=true&");
+/* harmony import */ var _DatatableAttachments_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./DatatableAttachments.vue?vue&type=script&lang=js& */ "./resources/adminapp/js/components/Datatables/DatatableAttachments.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _DatatableAttachments_vue_vue_type_style_index_0_id_28a596d8_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./DatatableAttachments.vue?vue&type=style&index=0&id=28a596d8&scoped=true&lang=css& */ "./resources/adminapp/js/components/Datatables/DatatableAttachments.vue?vue&type=style&index=0&id=28a596d8&scoped=true&lang=css&");
 /* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
@@ -620,82 +534,82 @@ __webpack_require__.r(__webpack_exports__);
 /* normalize component */
 
 var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__["default"])(
-  _DatatableList_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _DatatableList_vue_vue_type_template_id_730e136a_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _DatatableList_vue_vue_type_template_id_730e136a_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  _DatatableAttachments_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _DatatableAttachments_vue_vue_type_template_id_28a596d8_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _DatatableAttachments_vue_vue_type_template_id_28a596d8_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
   null,
-  "730e136a",
+  "28a596d8",
   null
   
 )
 
 /* hot reload */
 if (false) { var api; }
-component.options.__file = "resources/adminapp/js/components/Datatables/DatatableList.vue"
+component.options.__file = "resources/adminapp/js/components/Datatables/DatatableAttachments.vue"
 /* harmony default export */ __webpack_exports__["default"] = (component.exports);
 
 /***/ }),
 
-/***/ "./resources/adminapp/js/components/Datatables/DatatableList.vue?vue&type=script&lang=js&":
-/*!************************************************************************************************!*\
-  !*** ./resources/adminapp/js/components/Datatables/DatatableList.vue?vue&type=script&lang=js& ***!
-  \************************************************************************************************/
+/***/ "./resources/adminapp/js/components/Datatables/DatatableAttachments.vue?vue&type=script&lang=js&":
+/*!*******************************************************************************************************!*\
+  !*** ./resources/adminapp/js/components/Datatables/DatatableAttachments.vue?vue&type=script&lang=js& ***!
+  \*******************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_DatatableList_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../node_modules/vue-loader/lib??vue-loader-options!./DatatableList.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/components/Datatables/DatatableList.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_DatatableList_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_DatatableAttachments_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../node_modules/vue-loader/lib??vue-loader-options!./DatatableAttachments.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/components/Datatables/DatatableAttachments.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_DatatableAttachments_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
 
 /***/ }),
 
-/***/ "./resources/adminapp/js/components/Datatables/DatatableList.vue?vue&type=style&index=0&id=730e136a&scoped=true&lang=css&":
-/*!********************************************************************************************************************************!*\
-  !*** ./resources/adminapp/js/components/Datatables/DatatableList.vue?vue&type=style&index=0&id=730e136a&scoped=true&lang=css& ***!
-  \********************************************************************************************************************************/
+/***/ "./resources/adminapp/js/components/Datatables/DatatableAttachments.vue?vue&type=style&index=0&id=28a596d8&scoped=true&lang=css&":
+/*!***************************************************************************************************************************************!*\
+  !*** ./resources/adminapp/js/components/Datatables/DatatableAttachments.vue?vue&type=style&index=0&id=28a596d8&scoped=true&lang=css& ***!
+  \***************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_DatatableList_vue_vue_type_style_index_0_id_730e136a_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/style-loader!../../../../../node_modules/css-loader??ref--6-1!../../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../../node_modules/postcss-loader/src??ref--6-2!../../../../../node_modules/vue-loader/lib??vue-loader-options!./DatatableList.vue?vue&type=style&index=0&id=730e136a&scoped=true&lang=css& */ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/components/Datatables/DatatableList.vue?vue&type=style&index=0&id=730e136a&scoped=true&lang=css&");
-/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_DatatableList_vue_vue_type_style_index_0_id_730e136a_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_DatatableList_vue_vue_type_style_index_0_id_730e136a_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__);
-/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_DatatableList_vue_vue_type_style_index_0_id_730e136a_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_DatatableList_vue_vue_type_style_index_0_id_730e136a_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_DatatableAttachments_vue_vue_type_style_index_0_id_28a596d8_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/style-loader!../../../../../node_modules/css-loader??ref--6-1!../../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../../node_modules/postcss-loader/src??ref--6-2!../../../../../node_modules/vue-loader/lib??vue-loader-options!./DatatableAttachments.vue?vue&type=style&index=0&id=28a596d8&scoped=true&lang=css& */ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/components/Datatables/DatatableAttachments.vue?vue&type=style&index=0&id=28a596d8&scoped=true&lang=css&");
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_DatatableAttachments_vue_vue_type_style_index_0_id_28a596d8_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_DatatableAttachments_vue_vue_type_style_index_0_id_28a596d8_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_DatatableAttachments_vue_vue_type_style_index_0_id_28a596d8_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_DatatableAttachments_vue_vue_type_style_index_0_id_28a596d8_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
 
 
 /***/ }),
 
-/***/ "./resources/adminapp/js/components/Datatables/DatatableList.vue?vue&type=template&id=730e136a&scoped=true&":
-/*!******************************************************************************************************************!*\
-  !*** ./resources/adminapp/js/components/Datatables/DatatableList.vue?vue&type=template&id=730e136a&scoped=true& ***!
-  \******************************************************************************************************************/
+/***/ "./resources/adminapp/js/components/Datatables/DatatableAttachments.vue?vue&type=template&id=28a596d8&scoped=true&":
+/*!*************************************************************************************************************************!*\
+  !*** ./resources/adminapp/js/components/Datatables/DatatableAttachments.vue?vue&type=template&id=28a596d8&scoped=true& ***!
+  \*************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_DatatableList_vue_vue_type_template_id_730e136a_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../node_modules/vue-loader/lib??vue-loader-options!./DatatableList.vue?vue&type=template&id=730e136a&scoped=true& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/components/Datatables/DatatableList.vue?vue&type=template&id=730e136a&scoped=true&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_DatatableList_vue_vue_type_template_id_730e136a_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_DatatableAttachments_vue_vue_type_template_id_28a596d8_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../node_modules/vue-loader/lib??vue-loader-options!./DatatableAttachments.vue?vue&type=template&id=28a596d8&scoped=true& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/components/Datatables/DatatableAttachments.vue?vue&type=template&id=28a596d8&scoped=true&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_DatatableAttachments_vue_vue_type_template_id_28a596d8_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_DatatableList_vue_vue_type_template_id_730e136a_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_DatatableAttachments_vue_vue_type_template_id_28a596d8_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 
 /***/ }),
 
-/***/ "./resources/adminapp/js/cruds/Dosens/Show.vue":
-/*!*****************************************************!*\
-  !*** ./resources/adminapp/js/cruds/Dosens/Show.vue ***!
-  \*****************************************************/
+/***/ "./resources/adminapp/js/cruds/DataMahasiswas/Proses.vue":
+/*!***************************************************************!*\
+  !*** ./resources/adminapp/js/cruds/DataMahasiswas/Proses.vue ***!
+  \***************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Show_vue_vue_type_template_id_542f925f___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Show.vue?vue&type=template&id=542f925f& */ "./resources/adminapp/js/cruds/Dosens/Show.vue?vue&type=template&id=542f925f&");
-/* harmony import */ var _Show_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Show.vue?vue&type=script&lang=js& */ "./resources/adminapp/js/cruds/Dosens/Show.vue?vue&type=script&lang=js&");
+/* harmony import */ var _Proses_vue_vue_type_template_id_3ab03216___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Proses.vue?vue&type=template&id=3ab03216& */ "./resources/adminapp/js/cruds/DataMahasiswas/Proses.vue?vue&type=template&id=3ab03216&");
+/* harmony import */ var _Proses_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Proses.vue?vue&type=script&lang=js& */ "./resources/adminapp/js/cruds/DataMahasiswas/Proses.vue?vue&type=script&lang=js&");
 /* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
@@ -705,9 +619,9 @@ __webpack_require__.r(__webpack_exports__);
 /* normalize component */
 
 var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
-  _Show_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _Show_vue_vue_type_template_id_542f925f___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _Show_vue_vue_type_template_id_542f925f___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  _Proses_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _Proses_vue_vue_type_template_id_3ab03216___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Proses_vue_vue_type_template_id_3ab03216___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
   null,
   null,
@@ -717,38 +631,38 @@ var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_
 
 /* hot reload */
 if (false) { var api; }
-component.options.__file = "resources/adminapp/js/cruds/Dosens/Show.vue"
+component.options.__file = "resources/adminapp/js/cruds/DataMahasiswas/Proses.vue"
 /* harmony default export */ __webpack_exports__["default"] = (component.exports);
 
 /***/ }),
 
-/***/ "./resources/adminapp/js/cruds/Dosens/Show.vue?vue&type=script&lang=js&":
-/*!******************************************************************************!*\
-  !*** ./resources/adminapp/js/cruds/Dosens/Show.vue?vue&type=script&lang=js& ***!
-  \******************************************************************************/
+/***/ "./resources/adminapp/js/cruds/DataMahasiswas/Proses.vue?vue&type=script&lang=js&":
+/*!****************************************************************************************!*\
+  !*** ./resources/adminapp/js/cruds/DataMahasiswas/Proses.vue?vue&type=script&lang=js& ***!
+  \****************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Show_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../node_modules/vue-loader/lib??vue-loader-options!./Show.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/cruds/Dosens/Show.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Show_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Proses_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../node_modules/vue-loader/lib??vue-loader-options!./Proses.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/cruds/DataMahasiswas/Proses.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Proses_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
 
 /***/ }),
 
-/***/ "./resources/adminapp/js/cruds/Dosens/Show.vue?vue&type=template&id=542f925f&":
-/*!************************************************************************************!*\
-  !*** ./resources/adminapp/js/cruds/Dosens/Show.vue?vue&type=template&id=542f925f& ***!
-  \************************************************************************************/
+/***/ "./resources/adminapp/js/cruds/DataMahasiswas/Proses.vue?vue&type=template&id=3ab03216&":
+/*!**********************************************************************************************!*\
+  !*** ./resources/adminapp/js/cruds/DataMahasiswas/Proses.vue?vue&type=template&id=3ab03216& ***!
+  \**********************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Show_vue_vue_type_template_id_542f925f___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../node_modules/vue-loader/lib??vue-loader-options!./Show.vue?vue&type=template&id=542f925f& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/cruds/Dosens/Show.vue?vue&type=template&id=542f925f&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Show_vue_vue_type_template_id_542f925f___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Proses_vue_vue_type_template_id_3ab03216___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../node_modules/vue-loader/lib??vue-loader-options!./Proses.vue?vue&type=template&id=3ab03216& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/cruds/DataMahasiswas/Proses.vue?vue&type=template&id=3ab03216&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Proses_vue_vue_type_template_id_3ab03216___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Show_vue_vue_type_template_id_542f925f___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Proses_vue_vue_type_template_id_3ab03216___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 

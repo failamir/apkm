@@ -1,15 +1,16 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([[28],{
 
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/cruds/Dosens/Create.vue?vue&type=script&lang=js&":
-/*!****************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/adminapp/js/cruds/Dosens/Create.vue?vue&type=script&lang=js& ***!
-  \****************************************************************************************************************************************************************************/
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/cruds/DataMahasiswaOnGoings/Edit.vue?vue&type=script&lang=js&":
+/*!*****************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/adminapp/js/cruds/DataMahasiswaOnGoings/Edit.vue?vue&type=script&lang=js& ***!
+  \*****************************************************************************************************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vuex__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vuex */ "./node_modules/vuex/dist/vuex.esm.js");
+/* harmony import */ var _components_Attachments_Attachment__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @components/Attachments/Attachment */ "./resources/adminapp/js/components/Attachments/Attachment.vue");
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
 
 function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { _defineProperty(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
@@ -113,105 +114,50 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
+
 
 /* harmony default export */ __webpack_exports__["default"] = ({
+  components: {
+    Attachment: _components_Attachments_Attachment__WEBPACK_IMPORTED_MODULE_1__["default"]
+  },
   data: function data() {
     return {
       status: '',
       activeField: ''
     };
   },
-  computed: _objectSpread({}, Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapGetters"])('DosensSingle', ['entry', 'loading', 'lists'])),
-  mounted: function mounted() {
-    this.fetchCreateData();
-  },
+  computed: _objectSpread({}, Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapGetters"])('DataMahasiswaOnGoingsSingle', ['entry', 'loading'])),
   beforeDestroy: function beforeDestroy() {
     this.resetState();
   },
-  methods: _objectSpread(_objectSpread({}, Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapActions"])('DosensSingle', ['storeData', 'resetState', 'setIdDosen', 'setNamaDosen', 'setJurusan', 'setTitle', 'setEmail', 'setNoHp', 'fetchCreateData'])), {}, {
-    updateIdDosen: function updateIdDosen(e) {
-      this.setIdDosen(e.target.value);
+  watch: {
+    '$route.params.id': {
+      immediate: true,
+      handler: function handler() {
+        this.resetState();
+        this.fetchEditData(this.$route.params.id);
+      }
+    }
+  },
+  methods: _objectSpread(_objectSpread({}, Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapActions"])('DataMahasiswaOnGoingsSingle', ['fetchEditData', 'updateData', 'resetState', 'setNama', 'insertDataMahasiswaFile', 'removeDataMahasiswaFile', 'setHasilPrediksi'])), {}, {
+    updateNama: function updateNama(e) {
+      this.setNama(e.target.value);
     },
-    updateNamaDosen: function updateNamaDosen(e) {
-      this.setNamaDosen(e.target.value);
+    updateHasilPrediksi: function updateHasilPrediksi(e) {
+      this.setHasilPrediksi(e.target.value);
     },
-    updateJurusan: function updateJurusan(value) {
-      this.setJurusan(value);
-    },
-    updateTitle: function updateTitle(value) {
-      this.setTitle(value);
-    },
-    updateEmail: function updateEmail(e) {
-      this.setEmail(e.target.value);
-    },
-    updateNoHp: function updateNoHp(e) {
-      this.setNoHp(e.target.value);
+    getRoute: function getRoute(name) {
+      return "".concat(axios.defaults.baseURL).concat(name, "/media");
     },
     submitForm: function submitForm() {
       var _this = this;
 
-      this.storeData().then(function () {
+      this.updateData().then(function () {
         _this.$router.push({
-          name: 'dosens.index'
+          name: 'data_mahasiswa_on_goings.index'
         });
 
-        _this.$eventHub.$emit('create-success');
+        _this.$eventHub.$emit('update-success');
       })["catch"](function (error) {
         _this.status = 'failed';
 
@@ -231,10 +177,10 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/cruds/Dosens/Create.vue?vue&type=template&id=6878965e&":
-/*!********************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/adminapp/js/cruds/Dosens/Create.vue?vue&type=template&id=6878965e& ***!
-  \********************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/cruds/DataMahasiswaOnGoings/Edit.vue?vue&type=template&id=60ebca28&":
+/*!*********************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/adminapp/js/cruds/DataMahasiswaOnGoings/Edit.vue?vue&type=template&id=60ebca28& ***!
+  \*********************************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -273,11 +219,15 @@ var render = function () {
                   _c("h4", { staticClass: "card-title" }, [
                     _vm._v(
                       "\n              " +
-                        _vm._s(_vm.$t("global.create")) +
+                        _vm._s(_vm.$t("global.edit")) +
                         "\n              "
                     ),
                     _c("strong", [
-                      _vm._v(_vm._s(_vm.$t("cruds.dosen.title_singular"))),
+                      _vm._v(
+                        _vm._s(
+                          _vm.$t("cruds.dataMahasiswaOnGoing.title_singular")
+                        )
+                      ),
                     ]),
                   ]),
                 ]
@@ -298,135 +248,32 @@ var render = function () {
                         {
                           staticClass: "form-group bmd-form-group",
                           class: {
-                            "has-items": _vm.entry.id_dosen,
-                            "is-focused": _vm.activeField == "id_dosen",
-                          },
-                        },
-                        [
-                          _c(
-                            "label",
-                            { staticClass: "bmd-label-floating required" },
-                            [
-                              _vm._v(
-                                _vm._s(_vm.$t("cruds.dosen.fields.id_dosen"))
-                              ),
-                            ]
-                          ),
-                          _vm._v(" "),
-                          _c("input", {
-                            staticClass: "form-control",
-                            attrs: { type: "number", step: "1", required: "" },
-                            domProps: { value: _vm.entry.id_dosen },
-                            on: {
-                              input: _vm.updateIdDosen,
-                              focus: function ($event) {
-                                return _vm.focusField("id_dosen")
-                              },
-                              blur: _vm.clearFocus,
-                            },
-                          }),
-                        ]
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "div",
-                        {
-                          staticClass: "form-group bmd-form-group",
-                          class: {
-                            "has-items": _vm.entry.nama_dosen,
-                            "is-focused": _vm.activeField == "nama_dosen",
-                          },
-                        },
-                        [
-                          _c(
-                            "label",
-                            { staticClass: "bmd-label-floating required" },
-                            [
-                              _vm._v(
-                                _vm._s(_vm.$t("cruds.dosen.fields.nama_dosen"))
-                              ),
-                            ]
-                          ),
-                          _vm._v(" "),
-                          _c("input", {
-                            staticClass: "form-control",
-                            attrs: { type: "text", required: "" },
-                            domProps: { value: _vm.entry.nama_dosen },
-                            on: {
-                              input: _vm.updateNamaDosen,
-                              focus: function ($event) {
-                                return _vm.focusField("nama_dosen")
-                              },
-                              blur: _vm.clearFocus,
-                            },
-                          }),
-                        ]
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "div",
-                        {
-                          staticClass: "form-group bmd-form-group",
-                          class: {
-                            "has-items": _vm.entry.jurusan.length !== 0,
-                            "is-focused": _vm.activeField == "jurusan",
+                            "has-items": _vm.entry.nama,
+                            "is-focused": _vm.activeField == "nama",
                           },
                         },
                         [
                           _c("label", { staticClass: "bmd-label-floating" }, [
                             _vm._v(
-                              _vm._s(_vm.$t("cruds.dosen.fields.jurusan"))
+                              _vm._s(
+                                _vm.$t("cruds.dataMahasiswaOnGoing.fields.nama")
+                              )
                             ),
                           ]),
                           _vm._v(" "),
-                          _c("v-select", {
-                            key: "jurusan-field",
-                            attrs: {
-                              name: "jurusan",
-                              label: "nama_jurusan",
-                              value: _vm.entry.jurusan,
-                              options: _vm.lists.jurusan,
-                              closeOnSelect: false,
-                              multiple: "",
-                            },
+                          _c("input", {
+                            staticClass: "form-control",
+                            attrs: { type: "text" },
+                            domProps: { value: _vm.entry.nama },
                             on: {
-                              input: _vm.updateJurusan,
-                              search: [
-                                function ($event) {
-                                  if (
-                                    !$event.type.indexOf("key") &&
-                                    _vm._k(
-                                      $event.keyCode,
-                                      "focus",
-                                      undefined,
-                                      $event.key,
-                                      undefined
-                                    )
-                                  ) {
-                                    return null
-                                  }
-                                  return _vm.focusField("jurusan")
-                                },
-                                function ($event) {
-                                  if (
-                                    !$event.type.indexOf("key") &&
-                                    _vm._k(
-                                      $event.keyCode,
-                                      "blur",
-                                      undefined,
-                                      $event.key,
-                                      undefined
-                                    )
-                                  ) {
-                                    return null
-                                  }
-                                  return _vm.clearFocus.apply(null, arguments)
-                                },
-                              ],
+                              input: _vm.updateNama,
+                              focus: function ($event) {
+                                return _vm.focusField("nama")
+                              },
+                              blur: _vm.clearFocus,
                             },
                           }),
-                        ],
-                        1
+                        ]
                       ),
                       _vm._v(" "),
                       _c(
@@ -434,15 +281,29 @@ var render = function () {
                         { staticClass: "form-group" },
                         [
                           _c("label", [
-                            _vm._v(_vm._s(_vm.$t("cruds.dosen.fields.title"))),
+                            _vm._v(
+                              _vm._s(
+                                _vm.$t(
+                                  "cruds.dataMahasiswaOnGoing.fields.data_mahasiswa"
+                                )
+                              )
+                            ),
                           ]),
                           _vm._v(" "),
-                          _c("v-radio", {
+                          _c("attachment", {
                             attrs: {
-                              value: _vm.entry.title,
-                              options: _vm.lists.title,
+                              route: _vm.getRoute("data-mahasiswa-on-goings"),
+                              "collection-name":
+                                "data_mahasiswa_on_going_data_mahasiswa",
+                              media: _vm.entry.data_mahasiswa,
+                              "model-id": _vm.$route.params.id,
+                              "max-file-size": 32,
+                              "max-files": 1,
                             },
-                            on: { change: _vm.updateTitle },
+                            on: {
+                              "file-uploaded": _vm.insertDataMahasiswaFile,
+                              "file-removed": _vm.removeDataMahasiswaFile,
+                            },
                           }),
                         ],
                         1
@@ -453,52 +314,29 @@ var render = function () {
                         {
                           staticClass: "form-group bmd-form-group",
                           class: {
-                            "has-items": _vm.entry.email,
-                            "is-focused": _vm.activeField == "email",
+                            "has-items": _vm.entry.hasil_prediksi,
+                            "is-focused": _vm.activeField == "hasil_prediksi",
                           },
                         },
                         [
                           _c("label", { staticClass: "bmd-label-floating" }, [
-                            _vm._v(_vm._s(_vm.$t("cruds.dosen.fields.email"))),
-                          ]),
-                          _vm._v(" "),
-                          _c("input", {
-                            staticClass: "form-control",
-                            attrs: { type: "email" },
-                            domProps: { value: _vm.entry.email },
-                            on: {
-                              input: _vm.updateEmail,
-                              focus: function ($event) {
-                                return _vm.focusField("email")
-                              },
-                              blur: _vm.clearFocus,
-                            },
-                          }),
-                        ]
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "div",
-                        {
-                          staticClass: "form-group bmd-form-group",
-                          class: {
-                            "has-items": _vm.entry.no_hp,
-                            "is-focused": _vm.activeField == "no_hp",
-                          },
-                        },
-                        [
-                          _c("label", { staticClass: "bmd-label-floating" }, [
-                            _vm._v(_vm._s(_vm.$t("cruds.dosen.fields.no_hp"))),
+                            _vm._v(
+                              _vm._s(
+                                _vm.$t(
+                                  "cruds.dataMahasiswaOnGoing.fields.hasil_prediksi"
+                                )
+                              )
+                            ),
                           ]),
                           _vm._v(" "),
                           _c("input", {
                             staticClass: "form-control",
                             attrs: { type: "text" },
-                            domProps: { value: _vm.entry.no_hp },
+                            domProps: { value: _vm.entry.hasil_prediksi },
                             on: {
-                              input: _vm.updateNoHp,
+                              input: _vm.updateHasilPrediksi,
                               focus: function ($event) {
-                                return _vm.focusField("no_hp")
+                                return _vm.focusField("hasil_prediksi")
                               },
                               blur: _vm.clearFocus,
                             },
@@ -549,7 +387,7 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "card-icon" }, [
-      _c("i", { staticClass: "material-icons" }, [_vm._v("add")]),
+      _c("i", { staticClass: "material-icons" }, [_vm._v("edit")]),
     ])
   },
 ]
@@ -559,17 +397,17 @@ render._withStripped = true
 
 /***/ }),
 
-/***/ "./resources/adminapp/js/cruds/Dosens/Create.vue":
-/*!*******************************************************!*\
-  !*** ./resources/adminapp/js/cruds/Dosens/Create.vue ***!
-  \*******************************************************/
+/***/ "./resources/adminapp/js/cruds/DataMahasiswaOnGoings/Edit.vue":
+/*!********************************************************************!*\
+  !*** ./resources/adminapp/js/cruds/DataMahasiswaOnGoings/Edit.vue ***!
+  \********************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Create_vue_vue_type_template_id_6878965e___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Create.vue?vue&type=template&id=6878965e& */ "./resources/adminapp/js/cruds/Dosens/Create.vue?vue&type=template&id=6878965e&");
-/* harmony import */ var _Create_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Create.vue?vue&type=script&lang=js& */ "./resources/adminapp/js/cruds/Dosens/Create.vue?vue&type=script&lang=js&");
+/* harmony import */ var _Edit_vue_vue_type_template_id_60ebca28___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Edit.vue?vue&type=template&id=60ebca28& */ "./resources/adminapp/js/cruds/DataMahasiswaOnGoings/Edit.vue?vue&type=template&id=60ebca28&");
+/* harmony import */ var _Edit_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Edit.vue?vue&type=script&lang=js& */ "./resources/adminapp/js/cruds/DataMahasiswaOnGoings/Edit.vue?vue&type=script&lang=js&");
 /* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
@@ -579,9 +417,9 @@ __webpack_require__.r(__webpack_exports__);
 /* normalize component */
 
 var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
-  _Create_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _Create_vue_vue_type_template_id_6878965e___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _Create_vue_vue_type_template_id_6878965e___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  _Edit_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _Edit_vue_vue_type_template_id_60ebca28___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Edit_vue_vue_type_template_id_60ebca28___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
   null,
   null,
@@ -591,38 +429,38 @@ var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_
 
 /* hot reload */
 if (false) { var api; }
-component.options.__file = "resources/adminapp/js/cruds/Dosens/Create.vue"
+component.options.__file = "resources/adminapp/js/cruds/DataMahasiswaOnGoings/Edit.vue"
 /* harmony default export */ __webpack_exports__["default"] = (component.exports);
 
 /***/ }),
 
-/***/ "./resources/adminapp/js/cruds/Dosens/Create.vue?vue&type=script&lang=js&":
-/*!********************************************************************************!*\
-  !*** ./resources/adminapp/js/cruds/Dosens/Create.vue?vue&type=script&lang=js& ***!
-  \********************************************************************************/
+/***/ "./resources/adminapp/js/cruds/DataMahasiswaOnGoings/Edit.vue?vue&type=script&lang=js&":
+/*!*********************************************************************************************!*\
+  !*** ./resources/adminapp/js/cruds/DataMahasiswaOnGoings/Edit.vue?vue&type=script&lang=js& ***!
+  \*********************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Create_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../node_modules/vue-loader/lib??vue-loader-options!./Create.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/cruds/Dosens/Create.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Create_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Edit_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../node_modules/vue-loader/lib??vue-loader-options!./Edit.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/cruds/DataMahasiswaOnGoings/Edit.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Edit_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
 
 /***/ }),
 
-/***/ "./resources/adminapp/js/cruds/Dosens/Create.vue?vue&type=template&id=6878965e&":
-/*!**************************************************************************************!*\
-  !*** ./resources/adminapp/js/cruds/Dosens/Create.vue?vue&type=template&id=6878965e& ***!
-  \**************************************************************************************/
+/***/ "./resources/adminapp/js/cruds/DataMahasiswaOnGoings/Edit.vue?vue&type=template&id=60ebca28&":
+/*!***************************************************************************************************!*\
+  !*** ./resources/adminapp/js/cruds/DataMahasiswaOnGoings/Edit.vue?vue&type=template&id=60ebca28& ***!
+  \***************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Create_vue_vue_type_template_id_6878965e___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../node_modules/vue-loader/lib??vue-loader-options!./Create.vue?vue&type=template&id=6878965e& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/cruds/Dosens/Create.vue?vue&type=template&id=6878965e&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Create_vue_vue_type_template_id_6878965e___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Edit_vue_vue_type_template_id_60ebca28___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../node_modules/vue-loader/lib??vue-loader-options!./Edit.vue?vue&type=template&id=60ebca28& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/cruds/DataMahasiswaOnGoings/Edit.vue?vue&type=template&id=60ebca28&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Edit_vue_vue_type_template_id_60ebca28___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Create_vue_vue_type_template_id_6878965e___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Edit_vue_vue_type_template_id_60ebca28___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 

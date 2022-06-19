@@ -238,6 +238,9 @@ y_test_cv4 = y[fold3_plus_name:fold4_plus_name]
 
 X_train_cv5_plus_name = X_norm_plus_name[train_cv_plus_name[4][0]:fold4_plus_name]
 X_test_cv5_plus_name = X_norm_plus_name[fold4_plus_name:fold5_plus_name]
+d = dict();
+d['X_test_cv5_plus_name'] = X_test_cv5_plus_name
+print(X_test_cv5_plus_name)
 y_train_cv5 = y[train_cv_plus_name[4][0]:fold4_plus_name]
 y_test_cv5 = y[fold4_plus_name:fold5_plus_name]
 
@@ -346,7 +349,7 @@ plt.pie(sections, labels=labels, colors=colors,
 #plt.axis('equal') # Try commenting this out.
 plt.title('Proporsi Jumlah Lulus dan Tidak Lulus')
 #plt.show()
-d = dict();
+# d = dict();
 d['LulusdanTidakLulus'] = sections
 #print(sections)
 
@@ -441,17 +444,17 @@ for h in range(0,len(hasil_prediksi5)):
 #print(classification_report(y_test_array_cv1, y_prediksi, digits=4))
 
 # print('Accuracy = '+str(format(statistics.mean([accuracy_score(y_test_array_cv1, y_prediksi1),accuracy_score(y_test_array_cv2, y_prediksi2),accuracy_score(y_test_array_cv3, y_prediksi3),accuracy_score(y_test_array_cv4, y_prediksi4),accuracy_score(y_test_array_cv5, y_prediksi5)]), '.4f')))
-# print('Recall Tidak Lulus = '+str(format(statistics.mean([recall_score(y_test_array_cv1, y_prediksi1,pos_label=0),recall_score(y_test_array_cv2, y_prediksi2, pos_label=0), recall_score(y_test_array_cv3, y_prediksi3, pos_label=0),recall_score(y_test_array_cv4, y_prediksi4,pos_label=0), recall_score(y_test_array_cv5, y_prediksi5,pos_label=0)]), '.4f')))
-# print('Recall Lulus = '+str(format(statistics.mean([recall_score(y_test_array_cv1, y_prediksi1,pos_label=1),recall_score(y_test_array_cv2, y_prediksi2, pos_label=1), recall_score(y_test_array_cv3, y_prediksi3, pos_label=1),recall_score(y_test_array_cv4, y_prediksi4,pos_label=1), recall_score(y_test_array_cv5, y_prediksi5,pos_label=1)]), '.4f')))
-# print('Precision Tidak Lulus = '+str(format(statistics.mean([precision_score(y_test_array_cv1, y_prediksi1,pos_label=0),precision_score(y_test_array_cv2, y_prediksi2, pos_label=0), precision_score(y_test_array_cv3, y_prediksi3, pos_label=0),precision_score(y_test_array_cv4, y_prediksi4,pos_label=0), precision_score(y_test_array_cv5, y_prediksi5,pos_label=0)]), '.4f')))
-# print('Precision Lulus = '+str(format(statistics.mean([precision_score(y_test_array_cv1, y_prediksi1,pos_label=1),precision_score(y_test_array_cv2, y_prediksi2, pos_label=1), precision_score(y_test_array_cv3, y_prediksi3, pos_label=1),precision_score(y_test_array_cv4, y_prediksi4,pos_label=1), precision_score(y_test_array_cv5, y_prediksi5,pos_label=1)]), '.4f')))
+# print('RecallTidakLulus = '+str(format(statistics.mean([recall_score(y_test_array_cv1, y_prediksi1,pos_label=0),recall_score(y_test_array_cv2, y_prediksi2, pos_label=0), recall_score(y_test_array_cv3, y_prediksi3, pos_label=0),recall_score(y_test_array_cv4, y_prediksi4,pos_label=0), recall_score(y_test_array_cv5, y_prediksi5,pos_label=0)]), '.4f')))
+# print('RecallLulus = '+str(format(statistics.mean([recall_score(y_test_array_cv1, y_prediksi1,pos_label=1),recall_score(y_test_array_cv2, y_prediksi2, pos_label=1), recall_score(y_test_array_cv3, y_prediksi3, pos_label=1),recall_score(y_test_array_cv4, y_prediksi4,pos_label=1), recall_score(y_test_array_cv5, y_prediksi5,pos_label=1)]), '.4f')))
+# print('PrecisionTidakLulus = '+str(format(statistics.mean([precision_score(y_test_array_cv1, y_prediksi1,pos_label=0),precision_score(y_test_array_cv2, y_prediksi2, pos_label=0), precision_score(y_test_array_cv3, y_prediksi3, pos_label=0),precision_score(y_test_array_cv4, y_prediksi4,pos_label=0), precision_score(y_test_array_cv5, y_prediksi5,pos_label=0)]), '.4f')))
+# print('PrecisionLulus = '+str(format(statistics.mean([precision_score(y_test_array_cv1, y_prediksi1,pos_label=1),precision_score(y_test_array_cv2, y_prediksi2, pos_label=1), precision_score(y_test_array_cv3, y_prediksi3, pos_label=1),precision_score(y_test_array_cv4, y_prediksi4,pos_label=1), precision_score(y_test_array_cv5, y_prediksi5,pos_label=1)]), '.4f')))
 # def foo():
 #       d = dict();
 # d['Accuracy = '+str(format(statistics.mean([accuracy_score(y_test_array_cv1, y_prediksi1),accuracy_score(y_test_array_cv2, y_prediksi2),accuracy_score(y_test_array_cv3, y_prediksi3),accuracy_score(y_test_array_cv4, y_prediksi4),accuracy_score(y_test_array_cv5, y_prediksi5)]), '.4f'))]
-# d['Recall Tidak Lulus = '+str(format(statistics.mean([recall_score(y_test_array_cv1, y_prediksi1,pos_label=0),recall_score(y_test_array_cv2, y_prediksi2, pos_label=0), recall_score(y_test_array_cv3, y_prediksi3, pos_label=0),recall_score(y_test_array_cv4, y_prediksi4,pos_label=0), recall_score(y_test_array_cv5, y_prediksi5,pos_label=0)]), '.4f'))]
-# d['Recall Lulus = '+str(format(statistics.mean([recall_score(y_test_array_cv1, y_prediksi1,pos_label=1),recall_score(y_test_array_cv2, y_prediksi2, pos_label=1), recall_score(y_test_array_cv3, y_prediksi3, pos_label=1),recall_score(y_test_array_cv4, y_prediksi4,pos_label=1), recall_score(y_test_array_cv5, y_prediksi5,pos_label=1)]), '.4f'))]
-# d['Precision Tidak Lulus = '+str(format(statistics.mean([precision_score(y_test_array_cv1, y_prediksi1,pos_label=0),precision_score(y_test_array_cv2, y_prediksi2, pos_label=0), precision_score(y_test_array_cv3, y_prediksi3, pos_label=0),precision_score(y_test_array_cv4, y_prediksi4,pos_label=0), precision_score(y_test_array_cv5, y_prediksi5,pos_label=0)]), '.4f'))]
-# d['Precision Lulus = '+str(format(statistics.mean([precision_score(y_test_array_cv1, y_prediksi1,pos_label=1),precision_score(y_test_array_cv2, y_prediksi2, pos_label=1), precision_score(y_test_array_cv3, y_prediksi3, pos_label=1),precision_score(y_test_array_cv4, y_prediksi4,pos_label=1), precision_score(y_test_array_cv5, y_prediksi5,pos_label=1)]), '.4f'))]
+# d['RecallTidakLulus = '+str(format(statistics.mean([recall_score(y_test_array_cv1, y_prediksi1,pos_label=0),recall_score(y_test_array_cv2, y_prediksi2, pos_label=0), recall_score(y_test_array_cv3, y_prediksi3, pos_label=0),recall_score(y_test_array_cv4, y_prediksi4,pos_label=0), recall_score(y_test_array_cv5, y_prediksi5,pos_label=0)]), '.4f'))]
+# d['RecallLulus = '+str(format(statistics.mean([recall_score(y_test_array_cv1, y_prediksi1,pos_label=1),recall_score(y_test_array_cv2, y_prediksi2, pos_label=1), recall_score(y_test_array_cv3, y_prediksi3, pos_label=1),recall_score(y_test_array_cv4, y_prediksi4,pos_label=1), recall_score(y_test_array_cv5, y_prediksi5,pos_label=1)]), '.4f'))]
+# d['PrecisionTidakLulus = '+str(format(statistics.mean([precision_score(y_test_array_cv1, y_prediksi1,pos_label=0),precision_score(y_test_array_cv2, y_prediksi2, pos_label=0), precision_score(y_test_array_cv3, y_prediksi3, pos_label=0),precision_score(y_test_array_cv4, y_prediksi4,pos_label=0), precision_score(y_test_array_cv5, y_prediksi5,pos_label=0)]), '.4f'))]
+# d['PrecisionLulus = '+str(format(statistics.mean([precision_score(y_test_array_cv1, y_prediksi1,pos_label=1),precision_score(y_test_array_cv2, y_prediksi2, pos_label=1), precision_score(y_test_array_cv3, y_prediksi3, pos_label=1),precision_score(y_test_array_cv4, y_prediksi4,pos_label=1), precision_score(y_test_array_cv5, y_prediksi5,pos_label=1)]), '.4f'))]
 #       return d
 # print foo()
 #format(0.500000000, '.2f')
@@ -659,10 +662,10 @@ d['KeseluruhanMahasiswaDataOngoing'] = sections3
 
 #print(sections3)
 d['Accuracy'] = str(format(statistics.mean([accuracy_score(y_test_array_cv1, y_prediksi1),accuracy_score(y_test_array_cv2, y_prediksi2),accuracy_score(y_test_array_cv3, y_prediksi3),accuracy_score(y_test_array_cv4, y_prediksi4),accuracy_score(y_test_array_cv5, y_prediksi5)]), '.4f'))
-d['Recall Tidak Lulus'] = str(format(statistics.mean([recall_score(y_test_array_cv1, y_prediksi1,pos_label=0),recall_score(y_test_array_cv2, y_prediksi2, pos_label=0), recall_score(y_test_array_cv3, y_prediksi3, pos_label=0),recall_score(y_test_array_cv4, y_prediksi4,pos_label=0), recall_score(y_test_array_cv5, y_prediksi5,pos_label=0)]), '.4f'))
-d['Recall Lulus'] = str(format(statistics.mean([recall_score(y_test_array_cv1, y_prediksi1,pos_label=1),recall_score(y_test_array_cv2, y_prediksi2, pos_label=1), recall_score(y_test_array_cv3, y_prediksi3, pos_label=1),recall_score(y_test_array_cv4, y_prediksi4,pos_label=1), recall_score(y_test_array_cv5, y_prediksi5,pos_label=1)]), '.4f'))
-d['Precision Tidak Lulus'] = str(format(statistics.mean([precision_score(y_test_array_cv1, y_prediksi1,pos_label=0),precision_score(y_test_array_cv2, y_prediksi2, pos_label=0), precision_score(y_test_array_cv3, y_prediksi3, pos_label=0),precision_score(y_test_array_cv4, y_prediksi4,pos_label=0), precision_score(y_test_array_cv5, y_prediksi5,pos_label=0)]), '.4f'))
-d['Precision Lulus'] = str(format(statistics.mean([precision_score(y_test_array_cv1, y_prediksi1,pos_label=1),precision_score(y_test_array_cv2, y_prediksi2, pos_label=1), precision_score(y_test_array_cv3, y_prediksi3, pos_label=1),precision_score(y_test_array_cv4, y_prediksi4,pos_label=1), precision_score(y_test_array_cv5, y_prediksi5,pos_label=1)]), '.4f'))
+d['RecallTidakLulus'] = str(format(statistics.mean([recall_score(y_test_array_cv1, y_prediksi1,pos_label=0),recall_score(y_test_array_cv2, y_prediksi2, pos_label=0), recall_score(y_test_array_cv3, y_prediksi3, pos_label=0),recall_score(y_test_array_cv4, y_prediksi4,pos_label=0), recall_score(y_test_array_cv5, y_prediksi5,pos_label=0)]), '.4f'))
+d['RecallLulus'] = str(format(statistics.mean([recall_score(y_test_array_cv1, y_prediksi1,pos_label=1),recall_score(y_test_array_cv2, y_prediksi2, pos_label=1), recall_score(y_test_array_cv3, y_prediksi3, pos_label=1),recall_score(y_test_array_cv4, y_prediksi4,pos_label=1), recall_score(y_test_array_cv5, y_prediksi5,pos_label=1)]), '.4f'))
+d['PrecisionTidakLulus'] = str(format(statistics.mean([precision_score(y_test_array_cv1, y_prediksi1,pos_label=0),precision_score(y_test_array_cv2, y_prediksi2, pos_label=0), precision_score(y_test_array_cv3, y_prediksi3, pos_label=0),precision_score(y_test_array_cv4, y_prediksi4,pos_label=0), precision_score(y_test_array_cv5, y_prediksi5,pos_label=0)]), '.4f'))
+d['PrecisionLulus'] = str(format(statistics.mean([precision_score(y_test_array_cv1, y_prediksi1,pos_label=1),precision_score(y_test_array_cv2, y_prediksi2, pos_label=1), precision_score(y_test_array_cv3, y_prediksi3, pos_label=1),precision_score(y_test_array_cv4, y_prediksi4,pos_label=1), precision_score(y_test_array_cv5, y_prediksi5,pos_label=1)]), '.4f'))
 # import simplejson
 import json
 # import sys

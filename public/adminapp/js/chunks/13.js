@@ -36,6 +36,8 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vuex__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vuex */ "./node_modules/vuex/dist/vuex.esm.js");
 /* harmony import */ var _components_Datatables_DatatableAttachments__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @components/Datatables/DatatableAttachments */ "./resources/adminapp/js/components/Datatables/DatatableAttachments.vue");
+/* harmony import */ var vue_apexcharts__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! vue-apexcharts */ "./node_modules/vue-apexcharts/dist/vue-apexcharts.js");
+/* harmony import */ var vue_apexcharts__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(vue_apexcharts__WEBPACK_IMPORTED_MODULE_2__);
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
 
 function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { _defineProperty(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
@@ -113,31 +115,248 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
- // console.log(DataMahasiswasSingle);
+
+ // import show from './show.js';
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-  components: {
-    DatatableAttachments: _components_Datatables_DatatableAttachments__WEBPACK_IMPORTED_MODULE_1__["default"]
+  mounted: function mounted() {//  show()
+    // this.a= "";
+    // this.b= "";
+    // this.c= "";
+    // this.d= "";
+    // this.a= this.$store.getters['DataMahasiswasSingle/entry'].Lulus;
+    // a= this.$store.getters['DataMahasiswasSingle/entry'].Lulus;
+    // this.b= this.$store.getters['DataMahasiswasSingle/entry'].TidakLulus;
+    // this.c= this.$store.getters['DataMahasiswasSingle/entry'].Active;
+    // this.d= this.$store.getters['DataMahasiswasSingle/entry'].Observers;
+    // console.log(a)
+    // console.log(this.a)
+    // console.log(['entry'], 'andri')
+    // console.log(['fetchShowData'])
+    // console.log(this.$store.getters.DataMahasiswasSingle)
+    // if (this['entry'].Lulus){
+    //   this.andri = this.entry.Lulus
+    // }
+    // coba()
+    // console.log(charts,'kelsi')
+    // console.log(this.charts,'kelsi')
+    // console.log(this.coba,'kelsi')
+    // console.log(this.coba1,'kelsi')
+    // console.log(this.serisL,'kelsi')
+    // console.log(this.serisT,'kelsi')
+    // this.andri = this.entry.Lulus,
+    // this.cantik = this.entry.TidakLulus
+    // console.log(['entry'].nama)
   },
+  components: {
+    DatatableAttachments: _components_Datatables_DatatableAttachments__WEBPACK_IMPORTED_MODULE_1__["default"],
+    apexchart: vue_apexcharts__WEBPACK_IMPORTED_MODULE_2___default.a
+  },
+  // data() {
+  //   return {}
+  // },
   data: function data() {
-    return {};
+    // console.log(['entry'])
+    // console.log(['entry'].id)
+    // console.log(['fetfchShowData'])
+    return {
+      // charts: this.charts,
+      // entry: [],  
+      // andri: "",
+      // cantik:"",
+      // andri: this.entry.Lulus,
+      // cantik:this.cantik,
+      seen: false,
+      // series: [this.andri, this.cantik],
+      // series: [andri, cantik],
+      // a: "",
+      // b: "",
+      // c: "",
+      // d: "",
+      // a: this.$store.getters['DataMahasiswasSingle/entry'].Lulus,
+      // b: this.$store.getters['DataMahasiswasSingle/entry'].TidakLulus,
+      // c: this.$store.getters['DataMahasiswasSingle/entry'].Active,
+      // d: this.$store.getters['DataMahasiswasSingle/entry'].Observers,
+      // series: [23, 12],
+      series: [1, 1],
+      series1: [1, 1],
+      // series: [{
+      //   name: 'Vue Chart',
+      //   data: [30, 40, 45, 50, 49, 60, 70, 81]
+      // }],
+      // series1: [{
+      //   name: 'Vue Chart',
+      //   data: [30, 40, 45, 50, 49, 60, 70, 81]
+      // }],
+      // series: [this.charts.data.Lulus, this.charts.data.TidakLulus],
+      chartOptions: {
+        title: {
+          text: 'Proporsi Jumlah Lulus dan Tidak Lulus',
+          align: 'left',
+          margin: 10,
+          offsetX: 0,
+          offsetY: 0,
+          floating: false,
+          style: {
+            fontSize: '14px',
+            fontWeight: 'bold',
+            fontFamily: 'Roboto',
+            color: '#263238'
+          }
+        },
+        chart: {
+          width: 380,
+          type: 'pie'
+        },
+        labels: ['Lulus', 'Tidak Lulus'],
+        responsive: [{
+          breakpoint: 480,
+          options: {
+            chart: {
+              width: 200
+            },
+            legend: {
+              position: 'bottom'
+            }
+          }
+        }]
+      },
+      // series1: [entry.Active, entry.Observers],
+      // series1: [12, 42],
+      // series1: [this.charts.data.Active, this.charts.data.Observers],
+      chartOptions1: {
+        title: {
+          text: 'Proporsi Mahasiswa Aktif dan Observers',
+          align: 'left',
+          margin: 10,
+          offsetX: 0,
+          offsetY: 0,
+          floating: false,
+          style: {
+            fontSize: '14px',
+            fontWeight: 'bold',
+            fontFamily: 'Roboto',
+            color: '#263238'
+          }
+        },
+        chart: {
+          width: 380,
+          type: 'pie'
+        },
+        labels: ['Active', 'Observers'],
+        responsive: [{
+          breakpoint: 480,
+          options: {
+            chart: {
+              width: 200
+            },
+            legend: {
+              position: 'bottom'
+            }
+          }
+        }]
+      }
+    };
   },
   beforeDestroy: function beforeDestroy() {
     this.resetState();
   },
   computed: _objectSpread({}, Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapGetters"])('DataMahasiswasSingle', ['entry'])),
+  // andri: entry.Lulus,
+  //     cantik:entry.TidakLulus,
+  // },
   watch: {
     '$route.params.id': {
       immediate: true,
       handler: function handler() {
         this.resetState();
-        this.fetchShowData(this.$route.params.id);
+        this.fetchShowData(this.$route.params.id); // this.fetchChartData(this.$route.params.id)
       }
     }
   },
-  methods: _objectSpread({}, Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapActions"])('DataMahasiswasSingle', ['fetchShowData', 'resetState']))
-});
+  methods: _objectSpread({}, Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapActions"])('DataMahasiswasSingle', ['fetchShowData', 'resetState'])),
+  created: function created() {
+    var _this = this;
+
+    var route = 'data-mahasiswas';
+    axios.get("".concat(route, "/").concat(this.$route.params.id)).then(function (response) {
+      _this.charts = response.data.data; // console.log(this.charts, 'andri')
+
+      _this.a = [_this.charts.Lulus, _this.charts.TidakLulus];
+      _this.b = [_this.charts.Active, _this.charts.Observers]; // console.log(this.a)
+
+      _this.series = _this.a;
+      _this.series1 = _this.b; // this.series = [{
+      // data: [this.a]
+      // // data: [2,5]
+      // }]
+      // this.series1 = [{
+      //   data: this.b
+      //   // data: [2,5]
+      // }]
+      // console.log(this.charts.data.Lulus)
+    }); // this.series = [{
+    //   data: this.a
+    //   }]
+    //   this.series1 = [{
+    //     data: this.b
+    //   }]
+    // coba()
+    // axios.get('dashboard').then(response => {
+    //   this.charts = response.data
+    // })
+    // console.log(DataMahasiswasSingle)
+    // console.log(DataMahasiswasSingle)
+    // console.log(this.getters.entry)
+    // console.log(['fetchShowData'])
+    // this.charts = ['entry']
+    // console.log(['andri'])
+    // console.log(['entry'])
+    // this.andri = this.entry.Lulus
+    //     this.cantik = this.entry.TidakLulus
+  }
+}); // new Vue({
+// el:'#wrapper',
+// data:{
+//     seen: true
+// }
+// });
 
 /***/ }),
 
@@ -363,6 +582,118 @@ var render = function () {
                   ]),
                 ]),
               ]),
+            ]),
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-md-12" }, [
+            _c("div", { staticClass: "row" }, [
+              _c(
+                "div",
+                { staticClass: "col", attrs: { id: "chart" } },
+                [
+                  _c("apexchart", {
+                    attrs: {
+                      type: "pie",
+                      width: "380",
+                      options: _vm.chartOptions,
+                      series: _vm.series,
+                    },
+                  }),
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                { staticClass: "col", attrs: { id: "chart" } },
+                [
+                  _c("apexchart", {
+                    attrs: {
+                      type: "pie",
+                      width: "380",
+                      options: _vm.chartOptions1,
+                      series: _vm.series1,
+                    },
+                  }),
+                ],
+                1
+              ),
+            ]),
+            _vm._v(" "),
+            _c("div", { attrs: { id: "wrapper" } }, [
+              _c(
+                "div",
+                {
+                  staticClass: "control",
+                  attrs: { id: "app" },
+                  on: {
+                    click: function ($event) {
+                      _vm.seen = !_vm.seen
+                    },
+                  },
+                },
+                [_c("button", [_vm._v("Show Nilai Accuracy and Recall")])]
+              ),
+              _vm._v(" "),
+              _vm.seen
+                ? _c("div", { attrs: { id: "hide" } }, [
+                    _c("br"),
+                    _vm._v(" "),
+                    _c("p", { staticClass: "font-weight-bold" }, [
+                      _vm._v("Lulus : " + _vm._s(_vm.entry.Lulus) + " "),
+                    ]),
+                    _vm._v(" "),
+                    _c("p", { staticClass: "font-weight-bold" }, [
+                      _vm._v(
+                        "Tidak Lulus : " + _vm._s(_vm.entry.TidakLulus) + " "
+                      ),
+                    ]),
+                    _vm._v(" "),
+                    _c("p", { staticClass: "font-weight-bold" }, [
+                      _vm._v("Active : " + _vm._s(_vm.entry.Active) + " "),
+                    ]),
+                    _vm._v(" "),
+                    _c("p", { staticClass: "font-weight-bold" }, [
+                      _vm._v(
+                        "Observers : " + _vm._s(_vm.entry.Observers) + " "
+                      ),
+                    ]),
+                    _vm._v(" "),
+                    _c("p", { staticClass: "font-weight-bold" }, [
+                      _vm._v("Accuracy : " + _vm._s(_vm.entry.Accuracy) + " "),
+                    ]),
+                    _vm._v(" "),
+                    _c("p", { staticClass: "font-weight-bold" }, [
+                      _vm._v(
+                        "Recall Lulus : " + _vm._s(_vm.entry.RecallLulus) + " "
+                      ),
+                    ]),
+                    _vm._v(" "),
+                    _c("p", { staticClass: "font-weight-bold" }, [
+                      _vm._v(
+                        "Recall Tidak Lulus : " +
+                          _vm._s(_vm.entry.RecallTidakLulus) +
+                          " "
+                      ),
+                    ]),
+                    _vm._v(" "),
+                    _c("p", { staticClass: "font-weight-bold" }, [
+                      _vm._v(
+                        "Precision Lulus : " +
+                          _vm._s(_vm.entry.PrecisionLulus) +
+                          " "
+                      ),
+                    ]),
+                    _vm._v(" "),
+                    _c("p", { staticClass: "font-weight-bold" }, [
+                      _vm._v(
+                        "Precision Tidak Lulus : " +
+                          _vm._s(_vm.entry.PrecisionTidakLulus) +
+                          " "
+                      ),
+                    ]),
+                  ])
+                : _vm._e(),
             ]),
           ]),
         ]),

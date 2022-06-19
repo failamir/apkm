@@ -1,9 +1,27 @@
 function initialState() {
   return {
+    // andri: {
+    //   id: null,
+    //   nama: '',
+    //   data_mahasiswa: [],
+    //   batas_nilai: '',
+    //   created_at: '',
+    //   updated_at: '',
+    //   deleted_at: ''
+    // },
     entry: {
       id: null,
       nama: '',
       data_mahasiswa: [],
+      Accuracy: '',
+      Active: '',
+      Lulus: '',
+      Observers: '',
+      PrecisionLulus: '',
+      PrecisionTidakLulus: '',
+      RecallLulus: '',
+      RecallTidakLulus: '',
+      TidakLulus: '',
       batas_nilai: '',
       lulus: '',
       tidaklulus: '',
@@ -146,11 +164,24 @@ const actions = {
       commit('setEntry', response.data.data)
     })
   },
+  // fetchProsesData({ commit, dispatch }, id) {
+  //   axios.get(`${route}/${id}/proses`).then(response => {
+  //     commit('setEntry', response.data.data)
+  //   })
+  // },
   fetchShowData({ commit, dispatch }, id) {
     axios.get(`${route}/${id}`).then(response => {
-      commit('setEntry', response.data.data)
+      // console.log(response.data.data, 'response data');
+      commit('setEntry', response.data.data);
+      // console.log(state, 'state data');
     })
   },
+  // fetchChartData({ commit, dispatch }, id) {
+  //   axios.get(`${route}/${id}`).then(response => {
+  //     // console.log(response.data.data, 'response data');
+  //     commit(andri, response.data.data)
+  //   })
+  // },
   resetState({ commit }) {
     commit('resetState')
   }
@@ -160,6 +191,9 @@ const mutations = {
   setEntry(state, entry) {
     state.entry = entry
   },
+  // setAndri(state, entry) {
+  //   state.andri = entry
+  // },
   setNama(state, value) {
     state.entry.nama = value
   },
