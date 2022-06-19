@@ -238,6 +238,9 @@ y_test_cv4 = y[fold3_plus_name:fold4_plus_name]
 
 X_train_cv5_plus_name = X_norm_plus_name[train_cv_plus_name[4][0]:fold4_plus_name]
 X_test_cv5_plus_name = X_norm_plus_name[fold4_plus_name:fold5_plus_name]
+d = dict();
+d['X_test_cv5_plus_name'] = X_test_cv5_plus_name
+print(X_test_cv5_plus_name)
 y_train_cv5 = y[train_cv_plus_name[4][0]:fold4_plus_name]
 y_test_cv5 = y[fold4_plus_name:fold5_plus_name]
 
@@ -346,7 +349,7 @@ plt.pie(sections, labels=labels, colors=colors,
 #plt.axis('equal') # Try commenting this out.
 plt.title('Proporsi Jumlah Lulus dan Tidak Lulus')
 #plt.show()
-d = dict();
+# d = dict();
 d['LulusdanTidakLulus'] = sections
 #print(sections)
 

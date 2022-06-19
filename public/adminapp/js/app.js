@@ -43,7 +43,7 @@
 /******/
 /******/ 	// script path function
 /******/ 	function jsonpScriptSrc(chunkId) {
-/******/ 		return __webpack_require__.p + "adminapp/js/chunks/" + ({}[chunkId]||chunkId) + ".js?id=" + {"0":"0c8674f46a6768a32c51","1":"3cd49b4dc0196faa31fa","2":"e06b5eeabb65e04a49dc","3":"b4abfe09246e052024ca","4":"82bc177cce83af40f64f","5":"73063845fe3647c81e70","6":"4e3ce89135404941490e","7":"c43dd946bd8ce4724aee","8":"c7df697cbed33e51883a","9":"4369d39b5e495649427d","10":"e7a96a8964b180d186b4","11":"8df51b4718d271a9647c","12":"dafd1a64f95eb2cbf923","13":"38ae197e12e56ace30cf","14":"5a97c1c3f9848071cfe8","15":"d3c9b44c3e1a0840b664","16":"6eee5c87aff536ce8bff","17":"c4ff099dde6732188b99","18":"8343f62faf281ddd6374","19":"5aad4c77bffbe2c4015b","20":"2e727c2978db2a104d03","21":"44a54d769382a551520c","22":"fab45b1e6e9a839614f5","23":"c4be71187ff0ecc7437a","24":"589a7e9f0b99c0318d51","25":"28c47fc44906265749e2","26":"45b272fa1f4dbb18a4af","27":"4a7dd5f62ad6fe68c5c1","28":"aee09f1d8bb25cf5174f","29":"76c7323da7502a3d7184","30":"a624d1172ce855baf758","31":"1884bfe63110b95d1746","32":"a9dd0eab3a40eff3b6c9","33":"9dd84e6afc0eefea59e2","34":"3118e2aa4d36e186bb17","35":"9ac7e56414b0f8e34547","36":"ff574cc56365f789378e","37":"d285268e597b430c01b9","38":"204bac360a212d7febef","39":"219f193354a006433adf","40":"27b5f1a3139b9436c133","41":"e4c06b19e748b7901ede","42":"691e0a026af828e2658a","43":"978d80e132ff73d67f9c","44":"05601b8d4b382f1ebf1b","45":"dc9a72985bd034190212","46":"42db12bca4d95a880ad9","47":"5538875e9dcc1c2d4612","48":"6db423503fe44d64806d","49":"7f01b4659bc9efa1bfb6","50":"58660efa8a2624f9ee9b","51":"54993f672e6f9a061520"}[chunkId] + ""
+/******/ 		return __webpack_require__.p + "adminapp/js/chunks/" + ({}[chunkId]||chunkId) + ".js?id=" + {"0":"0c8674f46a6768a32c51","1":"3cd49b4dc0196faa31fa","2":"e06b5eeabb65e04a49dc","3":"b4abfe09246e052024ca","4":"82bc177cce83af40f64f","5":"73063845fe3647c81e70","6":"4e3ce89135404941490e","7":"c43dd946bd8ce4724aee","8":"c7df697cbed33e51883a","9":"3406ac422c4afd9b010f","10":"184f44f79c6c95b66fd5","11":"3726b3f7d644e5c1e6c5","12":"4badbdbb57679a69fb54","13":"af73fdf1429aa8ce72b4","14":"133d4eb0ddc63dcc5154","15":"4439c3b17a022ca42f18","16":"04be4d5bfa85aee450dc","17":"1793ba18b27f64915a10","18":"32bc53baa49a6991454b","19":"e4592866508beb797667","20":"eb8c0a3530aefd11a948","21":"cb31e289c889be24dd58","22":"e19dd2885ed0dce35233","23":"05d65f94cfdf95fb1a5d","24":"f840f9c4b86756845df0","25":"e45d67125eab58187923","26":"3352ec02cd73cda45527","27":"6ee9dd0f5912990e46c8","28":"cc1ee3f1e97d12de0521","29":"9e65d084592ea5a123e8","30":"f05a63a04723427ce549","31":"3bd727239b215cdd635b","32":"34bd8ffadca073449219","33":"08096796765226f0977d","34":"9aec7be193c8b4c157ea","35":"3909419e7117369e430a","36":"2ac0d82920cf681c73b4","37":"b210c8bc76d2fcc56c8a","38":"5ce5127a45cb63a1acfa","39":"bf47d4d42f35193947ed","40":"9c30322f584f2636b585","41":"6542d4f11c4dd33d5ed2","42":"8f51a9d9289275f01f6c","43":"1654352b67c62ae009d6","44":"7daa3e38691b2bc22fdf","45":"48ea9e496d228828fa99","46":"c251948573ce136d8c6d","47":"105db4a8b52a34edeb30","48":"a05d820d5c9b7569fefa","49":"8921c9347f317857839e","50":"a4b2a9ab1ef3ca6bd5b3","51":"28d8d71d9ad335ff25e9"}[chunkId] + ""
 /******/ 	}
 /******/
 /******/ 	// The require function
@@ -55278,7 +55278,7 @@ var routes = [{
     path: 'dashboard',
     name: 'dashboard',
     component: function component() {
-      return Promise.all(/*! import() */[__webpack_require__.e(3), __webpack_require__.e(4), __webpack_require__.e(49)]).then(__webpack_require__.bind(null, /*! @pages/Dashboard.vue */ "./resources/adminapp/js/pages/Dashboard.vue"));
+      return Promise.all(/*! import() */[__webpack_require__.e(3), __webpack_require__.e(4), __webpack_require__.e(50)]).then(__webpack_require__.bind(null, /*! @pages/Dashboard.vue */ "./resources/adminapp/js/pages/Dashboard.vue"));
     },
     meta: {
       title: 'global.dashboard'
@@ -55287,7 +55287,7 @@ var routes = [{
     path: 'mahasiswas',
     name: 'mahasiswas.index',
     component: function component() {
-      return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(16)]).then(__webpack_require__.bind(null, /*! @cruds/Mahasiswas/Index.vue */ "./resources/adminapp/js/cruds/Mahasiswas/Index.vue"));
+      return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(18)]).then(__webpack_require__.bind(null, /*! @cruds/Mahasiswas/Index.vue */ "./resources/adminapp/js/cruds/Mahasiswas/Index.vue"));
     },
     meta: {
       title: 'cruds.mahasiswa.title'
@@ -55296,7 +55296,7 @@ var routes = [{
     path: 'mahasiswas/create',
     name: 'mahasiswas.create',
     component: function component() {
-      return __webpack_require__.e(/*! import() */ 35).then(__webpack_require__.bind(null, /*! @cruds/Mahasiswas/Create.vue */ "./resources/adminapp/js/cruds/Mahasiswas/Create.vue"));
+      return __webpack_require__.e(/*! import() */ 37).then(__webpack_require__.bind(null, /*! @cruds/Mahasiswas/Create.vue */ "./resources/adminapp/js/cruds/Mahasiswas/Create.vue"));
     },
     meta: {
       title: 'cruds.mahasiswa.title'
@@ -55305,7 +55305,7 @@ var routes = [{
     path: 'mahasiswas/:id',
     name: 'mahasiswas.show',
     component: function component() {
-      return __webpack_require__.e(/*! import() */ 17).then(__webpack_require__.bind(null, /*! @cruds/Mahasiswas/Show.vue */ "./resources/adminapp/js/cruds/Mahasiswas/Show.vue"));
+      return __webpack_require__.e(/*! import() */ 19).then(__webpack_require__.bind(null, /*! @cruds/Mahasiswas/Show.vue */ "./resources/adminapp/js/cruds/Mahasiswas/Show.vue"));
     },
     meta: {
       title: 'cruds.mahasiswa.title'
@@ -55314,7 +55314,7 @@ var routes = [{
     path: 'mahasiswas/:id/edit',
     name: 'mahasiswas.edit',
     component: function component() {
-      return __webpack_require__.e(/*! import() */ 36).then(__webpack_require__.bind(null, /*! @cruds/Mahasiswas/Edit.vue */ "./resources/adminapp/js/cruds/Mahasiswas/Edit.vue"));
+      return __webpack_require__.e(/*! import() */ 38).then(__webpack_require__.bind(null, /*! @cruds/Mahasiswas/Edit.vue */ "./resources/adminapp/js/cruds/Mahasiswas/Edit.vue"));
     },
     meta: {
       title: 'cruds.mahasiswa.title'
@@ -55323,7 +55323,7 @@ var routes = [{
     path: 'mata-kuliahs',
     name: 'mata_kuliahs.index',
     component: function component() {
-      return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(18)]).then(__webpack_require__.bind(null, /*! @cruds/MataKuliahs/Index.vue */ "./resources/adminapp/js/cruds/MataKuliahs/Index.vue"));
+      return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(20)]).then(__webpack_require__.bind(null, /*! @cruds/MataKuliahs/Index.vue */ "./resources/adminapp/js/cruds/MataKuliahs/Index.vue"));
     },
     meta: {
       title: 'cruds.mataKuliah.title'
@@ -55332,7 +55332,7 @@ var routes = [{
     path: 'mata-kuliahs/create',
     name: 'mata_kuliahs.create',
     component: function component() {
-      return __webpack_require__.e(/*! import() */ 37).then(__webpack_require__.bind(null, /*! @cruds/MataKuliahs/Create.vue */ "./resources/adminapp/js/cruds/MataKuliahs/Create.vue"));
+      return __webpack_require__.e(/*! import() */ 39).then(__webpack_require__.bind(null, /*! @cruds/MataKuliahs/Create.vue */ "./resources/adminapp/js/cruds/MataKuliahs/Create.vue"));
     },
     meta: {
       title: 'cruds.mataKuliah.title'
@@ -55341,7 +55341,7 @@ var routes = [{
     path: 'mata-kuliahs/:id',
     name: 'mata_kuliahs.show',
     component: function component() {
-      return __webpack_require__.e(/*! import() */ 19).then(__webpack_require__.bind(null, /*! @cruds/MataKuliahs/Show.vue */ "./resources/adminapp/js/cruds/MataKuliahs/Show.vue"));
+      return __webpack_require__.e(/*! import() */ 21).then(__webpack_require__.bind(null, /*! @cruds/MataKuliahs/Show.vue */ "./resources/adminapp/js/cruds/MataKuliahs/Show.vue"));
     },
     meta: {
       title: 'cruds.mataKuliah.title'
@@ -55350,7 +55350,7 @@ var routes = [{
     path: 'mata-kuliahs/:id/edit',
     name: 'mata_kuliahs.edit',
     component: function component() {
-      return __webpack_require__.e(/*! import() */ 38).then(__webpack_require__.bind(null, /*! @cruds/MataKuliahs/Edit.vue */ "./resources/adminapp/js/cruds/MataKuliahs/Edit.vue"));
+      return __webpack_require__.e(/*! import() */ 40).then(__webpack_require__.bind(null, /*! @cruds/MataKuliahs/Edit.vue */ "./resources/adminapp/js/cruds/MataKuliahs/Edit.vue"));
     },
     meta: {
       title: 'cruds.mataKuliah.title'
@@ -55368,7 +55368,7 @@ var routes = [{
     path: 'dosens/create',
     name: 'dosens.create',
     component: function component() {
-      return __webpack_require__.e(/*! import() */ 29).then(__webpack_require__.bind(null, /*! @cruds/Dosens/Create.vue */ "./resources/adminapp/js/cruds/Dosens/Create.vue"));
+      return __webpack_require__.e(/*! import() */ 31).then(__webpack_require__.bind(null, /*! @cruds/Dosens/Create.vue */ "./resources/adminapp/js/cruds/Dosens/Create.vue"));
     },
     meta: {
       title: 'cruds.dosen.title'
@@ -55386,7 +55386,7 @@ var routes = [{
     path: 'dosens/:id/edit',
     name: 'dosens.edit',
     component: function component() {
-      return __webpack_require__.e(/*! import() */ 30).then(__webpack_require__.bind(null, /*! @cruds/Dosens/Edit.vue */ "./resources/adminapp/js/cruds/Dosens/Edit.vue"));
+      return __webpack_require__.e(/*! import() */ 32).then(__webpack_require__.bind(null, /*! @cruds/Dosens/Edit.vue */ "./resources/adminapp/js/cruds/Dosens/Edit.vue"));
     },
     meta: {
       title: 'cruds.dosen.title'
@@ -55395,7 +55395,7 @@ var routes = [{
     path: 'jurusans',
     name: 'jurusans.index',
     component: function component() {
-      return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(33)]).then(__webpack_require__.bind(null, /*! @cruds/Jurusans/Index.vue */ "./resources/adminapp/js/cruds/Jurusans/Index.vue"));
+      return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(35)]).then(__webpack_require__.bind(null, /*! @cruds/Jurusans/Index.vue */ "./resources/adminapp/js/cruds/Jurusans/Index.vue"));
     },
     meta: {
       title: 'cruds.jurusan.title'
@@ -55404,7 +55404,7 @@ var routes = [{
     path: 'jurusans/create',
     name: 'jurusans.create',
     component: function component() {
-      return __webpack_require__.e(/*! import() */ 31).then(__webpack_require__.bind(null, /*! @cruds/Jurusans/Create.vue */ "./resources/adminapp/js/cruds/Jurusans/Create.vue"));
+      return __webpack_require__.e(/*! import() */ 33).then(__webpack_require__.bind(null, /*! @cruds/Jurusans/Create.vue */ "./resources/adminapp/js/cruds/Jurusans/Create.vue"));
     },
     meta: {
       title: 'cruds.jurusan.title'
@@ -55413,7 +55413,7 @@ var routes = [{
     path: 'jurusans/:id',
     name: 'jurusans.show',
     component: function component() {
-      return __webpack_require__.e(/*! import() */ 34).then(__webpack_require__.bind(null, /*! @cruds/Jurusans/Show.vue */ "./resources/adminapp/js/cruds/Jurusans/Show.vue"));
+      return __webpack_require__.e(/*! import() */ 36).then(__webpack_require__.bind(null, /*! @cruds/Jurusans/Show.vue */ "./resources/adminapp/js/cruds/Jurusans/Show.vue"));
     },
     meta: {
       title: 'cruds.jurusan.title'
@@ -55422,7 +55422,7 @@ var routes = [{
     path: 'jurusans/:id/edit',
     name: 'jurusans.edit',
     component: function component() {
-      return __webpack_require__.e(/*! import() */ 32).then(__webpack_require__.bind(null, /*! @cruds/Jurusans/Edit.vue */ "./resources/adminapp/js/cruds/Jurusans/Edit.vue"));
+      return __webpack_require__.e(/*! import() */ 34).then(__webpack_require__.bind(null, /*! @cruds/Jurusans/Edit.vue */ "./resources/adminapp/js/cruds/Jurusans/Edit.vue"));
     },
     meta: {
       title: 'cruds.jurusan.title'
@@ -55431,7 +55431,7 @@ var routes = [{
     path: 'data-mahasiswas',
     name: 'data_mahasiswas.index',
     component: function component() {
-      return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(10)]).then(__webpack_require__.bind(null, /*! @cruds/DataMahasiswas/Index.vue */ "./resources/adminapp/js/cruds/DataMahasiswas/Index.vue"));
+      return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(11)]).then(__webpack_require__.bind(null, /*! @cruds/DataMahasiswas/Index.vue */ "./resources/adminapp/js/cruds/DataMahasiswas/Index.vue"));
     },
     meta: {
       title: 'cruds.dataMahasiswa.title'
@@ -55440,7 +55440,7 @@ var routes = [{
     path: 'data-mahasiswas/create',
     name: 'data_mahasiswas.create',
     component: function component() {
-      return Promise.all(/*! import() */[__webpack_require__.e(2), __webpack_require__.e(1), __webpack_require__.e(27)]).then(__webpack_require__.bind(null, /*! @cruds/DataMahasiswas/Create.vue */ "./resources/adminapp/js/cruds/DataMahasiswas/Create.vue"));
+      return Promise.all(/*! import() */[__webpack_require__.e(2), __webpack_require__.e(1), __webpack_require__.e(29)]).then(__webpack_require__.bind(null, /*! @cruds/DataMahasiswas/Create.vue */ "./resources/adminapp/js/cruds/DataMahasiswas/Create.vue"));
     },
     meta: {
       title: 'cruds.dataMahasiswa.title'
@@ -55449,7 +55449,7 @@ var routes = [{
     path: 'data-mahasiswas/:id',
     name: 'data_mahasiswas.show',
     component: function component() {
-      return Promise.all(/*! import() */[__webpack_require__.e(11), __webpack_require__.e(51)]).then(__webpack_require__.bind(null, /*! @cruds/DataMahasiswas/Show.vue */ "./resources/adminapp/js/cruds/DataMahasiswas/Show.vue"));
+      return Promise.all(/*! import() */[__webpack_require__.e(51), __webpack_require__.e(13)]).then(__webpack_require__.bind(null, /*! @cruds/DataMahasiswas/Show.vue */ "./resources/adminapp/js/cruds/DataMahasiswas/Show.vue"));
     },
     meta: {
       title: 'cruds.dataMahasiswa.title'
@@ -55458,7 +55458,7 @@ var routes = [{
     path: 'data-mahasiswas/:id/edit',
     name: 'data_mahasiswas.edit',
     component: function component() {
-      return Promise.all(/*! import() */[__webpack_require__.e(2), __webpack_require__.e(1), __webpack_require__.e(28)]).then(__webpack_require__.bind(null, /*! @cruds/DataMahasiswas/Edit.vue */ "./resources/adminapp/js/cruds/DataMahasiswas/Edit.vue"));
+      return Promise.all(/*! import() */[__webpack_require__.e(2), __webpack_require__.e(1), __webpack_require__.e(30)]).then(__webpack_require__.bind(null, /*! @cruds/DataMahasiswas/Edit.vue */ "./resources/adminapp/js/cruds/DataMahasiswas/Edit.vue"));
     },
     meta: {
       title: 'cruds.dataMahasiswa.title'
@@ -55467,7 +55467,7 @@ var routes = [{
     path: 'data-mahasiswas/:id/proses',
     name: 'data_mahasiswas.proses',
     component: function component() {
-      return Promise.all(/*! import() */[__webpack_require__.e(3), __webpack_require__.e(4), __webpack_require__.e(48)]).then(__webpack_require__.bind(null, /*! @cruds/DataMahasiswas/Proses.vue */ "./resources/adminapp/js/cruds/DataMahasiswas/Proses.vue"));
+      return Promise.all(/*! import() */[__webpack_require__.e(3), __webpack_require__.e(4), __webpack_require__.e(12)]).then(__webpack_require__.bind(null, /*! @cruds/DataMahasiswas/Proses.vue */ "./resources/adminapp/js/cruds/DataMahasiswas/Proses.vue"));
     },
     meta: {
       title: 'cruds.dataMahasiswa.title'
@@ -55485,7 +55485,7 @@ var routes = [{
     path: 'data-mahasiswas-on-goings/:id/proses',
     name: 'data_mahasiswas-on-goings.proses',
     component: function component() {
-      return Promise.all(/*! import() */[__webpack_require__.e(3), __webpack_require__.e(4), __webpack_require__.e(50)]).then(__webpack_require__.bind(null, /*! @cruds/DataMahasiswaOnGoings/Proses.vue */ "./resources/adminapp/js/cruds/DataMahasiswaOnGoings/Proses.vue"));
+      return Promise.all(/*! import() */[__webpack_require__.e(3), __webpack_require__.e(4), __webpack_require__.e(9)]).then(__webpack_require__.bind(null, /*! @cruds/DataMahasiswaOnGoings/Proses.vue */ "./resources/adminapp/js/cruds/DataMahasiswaOnGoings/Proses.vue"));
     },
     meta: {
       title: 'cruds.DataMahasiswaOnGoings.title'
@@ -55494,7 +55494,7 @@ var routes = [{
     path: 'data-mahasiswa-on-goings/create',
     name: 'data_mahasiswa_on_goings.create',
     component: function component() {
-      return Promise.all(/*! import() */[__webpack_require__.e(2), __webpack_require__.e(1), __webpack_require__.e(25)]).then(__webpack_require__.bind(null, /*! @cruds/DataMahasiswaOnGoings/Create.vue */ "./resources/adminapp/js/cruds/DataMahasiswaOnGoings/Create.vue"));
+      return Promise.all(/*! import() */[__webpack_require__.e(2), __webpack_require__.e(1), __webpack_require__.e(27)]).then(__webpack_require__.bind(null, /*! @cruds/DataMahasiswaOnGoings/Create.vue */ "./resources/adminapp/js/cruds/DataMahasiswaOnGoings/Create.vue"));
     },
     meta: {
       title: 'cruds.dataMahasiswaOnGoing.title'
@@ -55503,7 +55503,7 @@ var routes = [{
     path: 'data-mahasiswa-on-goings/:id',
     name: 'data_mahasiswa_on_goings.show',
     component: function component() {
-      return __webpack_require__.e(/*! import() */ 9).then(__webpack_require__.bind(null, /*! @cruds/DataMahasiswaOnGoings/Show.vue */ "./resources/adminapp/js/cruds/DataMahasiswaOnGoings/Show.vue"));
+      return __webpack_require__.e(/*! import() */ 10).then(__webpack_require__.bind(null, /*! @cruds/DataMahasiswaOnGoings/Show.vue */ "./resources/adminapp/js/cruds/DataMahasiswaOnGoings/Show.vue"));
     },
     meta: {
       title: 'cruds.dataMahasiswaOnGoing.title'
@@ -55512,7 +55512,7 @@ var routes = [{
     path: 'data-mahasiswa-on-goings/:id/edit',
     name: 'data_mahasiswa_on_goings.edit',
     component: function component() {
-      return Promise.all(/*! import() */[__webpack_require__.e(2), __webpack_require__.e(1), __webpack_require__.e(26)]).then(__webpack_require__.bind(null, /*! @cruds/DataMahasiswaOnGoings/Edit.vue */ "./resources/adminapp/js/cruds/DataMahasiswaOnGoings/Edit.vue"));
+      return Promise.all(/*! import() */[__webpack_require__.e(2), __webpack_require__.e(1), __webpack_require__.e(28)]).then(__webpack_require__.bind(null, /*! @cruds/DataMahasiswaOnGoings/Edit.vue */ "./resources/adminapp/js/cruds/DataMahasiswaOnGoings/Edit.vue"));
     },
     meta: {
       title: 'cruds.dataMahasiswaOnGoing.title'
@@ -55528,7 +55528,7 @@ var routes = [{
       path: 'data-mahasiswa-histories',
       name: 'data_mahasiswa_histories.index',
       component: function component() {
-        return __webpack_require__.e(/*! import() */ 24).then(__webpack_require__.bind(null, /*! @cruds/DataMahasiswaHistories/Index.vue */ "./resources/adminapp/js/cruds/DataMahasiswaHistories/Index.vue"));
+        return __webpack_require__.e(/*! import() */ 26).then(__webpack_require__.bind(null, /*! @cruds/DataMahasiswaHistories/Index.vue */ "./resources/adminapp/js/cruds/DataMahasiswaHistories/Index.vue"));
       },
       meta: {
         title: 'cruds.dataMahasiswaHistory.title'
@@ -55545,7 +55545,7 @@ var routes = [{
       path: 'permissions',
       name: 'permissions.index',
       component: function component() {
-        return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(41)]).then(__webpack_require__.bind(null, /*! @cruds/Permissions/Index.vue */ "./resources/adminapp/js/cruds/Permissions/Index.vue"));
+        return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(43)]).then(__webpack_require__.bind(null, /*! @cruds/Permissions/Index.vue */ "./resources/adminapp/js/cruds/Permissions/Index.vue"));
       },
       meta: {
         title: 'cruds.permission.title'
@@ -55554,7 +55554,7 @@ var routes = [{
       path: 'permissions/create',
       name: 'permissions.create',
       component: function component() {
-        return __webpack_require__.e(/*! import() */ 39).then(__webpack_require__.bind(null, /*! @cruds/Permissions/Create.vue */ "./resources/adminapp/js/cruds/Permissions/Create.vue"));
+        return __webpack_require__.e(/*! import() */ 41).then(__webpack_require__.bind(null, /*! @cruds/Permissions/Create.vue */ "./resources/adminapp/js/cruds/Permissions/Create.vue"));
       },
       meta: {
         title: 'cruds.permission.title'
@@ -55563,7 +55563,7 @@ var routes = [{
       path: 'permissions/:id',
       name: 'permissions.show',
       component: function component() {
-        return __webpack_require__.e(/*! import() */ 42).then(__webpack_require__.bind(null, /*! @cruds/Permissions/Show.vue */ "./resources/adminapp/js/cruds/Permissions/Show.vue"));
+        return __webpack_require__.e(/*! import() */ 44).then(__webpack_require__.bind(null, /*! @cruds/Permissions/Show.vue */ "./resources/adminapp/js/cruds/Permissions/Show.vue"));
       },
       meta: {
         title: 'cruds.permission.title'
@@ -55572,7 +55572,7 @@ var routes = [{
       path: 'permissions/:id/edit',
       name: 'permissions.edit',
       component: function component() {
-        return __webpack_require__.e(/*! import() */ 40).then(__webpack_require__.bind(null, /*! @cruds/Permissions/Edit.vue */ "./resources/adminapp/js/cruds/Permissions/Edit.vue"));
+        return __webpack_require__.e(/*! import() */ 42).then(__webpack_require__.bind(null, /*! @cruds/Permissions/Edit.vue */ "./resources/adminapp/js/cruds/Permissions/Edit.vue"));
       },
       meta: {
         title: 'cruds.permission.title'
@@ -55581,7 +55581,7 @@ var routes = [{
       path: 'roles',
       name: 'roles.index',
       component: function component() {
-        return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(12)]).then(__webpack_require__.bind(null, /*! @cruds/Roles/Index.vue */ "./resources/adminapp/js/cruds/Roles/Index.vue"));
+        return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(14)]).then(__webpack_require__.bind(null, /*! @cruds/Roles/Index.vue */ "./resources/adminapp/js/cruds/Roles/Index.vue"));
       },
       meta: {
         title: 'cruds.role.title'
@@ -55590,7 +55590,7 @@ var routes = [{
       path: 'roles/create',
       name: 'roles.create',
       component: function component() {
-        return __webpack_require__.e(/*! import() */ 43).then(__webpack_require__.bind(null, /*! @cruds/Roles/Create.vue */ "./resources/adminapp/js/cruds/Roles/Create.vue"));
+        return __webpack_require__.e(/*! import() */ 45).then(__webpack_require__.bind(null, /*! @cruds/Roles/Create.vue */ "./resources/adminapp/js/cruds/Roles/Create.vue"));
       },
       meta: {
         title: 'cruds.role.title'
@@ -55599,7 +55599,7 @@ var routes = [{
       path: 'roles/:id',
       name: 'roles.show',
       component: function component() {
-        return __webpack_require__.e(/*! import() */ 13).then(__webpack_require__.bind(null, /*! @cruds/Roles/Show.vue */ "./resources/adminapp/js/cruds/Roles/Show.vue"));
+        return __webpack_require__.e(/*! import() */ 15).then(__webpack_require__.bind(null, /*! @cruds/Roles/Show.vue */ "./resources/adminapp/js/cruds/Roles/Show.vue"));
       },
       meta: {
         title: 'cruds.role.title'
@@ -55608,7 +55608,7 @@ var routes = [{
       path: 'roles/:id/edit',
       name: 'roles.edit',
       component: function component() {
-        return __webpack_require__.e(/*! import() */ 44).then(__webpack_require__.bind(null, /*! @cruds/Roles/Edit.vue */ "./resources/adminapp/js/cruds/Roles/Edit.vue"));
+        return __webpack_require__.e(/*! import() */ 46).then(__webpack_require__.bind(null, /*! @cruds/Roles/Edit.vue */ "./resources/adminapp/js/cruds/Roles/Edit.vue"));
       },
       meta: {
         title: 'cruds.role.title'
@@ -55617,7 +55617,7 @@ var routes = [{
       path: 'users',
       name: 'users.index',
       component: function component() {
-        return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(14)]).then(__webpack_require__.bind(null, /*! @cruds/Users/Index.vue */ "./resources/adminapp/js/cruds/Users/Index.vue"));
+        return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(16)]).then(__webpack_require__.bind(null, /*! @cruds/Users/Index.vue */ "./resources/adminapp/js/cruds/Users/Index.vue"));
       },
       meta: {
         title: 'cruds.user.title'
@@ -55626,7 +55626,7 @@ var routes = [{
       path: 'users/create',
       name: 'users.create',
       component: function component() {
-        return __webpack_require__.e(/*! import() */ 46).then(__webpack_require__.bind(null, /*! @cruds/Users/Create.vue */ "./resources/adminapp/js/cruds/Users/Create.vue"));
+        return __webpack_require__.e(/*! import() */ 48).then(__webpack_require__.bind(null, /*! @cruds/Users/Create.vue */ "./resources/adminapp/js/cruds/Users/Create.vue"));
       },
       meta: {
         title: 'cruds.user.title'
@@ -55635,7 +55635,7 @@ var routes = [{
       path: 'users/:id',
       name: 'users.show',
       component: function component() {
-        return __webpack_require__.e(/*! import() */ 15).then(__webpack_require__.bind(null, /*! @cruds/Users/Show.vue */ "./resources/adminapp/js/cruds/Users/Show.vue"));
+        return __webpack_require__.e(/*! import() */ 17).then(__webpack_require__.bind(null, /*! @cruds/Users/Show.vue */ "./resources/adminapp/js/cruds/Users/Show.vue"));
       },
       meta: {
         title: 'cruds.user.title'
@@ -55644,7 +55644,7 @@ var routes = [{
       path: 'users/:id/edit',
       name: 'users.edit',
       component: function component() {
-        return __webpack_require__.e(/*! import() */ 47).then(__webpack_require__.bind(null, /*! @cruds/Users/Edit.vue */ "./resources/adminapp/js/cruds/Users/Edit.vue"));
+        return __webpack_require__.e(/*! import() */ 49).then(__webpack_require__.bind(null, /*! @cruds/Users/Edit.vue */ "./resources/adminapp/js/cruds/Users/Edit.vue"));
       },
       meta: {
         title: 'cruds.user.title'
@@ -55654,7 +55654,7 @@ var routes = [{
     path: 'tentang-aplikasis',
     name: 'tentang_aplikasis.index',
     component: function component() {
-      return __webpack_require__.e(/*! import() */ 45).then(__webpack_require__.bind(null, /*! @cruds/TentangAplikasis/Index.vue */ "./resources/adminapp/js/cruds/TentangAplikasis/Index.vue"));
+      return __webpack_require__.e(/*! import() */ 47).then(__webpack_require__.bind(null, /*! @cruds/TentangAplikasis/Index.vue */ "./resources/adminapp/js/cruds/TentangAplikasis/Index.vue"));
     },
     meta: {
       title: 'cruds.tentangAplikasi.title'
@@ -55663,7 +55663,7 @@ var routes = [{
     path: 'data-dummies',
     name: 'data_dummies.index',
     component: function component() {
-      return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(22)]).then(__webpack_require__.bind(null, /*! @cruds/DataDummies/Index.vue */ "./resources/adminapp/js/cruds/DataDummies/Index.vue"));
+      return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(24)]).then(__webpack_require__.bind(null, /*! @cruds/DataDummies/Index.vue */ "./resources/adminapp/js/cruds/DataDummies/Index.vue"));
     },
     meta: {
       title: 'cruds.dataDummy.title'
@@ -55672,7 +55672,7 @@ var routes = [{
     path: 'data-dummies/create',
     name: 'data_dummies.create',
     component: function component() {
-      return __webpack_require__.e(/*! import() */ 20).then(__webpack_require__.bind(null, /*! @cruds/DataDummies/Create.vue */ "./resources/adminapp/js/cruds/DataDummies/Create.vue"));
+      return __webpack_require__.e(/*! import() */ 22).then(__webpack_require__.bind(null, /*! @cruds/DataDummies/Create.vue */ "./resources/adminapp/js/cruds/DataDummies/Create.vue"));
     },
     meta: {
       title: 'cruds.dataDummy.title'
@@ -55681,7 +55681,7 @@ var routes = [{
     path: 'data-dummies/:id',
     name: 'data_dummies.show',
     component: function component() {
-      return __webpack_require__.e(/*! import() */ 23).then(__webpack_require__.bind(null, /*! @cruds/DataDummies/Show.vue */ "./resources/adminapp/js/cruds/DataDummies/Show.vue"));
+      return __webpack_require__.e(/*! import() */ 25).then(__webpack_require__.bind(null, /*! @cruds/DataDummies/Show.vue */ "./resources/adminapp/js/cruds/DataDummies/Show.vue"));
     },
     meta: {
       title: 'cruds.dataDummy.title'
@@ -55690,7 +55690,7 @@ var routes = [{
     path: 'data-dummies/:id/edit',
     name: 'data_dummies.edit',
     component: function component() {
-      return __webpack_require__.e(/*! import() */ 21).then(__webpack_require__.bind(null, /*! @cruds/DataDummies/Edit.vue */ "./resources/adminapp/js/cruds/DataDummies/Edit.vue"));
+      return __webpack_require__.e(/*! import() */ 23).then(__webpack_require__.bind(null, /*! @cruds/DataDummies/Edit.vue */ "./resources/adminapp/js/cruds/DataDummies/Edit.vue"));
     },
     meta: {
       title: 'cruds.dataDummy.title'
@@ -56455,10 +56455,28 @@ var mutations = {
 __webpack_require__.r(__webpack_exports__);
 function initialState() {
   return {
+    // andri: {
+    //   id: null,
+    //   nama: '',
+    //   data_mahasiswa: [],
+    //   batas_nilai: '',
+    //   created_at: '',
+    //   updated_at: '',
+    //   deleted_at: ''
+    // },
     entry: {
       id: null,
       nama: '',
       data_mahasiswa: [],
+      Accuracy: '',
+      Active: '',
+      Lulus: '',
+      Observers: '',
+      PrecisionLulus: '',
+      PrecisionTidakLulus: '',
+      RecallLulus: '',
+      RecallTidakLulus: '',
+      TidakLulus: '',
       batas_nilai: '',
       created_at: '',
       updated_at: '',
@@ -56576,22 +56594,27 @@ var actions = {
       commit('setEntry', response.data.data);
     });
   },
-  fetchProsesData: function fetchProsesData(_ref11, id) {
+  // fetchProsesData({ commit, dispatch }, id) {
+  //   axios.get(`${route}/${id}/proses`).then(response => {
+  //     commit('setEntry', response.data.data)
+  //   })
+  // },
+  fetchShowData: function fetchShowData(_ref11, id) {
     var commit = _ref11.commit,
         dispatch = _ref11.dispatch;
-    axios.get("".concat(route, "/").concat(id, "/proses")).then(function (response) {
-      commit('setEntry', response.data.data);
-    });
-  },
-  fetchShowData: function fetchShowData(_ref12, id) {
-    var commit = _ref12.commit,
-        dispatch = _ref12.dispatch;
     axios.get("".concat(route, "/").concat(id)).then(function (response) {
-      commit('setEntry', response.data.data);
+      // console.log(response.data.data, 'response data');
+      commit('setEntry', response.data.data); // console.log(state, 'state data');
     });
   },
-  resetState: function resetState(_ref13) {
-    var commit = _ref13.commit;
+  // fetchChartData({ commit, dispatch }, id) {
+  //   axios.get(`${route}/${id}`).then(response => {
+  //     // console.log(response.data.data, 'response data');
+  //     commit(andri, response.data.data)
+  //   })
+  // },
+  resetState: function resetState(_ref12) {
+    var commit = _ref12.commit;
     commit('resetState');
   }
 };
@@ -56599,6 +56622,9 @@ var mutations = {
   setEntry: function setEntry(state, entry) {
     state.entry = entry;
   },
+  // setAndri(state, entry) {
+  //   state.andri = entry
+  // },
   setNama: function setNama(state, value) {
     state.entry.nama = value;
   },

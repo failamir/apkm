@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:8889
--- Generation Time: Jun 18, 2022 at 10:51 PM
+-- Generation Time: Jun 19, 2022 at 08:14 PM
 -- Server version: 5.7.34
 -- PHP Version: 8.0.8
 
@@ -145,7 +145,13 @@ INSERT INTO `data_mahasiswas` (`id`, `nama`, `batas_nilai`, `Lulus`, `TidakLulus
 (51, 'tes akhir', 60, 123, 123, 123, 123, 123, 123, 123, 123, 123, '2022-06-18 13:53:11', '2022-06-18 13:53:11', NULL),
 (52, 'tes akhir', 60, 10, 2, 62, 16, 0.9192, 1, 0.5833, 0.8, 0.9042, '2022-06-18 13:58:16', '2022-06-18 13:58:24', NULL),
 (53, 'tes final', 60, 10, 2, 62, 16, 0.9192, 1, 0.5833, 0.8, 0.9042, '2022-06-18 13:59:10', '2022-06-18 13:59:18', NULL),
-(54, 'tes final final', 60, 10, 2, 62, 16, 0.9192, 1, 0.5833, 0.8, 0.9042, '2022-06-18 15:30:19', '2022-06-18 15:31:00', NULL);
+(54, 'tes final final', 60, 10, 2, 62, 16, 0.9192, 1, 0.5833, 0.8, 0.9042, '2022-06-18 15:30:19', '2022-06-18 15:31:00', NULL),
+(55, 'ads', 40, 123, 123, 123, 123, 123, 123, 123, 123, 123, '2022-06-19 12:50:31', '2022-06-19 12:50:31', NULL),
+(56, 'ads', 40, 123, 123, 123, 123, 123, 123, 123, 123, 123, '2022-06-19 12:51:34', '2022-06-19 12:51:34', NULL),
+(57, 'ads', 40, 123, 123, 123, 123, 123, 123, 123, 123, 123, '2022-06-19 12:51:58', '2022-06-19 12:51:58', NULL),
+(58, 'ads', 40, 123, 123, 123, 123, 123, 123, 123, 123, 123, '2022-06-19 12:54:54', '2022-06-19 12:54:54', NULL),
+(59, 'weq', 50, 123, 123, 123, 123, 123, 123, 123, 123, 123, '2022-06-19 12:56:49', '2022-06-19 12:56:49', NULL),
+(60, 'weq', 50, 10, 2, 62, 16, 0.9038, 1, 0.5, 0.8, 0.8913, '2022-06-19 12:58:22', '2022-06-19 12:58:30', NULL);
 
 -- --------------------------------------------------------
 
@@ -178,7 +184,19 @@ INSERT INTO `data_mahasiswa_on_goings` (`id`, `nama`, `hasil_prediksi`, `created
 (9, 'tes1', NULL, '2022-06-18 10:12:59', '2022-06-18 10:12:59', NULL),
 (10, 'tes2', NULL, '2022-06-18 10:19:47', '2022-06-18 10:19:47', NULL),
 (11, 'tes5', NULL, '2022-06-18 11:17:44', '2022-06-18 11:17:44', NULL),
-(12, 'tes3', NULL, '2022-06-18 11:20:29', '2022-06-18 11:20:29', NULL);
+(12, 'tes3', NULL, '2022-06-18 11:20:29', '2022-06-18 11:20:29', NULL),
+(13, 'qwe', NULL, '2022-06-19 12:21:16', '2022-06-19 12:21:16', NULL),
+(14, 'qwe', NULL, '2022-06-19 12:29:29', '2022-06-19 12:29:29', NULL),
+(15, 'sda', NULL, '2022-06-19 12:30:29', '2022-06-19 12:30:29', NULL),
+(16, 'dsa', NULL, '2022-06-19 12:40:35', '2022-06-19 12:40:35', NULL),
+(17, 'sa', NULL, '2022-06-19 12:41:15', '2022-06-19 12:41:15', NULL),
+(18, 'dsa', NULL, '2022-06-19 12:43:27', '2022-06-19 12:43:27', NULL),
+(19, 'sad', NULL, '2022-06-19 12:46:59', '2022-06-19 12:46:59', NULL),
+(20, 'dsa', NULL, '2022-06-19 13:01:05', '2022-06-19 13:01:05', NULL),
+(21, 'yui', NULL, '2022-06-19 13:03:15', '2022-06-19 13:03:15', NULL),
+(22, 'xc', NULL, '2022-06-19 13:04:00', '2022-06-19 13:04:00', NULL),
+(23, 'yii', NULL, '2022-06-19 13:07:45', '2022-06-19 13:07:45', NULL),
+(24, 'yii', NULL, '2022-06-19 13:07:50', '2022-06-19 13:07:50', NULL);
 
 -- --------------------------------------------------------
 
@@ -364,7 +382,20 @@ INSERT INTO `media` (`id`, `model_type`, `model_id`, `uuid`, `collection_name`, 
 (27, 'App\\Models\\DataMahasiswa', 45, '194c3c7e-871c-4ec6-8d36-8d61f973bcea', 'data_mahasiswa_data_mahasiswa', 'Data LMS + Nilai - ICEI Rev 21.03.2021 (1)', 'Data-LMS-+-Nilai---ICEI-Rev-21.03.2021-(1).xlsx', 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'public', 'public', 396687, '[]', '[]', '[]', '[]', 1, '2022-06-18 13:39:14', '2022-06-18 13:40:14'),
 (28, 'App\\Models\\DataMahasiswa', 47, 'c61c70a2-1d04-4792-a978-647020a035d1', 'data_mahasiswa_data_mahasiswa', 'Data LMS + Nilai - ICEI Rev 21.03.2021 (1)', 'Data-LMS-+-Nilai---ICEI-Rev-21.03.2021-(1).xlsx', 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'public', 'public', 396687, '[]', '[]', '[]', '[]', 1, '2022-06-18 13:42:02', '2022-06-18 13:42:06'),
 (29, 'App\\Models\\DataMahasiswa', 53, '360edc36-fc39-4759-876a-46b101360cde', 'data_mahasiswa_data_mahasiswa', 'Data LMS + Nilai - ICEI Rev 21.03.2021 (1)', 'Data-LMS-+-Nilai---ICEI-Rev-21.03.2021-(1).xlsx', 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'public', 'public', 396687, '[]', '[]', '[]', '[]', 1, '2022-06-18 13:59:07', '2022-06-18 13:59:10'),
-(30, 'App\\Models\\DataMahasiswa', 54, 'c6d8c720-56aa-44e4-a7d0-37565339b80a', 'data_mahasiswa_data_mahasiswa', 'Data LMS + Nilai - ICEI Rev 21.03.2021 (1)', 'Data-LMS-+-Nilai---ICEI-Rev-21.03.2021-(1).xlsx', 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'public', 'public', 396687, '[]', '[]', '[]', '[]', 1, '2022-06-18 15:29:58', '2022-06-18 15:30:19');
+(30, 'App\\Models\\DataMahasiswa', 54, 'c6d8c720-56aa-44e4-a7d0-37565339b80a', 'data_mahasiswa_data_mahasiswa', 'Data LMS + Nilai - ICEI Rev 21.03.2021 (1)', 'Data-LMS-+-Nilai---ICEI-Rev-21.03.2021-(1).xlsx', 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'public', 'public', 396687, '[]', '[]', '[]', '[]', 1, '2022-06-18 15:29:58', '2022-06-18 15:30:19'),
+(31, 'App\\Models\\DataMahasiswaOnGoing', 13, 'fccf5128-c561-4bb5-b932-f5514d095dba', 'data_mahasiswa_on_going_data_mahasiswa', 'Contoh Data ICE On Going', 'Contoh-Data-ICE-On-Going.xlsx', 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'public', 'public', 8831, '[]', '[]', '[]', '[]', 3, '2022-06-19 12:21:09', '2022-06-19 12:21:16'),
+(32, 'App\\Models\\DataMahasiswaOnGoing', 14, '964e681e-849d-43f2-bd7f-55b9b6fb21ae', 'data_mahasiswa_on_going_data_mahasiswa', 'Contoh Data ICE On Going', 'Contoh-Data-ICE-On-Going.xlsx', 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'public', 'public', 8831, '[]', '[]', '[]', '[]', 3, '2022-06-19 12:28:11', '2022-06-19 12:29:29'),
+(33, 'App\\Models\\DataMahasiswaOnGoing', 15, '6af7af9c-4369-44be-ab27-92d050eb991e', 'data_mahasiswa_on_going_data_mahasiswa', 'Contoh Data ICE On Going', 'Contoh-Data-ICE-On-Going.xlsx', 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'public', 'public', 8831, '[]', '[]', '[]', '[]', 3, '2022-06-19 12:30:28', '2022-06-19 12:30:29'),
+(34, 'App\\Models\\DataMahasiswaOnGoing', 16, '298540ea-f73c-470d-b60a-af3b8881b172', 'data_mahasiswa_on_going_data_mahasiswa', 'Contoh Data ICE On Going', 'Contoh-Data-ICE-On-Going.xlsx', 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'public', 'public', 8831, '[]', '[]', '[]', '[]', 3, '2022-06-19 12:40:34', '2022-06-19 12:40:35'),
+(35, 'App\\Models\\DataMahasiswaOnGoing', 17, '7f078384-90c5-452a-84ae-ce413bc752ca', 'data_mahasiswa_on_going_data_mahasiswa', 'Contoh Data ICE On Going', 'Contoh-Data-ICE-On-Going.xlsx', 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'public', 'public', 8831, '[]', '[]', '[]', '[]', 3, '2022-06-19 12:41:14', '2022-06-19 12:41:15'),
+(36, 'App\\Models\\DataMahasiswaOnGoing', 18, 'a773744d-7bdc-431d-bd29-dae07dfd8f54', 'data_mahasiswa_on_going_data_mahasiswa', 'Contoh Data ICE On Going', 'Contoh-Data-ICE-On-Going.xlsx', 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'public', 'public', 8831, '[]', '[]', '[]', '[]', 3, '2022-06-19 12:43:25', '2022-06-19 12:43:27'),
+(37, 'App\\Models\\DataMahasiswaOnGoing', 19, '82ee67ab-0d5f-442c-99b8-2a75aef39d7f', 'data_mahasiswa_on_going_data_mahasiswa', 'Contoh Data ICE On Going', 'Contoh-Data-ICE-On-Going.xlsx', 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'public', 'public', 8831, '[]', '[]', '[]', '[]', 3, '2022-06-19 12:46:58', '2022-06-19 12:46:59'),
+(38, 'App\\Models\\DataMahasiswa', 55, 'a7bf925c-978c-4050-8fab-429c0edfa3f0', 'data_mahasiswa_data_mahasiswa', 'Data LMS + Nilai - ICEI Rev 21.03.2021 (1)', 'Data-LMS-+-Nilai---ICEI-Rev-21.03.2021-(1).xlsx', 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'public', 'public', 396687, '[]', '[]', '[]', '[]', 1, '2022-06-19 12:50:25', '2022-06-19 12:50:31'),
+(39, 'App\\Models\\DataMahasiswa', 59, 'e157336a-71fc-4192-8795-0b7a5470b6cc', 'data_mahasiswa_data_mahasiswa', 'Data LMS + Nilai - ICEI Rev 21.03.2021 (1)', 'Data-LMS-+-Nilai---ICEI-Rev-21.03.2021-(1).xlsx', 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'public', 'public', 396687, '[]', '[]', '[]', '[]', 1, '2022-06-19 12:56:40', '2022-06-19 12:56:49'),
+(40, 'App\\Models\\DataMahasiswaOnGoing', 20, '85fb5dc7-6fb2-43ab-842a-f9f7fdccd598', 'data_mahasiswa_on_going_data_mahasiswa', 'Contoh Data ICE On Going', 'Contoh-Data-ICE-On-Going.xlsx', 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'public', 'public', 8831, '[]', '[]', '[]', '[]', 3, '2022-06-19 13:01:04', '2022-06-19 13:01:05'),
+(41, 'App\\Models\\DataMahasiswaOnGoing', 0, '9156d3af-6ebf-494f-97c3-842d3975897c', 'data_mahasiswa_on_going_data_mahasiswa', 'Contoh Data ICE On Going', 'Contoh-Data-ICE-On-Going.xlsx', 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'public', 'public', 8831, '[]', '[]', '[]', '[]', 3, '2022-06-19 13:03:14', '2022-06-19 13:03:14'),
+(42, 'App\\Models\\DataMahasiswaOnGoing', 22, 'f731fc0e-2b71-4df5-9fca-70e04fd75d8a', 'data_mahasiswa_on_going_data_mahasiswa', 'Contoh Data ICE On Going', 'Contoh-Data-ICE-On-Going.xlsx', 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'public', 'public', 8831, '[]', '[]', '[]', '[]', 4, '2022-06-19 13:03:58', '2022-06-19 13:04:00'),
+(43, 'App\\Models\\DataMahasiswaOnGoing', 24, '6f405ee1-4e7b-4ec9-8fb9-6c6e1e5a12a7', 'data_mahasiswa_on_going_data_mahasiswa', 'Contoh Data ICE On Going', 'Contoh-Data-ICE-On-Going.xlsx', 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'public', 'public', 8831, '[]', '[]', '[]', '[]', 4, '2022-06-19 13:07:44', '2022-06-19 13:07:50');
 
 -- --------------------------------------------------------
 
@@ -702,7 +733,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `remember_token`, `created_at`, `updated_at`, `deleted_at`) VALUES
-(1, 'Admin', 'admin@admin.com', NULL, '$2y$10$aiurAPaQkdKgcwXi5BR4.eZF27eSQzgBCg4d/wl9Z18eoQ6dPpIeS', NULL, NULL, NULL, NULL);
+(1, 'Admin', 'admin@admin.com', NULL, '$2y$10$aiurAPaQkdKgcwXi5BR4.eZF27eSQzgBCg4d/wl9Z18eoQ6dPpIeS', 'hUTYosM059HQriQDT1lLNBIrVjJ0evHRI1BclagwubEQBMumH70KBK5Bk0vp', NULL, NULL, NULL);
 
 --
 -- Indexes for dumped tables
@@ -839,13 +870,13 @@ ALTER TABLE `data_dummies`
 -- AUTO_INCREMENT for table `data_mahasiswas`
 --
 ALTER TABLE `data_mahasiswas`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=55;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=61;
 
 --
 -- AUTO_INCREMENT for table `data_mahasiswa_on_goings`
 --
 ALTER TABLE `data_mahasiswa_on_goings`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
 
 --
 -- AUTO_INCREMENT for table `dosens`
@@ -875,7 +906,7 @@ ALTER TABLE `mata_kuliahs`
 -- AUTO_INCREMENT for table `media`
 --
 ALTER TABLE `media`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=44;
 
 --
 -- AUTO_INCREMENT for table `migrations`

@@ -67,9 +67,11 @@
             <div class="col-md-12">
               <div class="row">
                 <div class="col" id="chart">
+                  <!-- <apexchart type="pie" width="380" :options="chartOptions" :series="serisL"></apexchart> -->
                   <apexchart type="pie" width="380" :options="chartOptions" :series="series"></apexchart>
                 </div>
                 <div class="col" id="chart">
+                  <!-- <apexchart type="pie" width="380" :options="chartOptions1" :series="serisT"></apexchart> -->
                   <apexchart type="pie" width="380" :options="chartOptions1" :series="series1"></apexchart>
                 </div>
             </div>
@@ -111,12 +113,33 @@ import VueApexCharts from 'vue-apexcharts'
 export default {
   mounted() {
   //  show()
-  // console.log(DataMahasiswasSingle)
+  // this.a= "";
+  // this.b= "";
+  // this.c= "";
+  // this.d= "";
+  // this.a= this.$store.getters['DataMahasiswasSingle/entry'].Lulus;
+  // a= this.$store.getters['DataMahasiswasSingle/entry'].Lulus;
+  // this.b= this.$store.getters['DataMahasiswasSingle/entry'].TidakLulus;
+  // this.c= this.$store.getters['DataMahasiswasSingle/entry'].Active;
+  // this.d= this.$store.getters['DataMahasiswasSingle/entry'].Observers;
+  // console.log(a)
+  // console.log(this.a)
+  // console.log(['entry'], 'andri')
+  // console.log(['fetchShowData'])
   // console.log(this.$store.getters.DataMahasiswasSingle)
-  console.log(['entry'])
-  this.andri = this.entry.Lulus,
-        this.cantik = this.entry.TidakLulus
-        // console.log(this.andri)
+  // if (this['entry'].Lulus){
+  //   this.andri = this.entry.Lulus
+  // }
+  // coba()
+  // console.log(charts,'kelsi')
+  // console.log(this.charts,'kelsi')
+  // console.log(this.coba,'kelsi')
+  // console.log(this.coba1,'kelsi')
+  // console.log(this.serisL,'kelsi')
+  // console.log(this.serisT,'kelsi')
+  // this.andri = this.entry.Lulus,
+  // this.cantik = this.entry.TidakLulus
+  // console.log(['entry'].nama)
   },
   components: {
     DatatableAttachments,
@@ -127,15 +150,38 @@ export default {
   // },
   data: function() {
     // console.log(['entry'])
+    // console.log(['entry'].id)
+    // console.log(['fetfchShowData'])
       return {
-        andri: "",
-        cantik:"",
+        // charts: this.charts,
+        // entry: [],  
+        // andri: "",
+        // cantik:"",
         // andri: this.entry.Lulus,
         // cantik:this.cantik,
         seen: false,
         // series: [this.andri, this.cantik],
         // series: [andri, cantik],
-        series: [12, 34],
+        // a: "",
+        // b: "",
+        // c: "",
+        // d: "",
+        // a: this.$store.getters['DataMahasiswasSingle/entry'].Lulus,
+        // b: this.$store.getters['DataMahasiswasSingle/entry'].TidakLulus,
+        // c: this.$store.getters['DataMahasiswasSingle/entry'].Active,
+        // d: this.$store.getters['DataMahasiswasSingle/entry'].Observers,
+        // series: [23, 12],
+        series: [1, 1],
+        series1: [1, 1],
+        // series: [{
+        //   name: 'Vue Chart',
+        //   data: [30, 40, 45, 50, 49, 60, 70, 81]
+        // }],
+        // series1: [{
+        //   name: 'Vue Chart',
+        //   data: [30, 40, 45, 50, 49, 60, 70, 81]
+        // }],
+      // series: [this.charts.data.Lulus, this.charts.data.TidakLulus],
           chartOptions: {
                title: {
                 text: 'Proporsi Jumlah Lulus dan Tidak Lulus',
@@ -169,7 +215,8 @@ export default {
             }]
           },
           // series1: [entry.Active, entry.Observers],
-          series1: [12, 34],
+          // series1: [12, 42],
+          // series1: [this.charts.data.Active, this.charts.data.Observers],
           chartOptions1: {
                title: {
                 text: 'Proporsi Mahasiswa Aktif dan Observers',
@@ -208,17 +255,36 @@ export default {
     this.resetState()
   },
   computed: {
-    ...mapGetters('DataMahasiswasSingle', ['entry'])
+    ...mapGetters('DataMahasiswasSingle', ['entry']),
+    // charts : ['entry'],
+    // serisL(){return [this.charts.Lulus, this.charts.TidakLulus]},
+    // serisT(){return [this.charts.Active, this.charts.Observers]},
+    // coba1(){
+    //   return [2, 5]
+    //   },
+    // coba(){
+    //   return console.log([this.charts],'val')
+      // this.series[0] = this.$store.getters['DataMahasiswasSingle/entry'].Lulus;
+      // this.series[1] = this.$store.getters['DataMahasiswasSingle/entry'].TidakLulus;
+      // return this.$store.getters['DataMahasiswasSingle/entry']
+      // console.log(this.$store.getters['DataMahasiswasSingle/entry'])
+      // return [this.$store.getters['DataMahasiswasSingle/entry']]
+    // },
+    
+    },
+
+    
     
     // andri: entry.Lulus,
     //     cantik:entry.TidakLulus,
-  },
+  // },
   watch: {
     '$route.params.id': {
       immediate: true,
       handler() {
         this.resetState()
         this.fetchShowData(this.$route.params.id)
+        // this.fetchChartData(this.$route.params.id)
       }
     }
   },
@@ -229,15 +295,43 @@ export default {
     //     cantik:entry.TidakLulus,
   },
   created() {
+    const route = 'data-mahasiswas'
+    axios.get(`${route}/${this.$route.params.id}`).then(response => {
+      this.charts = response.data.data
+      // console.log(this.charts, 'andri')
+      this.a = [this.charts.Lulus, this.charts.TidakLulus]
+      this.b = [this.charts.Active, this.charts.Observers]
+      // console.log(this.a)
+      this.series = this.a
+      this.series1 = this.b
+      // this.series = [{
+      // data: [this.a]
+      // // data: [2,5]
+      // }]
+      // this.series1 = [{
+      //   data: this.b
+      //   // data: [2,5]
+      // }]
+      // console.log(this.charts.data.Lulus)
+    })
+    
+    // this.series = [{
+    //   data: this.a
+    //   }]
+    //   this.series1 = [{
+    //     data: this.b
+    //   }]
+    // coba()
     // axios.get('dashboard').then(response => {
     //   this.charts = response.data
     // })
     // console.log(DataMahasiswasSingle)
     // console.log(DataMahasiswasSingle)
     // console.log(this.getters.entry)
-    // console.log(this.entry)
-    console.log(['andri'])
-    console.log(['entry'])
+    // console.log(['fetchShowData'])
+    // this.charts = ['entry']
+    // console.log(['andri'])
+    // console.log(['entry'])
     // this.andri = this.entry.Lulus
     //     this.cantik = this.entry.TidakLulus
   }

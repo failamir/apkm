@@ -23,27 +23,71 @@ class DataMahasiswaOnGoingApiController extends Controller
 
     public function store(StoreDataMahasiswaOnGoingRequest $request)
     {
-        $dataMahasiswaOnGoing = DataMahasiswaOnGoing::create($request->validated());
+        $dataMahasiswaOnGoing = DataMahasiswaOnGoing::create(array_merge($request->validated(),
+        ['Lulus' => 123],
+         ['TidakLulus' => 123],
+         ['Active' => 123],
+         ['Observers' => 123],
+         ['Accuracy' => 123],
+         ['RecallLulus' => 123],
+         ['RecallTidakLulus' => 123],
+         ['PrecisionTidakLulus' => 123],
+         ['PrecisionLulus' => 123],
+         ['hasil_prediksi' => 'url'],
+        ));
 
         if ($media = $request->input('data_mahasiswa', [])) {
             Media::whereIn('id', data_get($media, '*.id'))
                 ->where('model_id', 0)
                 ->update(['model_id' => $dataMahasiswaOnGoing->id]);
         }
-        $dataMahasiswaOnGoing->andri = 'cantik';
+        // $dataMahasiswaOnGoing->andri = 'cantik';
         // $a = $request->input('batas_nilai');
-        $a = '../../../../public/storage/'.$request->input('data_mahasiswa')[0]["id"].'/'.$request->input('data_mahasiswa')[0]["file_name"];
+        // $a = '../../../../public/storage/'.$request->input('data_mahasiswa')[0]["id"].'/'.$request->input('data_mahasiswa')[0]["file_name"];
         // var_dump($a);
         // var_dump($b);
+        $a = '40';
+        // $c = public_path().'/storage/'.$request->input('data_mahasiswa')[0]["id"].'/'.$request->input('data_mahasiswa')[0]["file_name"];
+        // $a = $request->input('data_mahasiswa')[0]["file_name"];
+        
+        // $batas = '40';
+        $b = public_path().'/storage/'.'2/Data-LMS-+-Nilai---ICEI-Rev-21.03.2021-(1).xlsx';
+        var_dump($b);
+        $c = public_path().'/storage/'.$request->input('data_mahasiswa')[0]["id"].'/'.$request->input('data_mahasiswa')[0]["file_name"];
+        var_dump($c);
         $date = date('dmYhsi');
+        var_dump($date);
+        $u = $date.'HasilPrediksi.xlsx';
+            var_dump($u);
+        // $process = new Process(["python3", "Proses.py '$a' '$b' '$date'"]);
+        // $process = new Process(["python3", "ProsesH.py '$a' '$b' '$date'"]);
+        // $process->run();
+
+        // executes after the command finishes
+        // if (!$process->isSuccessful()) {
+        //     throw new ProcessFailedException($process);
+        // }
 
         // echo $process->getOutput();
         $py = env('PYPATH',);
-        $andri=exec("'$py' ../../../../ProsesOngoing.py '$a' '$date'  2>&1", $out, $ret);
+        $andri=exec("'$py' ProsesOngoing.py '$a' '$b' '$c' '$date'  2>&1", $out, $ret);
         // $andri = exec("python3 ../../../../Proses.py '$a' '$date'", $out, $ret);
-        // var_dump($andri);
+        var_dump($andri);
         $text = str_replace("'", '"', $andri);
-        var_dump(json_decode($text));
+        $andri = json_decode($text);
+            
+        $dataMahasiswaOnGoing->update(array_merge($request->validated(),
+         ['Lulus' => $andri->LulusdanTidakLulus[0]],
+         ['TidakLulus' => $andri->LulusdanTidakLulus[1]],
+         ['Active' => $andri->MahasiswaActivedanObservers[0]],
+         ['Observers' => $andri->MahasiswaActivedanObservers[1]],
+         ['Accuracy' => $andri->Accuracy],
+         ['RecallLulus' => $andri->RecallLulus],
+         ['RecallTidakLulus' => $andri->RecallTidakLulus],
+         ['PrecisionTidakLulus' => $andri->PrecisionTidakLulus],
+         ['PrecisionLulus' => $andri->PrecisionLulus],
+         ['hasil_prediksi' => $u],
+        ));
         return (new DataMahasiswaOnGoingResource($dataMahasiswaOnGoing))
             ->response()
             ->setStatusCode(Response::HTTP_CREATED);

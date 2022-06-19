@@ -46,12 +46,12 @@ class DataMahasiswaApiController extends Controller
 
         // $dataMahasiswa->andri = 'cantik';
         $a = $request->input('batas_nilai');
-        // $b = '../../../../public/storage/'.$request->input('data_mahasiswa')[0]["id"].'/'.$request->input('data_mahasiswa')[0]["file_name"];
-        $b = $request->input('data_mahasiswa')[0]["file_name"];
-        // var_dump($a);
-        // var_dump($b);
+        $b = public_path().'/storage/'.$request->input('data_mahasiswa')[0]["id"].'/'.$request->input('data_mahasiswa')[0]["file_name"];
+        // $b = $request->input('data_mahasiswa')[0]["file_name"];
+        // var_dump(base_path());
+        // var_dump(storage_path());
         $date = date('dmYhsi');
-        // var_dump($date);
+        // var_dump(app_path());
         // $process = new Process(["python3", "Proses.py '$a' '$b' '$date'"]);
         // $process = new Process(["python3", "ProsesH.py '$a' '$b' '$date'"]);
         // $process->run();
