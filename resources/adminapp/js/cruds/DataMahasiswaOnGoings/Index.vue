@@ -109,66 +109,66 @@ export default {
           thComp: TranslatedHeader,
           tdComp: DatatableAttachments
         },
-        {
-          title: 'cruds.dataMahasiswaOnGoing.fields.hasil_prediksi',
-          field: 'hasil_prediksi',
-          thComp: TranslatedHeader,
-          sortable: true
-        },
-        {
-          title: 'cruds.dataMahasiswaOnGoing.fields.lulus',
-          field: 'lulus',
-          thComp: TranslatedHeader,
-          sortable: true
-        },
-        {
-          title: 'cruds.dataMahasiswaOnGoing.fields.tidak_lulus',
-          field: 'tidak_lulus',
-          thComp: TranslatedHeader,
-          sortable: true
-        },
-        {
-          title: 'cruds.dataMahasiswaOnGoing.fields.active',
-          field: 'active',
-          thComp: TranslatedHeader,
-          sortable: true
-        },
-        {
-          title: 'cruds.dataMahasiswaOnGoing.fields.observers',
-          field: 'observers',
-          thComp: TranslatedHeader,
-          sortable: true
-        },
-        {
-          title: 'cruds.dataMahasiswaOnGoing.fields.accuracy',
-          field: 'accuracy',
-          thComp: TranslatedHeader,
-          sortable: true
-        },
-        {
-          title: 'cruds.dataMahasiswaOnGoing.fields.recall_lulus',
-          field: 'recall_lulus',
-          thComp: TranslatedHeader,
-          sortable: true
-        },
-        {
-          title: 'cruds.dataMahasiswaOnGoing.fields.recall_tidak_lulus',
-          field: 'recall_tidak_lulus',
-          thComp: TranslatedHeader,
-          sortable: true
-        },
-        {
-          title: 'cruds.dataMahasiswaOnGoing.fields.precision_tidak_lulus',
-          field: 'precision_tidak_lulus',
-          thComp: TranslatedHeader,
-          sortable: true
-        },
-        {
-          title: 'cruds.dataMahasiswaOnGoing.fields.precision_lulus',
-          field: 'precision_lulus',
-          thComp: TranslatedHeader,
-          sortable: true
-        },
+        // {
+        //   title: 'cruds.dataMahasiswaOnGoing.fields.hasil_prediksi',
+        //   field: 'hasil_prediksi',
+        //   thComp: TranslatedHeader,
+        //   sortable: true
+        // },
+        // {
+        //   title: 'cruds.dataMahasiswaOnGoing.fields.lulus',
+        //   field: 'lulus',
+        //   thComp: TranslatedHeader,
+        //   sortable: true
+        // },
+        // {
+        //   title: 'cruds.dataMahasiswaOnGoing.fields.tidak_lulus',
+        //   field: 'tidak_lulus',
+        //   thComp: TranslatedHeader,
+        //   sortable: true
+        // },
+        // {
+        //   title: 'cruds.dataMahasiswaOnGoing.fields.active',
+        //   field: 'active',
+        //   thComp: TranslatedHeader,
+        //   sortable: true
+        // },
+        // {
+        //   title: 'cruds.dataMahasiswaOnGoing.fields.observers',
+        //   field: 'observers',
+        //   thComp: TranslatedHeader,
+        //   sortable: true
+        // },
+        // {
+        //   title: 'cruds.dataMahasiswaOnGoing.fields.accuracy',
+        //   field: 'accuracy',
+        //   thComp: TranslatedHeader,
+        //   sortable: true
+        // },
+        // {
+        //   title: 'cruds.dataMahasiswaOnGoing.fields.recall_lulus',
+        //   field: 'recall_lulus',
+        //   thComp: TranslatedHeader,
+        //   sortable: true
+        // },
+        // {
+        //   title: 'cruds.dataMahasiswaOnGoing.fields.recall_tidak_lulus',
+        //   field: 'recall_tidak_lulus',
+        //   thComp: TranslatedHeader,
+        //   sortable: true
+        // },
+        // {
+        //   title: 'cruds.dataMahasiswaOnGoing.fields.precision_tidak_lulus',
+        //   field: 'precision_tidak_lulus',
+        //   thComp: TranslatedHeader,
+        //   sortable: true
+        // },
+        // {
+        //   title: 'cruds.dataMahasiswaOnGoing.fields.precision_lulus',
+        //   field: 'precision_lulus',
+        //   thComp: TranslatedHeader,
+        //   sortable: true
+        // },
         {
           title: 'global.actions',
           thComp: TranslatedHeader,
