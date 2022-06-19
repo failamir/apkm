@@ -260,30 +260,6 @@ const routes = [
         name: 'tentang_aplikasis.index',
         component: () => import('@cruds/TentangAplikasis/Index.vue'),
         meta: { title: 'cruds.tentangAplikasi.title' }
-      },
-      {
-        path: 'data-dummies',
-        name: 'data_dummies.index',
-        component: () => import('@cruds/DataDummies/Index.vue'),
-        meta: { title: 'cruds.dataDummy.title' }
-      },
-      {
-        path: 'data-dummies/create',
-        name: 'data_dummies.create',
-        component: () => import('@cruds/DataDummies/Create.vue'),
-        meta: { title: 'cruds.dataDummy.title' }
-      },
-      {
-        path: 'data-dummies/:id',
-        name: 'data_dummies.show',
-        component: () => import('@cruds/DataDummies/Show.vue'),
-        meta: { title: 'cruds.dataDummy.title' }
-      },
-      {
-        path: 'data-dummies/:id/edit',
-        name: 'data_dummies.edit',
-        component: () => import('@cruds/DataDummies/Edit.vue'),
-        meta: { title: 'cruds.dataDummy.title' }
       }
     ]
   }

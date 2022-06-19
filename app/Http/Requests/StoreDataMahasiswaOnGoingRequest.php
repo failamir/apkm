@@ -21,6 +21,11 @@ class StoreDataMahasiswaOnGoingRequest extends FormRequest
                 'string',
                 'nullable',
             ],
+            'data_history_id' => [
+                'integer',
+                'exists:data_mahasiswas,id',
+                'nullable',
+            ],
             'data_mahasiswa' => [
                 'array',
                 'nullable',
@@ -31,6 +36,50 @@ class StoreDataMahasiswaOnGoingRequest extends FormRequest
             ],
             'hasil_prediksi' => [
                 'string',
+                'nullable',
+            ],
+            'lulus' => [
+                'integer',
+                'min:-2147483648',
+                'max:2147483647',
+                'nullable',
+            ],
+            'tidak_lulus' => [
+                'integer',
+                'min:-2147483648',
+                'max:2147483647',
+                'nullable',
+            ],
+            'active' => [
+                'integer',
+                'min:-2147483648',
+                'max:2147483647',
+                'nullable',
+            ],
+            'observers' => [
+                'integer',
+                'min:-2147483648',
+                'max:2147483647',
+                'nullable',
+            ],
+            'accuracy' => [
+                'numeric',
+                'nullable',
+            ],
+            'recall_lulus' => [
+                'numeric',
+                'nullable',
+            ],
+            'recall_tidak_lulus' => [
+                'numeric',
+                'nullable',
+            ],
+            'precision_tidak_lulus' => [
+                'numeric',
+                'nullable',
+            ],
+            'precision_lulus' => [
+                'numeric',
                 'nullable',
             ],
         ];

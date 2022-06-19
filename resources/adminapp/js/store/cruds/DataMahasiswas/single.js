@@ -5,6 +5,15 @@ function initialState() {
       nama: '',
       data_mahasiswa: [],
       batas_nilai: '',
+      lulus: '',
+      tidaklulus: '',
+      active: '',
+      observers: '',
+      accuracy: '',
+      recall_lulus: '',
+      recall_tidak_lulus: '',
+      precision_tidak_lulus: '',
+      precision_lulus: '',
       created_at: '',
       updated_at: '',
       deleted_at: ''
@@ -96,6 +105,33 @@ const actions = {
   setBatasNilai({ commit }, value) {
     commit('setBatasNilai', value)
   },
+  setLulus({ commit }, value) {
+    commit('setLulus', value)
+  },
+  setTidaklulus({ commit }, value) {
+    commit('setTidaklulus', value)
+  },
+  setActive({ commit }, value) {
+    commit('setActive', value)
+  },
+  setObservers({ commit }, value) {
+    commit('setObservers', value)
+  },
+  setAccuracy({ commit }, value) {
+    commit('setAccuracy', value)
+  },
+  setRecallLulus({ commit }, value) {
+    commit('setRecallLulus', value)
+  },
+  setRecallTidakLulus({ commit }, value) {
+    commit('setRecallTidakLulus', value)
+  },
+  setPrecisionTidakLulus({ commit }, value) {
+    commit('setPrecisionTidakLulus', value)
+  },
+  setPrecisionLulus({ commit }, value) {
+    commit('setPrecisionLulus', value)
+  },
   setCreatedAt({ commit }, value) {
     commit('setCreatedAt', value)
   },
@@ -137,6 +173,33 @@ const mutations = {
   },
   setBatasNilai(state, value) {
     state.entry.batas_nilai = value
+  },
+  setLulus(state, value) {
+    state.entry.lulus = value
+  },
+  setTidaklulus(state, value) {
+    state.entry.tidaklulus = value
+  },
+  setActive(state, value) {
+    state.entry.active = value
+  },
+  setObservers(state, value) {
+    state.entry.observers = value
+  },
+  setAccuracy(state, value) {
+    state.entry.accuracy = value
+  },
+  setRecallLulus(state, value) {
+    state.entry.recall_lulus = value
+  },
+  setRecallTidakLulus(state, value) {
+    state.entry.recall_tidak_lulus = value
+  },
+  setPrecisionTidakLulus(state, value) {
+    state.entry.precision_tidak_lulus = value
+  },
+  setPrecisionLulus(state, value) {
+    state.entry.precision_lulus = value
   },
   setCreatedAt(state, value) {
     state.entry.created_at = value
