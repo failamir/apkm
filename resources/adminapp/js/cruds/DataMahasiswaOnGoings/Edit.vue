@@ -41,6 +41,28 @@
                       @blur="clearFocus"
                     />
                   </div>
+                  <div
+                    class="form-group bmd-form-group"
+                    :class="{
+                      'has-items': entry.data_history_id !== null,
+                      'is-focused': activeField == 'data_history'
+                    }"
+                  >
+                    <label class="bmd-label-floating">{{
+                      $t('cruds.dataMahasiswaOnGoing.fields.data_history')
+                    }}</label>
+                    <v-select
+                      name="data_history"
+                      label="nama"
+                      :key="'data_history-field'"
+                      :value="entry.data_history_id"
+                      :options="lists.data_history"
+                      :reduce="entry => entry.id"
+                      @input="updateDataHistory"
+                      @search.focus="focusField('data_history')"
+                      @search.blur="clearFocus"
+                    />
+                  </div>
                   <div class="form-group">
                     <label>{{
                       $t('cruds.dataMahasiswaOnGoing.fields.data_mahasiswa')
@@ -72,6 +94,188 @@
                       :value="entry.hasil_prediksi"
                       @input="updateHasilPrediksi"
                       @focus="focusField('hasil_prediksi')"
+                      @blur="clearFocus"
+                    />
+                  </div>
+                  <div
+                    class="form-group bmd-form-group"
+                    :class="{
+                      'has-items': entry.lulus,
+                      'is-focused': activeField == 'lulus'
+                    }"
+                  >
+                    <label class="bmd-label-floating">{{
+                      $t('cruds.dataMahasiswaOnGoing.fields.lulus')
+                    }}</label>
+                    <input
+                      class="form-control"
+                      type="number"
+                      step="1"
+                      :value="entry.lulus"
+                      @input="updateLulus"
+                      @focus="focusField('lulus')"
+                      @blur="clearFocus"
+                    />
+                  </div>
+                  <div
+                    class="form-group bmd-form-group"
+                    :class="{
+                      'has-items': entry.tidak_lulus,
+                      'is-focused': activeField == 'tidak_lulus'
+                    }"
+                  >
+                    <label class="bmd-label-floating">{{
+                      $t('cruds.dataMahasiswaOnGoing.fields.tidak_lulus')
+                    }}</label>
+                    <input
+                      class="form-control"
+                      type="number"
+                      step="1"
+                      :value="entry.tidak_lulus"
+                      @input="updateTidakLulus"
+                      @focus="focusField('tidak_lulus')"
+                      @blur="clearFocus"
+                    />
+                  </div>
+                  <div
+                    class="form-group bmd-form-group"
+                    :class="{
+                      'has-items': entry.active,
+                      'is-focused': activeField == 'active'
+                    }"
+                  >
+                    <label class="bmd-label-floating">{{
+                      $t('cruds.dataMahasiswaOnGoing.fields.active')
+                    }}</label>
+                    <input
+                      class="form-control"
+                      type="number"
+                      step="1"
+                      :value="entry.active"
+                      @input="updateActive"
+                      @focus="focusField('active')"
+                      @blur="clearFocus"
+                    />
+                  </div>
+                  <div
+                    class="form-group bmd-form-group"
+                    :class="{
+                      'has-items': entry.observers,
+                      'is-focused': activeField == 'observers'
+                    }"
+                  >
+                    <label class="bmd-label-floating">{{
+                      $t('cruds.dataMahasiswaOnGoing.fields.observers')
+                    }}</label>
+                    <input
+                      class="form-control"
+                      type="number"
+                      step="1"
+                      :value="entry.observers"
+                      @input="updateObservers"
+                      @focus="focusField('observers')"
+                      @blur="clearFocus"
+                    />
+                  </div>
+                  <div
+                    class="form-group bmd-form-group"
+                    :class="{
+                      'has-items': entry.accuracy,
+                      'is-focused': activeField == 'accuracy'
+                    }"
+                  >
+                    <label class="bmd-label-floating">{{
+                      $t('cruds.dataMahasiswaOnGoing.fields.accuracy')
+                    }}</label>
+                    <input
+                      class="form-control"
+                      type="number"
+                      step="0.01"
+                      :value="entry.accuracy"
+                      @input="updateAccuracy"
+                      @focus="focusField('accuracy')"
+                      @blur="clearFocus"
+                    />
+                  </div>
+                  <div
+                    class="form-group bmd-form-group"
+                    :class="{
+                      'has-items': entry.recall_lulus,
+                      'is-focused': activeField == 'recall_lulus'
+                    }"
+                  >
+                    <label class="bmd-label-floating">{{
+                      $t('cruds.dataMahasiswaOnGoing.fields.recall_lulus')
+                    }}</label>
+                    <input
+                      class="form-control"
+                      type="number"
+                      step="0.01"
+                      :value="entry.recall_lulus"
+                      @input="updateRecallLulus"
+                      @focus="focusField('recall_lulus')"
+                      @blur="clearFocus"
+                    />
+                  </div>
+                  <div
+                    class="form-group bmd-form-group"
+                    :class="{
+                      'has-items': entry.recall_tidak_lulus,
+                      'is-focused': activeField == 'recall_tidak_lulus'
+                    }"
+                  >
+                    <label class="bmd-label-floating">{{
+                      $t('cruds.dataMahasiswaOnGoing.fields.recall_tidak_lulus')
+                    }}</label>
+                    <input
+                      class="form-control"
+                      type="number"
+                      step="0.01"
+                      :value="entry.recall_tidak_lulus"
+                      @input="updateRecallTidakLulus"
+                      @focus="focusField('recall_tidak_lulus')"
+                      @blur="clearFocus"
+                    />
+                  </div>
+                  <div
+                    class="form-group bmd-form-group"
+                    :class="{
+                      'has-items': entry.precision_tidak_lulus,
+                      'is-focused': activeField == 'precision_tidak_lulus'
+                    }"
+                  >
+                    <label class="bmd-label-floating">{{
+                      $t(
+                        'cruds.dataMahasiswaOnGoing.fields.precision_tidak_lulus'
+                      )
+                    }}</label>
+                    <input
+                      class="form-control"
+                      type="number"
+                      step="0.01"
+                      :value="entry.precision_tidak_lulus"
+                      @input="updatePrecisionTidakLulus"
+                      @focus="focusField('precision_tidak_lulus')"
+                      @blur="clearFocus"
+                    />
+                  </div>
+                  <div
+                    class="form-group bmd-form-group"
+                    :class="{
+                      'has-items': entry.precision_lulus,
+                      'is-focused': activeField == 'precision_lulus'
+                    }"
+                  >
+                    <label class="bmd-label-floating">{{
+                      $t('cruds.dataMahasiswaOnGoing.fields.precision_lulus')
+                    }}</label>
+                    <input
+                      class="form-control"
+                      type="number"
+                      step="0.01"
+                      :value="entry.precision_lulus"
+                      @input="updatePrecisionLulus"
+                      @focus="focusField('precision_lulus')"
                       @blur="clearFocus"
                     />
                   </div>
@@ -110,7 +314,7 @@ export default {
     }
   },
   computed: {
-    ...mapGetters('DataMahasiswaOnGoingsSingle', ['entry', 'loading'])
+    ...mapGetters('DataMahasiswaOnGoingsSingle', ['entry', 'loading', 'lists'])
   },
   beforeDestroy() {
     this.resetState()
@@ -130,15 +334,55 @@ export default {
       'updateData',
       'resetState',
       'setNama',
+      'setDataHistory',
       'insertDataMahasiswaFile',
       'removeDataMahasiswaFile',
-      'setHasilPrediksi'
+      'setHasilPrediksi',
+      'setLulus',
+      'setTidakLulus',
+      'setActive',
+      'setObservers',
+      'setAccuracy',
+      'setRecallLulus',
+      'setRecallTidakLulus',
+      'setPrecisionTidakLulus',
+      'setPrecisionLulus'
     ]),
     updateNama(e) {
       this.setNama(e.target.value)
     },
+    updateDataHistory(value) {
+      this.setDataHistory(value)
+    },
     updateHasilPrediksi(e) {
       this.setHasilPrediksi(e.target.value)
+    },
+    updateLulus(e) {
+      this.setLulus(e.target.value)
+    },
+    updateTidakLulus(e) {
+      this.setTidakLulus(e.target.value)
+    },
+    updateActive(e) {
+      this.setActive(e.target.value)
+    },
+    updateObservers(e) {
+      this.setObservers(e.target.value)
+    },
+    updateAccuracy(e) {
+      this.setAccuracy(e.target.value)
+    },
+    updateRecallLulus(e) {
+      this.setRecallLulus(e.target.value)
+    },
+    updateRecallTidakLulus(e) {
+      this.setRecallTidakLulus(e.target.value)
+    },
+    updatePrecisionTidakLulus(e) {
+      this.setPrecisionTidakLulus(e.target.value)
+    },
+    updatePrecisionLulus(e) {
+      this.setPrecisionLulus(e.target.value)
     },
     getRoute(name) {
       return `${axios.defaults.baseURL}${name}/media`

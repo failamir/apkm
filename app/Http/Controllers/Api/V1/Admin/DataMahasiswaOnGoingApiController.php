@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests\StoreDataMahasiswaOnGoingRequest;
 use App\Http\Requests\UpdateDataMahasiswaOnGoingRequest;
 use App\Http\Resources\Admin\DataMahasiswaOnGoingResource;
+use App\Models\DataMahasiswa;
 use App\Models\DataMahasiswaOnGoing;
 use Gate;
 use Illuminate\Http\Request;
@@ -18,7 +19,7 @@ class DataMahasiswaOnGoingApiController extends Controller
     {
         abort_if(Gate::denies('data_mahasiswa_on_going_access'), Response::HTTP_FORBIDDEN, '403 Forbidden');
 
-        return new DataMahasiswaOnGoingResource(DataMahasiswaOnGoing::advancedFilter());
+        return new DataMahasiswaOnGoingResource(DataMahasiswaOnGoing::with(['dataHistory'])->advancedFilter());
     }
 
     public function store(StoreDataMahasiswaOnGoingRequest $request)
@@ -41,7 +42,9 @@ class DataMahasiswaOnGoingApiController extends Controller
         abort_if(Gate::denies('data_mahasiswa_on_going_create'), Response::HTTP_FORBIDDEN, '403 Forbidden');
 
         return response([
-            'meta' => [],
+            'meta' => [
+                'data_history' => DataMahasiswa::get(['id', 'nama']),
+            ],
         ]);
     }
 
@@ -49,7 +52,7 @@ class DataMahasiswaOnGoingApiController extends Controller
     {
         abort_if(Gate::denies('data_mahasiswa_on_going_show'), Response::HTTP_FORBIDDEN, '403 Forbidden');
 
-        return new DataMahasiswaOnGoingResource($dataMahasiswaOnGoing);
+        return new DataMahasiswaOnGoingResource($dataMahasiswaOnGoing->load(['dataHistory']));
     }
 
     public function update(UpdateDataMahasiswaOnGoingRequest $request, DataMahasiswaOnGoing $dataMahasiswaOnGoing)
@@ -68,8 +71,10 @@ class DataMahasiswaOnGoingApiController extends Controller
         abort_if(Gate::denies('data_mahasiswa_on_going_edit'), Response::HTTP_FORBIDDEN, '403 Forbidden');
 
         return response([
-            'data' => new DataMahasiswaOnGoingResource($dataMahasiswaOnGoing),
-            'meta' => [],
+            'data' => new DataMahasiswaOnGoingResource($dataMahasiswaOnGoing->load(['dataHistory'])),
+            'meta' => [
+                'data_history' => DataMahasiswa::get(['id', 'nama']),
+            ],
         ]);
     }
 

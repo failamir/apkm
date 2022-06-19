@@ -72,6 +72,7 @@ import DatatableActions from '@components/Datatables/DatatableActions'
 import TranslatedHeader from '@components/Datatables/TranslatedHeader'
 import HeaderSettings from '@components/Datatables/HeaderSettings'
 import GlobalSearch from '@components/Datatables/GlobalSearch'
+import DatatableSingle from '@components/Datatables/DatatableSingle'
 import DatatableAttachments from '@components/Datatables/DatatableAttachments'
 
 export default {
@@ -96,6 +97,13 @@ export default {
           sortable: true
         },
         {
+          title: 'cruds.dataMahasiswaOnGoing.fields.data_history',
+          field: 'data_history.nama',
+          thComp: TranslatedHeader,
+          tdComp: DatatableSingle,
+          sortable: true
+        },
+        {
           title: 'cruds.dataMahasiswaOnGoing.fields.data_mahasiswa',
           field: 'data_mahasiswa',
           thComp: TranslatedHeader,
@@ -104,6 +112,60 @@ export default {
         {
           title: 'cruds.dataMahasiswaOnGoing.fields.hasil_prediksi',
           field: 'hasil_prediksi',
+          thComp: TranslatedHeader,
+          sortable: true
+        },
+        {
+          title: 'cruds.dataMahasiswaOnGoing.fields.lulus',
+          field: 'lulus',
+          thComp: TranslatedHeader,
+          sortable: true
+        },
+        {
+          title: 'cruds.dataMahasiswaOnGoing.fields.tidak_lulus',
+          field: 'tidak_lulus',
+          thComp: TranslatedHeader,
+          sortable: true
+        },
+        {
+          title: 'cruds.dataMahasiswaOnGoing.fields.active',
+          field: 'active',
+          thComp: TranslatedHeader,
+          sortable: true
+        },
+        {
+          title: 'cruds.dataMahasiswaOnGoing.fields.observers',
+          field: 'observers',
+          thComp: TranslatedHeader,
+          sortable: true
+        },
+        {
+          title: 'cruds.dataMahasiswaOnGoing.fields.accuracy',
+          field: 'accuracy',
+          thComp: TranslatedHeader,
+          sortable: true
+        },
+        {
+          title: 'cruds.dataMahasiswaOnGoing.fields.recall_lulus',
+          field: 'recall_lulus',
+          thComp: TranslatedHeader,
+          sortable: true
+        },
+        {
+          title: 'cruds.dataMahasiswaOnGoing.fields.recall_tidak_lulus',
+          field: 'recall_tidak_lulus',
+          thComp: TranslatedHeader,
+          sortable: true
+        },
+        {
+          title: 'cruds.dataMahasiswaOnGoing.fields.precision_tidak_lulus',
+          field: 'precision_tidak_lulus',
+          thComp: TranslatedHeader,
+          sortable: true
+        },
+        {
+          title: 'cruds.dataMahasiswaOnGoing.fields.precision_lulus',
+          field: 'precision_lulus',
           thComp: TranslatedHeader,
           sortable: true
         },

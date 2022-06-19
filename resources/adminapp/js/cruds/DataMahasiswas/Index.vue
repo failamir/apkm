@@ -108,6 +108,60 @@ export default {
           sortable: true
         },
         {
+          title: 'cruds.dataMahasiswa.fields.lulus',
+          field: 'lulus',
+          thComp: TranslatedHeader,
+          sortable: true
+        },
+        {
+          title: 'cruds.dataMahasiswa.fields.tidaklulus',
+          field: 'tidaklulus',
+          thComp: TranslatedHeader,
+          sortable: true
+        },
+        {
+          title: 'cruds.dataMahasiswa.fields.active',
+          field: 'active',
+          thComp: TranslatedHeader,
+          sortable: true
+        },
+        {
+          title: 'cruds.dataMahasiswa.fields.observers',
+          field: 'observers',
+          thComp: TranslatedHeader,
+          sortable: true
+        },
+        {
+          title: 'cruds.dataMahasiswa.fields.accuracy',
+          field: 'accuracy',
+          thComp: TranslatedHeader,
+          sortable: true
+        },
+        {
+          title: 'cruds.dataMahasiswa.fields.recall_lulus',
+          field: 'recall_lulus',
+          thComp: TranslatedHeader,
+          sortable: true
+        },
+        {
+          title: 'cruds.dataMahasiswa.fields.recall_tidak_lulus',
+          field: 'recall_tidak_lulus',
+          thComp: TranslatedHeader,
+          sortable: true
+        },
+        {
+          title: 'cruds.dataMahasiswa.fields.precision_tidak_lulus',
+          field: 'precision_tidak_lulus',
+          thComp: TranslatedHeader,
+          sortable: true
+        },
+        {
+          title: 'cruds.dataMahasiswa.fields.precision_lulus',
+          field: 'precision_lulus',
+          thComp: TranslatedHeader,
+          sortable: true
+        },
+        {
           title: 'global.actions',
           thComp: TranslatedHeader,
           tdComp: DatatableActions,
