@@ -138,22 +138,10 @@ const routes = [
         meta: { title: 'cruds.dataMahasiswa.title' }
       },
       {
-        path: 'data-mahasiswas/:id/proses',
-        name: 'data_mahasiswas.proses',
-        component: () => import('@cruds/DataMahasiswas/Proses.vue'),
-        meta: { title: 'cruds.dataMahasiswa.title' }
-      },
-      {
         path: 'data-mahasiswa-on-goings',
         name: 'data_mahasiswa_on_goings.index',
         component: () => import('@cruds/DataMahasiswaOnGoings/Index.vue'),
         meta: { title: 'cruds.dataMahasiswaOnGoing.title' }
-      },
-      {
-        path: 'data-mahasiswas-on-goings/:id/proses',
-        name: 'data_mahasiswas-on-goings.proses',
-        component: () => import('@cruds/DataMahasiswaOnGoings/Proses.vue'),
-        meta: { title: 'cruds.DataMahasiswaOnGoings.title' }
       },
       {
         path: 'data-mahasiswa-on-goings/create',
@@ -184,6 +172,12 @@ const routes = [
             name: 'data_mahasiswa_histories.index',
             component: () => import('@cruds/DataMahasiswaHistories/Index.vue'),
             meta: { title: 'cruds.dataMahasiswaHistory.title' }
+          },
+          {
+            path: 'tentang-aplikasis',
+            name: 'tentang_aplikasis.index',
+            component: () => import('@cruds/TentangAplikasis/Index.vue'),
+            meta: { title: 'cruds.tentangAplikasi.title' }
           }
         ]
       },
@@ -266,12 +260,6 @@ const routes = [
             meta: { title: 'cruds.user.title' }
           }
         ]
-      },
-      {
-        path: 'tentang-aplikasis',
-        name: 'tentang_aplikasis.index',
-        component: () => import('@cruds/TentangAplikasis/Index.vue'),
-        meta: { title: 'cruds.tentangAplikasi.title' }
       }
     ]
   }

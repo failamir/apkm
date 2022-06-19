@@ -11,8 +11,6 @@ use Gate;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Spatie\MediaLibrary\MediaCollections\Models\Media;
-use Symfony\Component\Process\Process;
-use Symfony\Component\Process\Exception\ProcessFailedException;
 
 class DataMahasiswaApiController extends Controller
 {
@@ -25,74 +23,17 @@ class DataMahasiswaApiController extends Controller
 
     public function store(StoreDataMahasiswaRequest $request)
     {
-        // $request->input('cantik') = 'andri';
-        $dataMahasiswa = DataMahasiswa::create(array_merge($request->validated(),
-        ['Lulus' => 123],
-         ['TidakLulus' => 123],
-         ['Active' => 123],
-         ['Observers' => 123],
-         ['Accuracy' => 123],
-         ['RecallLulus' => 123],
-         ['RecallTidakLulus' => 123],
-         ['PrecisionTidakLulus' => 123],
-         ['PrecisionLulus' => 123],
-         
-        ));
+        $dataMahasiswa = DataMahasiswa::create($request->validated());
+
         if ($media = $request->input('data_mahasiswa', [])) {
             Media::whereIn('id', data_get($media, '*.id'))
                 ->where('model_id', 0)
                 ->update(['model_id' => $dataMahasiswa->id]);
         }
 
-        // $dataMahasiswa->andri = 'cantik';
-        $a = $request->input('batas_nilai');
-        $b = public_path().'/storage/'.$request->input('data_mahasiswa')[0]["id"].'/'.$request->input('data_mahasiswa')[0]["file_name"];
-        // $b = $request->input('data_mahasiswa')[0]["file_name"];
-        // var_dump(base_path());
-        // var_dump(storage_path());
-        $date = date('dmYhsi');
-        // var_dump(app_path());
-        // $process = new Process(["python3", "Proses.py '$a' '$b' '$date'"]);
-        // $process = new Process(["python3", "ProsesH.py '$a' '$b' '$date'"]);
-        // $process->run();
-
-        // executes after the command finishes
-        // if (!$process->isSuccessful()) {
-        //     throw new ProcessFailedException($process);
-        // }
-
-        // echo $process->getOutput();
-        $py = env('PYPATH',);
-        $andri=exec("'$py' Proses.py '$a' '$b' '$date'  2>&1", $out, $ret);
-        // $andri = exec("python3 ../../../../Proses.py '$a' '$date'", $out, $ret);
-        var_dump($andri);
-        $text = str_replace("'", '"', $andri);
-        $andri = json_decode($text);
-        
-        // $dataMahasiswa = DataMahasiswa::whereId($dataMahasiswa->id)->update(
-        //  ['LulusdanTidakLulus' => 22],
-        //  ['MahasiswaActivedanObservers' => 1223],
-        //  ['Accuracy' => 1123],
-        //  ['RecallLulus' => 1223],
-        //  ['RecallTidakLulus' => 2123],
-        //  ['PrecisionTidakLulus' => 123],
-        //  ['PrecisionLulus' => 123]);
-         $dataMahasiswa->update(array_merge($request->validated(),
-         ['Lulus' => $andri->LulusdanTidakLulus[0]],
-         ['TidakLulus' => $andri->LulusdanTidakLulus[1]],
-         ['Active' => $andri->MahasiswaActivedanObservers[0]],
-         ['Observers' => $andri->MahasiswaActivedanObservers[1]],
-         ['Accuracy' => $andri->Accuracy],
-         ['RecallLulus' => $andri->RecallLulus],
-         ['RecallTidakLulus' => $andri->RecallTidakLulus],
-         ['PrecisionTidakLulus' => $andri->PrecisionTidakLulus],
-         ['PrecisionLulus' => $andri->PrecisionLulus],
-         
-        ));
         return (new DataMahasiswaResource($dataMahasiswa))
             ->response()
             ->setStatusCode(Response::HTTP_CREATED);
-            
     }
 
     public function create()
@@ -108,16 +49,6 @@ class DataMahasiswaApiController extends Controller
     {
         abort_if(Gate::denies('data_mahasiswa_show'), Response::HTTP_FORBIDDEN, '403 Forbidden');
 
-        return new DataMahasiswaResource($dataMahasiswa);
-    }
-
-    public function proses(DataMahasiswa $dataMahasiswa)
-    {
-        abort_if(Gate::denies('data_mahasiswa_show'), Response::HTTP_FORBIDDEN, '403 Forbidden');
-        // $d = new stdClass();
-        // $d->andri = 'cantik';
-        // array_push($dataDummy,$d);
-        $dataMahasiswa->andri = 'cantik';
         return new DataMahasiswaResource($dataMahasiswa);
     }
 

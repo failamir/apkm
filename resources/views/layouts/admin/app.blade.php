@@ -46,8 +46,6 @@
     <script src="{{ url('/md/js/plugins/bootstrap-datetimepicker.min.js') }}"></script>
 
     <script src="{{ mix('/adminapp/js/app.js') }}" type="text/javascript" charset="utf-8"></script>
-    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
-
 </body>
 
 </html>
