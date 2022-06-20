@@ -280,7 +280,7 @@ export default {
       console.log(this.charts, "andri");
       this.a = [this.charts.lulus, this.charts.tidaklulus];
       this.b = [this.charts.active, this.charts.observers];
-      // console.log(this.a)
+      console.log(this.a)
       this.series = this.a;
       this.series1 = this.b;
     });

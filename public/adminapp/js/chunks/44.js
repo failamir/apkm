@@ -311,8 +311,8 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       _this.charts = response.data.data;
       console.log(_this.charts, "andri");
       _this.a = [_this.charts.lulus, _this.charts.tidaklulus];
-      _this.b = [_this.charts.active, _this.charts.observers]; // console.log(this.a)
-
+      _this.b = [_this.charts.active, _this.charts.observers];
+      console.log(_this.a);
       _this.series = _this.a;
       _this.series1 = _this.b;
     });
