@@ -119,13 +119,16 @@
 
             <div v-if="seen" id="hide">
               <br />
-              <p class="font-weight-bold">Lulus : {{ entry.lulus }}</p>
-              <p class="font-weight-bold">
+              <p class="font-weight-bold">Di Prediksi Lulus : {{ entry.lulus }}</p>
+              <!-- <p class="font-weight-bold">
                 Tidak Lulus : {{ entry.tidak_lulus }}
+              </p> -->
+              <p class="font-weight-bold">
+                Di Prediksi Tidak Lulus : {{ entry.tidak_lulus }}
               </p>
               <p class="font-weight-bold">Active : {{ entry.active }}</p>
               <p class="font-weight-bold">Observers : {{ entry.observers }}</p>
-              <p class="font-weight-bold">Accuracy : {{ entry.accuracy }}</p>
+              <!-- <p class="font-weight-bold">Accuracy : {{ entry.accuracy }}</p>
               <p class="font-weight-bold">
                 Recall Lulus : {{ entry.recall_lulus }}
               </p>
@@ -137,7 +140,7 @@
               </p>
               <p class="font-weight-bold">
                 Precision Tidak Lulus : {{ entry.precision_tidak_lulus }}
-              </p>
+              </p> -->
             </div>
           </div>
         </div>
@@ -166,10 +169,10 @@ export default {
     return {
       seen: false,
       series: [1, 1],
-      series1: [1, 1],
+      series1: [1, 1, 1],
       chartOptions: {
         title: {
-          text: "Proporsi Jumlah Lulus dan Tidak Lulus",
+          text: "Proporsi Mahasiswa Aktif dan Observers (Data Ongoing)",
           align: "left",
           margin: 10,
           offsetX: 0,
@@ -186,7 +189,7 @@ export default {
           width: 380,
           type: "pie",
         },
-        labels: ["Lulus", "Tidak Lulus"],
+        labels: ["Active", "Observers"],
         responsive: [
           {
             breakpoint: 480,
@@ -206,7 +209,7 @@ export default {
       // series1: [this.charts.data.Active, this.charts.data.Observers],
       chartOptions1: {
         title: {
-          text: "Proporsi Mahasiswa Aktif dan Observers",
+          text: "Proporsi Keseluruhan Mahasiswa (Data Ongoing)",
           align: "left",
           margin: 10,
           offsetX: 0,
@@ -223,7 +226,8 @@ export default {
           width: 380,
           type: "pie",
         },
-        labels: ["Active", "Observers"],
+        
+        labels: ["Di Prediski Lulus", "Observers", "Di Prediksi Tidak Lulus"],
         responsive: [
           {
             breakpoint: 480,
@@ -262,13 +266,13 @@ export default {
     ]),
   },
   created() {
-    const route = "data-mahasiswas";
+    const route = "data-mahasiswa-on-goings";
     axios.get(`${route}/${this.$route.params.id}`).then((response) => {
       this.charts = response.data.data;
       console.log(this.charts, "andri");
-      this.a = [this.charts.lulus, this.charts.tidaklulus];
-      this.b = [this.charts.active, this.charts.observers];
-      // console.log(this.a)
+      this.a = [this.charts.active, this.charts.observers];
+      this.b = [this.charts.lulus, this.charts.observers, this.charts.tidak_lulus];
+      console.log(this.b)
       this.series = this.a;
       this.series1 = this.b;
     });

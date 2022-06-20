@@ -27,7 +27,7 @@ class DataMahasiswaOnGoingApiController extends Controller
         $dataMahasiswaOnGoing = DataMahasiswaOnGoing::create(array_merge(
             $request->validated(),
             ['lulus' => 123],
-            ['tidaklulus' => 123],
+            ['tidak_lulus' => 123],
             ['active' => 123],
             ['observers' => 123],
             ['accuracy' => 123],
@@ -37,6 +37,8 @@ class DataMahasiswaOnGoingApiController extends Controller
             ['precision_tidak_lulus' => 123],
             ['hasil_prediksi' => 'url'],
             ['data_history_id' => $request->input('data_history_id')],
+            ['prediksi_tidak_lulus' => 123],
+            
         ));
 
         if ($media = $request->input('data_mahasiswa', [])) {
@@ -85,10 +87,11 @@ class DataMahasiswaOnGoingApiController extends Controller
 
         $dataMahasiswaOnGoing->update(array_merge(
             $request->validated(),
-            ['lulus' => $andri->LulusdanTidakLulus[0]],
-            ['tidak_lulus' => $andri->LulusdanTidakLulus[1]],
-            ['active' => $andri->MahasiswaActivedanObservers[0]],
-            ['observers' => $andri->MahasiswaActivedanObservers[1]],
+            ['lulus' => $andri->KeseluruhanMahasiswaDataOngoing[0]],
+            ['tidak_lulus' => $andri->KeseluruhanMahasiswaDataOngoing[1]],
+            ['prediksi_tidak_lulus' => $andri->KeseluruhanMahasiswaDataOngoing[2]],
+            ['active' => $andri->MahasiswaActivedanObserversDataOngoing[0]],
+            ['observers' => $andri->MahasiswaActivedanObserversDataOngoing[1]],
             ['accuracy' => $andri->Accuracy],
             ['recall_lulus' => $andri->RecallLulus],
             ['recall_tidak_lulus' => $andri->RecallTidakLulus],

@@ -612,7 +612,7 @@ var render = function () {
                     _c("p", { staticClass: "font-weight-bold" }, [
                       _vm._v(
                         "\n                Tidak Lulus : " +
-                          _vm._s(_vm.entry.tidak_lulus) +
+                          _vm._s(_vm.entry.tidaklulus) +
                           "\n              "
                       ),
                     ]),

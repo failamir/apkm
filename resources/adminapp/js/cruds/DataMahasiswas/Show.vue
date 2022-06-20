@@ -95,7 +95,7 @@
                 <br />
                 <p class="font-weight-bold">Lulus : {{ entry.lulus }}</p>
                 <p class="font-weight-bold">
-                  Tidak Lulus : {{ entry.tidak_lulus }}
+                  Tidak Lulus : {{ entry.tidaklulus }}
                 </p>
                 <p class="font-weight-bold">Active : {{ entry.active }}</p>
                 <p class="font-weight-bold">

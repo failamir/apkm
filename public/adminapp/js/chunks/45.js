@@ -233,6 +233,9 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
+//
+//
+//
 
 
 
@@ -247,45 +250,10 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
     return {
       seen: false,
       series: [1, 1],
-      series1: [1, 1],
+      series1: [1, 1, 1],
       chartOptions: {
         title: {
-          text: "Proporsi Jumlah Lulus dan Tidak Lulus",
-          align: "left",
-          margin: 10,
-          offsetX: 0,
-          offsetY: 0,
-          floating: false,
-          style: {
-            fontSize: "14px",
-            fontWeight: "bold",
-            fontFamily: "Roboto",
-            color: "#263238"
-          }
-        },
-        chart: {
-          width: 380,
-          type: "pie"
-        },
-        labels: ["Lulus", "Tidak Lulus"],
-        responsive: [{
-          breakpoint: 480,
-          options: {
-            chart: {
-              width: 200
-            },
-            legend: {
-              position: "bottom"
-            }
-          }
-        }]
-      },
-      // series1: [entry.Active, entry.Observers],
-      // series1: [12, 42],
-      // series1: [this.charts.data.Active, this.charts.data.Observers],
-      chartOptions1: {
-        title: {
-          text: "Proporsi Mahasiswa Aktif dan Observers",
+          text: "Proporsi Mahasiswa Aktif dan Observers (Data Ongoing)",
           align: "left",
           margin: 10,
           offsetX: 0,
@@ -303,6 +271,41 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
           type: "pie"
         },
         labels: ["Active", "Observers"],
+        responsive: [{
+          breakpoint: 480,
+          options: {
+            chart: {
+              width: 200
+            },
+            legend: {
+              position: "bottom"
+            }
+          }
+        }]
+      },
+      // series1: [entry.Active, entry.Observers],
+      // series1: [12, 42],
+      // series1: [this.charts.data.Active, this.charts.data.Observers],
+      chartOptions1: {
+        title: {
+          text: "Proporsi Keseluruhan Mahasiswa (Data Ongoing)",
+          align: "left",
+          margin: 10,
+          offsetX: 0,
+          offsetY: 0,
+          floating: false,
+          style: {
+            fontSize: "14px",
+            fontWeight: "bold",
+            fontFamily: "Roboto",
+            color: "#263238"
+          }
+        },
+        chart: {
+          width: 380,
+          type: "pie"
+        },
+        labels: ["Di Prediski Lulus", "Observers", "Di Prediksi Tidak Lulus"],
         responsive: [{
           breakpoint: 480,
           options: {
@@ -334,13 +337,13 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
   created: function created() {
     var _this = this;
 
-    var route = "data-mahasiswas";
+    var route = "data-mahasiswa-on-goings";
     axios.get("".concat(route, "/").concat(this.$route.params.id)).then(function (response) {
       _this.charts = response.data.data;
       console.log(_this.charts, "andri");
-      _this.a = [_this.charts.lulus, _this.charts.tidaklulus];
-      _this.b = [_this.charts.active, _this.charts.observers]; // console.log(this.a)
-
+      _this.a = [_this.charts.active, _this.charts.observers];
+      _this.b = [_this.charts.lulus, _this.charts.observers, _this.charts.tidak_lulus];
+      console.log(_this.b);
       _this.series = _this.a;
       _this.series1 = _this.b;
     });
@@ -746,12 +749,14 @@ var render = function () {
                       _c("br"),
                       _vm._v(" "),
                       _c("p", { staticClass: "font-weight-bold" }, [
-                        _vm._v("Lulus : " + _vm._s(_vm.entry.lulus)),
+                        _vm._v(
+                          "Di Prediksi Lulus : " + _vm._s(_vm.entry.lulus)
+                        ),
                       ]),
                       _vm._v(" "),
                       _c("p", { staticClass: "font-weight-bold" }, [
                         _vm._v(
-                          "\n              Tidak Lulus : " +
+                          "\n              Di Prediksi Tidak Lulus : " +
                             _vm._s(_vm.entry.tidak_lulus) +
                             "\n            "
                         ),
@@ -763,42 +768,6 @@ var render = function () {
                       _vm._v(" "),
                       _c("p", { staticClass: "font-weight-bold" }, [
                         _vm._v("Observers : " + _vm._s(_vm.entry.observers)),
-                      ]),
-                      _vm._v(" "),
-                      _c("p", { staticClass: "font-weight-bold" }, [
-                        _vm._v("Accuracy : " + _vm._s(_vm.entry.accuracy)),
-                      ]),
-                      _vm._v(" "),
-                      _c("p", { staticClass: "font-weight-bold" }, [
-                        _vm._v(
-                          "\n              Recall Lulus : " +
-                            _vm._s(_vm.entry.recall_lulus) +
-                            "\n            "
-                        ),
-                      ]),
-                      _vm._v(" "),
-                      _c("p", { staticClass: "font-weight-bold" }, [
-                        _vm._v(
-                          "\n              Recall Tidak Lulus : " +
-                            _vm._s(_vm.entry.recall_tidak_lulus) +
-                            "\n            "
-                        ),
-                      ]),
-                      _vm._v(" "),
-                      _c("p", { staticClass: "font-weight-bold" }, [
-                        _vm._v(
-                          "\n              Precision Lulus : " +
-                            _vm._s(_vm.entry.precision_lulus) +
-                            "\n            "
-                        ),
-                      ]),
-                      _vm._v(" "),
-                      _c("p", { staticClass: "font-weight-bold" }, [
-                        _vm._v(
-                          "\n              Precision Tidak Lulus : " +
-                            _vm._s(_vm.entry.precision_tidak_lulus) +
-                            "\n            "
-                        ),
                       ]),
                     ])
                   : _vm._e(),
