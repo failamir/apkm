@@ -26,6 +26,11 @@ class StoreDataMahasiswaOnGoingRequest extends FormRequest
                 'exists:data_mahasiswas,id',
                 'nullable',
             ],
+            'mata_kuliah_id' => [
+                'integer',
+                'exists:mata_kuliahs,id',
+                'nullable',
+            ],
             'data_mahasiswa' => [
                 'array',
                 'nullable',

@@ -8,6 +8,7 @@ use App\Http\Requests\UpdateDataMahasiswaOnGoingRequest;
 use App\Http\Resources\Admin\DataMahasiswaOnGoingResource;
 use App\Models\DataMahasiswa;
 use App\Models\DataMahasiswaOnGoing;
+use App\Models\MataKuliah;
 use Gate;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
@@ -19,7 +20,7 @@ class DataMahasiswaOnGoingApiController extends Controller
     {
         abort_if(Gate::denies('data_mahasiswa_on_going_access'), Response::HTTP_FORBIDDEN, '403 Forbidden');
 
-        return new DataMahasiswaOnGoingResource(DataMahasiswaOnGoing::with(['dataHistory'])->advancedFilter());
+        return new DataMahasiswaOnGoingResource(DataMahasiswaOnGoing::with(['dataHistory', 'mataKuliah'])->advancedFilter());
     }
 
     public function store(StoreDataMahasiswaOnGoingRequest $request)
@@ -44,6 +45,7 @@ class DataMahasiswaOnGoingApiController extends Controller
         return response([
             'meta' => [
                 'data_history' => DataMahasiswa::get(['id', 'nama']),
+                'mata_kuliah'  => MataKuliah::get(['id', 'id_mtk']),
             ],
         ]);
     }
@@ -52,7 +54,7 @@ class DataMahasiswaOnGoingApiController extends Controller
     {
         abort_if(Gate::denies('data_mahasiswa_on_going_show'), Response::HTTP_FORBIDDEN, '403 Forbidden');
 
-        return new DataMahasiswaOnGoingResource($dataMahasiswaOnGoing->load(['dataHistory']));
+        return new DataMahasiswaOnGoingResource($dataMahasiswaOnGoing->load(['dataHistory', 'mataKuliah']));
     }
 
     public function update(UpdateDataMahasiswaOnGoingRequest $request, DataMahasiswaOnGoing $dataMahasiswaOnGoing)
@@ -71,9 +73,10 @@ class DataMahasiswaOnGoingApiController extends Controller
         abort_if(Gate::denies('data_mahasiswa_on_going_edit'), Response::HTTP_FORBIDDEN, '403 Forbidden');
 
         return response([
-            'data' => new DataMahasiswaOnGoingResource($dataMahasiswaOnGoing->load(['dataHistory'])),
+            'data' => new DataMahasiswaOnGoingResource($dataMahasiswaOnGoing->load(['dataHistory', 'mataKuliah'])),
             'meta' => [
                 'data_history' => DataMahasiswa::get(['id', 'nama']),
+                'mata_kuliah'  => MataKuliah::get(['id', 'id_mtk']),
             ],
         ]);
     }

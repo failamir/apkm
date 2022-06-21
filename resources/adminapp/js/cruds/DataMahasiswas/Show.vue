@@ -51,6 +51,18 @@
                       </tr>
                       <tr>
                         <td class="text-primary">
+                          {{ $t('cruds.dataMahasiswa.fields.mata_kuliah') }}
+                        </td>
+                        <td>
+                          <datatable-single
+                            :row="entry"
+                            field="mata_kuliah.id_mtk"
+                          >
+                          </datatable-single>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="text-primary">
                           {{ $t('cruds.dataMahasiswa.fields.batas_nilai') }}
                         </td>
                         <td>
@@ -150,10 +162,12 @@
 <script>
 import { mapGetters, mapActions } from 'vuex'
 import DatatableAttachments from '@components/Datatables/DatatableAttachments'
+import DatatableSingle from '@components/Datatables/DatatableSingle'
 
 export default {
   components: {
-    DatatableAttachments
+    DatatableAttachments,
+    DatatableSingle
   },
   data() {
     return {}

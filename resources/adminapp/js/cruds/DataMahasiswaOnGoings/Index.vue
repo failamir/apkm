@@ -104,6 +104,13 @@ export default {
           sortable: true
         },
         {
+          title: 'cruds.dataMahasiswaOnGoing.fields.mata_kuliah',
+          field: 'mata_kuliah.id_mtk',
+          thComp: TranslatedHeader,
+          tdComp: DatatableSingle,
+          sortable: true
+        },
+        {
           title: 'cruds.dataMahasiswaOnGoing.fields.data_mahasiswa',
           field: 'data_mahasiswa',
           thComp: TranslatedHeader,

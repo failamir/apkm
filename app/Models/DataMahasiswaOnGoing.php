@@ -33,6 +33,7 @@ class DataMahasiswaOnGoing extends Model implements HasMedia
         'id',
         'nama',
         'data_history.nama',
+        'mata_kuliah.id_mtk',
         'hasil_prediksi',
         'lulus',
         'tidak_lulus',
@@ -49,6 +50,7 @@ class DataMahasiswaOnGoing extends Model implements HasMedia
         'id',
         'nama',
         'data_history.nama',
+        'mata_kuliah.id_mtk',
         'hasil_prediksi',
         'lulus',
         'tidak_lulus',
@@ -64,6 +66,7 @@ class DataMahasiswaOnGoing extends Model implements HasMedia
     protected $fillable = [
         'nama',
         'data_history_id',
+        'mata_kuliah_id',
         'hasil_prediksi',
         'lulus',
         'tidak_lulus',
@@ -82,6 +85,11 @@ class DataMahasiswaOnGoing extends Model implements HasMedia
     public function dataHistory()
     {
         return $this->belongsTo(DataMahasiswa::class);
+    }
+
+    public function mataKuliah()
+    {
+        return $this->belongsTo(MataKuliah::class);
     }
 
     public function getDataMahasiswaAttribute()

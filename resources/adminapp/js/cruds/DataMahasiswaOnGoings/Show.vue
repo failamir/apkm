@@ -56,6 +56,20 @@
                       <tr>
                         <td class="text-primary">
                           {{
+                            $t('cruds.dataMahasiswaOnGoing.fields.mata_kuliah')
+                          }}
+                        </td>
+                        <td>
+                          <datatable-single
+                            :row="entry"
+                            field="mata_kuliah.id_mtk"
+                          >
+                          </datatable-single>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="text-primary">
+                          {{
                             $t(
                               'cruds.dataMahasiswaOnGoing.fields.data_mahasiswa'
                             )
