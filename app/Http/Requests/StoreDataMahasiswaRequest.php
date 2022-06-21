@@ -79,6 +79,11 @@ class StoreDataMahasiswaRequest extends FormRequest
                 'numeric',
                 'nullable',
             ],
+            'mata_kuliah_id' => [
+                'integer',
+                'exists:mata_kuliahs,id',
+                'nullable',
+            ],
         ];
     }
 }

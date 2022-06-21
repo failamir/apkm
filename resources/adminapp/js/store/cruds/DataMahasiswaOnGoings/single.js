@@ -4,6 +4,7 @@ function initialState() {
       id: null,
       nama: '',
       data_history_id: null,
+      mata_kuliah_id: null,
       data_mahasiswa: [],
       hasil_prediksi: '',
       lulus: '',
@@ -20,7 +21,8 @@ function initialState() {
       deleted_at: ''
     },
     lists: {
-      data_history: []
+      data_history: [],
+      mata_kuliah: []
     },
     loading: false
   }
@@ -104,6 +106,9 @@ const actions = {
   setDataHistory({ commit }, value) {
     commit('setDataHistory', value)
   },
+  setMataKuliah({ commit }, value) {
+    commit('setMataKuliah', value)
+  },
   insertDataMahasiswaFile({ commit }, file) {
     commit('insertDataMahasiswaFile', file)
   },
@@ -179,6 +184,9 @@ const mutations = {
   },
   setDataHistory(state, value) {
     state.entry.data_history_id = value
+  },
+  setMataKuliah(state, value) {
+    state.entry.mata_kuliah_id = value
   },
   insertDataMahasiswaFile(state, file) {
     state.entry.data_mahasiswa.push(file)

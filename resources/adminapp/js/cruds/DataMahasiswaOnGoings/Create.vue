@@ -63,6 +63,28 @@
                       @search.blur="clearFocus"
                     />
                   </div>
+                  <div
+                    class="form-group bmd-form-group"
+                    :class="{
+                      'has-items': entry.mata_kuliah_id !== null,
+                      'is-focused': activeField == 'mata_kuliah'
+                    }"
+                  >
+                    <label class="bmd-label-floating">{{
+                      $t('cruds.dataMahasiswaOnGoing.fields.mata_kuliah')
+                    }}</label>
+                    <v-select
+                      name="mata_kuliah"
+                      label="id_mtk"
+                      :key="'mata_kuliah-field'"
+                      :value="entry.mata_kuliah_id"
+                      :options="lists.mata_kuliah"
+                      :reduce="entry => entry.id"
+                      @input="updateMataKuliah"
+                      @search.focus="focusField('mata_kuliah')"
+                      @search.blur="clearFocus"
+                    />
+                  </div>
                   <div class="form-group">
                     <label>{{
                       $t('cruds.dataMahasiswaOnGoing.fields.data_mahasiswa')
@@ -327,6 +349,7 @@ export default {
       'resetState',
       'setNama',
       'setDataHistory',
+      'setMataKuliah',
       'insertDataMahasiswaFile',
       'removeDataMahasiswaFile',
       'setHasilPrediksi',
@@ -346,6 +369,9 @@ export default {
     },
     updateDataHistory(value) {
       this.setDataHistory(value)
+    },
+    updateMataKuliah(value) {
+      this.setMataKuliah(value)
     },
     updateHasilPrediksi(e) {
       this.setHasilPrediksi(e.target.value)

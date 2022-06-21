@@ -73,6 +73,7 @@ import TranslatedHeader from '@components/Datatables/TranslatedHeader'
 import HeaderSettings from '@components/Datatables/HeaderSettings'
 import GlobalSearch from '@components/Datatables/GlobalSearch'
 import DatatableAttachments from '@components/Datatables/DatatableAttachments'
+import DatatableSingle from '@components/Datatables/DatatableSingle'
 
 export default {
   components: {
@@ -100,6 +101,13 @@ export default {
           field: 'data_mahasiswa',
           thComp: TranslatedHeader,
           tdComp: DatatableAttachments
+        },
+        {
+          title: 'cruds.dataMahasiswa.fields.mata_kuliah',
+          field: 'mata_kuliah.id_mtk',
+          thComp: TranslatedHeader,
+          tdComp: DatatableSingle,
+          sortable: true
         },
         {
           title: 'cruds.dataMahasiswa.fields.batas_nilai',

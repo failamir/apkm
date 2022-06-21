@@ -14,9 +14,13 @@ function initialState() {
       recall_tidak_lulus: '',
       precision_tidak_lulus: '',
       precision_lulus: '',
+      mata_kuliah_id: null,
       created_at: '',
       updated_at: '',
       deleted_at: ''
+    },
+    lists: {
+      mata_kuliah: []
     },
     loading: false
   }
@@ -26,6 +30,7 @@ const route = 'data-mahasiswas'
 
 const getters = {
   entry: state => state.entry,
+  lists: state => state.lists,
   loading: state => state.loading
 }
 
@@ -132,6 +137,9 @@ const actions = {
   setPrecisionLulus({ commit }, value) {
     commit('setPrecisionLulus', value)
   },
+  setMataKuliah({ commit }, value) {
+    commit('setMataKuliah', value)
+  },
   setCreatedAt({ commit }, value) {
     commit('setCreatedAt', value)
   },
@@ -141,9 +149,15 @@ const actions = {
   setDeletedAt({ commit }, value) {
     commit('setDeletedAt', value)
   },
+  fetchCreateData({ commit }) {
+    axios.get(`${route}/create`).then(response => {
+      commit('setLists', response.data.meta)
+    })
+  },
   fetchEditData({ commit, dispatch }, id) {
     axios.get(`${route}/${id}/edit`).then(response => {
       commit('setEntry', response.data.data)
+      commit('setLists', response.data.meta)
     })
   },
   fetchShowData({ commit, dispatch }, id) {
@@ -201,6 +215,9 @@ const mutations = {
   setPrecisionLulus(state, value) {
     state.entry.precision_lulus = value
   },
+  setMataKuliah(state, value) {
+    state.entry.mata_kuliah_id = value
+  },
   setCreatedAt(state, value) {
     state.entry.created_at = value
   },
@@ -209,6 +226,9 @@ const mutations = {
   },
   setDeletedAt(state, value) {
     state.entry.deleted_at = value
+  },
+  setLists(state, lists) {
+    state.lists = lists
   },
   setLoading(state, loading) {
     state.loading = loading
