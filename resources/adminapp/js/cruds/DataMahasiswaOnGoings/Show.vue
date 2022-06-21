@@ -8,9 +8,9 @@
               <i class="material-icons">remove_red_eye</i>
             </div>
             <h4 class="card-title">
-              {{ $t("global.view") }}
+              {{ $t('global.view') }}
               <strong>{{
-                $t("cruds.dataMahasiswaOnGoing.title_singular")
+                $t('cruds.dataMahasiswaOnGoing.title_singular')
               }}</strong>
             </h4>
           </div>
@@ -25,7 +25,7 @@
                     <tbody>
                       <tr>
                         <td class="text-primary">
-                          {{ $t("cruds.dataMahasiswaOnGoing.fields.id") }}
+                          {{ $t('cruds.dataMahasiswaOnGoing.fields.id') }}
                         </td>
                         <td>
                           {{ entry.id }}
@@ -33,7 +33,7 @@
                       </tr>
                       <tr>
                         <td class="text-primary">
-                          {{ $t("cruds.dataMahasiswaOnGoing.fields.nama") }}
+                          {{ $t('cruds.dataMahasiswaOnGoing.fields.nama') }}
                         </td>
                         <td>
                           {{ entry.nama }}
@@ -42,7 +42,7 @@
                       <tr>
                         <td class="text-primary">
                           {{
-                            $t("cruds.dataMahasiswaOnGoing.fields.data_history")
+                            $t('cruds.dataMahasiswaOnGoing.fields.data_history')
                           }}
                         </td>
                         <td>
@@ -71,7 +71,7 @@
                         <td class="text-primary">
                           {{
                             $t(
-                              "cruds.dataMahasiswaOnGoing.fields.data_mahasiswa"
+                              'cruds.dataMahasiswaOnGoing.fields.data_mahasiswa'
                             )
                           }}
                         </td>
@@ -87,13 +87,102 @@
                         <td class="text-primary">
                           {{
                             $t(
-                              "cruds.dataMahasiswaOnGoing.fields.hasil_prediksi"
+                              'cruds.dataMahasiswaOnGoing.fields.hasil_prediksi'
                             )
                           }}
                         </td>
                         <td>
-                          <a :href="'/' + entry.hasil_prediksi"> Download </a>
-                          <!-- {{ entry.hasil_prediksi }} -->
+                          {{ entry.hasil_prediksi }}
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="text-primary">
+                          {{ $t('cruds.dataMahasiswaOnGoing.fields.lulus') }}
+                        </td>
+                        <td>
+                          {{ entry.lulus }}
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="text-primary">
+                          {{
+                            $t('cruds.dataMahasiswaOnGoing.fields.tidak_lulus')
+                          }}
+                        </td>
+                        <td>
+                          {{ entry.tidak_lulus }}
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="text-primary">
+                          {{ $t('cruds.dataMahasiswaOnGoing.fields.active') }}
+                        </td>
+                        <td>
+                          {{ entry.active }}
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="text-primary">
+                          {{
+                            $t('cruds.dataMahasiswaOnGoing.fields.observers')
+                          }}
+                        </td>
+                        <td>
+                          {{ entry.observers }}
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="text-primary">
+                          {{ $t('cruds.dataMahasiswaOnGoing.fields.accuracy') }}
+                        </td>
+                        <td>
+                          {{ entry.accuracy }}
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="text-primary">
+                          {{
+                            $t('cruds.dataMahasiswaOnGoing.fields.recall_lulus')
+                          }}
+                        </td>
+                        <td>
+                          {{ entry.recall_lulus }}
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="text-primary">
+                          {{
+                            $t(
+                              'cruds.dataMahasiswaOnGoing.fields.recall_tidak_lulus'
+                            )
+                          }}
+                        </td>
+                        <td>
+                          {{ entry.recall_tidak_lulus }}
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="text-primary">
+                          {{
+                            $t(
+                              'cruds.dataMahasiswaOnGoing.fields.precision_tidak_lulus'
+                            )
+                          }}
+                        </td>
+                        <td>
+                          {{ entry.precision_tidak_lulus }}
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="text-primary">
+                          {{
+                            $t(
+                              'cruds.dataMahasiswaOnGoing.fields.precision_lulus'
+                            )
+                          }}
+                        </td>
+                        <td>
+                          {{ entry.precision_lulus }}
                         </td>
                       </tr>
 
@@ -164,21 +253,21 @@
 
 
       </div>
+        </div>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
-import { mapGetters, mapActions } from "vuex";
-import DatatableSingle from "@components/Datatables/DatatableSingle";
-import DatatableAttachments from "@components/Datatables/DatatableAttachments";
-import VueApexCharts from "vue-apexcharts";
+import { mapGetters, mapActions } from 'vuex'
+import DatatableSingle from '@components/Datatables/DatatableSingle'
+import DatatableAttachments from '@components/Datatables/DatatableAttachments'
 
 export default {
   components: {
     DatatableSingle,
-    DatatableAttachments,
-    apexchart: VueApexCharts,
+    DatatableAttachments
   },
   data() {
     return {
@@ -258,39 +347,28 @@ export default {
         ],
       },
     };
+    return {}
   },
   beforeDestroy() {
-    this.resetState();
+    this.resetState()
   },
   computed: {
-    ...mapGetters("DataMahasiswaOnGoingsSingle", ["entry"]),
+    ...mapGetters('DataMahasiswaOnGoingsSingle', ['entry'])
   },
   watch: {
-    "$route.params.id": {
+    '$route.params.id': {
       immediate: true,
       handler() {
-        this.resetState();
-        this.fetchShowData(this.$route.params.id);
-      },
-    },
+        this.resetState()
+        this.fetchShowData(this.$route.params.id)
+      }
+    }
   },
   methods: {
-    ...mapActions("DataMahasiswaOnGoingsSingle", [
-      "fetchShowData",
-      "resetState",
-    ]),
-  },
-  created() {
-    const route = "data-mahasiswa-on-goings";
-    axios.get(`${route}/${this.$route.params.id}`).then((response) => {
-      this.charts = response.data.data;
-      console.log(this.charts, "andri");
-      this.a = [this.charts.active, this.charts.observers];
-      this.b = [this.charts.lulus, this.charts.observers, this.charts.tidak_lulus];
-      console.log(this.b)
-      this.series = this.a;
-      this.series1 = this.b;
-    });
-  },
-};
+    ...mapActions('DataMahasiswaOnGoingsSingle', [
+      'fetchShowData',
+      'resetState'
+    ])
+  }
+}
 </script>

@@ -12,8 +12,6 @@ use Gate;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Spatie\MediaLibrary\MediaCollections\Models\Media;
-use Symfony\Component\Process\Process;
-use Symfony\Component\Process\Exception\ProcessFailedException;
 
 class DataMahasiswaApiController extends Controller
 {
@@ -26,20 +24,8 @@ class DataMahasiswaApiController extends Controller
 
     public function store(StoreDataMahasiswaRequest $request)
     {
-        // $request->input('cantik') = 'andri';
-        $dataMahasiswa = DataMahasiswa::create(array_merge(
-            $request->validated(),
-            ['lulus' => 123],
-            ['tidaklulus' => 123],
-            ['active' => 123],
-            ['observers' => 123],
-            ['accuracy' => 123],
-            ['recall_lulus' => 123],
-            ['recall_tidak_lulus' => 123],
-            ['precision_lulus' => 123],
-            ['precision_tidak_lulus' => 123],
-            ['location' => '']
-        ));
+        $dataMahasiswa = DataMahasiswa::create($request->validated());
+
         if ($media = $request->input('data_mahasiswa', [])) {
             Media::whereIn('id', data_get($media, '*.id'))
                 ->where('model_id', 0)
@@ -53,7 +39,7 @@ class DataMahasiswaApiController extends Controller
         // var_dump(base_path());
         // var_dump(storage_path());
         $date = date('dmYhsi');
-        // var_dump(app_path());
+         // var_dump(app_path());
         // $process = new Process(["python3", "Proses.py '$a' '$b' '$date'"]);
         // $process = new Process(["python3", "ProsesH.py '$a' '$b' '$date'"]);
         // $process->run();
@@ -113,16 +99,6 @@ class DataMahasiswaApiController extends Controller
         abort_if(Gate::denies('data_mahasiswa_show'), Response::HTTP_FORBIDDEN, '403 Forbidden');
 
         return new DataMahasiswaResource($dataMahasiswa->load(['mataKuliah']));
-    }
-
-    public function proses(DataMahasiswa $dataMahasiswa)
-    {
-        abort_if(Gate::denies('data_mahasiswa_show'), Response::HTTP_FORBIDDEN, '403 Forbidden');
-        // $d = new stdClass();
-        // $d->andri = 'cantik';
-        // array_push($dataDummy,$d);
-        $dataMahasiswa->andri = 'cantik';
-        return new DataMahasiswaResource($dataMahasiswa);
     }
 
     public function update(UpdateDataMahasiswaRequest $request, DataMahasiswa $dataMahasiswa)
