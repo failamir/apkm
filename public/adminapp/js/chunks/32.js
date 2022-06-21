@@ -1,9 +1,9 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([[32],{
 
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/cruds/Dosens/Edit.vue?vue&type=script&lang=js&":
-/*!**************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/adminapp/js/cruds/Dosens/Edit.vue?vue&type=script&lang=js& ***!
-  \**************************************************************************************************************************************************************************/
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/cruds/Mahasiswas/Edit.vue?vue&type=script&lang=js&":
+/*!******************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/adminapp/js/cruds/Mahasiswas/Edit.vue?vue&type=script&lang=js& ***!
+  \******************************************************************************************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -169,6 +169,16 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
@@ -177,7 +187,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       activeField: ''
     };
   },
-  computed: _objectSpread({}, Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapGetters"])('DosensSingle', ['entry', 'loading', 'lists'])),
+  computed: _objectSpread({}, Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapGetters"])('MahasiswasSingle', ['entry', 'loading', 'lists'])),
   beforeDestroy: function beforeDestroy() {
     this.resetState();
   },
@@ -190,18 +200,18 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       }
     }
   },
-  methods: _objectSpread(_objectSpread({}, Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapActions"])('DosensSingle', ['fetchEditData', 'updateData', 'resetState', 'setIdDosen', 'setNamaDosen', 'setJurusan', 'setTitle', 'setEmail', 'setNoHp'])), {}, {
-    updateIdDosen: function updateIdDosen(e) {
-      this.setIdDosen(e.target.value);
+  methods: _objectSpread(_objectSpread({}, Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapActions"])('MahasiswasSingle', ['fetchEditData', 'updateData', 'resetState', 'setIdMahasiswa', 'setNama', 'setJurusan', 'setAngkatan', 'setEmail', 'setNoHp'])), {}, {
+    updateIdMahasiswa: function updateIdMahasiswa(e) {
+      this.setIdMahasiswa(e.target.value);
     },
-    updateNamaDosen: function updateNamaDosen(e) {
-      this.setNamaDosen(e.target.value);
+    updateNama: function updateNama(e) {
+      this.setNama(e.target.value);
     },
     updateJurusan: function updateJurusan(value) {
       this.setJurusan(value);
     },
-    updateTitle: function updateTitle(value) {
-      this.setTitle(value);
+    updateAngkatan: function updateAngkatan(e) {
+      this.setAngkatan(e.target.value);
     },
     updateEmail: function updateEmail(e) {
       this.setEmail(e.target.value);
@@ -214,7 +224,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
       this.updateData().then(function () {
         _this.$router.push({
-          name: 'dosens.index'
+          name: 'mahasiswas.index'
         });
 
         _this.$eventHub.$emit('update-success');
@@ -237,10 +247,10 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/cruds/Dosens/Edit.vue?vue&type=template&id=70425228&":
-/*!******************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/adminapp/js/cruds/Dosens/Edit.vue?vue&type=template&id=70425228& ***!
-  \******************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/cruds/Mahasiswas/Edit.vue?vue&type=template&id=2448fc35&":
+/*!**********************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/adminapp/js/cruds/Mahasiswas/Edit.vue?vue&type=template&id=2448fc35& ***!
+  \**********************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -283,7 +293,7 @@ var render = function () {
                         "\n              "
                     ),
                     _c("strong", [
-                      _vm._v(_vm._s(_vm.$t("cruds.dosen.title_singular"))),
+                      _vm._v(_vm._s(_vm.$t("cruds.mahasiswa.title_singular"))),
                     ]),
                   ]),
                 ]
@@ -304,8 +314,8 @@ var render = function () {
                         {
                           staticClass: "form-group bmd-form-group",
                           class: {
-                            "has-items": _vm.entry.id_dosen,
-                            "is-focused": _vm.activeField == "id_dosen",
+                            "has-items": _vm.entry.id_mahasiswa,
+                            "is-focused": _vm.activeField == "id_mahasiswa",
                           },
                         },
                         [
@@ -314,7 +324,9 @@ var render = function () {
                             { staticClass: "bmd-label-floating required" },
                             [
                               _vm._v(
-                                _vm._s(_vm.$t("cruds.dosen.fields.id_dosen"))
+                                _vm._s(
+                                  _vm.$t("cruds.mahasiswa.fields.id_mahasiswa")
+                                )
                               ),
                             ]
                           ),
@@ -322,11 +334,11 @@ var render = function () {
                           _c("input", {
                             staticClass: "form-control",
                             attrs: { type: "number", step: "1", required: "" },
-                            domProps: { value: _vm.entry.id_dosen },
+                            domProps: { value: _vm.entry.id_mahasiswa },
                             on: {
-                              input: _vm.updateIdDosen,
+                              input: _vm.updateIdMahasiswa,
                               focus: function ($event) {
-                                return _vm.focusField("id_dosen")
+                                return _vm.focusField("id_mahasiswa")
                               },
                               blur: _vm.clearFocus,
                             },
@@ -339,8 +351,8 @@ var render = function () {
                         {
                           staticClass: "form-group bmd-form-group",
                           class: {
-                            "has-items": _vm.entry.nama_dosen,
-                            "is-focused": _vm.activeField == "nama_dosen",
+                            "has-items": _vm.entry.nama,
+                            "is-focused": _vm.activeField == "nama",
                           },
                         },
                         [
@@ -349,7 +361,7 @@ var render = function () {
                             { staticClass: "bmd-label-floating required" },
                             [
                               _vm._v(
-                                _vm._s(_vm.$t("cruds.dosen.fields.nama_dosen"))
+                                _vm._s(_vm.$t("cruds.mahasiswa.fields.nama"))
                               ),
                             ]
                           ),
@@ -357,11 +369,11 @@ var render = function () {
                           _c("input", {
                             staticClass: "form-control",
                             attrs: { type: "text", required: "" },
-                            domProps: { value: _vm.entry.nama_dosen },
+                            domProps: { value: _vm.entry.nama },
                             on: {
-                              input: _vm.updateNamaDosen,
+                              input: _vm.updateNama,
                               focus: function ($event) {
-                                return _vm.focusField("nama_dosen")
+                                return _vm.focusField("nama")
                               },
                               blur: _vm.clearFocus,
                             },
@@ -374,14 +386,14 @@ var render = function () {
                         {
                           staticClass: "form-group bmd-form-group",
                           class: {
-                            "has-items": _vm.entry.jurusan.length !== 0,
+                            "has-items": _vm.entry.jurusan_id !== null,
                             "is-focused": _vm.activeField == "jurusan",
                           },
                         },
                         [
                           _c("label", { staticClass: "bmd-label-floating" }, [
                             _vm._v(
-                              _vm._s(_vm.$t("cruds.dosen.fields.jurusan"))
+                              _vm._s(_vm.$t("cruds.mahasiswa.fields.jurusan"))
                             ),
                           ]),
                           _vm._v(" "),
@@ -390,10 +402,11 @@ var render = function () {
                             attrs: {
                               name: "jurusan",
                               label: "nama_jurusan",
-                              value: _vm.entry.jurusan,
+                              value: _vm.entry.jurusan_id,
                               options: _vm.lists.jurusan,
-                              closeOnSelect: false,
-                              multiple: "",
+                              reduce: function (entry) {
+                                return entry.id
+                              },
                             },
                             on: {
                               input: _vm.updateJurusan,
@@ -437,21 +450,33 @@ var render = function () {
                       _vm._v(" "),
                       _c(
                         "div",
-                        { staticClass: "form-group" },
+                        {
+                          staticClass: "form-group bmd-form-group",
+                          class: {
+                            "has-items": _vm.entry.angkatan,
+                            "is-focused": _vm.activeField == "angkatan",
+                          },
+                        },
                         [
-                          _c("label", [
-                            _vm._v(_vm._s(_vm.$t("cruds.dosen.fields.title"))),
+                          _c("label", { staticClass: "bmd-label-floating" }, [
+                            _vm._v(
+                              _vm._s(_vm.$t("cruds.mahasiswa.fields.angkatan"))
+                            ),
                           ]),
                           _vm._v(" "),
-                          _c("v-radio", {
-                            attrs: {
-                              value: _vm.entry.title,
-                              options: _vm.lists.title,
+                          _c("input", {
+                            staticClass: "form-control",
+                            attrs: { type: "number", step: "1" },
+                            domProps: { value: _vm.entry.angkatan },
+                            on: {
+                              input: _vm.updateAngkatan,
+                              focus: function ($event) {
+                                return _vm.focusField("angkatan")
+                              },
+                              blur: _vm.clearFocus,
                             },
-                            on: { change: _vm.updateTitle },
                           }),
-                        ],
-                        1
+                        ]
                       ),
                       _vm._v(" "),
                       _c(
@@ -465,7 +490,9 @@ var render = function () {
                         },
                         [
                           _c("label", { staticClass: "bmd-label-floating" }, [
-                            _vm._v(_vm._s(_vm.$t("cruds.dosen.fields.email"))),
+                            _vm._v(
+                              _vm._s(_vm.$t("cruds.mahasiswa.fields.email"))
+                            ),
                           ]),
                           _vm._v(" "),
                           _c("input", {
@@ -494,7 +521,9 @@ var render = function () {
                         },
                         [
                           _c("label", { staticClass: "bmd-label-floating" }, [
-                            _vm._v(_vm._s(_vm.$t("cruds.dosen.fields.no_hp"))),
+                            _vm._v(
+                              _vm._s(_vm.$t("cruds.mahasiswa.fields.no_hp"))
+                            ),
                           ]),
                           _vm._v(" "),
                           _c("input", {
@@ -565,17 +594,17 @@ render._withStripped = true
 
 /***/ }),
 
-/***/ "./resources/adminapp/js/cruds/Dosens/Edit.vue":
-/*!*****************************************************!*\
-  !*** ./resources/adminapp/js/cruds/Dosens/Edit.vue ***!
-  \*****************************************************/
+/***/ "./resources/adminapp/js/cruds/Mahasiswas/Edit.vue":
+/*!*********************************************************!*\
+  !*** ./resources/adminapp/js/cruds/Mahasiswas/Edit.vue ***!
+  \*********************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Edit_vue_vue_type_template_id_70425228___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Edit.vue?vue&type=template&id=70425228& */ "./resources/adminapp/js/cruds/Dosens/Edit.vue?vue&type=template&id=70425228&");
-/* harmony import */ var _Edit_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Edit.vue?vue&type=script&lang=js& */ "./resources/adminapp/js/cruds/Dosens/Edit.vue?vue&type=script&lang=js&");
+/* harmony import */ var _Edit_vue_vue_type_template_id_2448fc35___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Edit.vue?vue&type=template&id=2448fc35& */ "./resources/adminapp/js/cruds/Mahasiswas/Edit.vue?vue&type=template&id=2448fc35&");
+/* harmony import */ var _Edit_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Edit.vue?vue&type=script&lang=js& */ "./resources/adminapp/js/cruds/Mahasiswas/Edit.vue?vue&type=script&lang=js&");
 /* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
@@ -586,8 +615,8 @@ __webpack_require__.r(__webpack_exports__);
 
 var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
   _Edit_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _Edit_vue_vue_type_template_id_70425228___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _Edit_vue_vue_type_template_id_70425228___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  _Edit_vue_vue_type_template_id_2448fc35___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Edit_vue_vue_type_template_id_2448fc35___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
   null,
   null,
@@ -597,38 +626,38 @@ var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_
 
 /* hot reload */
 if (false) { var api; }
-component.options.__file = "resources/adminapp/js/cruds/Dosens/Edit.vue"
+component.options.__file = "resources/adminapp/js/cruds/Mahasiswas/Edit.vue"
 /* harmony default export */ __webpack_exports__["default"] = (component.exports);
 
 /***/ }),
 
-/***/ "./resources/adminapp/js/cruds/Dosens/Edit.vue?vue&type=script&lang=js&":
-/*!******************************************************************************!*\
-  !*** ./resources/adminapp/js/cruds/Dosens/Edit.vue?vue&type=script&lang=js& ***!
-  \******************************************************************************/
+/***/ "./resources/adminapp/js/cruds/Mahasiswas/Edit.vue?vue&type=script&lang=js&":
+/*!**********************************************************************************!*\
+  !*** ./resources/adminapp/js/cruds/Mahasiswas/Edit.vue?vue&type=script&lang=js& ***!
+  \**********************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Edit_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../node_modules/vue-loader/lib??vue-loader-options!./Edit.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/cruds/Dosens/Edit.vue?vue&type=script&lang=js&");
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Edit_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../node_modules/vue-loader/lib??vue-loader-options!./Edit.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/cruds/Mahasiswas/Edit.vue?vue&type=script&lang=js&");
 /* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Edit_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
 
 /***/ }),
 
-/***/ "./resources/adminapp/js/cruds/Dosens/Edit.vue?vue&type=template&id=70425228&":
-/*!************************************************************************************!*\
-  !*** ./resources/adminapp/js/cruds/Dosens/Edit.vue?vue&type=template&id=70425228& ***!
-  \************************************************************************************/
+/***/ "./resources/adminapp/js/cruds/Mahasiswas/Edit.vue?vue&type=template&id=2448fc35&":
+/*!****************************************************************************************!*\
+  !*** ./resources/adminapp/js/cruds/Mahasiswas/Edit.vue?vue&type=template&id=2448fc35& ***!
+  \****************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Edit_vue_vue_type_template_id_70425228___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../node_modules/vue-loader/lib??vue-loader-options!./Edit.vue?vue&type=template&id=70425228& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/cruds/Dosens/Edit.vue?vue&type=template&id=70425228&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Edit_vue_vue_type_template_id_70425228___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Edit_vue_vue_type_template_id_2448fc35___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../node_modules/vue-loader/lib??vue-loader-options!./Edit.vue?vue&type=template&id=2448fc35& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/cruds/Mahasiswas/Edit.vue?vue&type=template&id=2448fc35&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Edit_vue_vue_type_template_id_2448fc35___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Edit_vue_vue_type_template_id_70425228___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Edit_vue_vue_type_template_id_2448fc35___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 

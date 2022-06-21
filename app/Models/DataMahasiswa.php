@@ -42,7 +42,6 @@ class DataMahasiswa extends Model implements HasMedia
         'recall_tidak_lulus',
         'precision_tidak_lulus',
         'precision_lulus',
-        'mata_kuliah.id_mtk',
     ];
 
     protected $filterable = [
@@ -58,7 +57,6 @@ class DataMahasiswa extends Model implements HasMedia
         'recall_tidak_lulus',
         'precision_tidak_lulus',
         'precision_lulus',
-        'mata_kuliah.id_mtk',
     ];
 
     protected $fillable = [
@@ -73,7 +71,7 @@ class DataMahasiswa extends Model implements HasMedia
         'recall_tidak_lulus',
         'precision_tidak_lulus',
         'precision_lulus',
-        'mata_kuliah_id',
+        'location',
         'created_at',
         'updated_at',
         'deleted_at',
@@ -87,11 +85,6 @@ class DataMahasiswa extends Model implements HasMedia
 
             return $media;
         });
-    }
-
-    public function mataKuliah()
-    {
-        return $this->belongsTo(MataKuliah::class);
     }
 
     protected function serializeDate(DateTimeInterface $date)

@@ -64,6 +64,20 @@ __webpack_require__.r(__webpack_exports__);
           name: 'dashboard'
         }
       }, {
+        title: 'cruds.dataMahasiswa.title',
+        icon: 'table_view',
+        path: {
+          name: 'data_mahasiswas.index'
+        },
+        gate: 'data_mahasiswa_access'
+      }, {
+        title: 'cruds.dataMahasiswaOnGoing.title',
+        icon: 'table_view',
+        path: {
+          name: 'data_mahasiswa_on_goings.index'
+        },
+        gate: 'data_mahasiswa_on_going_access'
+      }, {
         title: 'cruds.mahasiswa.title',
         icon: 'table_view',
         path: {
@@ -92,20 +106,6 @@ __webpack_require__.r(__webpack_exports__);
         },
         gate: 'jurusan_access'
       }, {
-        title: 'cruds.dataMahasiswa.title',
-        icon: 'table_view',
-        path: {
-          name: 'data_mahasiswas.index'
-        },
-        gate: 'data_mahasiswa_access'
-      }, {
-        title: 'cruds.dataMahasiswaOnGoing.title',
-        icon: 'table_view',
-        path: {
-          name: 'data_mahasiswa_on_goings.index'
-        },
-        gate: 'data_mahasiswa_on_going_access'
-      }, {
         title: 'cruds.report.title',
         icon: 'table_view',
         path: {
@@ -119,6 +119,13 @@ __webpack_require__.r(__webpack_exports__);
             name: 'data_mahasiswa_histories.index'
           },
           gate: 'data_mahasiswa_history_access'
+        }, {
+          title: 'cruds.tentangAplikasi.title',
+          icon: 'table_view',
+          path: {
+            name: 'tentang_aplikasis.index'
+          },
+          gate: 'tentang_aplikasi_access'
         }]
       }, {
         title: 'cruds.userManagement.title',
@@ -149,20 +156,6 @@ __webpack_require__.r(__webpack_exports__);
           },
           gate: 'user_access'
         }]
-      }, {
-        title: 'cruds.tentangAplikasi.title',
-        icon: 'table_view',
-        path: {
-          name: 'tentang_aplikasis.index'
-        },
-        gate: 'tentang_aplikasi_access'
-      }, {
-        title: 'cruds.dataDummy.title',
-        icon: 'table_view',
-        path: {
-          name: 'data_dummies.index'
-        },
-        gate: 'data_dummy_access'
       }]
     };
   }

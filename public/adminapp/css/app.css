@@ -15280,7 +15280,7 @@ fieldset[disabled] .form-group.is-focused .togglebutton label {
   border-left: 4px solid transparent;
 }
 
-.sidebar[data-background-color=black] {
+.sidebar[data-background-color=red] {
   background-color: #191919;
 }
 
@@ -15524,38 +15524,38 @@ fieldset[disabled] .form-group.is-focused .togglebutton label {
   height: 60px;
 }
 
-.sidebar[data-background-color=black] .nav .nav-item .nav-link {
+.sidebar[data-background-color=red] .nav .nav-item .nav-link {
   color: #fff;
 }
 
-.sidebar[data-background-color=black] .nav .nav-item i {
+.sidebar[data-background-color=red] .nav .nav-item i {
   color: rgba(255, 255, 255, 0.8);
 }
 
-.sidebar[data-background-color=black] .nav .nav-item.active [data-toggle=collapse],
-.sidebar[data-background-color=black] .nav .nav-item:hover [data-toggle=collapse] {
+.sidebar[data-background-color=red] .nav .nav-item.active [data-toggle=collapse],
+.sidebar[data-background-color=red] .nav .nav-item:hover [data-toggle=collapse] {
   color: #fff;
 }
 
-.sidebar[data-background-color=black] .nav .nav-item.active [data-toggle=collapse] i,
-.sidebar[data-background-color=black] .nav .nav-item:hover [data-toggle=collapse] i {
+.sidebar[data-background-color=red] .nav .nav-item.active [data-toggle=collapse] i,
+.sidebar[data-background-color=red] .nav .nav-item:hover [data-toggle=collapse] i {
   color: rgba(255, 255, 255, 0.8);
 }
 
-.sidebar[data-background-color=black] .user a {
+.sidebar[data-background-color=red] .user a {
   color: #fff;
 }
 
-.sidebar[data-background-color=black] .simple-text {
+.sidebar[data-background-color=red] .simple-text {
   color: #fff;
 }
 
-.sidebar[data-background-color=black] .sidebar-background:after {
+.sidebar[data-background-color=red] .sidebar-background:after {
   background: #000;
   opacity: 0.8;
 }
 
-.sidebar[data-background-color=black] .nav li .dropdown-menu .dropdown-item {
+.sidebar[data-background-color=red] .nav li .dropdown-menu .dropdown-item {
   color: #fff;
 }
 
