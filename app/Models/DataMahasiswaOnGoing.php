@@ -44,6 +44,7 @@ class DataMahasiswaOnGoing extends Model implements HasMedia
         'recall_tidak_lulus',
         'precision_tidak_lulus',
         'precision_lulus',
+        'prediksi_tidak_lulus',
     ];
 
     protected $filterable = [
@@ -61,6 +62,7 @@ class DataMahasiswaOnGoing extends Model implements HasMedia
         'recall_tidak_lulus',
         'precision_tidak_lulus',
         'precision_lulus',
+        'prediksi_tidak_lulus',
     ];
 
     protected $fillable = [
@@ -77,6 +79,7 @@ class DataMahasiswaOnGoing extends Model implements HasMedia
         'recall_tidak_lulus',
         'precision_tidak_lulus',
         'precision_lulus',
+        'prediksi_tidak_lulus',
         'created_at',
         'updated_at',
         'deleted_at',

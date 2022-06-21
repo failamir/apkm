@@ -65,7 +65,7 @@ export default {
     },
     itemColor: {
       type: String,
-      default: 'danger',
+      default: 'purple',
       validator: value => {
         let acceptedValues = [
           '',

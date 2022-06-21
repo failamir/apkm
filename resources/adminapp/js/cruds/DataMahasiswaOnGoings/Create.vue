@@ -4,7 +4,7 @@
       <div class="row">
         <div class="col-md-12">
           <div class="card">
-            <div class="card-header card-header-danger card-header-icon">
+            <div class="card-header card-header-primary card-header-icon">
               <div class="card-icon">
                 <i class="material-icons">add</i>
               </div>
@@ -22,12 +22,6 @@
               <bootstrap-alert />
               <div class="row">
                 <div class="col-md-12">
-                <div class="table-overlay" v-show="loading">
-                  <div class="table-overlay-container">
-                    <material-spinner></material-spinner>
-                    <span>Loading...</span>
-                  </div>
-                </div>
                   <div
                     class="form-group bmd-form-group"
                     :class="{
@@ -305,7 +299,28 @@
                       @focus="focusField('precision_lulus')"
                       @blur="clearFocus"
                     />
-                  </div> 
+                  </div>
+                  <div
+                    class="form-group bmd-form-group"
+                    :class="{
+                      'has-items': entry.prediksi_tidak_lulus,
+                      'is-focused': activeField == 'prediksi_tidak_lulus'
+                    }"
+                  >
+                    <label class="bmd-label-floating">{{
+                      $t(
+                        'cruds.dataMahasiswaOnGoing.fields.prediksi_tidak_lulus'
+                      )
+                    }}</label>
+                    <input
+                      class="form-control"
+                      type="number"
+                      step="1"
+                      :value="entry.prediksi_tidak_lulus"
+                      @input="updatePrediksiTidakLulus"
+                      @focus="focusField('prediksi_tidak_lulus')"
+                      @blur="clearFocus"
+                    />
                   </div>
                 </div>
               </div>
@@ -369,6 +384,7 @@ export default {
       'setRecallTidakLulus',
       'setPrecisionTidakLulus',
       'setPrecisionLulus',
+      'setPrediksiTidakLulus',
       'fetchCreateData'
     ]),
     updateNama(e) {
@@ -409,6 +425,9 @@ export default {
     },
     updatePrecisionLulus(e) {
       this.setPrecisionLulus(e.target.value)
+    },
+    updatePrediksiTidakLulus(e) {
+      this.setPrediksiTidakLulus(e.target.value)
     },
     getRoute(name) {
       return `${axios.defaults.baseURL}${name}/media`

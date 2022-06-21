@@ -29,6 +29,11 @@ class UpdateDataMahasiswaRequest extends FormRequest
                 'integer',
                 'exists:media,id',
             ],
+            'mata_kuliah_id' => [
+                'integer',
+                'exists:mata_kuliahs,id',
+                'nullable',
+            ],
             'batas_nilai' => [
                 'integer',
                 'min:-2147483648',
@@ -79,9 +84,8 @@ class UpdateDataMahasiswaRequest extends FormRequest
                 'numeric',
                 'nullable',
             ],
-            'mata_kuliah_id' => [
-                'integer',
-                'exists:mata_kuliahs,id',
+            'location' => [
+                'string',
                 'nullable',
             ],
         ];
