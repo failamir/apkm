@@ -205,6 +205,8 @@ return [
             'precision_tidak_lulus_helper' => ' ',
             'precision_lulus'              => 'Precision Lulus',
             'precision_lulus_helper'       => ' ',
+            'mata_kuliah'                  => 'Mata Kuliah',
+            'mata_kuliah_helper'           => ' ',
         ],
     ],
     'dataMahasiswaOnGoing' => [
@@ -245,6 +247,8 @@ return [
             'precision_tidak_lulus_helper' => ' ',
             'precision_lulus'              => 'Precision Lulus',
             'precision_lulus_helper'       => ' ',
+            'mata_kuliah'                  => 'Mata Kuliah',
+            'mata_kuliah_helper'           => ' ',
         ],
     ],
 ];

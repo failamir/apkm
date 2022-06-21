@@ -7,6 +7,7 @@ use App\Http\Requests\StoreDataMahasiswaRequest;
 use App\Http\Requests\UpdateDataMahasiswaRequest;
 use App\Http\Resources\Admin\DataMahasiswaResource;
 use App\Models\DataMahasiswa;
+use App\Models\MataKuliah;
 use Gate;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
@@ -18,7 +19,7 @@ class DataMahasiswaApiController extends Controller
     {
         abort_if(Gate::denies('data_mahasiswa_access'), Response::HTTP_FORBIDDEN, '403 Forbidden');
 
-        return new DataMahasiswaResource(DataMahasiswa::advancedFilter());
+        return new DataMahasiswaResource(DataMahasiswa::with(['mataKuliah'])->advancedFilter());
     }
 
     public function store(StoreDataMahasiswaRequest $request)
@@ -41,7 +42,9 @@ class DataMahasiswaApiController extends Controller
         abort_if(Gate::denies('data_mahasiswa_create'), Response::HTTP_FORBIDDEN, '403 Forbidden');
 
         return response([
-            'meta' => [],
+            'meta' => [
+                'mata_kuliah' => MataKuliah::get(['id', 'id_mtk']),
+            ],
         ]);
     }
 
@@ -49,7 +52,7 @@ class DataMahasiswaApiController extends Controller
     {
         abort_if(Gate::denies('data_mahasiswa_show'), Response::HTTP_FORBIDDEN, '403 Forbidden');
 
-        return new DataMahasiswaResource($dataMahasiswa);
+        return new DataMahasiswaResource($dataMahasiswa->load(['mataKuliah']));
     }
 
     public function update(UpdateDataMahasiswaRequest $request, DataMahasiswa $dataMahasiswa)
@@ -68,8 +71,10 @@ class DataMahasiswaApiController extends Controller
         abort_if(Gate::denies('data_mahasiswa_edit'), Response::HTTP_FORBIDDEN, '403 Forbidden');
 
         return response([
-            'data' => new DataMahasiswaResource($dataMahasiswa),
-            'meta' => [],
+            'data' => new DataMahasiswaResource($dataMahasiswa->load(['mataKuliah'])),
+            'meta' => [
+                'mata_kuliah' => MataKuliah::get(['id', 'id_mtk']),
+            ],
         ]);
     }
 
