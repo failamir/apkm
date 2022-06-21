@@ -32,7 +32,7 @@ class DataMahasiswa extends Model implements HasMedia
     protected $orderable = [
         'id',
         'nama',
-        'mata_kuliah.id_mtk',
+        'mata_kuliah.nama_mtk',
         'batas_nilai',
         'lulus',
         'tidaklulus',
@@ -49,7 +49,7 @@ class DataMahasiswa extends Model implements HasMedia
     protected $filterable = [
         'id',
         'nama',
-        'mata_kuliah.id_mtk',
+        'mata_kuliah.nama_mtk',
         'batas_nilai',
         'lulus',
         'tidaklulus',

@@ -43,7 +43,7 @@ class DataMahasiswaApiController extends Controller
 
         return response([
             'meta' => [
-                'mata_kuliah' => MataKuliah::get(['id', 'id_mtk']),
+                'mata_kuliah' => MataKuliah::get(['id', 'nama_mtk']),
             ],
         ]);
     }
@@ -73,7 +73,7 @@ class DataMahasiswaApiController extends Controller
         return response([
             'data' => new DataMahasiswaResource($dataMahasiswa->load(['mataKuliah'])),
             'meta' => [
-                'mata_kuliah' => MataKuliah::get(['id', 'id_mtk']),
+                'mata_kuliah' => MataKuliah::get(['id', 'nama_mtk']),
             ],
         ]);
     }
