@@ -32,6 +32,52 @@ class DataMahasiswaApiController extends Controller
                 ->update(['model_id' => $dataMahasiswa->id]);
         }
 
+        // $dataMahasiswa->andri = 'cantik';
+        $a = $request->input('batas_nilai');
+        $b = public_path() . '/storage/' . $request->input('data_mahasiswa')[0]["id"] . '/' . $request->input('data_mahasiswa')[0]["file_name"];
+        // $b = $request->input('data_mahasiswa')[0]["file_name"];
+        // var_dump(base_path());
+        // var_dump(storage_path());
+        $date = date('dmYhsi');
+         // var_dump(app_path());
+        // $process = new Process(["python3", "Proses.py '$a' '$b' '$date'"]);
+        // $process = new Process(["python3", "ProsesH.py '$a' '$b' '$date'"]);
+        // $process->run();
+
+        // executes after the command finishes
+        // if (!$process->isSuccessful()) {
+        //     throw new ProcessFailedException($process);
+        // }
+
+        // echo $process->getOutput();
+        $py = env('PYPATH',);
+        $andri = exec("'$py' Proses.py '$a' '$b' '$date'  2>&1", $out, $ret);
+        // $andri = exec("python3 ../../../../Proses.py '$a' '$date'", $out, $ret);
+        var_dump($andri);
+        $text = str_replace("'", '"', $andri);
+        $andri = json_decode($text);
+
+        // $dataMahasiswa = DataMahasiswa::whereId($dataMahasiswa->id)->update(
+        //  ['LulusdanTidakLulus' => 22],
+        //  ['MahasiswaActivedanObservers' => 1223],
+        //  ['Accuracy' => 1123],
+        //  ['RecallLulus' => 1223],
+        //  ['RecallTidakLulus' => 2123],
+        //  ['PrecisionTidakLulus' => 123],
+        //  ['PrecisionLulus' => 123]);
+        $dataMahasiswa->update(array_merge(
+            $request->validated(),
+            ['lulus' => $andri->LulusdanTidakLulus[0]],
+            ['tidaklulus' => $andri->LulusdanTidakLulus[1]],
+            ['active' => $andri->MahasiswaActivedanObservers[0]],
+            ['observers' => $andri->MahasiswaActivedanObservers[1]],
+            ['accuracy' => $andri->Accuracy],
+            ['recall_lulus' => $andri->RecallLulus],
+            ['recall_tidak_lulus' => $andri->RecallTidakLulus],
+            ['precision_lulus' => $andri->PrecisionLulus],
+            ['precision_tidak_lulus' => $andri->PrecisionTidakLulus],
+            ['location' => $b]
+        ));
         return (new DataMahasiswaResource($dataMahasiswa))
             ->response()
             ->setStatusCode(Response::HTTP_CREATED);

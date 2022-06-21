@@ -3,7 +3,7 @@
     <div class="row">
       <div class="col-md-12">
         <div class="card">
-          <div class="card-header card-header-primary card-header-icon">
+          <div class="card-header card-header-danger card-header-icon">
             <div class="card-icon">
               <i class="material-icons">remove_red_eye</i>
             </div>
@@ -185,12 +185,74 @@
                           {{ entry.precision_lulus }}
                         </td>
                       </tr>
+
                     </tbody>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+          <div class="card-body">
+        <div class="col-md-12">
+          <div class="row">
+            <div class="col" id="chart">
+              <!-- <apexchart type="pie" width="380" :options="chartOptions" :series="serisL"></apexchart> -->
+              <apexchart
+                type="pie"
+                width="380"
+                :options="chartOptions"
+                :series="series"
+              ></apexchart>
+            </div>
+            <div class="col" id="chart">
+              <!-- <apexchart type="pie" width="380" :options="chartOptions1" :series="serisT"></apexchart> -->
+              <apexchart
+                type="pie"
+                width="380"
+                :options="chartOptions1"
+                :series="series1"
+              ></apexchart>
+            </div>
+          </div>
+
+          <div id="wrapper">
+            <div id="app" v-on:click="seen = !seen" class="control">
+              <!-- <button>Show Nilai Accuracy and Recall</button> -->
+              <button>Proporsi Mahasiswa Yang Di Prediksi</button>
+            </div>
+
+            <div v-if="seen" id="hide">
+              <br />
+              <p class="font-weight-bold">Di Prediksi Lulus : {{ entry.lulus }}</p>
+              <!-- <p class="font-weight-bold">
+                Tidak Lulus : {{ entry.tidak_lulus }}
+              </p> -->
+              <p class="font-weight-bold">
+                Di Prediksi Tidak Lulus : {{ entry.tidak_lulus }}
+              </p>
+              <p class="font-weight-bold">Active : {{ entry.active }}</p>
+              <p class="font-weight-bold">Observers : {{ entry.observers }}</p>
+              <!-- <p class="font-weight-bold">Accuracy : {{ entry.accuracy }}</p>
+              <p class="font-weight-bold">
+                Recall Lulus : {{ entry.recall_lulus }}
+              </p>
+              <p class="font-weight-bold">
+                Recall Tidak Lulus : {{ entry.recall_tidak_lulus }}
+              </p>
+              <p class="font-weight-bold">
+                Precision Lulus : {{ entry.precision_lulus }}
+              </p>
+              <p class="font-weight-bold">
+                Precision Tidak Lulus : {{ entry.precision_tidak_lulus }}
+              </p> -->
+            </div>
+          </div>
+        </div>
+      </div>
+        </div>
+
+
+      </div>
         </div>
       </div>
     </div>
@@ -208,6 +270,83 @@ export default {
     DatatableAttachments
   },
   data() {
+    return {
+      seen: false,
+      series: [1, 1],
+      series1: [1, 1, 1],
+      chartOptions: {
+        title: {
+          text: "Proporsi Mahasiswa Aktif dan Observers (Data Ongoing)",
+          align: "left",
+          margin: 10,
+          offsetX: 0,
+          offsetY: 0,
+          floating: false,
+          style: {
+            fontSize: "14px",
+            fontWeight: "bold",
+            fontFamily: "Roboto",
+            color: "#263238",
+          },
+        },
+        chart: {
+          width: 380,
+          type: "pie",
+        },
+        labels: ["Active", "Observers"],
+        responsive: [
+          {
+            breakpoint: 480,
+            options: {
+              chart: {
+                width: 200,
+              },
+              legend: {
+                position: "bottom",
+              },
+            },
+          },
+        ],
+      },
+      // series1: [entry.Active, entry.Observers],
+      // series1: [12, 42],
+      // series1: [this.charts.data.Active, this.charts.data.Observers],
+      chartOptions1: {
+        title: {
+          text: "Proporsi Keseluruhan Mahasiswa (Data Ongoing)",
+          align: "left",
+          margin: 10,
+          offsetX: 0,
+          offsetY: 0,
+          floating: false,
+          style: {
+            fontSize: "14px",
+            fontWeight: "bold",
+            fontFamily: "Roboto",
+            color: "#263238",
+          },
+        },
+        chart: {
+          width: 380,
+          type: "pie",
+        },
+
+        labels: ["Di Prediski Lulus", "Observers", "Di Prediksi Tidak Lulus"],
+        responsive: [
+          {
+            breakpoint: 480,
+            options: {
+              chart: {
+                width: 200,
+              },
+              legend: {
+                position: "bottom",
+              },
+            },
+          },
+        ],
+      },
+    };
     return {}
   },
   beforeDestroy() {

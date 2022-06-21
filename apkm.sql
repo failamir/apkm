@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:8889
--- Generation Time: Jun 19, 2022 at 11:48 PM
+-- Generation Time: Jun 20, 2022 at 09:21 AM
 -- Server version: 5.7.34
 -- PHP Version: 8.0.8
 
@@ -52,7 +52,8 @@ CREATE TABLE `data_mahasiswas` (
 
 INSERT INTO `data_mahasiswas` (`id`, `nama`, `batas_nilai`, `lulus`, `tidaklulus`, `active`, `observers`, `accuracy`, `recall_lulus`, `recall_tidak_lulus`, `precision_tidak_lulus`, `precision_lulus`, `location`, `created_at`, `updated_at`, `deleted_at`) VALUES
 (1, 'tes 1', 50, 10, 2, 62, 16, 0.90, 1.00, 0.50, 0.80, 0.89, '', '2022-06-19 15:28:35', '2022-06-19 15:28:46', NULL),
-(2, 'tes 2', 40, 10, 2, 62, 16, 0.93, 1.00, 0.63, 0.80, 0.92, '', '2022-06-19 15:38:09', '2022-06-19 15:38:17', NULL);
+(2, 'tes 2', 40, 10, 2, 62, 16, 0.93, 1.00, 0.63, 0.80, 0.92, '', '2022-06-19 15:38:09', '2022-06-19 15:38:17', NULL),
+(3, 'tes local', 40, 10, NULL, 62, 16, 0.93, 1.00, 0.63, 0.80, 0.92, '/Users/macbook/GitHub/apkm/public/storage/4/Data-LMS-+-Nilai---ICEI-Rev-21.03.2021-(1).xlsx', '2022-06-20 02:05:15', '2022-06-20 02:05:24', NULL);
 
 -- --------------------------------------------------------
 
@@ -66,6 +67,7 @@ CREATE TABLE `data_mahasiswa_on_goings` (
   `hasil_prediksi` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `lulus` int(11) DEFAULT NULL,
   `tidak_lulus` int(11) DEFAULT NULL,
+  `prediksi_tidak_lulus` int(11) NOT NULL,
   `active` int(11) DEFAULT NULL,
   `observers` int(11) DEFAULT NULL,
   `accuracy` double(15,2) DEFAULT NULL,
@@ -83,8 +85,9 @@ CREATE TABLE `data_mahasiswa_on_goings` (
 -- Dumping data for table `data_mahasiswa_on_goings`
 --
 
-INSERT INTO `data_mahasiswa_on_goings` (`id`, `nama`, `hasil_prediksi`, `lulus`, `tidak_lulus`, `active`, `observers`, `accuracy`, `recall_lulus`, `recall_tidak_lulus`, `precision_tidak_lulus`, `precision_lulus`, `created_at`, `updated_at`, `deleted_at`, `data_history_id`) VALUES
-(1, 'tes1', '19062022101652HasilPrediksi.xlsx', 10, 2, 62, 16, 0.90, 1.00, 0.50, 0.80, 0.89, '2022-06-19 15:52:16', '2022-06-19 15:52:27', NULL, 1);
+INSERT INTO `data_mahasiswa_on_goings` (`id`, `nama`, `hasil_prediksi`, `lulus`, `tidak_lulus`, `prediksi_tidak_lulus`, `active`, `observers`, `accuracy`, `recall_lulus`, `recall_tidak_lulus`, `precision_tidak_lulus`, `precision_lulus`, `created_at`, `updated_at`, `deleted_at`, `data_history_id`) VALUES
+(1, 'tes1', '19062022101652HasilPrediksi.xlsx', 10, 2, 0, 62, 16, 0.90, 1.00, 0.50, 0.80, 0.89, '2022-06-19 15:52:16', '2022-06-19 15:52:27', NULL, 1),
+(2, 'tes ongoing local', '20062022090407HasilPrediksi.xlsx', 6, 1, 2, 7, 2, 0.93, 1.00, 0.63, 0.80, 0.92, '2022-06-20 02:07:04', '2022-06-20 02:07:14', NULL, 3);
 
 -- --------------------------------------------------------
 
@@ -200,7 +203,9 @@ CREATE TABLE `media` (
 INSERT INTO `media` (`id`, `model_type`, `model_id`, `uuid`, `collection_name`, `name`, `file_name`, `mime_type`, `disk`, `conversions_disk`, `size`, `manipulations`, `custom_properties`, `generated_conversions`, `responsive_images`, `order_column`, `created_at`, `updated_at`) VALUES
 (1, 'App\\Models\\DataMahasiswa', 1, '142f3c62-3d0f-4ed9-a8fb-4e367f4be4b4', 'data_mahasiswa_data_mahasiswa', 'Data LMS + Nilai - ICEI Rev 21.03.2021 (1)', 'Data-LMS-+-Nilai---ICEI-Rev-21.03.2021-(1).xlsx', 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'public', 'public', 396687, '[]', '[]', '[]', '[]', 1, '2022-06-19 15:28:24', '2022-06-19 15:28:35'),
 (2, 'App\\Models\\DataMahasiswa', 2, 'de17b4bd-2c31-4d35-8005-f6e248af72e1', 'data_mahasiswa_data_mahasiswa', 'Data LMS + Nilai - ICEI Rev 21.03.2021 (1)', 'Data-LMS-+-Nilai---ICEI-Rev-21.03.2021-(1).xlsx', 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'public', 'public', 396687, '[]', '[]', '[]', '[]', 1, '2022-06-19 15:37:55', '2022-06-19 15:38:09'),
-(3, 'App\\Models\\DataMahasiswaOnGoing', 1, '550ad8ef-0318-42ea-8e5c-1098fead4448', 'data_mahasiswa_on_going_data_mahasiswa', 'Contoh Data ICE On Going', 'Contoh-Data-ICE-On-Going.xlsx', 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'public', 'public', 8831, '[]', '[]', '[]', '[]', 1, '2022-06-19 15:51:48', '2022-06-19 15:52:16');
+(3, 'App\\Models\\DataMahasiswaOnGoing', 1, '550ad8ef-0318-42ea-8e5c-1098fead4448', 'data_mahasiswa_on_going_data_mahasiswa', 'Contoh Data ICE On Going', 'Contoh-Data-ICE-On-Going.xlsx', 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'public', 'public', 8831, '[]', '[]', '[]', '[]', 1, '2022-06-19 15:51:48', '2022-06-19 15:52:16'),
+(4, 'App\\Models\\DataMahasiswa', 3, 'e4651a93-a7f0-4387-94ce-c208de08ee8f', 'data_mahasiswa_data_mahasiswa', 'Data LMS + Nilai - ICEI Rev 21.03.2021 (1)', 'Data-LMS-+-Nilai---ICEI-Rev-21.03.2021-(1).xlsx', 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'public', 'public', 396687, '[]', '[]', '[]', '[]', 1, '2022-06-20 02:05:12', '2022-06-20 02:05:15'),
+(5, 'App\\Models\\DataMahasiswaOnGoing', 2, 'c1804624-1bc0-4ed2-b675-bbcdef60d90a', 'data_mahasiswa_on_going_data_mahasiswa', 'Contoh Data ICE On Going', 'Contoh-Data-ICE-On-Going.xlsx', 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'public', 'public', 8831, '[]', '[]', '[]', '[]', 1, '2022-06-20 02:05:45', '2022-06-20 02:07:04');
 
 -- --------------------------------------------------------
 
@@ -649,13 +654,13 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `data_mahasiswas`
 --
 ALTER TABLE `data_mahasiswas`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `data_mahasiswa_on_goings`
 --
 ALTER TABLE `data_mahasiswa_on_goings`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `dosens`
@@ -685,7 +690,7 @@ ALTER TABLE `mata_kuliahs`
 -- AUTO_INCREMENT for table `media`
 --
 ALTER TABLE `media`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `migrations`

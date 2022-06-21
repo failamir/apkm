@@ -21,6 +21,7 @@ class CreateDataMahasiswasTable extends Migration
             $table->float('recall_tidak_lulus', 15, 2)->nullable();
             $table->float('precision_tidak_lulus', 15, 2)->nullable();
             $table->float('precision_lulus', 15, 2)->nullable();
+            $table->string('location')->nullable();
             $table->timestamps();
             $table->softDeletes();
         });

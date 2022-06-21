@@ -4,7 +4,7 @@
       <div class="row">
         <div class="col-md-12">
           <div class="card">
-            <div class="card-header card-header-primary card-header-icon">
+            <div class="card-header card-header-danger card-header-icon">
               <div class="card-icon">
                 <i class="material-icons">add</i>
               </div>
@@ -20,6 +20,12 @@
               <bootstrap-alert />
               <div class="row">
                 <div class="col-md-12">
+                <div class="table-overlay" v-show="loading">
+                  <div class="table-overlay-container">
+                    <material-spinner></material-spinner>
+                    <span>Loading...</span>
+                  </div>
+                </div>
                   <div
                     class="form-group bmd-form-group"
                     :class="{
