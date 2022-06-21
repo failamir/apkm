@@ -3,7 +3,7 @@
     <div class="row">
       <div class="col-md-12">
         <div class="card">
-          <div class="card-header card-header-primary card-header-icon">
+          <div class="card-header card-header-danger card-header-icon">
             <div class="card-icon">
               <i class="material-icons">remove_red_eye</i>
             </div>
@@ -101,18 +101,18 @@
                 <p class="font-weight-bold">
                   Observers : {{ entry.observers }}
                 </p>
-                <p class="font-weight-bold">Accuracy : {{ entry.accuracy }}</p>
+                <p class="font-weight-bold">Accuracy : {{ entry.accuracy*100 }}%</p>
                 <p class="font-weight-bold">
-                  Recall Lulus : {{ entry.recall_lulus }}
+                  Recall Lulus : {{ entry.recall_lulus*100 }}%
                 </p>
                 <p class="font-weight-bold">
-                  Recall Tidak Lulus : {{ entry.recall_tidak_lulus }}
+                  Recall Tidak Lulus : {{ entry.recall_tidak_lulus*100 }}%
                 </p>
                 <p class="font-weight-bold">
-                  Precision Lulus : {{ entry.precision_lulus }}
+                  Precision Lulus : {{ entry.precision_lulus*100 }}%
                 </p>
                 <p class="font-weight-bold">
-                  Precision Tidak Lulus : {{ entry.precision_tidak_lulus }}
+                  Precision Tidak Lulus : {{ entry.precision_tidak_lulus*100 }}%
                 </p>
               </div>
             </div>
@@ -280,7 +280,7 @@ export default {
       console.log(this.charts, "andri");
       this.a = [this.charts.lulus, this.charts.tidaklulus];
       this.b = [this.charts.active, this.charts.observers];
-      console.log(this.a)
+      // console.log(this.a)
       this.series = this.a;
       this.series1 = this.b;
     });

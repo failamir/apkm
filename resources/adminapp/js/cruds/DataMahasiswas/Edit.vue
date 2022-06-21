@@ -57,6 +57,28 @@
                   <div
                     class="form-group bmd-form-group"
                     :class="{
+                      'has-items': entry.mata_kuliah_id !== null,
+                      'is-focused': activeField == 'mata_kuliah'
+                    }"
+                  >
+                    <label class="bmd-label-floating">{{
+                      $t('cruds.dataMahasiswa.fields.mata_kuliah')
+                    }}</label>
+                    <v-select
+                      name="mata_kuliah"
+                      label="id_mtk"
+                      :key="'mata_kuliah-field'"
+                      :value="entry.mata_kuliah_id"
+                      :options="lists.mata_kuliah"
+                      :reduce="entry => entry.id"
+                      @input="updateMataKuliah"
+                      @search.focus="focusField('mata_kuliah')"
+                      @search.blur="clearFocus"
+                    />
+                  </div>
+                  <div
+                    class="form-group bmd-form-group"
+                    :class="{
                       'has-items': entry.batas_nilai,
                       'is-focused': activeField == 'batas_nilai'
                     }"
@@ -289,7 +311,7 @@ export default {
     }
   },
   computed: {
-    ...mapGetters('DataMahasiswasSingle', ['entry', 'loading'])
+    ...mapGetters('DataMahasiswasSingle', ['entry', 'loading', 'lists'])
   },
   beforeDestroy() {
     this.resetState()
@@ -311,6 +333,7 @@ export default {
       'setNama',
       'insertDataMahasiswaFile',
       'removeDataMahasiswaFile',
+      'setMataKuliah',
       'setBatasNilai',
       'setLulus',
       'setTidaklulus',
@@ -324,6 +347,9 @@ export default {
     ]),
     updateNama(e) {
       this.setNama(e.target.value)
+    },
+    updateMataKuliah(value) {
+      this.setMataKuliah(value)
     },
     updateBatasNilai(e) {
       this.setBatasNilai(e.target.value)
