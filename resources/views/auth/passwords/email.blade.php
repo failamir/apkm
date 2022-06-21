@@ -8,7 +8,7 @@
                     <form class="form" method="POST" action="{{ route('password.email') }}">
                         @csrf
                         <div class="card card-login">
-                            <div class="card-header card-header-danger text-center">
+                            <div class="card-header card-header-primary text-center">
                                 <h4 class="card-title">
                                     {{ trans('global.reset_password') }}
                                 </h4>
@@ -39,7 +39,7 @@
                                 </div>
                             </div>
                             <div class="card-footer justify-content-center flex-column">
-                                <button type="submit" class="btn btn-link btn-danger btn-lg">
+                                <button type="submit" class="btn btn-link btn-primary btn-lg">
                                     {{ trans('global.send_password') }}
                                 </button>
                             </div>

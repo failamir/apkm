@@ -4,7 +4,7 @@
       <div class="row">
         <div class="col-md-12">
           <div class="card">
-            <div class="card-header card-header-danger card-header-icon">
+            <div class="card-header card-header-primary card-header-icon">
               <div class="card-icon">
                 <i class="material-icons">edit</i>
               </div>
@@ -301,6 +301,28 @@
                       @blur="clearFocus"
                     />
                   </div>
+                  <div
+                    class="form-group bmd-form-group"
+                    :class="{
+                      'has-items': entry.prediksi_tidak_lulus,
+                      'is-focused': activeField == 'prediksi_tidak_lulus'
+                    }"
+                  >
+                    <label class="bmd-label-floating">{{
+                      $t(
+                        'cruds.dataMahasiswaOnGoing.fields.prediksi_tidak_lulus'
+                      )
+                    }}</label>
+                    <input
+                      class="form-control"
+                      type="number"
+                      step="1"
+                      :value="entry.prediksi_tidak_lulus"
+                      @input="updatePrediksiTidakLulus"
+                      @focus="focusField('prediksi_tidak_lulus')"
+                      @blur="clearFocus"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
@@ -369,7 +391,8 @@ export default {
       'setRecallLulus',
       'setRecallTidakLulus',
       'setPrecisionTidakLulus',
-      'setPrecisionLulus'
+      'setPrecisionLulus',
+      'setPrediksiTidakLulus'
     ]),
     updateNama(e) {
       this.setNama(e.target.value)
@@ -409,6 +432,9 @@ export default {
     },
     updatePrecisionLulus(e) {
       this.setPrecisionLulus(e.target.value)
+    },
+    updatePrediksiTidakLulus(e) {
+      this.setPrediksiTidakLulus(e.target.value)
     },
     getRoute(name) {
       return `${axios.defaults.baseURL}${name}/media`

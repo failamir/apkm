@@ -16,6 +16,7 @@ function initialState() {
       recall_tidak_lulus: '',
       precision_tidak_lulus: '',
       precision_lulus: '',
+      prediksi_tidak_lulus: '',
       created_at: '',
       updated_at: '',
       deleted_at: ''
@@ -145,6 +146,9 @@ const actions = {
   setPrecisionLulus({ commit }, value) {
     commit('setPrecisionLulus', value)
   },
+  setPrediksiTidakLulus({ commit }, value) {
+    commit('setPrediksiTidakLulus', value)
+  },
   setCreatedAt({ commit }, value) {
     commit('setCreatedAt', value)
   },
@@ -225,6 +229,9 @@ const mutations = {
   },
   setPrecisionLulus(state, value) {
     state.entry.precision_lulus = value
+  },
+  setPrediksiTidakLulus(state, value) {
+    state.entry.prediksi_tidak_lulus = value
   },
   setCreatedAt(state, value) {
     state.entry.created_at = value

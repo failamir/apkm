@@ -4,6 +4,7 @@ function initialState() {
       id: null,
       nama: '',
       data_mahasiswa: [],
+      mata_kuliah_id: null,
       batas_nilai: '',
       lulus: '',
       tidaklulus: '',
@@ -14,7 +15,7 @@ function initialState() {
       recall_tidak_lulus: '',
       precision_tidak_lulus: '',
       precision_lulus: '',
-      mata_kuliah_id: null,
+      location: '',
       created_at: '',
       updated_at: '',
       deleted_at: ''
@@ -107,6 +108,9 @@ const actions = {
   removeDataMahasiswaFile({ commit }, file) {
     commit('removeDataMahasiswaFile', file)
   },
+  setMataKuliah({ commit }, value) {
+    commit('setMataKuliah', value)
+  },
   setBatasNilai({ commit }, value) {
     commit('setBatasNilai', value)
   },
@@ -137,8 +141,8 @@ const actions = {
   setPrecisionLulus({ commit }, value) {
     commit('setPrecisionLulus', value)
   },
-  setMataKuliah({ commit }, value) {
-    commit('setMataKuliah', value)
+  setLocation({ commit }, value) {
+    commit('setLocation', value)
   },
   setCreatedAt({ commit }, value) {
     commit('setCreatedAt', value)
@@ -185,6 +189,9 @@ const mutations = {
       return item.id !== file.id
     })
   },
+  setMataKuliah(state, value) {
+    state.entry.mata_kuliah_id = value
+  },
   setBatasNilai(state, value) {
     state.entry.batas_nilai = value
   },
@@ -215,8 +222,8 @@ const mutations = {
   setPrecisionLulus(state, value) {
     state.entry.precision_lulus = value
   },
-  setMataKuliah(state, value) {
-    state.entry.mata_kuliah_id = value
+  setLocation(state, value) {
+    state.entry.location = value
   },
   setCreatedAt(state, value) {
     state.entry.created_at = value

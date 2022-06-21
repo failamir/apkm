@@ -32,6 +32,7 @@ class DataMahasiswa extends Model implements HasMedia
     protected $orderable = [
         'id',
         'nama',
+        'mata_kuliah.id_mtk',
         'batas_nilai',
         'lulus',
         'tidaklulus',
@@ -42,12 +43,13 @@ class DataMahasiswa extends Model implements HasMedia
         'recall_tidak_lulus',
         'precision_tidak_lulus',
         'precision_lulus',
-        'mata_kuliah.id_mtk',
+        'location',
     ];
 
     protected $filterable = [
         'id',
         'nama',
+        'mata_kuliah.id_mtk',
         'batas_nilai',
         'lulus',
         'tidaklulus',
@@ -58,11 +60,12 @@ class DataMahasiswa extends Model implements HasMedia
         'recall_tidak_lulus',
         'precision_tidak_lulus',
         'precision_lulus',
-        'mata_kuliah.id_mtk',
+        'location',
     ];
 
     protected $fillable = [
         'nama',
+        'mata_kuliah_id',
         'batas_nilai',
         'lulus',
         'tidaklulus',
@@ -73,7 +76,7 @@ class DataMahasiswa extends Model implements HasMedia
         'recall_tidak_lulus',
         'precision_tidak_lulus',
         'precision_lulus',
-        'mata_kuliah_id',
+        'location',
         'created_at',
         'updated_at',
         'deleted_at',

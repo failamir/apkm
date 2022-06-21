@@ -147,6 +147,14 @@
                           {{ entry.precision_lulus }}
                         </td>
                       </tr>
+                      <tr>
+                        <td class="text-primary">
+                          {{ $t('cruds.dataMahasiswa.fields.location') }}
+                        </td>
+                        <td>
+                          {{ entry.location }}
+                        </td>
+                      </tr>
                     </tbody>
                   </div>
                 </div>
