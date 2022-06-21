@@ -87,7 +87,7 @@ return [
             'id_mahasiswa_helper' => ' ',
             'jurusan'             => 'Jurusan',
             'jurusan_helper'      => ' ',
-            'no_hp'               => 'No HP',
+            'no_hp'               => 'No Hp',
             'no_hp_helper'        => ' ',
         ],
     ],
@@ -97,7 +97,7 @@ return [
         'fields'         => [
             'id'                => 'ID',
             'id_helper'         => ' ',
-            'nama_mtk'          => 'Nama Mata Kuliah',
+            'nama_mtk'          => 'Nama Mtk',
             'nama_mtk_helper'   => ' ',
             'jumlah_sks'        => 'Jumlah SKS',
             'jumlah_sks_helper' => ' ',
@@ -114,8 +114,8 @@ return [
         ],
     ],
     'jurusan' => [
-        'title'          => 'List Jurusan',
-        'title_singular' => 'List Jurusan',
+        'title'          => 'Jurusan',
+        'title_singular' => 'Jurusan',
         'fields'         => [
             'id'                  => 'ID',
             'id_helper'           => ' ',
@@ -153,7 +153,7 @@ return [
             'updated_at_helper' => ' ',
             'deleted_at'        => 'Deleted at',
             'deleted_at_helper' => ' ',
-            'no_hp'             => 'No HP',
+            'no_hp'             => 'No Hp',
             'no_hp_helper'      => ' ',
         ],
     ],
@@ -161,17 +161,13 @@ return [
         'title'          => 'Report',
         'title_singular' => 'Report',
     ],
-    'dataMahasiswaHistory' => [
-        'title'          => 'Proses Mahasiswa History',
-        'title_singular' => 'Proses Mahasiswa History',
-    ],
     'tentangAplikasi' => [
         'title'          => 'Tentang Aplikasi',
         'title_singular' => 'Tentang Aplikasi',
     ],
     'dataMahasiswa' => [
-        'title'          => 'Proses Mahasiswa History',
-        'title_singular' => 'Proses Mahasiswa History',
+        'title'          => 'Data Mahasiswa History',
+        'title_singular' => 'Data Mahasiswa History',
         'fields'         => [
             'id'                           => 'ID',
             'id_helper'                    => ' ',
@@ -185,7 +181,7 @@ return [
             'updated_at_helper'            => ' ',
             'deleted_at'                   => 'Deleted at',
             'deleted_at_helper'            => ' ',
-            'batas_nilai'                  => 'Batas Nilai Akhir Kelulusan',
+            'batas_nilai'                  => 'batas nilai akhir kelulusan',
             'batas_nilai_helper'           => ' ',
             'lulus'                        => 'Lulus',
             'lulus_helper'                 => ' ',
@@ -207,11 +203,13 @@ return [
             'precision_lulus_helper'       => ' ',
             'mata_kuliah'                  => 'Mata Kuliah',
             'mata_kuliah_helper'           => ' ',
+            'location'                     => 'Location',
+            'location_helper'              => ' ',
         ],
     ],
     'dataMahasiswaOnGoing' => [
-        'title'          => 'Proses Mahasiswa Ongoing',
-        'title_singular' => 'Proses Mahasiswa Ongoing',
+        'title'          => 'Data Mahasiswa On Going',
+        'title_singular' => 'Data Mahasiswa On Going',
         'fields'         => [
             'id'                           => 'ID',
             'id_helper'                    => ' ',
@@ -249,6 +247,8 @@ return [
             'precision_lulus_helper'       => ' ',
             'mata_kuliah'                  => 'Mata Kuliah',
             'mata_kuliah_helper'           => ' ',
+            'prediksi_tidak_lulus'         => 'Prediksi Tidak Lulus',
+            'prediksi_tidak_lulus_helper'  => ' ',
         ],
     ],
     'listKampu' => [

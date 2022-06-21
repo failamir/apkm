@@ -87,6 +87,12 @@ class StoreDataMahasiswaOnGoingRequest extends FormRequest
                 'numeric',
                 'nullable',
             ],
+            'prediksi_tidak_lulus' => [
+                'integer',
+                'min:-2147483648',
+                'max:2147483647',
+                'nullable',
+            ],
         ];
     }
 }

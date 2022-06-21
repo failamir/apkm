@@ -4,7 +4,7 @@
       <div class="row">
         <div class="col-md-12">
           <div class="card">
-            <div class="card-header card-header-danger card-header-icon">
+            <div class="card-header card-header-primary card-header-icon">
               <div class="card-icon">
                 <i class="material-icons">edit</i>
               </div>
@@ -276,6 +276,25 @@
                       @blur="clearFocus"
                     />
                   </div>
+                  <div
+                    class="form-group bmd-form-group"
+                    :class="{
+                      'has-items': entry.location,
+                      'is-focused': activeField == 'location'
+                    }"
+                  >
+                    <label class="bmd-label-floating">{{
+                      $t('cruds.dataMahasiswa.fields.location')
+                    }}</label>
+                    <input
+                      class="form-control"
+                      type="text"
+                      :value="entry.location"
+                      @input="updateLocation"
+                      @focus="focusField('location')"
+                      @blur="clearFocus"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
@@ -343,7 +362,8 @@ export default {
       'setRecallLulus',
       'setRecallTidakLulus',
       'setPrecisionTidakLulus',
-      'setPrecisionLulus'
+      'setPrecisionLulus',
+      'setLocation'
     ]),
     updateNama(e) {
       this.setNama(e.target.value)
@@ -380,6 +400,9 @@ export default {
     },
     updatePrecisionLulus(e) {
       this.setPrecisionLulus(e.target.value)
+    },
+    updateLocation(e) {
+      this.setLocation(e.target.value)
     },
     getRoute(name) {
       return `${axios.defaults.baseURL}${name}/media`
