@@ -75,7 +75,7 @@
                     }}</label>
                     <v-select
                       name="mata_kuliah"
-                      label="id_mtk"
+                      label="nama_mtk"
                       :key="'mata_kuliah-field'"
                       :value="entry.mata_kuliah_id"
                       :options="lists.mata_kuliah"

@@ -62,7 +62,7 @@
                         <td>
                           <datatable-single
                             :row="entry"
-                            field="mata_kuliah.id_mtk"
+                            field="mata_kuliah.nama_mtk"
                           >
                           </datatable-single>
                         </td>
