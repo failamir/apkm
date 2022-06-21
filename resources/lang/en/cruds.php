@@ -161,10 +161,6 @@ return [
         'title'          => 'Report',
         'title_singular' => 'Report',
     ],
-    'dataMahasiswaHistory' => [
-        'title'          => 'Data Mahasiswa History',
-        'title_singular' => 'Data Mahasiswa History',
-    ],
     'tentangAplikasi' => [
         'title'          => 'Tentang Aplikasi',
         'title_singular' => 'Tentang Aplikasi',
@@ -250,5 +246,39 @@ return [
             'mata_kuliah'                  => 'Mata Kuliah',
             'mata_kuliah_helper'           => ' ',
         ],
+    ],
+    'listKampu' => [
+        'title'          => 'List Kampus',
+        'title_singular' => 'List Kampu',
+        'fields'         => [
+            'id'                 => 'ID',
+            'id_helper'          => ' ',
+            'id_kampus'          => 'Id Kampus',
+            'id_kampus_helper'   => ' ',
+            'nama_kampus'        => 'Nama Kampus',
+            'nama_kampus_helper' => ' ',
+            'deskripsi'          => 'Deskripsi',
+            'deskripsi_helper'   => ' ',
+            'alamat'             => 'Alamat',
+            'alamat_helper'      => ' ',
+            'created_at'         => 'Created at',
+            'created_at_helper'  => ' ',
+            'updated_at'         => 'Updated at',
+            'updated_at_helper'  => ' ',
+            'deleted_at'         => 'Deleted at',
+            'deleted_at_helper'  => ' ',
+        ],
+    ],
+    'dataMaster' => [
+        'title'          => 'Data Master',
+        'title_singular' => 'Data Master',
+    ],
+    'reportMahasiswaOngoing' => [
+        'title'          => 'Report Mahasiswa Ongoing',
+        'title_singular' => 'Report Mahasiswa Ongoing',
+    ],
+    'reportMahasiswaHistory' => [
+        'title'          => 'Report Mahasiswa History',
+        'title_singular' => 'Report Mahasiswa History',
     ],
 ];
