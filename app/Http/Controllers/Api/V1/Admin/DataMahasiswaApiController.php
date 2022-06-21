@@ -81,7 +81,7 @@ class DataMahasiswaApiController extends Controller
         $dataMahasiswa->update(array_merge(
             $request->validated(),
             ['lulus' => $andri->LulusdanTidakLulus[0]],
-            ['tidak_lulus' => $andri->LulusdanTidakLulus[1]],
+            ['tidaklulus' => $andri->LulusdanTidakLulus[1]],
             ['active' => $andri->MahasiswaActivedanObservers[0]],
             ['observers' => $andri->MahasiswaActivedanObservers[1]],
             ['accuracy' => $andri->Accuracy],

@@ -3,7 +3,7 @@
     <div class="row">
       <div class="col-md-12">
         <div class="card">
-          <div class="card-header card-header-primary card-header-icon">
+          <div class="card-header card-header-danger card-header-icon">
             <div class="card-icon">
               <i class="material-icons">remove_red_eye</i>
             </div>
@@ -82,7 +82,7 @@
                           <!-- {{ entry.hasil_prediksi }} -->
                         </td>
                       </tr>
-                     
+
                     </tbody>
                   </div>
                 </div>
@@ -114,7 +114,8 @@
 
           <div id="wrapper">
             <div id="app" v-on:click="seen = !seen" class="control">
-              <button>Show Nilai Accuracy and Recall</button>
+              <!-- <button>Show Nilai Accuracy and Recall</button> -->
+              <button>Proporsi Mahasiswa Yang Di Prediksi</button>
             </div>
 
             <div v-if="seen" id="hide">
@@ -146,8 +147,8 @@
         </div>
       </div>
         </div>
-      
-      
+
+
       </div>
     </div>
   </div>
@@ -226,7 +227,7 @@ export default {
           width: 380,
           type: "pie",
         },
-        
+
         labels: ["Di Prediski Lulus", "Observers", "Di Prediksi Tidak Lulus"],
         responsive: [
           {
