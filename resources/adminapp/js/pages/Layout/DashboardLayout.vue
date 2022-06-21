@@ -46,46 +46,22 @@ export default {
           gate: 'data_mahasiswa_on_going_access'
         },
         {
-          title: 'cruds.mahasiswa.title',
-          icon: 'table_view',
-          path: { name: 'mahasiswas.index' },
-          gate: 'mahasiswa_access'
-        },
-        {
-          title: 'cruds.mataKuliah.title',
-          icon: 'table_view',
-          path: { name: 'mata_kuliahs.index' },
-          gate: 'mata_kuliah_access'
-        },
-        {
-          title: 'cruds.dosen.title',
-          icon: 'table_view',
-          path: { name: 'dosens.index' },
-          gate: 'dosen_access'
-        },
-        {
-          title: 'cruds.jurusan.title',
-          icon: 'table_view',
-          path: { name: 'jurusans.index' },
-          gate: 'jurusan_access'
-        },
-        {
           title: 'cruds.report.title',
           icon: 'table_view',
           path: { name: 'report' },
           gate: 'report_access',
           children: [
             {
-              title: 'cruds.dataMahasiswaHistory.title',
+              title: 'cruds.reportMahasiswaOngoing.title',
               icon: 'table_view',
-              path: { name: 'data_mahasiswa_histories.index' },
-              gate: 'data_mahasiswa_history_access'
+              path: { name: 'report_mahasiswa_ongoings.index' },
+              gate: 'report_mahasiswa_ongoing_access'
             },
             {
-              title: 'cruds.tentangAplikasi.title',
+              title: 'cruds.reportMahasiswaHistory.title',
               icon: 'table_view',
-              path: { name: 'tentang_aplikasis.index' },
-              gate: 'tentang_aplikasi_access'
+              path: { name: 'report_mahasiswa_histories.index' },
+              gate: 'report_mahasiswa_history_access'
             }
           ]
         },
@@ -112,6 +88,50 @@ export default {
               icon: 'person',
               path: { name: 'users.index' },
               gate: 'user_access'
+            }
+          ]
+        },
+        {
+          title: 'cruds.dataMaster.title',
+          icon: 'table_view',
+          path: { name: 'data_master' },
+          gate: 'data_master_access',
+          children: [
+            {
+              title: 'cruds.tentangAplikasi.title',
+              icon: 'table_view',
+              path: { name: 'tentang_aplikasis.index' },
+              gate: 'tentang_aplikasi_access'
+            },
+            {
+              title: 'cruds.mahasiswa.title',
+              icon: 'table_view',
+              path: { name: 'mahasiswas.index' },
+              gate: 'mahasiswa_access'
+            },
+            {
+              title: 'cruds.mataKuliah.title',
+              icon: 'table_view',
+              path: { name: 'mata_kuliahs.index' },
+              gate: 'mata_kuliah_access'
+            },
+            {
+              title: 'cruds.dosen.title',
+              icon: 'table_view',
+              path: { name: 'dosens.index' },
+              gate: 'dosen_access'
+            },
+            {
+              title: 'cruds.jurusan.title',
+              icon: 'table_view',
+              path: { name: 'jurusans.index' },
+              gate: 'jurusan_access'
+            },
+            {
+              title: 'cruds.listKampu.title',
+              icon: 'table_view',
+              path: { name: 'list_kampus.index' },
+              gate: 'list_kampu_access'
             }
           ]
         }

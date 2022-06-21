@@ -9,7 +9,7 @@
             </div>
             <h4 class="card-title">
               {{ $t('global.table') }}
-              <strong>{{ $t('cruds.dataMahasiswaOnGoing.title') }}</strong>
+              <strong>{{ $t('cruds.listKampu.title') }}</strong>
             </h4>
           </div>
           <div class="card-body">
@@ -72,8 +72,6 @@ import DatatableActions from '@components/Datatables/DatatableActions'
 import TranslatedHeader from '@components/Datatables/TranslatedHeader'
 import HeaderSettings from '@components/Datatables/HeaderSettings'
 import GlobalSearch from '@components/Datatables/GlobalSearch'
-import DatatableSingle from '@components/Datatables/DatatableSingle'
-import DatatableAttachments from '@components/Datatables/DatatableAttachments'
 
 export default {
   components: {
@@ -84,95 +82,33 @@ export default {
     return {
       columns: [
         {
-          title: 'cruds.dataMahasiswaOnGoing.fields.id',
+          title: 'cruds.listKampu.fields.id',
           field: 'id',
           thComp: TranslatedHeader,
           sortable: true,
           colStyle: 'width: 100px;'
         },
         {
-          title: 'cruds.dataMahasiswaOnGoing.fields.nama',
-          field: 'nama',
+          title: 'cruds.listKampu.fields.id_kampus',
+          field: 'id_kampus',
           thComp: TranslatedHeader,
           sortable: true
         },
         {
-          title: 'cruds.dataMahasiswaOnGoing.fields.data_history',
-          field: 'data_history.nama',
-          thComp: TranslatedHeader,
-          tdComp: DatatableSingle,
-          sortable: true
-        },
-        {
-          title: 'cruds.dataMahasiswaOnGoing.fields.mata_kuliah',
-          field: 'mata_kuliah.id_mtk',
-          thComp: TranslatedHeader,
-          tdComp: DatatableSingle,
-          sortable: true
-        },
-        {
-          title: 'cruds.dataMahasiswaOnGoing.fields.data_mahasiswa',
-          field: 'data_mahasiswa',
-          thComp: TranslatedHeader,
-          tdComp: DatatableAttachments
-        },
-        {
-          title: 'cruds.dataMahasiswaOnGoing.fields.hasil_prediksi',
-          field: 'hasil_prediksi',
+          title: 'cruds.listKampu.fields.nama_kampus',
+          field: 'nama_kampus',
           thComp: TranslatedHeader,
           sortable: true
         },
         {
-          title: 'cruds.dataMahasiswaOnGoing.fields.lulus',
-          field: 'lulus',
+          title: 'cruds.listKampu.fields.deskripsi',
+          field: 'deskripsi',
           thComp: TranslatedHeader,
           sortable: true
         },
         {
-          title: 'cruds.dataMahasiswaOnGoing.fields.tidak_lulus',
-          field: 'tidak_lulus',
-          thComp: TranslatedHeader,
-          sortable: true
-        },
-        {
-          title: 'cruds.dataMahasiswaOnGoing.fields.active',
-          field: 'active',
-          thComp: TranslatedHeader,
-          sortable: true
-        },
-        {
-          title: 'cruds.dataMahasiswaOnGoing.fields.observers',
-          field: 'observers',
-          thComp: TranslatedHeader,
-          sortable: true
-        },
-        {
-          title: 'cruds.dataMahasiswaOnGoing.fields.accuracy',
-          field: 'accuracy',
-          thComp: TranslatedHeader,
-          sortable: true
-        },
-        {
-          title: 'cruds.dataMahasiswaOnGoing.fields.recall_lulus',
-          field: 'recall_lulus',
-          thComp: TranslatedHeader,
-          sortable: true
-        },
-        {
-          title: 'cruds.dataMahasiswaOnGoing.fields.recall_tidak_lulus',
-          field: 'recall_tidak_lulus',
-          thComp: TranslatedHeader,
-          sortable: true
-        },
-        {
-          title: 'cruds.dataMahasiswaOnGoing.fields.precision_tidak_lulus',
-          field: 'precision_tidak_lulus',
-          thComp: TranslatedHeader,
-          sortable: true
-        },
-        {
-          title: 'cruds.dataMahasiswaOnGoing.fields.precision_lulus',
-          field: 'precision_lulus',
+          title: 'cruds.listKampu.fields.alamat',
+          field: 'alamat',
           thComp: TranslatedHeader,
           sortable: true
         },
@@ -188,9 +124,9 @@ export default {
       ],
       query: { sort: 'id', order: 'desc', limit: 100, s: '' },
       xprops: {
-        module: 'DataMahasiswaOnGoingsIndex',
-        route: 'data_mahasiswa_on_goings',
-        permission_prefix: 'data_mahasiswa_on_going_'
+        module: 'ListKampusIndex',
+        route: 'list_kampus',
+        permission_prefix: 'list_kampu_'
       }
     }
   },
@@ -198,7 +134,7 @@ export default {
     this.resetState()
   },
   computed: {
-    ...mapGetters('DataMahasiswaOnGoingsIndex', ['data', 'total', 'loading'])
+    ...mapGetters('ListKampusIndex', ['data', 'total', 'loading'])
   },
   watch: {
     query: {
@@ -210,7 +146,7 @@ export default {
     }
   },
   methods: {
-    ...mapActions('DataMahasiswaOnGoingsIndex', [
+    ...mapActions('ListKampusIndex', [
       'fetchIndexData',
       'setQuery',
       'resetState'
