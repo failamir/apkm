@@ -1,4 +1,15 @@
-(window["webpackJsonp"] = window["webpackJsonp"] || []).push([[51],{
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([[63],{
+
+/***/ "./node_modules/@ckeditor/ckeditor5-build-classic/build/ckeditor.js":
+/*!**************************************************************************!*\
+  !*** ./node_modules/@ckeditor/ckeditor5-build-classic/build/ckeditor.js ***!
+  \**************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+throw new Error("Module build failed: Error: ENOENT: no such file or directory, open '/Users/macbook/GitHub/apkm/node_modules/@ckeditor/ckeditor5-build-classic/build/ckeditor.js'");
+
+/***/ }),
 
 /***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/cruds/Kampus/Edit.vue?vue&type=script&lang=js&":
 /*!**************************************************************************************************************************************************************************!*\

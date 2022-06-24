@@ -107,35 +107,6 @@ __webpack_require__.r(__webpack_exports__);
           gate: 'report_mahasiswa_history_access'
         }]
       }, {
-        title: 'cruds.userManagement.title',
-        icon: 'person',
-        path: {
-          name: 'user_management'
-        },
-        gate: 'user_management_access',
-        children: [{
-          title: 'cruds.permission.title',
-          icon: 'perm_data_setting',
-          path: {
-            name: 'permissions.index'
-          },
-          gate: 'permission_access'
-        }, {
-          title: 'cruds.role.title',
-          icon: 'group',
-          path: {
-            name: 'roles.index'
-          },
-          gate: 'role_access'
-        }, {
-          title: 'cruds.user.title',
-          icon: 'person',
-          path: {
-            name: 'users.index'
-          },
-          gate: 'user_access'
-        }]
-      }, {
         title: 'cruds.dataMaster.title',
         icon: 'table_view',
         path: {
@@ -184,6 +155,35 @@ __webpack_require__.r(__webpack_exports__);
             name: 'kampus.index'
           },
           gate: 'kampu_access'
+        }]
+      }, {
+        title: 'cruds.userManagement.title',
+        icon: 'person',
+        path: {
+          name: 'user_management'
+        },
+        gate: 'user_management_access',
+        children: [{
+          title: 'cruds.permission.title',
+          icon: 'perm_data_setting',
+          path: {
+            name: 'permissions.index'
+          },
+          gate: 'permission_access'
+        }, {
+          title: 'cruds.role.title',
+          icon: 'group',
+          path: {
+            name: 'roles.index'
+          },
+          gate: 'role_access'
+        }, {
+          title: 'cruds.user.title',
+          icon: 'person',
+          path: {
+            name: 'users.index'
+          },
+          gate: 'user_access'
         }]
       }]
     };
