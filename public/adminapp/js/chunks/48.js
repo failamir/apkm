@@ -230,7 +230,7 @@ var render = function () {
                 "div",
                 {
                   staticClass:
-                    "card-header card-header-primary card-header-icon",
+                    "card-header card-header-danger card-header-icon",
                 },
                 [
                   _vm._m(0),
