@@ -4,7 +4,7 @@
       <div class="row">
         <div class="col-md-12">
           <div class="card">
-            <div class="card-header card-header-danger card-header-icon">
+            <div class="card-header card-header-primary card-header-icon">
               <div class="card-icon">
                 <i class="material-icons">add</i>
               </div>
@@ -20,12 +20,6 @@
               <bootstrap-alert />
               <div class="row">
                 <div class="col-md-12">
-                <div class="table-overlay" v-show="loading">
-                  <div class="table-overlay-container">
-                    <material-spinner></material-spinner>
-                    <span>Loading...</span>
-                  </div>
-                </div>
                   <div
                     class="form-group bmd-form-group"
                     :class="{
@@ -45,7 +39,21 @@
                       @blur="clearFocus"
                     />
                   </div>
-                   <div
+                  <div class="form-group">
+                    <label>{{
+                      $t('cruds.dataMahasiswa.fields.data_mahasiswa')
+                    }}</label>
+                    <attachment
+                      :route="getRoute('data-mahasiswas')"
+                      :collection-name="'data_mahasiswa_data_mahasiswa'"
+                      :media="entry.data_mahasiswa"
+                      :max-file-size="132"
+                      @file-uploaded="insertDataMahasiswaFile"
+                      @file-removed="removeDataMahasiswaFile"
+                      :max-files="1"
+                    />
+                  </div>
+                  <div
                     class="form-group bmd-form-group"
                     :class="{
                       'has-items': entry.mata_kuliah_id !== null,
@@ -65,20 +73,6 @@
                       @input="updateMataKuliah"
                       @search.focus="focusField('mata_kuliah')"
                       @search.blur="clearFocus"
-                    />
-                  </div>
-                  <div class="form-group">
-                    <label>{{
-                      $t('cruds.dataMahasiswa.fields.data_mahasiswa')
-                    }}</label>
-                    <attachment
-                      :route="getRoute('data-mahasiswas')"
-                      :collection-name="'data_mahasiswa_data_mahasiswa'"
-                      :media="entry.data_mahasiswa"
-                      :max-file-size="132"
-                      @file-uploaded="insertDataMahasiswaFile"
-                      @file-removed="removeDataMahasiswaFile"
-                      :max-files="1"
                     />
                   </div>
                   <div
@@ -101,7 +95,7 @@
                       @blur="clearFocus"
                     />
                   </div>
-                  <!-- <div
+                  <div
                     class="form-group bmd-form-group"
                     :class="{
                       'has-items': entry.lulus,
@@ -124,20 +118,20 @@
                   <div
                     class="form-group bmd-form-group"
                     :class="{
-                      'has-items': entry.tidaklulus,
-                      'is-focused': activeField == 'tidaklulus'
+                      'has-items': entry.tidak_lulus,
+                      'is-focused': activeField == 'tidak_lulus'
                     }"
                   >
                     <label class="bmd-label-floating">{{
-                      $t('cruds.dataMahasiswa.fields.tidaklulus')
+                      $t('cruds.dataMahasiswa.fields.tidak_lulus')
                     }}</label>
                     <input
                       class="form-control"
                       type="number"
                       step="1"
-                      :value="entry.tidaklulus"
-                      @input="updateTidaklulus"
-                      @focus="focusField('tidaklulus')"
+                      :value="entry.tidak_lulus"
+                      @input="updateTidakLulus"
+                      @focus="focusField('tidak_lulus')"
                       @blur="clearFocus"
                     />
                   </div>
@@ -280,7 +274,26 @@
                       @focus="focusField('precision_lulus')"
                       @blur="clearFocus"
                     />
-                  </div> -->
+                  </div>
+                  <div
+                    class="form-group bmd-form-group"
+                    :class="{
+                      'has-items': entry.location,
+                      'is-focused': activeField == 'location'
+                    }"
+                  >
+                    <label class="bmd-label-floating">{{
+                      $t('cruds.dataMahasiswa.fields.location')
+                    }}</label>
+                    <input
+                      class="form-control"
+                      type="text"
+                      :value="entry.location"
+                      @input="updateLocation"
+                      @focus="focusField('location')"
+                      @blur="clearFocus"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
@@ -316,7 +329,7 @@ export default {
     }
   },
   computed: {
-    ...mapGetters('DataMahasiswasSingle', ['entry', 'loading','lists'])
+    ...mapGetters('DataMahasiswasSingle', ['entry', 'loading', 'lists'])
   },
   mounted() {
     this.fetchCreateData()
@@ -334,7 +347,7 @@ export default {
       'setMataKuliah',
       'setBatasNilai',
       'setLulus',
-      'setTidaklulus',
+      'setTidakLulus',
       'setActive',
       'setObservers',
       'setAccuracy',
@@ -342,6 +355,7 @@ export default {
       'setRecallTidakLulus',
       'setPrecisionTidakLulus',
       'setPrecisionLulus',
+      'setLocation',
       'fetchCreateData'
     ]),
     updateNama(e) {
@@ -356,8 +370,8 @@ export default {
     updateLulus(e) {
       this.setLulus(e.target.value)
     },
-    updateTidaklulus(e) {
-      this.setTidaklulus(e.target.value)
+    updateTidakLulus(e) {
+      this.setTidakLulus(e.target.value)
     },
     updateActive(e) {
       this.setActive(e.target.value)
@@ -379,6 +393,9 @@ export default {
     },
     updatePrecisionLulus(e) {
       this.setPrecisionLulus(e.target.value)
+    },
+    updateLocation(e) {
+      this.setLocation(e.target.value)
     },
     getRoute(name) {
       return `${axios.defaults.baseURL}${name}/media`
