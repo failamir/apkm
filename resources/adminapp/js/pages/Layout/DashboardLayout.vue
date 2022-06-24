@@ -96,26 +96,6 @@ export default {
           ]
         },
         {
-          title: 'cruds.report.title',
-          icon: 'table_view',
-          path: { name: 'report' },
-          gate: 'report_access',
-          children: [
-            {
-              title: 'cruds.reportMahasiswaOngoing.title',
-              icon: 'table_view',
-              path: { name: 'report_mahasiswa_ongoings.index' },
-              gate: 'report_mahasiswa_ongoing_access'
-            },
-            {
-              title: 'cruds.reportMahasiswaHistory.title',
-              icon: 'table_view',
-              path: { name: 'report_mahasiswa_histories.index' },
-              gate: 'report_mahasiswa_history_access'
-            }
-          ]
-        },
-        {
           title: 'cruds.userManagement.title',
           icon: 'person',
           path: { name: 'user_management' },
@@ -138,6 +118,26 @@ export default {
               icon: 'person',
               path: { name: 'users.index' },
               gate: 'user_access'
+            }
+          ]
+        },
+        {
+          title: 'cruds.report.title',
+          icon: 'table_view',
+          path: { name: 'report' },
+          gate: 'report_access',
+          children: [
+            {
+              title: 'cruds.reportMahasiswaOngoing.title',
+              icon: 'table_view',
+              path: { name: 'report_mahasiswa_ongoings.index' },
+              gate: 'report_mahasiswa_ongoing_access'
+            },
+            {
+              title: 'cruds.reportMahasiswaHistory.title',
+              icon: 'table_view',
+              path: { name: 'report_mahasiswa_histories.index' },
+              gate: 'report_mahasiswa_history_access'
             }
           ]
         }
