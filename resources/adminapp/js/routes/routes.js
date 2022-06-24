@@ -66,23 +66,118 @@ const routes = [
         meta: { title: 'cruds.dataMahasiswaOnGoing.title' }
       },
       {
+        path: 'mahasiswas',
+        name: 'mahasiswas.index',
+        component: () => import('@cruds/Mahasiswas/Index.vue'),
+        meta: { title: 'cruds.mahasiswa.title' }
+      },
+      {
+        path: 'mahasiswas/create',
+        name: 'mahasiswas.create',
+        component: () => import('@cruds/Mahasiswas/Create.vue'),
+        meta: { title: 'cruds.mahasiswa.title' }
+      },
+      {
+        path: 'mahasiswas/:id',
+        name: 'mahasiswas.show',
+        component: () => import('@cruds/Mahasiswas/Show.vue'),
+        meta: { title: 'cruds.mahasiswa.title' }
+      },
+      {
+        path: 'mahasiswas/:id/edit',
+        name: 'mahasiswas.edit',
+        component: () => import('@cruds/Mahasiswas/Edit.vue'),
+        meta: { title: 'cruds.mahasiswa.title' }
+      },
+      {
+        path: 'mata-kuliahs',
+        name: 'mata_kuliahs.index',
+        component: () => import('@cruds/MataKuliahs/Index.vue'),
+        meta: { title: 'cruds.mataKuliah.title' }
+      },
+      {
+        path: 'mata-kuliahs/create',
+        name: 'mata_kuliahs.create',
+        component: () => import('@cruds/MataKuliahs/Create.vue'),
+        meta: { title: 'cruds.mataKuliah.title' }
+      },
+      {
+        path: 'mata-kuliahs/:id',
+        name: 'mata_kuliahs.show',
+        component: () => import('@cruds/MataKuliahs/Show.vue'),
+        meta: { title: 'cruds.mataKuliah.title' }
+      },
+      {
+        path: 'mata-kuliahs/:id/edit',
+        name: 'mata_kuliahs.edit',
+        component: () => import('@cruds/MataKuliahs/Edit.vue'),
+        meta: { title: 'cruds.mataKuliah.title' }
+      },
+      {
+        path: 'dosens',
+        name: 'dosens.index',
+        component: () => import('@cruds/Dosens/Index.vue'),
+        meta: { title: 'cruds.dosen.title' }
+      },
+      {
+        path: 'dosens/create',
+        name: 'dosens.create',
+        component: () => import('@cruds/Dosens/Create.vue'),
+        meta: { title: 'cruds.dosen.title' }
+      },
+      {
+        path: 'dosens/:id',
+        name: 'dosens.show',
+        component: () => import('@cruds/Dosens/Show.vue'),
+        meta: { title: 'cruds.dosen.title' }
+      },
+      {
+        path: 'dosens/:id/edit',
+        name: 'dosens.edit',
+        component: () => import('@cruds/Dosens/Edit.vue'),
+        meta: { title: 'cruds.dosen.title' }
+      },
+      {
+        path: 'jurusans',
+        name: 'jurusans.index',
+        component: () => import('@cruds/Jurusans/Index.vue'),
+        meta: { title: 'cruds.jurusan.title' }
+      },
+      {
+        path: 'jurusans/create',
+        name: 'jurusans.create',
+        component: () => import('@cruds/Jurusans/Create.vue'),
+        meta: { title: 'cruds.jurusan.title' }
+      },
+      {
+        path: 'jurusans/:id',
+        name: 'jurusans.show',
+        component: () => import('@cruds/Jurusans/Show.vue'),
+        meta: { title: 'cruds.jurusan.title' }
+      },
+      {
+        path: 'jurusans/:id/edit',
+        name: 'jurusans.edit',
+        component: () => import('@cruds/Jurusans/Edit.vue'),
+        meta: { title: 'cruds.jurusan.title' }
+      },
+      {
         path: 'report',
         name: 'report',
         component: View,
-        redirect: { name: 'report_mahasiswa_ongoings.index' },
+        redirect: { name: 'data_mahasiswa_histories.index' },
         children: [
           {
-            path: 'report-mahasiswa-ongoings',
-            name: 'report_mahasiswa_ongoings.index',
-            component: () => import('@cruds/ReportMahasiswaOngoings/Index.vue'),
-            meta: { title: 'cruds.reportMahasiswaOngoing.title' }
+            path: 'data-mahasiswa-histories',
+            name: 'data_mahasiswa_histories.index',
+            component: () => import('@cruds/DataMahasiswaHistories/Index.vue'),
+            meta: { title: 'cruds.dataMahasiswaHistory.title' }
           },
           {
-            path: 'report-mahasiswa-histories',
-            name: 'report_mahasiswa_histories.index',
-            component: () =>
-              import('@cruds/ReportMahasiswaHistories/Index.vue'),
-            meta: { title: 'cruds.reportMahasiswaHistory.title' }
+            path: 'tentang-aplikasis',
+            name: 'tentang_aplikasis.index',
+            component: () => import('@cruds/TentangAplikasis/Index.vue'),
+            meta: { title: 'cruds.tentangAplikasi.title' }
           }
         ]
       },
@@ -163,140 +258,6 @@ const routes = [
             name: 'users.edit',
             component: () => import('@cruds/Users/Edit.vue'),
             meta: { title: 'cruds.user.title' }
-          }
-        ]
-      },
-      {
-        path: 'data-master',
-        name: 'data_master',
-        component: View,
-        redirect: { name: 'tentang_aplikasis.index' },
-        children: [
-          {
-            path: 'tentang-aplikasis',
-            name: 'tentang_aplikasis.index',
-            component: () => import('@cruds/TentangAplikasis/Index.vue'),
-            meta: { title: 'cruds.tentangAplikasi.title' }
-          },
-          {
-            path: 'mahasiswas',
-            name: 'mahasiswas.index',
-            component: () => import('@cruds/Mahasiswas/Index.vue'),
-            meta: { title: 'cruds.mahasiswa.title' }
-          },
-          {
-            path: 'mahasiswas/create',
-            name: 'mahasiswas.create',
-            component: () => import('@cruds/Mahasiswas/Create.vue'),
-            meta: { title: 'cruds.mahasiswa.title' }
-          },
-          {
-            path: 'mahasiswas/:id',
-            name: 'mahasiswas.show',
-            component: () => import('@cruds/Mahasiswas/Show.vue'),
-            meta: { title: 'cruds.mahasiswa.title' }
-          },
-          {
-            path: 'mahasiswas/:id/edit',
-            name: 'mahasiswas.edit',
-            component: () => import('@cruds/Mahasiswas/Edit.vue'),
-            meta: { title: 'cruds.mahasiswa.title' }
-          },
-          {
-            path: 'mata-kuliahs',
-            name: 'mata_kuliahs.index',
-            component: () => import('@cruds/MataKuliahs/Index.vue'),
-            meta: { title: 'cruds.mataKuliah.title' }
-          },
-          {
-            path: 'mata-kuliahs/create',
-            name: 'mata_kuliahs.create',
-            component: () => import('@cruds/MataKuliahs/Create.vue'),
-            meta: { title: 'cruds.mataKuliah.title' }
-          },
-          {
-            path: 'mata-kuliahs/:id',
-            name: 'mata_kuliahs.show',
-            component: () => import('@cruds/MataKuliahs/Show.vue'),
-            meta: { title: 'cruds.mataKuliah.title' }
-          },
-          {
-            path: 'mata-kuliahs/:id/edit',
-            name: 'mata_kuliahs.edit',
-            component: () => import('@cruds/MataKuliahs/Edit.vue'),
-            meta: { title: 'cruds.mataKuliah.title' }
-          },
-          {
-            path: 'dosens',
-            name: 'dosens.index',
-            component: () => import('@cruds/Dosens/Index.vue'),
-            meta: { title: 'cruds.dosen.title' }
-          },
-          {
-            path: 'dosens/create',
-            name: 'dosens.create',
-            component: () => import('@cruds/Dosens/Create.vue'),
-            meta: { title: 'cruds.dosen.title' }
-          },
-          {
-            path: 'dosens/:id',
-            name: 'dosens.show',
-            component: () => import('@cruds/Dosens/Show.vue'),
-            meta: { title: 'cruds.dosen.title' }
-          },
-          {
-            path: 'dosens/:id/edit',
-            name: 'dosens.edit',
-            component: () => import('@cruds/Dosens/Edit.vue'),
-            meta: { title: 'cruds.dosen.title' }
-          },
-          {
-            path: 'jurusans',
-            name: 'jurusans.index',
-            component: () => import('@cruds/Jurusans/Index.vue'),
-            meta: { title: 'cruds.jurusan.title' }
-          },
-          {
-            path: 'jurusans/create',
-            name: 'jurusans.create',
-            component: () => import('@cruds/Jurusans/Create.vue'),
-            meta: { title: 'cruds.jurusan.title' }
-          },
-          {
-            path: 'jurusans/:id',
-            name: 'jurusans.show',
-            component: () => import('@cruds/Jurusans/Show.vue'),
-            meta: { title: 'cruds.jurusan.title' }
-          },
-          {
-            path: 'jurusans/:id/edit',
-            name: 'jurusans.edit',
-            component: () => import('@cruds/Jurusans/Edit.vue'),
-            meta: { title: 'cruds.jurusan.title' }
-          },
-          {
-            path: 'list-kampus',
-            name: 'list_kampus.index',
-            component: () => import('@cruds/ListKampus/Index.vue'),
-            meta: { title: 'cruds.listKampu.title' }
-          },
-          {
-            path: 'list-kampus/create',
-            name: 'list_kampus.create',
-            component: () => import('@cruds/ListKampus/Create.vue'),
-            meta: { title: 'cruds.listKampu.title' }
-          },
-          {
-            path: 'list-kampus/:id',
-            name: 'list_kampus.show',
-            component: () => import('@cruds/ListKampus/Show.vue'),
-            meta: { title: 'cruds.listKampu.title' }
-          },
-          {
-            path: 'list-kampus/:id/edit',
-            name: 'list_kampus.edit',
-            component: () => import('@cruds/ListKampus/Edit.vue'),
-            meta: { title: 'cruds.listKampu.title' }
           }
         ]
       }

@@ -3,7 +3,7 @@
     <div class="row">
       <div class="col-md-12">
         <div class="card">
-          <div class="card-header card-header-primary card-header-icon">
+          <div class="card-header card-header-danger card-header-icon">
             <div class="card-icon">
               <i class="material-icons">assignment</i>
             </div>
@@ -14,7 +14,7 @@
           </div>
           <div class="card-body">
             <router-link
-              class="btn btn-primary"
+              class="btn btn-danger"
               v-if="$can(xprops.permission_prefix + 'create')"
               :to="{ name: xprops.route + '.create' }"
             >
@@ -73,7 +73,6 @@ import TranslatedHeader from '@components/Datatables/TranslatedHeader'
 import HeaderSettings from '@components/Datatables/HeaderSettings'
 import GlobalSearch from '@components/Datatables/GlobalSearch'
 import DatatableAttachments from '@components/Datatables/DatatableAttachments'
-import DatatableSingle from '@components/Datatables/DatatableSingle'
 
 export default {
   components: {
@@ -103,78 +102,65 @@ export default {
           tdComp: DatatableAttachments
         },
         {
-          title: 'cruds.dataMahasiswa.fields.mata_kuliah',
-          field: 'mata_kuliah.nama_mtk',
-          thComp: TranslatedHeader,
-          tdComp: DatatableSingle,
-          sortable: true
-        },
-        {
           title: 'cruds.dataMahasiswa.fields.batas_nilai',
           field: 'batas_nilai',
           thComp: TranslatedHeader,
           sortable: true
         },
-        {
-          title: 'cruds.dataMahasiswa.fields.lulus',
-          field: 'lulus',
-          thComp: TranslatedHeader,
-          sortable: true
-        },
-        {
-          title: 'cruds.dataMahasiswa.fields.tidaklulus',
-          field: 'tidaklulus',
-          thComp: TranslatedHeader,
-          sortable: true
-        },
-        {
-          title: 'cruds.dataMahasiswa.fields.active',
-          field: 'active',
-          thComp: TranslatedHeader,
-          sortable: true
-        },
-        {
-          title: 'cruds.dataMahasiswa.fields.observers',
-          field: 'observers',
-          thComp: TranslatedHeader,
-          sortable: true
-        },
-        {
-          title: 'cruds.dataMahasiswa.fields.accuracy',
-          field: 'accuracy',
-          thComp: TranslatedHeader,
-          sortable: true
-        },
-        {
-          title: 'cruds.dataMahasiswa.fields.recall_lulus',
-          field: 'recall_lulus',
-          thComp: TranslatedHeader,
-          sortable: true
-        },
-        {
-          title: 'cruds.dataMahasiswa.fields.recall_tidak_lulus',
-          field: 'recall_tidak_lulus',
-          thComp: TranslatedHeader,
-          sortable: true
-        },
-        {
-          title: 'cruds.dataMahasiswa.fields.precision_tidak_lulus',
-          field: 'precision_tidak_lulus',
-          thComp: TranslatedHeader,
-          sortable: true
-        },
-        {
-          title: 'cruds.dataMahasiswa.fields.precision_lulus',
-          field: 'precision_lulus',
-          thComp: TranslatedHeader,
-          sortable: true
-        },
-        {
-          title: 'cruds.dataMahasiswa.fields.location',
-          field: 'location',
-          thComp: TranslatedHeader,
-          sortable: true
-        },
+        // {
+        //   title: 'cruds.dataMahasiswa.fields.lulus',
+        //   field: 'lulus',
+        //   thComp: TranslatedHeader,
+        //   sortable: true
+        // },
+        // {
+        //   title: 'cruds.dataMahasiswa.fields.tidaklulus',
+        //   field: 'tidaklulus',
+        //   thComp: TranslatedHeader,
+        //   sortable: true
+        // },
+        // {
+        //   title: 'cruds.dataMahasiswa.fields.active',
+        //   field: 'active',
+        //   thComp: TranslatedHeader,
+        //   sortable: true
+        // },
+        // {
+        //   title: 'cruds.dataMahasiswa.fields.observers',
+        //   field: 'observers',
+        //   thComp: TranslatedHeader,
+        //   sortable: true
+        // },
+        // {
+        //   title: 'cruds.dataMahasiswa.fields.accuracy',
+        //   field: 'accuracy',
+        //   thComp: TranslatedHeader,
+        //   sortable: true
+        // },
+        // {
+        //   title: 'cruds.dataMahasiswa.fields.recall_lulus',
+        //   field: 'recall_lulus',
+        //   thComp: TranslatedHeader,
+        //   sortable: true
+        // },
+        // {
+        //   title: 'cruds.dataMahasiswa.fields.recall_tidak_lulus',
+        //   field: 'recall_tidak_lulus',
+        //   thComp: TranslatedHeader,
+        //   sortable: true
+        // },
+        // {
+        //   title: 'cruds.dataMahasiswa.fields.precision_tidak_lulus',
+        //   field: 'precision_tidak_lulus',
+        //   thComp: TranslatedHeader,
+        //   sortable: true
+        // },
+        // {
+        //   title: 'cruds.dataMahasiswa.fields.precision_lulus',
+        //   field: 'precision_lulus',
+        //   thComp: TranslatedHeader,
+        //   sortable: true
+        // },
         {
           title: 'global.actions',
           thComp: TranslatedHeader,

@@ -43,7 +43,7 @@
 /******/
 /******/ 	// script path function
 /******/ 	function jsonpScriptSrc(chunkId) {
-/******/ 		return __webpack_require__.p + "adminapp/js/chunks/" + ({}[chunkId]||chunkId) + ".js?id=" + {"0":"11e7ac48bee974910950","1":"bf2265991efc316a8ca9","2":"e06b5eeabb65e04a49dc","3":"00a0bf977788bdfbef8f","4":"834eeebe0774129fc9b3","5":"6603bb76e373c43866fd","6":"6fc534ffe7a65641589b","7":"3f4185531dbfe0512975","8":"a8d7e2c90e2c9da7f1ed","9":"18b8e9fb536164a37b77","10":"f2b36d7ccea024fb2eb0","11":"7ba57b089f881e43daf8","12":"945dd351fe96c522cec6","13":"7bdad032483bf1203aad","14":"6664784280649adf2982","15":"23592ea221550061b40b","16":"2e83f99a2834a40ef842","17":"a9ed73b72e0d49d4dcf3","18":"e6768082aaa4b0a1f9f7","19":"48baa114fcafaaeb7834","20":"1ad0267913ad37c971bc","21":"b5dfdb269d6ca1b1643e","22":"d38b0ef04a7cb1eba18f","23":"2178a21a719b5c40545c","24":"0ec20fe621e7426a9b76","25":"4748f579a4af3ddc436a","26":"b2d2a7f53d6abd0c098d","27":"483c4d1b3bd3c3732f20","28":"064fbc9c819a3b26b968","29":"f1ea60808447cf56344c","30":"7a159b52326718c76ba0","31":"354a6d7ec0c46d0a2002","32":"6d8899eccf65e23045a7","33":"521a2106db066d822015","34":"9ce641391b6b906666f0","35":"716177fd08737d9ff72b","36":"8f7c39e1aed897a5e264","37":"b2ce51a177911ee10538","38":"61beff7c667d9f478ff7","39":"ae16a9300ad92a1bc361","40":"af04b5fb7efe4b9a2b76","41":"cb488c16a85ef2a01fe7","42":"a32b3f3998bebe3af27e","43":"0cde4a40db5828fff209","44":"2777a3c78165fe5f490a"}[chunkId] + ""
+/******/ 		return __webpack_require__.p + "adminapp/js/chunks/" + ({}[chunkId]||chunkId) + ".js?id=" + {"0":"3d4d6c649e7f78cb2e08","1":"b989b1c1b13a6cbdf516","2":"e06b5eeabb65e04a49dc","3":"00a0bf977788bdfbef8f","4":"834eeebe0774129fc9b3","5":"28defad6d588c8519c29","6":"8482e68dab32f5acf2c1","7":"2600c587d6046701215a","8":"1db8557eaffe4187555d","9":"394eba02866a627f369b","10":"85f76cf01ce96afb7824","11":"cc2e30b46374cdd71f6e","12":"f1d53f0ea38651dd0762","13":"f556a0f59244473d5bc8","14":"77f4089d3e5ed1cdc8c2","15":"f99eaf4c9bc0bb9611a0","16":"3eb76ed3da1dbe6fa1f0","17":"82303a91a3e5c09f5ae8","18":"45808ae499dfed96865a","19":"93dd9d1db6735bbf29d5","20":"6367ff93c379edc04a70","21":"6b2278ca0d9eea346a72","22":"22dc5bf855678578b1b1","23":"01bb069e307bc7f6ee24","24":"d0d02f81bd605cf6db44","25":"bf2d62bce5659d911503","26":"001f598e66c78a400a0a","27":"ae90916cd8c4b9906c8c","28":"c4e64e590e88378d01fc","29":"583fa4eb2231e67e1853","30":"e0a4cef0001b4412e370","31":"ad48ee57a94ec47efacb","32":"4b7091ccbb0587d41de6","33":"af3a10ae0efd0f7b5bd5","34":"ed6baa2e417887b12c3a","35":"8cf2a032bf0688a5f5dd","36":"b00cdf26af2ac50000e0","37":"f6b89ed44458e81ae1b6","38":"7d985f87e525c1724040","39":"6ac8c1189dfecd712474","40":"33b6b3a1b84e5707f3c0","41":"b3dfa13af1a6fdc4dda2","42":"6909166bed4508d56400","43":"df5359d0d0c4cca3ea74","44":"f37d2679867789664015"}[chunkId] + ""
 /******/ 	}
 /******/
 /******/ 	// The require function
@@ -4228,7 +4228,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, "\n.fixed-width[data-v-78ea0fdf] {\r\n  width: 1.3em;\r\n  text-align: center;\r\n  display: inline-block;\n}\r\n", ""]);
+exports.push([module.i, "\n.fixed-width[data-v-78ea0fdf] {\n  width: 1.3em;\n  text-align: center;\n  display: inline-block;\n}\n", ""]);
 
 // exports
 
@@ -4247,7 +4247,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, "\n@media screen and (min-width: 991px) {\n.nav-mobile-menu {\r\n    display: none;\n}\n}\r\n", ""]);
+exports.push([module.i, "\n@media screen and (min-width: 991px) {\n.nav-mobile-menu {\n    display: none;\n}\n}\n", ""]);
 
 // exports
 
@@ -4266,7 +4266,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\n.checkbox-radios[data-v-aed33b06] {\r\n  padding-top: 7px;\r\n  padding-bottom: 7px;\n}\r\n", ""]);
+exports.push([module.i, "\n.checkbox-radios[data-v-aed33b06] {\n  padding-top: 7px;\n  padding-bottom: 7px;\n}\n", ""]);
 
 // exports
 
@@ -55845,6 +55845,7 @@ function initialState() {
       id: null,
       nama: '',
       data_history_id: null,
+      mata_kuliah_id: null,
       data_mahasiswa: [],
       hasil_prediksi: '',
       lulus: '',
@@ -55947,93 +55948,97 @@ var actions = {
     var commit = _ref3.commit;
     commit('setNama', value);
   },
-  setDataHistory: function setDataHistory(_ref4, value) {
+  setMataKuliah: function setMataKuliah(_ref4, value) {
     var commit = _ref4.commit;
+    commit('setMataKuliah', value);
+  },
+  setDataHistory: function setDataHistory(_ref5, value) {
+    var commit = _ref5.commit;
     commit('setDataHistory', value);
   },
-  insertDataMahasiswaFile: function insertDataMahasiswaFile(_ref5, file) {
-    var commit = _ref5.commit;
+  insertDataMahasiswaFile: function insertDataMahasiswaFile(_ref6, file) {
+    var commit = _ref6.commit;
     commit('insertDataMahasiswaFile', file);
   },
-  removeDataMahasiswaFile: function removeDataMahasiswaFile(_ref6, file) {
-    var commit = _ref6.commit;
+  removeDataMahasiswaFile: function removeDataMahasiswaFile(_ref7, file) {
+    var commit = _ref7.commit;
     commit('removeDataMahasiswaFile', file);
   },
-  setHasilPrediksi: function setHasilPrediksi(_ref7, value) {
-    var commit = _ref7.commit;
+  setHasilPrediksi: function setHasilPrediksi(_ref8, value) {
+    var commit = _ref8.commit;
     commit('setHasilPrediksi', value);
   },
-  setLulus: function setLulus(_ref8, value) {
-    var commit = _ref8.commit;
+  setLulus: function setLulus(_ref9, value) {
+    var commit = _ref9.commit;
     commit('setLulus', value);
   },
-  setTidakLulus: function setTidakLulus(_ref9, value) {
-    var commit = _ref9.commit;
+  setTidakLulus: function setTidakLulus(_ref10, value) {
+    var commit = _ref10.commit;
     commit('setTidakLulus', value);
   },
-  setActive: function setActive(_ref10, value) {
-    var commit = _ref10.commit;
+  setActive: function setActive(_ref11, value) {
+    var commit = _ref11.commit;
     commit('setActive', value);
   },
-  setObservers: function setObservers(_ref11, value) {
-    var commit = _ref11.commit;
+  setObservers: function setObservers(_ref12, value) {
+    var commit = _ref12.commit;
     commit('setObservers', value);
   },
-  setAccuracy: function setAccuracy(_ref12, value) {
-    var commit = _ref12.commit;
+  setAccuracy: function setAccuracy(_ref13, value) {
+    var commit = _ref13.commit;
     commit('setAccuracy', value);
   },
-  setRecallLulus: function setRecallLulus(_ref13, value) {
-    var commit = _ref13.commit;
+  setRecallLulus: function setRecallLulus(_ref14, value) {
+    var commit = _ref14.commit;
     commit('setRecallLulus', value);
   },
-  setRecallTidakLulus: function setRecallTidakLulus(_ref14, value) {
-    var commit = _ref14.commit;
+  setRecallTidakLulus: function setRecallTidakLulus(_ref15, value) {
+    var commit = _ref15.commit;
     commit('setRecallTidakLulus', value);
   },
-  setPrecisionTidakLulus: function setPrecisionTidakLulus(_ref15, value) {
-    var commit = _ref15.commit;
+  setPrecisionTidakLulus: function setPrecisionTidakLulus(_ref16, value) {
+    var commit = _ref16.commit;
     commit('setPrecisionTidakLulus', value);
   },
-  setPrecisionLulus: function setPrecisionLulus(_ref16, value) {
-    var commit = _ref16.commit;
+  setPrecisionLulus: function setPrecisionLulus(_ref17, value) {
+    var commit = _ref17.commit;
     commit('setPrecisionLulus', value);
   },
-  setCreatedAt: function setCreatedAt(_ref17, value) {
-    var commit = _ref17.commit;
+  setCreatedAt: function setCreatedAt(_ref18, value) {
+    var commit = _ref18.commit;
     commit('setCreatedAt', value);
   },
-  setUpdatedAt: function setUpdatedAt(_ref18, value) {
-    var commit = _ref18.commit;
+  setUpdatedAt: function setUpdatedAt(_ref19, value) {
+    var commit = _ref19.commit;
     commit('setUpdatedAt', value);
   },
-  setDeletedAt: function setDeletedAt(_ref19, value) {
-    var commit = _ref19.commit;
+  setDeletedAt: function setDeletedAt(_ref20, value) {
+    var commit = _ref20.commit;
     commit('setDeletedAt', value);
   },
-  fetchCreateData: function fetchCreateData(_ref20) {
-    var commit = _ref20.commit;
+  fetchCreateData: function fetchCreateData(_ref21) {
+    var commit = _ref21.commit;
     axios.get("".concat(route, "/create")).then(function (response) {
       commit('setLists', response.data.meta);
     });
   },
-  fetchEditData: function fetchEditData(_ref21, id) {
-    var commit = _ref21.commit,
-        dispatch = _ref21.dispatch;
+  fetchEditData: function fetchEditData(_ref22, id) {
+    var commit = _ref22.commit,
+        dispatch = _ref22.dispatch;
     axios.get("".concat(route, "/").concat(id, "/edit")).then(function (response) {
       commit('setEntry', response.data.data);
       commit('setLists', response.data.meta);
     });
   },
-  fetchShowData: function fetchShowData(_ref22, id) {
-    var commit = _ref22.commit,
-        dispatch = _ref22.dispatch;
+  fetchShowData: function fetchShowData(_ref23, id) {
+    var commit = _ref23.commit,
+        dispatch = _ref23.dispatch;
     axios.get("".concat(route, "/").concat(id)).then(function (response) {
       commit('setEntry', response.data.data);
     });
   },
-  resetState: function resetState(_ref23) {
-    var commit = _ref23.commit;
+  resetState: function resetState(_ref24) {
+    var commit = _ref24.commit;
     commit('resetState');
   }
 };
@@ -56069,6 +56074,9 @@ var mutations = {
   },
   setObservers: function setObservers(state, value) {
     state.entry.observers = value;
+  },
+  setMataKuliah: function setMataKuliah(state, value) {
+    state.entry.mata_kuliah_id = value;
   },
   setAccuracy: function setAccuracy(state, value) {
     state.entry.accuracy = value;
@@ -56222,6 +56230,7 @@ function initialState() {
       id: null,
       nama: '',
       data_mahasiswa: [],
+      mata_kuliah_id: null,
       batas_nilai: '',
       lulus: '',
       tidaklulus: '',
@@ -56232,9 +56241,13 @@ function initialState() {
       recall_tidak_lulus: '',
       precision_tidak_lulus: '',
       precision_lulus: '',
+      location: '',
       created_at: '',
       updated_at: '',
       deleted_at: ''
+    },
+    lists: {
+      mata_kuliah: []
     },
     loading: false
   };
@@ -56244,6 +56257,9 @@ var route = 'data-mahasiswas';
 var getters = {
   entry: function entry(state) {
     return state.entry;
+  },
+  lists: function lists(state) {
+    return state.lists;
   },
   loading: function loading(state) {
     return state.loading;
@@ -56325,74 +56341,89 @@ var actions = {
     var commit = _ref5.commit;
     commit('removeDataMahasiswaFile', file);
   },
-  setBatasNilai: function setBatasNilai(_ref6, value) {
+  setMataKuliah: function setMataKuliah(_ref6, value) {
     var commit = _ref6.commit;
+    commit('setMataKuliah', value);
+  },
+  setBatasNilai: function setBatasNilai(_ref7, value) {
+    var commit = _ref7.commit;
     commit('setBatasNilai', value);
   },
-  setLulus: function setLulus(_ref7, value) {
-    var commit = _ref7.commit;
+  setLulus: function setLulus(_ref8, value) {
+    var commit = _ref8.commit;
     commit('setLulus', value);
   },
-  setTidaklulus: function setTidaklulus(_ref8, value) {
-    var commit = _ref8.commit;
+  setTidaklulus: function setTidaklulus(_ref9, value) {
+    var commit = _ref9.commit;
     commit('setTidaklulus', value);
   },
-  setActive: function setActive(_ref9, value) {
-    var commit = _ref9.commit;
+  setActive: function setActive(_ref10, value) {
+    var commit = _ref10.commit;
     commit('setActive', value);
   },
-  setObservers: function setObservers(_ref10, value) {
-    var commit = _ref10.commit;
+  setObservers: function setObservers(_ref11, value) {
+    var commit = _ref11.commit;
     commit('setObservers', value);
   },
-  setAccuracy: function setAccuracy(_ref11, value) {
-    var commit = _ref11.commit;
+  setAccuracy: function setAccuracy(_ref12, value) {
+    var commit = _ref12.commit;
     commit('setAccuracy', value);
   },
-  setRecallLulus: function setRecallLulus(_ref12, value) {
-    var commit = _ref12.commit;
+  setRecallLulus: function setRecallLulus(_ref13, value) {
+    var commit = _ref13.commit;
     commit('setRecallLulus', value);
   },
-  setRecallTidakLulus: function setRecallTidakLulus(_ref13, value) {
-    var commit = _ref13.commit;
+  setRecallTidakLulus: function setRecallTidakLulus(_ref14, value) {
+    var commit = _ref14.commit;
     commit('setRecallTidakLulus', value);
   },
-  setPrecisionTidakLulus: function setPrecisionTidakLulus(_ref14, value) {
-    var commit = _ref14.commit;
+  setPrecisionTidakLulus: function setPrecisionTidakLulus(_ref15, value) {
+    var commit = _ref15.commit;
     commit('setPrecisionTidakLulus', value);
   },
-  setPrecisionLulus: function setPrecisionLulus(_ref15, value) {
-    var commit = _ref15.commit;
+  setPrecisionLulus: function setPrecisionLulus(_ref16, value) {
+    var commit = _ref16.commit;
     commit('setPrecisionLulus', value);
   },
-  setCreatedAt: function setCreatedAt(_ref16, value) {
-    var commit = _ref16.commit;
+  setLocation: function setLocation(_ref17, value) {
+    var commit = _ref17.commit;
+    commit('setLocation', value);
+  },
+  setCreatedAt: function setCreatedAt(_ref18, value) {
+    var commit = _ref18.commit;
     commit('setCreatedAt', value);
   },
-  setUpdatedAt: function setUpdatedAt(_ref17, value) {
-    var commit = _ref17.commit;
+  setUpdatedAt: function setUpdatedAt(_ref19, value) {
+    var commit = _ref19.commit;
     commit('setUpdatedAt', value);
   },
-  setDeletedAt: function setDeletedAt(_ref18, value) {
-    var commit = _ref18.commit;
+  setDeletedAt: function setDeletedAt(_ref20, value) {
+    var commit = _ref20.commit;
     commit('setDeletedAt', value);
   },
-  fetchEditData: function fetchEditData(_ref19, id) {
-    var commit = _ref19.commit,
-        dispatch = _ref19.dispatch;
-    axios.get("".concat(route, "/").concat(id, "/edit")).then(function (response) {
-      commit('setEntry', response.data.data);
+  fetchCreateData: function fetchCreateData(_ref21) {
+    var commit = _ref21.commit;
+    axios.get("".concat(route, "/create")).then(function (response) {
+      commit('setLists', response.data.meta);
     });
   },
-  fetchShowData: function fetchShowData(_ref20, id) {
-    var commit = _ref20.commit,
-        dispatch = _ref20.dispatch;
+  fetchEditData: function fetchEditData(_ref22, id) {
+    var commit = _ref22.commit,
+        dispatch = _ref22.dispatch;
+    axios.get("".concat(route, "/").concat(id, "/edit")).then(function (response) {
+      commit('setEntry', response.data.data);
+      commit('setLists', response.data.meta);
+    });
+  },
+  fetchShowData: function fetchShowData(_ref23, id) {
+    var commit = _ref23.commit,
+        dispatch = _ref23.dispatch;
     axios.get("".concat(route, "/").concat(id)).then(function (response) {
       commit('setEntry', response.data.data);
     });
   },
-  resetState: function resetState(_ref21) {
-    var commit = _ref21.commit;
+  resetState: function resetState(_ref24) {
+    var commit = _ref24.commit;
     commit('resetState');
   }
 };
@@ -56410,6 +56441,9 @@ var mutations = {
     state.entry.data_mahasiswa = state.entry.data_mahasiswa.filter(function (item) {
       return item.id !== file.id;
     });
+  },
+  setMataKuliah: function setMataKuliah(state, value) {
+    state.entry.mata_kuliah_id = value;
   },
   setBatasNilai: function setBatasNilai(state, value) {
     state.entry.batas_nilai = value;
@@ -56441,6 +56475,9 @@ var mutations = {
   setPrecisionLulus: function setPrecisionLulus(state, value) {
     state.entry.precision_lulus = value;
   },
+  setLocation: function setLocation(state, value) {
+    state.entry.location = value;
+  },
   setCreatedAt: function setCreatedAt(state, value) {
     state.entry.created_at = value;
   },
@@ -56449,6 +56486,9 @@ var mutations = {
   },
   setDeletedAt: function setDeletedAt(state, value) {
     state.entry.deleted_at = value;
+  },
+  setLists: function setLists(state, lists) {
+    state.lists = lists;
   },
   setLoading: function setLoading(state, loading) {
     state.loading = loading;
@@ -58844,8 +58884,8 @@ var debug = "development" !== 'production';
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! D:\Program Files\xampp\htdocs\AppLeads\resources\adminapp\js\app.js */"./resources/adminapp/js/app.js");
-module.exports = __webpack_require__(/*! D:\Program Files\xampp\htdocs\AppLeads\resources\adminapp\sass\app.scss */"./resources/adminapp/sass/app.scss");
+__webpack_require__(/*! /Users/macbook/GitHub/projectui/resources/adminapp/js/app.js */"./resources/adminapp/js/app.js");
+module.exports = __webpack_require__(/*! /Users/macbook/GitHub/projectui/resources/adminapp/sass/app.scss */"./resources/adminapp/sass/app.scss");
 
 
 /***/ })

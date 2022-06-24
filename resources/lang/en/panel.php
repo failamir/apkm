@@ -1,5 +1,6 @@
 <?php
 
 return [
-    'site_title' => 'APKM',
+    'site_title' => 'LEADS',
+    'site_title_top' => '| ICE Institute',
 ];

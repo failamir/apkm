@@ -298,6 +298,28 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -310,13 +332,19 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       activeField: ''
     };
   },
-  computed: _objectSpread({}, Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapGetters"])('DataMahasiswasSingle', ['entry', 'loading'])),
+  computed: _objectSpread({}, Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapGetters"])('DataMahasiswasSingle', ['entry', 'loading', 'lists'])),
+  mounted: function mounted() {
+    this.fetchCreateData();
+  },
   beforeDestroy: function beforeDestroy() {
     this.resetState();
   },
-  methods: _objectSpread(_objectSpread({}, Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapActions"])('DataMahasiswasSingle', ['storeData', 'resetState', 'setNama', 'insertDataMahasiswaFile', 'removeDataMahasiswaFile', 'setBatasNilai', 'setLulus', 'setTidaklulus', 'setActive', 'setObservers', 'setAccuracy', 'setRecallLulus', 'setRecallTidakLulus', 'setPrecisionTidakLulus', 'setPrecisionLulus'])), {}, {
+  methods: _objectSpread(_objectSpread({}, Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapActions"])('DataMahasiswasSingle', ['storeData', 'resetState', 'setNama', 'insertDataMahasiswaFile', 'removeDataMahasiswaFile', 'setMataKuliah', 'setBatasNilai', 'setLulus', 'setTidaklulus', 'setActive', 'setObservers', 'setAccuracy', 'setRecallLulus', 'setRecallTidakLulus', 'setPrecisionTidakLulus', 'setPrecisionLulus', 'fetchCreateData'])), {}, {
     updateNama: function updateNama(e) {
       this.setNama(e.target.value);
+    },
+    updateMataKuliah: function updateMataKuliah(value) {
+      this.setMataKuliah(value);
     },
     updateBatasNilai: function updateBatasNilai(e) {
       this.setBatasNilai(e.target.value);
@@ -499,6 +527,75 @@ var render = function () {
                             },
                           }),
                         ]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        {
+                          staticClass: "form-group bmd-form-group",
+                          class: {
+                            "has-items": _vm.entry.mata_kuliah_id !== null,
+                            "is-focused": _vm.activeField == "mata_kuliah",
+                          },
+                        },
+                        [
+                          _c("label", { staticClass: "bmd-label-floating" }, [
+                            _vm._v(
+                              _vm._s(
+                                _vm.$t("cruds.dataMahasiswa.fields.mata_kuliah")
+                              )
+                            ),
+                          ]),
+                          _vm._v(" "),
+                          _c("v-select", {
+                            key: "mata_kuliah-field",
+                            attrs: {
+                              name: "mata_kuliah",
+                              label: "nama_mtk",
+                              value: _vm.entry.mata_kuliah_id,
+                              options: _vm.lists.mata_kuliah,
+                              reduce: function (entry) {
+                                return entry.id
+                              },
+                            },
+                            on: {
+                              input: _vm.updateMataKuliah,
+                              search: [
+                                function ($event) {
+                                  if (
+                                    !$event.type.indexOf("key") &&
+                                    _vm._k(
+                                      $event.keyCode,
+                                      "focus",
+                                      undefined,
+                                      $event.key,
+                                      undefined
+                                    )
+                                  ) {
+                                    return null
+                                  }
+                                  return _vm.focusField("mata_kuliah")
+                                },
+                                function ($event) {
+                                  if (
+                                    !$event.type.indexOf("key") &&
+                                    _vm._k(
+                                      $event.keyCode,
+                                      "blur",
+                                      undefined,
+                                      $event.key,
+                                      undefined
+                                    )
+                                  ) {
+                                    return null
+                                  }
+                                  return _vm.clearFocus.apply(null, arguments)
+                                },
+                              ],
+                            },
+                          }),
+                        ],
+                        1
                       ),
                       _vm._v(" "),
                       _c(

@@ -4,7 +4,7 @@
       <div class="row">
         <div class="col-md-12">
           <div class="card">
-            <div class="card-header card-header-primary card-header-icon">
+            <div class="card-header card-header-danger card-header-icon">
               <div class="card-icon">
                 <i class="material-icons">edit</i>
               </div>
@@ -60,28 +60,6 @@
                       :reduce="entry => entry.id"
                       @input="updateDataHistory"
                       @search.focus="focusField('data_history')"
-                      @search.blur="clearFocus"
-                    />
-                  </div>
-                  <div
-                    class="form-group bmd-form-group"
-                    :class="{
-                      'has-items': entry.mata_kuliah_id !== null,
-                      'is-focused': activeField == 'mata_kuliah'
-                    }"
-                  >
-                    <label class="bmd-label-floating">{{
-                      $t('cruds.dataMahasiswaOnGoing.fields.mata_kuliah')
-                    }}</label>
-                    <v-select
-                      name="mata_kuliah"
-                      label="nama_mtk"
-                      :key="'mata_kuliah-field'"
-                      :value="entry.mata_kuliah_id"
-                      :options="lists.mata_kuliah"
-                      :reduce="entry => entry.id"
-                      @input="updateMataKuliah"
-                      @search.focus="focusField('mata_kuliah')"
                       @search.blur="clearFocus"
                     />
                   </div>
@@ -301,28 +279,6 @@
                       @blur="clearFocus"
                     />
                   </div>
-                  <div
-                    class="form-group bmd-form-group"
-                    :class="{
-                      'has-items': entry.prediksi_tidak_lulus,
-                      'is-focused': activeField == 'prediksi_tidak_lulus'
-                    }"
-                  >
-                    <label class="bmd-label-floating">{{
-                      $t(
-                        'cruds.dataMahasiswaOnGoing.fields.prediksi_tidak_lulus'
-                      )
-                    }}</label>
-                    <input
-                      class="form-control"
-                      type="number"
-                      step="1"
-                      :value="entry.prediksi_tidak_lulus"
-                      @input="updatePrediksiTidakLulus"
-                      @focus="focusField('prediksi_tidak_lulus')"
-                      @blur="clearFocus"
-                    />
-                  </div>
                 </div>
               </div>
             </div>
@@ -379,7 +335,6 @@ export default {
       'resetState',
       'setNama',
       'setDataHistory',
-      'setMataKuliah',
       'insertDataMahasiswaFile',
       'removeDataMahasiswaFile',
       'setHasilPrediksi',
@@ -391,17 +346,13 @@ export default {
       'setRecallLulus',
       'setRecallTidakLulus',
       'setPrecisionTidakLulus',
-      'setPrecisionLulus',
-      'setPrediksiTidakLulus'
+      'setPrecisionLulus'
     ]),
     updateNama(e) {
       this.setNama(e.target.value)
     },
     updateDataHistory(value) {
       this.setDataHistory(value)
-    },
-    updateMataKuliah(value) {
-      this.setMataKuliah(value)
     },
     updateHasilPrediksi(e) {
       this.setHasilPrediksi(e.target.value)
@@ -432,9 +383,6 @@ export default {
     },
     updatePrecisionLulus(e) {
       this.setPrecisionLulus(e.target.value)
-    },
-    updatePrediksiTidakLulus(e) {
-      this.setPrediksiTidakLulus(e.target.value)
     },
     getRoute(name) {
       return `${axios.defaults.baseURL}${name}/media`

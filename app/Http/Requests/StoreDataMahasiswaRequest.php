@@ -29,11 +29,6 @@ class StoreDataMahasiswaRequest extends FormRequest
                 'integer',
                 'exists:media,id',
             ],
-            'mata_kuliah_id' => [
-                'integer',
-                'exists:mata_kuliahs,id',
-                'nullable',
-            ],
             'batas_nilai' => [
                 'integer',
                 'min:-2147483648',
@@ -82,10 +77,6 @@ class StoreDataMahasiswaRequest extends FormRequest
             ],
             'precision_lulus' => [
                 'numeric',
-                'nullable',
-            ],
-            'location' => [
-                'string',
                 'nullable',
             ],
         ];
