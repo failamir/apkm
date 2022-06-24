@@ -318,6 +318,50 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -343,12 +387,15 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       }
     }
   },
-  methods: _objectSpread(_objectSpread({}, Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapActions"])('DataMahasiswaOnGoingsSingle', ['fetchEditData', 'updateData', 'resetState', 'setNama', 'setDataHistory', 'insertDataMahasiswaFile', 'removeDataMahasiswaFile', 'setHasilPrediksi', 'setLulus', 'setTidakLulus', 'setActive', 'setObservers', 'setAccuracy', 'setRecallLulus', 'setRecallTidakLulus', 'setPrecisionTidakLulus', 'setPrecisionLulus'])), {}, {
+  methods: _objectSpread(_objectSpread({}, Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapActions"])('DataMahasiswaOnGoingsSingle', ['fetchEditData', 'updateData', 'resetState', 'setNama', 'setDataHistory', 'setMataKuliah', 'insertDataMahasiswaFile', 'removeDataMahasiswaFile', 'setHasilPrediksi', 'setLulus', 'setTidakLulus', 'setActive', 'setObservers', 'setAccuracy', 'setRecallLulus', 'setRecallTidakLulus', 'setPrecisionTidakLulus', 'setPrecisionLulus', 'setPrediksiTidakLulus'])), {}, {
     updateNama: function updateNama(e) {
       this.setNama(e.target.value);
     },
     updateDataHistory: function updateDataHistory(value) {
       this.setDataHistory(value);
+    },
+    updateMataKuliah: function updateMataKuliah(value) {
+      this.setMataKuliah(value);
     },
     updateHasilPrediksi: function updateHasilPrediksi(e) {
       this.setHasilPrediksi(e.target.value);
@@ -379,6 +426,9 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
     },
     updatePrecisionLulus: function updatePrecisionLulus(e) {
       this.setPrecisionLulus(e.target.value);
+    },
+    updatePrediksiTidakLulus: function updatePrediksiTidakLulus(e) {
+      this.setPrediksiTidakLulus(e.target.value);
     },
     getRoute: function getRoute(name) {
       return "".concat(axios.defaults.baseURL).concat(name, "/media");
@@ -445,7 +495,7 @@ var render = function () {
                 "div",
                 {
                   staticClass:
-                    "card-header card-header-danger card-header-icon",
+                    "card-header card-header-primary card-header-icon",
                 },
                 [
                   _vm._m(0),
@@ -558,6 +608,77 @@ var render = function () {
                                     return null
                                   }
                                   return _vm.focusField("data_history")
+                                },
+                                function ($event) {
+                                  if (
+                                    !$event.type.indexOf("key") &&
+                                    _vm._k(
+                                      $event.keyCode,
+                                      "blur",
+                                      undefined,
+                                      $event.key,
+                                      undefined
+                                    )
+                                  ) {
+                                    return null
+                                  }
+                                  return _vm.clearFocus.apply(null, arguments)
+                                },
+                              ],
+                            },
+                          }),
+                        ],
+                        1
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        {
+                          staticClass: "form-group bmd-form-group",
+                          class: {
+                            "has-items": _vm.entry.mata_kuliah_id !== null,
+                            "is-focused": _vm.activeField == "mata_kuliah",
+                          },
+                        },
+                        [
+                          _c("label", { staticClass: "bmd-label-floating" }, [
+                            _vm._v(
+                              _vm._s(
+                                _vm.$t(
+                                  "cruds.dataMahasiswaOnGoing.fields.mata_kuliah"
+                                )
+                              )
+                            ),
+                          ]),
+                          _vm._v(" "),
+                          _c("v-select", {
+                            key: "mata_kuliah-field",
+                            attrs: {
+                              name: "mata_kuliah",
+                              label: "nama_mtk",
+                              value: _vm.entry.mata_kuliah_id,
+                              options: _vm.lists.mata_kuliah,
+                              reduce: function (entry) {
+                                return entry.id
+                              },
+                            },
+                            on: {
+                              input: _vm.updateMataKuliah,
+                              search: [
+                                function ($event) {
+                                  if (
+                                    !$event.type.indexOf("key") &&
+                                    _vm._k(
+                                      $event.keyCode,
+                                      "focus",
+                                      undefined,
+                                      $event.key,
+                                      undefined
+                                    )
+                                  ) {
+                                    return null
+                                  }
+                                  return _vm.focusField("mata_kuliah")
                                 },
                                 function ($event) {
                                   if (
@@ -961,6 +1082,42 @@ var render = function () {
                               input: _vm.updatePrecisionLulus,
                               focus: function ($event) {
                                 return _vm.focusField("precision_lulus")
+                              },
+                              blur: _vm.clearFocus,
+                            },
+                          }),
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        {
+                          staticClass: "form-group bmd-form-group",
+                          class: {
+                            "has-items": _vm.entry.prediksi_tidak_lulus,
+                            "is-focused":
+                              _vm.activeField == "prediksi_tidak_lulus",
+                          },
+                        },
+                        [
+                          _c("label", { staticClass: "bmd-label-floating" }, [
+                            _vm._v(
+                              _vm._s(
+                                _vm.$t(
+                                  "cruds.dataMahasiswaOnGoing.fields.prediksi_tidak_lulus"
+                                )
+                              )
+                            ),
+                          ]),
+                          _vm._v(" "),
+                          _c("input", {
+                            staticClass: "form-control",
+                            attrs: { type: "number", step: "1" },
+                            domProps: { value: _vm.entry.prediksi_tidak_lulus },
+                            on: {
+                              input: _vm.updatePrediksiTidakLulus,
+                              focus: function ($event) {
+                                return _vm.focusField("prediksi_tidak_lulus")
                               },
                               blur: _vm.clearFocus,
                             },

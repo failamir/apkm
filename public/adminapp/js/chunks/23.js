@@ -328,6 +328,103 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
     return {
       status: '',
       activeField: ''
+      columns: [{
+        title: 'cruds.dataMahasiswa.fields.id',
+        field: 'id',
+        thComp: _components_Datatables_TranslatedHeader__WEBPACK_IMPORTED_MODULE_2__["default"],
+        sortable: true,
+        colStyle: 'width: 100px;'
+      }, {
+        title: 'cruds.dataMahasiswa.fields.nama',
+        field: 'nama',
+        thComp: _components_Datatables_TranslatedHeader__WEBPACK_IMPORTED_MODULE_2__["default"],
+        sortable: true
+      }, {
+        title: 'cruds.dataMahasiswa.fields.data_mahasiswa',
+        field: 'data_mahasiswa',
+        thComp: _components_Datatables_TranslatedHeader__WEBPACK_IMPORTED_MODULE_2__["default"],
+        tdComp: _components_Datatables_DatatableAttachments__WEBPACK_IMPORTED_MODULE_5__["default"]
+      }, {
+        title: 'cruds.dataMahasiswa.fields.mata_kuliah',
+        field: 'mata_kuliah.nama_mtk',
+        thComp: _components_Datatables_TranslatedHeader__WEBPACK_IMPORTED_MODULE_2__["default"],
+        tdComp: _components_Datatables_DatatableSingle__WEBPACK_IMPORTED_MODULE_6__["default"],
+        sortable: true
+      }, {
+        title: 'cruds.dataMahasiswa.fields.batas_nilai',
+        field: 'batas_nilai',
+        thComp: _components_Datatables_TranslatedHeader__WEBPACK_IMPORTED_MODULE_2__["default"],
+        sortable: true
+      }, {
+        title: 'cruds.dataMahasiswa.fields.lulus',
+        field: 'lulus',
+        thComp: _components_Datatables_TranslatedHeader__WEBPACK_IMPORTED_MODULE_2__["default"],
+        sortable: true
+      }, {
+        title: 'cruds.dataMahasiswa.fields.tidak_lulus',
+        field: 'tidak_lulus',
+        thComp: _components_Datatables_TranslatedHeader__WEBPACK_IMPORTED_MODULE_2__["default"],
+        sortable: true
+      }, {
+        title: 'cruds.dataMahasiswa.fields.active',
+        field: 'active',
+        thComp: _components_Datatables_TranslatedHeader__WEBPACK_IMPORTED_MODULE_2__["default"],
+        sortable: true
+      }, {
+        title: 'cruds.dataMahasiswa.fields.observers',
+        field: 'observers',
+        thComp: _components_Datatables_TranslatedHeader__WEBPACK_IMPORTED_MODULE_2__["default"],
+        sortable: true
+      }, {
+        title: 'cruds.dataMahasiswa.fields.accuracy',
+        field: 'accuracy',
+        thComp: _components_Datatables_TranslatedHeader__WEBPACK_IMPORTED_MODULE_2__["default"],
+        sortable: true
+      }, {
+        title: 'cruds.dataMahasiswa.fields.recall_lulus',
+        field: 'recall_lulus',
+        thComp: _components_Datatables_TranslatedHeader__WEBPACK_IMPORTED_MODULE_2__["default"],
+        sortable: true
+      }, {
+        title: 'cruds.dataMahasiswa.fields.recall_tidak_lulus',
+        field: 'recall_tidak_lulus',
+        thComp: _components_Datatables_TranslatedHeader__WEBPACK_IMPORTED_MODULE_2__["default"],
+        sortable: true
+      }, {
+        title: 'cruds.dataMahasiswa.fields.precision_tidak_lulus',
+        field: 'precision_tidak_lulus',
+        thComp: _components_Datatables_TranslatedHeader__WEBPACK_IMPORTED_MODULE_2__["default"],
+        sortable: true
+      }, {
+        title: 'cruds.dataMahasiswa.fields.precision_lulus',
+        field: 'precision_lulus',
+        thComp: _components_Datatables_TranslatedHeader__WEBPACK_IMPORTED_MODULE_2__["default"],
+        sortable: true
+      }, {
+        title: 'cruds.dataMahasiswa.fields.location',
+        field: 'location',
+        thComp: _components_Datatables_TranslatedHeader__WEBPACK_IMPORTED_MODULE_2__["default"],
+        sortable: true
+      }, {
+        title: 'global.actions',
+        thComp: _components_Datatables_TranslatedHeader__WEBPACK_IMPORTED_MODULE_2__["default"],
+        tdComp: _components_Datatables_DatatableActions__WEBPACK_IMPORTED_MODULE_1__["default"],
+        visible: true,
+        thClass: 'text-right',
+        tdClass: 'text-right td-actions',
+        colStyle: 'width: 150px;'
+      }],
+      query: {
+        sort: 'id',
+        order: 'desc',
+        limit: 100,
+        s: ''
+      },
+      xprops: {
+        module: 'DataMahasiswasIndex',
+        route: 'data_mahasiswas',
+        permission_prefix: 'data_mahasiswa_'
+      }
     };
   },
   computed: _objectSpread({}, Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapGetters"])('DataMahasiswaOnGoingsSingle', ['entry', 'loading', 'lists'])),

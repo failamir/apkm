@@ -163,6 +163,69 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       }, {
         title: 'cruds.mataKuliah.fields.jumlah_sks',
         field: 'jumlah_sks',
+        title: 'cruds.dataMahasiswaOnGoing.fields.mata_kuliah',
+        field: 'mata_kuliah.nama_mtk',
+        thComp: _components_Datatables_TranslatedHeader__WEBPACK_IMPORTED_MODULE_2__["default"],
+        tdComp: _components_Datatables_DatatableSingle__WEBPACK_IMPORTED_MODULE_5__["default"],
+        sortable: true
+      }, {
+        title: 'cruds.dataMahasiswaOnGoing.fields.data_mahasiswa',
+        field: 'data_mahasiswa',
+        thComp: _components_Datatables_TranslatedHeader__WEBPACK_IMPORTED_MODULE_2__["default"],
+        tdComp: _components_Datatables_DatatableAttachments__WEBPACK_IMPORTED_MODULE_6__["default"]
+      }, {
+        title: 'cruds.dataMahasiswaOnGoing.fields.hasil_prediksi',
+        field: 'hasil_prediksi',
+        thComp: _components_Datatables_TranslatedHeader__WEBPACK_IMPORTED_MODULE_2__["default"],
+        sortable: true
+      }, {
+        title: 'cruds.dataMahasiswaOnGoing.fields.lulus',
+        field: 'lulus',
+        thComp: _components_Datatables_TranslatedHeader__WEBPACK_IMPORTED_MODULE_2__["default"],
+        sortable: true
+      }, {
+        title: 'cruds.dataMahasiswaOnGoing.fields.tidak_lulus',
+        field: 'tidak_lulus',
+        thComp: _components_Datatables_TranslatedHeader__WEBPACK_IMPORTED_MODULE_2__["default"],
+        sortable: true
+      }, {
+        title: 'cruds.dataMahasiswaOnGoing.fields.active',
+        field: 'active',
+        thComp: _components_Datatables_TranslatedHeader__WEBPACK_IMPORTED_MODULE_2__["default"],
+        sortable: true
+      }, {
+        title: 'cruds.dataMahasiswaOnGoing.fields.observers',
+        field: 'observers',
+        thComp: _components_Datatables_TranslatedHeader__WEBPACK_IMPORTED_MODULE_2__["default"],
+        sortable: true
+      }, {
+        title: 'cruds.dataMahasiswaOnGoing.fields.accuracy',
+        field: 'accuracy',
+        thComp: _components_Datatables_TranslatedHeader__WEBPACK_IMPORTED_MODULE_2__["default"],
+        sortable: true
+      }, {
+        title: 'cruds.dataMahasiswaOnGoing.fields.recall_lulus',
+        field: 'recall_lulus',
+        thComp: _components_Datatables_TranslatedHeader__WEBPACK_IMPORTED_MODULE_2__["default"],
+        sortable: true
+      }, {
+        title: 'cruds.dataMahasiswaOnGoing.fields.recall_tidak_lulus',
+        field: 'recall_tidak_lulus',
+        thComp: _components_Datatables_TranslatedHeader__WEBPACK_IMPORTED_MODULE_2__["default"],
+        sortable: true
+      }, {
+        title: 'cruds.dataMahasiswaOnGoing.fields.precision_tidak_lulus',
+        field: 'precision_tidak_lulus',
+        thComp: _components_Datatables_TranslatedHeader__WEBPACK_IMPORTED_MODULE_2__["default"],
+        sortable: true
+      }, {
+        title: 'cruds.dataMahasiswaOnGoing.fields.precision_lulus',
+        field: 'precision_lulus',
+        thComp: _components_Datatables_TranslatedHeader__WEBPACK_IMPORTED_MODULE_2__["default"],
+        sortable: true
+      }, {
+        title: 'cruds.dataMahasiswaOnGoing.fields.prediksi_tidak_lulus',
+        field: 'prediksi_tidak_lulus',
         thComp: _components_Datatables_TranslatedHeader__WEBPACK_IMPORTED_MODULE_2__["default"],
         sortable: true
       }, {
