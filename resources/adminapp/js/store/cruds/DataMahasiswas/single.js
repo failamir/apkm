@@ -7,7 +7,7 @@ function initialState() {
       mata_kuliah_id: null,
       batas_nilai: '',
       lulus: '',
-      tidak_lulus: '',
+      tidaklulus: '',
       active: '',
       observers: '',
       accuracy: '',
@@ -117,8 +117,8 @@ const actions = {
   setLulus({ commit }, value) {
     commit('setLulus', value)
   },
-  setTidakLulus({ commit }, value) {
-    commit('setTidakLulus', value)
+  setTidaklulus({ commit }, value) {
+    commit('setTidaklulus', value)
   },
   setActive({ commit }, value) {
     commit('setActive', value)
@@ -198,8 +198,8 @@ const mutations = {
   setLulus(state, value) {
     state.entry.lulus = value
   },
-  setTidakLulus(state, value) {
-    state.entry.tidak_lulus = value
+  setTidaklulus(state, value) {
+    state.entry.tidaklulus = value
   },
   setActive(state, value) {
     state.entry.active = value

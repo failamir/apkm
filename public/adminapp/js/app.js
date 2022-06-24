@@ -43,7 +43,7 @@
 /******/
 /******/ 	// script path function
 /******/ 	function jsonpScriptSrc(chunkId) {
-/******/ 		return __webpack_require__.p + "adminapp/js/chunks/" + ({}[chunkId]||chunkId) + ".js?id=" + {"0":"0c8674f46a6768a32c51","1":"3cd49b4dc0196faa31fa","2":"4e84d0c082ebd580f8e6","3":"410d00e047f9472220f6","4":"834eeebe0774129fc9b3","5":"8fc98e0d13840d691adf","6":"c162fe947aa0dc258cc0","7":"286b46873e206ea39f08","8":"6957638226822ebe6ed0","9":"a7fadb809065f7223079","10":"040e3a9cdb7d55675137","11":"a4d5a5cb00aa4320b1d6","12":"26bb08f8bdcd5f11e426","13":"c27c0251b0f5db2327c3","14":"6bce67d222bbb3cb70e5","15":"65c29732317366816cd4","16":"0f500af16bf0ba529e41","17":"7aa23996d2627cf7a36c","18":"e15d5fea50f7508587b4","20":"e0fa2e3f41cde1516904","21":"1bbef8a11b09712173c5","22":"a60b4225b8eb16e8b3f9","24":"92094bd41a81088541b4","25":"b256fe2006f34182a848","26":"d8d2066c17ba1c8f05f6","27":"86ffcc6438aded22204d","28":"3fe0eb4508b40af6bf12","29":"4c0004a66537ee8e0670","30":"100bd97c35dff755f9fa","35":"4fa7f961e444d0f10510","36":"347c543e768339f6ad13","37":"71dfc18508b07b35a063","38":"289dc266072f3c9095fe","39":"155755b6198d9d9f08cc","40":"6cb715a7db202c2f154c","41":"0cd0b3c45650ae207223","42":"cc507e9d59a23438ac09","45":"64fe3849e0ce1bb5a190","46":"af0aa888e5ac2327aa6b","47":"e4a28324ab3467dc5b21","48":"e1ffea2e044a757d0095","49":"2d4ad95af50fc51d1641","50":"9f88d925800ea51f429f","51":"1412b0d26443387e1e70","52":"ecd0e01964d44db42bb1"}[chunkId] + ""
+/******/ 		return __webpack_require__.p + "adminapp/js/chunks/" + ({}[chunkId]||chunkId) + ".js?id=" + {"1":"3cd49b4dc0196faa31fa","3":"410d00e047f9472220f6","4":"834eeebe0774129fc9b3","5":"8fc98e0d13840d691adf","6":"c162fe947aa0dc258cc0","7":"286b46873e206ea39f08","8":"6957638226822ebe6ed0","9":"a7fadb809065f7223079","10":"040e3a9cdb7d55675137","11":"a4d5a5cb00aa4320b1d6","12":"26bb08f8bdcd5f11e426","13":"c27c0251b0f5db2327c3","14":"6bce67d222bbb3cb70e5","15":"65c29732317366816cd4","16":"0f500af16bf0ba529e41","17":"7aa23996d2627cf7a36c","18":"e15d5fea50f7508587b4","20":"e0fa2e3f41cde1516904","21":"1bbef8a11b09712173c5","22":"a60b4225b8eb16e8b3f9","24":"92094bd41a81088541b4","25":"b256fe2006f34182a848","26":"d8d2066c17ba1c8f05f6","27":"86ffcc6438aded22204d","28":"3fe0eb4508b40af6bf12","29":"4c0004a66537ee8e0670","30":"100bd97c35dff755f9fa","35":"4fa7f961e444d0f10510","36":"347c543e768339f6ad13","37":"71dfc18508b07b35a063","38":"289dc266072f3c9095fe","39":"155755b6198d9d9f08cc","40":"6cb715a7db202c2f154c","41":"0cd0b3c45650ae207223","42":"cc507e9d59a23438ac09","45":"64fe3849e0ce1bb5a190","46":"af0aa888e5ac2327aa6b","47":"e4a28324ab3467dc5b21","48":"e1ffea2e044a757d0095","49":"2d4ad95af50fc51d1641","50":"9f88d925800ea51f429f","52":"ecd0e01964d44db42bb1","56":"f0932b65df4f445814e0","58":"3c87ac0fd5e9e021d2c7","59":"a20c19b3c5d4f4b74815"}[chunkId] + ""
 /******/ 	}
 /******/
 /******/ 	// The require function
@@ -55287,7 +55287,7 @@ var routes = [{
     path: 'data-mahasiswas',
     name: 'data_mahasiswas.index',
     component: function component() {
-      return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(50)]).then(__webpack_require__.bind(null, /*! @cruds/DataMahasiswas/Index.vue */ "./resources/adminapp/js/cruds/DataMahasiswas/Index.vue"));
+      return Promise.all(/*! import() */[__webpack_require__.e(58), __webpack_require__.e(50)]).then(__webpack_require__.bind(null, /*! @cruds/DataMahasiswas/Index.vue */ "./resources/adminapp/js/cruds/DataMahasiswas/Index.vue"));
     },
     meta: {
       title: 'cruds.dataMahasiswa.title'
@@ -55305,7 +55305,7 @@ var routes = [{
     path: 'data-mahasiswas/:id',
     name: 'data_mahasiswas.show',
     component: function component() {
-      return Promise.all(/*! import() */[__webpack_require__.e(2), __webpack_require__.e(24)]).then(__webpack_require__.bind(null, /*! @cruds/DataMahasiswas/Show.vue */ "./resources/adminapp/js/cruds/DataMahasiswas/Show.vue"));
+      return Promise.all(/*! import() */[__webpack_require__.e(59), __webpack_require__.e(24)]).then(__webpack_require__.bind(null, /*! @cruds/DataMahasiswas/Show.vue */ "./resources/adminapp/js/cruds/DataMahasiswas/Show.vue"));
     },
     meta: {
       title: 'cruds.dataMahasiswa.title'
@@ -55323,7 +55323,7 @@ var routes = [{
     path: 'data-mahasiswa-on-goings',
     name: 'data_mahasiswa_on_goings.index',
     component: function component() {
-      return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(51)]).then(__webpack_require__.bind(null, /*! @cruds/DataMahasiswaOnGoings/Index.vue */ "./resources/adminapp/js/cruds/DataMahasiswaOnGoings/Index.vue"));
+      return Promise.all(/*! import() */[__webpack_require__.e(58), __webpack_require__.e(56)]).then(__webpack_require__.bind(null, /*! @cruds/DataMahasiswaOnGoings/Index.vue */ "./resources/adminapp/js/cruds/DataMahasiswaOnGoings/Index.vue"));
     },
     meta: {
       title: 'cruds.dataMahasiswaOnGoing.title'
@@ -55341,7 +55341,7 @@ var routes = [{
     path: 'data-mahasiswa-on-goings/:id',
     name: 'data_mahasiswa_on_goings.show',
     component: function component() {
-      return Promise.all(/*! import() */[__webpack_require__.e(2), __webpack_require__.e(20)]).then(__webpack_require__.bind(null, /*! @cruds/DataMahasiswaOnGoings/Show.vue */ "./resources/adminapp/js/cruds/DataMahasiswaOnGoings/Show.vue"));
+      return Promise.all(/*! import() */[__webpack_require__.e(59), __webpack_require__.e(20)]).then(__webpack_require__.bind(null, /*! @cruds/DataMahasiswaOnGoings/Show.vue */ "./resources/adminapp/js/cruds/DataMahasiswaOnGoings/Show.vue"));
     },
     meta: {
       title: 'cruds.dataMahasiswaOnGoing.title'
@@ -55359,7 +55359,7 @@ var routes = [{
     path: 'mahasiswas',
     name: 'mahasiswas.index',
     component: function component() {
-      return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(13)]).then(__webpack_require__.bind(null, /*! @cruds/Mahasiswas/Index.vue */ "./resources/adminapp/js/cruds/Mahasiswas/Index.vue"));
+      return Promise.all(/*! import() */[__webpack_require__.e(58), __webpack_require__.e(13)]).then(__webpack_require__.bind(null, /*! @cruds/Mahasiswas/Index.vue */ "./resources/adminapp/js/cruds/Mahasiswas/Index.vue"));
     },
     meta: {
       title: 'cruds.mahasiswa.title'
@@ -55395,7 +55395,7 @@ var routes = [{
     path: 'mata-kuliahs',
     name: 'mata_kuliahs.index',
     component: function component() {
-      return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(15)]).then(__webpack_require__.bind(null, /*! @cruds/MataKuliahs/Index.vue */ "./resources/adminapp/js/cruds/MataKuliahs/Index.vue"));
+      return Promise.all(/*! import() */[__webpack_require__.e(58), __webpack_require__.e(15)]).then(__webpack_require__.bind(null, /*! @cruds/MataKuliahs/Index.vue */ "./resources/adminapp/js/cruds/MataKuliahs/Index.vue"));
     },
     meta: {
       title: 'cruds.mataKuliah.title'
@@ -55431,7 +55431,7 @@ var routes = [{
     path: 'dosens',
     name: 'dosens.index',
     component: function component() {
-      return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(7)]).then(__webpack_require__.bind(null, /*! @cruds/Dosens/Index.vue */ "./resources/adminapp/js/cruds/Dosens/Index.vue"));
+      return Promise.all(/*! import() */[__webpack_require__.e(58), __webpack_require__.e(7)]).then(__webpack_require__.bind(null, /*! @cruds/Dosens/Index.vue */ "./resources/adminapp/js/cruds/Dosens/Index.vue"));
     },
     meta: {
       title: 'cruds.dosen.title'
@@ -55467,7 +55467,7 @@ var routes = [{
     path: 'jurusans',
     name: 'jurusans.index',
     component: function component() {
-      return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(29)]).then(__webpack_require__.bind(null, /*! @cruds/Jurusans/Index.vue */ "./resources/adminapp/js/cruds/Jurusans/Index.vue"));
+      return Promise.all(/*! import() */[__webpack_require__.e(58), __webpack_require__.e(29)]).then(__webpack_require__.bind(null, /*! @cruds/Jurusans/Index.vue */ "./resources/adminapp/js/cruds/Jurusans/Index.vue"));
     },
     meta: {
       title: 'cruds.jurusan.title'
@@ -55536,7 +55536,7 @@ var routes = [{
       path: 'permissions',
       name: 'permissions.index',
       component: function component() {
-        return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(41)]).then(__webpack_require__.bind(null, /*! @cruds/Permissions/Index.vue */ "./resources/adminapp/js/cruds/Permissions/Index.vue"));
+        return Promise.all(/*! import() */[__webpack_require__.e(58), __webpack_require__.e(41)]).then(__webpack_require__.bind(null, /*! @cruds/Permissions/Index.vue */ "./resources/adminapp/js/cruds/Permissions/Index.vue"));
       },
       meta: {
         title: 'cruds.permission.title'
@@ -55572,7 +55572,7 @@ var routes = [{
       path: 'roles',
       name: 'roles.index',
       component: function component() {
-        return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(9)]).then(__webpack_require__.bind(null, /*! @cruds/Roles/Index.vue */ "./resources/adminapp/js/cruds/Roles/Index.vue"));
+        return Promise.all(/*! import() */[__webpack_require__.e(58), __webpack_require__.e(9)]).then(__webpack_require__.bind(null, /*! @cruds/Roles/Index.vue */ "./resources/adminapp/js/cruds/Roles/Index.vue"));
       },
       meta: {
         title: 'cruds.role.title'
@@ -55608,7 +55608,7 @@ var routes = [{
       path: 'users',
       name: 'users.index',
       component: function component() {
-        return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(11)]).then(__webpack_require__.bind(null, /*! @cruds/Users/Index.vue */ "./resources/adminapp/js/cruds/Users/Index.vue"));
+        return Promise.all(/*! import() */[__webpack_require__.e(58), __webpack_require__.e(11)]).then(__webpack_require__.bind(null, /*! @cruds/Users/Index.vue */ "./resources/adminapp/js/cruds/Users/Index.vue"));
       },
       meta: {
         title: 'cruds.user.title'

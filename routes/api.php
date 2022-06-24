@@ -11,6 +11,7 @@ Route::group(['prefix' => 'v1', 'as' => 'api.', 'namespace' => 'Api\V1\Admin', '
     // Dashboard
     Route::get('dashboard', 'DashboardApiController@index')->name('dashboard');
 
+    Route::get('excel', 'DashboardApiController@excel')->name('excel');
     // Permissions
     Route::resource('permissions', 'PermissionsApiController');
 
@@ -32,6 +33,9 @@ Route::group(['prefix' => 'v1', 'as' => 'api.', 'namespace' => 'Api\V1\Admin', '
     // Dosen
     Route::resource('dosens', 'DosenApiController');
 
+    // Data Mahasiswa History
+    Route::apiResource('data-mahasiswa-histories', 'DataMahasiswaHistoryApiController', ['only' => ['index']]);
+
     // Tentang Aplikasi
     Route::apiResource('tentang-aplikasis', 'TentangAplikasiApiController', ['only' => ['index']]);
 
@@ -42,16 +46,4 @@ Route::group(['prefix' => 'v1', 'as' => 'api.', 'namespace' => 'Api\V1\Admin', '
     // Data Mahasiswa On Going
     Route::post('data-mahasiswa-on-goings/media', 'DataMahasiswaOnGoingApiController@storeMedia')->name('data-mahasiswa-on-goings.storeMedia');
     Route::resource('data-mahasiswa-on-goings', 'DataMahasiswaOnGoingApiController');
-
-    // Report Mahasiswa Ongoing
-    Route::apiResource('report-mahasiswa-ongoings', 'ReportMahasiswaOngoingApiController', ['only' => ['index']]);
-
-    // Report Mahasiswa History
-    Route::apiResource('report-mahasiswa-histories', 'ReportMahasiswaHistoryApiController', ['only' => ['index']]);
-
-    // Data Preparation
-    Route::resource('data-preparations', 'DataPreparationApiController');
-
-    // Kampus
-    Route::resource('kampus', 'KampusApiController');
 });
