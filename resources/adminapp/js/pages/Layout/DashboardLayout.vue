@@ -1,23 +1,23 @@
 <template>
-    <div class="wrapper" :class="{ 'nav-open': $sidebar.showSidebar }">
-        <event-hub></event-hub>
-        <side-bar :sidebarLinks="sidebarLinks">
-            <mobile-menu slot="content"></mobile-menu>
-        </side-bar>
+  <div class="wrapper" :class="{ 'nav-open': $sidebar.showSidebar }">
+    <event-hub></event-hub>
+    <side-bar :sidebarLinks="sidebarLinks">
+      <mobile-menu slot="content"></mobile-menu>
+    </side-bar>
 
-        <div class="main-panel">
-            <top-navbar></top-navbar>
-            <div class="content">
-                <dashboard-content></dashboard-content>
-            </div>
-        </div>
+    <div class="main-panel">
+      <top-navbar></top-navbar>
+      <div class="content">
+        <dashboard-content></dashboard-content>
+      </div>
     </div>
+  </div>
 </template>
 
 <script>
-import DashboardContent from "./Content.vue";
-import TopNavbar from "./TopNavbar.vue";
-import MobileMenu from "./MobileMenu.vue";
+import DashboardContent from './Content.vue'
+import TopNavbar from './TopNavbar.vue'
+import MobileMenu from './MobileMenu.vue'
 
 export default {
   components: {
@@ -50,26 +50,6 @@ export default {
           icon: 'table_view',
           path: { name: 'data_preparations.index' },
           gate: 'data_preparation_access'
-        },
-        {
-          title: 'cruds.report.title',
-          icon: 'table_view',
-          path: { name: 'report' },
-          gate: 'report_access',
-          children: [
-            {
-              title: 'cruds.reportMahasiswaOngoing.title',
-              icon: 'table_view',
-              path: { name: 'report_mahasiswa_ongoings.index' },
-              gate: 'report_mahasiswa_ongoing_access'
-            },
-            {
-              title: 'cruds.reportMahasiswaHistory.title',
-              icon: 'table_view',
-              path: { name: 'report_mahasiswa_histories.index' },
-              gate: 'report_mahasiswa_history_access'
-            }
-          ]
         },
         {
           title: 'cruds.dataMaster.title',
@@ -112,6 +92,26 @@ export default {
               icon: 'table_view',
               path: { name: 'kampus.index' },
               gate: 'kampu_access'
+            }
+          ]
+        },
+        {
+          title: 'cruds.report.title',
+          icon: 'table_view',
+          path: { name: 'report' },
+          gate: 'report_access',
+          children: [
+            {
+              title: 'cruds.reportMahasiswaOngoing.title',
+              icon: 'table_view',
+              path: { name: 'report_mahasiswa_ongoings.index' },
+              gate: 'report_mahasiswa_ongoing_access'
+            },
+            {
+              title: 'cruds.reportMahasiswaHistory.title',
+              icon: 'table_view',
+              path: { name: 'report_mahasiswa_histories.index' },
+              gate: 'report_mahasiswa_history_access'
             }
           ]
         },

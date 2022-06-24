@@ -18,12 +18,17 @@ import JurusansIndex from './cruds/Jurusans'
 import JurusansSingle from './cruds/Jurusans/single'
 import DosensIndex from './cruds/Dosens'
 import DosensSingle from './cruds/Dosens/single'
-import DataMahasiswaHistories from './cruds/DataMahasiswaHistories'
 import TentangAplikasis from './cruds/TentangAplikasis'
 import DataMahasiswasIndex from './cruds/DataMahasiswas'
 import DataMahasiswasSingle from './cruds/DataMahasiswas/single'
 import DataMahasiswaOnGoingsIndex from './cruds/DataMahasiswaOnGoings'
 import DataMahasiswaOnGoingsSingle from './cruds/DataMahasiswaOnGoings/single'
+import ReportMahasiswaOngoings from './cruds/ReportMahasiswaOngoings'
+import ReportMahasiswaHistories from './cruds/ReportMahasiswaHistories'
+import DataPreparationsIndex from './cruds/DataPreparations'
+import DataPreparationsSingle from './cruds/DataPreparations/single'
+import KampusIndex from './cruds/Kampus'
+import KampusSingle from './cruds/Kampus/single'
 
 Vue.use(Vuex)
 
@@ -47,12 +52,17 @@ export default new Vuex.Store({
     JurusansSingle,
     DosensIndex,
     DosensSingle,
-    DataMahasiswaHistories,
     TentangAplikasis,
     DataMahasiswasIndex,
     DataMahasiswasSingle,
     DataMahasiswaOnGoingsIndex,
-    DataMahasiswaOnGoingsSingle
+    DataMahasiswaOnGoingsSingle,
+    ReportMahasiswaOngoings,
+    ReportMahasiswaHistories,
+    DataPreparationsIndex,
+    DataPreparationsSingle,
+    KampusIndex,
+    KampusSingle
   },
   strict: debug
 })
