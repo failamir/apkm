@@ -43,7 +43,7 @@
 /******/
 /******/ 	// script path function
 /******/ 	function jsonpScriptSrc(chunkId) {
-/******/ 		return __webpack_require__.p + "adminapp/js/chunks/" + ({}[chunkId]||chunkId) + ".js?id=" + {"0":"0c8674f46a6768a32c51","1":"3cd49b4dc0196faa31fa","2":"4e84d0c082ebd580f8e6","3":"410d00e047f9472220f6","4":"834eeebe0774129fc9b3","5":"8fc98e0d13840d691adf","6":"c162fe947aa0dc258cc0","7":"286b46873e206ea39f08","8":"6957638226822ebe6ed0","9":"a7fadb809065f7223079","10":"040e3a9cdb7d55675137","11":"a4d5a5cb00aa4320b1d6","12":"26bb08f8bdcd5f11e426","13":"c27c0251b0f5db2327c3","14":"6bce67d222bbb3cb70e5","15":"65c29732317366816cd4","16":"0f500af16bf0ba529e41","17":"7aa23996d2627cf7a36c","18":"e15d5fea50f7508587b4","20":"e0fa2e3f41cde1516904","21":"1bbef8a11b09712173c5","22":"a60b4225b8eb16e8b3f9","24":"92094bd41a81088541b4","25":"b256fe2006f34182a848","26":"d8d2066c17ba1c8f05f6","27":"86ffcc6438aded22204d","28":"3fe0eb4508b40af6bf12","29":"4c0004a66537ee8e0670","30":"100bd97c35dff755f9fa","35":"4fa7f961e444d0f10510","36":"347c543e768339f6ad13","37":"71dfc18508b07b35a063","38":"289dc266072f3c9095fe","39":"155755b6198d9d9f08cc","40":"6cb715a7db202c2f154c","41":"0cd0b3c45650ae207223","42":"cc507e9d59a23438ac09","45":"64fe3849e0ce1bb5a190","46":"af0aa888e5ac2327aa6b","47":"e4a28324ab3467dc5b21","48":"e1ffea2e044a757d0095","49":"2d4ad95af50fc51d1641","50":"9f88d925800ea51f429f","51":"1412b0d26443387e1e70","52":"ecd0e01964d44db42bb1"}[chunkId] + ""
+/******/ 		return __webpack_require__.p + "adminapp/js/chunks/" + ({}[chunkId]||chunkId) + ".js?id=" + {"0":"0c8674f46a6768a32c51","1":"3cd49b4dc0196faa31fa","3":"410d00e047f9472220f6","4":"834eeebe0774129fc9b3","5":"521b0b09ab0691ca0cda","6":"2736c5e3d5d54ab57107","7":"b3dabde518dbd46ba3f3","8":"fa54b8b78f6ccaf820f3","9":"80ae1883f65cd1300c51","10":"611dfc3d341249994712","11":"0eb5c3439b4093229af2","12":"1b952c90ebe6d1015ea5","13":"ad7dc586028d10c857bb","14":"d822ba29b8f6cb6d448b","15":"43e37330b3bbe8bd209d","16":"7ab1a340ad9edad668c0","17":"f4da84d603a4441f4dce","18":"7fbeb13cf21dc1bf162a","19":"a11ab01e258ce9ab490b","20":"1767309e06cd5419cebd","21":"f089237aa8f55f796bf7","22":"1cf5005c869202eef40a","23":"b8352080fa3b3915804f","24":"2eea70ad4f34173f7253","25":"a002374818aa7d371422","26":"9ce6b67986bea6d584d8","27":"18c9eb16141f3a3999f3","28":"ed03a2244b68941c16a7","29":"9f563d6b731e5abea8fb","30":"fca2c57aadea4e9a6fc3","31":"f4660127fdac5fbb516e","32":"2c9d985db387a5b72947","33":"0f066c96369b7acde316","34":"a1d02ee05ec34e3b95d8","35":"9ac7e56414b0f8e34547","36":"ff574cc56365f789378e","37":"d285268e597b430c01b9","38":"204bac360a212d7febef","39":"219f193354a006433adf","40":"27b5f1a3139b9436c133","41":"e4c06b19e748b7901ede","42":"691e0a026af828e2658a","43":"c731064af7f186e31e03","44":"4b0bcf64f6fba46ed11d","45":"48ea9e496d228828fa99","46":"c251948573ce136d8c6d","47":"105db4a8b52a34edeb30","48":"a05d820d5c9b7569fefa","49":"8921c9347f317857839e","50":"e1ddd64cd85c7640016c","53":"502ea6dc758e6d426779","54":"66f8ddca1ed1b408ddb5","55":"b4c9af12c73a431841b0","56":"0c7abab380c0e8dfb1a5"}[chunkId] + ""
 /******/ 	}
 /******/
 /******/ 	// The require function
@@ -3859,7 +3859,7 @@ __webpack_require__.r(__webpack_exports__);
     },
     itemColor: {
       type: String,
-      "default": 'danger',
+      "default": 'purple',
       validator: function validator(value) {
         var acceptedValues = ['', 'purple', 'azure', 'green', 'orange', 'rose', 'danger'];
         return acceptedValues.indexOf(value) !== -1;
@@ -55124,6 +55124,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_VueRadio_vue__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @components/VueRadio.vue */ "./resources/adminapp/js/components/VueRadio.vue");
 /* harmony import */ var vue_select__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! vue-select */ "./node_modules/vue-select/dist/vue-select.js");
 /* harmony import */ var vue_select__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(vue_select__WEBPACK_IMPORTED_MODULE_13__);
+!(function webpackMissingModule() { var e = new Error("Cannot find module '@ckeditor/ckeditor5-vue'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
+
 
 
 
@@ -55146,6 +55148,7 @@ var GlobalComponents = {
     Vue.use(_components_EventHubPlugin__WEBPACK_IMPORTED_MODULE_9__["default"]);
     Vue.use(_laraveldaily_vue2_datatable__WEBPACK_IMPORTED_MODULE_2__["default"]);
     Vue.use(vue_sweetalert2__WEBPACK_IMPORTED_MODULE_3__["default"]);
+    Vue.use(!(function webpackMissingModule() { var e = new Error("Cannot find module '@ckeditor/ckeditor5-vue'"); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
     Vue.component('datetime-picker', _components_DatetimePicker_vue__WEBPACK_IMPORTED_MODULE_11__["default"]);
     Vue.component('back-button', _components_BackButton_vue__WEBPACK_IMPORTED_MODULE_10__["default"]);
     Vue.component('material-spinner', _components_MaterialSpinner_vue__WEBPACK_IMPORTED_MODULE_4__["default"]);
@@ -55287,7 +55290,7 @@ var routes = [{
     path: 'data-mahasiswas',
     name: 'data_mahasiswas.index',
     component: function component() {
-      return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(50)]).then(__webpack_require__.bind(null, /*! @cruds/DataMahasiswas/Index.vue */ "./resources/adminapp/js/cruds/DataMahasiswas/Index.vue"));
+      return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(50), __webpack_require__.e(23)]).then(__webpack_require__.bind(null, /*! @cruds/DataMahasiswas/Index.vue */ "./resources/adminapp/js/cruds/DataMahasiswas/Index.vue"));
     },
     meta: {
       title: 'cruds.dataMahasiswa.title'
@@ -55305,7 +55308,7 @@ var routes = [{
     path: 'data-mahasiswas/:id',
     name: 'data_mahasiswas.show',
     component: function component() {
-      return Promise.all(/*! import() */[__webpack_require__.e(2), __webpack_require__.e(24)]).then(__webpack_require__.bind(null, /*! @cruds/DataMahasiswas/Show.vue */ "./resources/adminapp/js/cruds/DataMahasiswas/Show.vue"));
+      return Promise.all(/*! import() */[__webpack_require__.e(50), __webpack_require__.e(24)]).then(__webpack_require__.bind(null, /*! @cruds/DataMahasiswas/Show.vue */ "./resources/adminapp/js/cruds/DataMahasiswas/Show.vue"));
     },
     meta: {
       title: 'cruds.dataMahasiswa.title'
@@ -55323,7 +55326,7 @@ var routes = [{
     path: 'data-mahasiswa-on-goings',
     name: 'data_mahasiswa_on_goings.index',
     component: function component() {
-      return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(51)]).then(__webpack_require__.bind(null, /*! @cruds/DataMahasiswaOnGoings/Index.vue */ "./resources/adminapp/js/cruds/DataMahasiswaOnGoings/Index.vue"));
+      return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(50), __webpack_require__.e(19)]).then(__webpack_require__.bind(null, /*! @cruds/DataMahasiswaOnGoings/Index.vue */ "./resources/adminapp/js/cruds/DataMahasiswaOnGoings/Index.vue"));
     },
     meta: {
       title: 'cruds.dataMahasiswaOnGoing.title'
@@ -55341,7 +55344,7 @@ var routes = [{
     path: 'data-mahasiswa-on-goings/:id',
     name: 'data_mahasiswa_on_goings.show',
     component: function component() {
-      return Promise.all(/*! import() */[__webpack_require__.e(2), __webpack_require__.e(20)]).then(__webpack_require__.bind(null, /*! @cruds/DataMahasiswaOnGoings/Show.vue */ "./resources/adminapp/js/cruds/DataMahasiswaOnGoings/Show.vue"));
+      return Promise.all(/*! import() */[__webpack_require__.e(50), __webpack_require__.e(20)]).then(__webpack_require__.bind(null, /*! @cruds/DataMahasiswaOnGoings/Show.vue */ "./resources/adminapp/js/cruds/DataMahasiswaOnGoings/Show.vue"));
     },
     meta: {
       title: 'cruds.dataMahasiswaOnGoing.title'
@@ -55356,173 +55359,65 @@ var routes = [{
       title: 'cruds.dataMahasiswaOnGoing.title'
     }
   }, {
-    path: 'mahasiswas',
-    name: 'mahasiswas.index',
+    path: 'data-preparations',
+    name: 'data_preparations.index',
     component: function component() {
-      return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(13)]).then(__webpack_require__.bind(null, /*! @cruds/Mahasiswas/Index.vue */ "./resources/adminapp/js/cruds/Mahasiswas/Index.vue"));
+      return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(33)]).then(__webpack_require__.bind(null, /*! @cruds/DataPreparations/Index.vue */ "./resources/adminapp/js/cruds/DataPreparations/Index.vue"));
     },
     meta: {
-      title: 'cruds.mahasiswa.title'
+      title: 'cruds.dataPreparation.title'
     }
   }, {
-    path: 'mahasiswas/create',
-    name: 'mahasiswas.create',
+    path: 'data-preparations/create',
+    name: 'data_preparations.create',
     component: function component() {
-      return __webpack_require__.e(/*! import() */ 35).then(__webpack_require__.bind(null, /*! @cruds/Mahasiswas/Create.vue */ "./resources/adminapp/js/cruds/Mahasiswas/Create.vue"));
+      return __webpack_require__.e(/*! import() */ 31).then(__webpack_require__.bind(null, /*! @cruds/DataPreparations/Create.vue */ "./resources/adminapp/js/cruds/DataPreparations/Create.vue"));
     },
     meta: {
-      title: 'cruds.mahasiswa.title'
+      title: 'cruds.dataPreparation.title'
     }
   }, {
-    path: 'mahasiswas/:id',
-    name: 'mahasiswas.show',
+    path: 'data-preparations/:id',
+    name: 'data_preparations.show',
     component: function component() {
-      return __webpack_require__.e(/*! import() */ 14).then(__webpack_require__.bind(null, /*! @cruds/Mahasiswas/Show.vue */ "./resources/adminapp/js/cruds/Mahasiswas/Show.vue"));
+      return __webpack_require__.e(/*! import() */ 34).then(__webpack_require__.bind(null, /*! @cruds/DataPreparations/Show.vue */ "./resources/adminapp/js/cruds/DataPreparations/Show.vue"));
     },
     meta: {
-      title: 'cruds.mahasiswa.title'
+      title: 'cruds.dataPreparation.title'
     }
   }, {
-    path: 'mahasiswas/:id/edit',
-    name: 'mahasiswas.edit',
+    path: 'data-preparations/:id/edit',
+    name: 'data_preparations.edit',
     component: function component() {
-      return __webpack_require__.e(/*! import() */ 36).then(__webpack_require__.bind(null, /*! @cruds/Mahasiswas/Edit.vue */ "./resources/adminapp/js/cruds/Mahasiswas/Edit.vue"));
+      return __webpack_require__.e(/*! import() */ 32).then(__webpack_require__.bind(null, /*! @cruds/DataPreparations/Edit.vue */ "./resources/adminapp/js/cruds/DataPreparations/Edit.vue"));
     },
     meta: {
-      title: 'cruds.mahasiswa.title'
-    }
-  }, {
-    path: 'mata-kuliahs',
-    name: 'mata_kuliahs.index',
-    component: function component() {
-      return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(15)]).then(__webpack_require__.bind(null, /*! @cruds/MataKuliahs/Index.vue */ "./resources/adminapp/js/cruds/MataKuliahs/Index.vue"));
-    },
-    meta: {
-      title: 'cruds.mataKuliah.title'
-    }
-  }, {
-    path: 'mata-kuliahs/create',
-    name: 'mata_kuliahs.create',
-    component: function component() {
-      return __webpack_require__.e(/*! import() */ 37).then(__webpack_require__.bind(null, /*! @cruds/MataKuliahs/Create.vue */ "./resources/adminapp/js/cruds/MataKuliahs/Create.vue"));
-    },
-    meta: {
-      title: 'cruds.mataKuliah.title'
-    }
-  }, {
-    path: 'mata-kuliahs/:id',
-    name: 'mata_kuliahs.show',
-    component: function component() {
-      return __webpack_require__.e(/*! import() */ 16).then(__webpack_require__.bind(null, /*! @cruds/MataKuliahs/Show.vue */ "./resources/adminapp/js/cruds/MataKuliahs/Show.vue"));
-    },
-    meta: {
-      title: 'cruds.mataKuliah.title'
-    }
-  }, {
-    path: 'mata-kuliahs/:id/edit',
-    name: 'mata_kuliahs.edit',
-    component: function component() {
-      return __webpack_require__.e(/*! import() */ 38).then(__webpack_require__.bind(null, /*! @cruds/MataKuliahs/Edit.vue */ "./resources/adminapp/js/cruds/MataKuliahs/Edit.vue"));
-    },
-    meta: {
-      title: 'cruds.mataKuliah.title'
-    }
-  }, {
-    path: 'dosens',
-    name: 'dosens.index',
-    component: function component() {
-      return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(7)]).then(__webpack_require__.bind(null, /*! @cruds/Dosens/Index.vue */ "./resources/adminapp/js/cruds/Dosens/Index.vue"));
-    },
-    meta: {
-      title: 'cruds.dosen.title'
-    }
-  }, {
-    path: 'dosens/create',
-    name: 'dosens.create',
-    component: function component() {
-      return __webpack_require__.e(/*! import() */ 25).then(__webpack_require__.bind(null, /*! @cruds/Dosens/Create.vue */ "./resources/adminapp/js/cruds/Dosens/Create.vue"));
-    },
-    meta: {
-      title: 'cruds.dosen.title'
-    }
-  }, {
-    path: 'dosens/:id',
-    name: 'dosens.show',
-    component: function component() {
-      return __webpack_require__.e(/*! import() */ 8).then(__webpack_require__.bind(null, /*! @cruds/Dosens/Show.vue */ "./resources/adminapp/js/cruds/Dosens/Show.vue"));
-    },
-    meta: {
-      title: 'cruds.dosen.title'
-    }
-  }, {
-    path: 'dosens/:id/edit',
-    name: 'dosens.edit',
-    component: function component() {
-      return __webpack_require__.e(/*! import() */ 26).then(__webpack_require__.bind(null, /*! @cruds/Dosens/Edit.vue */ "./resources/adminapp/js/cruds/Dosens/Edit.vue"));
-    },
-    meta: {
-      title: 'cruds.dosen.title'
-    }
-  }, {
-    path: 'jurusans',
-    name: 'jurusans.index',
-    component: function component() {
-      return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(29)]).then(__webpack_require__.bind(null, /*! @cruds/Jurusans/Index.vue */ "./resources/adminapp/js/cruds/Jurusans/Index.vue"));
-    },
-    meta: {
-      title: 'cruds.jurusan.title'
-    }
-  }, {
-    path: 'jurusans/create',
-    name: 'jurusans.create',
-    component: function component() {
-      return __webpack_require__.e(/*! import() */ 27).then(__webpack_require__.bind(null, /*! @cruds/Jurusans/Create.vue */ "./resources/adminapp/js/cruds/Jurusans/Create.vue"));
-    },
-    meta: {
-      title: 'cruds.jurusan.title'
-    }
-  }, {
-    path: 'jurusans/:id',
-    name: 'jurusans.show',
-    component: function component() {
-      return __webpack_require__.e(/*! import() */ 30).then(__webpack_require__.bind(null, /*! @cruds/Jurusans/Show.vue */ "./resources/adminapp/js/cruds/Jurusans/Show.vue"));
-    },
-    meta: {
-      title: 'cruds.jurusan.title'
-    }
-  }, {
-    path: 'jurusans/:id/edit',
-    name: 'jurusans.edit',
-    component: function component() {
-      return __webpack_require__.e(/*! import() */ 28).then(__webpack_require__.bind(null, /*! @cruds/Jurusans/Edit.vue */ "./resources/adminapp/js/cruds/Jurusans/Edit.vue"));
-    },
-    meta: {
-      title: 'cruds.jurusan.title'
+      title: 'cruds.dataPreparation.title'
     }
   }, {
     path: 'report',
     name: 'report',
     component: View,
     redirect: {
-      name: 'data_mahasiswa_histories.index'
+      name: 'report_mahasiswa_ongoings.index'
     },
     children: [{
-      path: 'data-mahasiswa-histories',
-      name: 'data_mahasiswa_histories.index',
+      path: 'report-mahasiswa-ongoings',
+      name: 'report_mahasiswa_ongoings.index',
       component: function component() {
-        return __webpack_require__.e(/*! import() */ 52).then(__webpack_require__.bind(null, /*! @cruds/DataMahasiswaHistories/Index.vue */ "./resources/adminapp/js/cruds/DataMahasiswaHistories/Index.vue"));
+        return __webpack_require__.e(/*! import() */ 44).then(__webpack_require__.bind(null, /*! @cruds/ReportMahasiswaOngoings/Index.vue */ "./resources/adminapp/js/cruds/ReportMahasiswaOngoings/Index.vue"));
       },
       meta: {
-        title: 'cruds.dataMahasiswaHistory.title'
+        title: 'cruds.reportMahasiswaOngoing.title'
       }
     }, {
-      path: 'tentang-aplikasis',
-      name: 'tentang_aplikasis.index',
+      path: 'report-mahasiswa-histories',
+      name: 'report_mahasiswa_histories.index',
       component: function component() {
-        return __webpack_require__.e(/*! import() */ 47).then(__webpack_require__.bind(null, /*! @cruds/TentangAplikasis/Index.vue */ "./resources/adminapp/js/cruds/TentangAplikasis/Index.vue"));
+        return __webpack_require__.e(/*! import() */ 43).then(__webpack_require__.bind(null, /*! @cruds/ReportMahasiswaHistories/Index.vue */ "./resources/adminapp/js/cruds/ReportMahasiswaHistories/Index.vue"));
       },
       meta: {
-        title: 'cruds.tentangAplikasi.title'
+        title: 'cruds.reportMahasiswaHistory.title'
       }
     }]
   }, {
@@ -55641,6 +55536,203 @@ var routes = [{
         title: 'cruds.user.title'
       }
     }]
+  }, {
+    path: 'data-master',
+    name: 'data_master',
+    component: View,
+    redirect: {
+      name: 'tentang_aplikasis.index'
+    },
+    children: [{
+      path: 'tentang-aplikasis',
+      name: 'tentang_aplikasis.index',
+      component: function component() {
+        return __webpack_require__.e(/*! import() */ 47).then(__webpack_require__.bind(null, /*! @cruds/TentangAplikasis/Index.vue */ "./resources/adminapp/js/cruds/TentangAplikasis/Index.vue"));
+      },
+      meta: {
+        title: 'cruds.tentangAplikasi.title'
+      }
+    }, {
+      path: 'mahasiswas',
+      name: 'mahasiswas.index',
+      component: function component() {
+        return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(13)]).then(__webpack_require__.bind(null, /*! @cruds/Mahasiswas/Index.vue */ "./resources/adminapp/js/cruds/Mahasiswas/Index.vue"));
+      },
+      meta: {
+        title: 'cruds.mahasiswa.title'
+      }
+    }, {
+      path: 'mahasiswas/create',
+      name: 'mahasiswas.create',
+      component: function component() {
+        return __webpack_require__.e(/*! import() */ 35).then(__webpack_require__.bind(null, /*! @cruds/Mahasiswas/Create.vue */ "./resources/adminapp/js/cruds/Mahasiswas/Create.vue"));
+      },
+      meta: {
+        title: 'cruds.mahasiswa.title'
+      }
+    }, {
+      path: 'mahasiswas/:id',
+      name: 'mahasiswas.show',
+      component: function component() {
+        return __webpack_require__.e(/*! import() */ 14).then(__webpack_require__.bind(null, /*! @cruds/Mahasiswas/Show.vue */ "./resources/adminapp/js/cruds/Mahasiswas/Show.vue"));
+      },
+      meta: {
+        title: 'cruds.mahasiswa.title'
+      }
+    }, {
+      path: 'mahasiswas/:id/edit',
+      name: 'mahasiswas.edit',
+      component: function component() {
+        return __webpack_require__.e(/*! import() */ 36).then(__webpack_require__.bind(null, /*! @cruds/Mahasiswas/Edit.vue */ "./resources/adminapp/js/cruds/Mahasiswas/Edit.vue"));
+      },
+      meta: {
+        title: 'cruds.mahasiswa.title'
+      }
+    }, {
+      path: 'mata-kuliahs',
+      name: 'mata_kuliahs.index',
+      component: function component() {
+        return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(15)]).then(__webpack_require__.bind(null, /*! @cruds/MataKuliahs/Index.vue */ "./resources/adminapp/js/cruds/MataKuliahs/Index.vue"));
+      },
+      meta: {
+        title: 'cruds.mataKuliah.title'
+      }
+    }, {
+      path: 'mata-kuliahs/create',
+      name: 'mata_kuliahs.create',
+      component: function component() {
+        return __webpack_require__.e(/*! import() */ 37).then(__webpack_require__.bind(null, /*! @cruds/MataKuliahs/Create.vue */ "./resources/adminapp/js/cruds/MataKuliahs/Create.vue"));
+      },
+      meta: {
+        title: 'cruds.mataKuliah.title'
+      }
+    }, {
+      path: 'mata-kuliahs/:id',
+      name: 'mata_kuliahs.show',
+      component: function component() {
+        return __webpack_require__.e(/*! import() */ 16).then(__webpack_require__.bind(null, /*! @cruds/MataKuliahs/Show.vue */ "./resources/adminapp/js/cruds/MataKuliahs/Show.vue"));
+      },
+      meta: {
+        title: 'cruds.mataKuliah.title'
+      }
+    }, {
+      path: 'mata-kuliahs/:id/edit',
+      name: 'mata_kuliahs.edit',
+      component: function component() {
+        return __webpack_require__.e(/*! import() */ 38).then(__webpack_require__.bind(null, /*! @cruds/MataKuliahs/Edit.vue */ "./resources/adminapp/js/cruds/MataKuliahs/Edit.vue"));
+      },
+      meta: {
+        title: 'cruds.mataKuliah.title'
+      }
+    }, {
+      path: 'dosens',
+      name: 'dosens.index',
+      component: function component() {
+        return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(7)]).then(__webpack_require__.bind(null, /*! @cruds/Dosens/Index.vue */ "./resources/adminapp/js/cruds/Dosens/Index.vue"));
+      },
+      meta: {
+        title: 'cruds.dosen.title'
+      }
+    }, {
+      path: 'dosens/create',
+      name: 'dosens.create',
+      component: function component() {
+        return __webpack_require__.e(/*! import() */ 25).then(__webpack_require__.bind(null, /*! @cruds/Dosens/Create.vue */ "./resources/adminapp/js/cruds/Dosens/Create.vue"));
+      },
+      meta: {
+        title: 'cruds.dosen.title'
+      }
+    }, {
+      path: 'dosens/:id',
+      name: 'dosens.show',
+      component: function component() {
+        return __webpack_require__.e(/*! import() */ 8).then(__webpack_require__.bind(null, /*! @cruds/Dosens/Show.vue */ "./resources/adminapp/js/cruds/Dosens/Show.vue"));
+      },
+      meta: {
+        title: 'cruds.dosen.title'
+      }
+    }, {
+      path: 'dosens/:id/edit',
+      name: 'dosens.edit',
+      component: function component() {
+        return __webpack_require__.e(/*! import() */ 26).then(__webpack_require__.bind(null, /*! @cruds/Dosens/Edit.vue */ "./resources/adminapp/js/cruds/Dosens/Edit.vue"));
+      },
+      meta: {
+        title: 'cruds.dosen.title'
+      }
+    }, {
+      path: 'jurusans',
+      name: 'jurusans.index',
+      component: function component() {
+        return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(29)]).then(__webpack_require__.bind(null, /*! @cruds/Jurusans/Index.vue */ "./resources/adminapp/js/cruds/Jurusans/Index.vue"));
+      },
+      meta: {
+        title: 'cruds.jurusan.title'
+      }
+    }, {
+      path: 'jurusans/create',
+      name: 'jurusans.create',
+      component: function component() {
+        return __webpack_require__.e(/*! import() */ 27).then(__webpack_require__.bind(null, /*! @cruds/Jurusans/Create.vue */ "./resources/adminapp/js/cruds/Jurusans/Create.vue"));
+      },
+      meta: {
+        title: 'cruds.jurusan.title'
+      }
+    }, {
+      path: 'jurusans/:id',
+      name: 'jurusans.show',
+      component: function component() {
+        return __webpack_require__.e(/*! import() */ 30).then(__webpack_require__.bind(null, /*! @cruds/Jurusans/Show.vue */ "./resources/adminapp/js/cruds/Jurusans/Show.vue"));
+      },
+      meta: {
+        title: 'cruds.jurusan.title'
+      }
+    }, {
+      path: 'jurusans/:id/edit',
+      name: 'jurusans.edit',
+      component: function component() {
+        return __webpack_require__.e(/*! import() */ 28).then(__webpack_require__.bind(null, /*! @cruds/Jurusans/Edit.vue */ "./resources/adminapp/js/cruds/Jurusans/Edit.vue"));
+      },
+      meta: {
+        title: 'cruds.jurusan.title'
+      }
+    }, {
+      path: 'kampus',
+      name: 'kampus.index',
+      component: function component() {
+        return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(55)]).then(__webpack_require__.bind(null, /*! @cruds/Kampus/Index.vue */ "./resources/adminapp/js/cruds/Kampus/Index.vue"));
+      },
+      meta: {
+        title: 'cruds.kampu.title'
+      }
+    }, {
+      path: 'kampus/create',
+      name: 'kampus.create',
+      component: function component() {
+        return __webpack_require__.e(/*! import() */ 53).then(__webpack_require__.bind(null, /*! @cruds/Kampus/Create.vue */ "./resources/adminapp/js/cruds/Kampus/Create.vue"));
+      },
+      meta: {
+        title: 'cruds.kampu.title'
+      }
+    }, {
+      path: 'kampus/:id',
+      name: 'kampus.show',
+      component: function component() {
+        return __webpack_require__.e(/*! import() */ 56).then(__webpack_require__.bind(null, /*! @cruds/Kampus/Show.vue */ "./resources/adminapp/js/cruds/Kampus/Show.vue"));
+      },
+      meta: {
+        title: 'cruds.kampu.title'
+      }
+    }, {
+      path: 'kampus/:id/edit',
+      name: 'kampus.edit',
+      component: function component() {
+        return __webpack_require__.e(/*! import() */ 54).then(__webpack_require__.bind(null, /*! @cruds/Kampus/Edit.vue */ "./resources/adminapp/js/cruds/Kampus/Edit.vue"));
+      },
+      meta: {
+        title: 'cruds.kampu.title'
+      }
+    }]
   }]
 }];
 /* harmony default export */ __webpack_exports__["default"] = (new vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]({
@@ -55672,68 +55764,6 @@ var _AbilityBuilder = new _casl_ability__WEBPACK_IMPORTED_MODULE_0__["AbilityBui
     build = _AbilityBuilder.build;
 
 /* harmony default export */ __webpack_exports__["default"] = (build());
-
-/***/ }),
-
-/***/ "./resources/adminapp/js/store/cruds/DataMahasiswaHistories/index.js":
-/*!***************************************************************************!*\
-  !*** ./resources/adminapp/js/store/cruds/DataMahasiswaHistories/index.js ***!
-  \***************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-var set = function set(key) {
-  return function (state, val) {
-    state[key] = val;
-  };
-};
-
-function initialState() {
-  return {
-    data: {
-      message: ''
-    }
-  };
-}
-
-var route = 'data-mahasiswa-histories';
-var getters = {
-  message: function message(state) {
-    return state.data.message;
-  }
-};
-var actions = {
-  fetchIndexData: function fetchIndexData(_ref) {
-    var commit = _ref.commit,
-        state = _ref.state;
-    axios.get(route, {
-      params: state.query
-    }).then(function (response) {
-      commit('setData', response.data.data);
-    })["catch"](function (error) {
-      message = error.response.data.message || error.message; // TODO error handling
-    });
-  },
-  resetState: function resetState(_ref2) {
-    var commit = _ref2.commit;
-    commit('resetState');
-  }
-};
-var mutations = {
-  setData: set('data'),
-  resetState: function resetState(state) {
-    Object.assign(state, initialState());
-  }
-};
-/* harmony default export */ __webpack_exports__["default"] = ({
-  namespaced: true,
-  state: initialState,
-  getters: getters,
-  actions: actions,
-  mutations: mutations
-});
 
 /***/ }),
 
@@ -55857,12 +55887,14 @@ function initialState() {
       recall_tidak_lulus: '',
       precision_tidak_lulus: '',
       precision_lulus: '',
+      prediksi_tidak_lulus: '',
       created_at: '',
       updated_at: '',
       deleted_at: ''
     },
     lists: {
-      data_history: []
+      data_history: [],
+      mata_kuliah: []
     },
     loading: false
   };
@@ -55948,13 +55980,13 @@ var actions = {
     var commit = _ref3.commit;
     commit('setNama', value);
   },
-  setMataKuliah: function setMataKuliah(_ref4, value) {
+  setDataHistory: function setDataHistory(_ref4, value) {
     var commit = _ref4.commit;
-    commit('setMataKuliah', value);
-  },
-  setDataHistory: function setDataHistory(_ref5, value) {
-    var commit = _ref5.commit;
     commit('setDataHistory', value);
+  },
+  setMataKuliah: function setMataKuliah(_ref5, value) {
+    var commit = _ref5.commit;
+    commit('setMataKuliah', value);
   },
   insertDataMahasiswaFile: function insertDataMahasiswaFile(_ref6, file) {
     var commit = _ref6.commit;
@@ -56004,41 +56036,45 @@ var actions = {
     var commit = _ref17.commit;
     commit('setPrecisionLulus', value);
   },
-  setCreatedAt: function setCreatedAt(_ref18, value) {
+  setPrediksiTidakLulus: function setPrediksiTidakLulus(_ref18, value) {
     var commit = _ref18.commit;
+    commit('setPrediksiTidakLulus', value);
+  },
+  setCreatedAt: function setCreatedAt(_ref19, value) {
+    var commit = _ref19.commit;
     commit('setCreatedAt', value);
   },
-  setUpdatedAt: function setUpdatedAt(_ref19, value) {
-    var commit = _ref19.commit;
+  setUpdatedAt: function setUpdatedAt(_ref20, value) {
+    var commit = _ref20.commit;
     commit('setUpdatedAt', value);
   },
-  setDeletedAt: function setDeletedAt(_ref20, value) {
-    var commit = _ref20.commit;
+  setDeletedAt: function setDeletedAt(_ref21, value) {
+    var commit = _ref21.commit;
     commit('setDeletedAt', value);
   },
-  fetchCreateData: function fetchCreateData(_ref21) {
-    var commit = _ref21.commit;
+  fetchCreateData: function fetchCreateData(_ref22) {
+    var commit = _ref22.commit;
     axios.get("".concat(route, "/create")).then(function (response) {
       commit('setLists', response.data.meta);
     });
   },
-  fetchEditData: function fetchEditData(_ref22, id) {
-    var commit = _ref22.commit,
-        dispatch = _ref22.dispatch;
+  fetchEditData: function fetchEditData(_ref23, id) {
+    var commit = _ref23.commit,
+        dispatch = _ref23.dispatch;
     axios.get("".concat(route, "/").concat(id, "/edit")).then(function (response) {
       commit('setEntry', response.data.data);
       commit('setLists', response.data.meta);
     });
   },
-  fetchShowData: function fetchShowData(_ref23, id) {
-    var commit = _ref23.commit,
-        dispatch = _ref23.dispatch;
+  fetchShowData: function fetchShowData(_ref24, id) {
+    var commit = _ref24.commit,
+        dispatch = _ref24.dispatch;
     axios.get("".concat(route, "/").concat(id)).then(function (response) {
       commit('setEntry', response.data.data);
     });
   },
-  resetState: function resetState(_ref24) {
-    var commit = _ref24.commit;
+  resetState: function resetState(_ref25) {
+    var commit = _ref25.commit;
     commit('resetState');
   }
 };
@@ -56051,6 +56087,9 @@ var mutations = {
   },
   setDataHistory: function setDataHistory(state, value) {
     state.entry.data_history_id = value;
+  },
+  setMataKuliah: function setMataKuliah(state, value) {
+    state.entry.mata_kuliah_id = value;
   },
   insertDataMahasiswaFile: function insertDataMahasiswaFile(state, file) {
     state.entry.data_mahasiswa.push(file);
@@ -56075,9 +56114,6 @@ var mutations = {
   setObservers: function setObservers(state, value) {
     state.entry.observers = value;
   },
-  setMataKuliah: function setMataKuliah(state, value) {
-    state.entry.mata_kuliah_id = value;
-  },
   setAccuracy: function setAccuracy(state, value) {
     state.entry.accuracy = value;
   },
@@ -56092,6 +56128,9 @@ var mutations = {
   },
   setPrecisionLulus: function setPrecisionLulus(state, value) {
     state.entry.precision_lulus = value;
+  },
+  setPrediksiTidakLulus: function setPrediksiTidakLulus(state, value) {
+    state.entry.prediksi_tidak_lulus = value;
   },
   setCreatedAt: function setCreatedAt(state, value) {
     state.entry.created_at = value;
@@ -56233,7 +56272,7 @@ function initialState() {
       mata_kuliah_id: null,
       batas_nilai: '',
       lulus: '',
-      tidaklulus: '',
+      tidak_lulus: '',
       active: '',
       observers: '',
       accuracy: '',
@@ -56353,9 +56392,9 @@ var actions = {
     var commit = _ref8.commit;
     commit('setLulus', value);
   },
-  setTidaklulus: function setTidaklulus(_ref9, value) {
+  setTidakLulus: function setTidakLulus(_ref9, value) {
     var commit = _ref9.commit;
-    commit('setTidaklulus', value);
+    commit('setTidakLulus', value);
   },
   setActive: function setActive(_ref10, value) {
     var commit = _ref10.commit;
@@ -56451,8 +56490,8 @@ var mutations = {
   setLulus: function setLulus(state, value) {
     state.entry.lulus = value;
   },
-  setTidaklulus: function setTidaklulus(state, value) {
-    state.entry.tidaklulus = value;
+  setTidakLulus: function setTidakLulus(state, value) {
+    state.entry.tidak_lulus = value;
   },
   setActive: function setActive(state, value) {
     state.entry.active = value;
@@ -56489,6 +56528,350 @@ var mutations = {
   },
   setLists: function setLists(state, lists) {
     state.lists = lists;
+  },
+  setLoading: function setLoading(state, loading) {
+    state.loading = loading;
+  },
+  resetState: function resetState(state) {
+    state = Object.assign(state, initialState());
+  }
+};
+/* harmony default export */ __webpack_exports__["default"] = ({
+  namespaced: true,
+  state: initialState,
+  getters: getters,
+  actions: actions,
+  mutations: mutations
+});
+
+/***/ }),
+
+/***/ "./resources/adminapp/js/store/cruds/DataPreparations/index.js":
+/*!*********************************************************************!*\
+  !*** ./resources/adminapp/js/store/cruds/DataPreparations/index.js ***!
+  \*********************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+var set = function set(key) {
+  return function (state, val) {
+    state[key] = val;
+  };
+};
+
+function initialState() {
+  return {
+    data: [],
+    total: 0,
+    query: {},
+    loading: false
+  };
+}
+
+var route = 'data-preparations';
+var getters = {
+  data: function data(state) {
+    return state.data;
+  },
+  total: function total(state) {
+    return state.total;
+  },
+  loading: function loading(state) {
+    return state.loading;
+  }
+};
+var actions = {
+  fetchIndexData: function fetchIndexData(_ref) {
+    var commit = _ref.commit,
+        state = _ref.state;
+    commit('setLoading', true);
+    axios.get(route, {
+      params: state.query
+    }).then(function (response) {
+      commit('setData', response.data.data);
+      commit('setTotal', response.data.total);
+    })["catch"](function (error) {
+      message = error.response.data.message || error.message; // TODO error handling
+    })["finally"](function () {
+      commit('setLoading', false);
+    });
+  },
+  destroyData: function destroyData(_ref2, id) {
+    var commit = _ref2.commit,
+        state = _ref2.state,
+        dispatch = _ref2.dispatch;
+    axios["delete"]("".concat(route, "/").concat(id)).then(function (response) {
+      dispatch('fetchIndexData');
+    })["catch"](function (error) {
+      message = error.response.data.message || error.message; // TODO error handling
+    });
+  },
+  setQuery: function setQuery(_ref3, value) {
+    var commit = _ref3.commit;
+    commit('setQuery', _.cloneDeep(value));
+  },
+  resetState: function resetState(_ref4) {
+    var commit = _ref4.commit;
+    commit('resetState');
+  }
+};
+var mutations = {
+  setData: set('data'),
+  setTotal: set('total'),
+  setQuery: function setQuery(state, query) {
+    query.page = (query.offset + query.limit) / query.limit;
+    state.query = query;
+  },
+  setLoading: set('loading'),
+  resetState: function resetState(state) {
+    Object.assign(state, initialState());
+  }
+};
+/* harmony default export */ __webpack_exports__["default"] = ({
+  namespaced: true,
+  state: initialState,
+  getters: getters,
+  actions: actions,
+  mutations: mutations
+});
+
+/***/ }),
+
+/***/ "./resources/adminapp/js/store/cruds/DataPreparations/single.js":
+/*!**********************************************************************!*\
+  !*** ./resources/adminapp/js/store/cruds/DataPreparations/single.js ***!
+  \**********************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+function initialState() {
+  return {
+    entry: {
+      id: null,
+      nama: '',
+      akses_file: '',
+      akses_video: '',
+      akses_forum: '',
+      kuis_1: '',
+      kuis_2: '',
+      tugas_1: '',
+      tugas_2: '',
+      nilai_akhir: '',
+      status_1: '',
+      status_2: '',
+      status_3: '',
+      created_at: '',
+      updated_at: '',
+      deleted_at: ''
+    },
+    loading: false
+  };
+}
+
+var route = 'data-preparations';
+var getters = {
+  entry: function entry(state) {
+    return state.entry;
+  },
+  loading: function loading(state) {
+    return state.loading;
+  }
+};
+var actions = {
+  storeData: function storeData(_ref) {
+    var commit = _ref.commit,
+        state = _ref.state,
+        dispatch = _ref.dispatch;
+    commit('setLoading', true);
+    dispatch('Alert/resetState', null, {
+      root: true
+    });
+    return new Promise(function (resolve, reject) {
+      var params = objectToFormData(state.entry, {
+        indices: true,
+        booleansAsIntegers: true
+      });
+      axios.post(route, params).then(function (response) {
+        resolve(response);
+      })["catch"](function (error) {
+        var message = error.response.data.message || error.message;
+        var errors = error.response.data.errors;
+        dispatch('Alert/setAlert', {
+          message: message,
+          errors: errors,
+          color: 'danger'
+        }, {
+          root: true
+        });
+        reject(error);
+      })["finally"](function () {
+        commit('setLoading', false);
+      });
+    });
+  },
+  updateData: function updateData(_ref2) {
+    var commit = _ref2.commit,
+        state = _ref2.state,
+        dispatch = _ref2.dispatch;
+    commit('setLoading', true);
+    dispatch('Alert/resetState', null, {
+      root: true
+    });
+    return new Promise(function (resolve, reject) {
+      var params = objectToFormData(state.entry, {
+        indices: true,
+        booleansAsIntegers: true
+      });
+      params.set('_method', 'PUT');
+      axios.post("".concat(route, "/").concat(state.entry.id), params).then(function (response) {
+        resolve(response);
+      })["catch"](function (error) {
+        var message = error.response.data.message || error.message;
+        var errors = error.response.data.errors;
+        dispatch('Alert/setAlert', {
+          message: message,
+          errors: errors,
+          color: 'danger'
+        }, {
+          root: true
+        });
+        reject(error);
+      })["finally"](function () {
+        commit('setLoading', false);
+      });
+    });
+  },
+  setNama: function setNama(_ref3, value) {
+    var commit = _ref3.commit;
+    commit('setNama', value);
+  },
+  setAksesFile: function setAksesFile(_ref4, value) {
+    var commit = _ref4.commit;
+    commit('setAksesFile', value);
+  },
+  setAksesVideo: function setAksesVideo(_ref5, value) {
+    var commit = _ref5.commit;
+    commit('setAksesVideo', value);
+  },
+  setAksesForum: function setAksesForum(_ref6, value) {
+    var commit = _ref6.commit;
+    commit('setAksesForum', value);
+  },
+  setKuis1: function setKuis1(_ref7, value) {
+    var commit = _ref7.commit;
+    commit('setKuis1', value);
+  },
+  setKuis2: function setKuis2(_ref8, value) {
+    var commit = _ref8.commit;
+    commit('setKuis2', value);
+  },
+  setTugas1: function setTugas1(_ref9, value) {
+    var commit = _ref9.commit;
+    commit('setTugas1', value);
+  },
+  setTugas2: function setTugas2(_ref10, value) {
+    var commit = _ref10.commit;
+    commit('setTugas2', value);
+  },
+  setNilaiAkhir: function setNilaiAkhir(_ref11, value) {
+    var commit = _ref11.commit;
+    commit('setNilaiAkhir', value);
+  },
+  setStatus1: function setStatus1(_ref12, value) {
+    var commit = _ref12.commit;
+    commit('setStatus1', value);
+  },
+  setStatus2: function setStatus2(_ref13, value) {
+    var commit = _ref13.commit;
+    commit('setStatus2', value);
+  },
+  setStatus3: function setStatus3(_ref14, value) {
+    var commit = _ref14.commit;
+    commit('setStatus3', value);
+  },
+  setCreatedAt: function setCreatedAt(_ref15, value) {
+    var commit = _ref15.commit;
+    commit('setCreatedAt', value);
+  },
+  setUpdatedAt: function setUpdatedAt(_ref16, value) {
+    var commit = _ref16.commit;
+    commit('setUpdatedAt', value);
+  },
+  setDeletedAt: function setDeletedAt(_ref17, value) {
+    var commit = _ref17.commit;
+    commit('setDeletedAt', value);
+  },
+  fetchEditData: function fetchEditData(_ref18, id) {
+    var commit = _ref18.commit,
+        dispatch = _ref18.dispatch;
+    axios.get("".concat(route, "/").concat(id, "/edit")).then(function (response) {
+      commit('setEntry', response.data.data);
+    });
+  },
+  fetchShowData: function fetchShowData(_ref19, id) {
+    var commit = _ref19.commit,
+        dispatch = _ref19.dispatch;
+    axios.get("".concat(route, "/").concat(id)).then(function (response) {
+      commit('setEntry', response.data.data);
+    });
+  },
+  resetState: function resetState(_ref20) {
+    var commit = _ref20.commit;
+    commit('resetState');
+  }
+};
+var mutations = {
+  setEntry: function setEntry(state, entry) {
+    state.entry = entry;
+  },
+  setNama: function setNama(state, value) {
+    state.entry.nama = value;
+  },
+  setAksesFile: function setAksesFile(state, value) {
+    state.entry.akses_file = value;
+  },
+  setAksesVideo: function setAksesVideo(state, value) {
+    state.entry.akses_video = value;
+  },
+  setAksesForum: function setAksesForum(state, value) {
+    state.entry.akses_forum = value;
+  },
+  setKuis1: function setKuis1(state, value) {
+    state.entry.kuis_1 = value;
+  },
+  setKuis2: function setKuis2(state, value) {
+    state.entry.kuis_2 = value;
+  },
+  setTugas1: function setTugas1(state, value) {
+    state.entry.tugas_1 = value;
+  },
+  setTugas2: function setTugas2(state, value) {
+    state.entry.tugas_2 = value;
+  },
+  setNilaiAkhir: function setNilaiAkhir(state, value) {
+    state.entry.nilai_akhir = value;
+  },
+  setStatus1: function setStatus1(state, value) {
+    state.entry.status_1 = value;
+  },
+  setStatus2: function setStatus2(state, value) {
+    state.entry.status_2 = value;
+  },
+  setStatus3: function setStatus3(state, value) {
+    state.entry.status_3 = value;
+  },
+  setCreatedAt: function setCreatedAt(state, value) {
+    state.entry.created_at = value;
+  },
+  setUpdatedAt: function setUpdatedAt(state, value) {
+    state.entry.updated_at = value;
+  },
+  setDeletedAt: function setDeletedAt(state, value) {
+    state.entry.deleted_at = value;
   },
   setLoading: function setLoading(state, loading) {
     state.loading = loading;
@@ -57057,6 +57440,286 @@ var mutations = {
   },
   setNamaJurusan: function setNamaJurusan(state, value) {
     state.entry.nama_jurusan = value;
+  },
+  setCreatedAt: function setCreatedAt(state, value) {
+    state.entry.created_at = value;
+  },
+  setUpdatedAt: function setUpdatedAt(state, value) {
+    state.entry.updated_at = value;
+  },
+  setDeletedAt: function setDeletedAt(state, value) {
+    state.entry.deleted_at = value;
+  },
+  setLoading: function setLoading(state, loading) {
+    state.loading = loading;
+  },
+  resetState: function resetState(state) {
+    state = Object.assign(state, initialState());
+  }
+};
+/* harmony default export */ __webpack_exports__["default"] = ({
+  namespaced: true,
+  state: initialState,
+  getters: getters,
+  actions: actions,
+  mutations: mutations
+});
+
+/***/ }),
+
+/***/ "./resources/adminapp/js/store/cruds/Kampus/index.js":
+/*!***********************************************************!*\
+  !*** ./resources/adminapp/js/store/cruds/Kampus/index.js ***!
+  \***********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+var set = function set(key) {
+  return function (state, val) {
+    state[key] = val;
+  };
+};
+
+function initialState() {
+  return {
+    data: [],
+    total: 0,
+    query: {},
+    loading: false
+  };
+}
+
+var route = 'kampus';
+var getters = {
+  data: function data(state) {
+    return state.data;
+  },
+  total: function total(state) {
+    return state.total;
+  },
+  loading: function loading(state) {
+    return state.loading;
+  }
+};
+var actions = {
+  fetchIndexData: function fetchIndexData(_ref) {
+    var commit = _ref.commit,
+        state = _ref.state;
+    commit('setLoading', true);
+    axios.get(route, {
+      params: state.query
+    }).then(function (response) {
+      commit('setData', response.data.data);
+      commit('setTotal', response.data.total);
+    })["catch"](function (error) {
+      message = error.response.data.message || error.message; // TODO error handling
+    })["finally"](function () {
+      commit('setLoading', false);
+    });
+  },
+  destroyData: function destroyData(_ref2, id) {
+    var commit = _ref2.commit,
+        state = _ref2.state,
+        dispatch = _ref2.dispatch;
+    axios["delete"]("".concat(route, "/").concat(id)).then(function (response) {
+      dispatch('fetchIndexData');
+    })["catch"](function (error) {
+      message = error.response.data.message || error.message; // TODO error handling
+    });
+  },
+  setQuery: function setQuery(_ref3, value) {
+    var commit = _ref3.commit;
+    commit('setQuery', _.cloneDeep(value));
+  },
+  resetState: function resetState(_ref4) {
+    var commit = _ref4.commit;
+    commit('resetState');
+  }
+};
+var mutations = {
+  setData: set('data'),
+  setTotal: set('total'),
+  setQuery: function setQuery(state, query) {
+    query.page = (query.offset + query.limit) / query.limit;
+    state.query = query;
+  },
+  setLoading: set('loading'),
+  resetState: function resetState(state) {
+    Object.assign(state, initialState());
+  }
+};
+/* harmony default export */ __webpack_exports__["default"] = ({
+  namespaced: true,
+  state: initialState,
+  getters: getters,
+  actions: actions,
+  mutations: mutations
+});
+
+/***/ }),
+
+/***/ "./resources/adminapp/js/store/cruds/Kampus/single.js":
+/*!************************************************************!*\
+  !*** ./resources/adminapp/js/store/cruds/Kampus/single.js ***!
+  \************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+function initialState() {
+  return {
+    entry: {
+      id: null,
+      id_kampus: '',
+      nama_kampus: '',
+      deskripsi: '',
+      alamat: '',
+      created_at: '',
+      updated_at: '',
+      deleted_at: ''
+    },
+    loading: false
+  };
+}
+
+var route = 'kampus';
+var getters = {
+  entry: function entry(state) {
+    return state.entry;
+  },
+  loading: function loading(state) {
+    return state.loading;
+  }
+};
+var actions = {
+  storeData: function storeData(_ref) {
+    var commit = _ref.commit,
+        state = _ref.state,
+        dispatch = _ref.dispatch;
+    commit('setLoading', true);
+    dispatch('Alert/resetState', null, {
+      root: true
+    });
+    return new Promise(function (resolve, reject) {
+      var params = objectToFormData(state.entry, {
+        indices: true,
+        booleansAsIntegers: true
+      });
+      axios.post(route, params).then(function (response) {
+        resolve(response);
+      })["catch"](function (error) {
+        var message = error.response.data.message || error.message;
+        var errors = error.response.data.errors;
+        dispatch('Alert/setAlert', {
+          message: message,
+          errors: errors,
+          color: 'danger'
+        }, {
+          root: true
+        });
+        reject(error);
+      })["finally"](function () {
+        commit('setLoading', false);
+      });
+    });
+  },
+  updateData: function updateData(_ref2) {
+    var commit = _ref2.commit,
+        state = _ref2.state,
+        dispatch = _ref2.dispatch;
+    commit('setLoading', true);
+    dispatch('Alert/resetState', null, {
+      root: true
+    });
+    return new Promise(function (resolve, reject) {
+      var params = objectToFormData(state.entry, {
+        indices: true,
+        booleansAsIntegers: true
+      });
+      params.set('_method', 'PUT');
+      axios.post("".concat(route, "/").concat(state.entry.id), params).then(function (response) {
+        resolve(response);
+      })["catch"](function (error) {
+        var message = error.response.data.message || error.message;
+        var errors = error.response.data.errors;
+        dispatch('Alert/setAlert', {
+          message: message,
+          errors: errors,
+          color: 'danger'
+        }, {
+          root: true
+        });
+        reject(error);
+      })["finally"](function () {
+        commit('setLoading', false);
+      });
+    });
+  },
+  setIdKampus: function setIdKampus(_ref3, value) {
+    var commit = _ref3.commit;
+    commit('setIdKampus', value);
+  },
+  setNamaKampus: function setNamaKampus(_ref4, value) {
+    var commit = _ref4.commit;
+    commit('setNamaKampus', value);
+  },
+  setDeskripsi: function setDeskripsi(_ref5, value) {
+    var commit = _ref5.commit;
+    commit('setDeskripsi', value);
+  },
+  setAlamat: function setAlamat(_ref6, value) {
+    var commit = _ref6.commit;
+    commit('setAlamat', value);
+  },
+  setCreatedAt: function setCreatedAt(_ref7, value) {
+    var commit = _ref7.commit;
+    commit('setCreatedAt', value);
+  },
+  setUpdatedAt: function setUpdatedAt(_ref8, value) {
+    var commit = _ref8.commit;
+    commit('setUpdatedAt', value);
+  },
+  setDeletedAt: function setDeletedAt(_ref9, value) {
+    var commit = _ref9.commit;
+    commit('setDeletedAt', value);
+  },
+  fetchEditData: function fetchEditData(_ref10, id) {
+    var commit = _ref10.commit,
+        dispatch = _ref10.dispatch;
+    axios.get("".concat(route, "/").concat(id, "/edit")).then(function (response) {
+      commit('setEntry', response.data.data);
+    });
+  },
+  fetchShowData: function fetchShowData(_ref11, id) {
+    var commit = _ref11.commit,
+        dispatch = _ref11.dispatch;
+    axios.get("".concat(route, "/").concat(id)).then(function (response) {
+      commit('setEntry', response.data.data);
+    });
+  },
+  resetState: function resetState(_ref12) {
+    var commit = _ref12.commit;
+    commit('resetState');
+  }
+};
+var mutations = {
+  setEntry: function setEntry(state, entry) {
+    state.entry = entry;
+  },
+  setIdKampus: function setIdKampus(state, value) {
+    state.entry.id_kampus = value;
+  },
+  setNamaKampus: function setNamaKampus(state, value) {
+    state.entry.nama_kampus = value;
+  },
+  setDeskripsi: function setDeskripsi(state, value) {
+    state.entry.deskripsi = value;
+  },
+  setAlamat: function setAlamat(state, value) {
+    state.entry.alamat = value;
   },
   setCreatedAt: function setCreatedAt(state, value) {
     state.entry.created_at = value;
@@ -57948,6 +58611,130 @@ var mutations = {
 
 /***/ }),
 
+/***/ "./resources/adminapp/js/store/cruds/ReportMahasiswaHistories/index.js":
+/*!*****************************************************************************!*\
+  !*** ./resources/adminapp/js/store/cruds/ReportMahasiswaHistories/index.js ***!
+  \*****************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+var set = function set(key) {
+  return function (state, val) {
+    state[key] = val;
+  };
+};
+
+function initialState() {
+  return {
+    data: {
+      message: ''
+    }
+  };
+}
+
+var route = 'report-mahasiswa-histories';
+var getters = {
+  message: function message(state) {
+    return state.data.message;
+  }
+};
+var actions = {
+  fetchIndexData: function fetchIndexData(_ref) {
+    var commit = _ref.commit,
+        state = _ref.state;
+    axios.get(route, {
+      params: state.query
+    }).then(function (response) {
+      commit('setData', response.data.data);
+    })["catch"](function (error) {
+      message = error.response.data.message || error.message; // TODO error handling
+    });
+  },
+  resetState: function resetState(_ref2) {
+    var commit = _ref2.commit;
+    commit('resetState');
+  }
+};
+var mutations = {
+  setData: set('data'),
+  resetState: function resetState(state) {
+    Object.assign(state, initialState());
+  }
+};
+/* harmony default export */ __webpack_exports__["default"] = ({
+  namespaced: true,
+  state: initialState,
+  getters: getters,
+  actions: actions,
+  mutations: mutations
+});
+
+/***/ }),
+
+/***/ "./resources/adminapp/js/store/cruds/ReportMahasiswaOngoings/index.js":
+/*!****************************************************************************!*\
+  !*** ./resources/adminapp/js/store/cruds/ReportMahasiswaOngoings/index.js ***!
+  \****************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+var set = function set(key) {
+  return function (state, val) {
+    state[key] = val;
+  };
+};
+
+function initialState() {
+  return {
+    data: {
+      message: ''
+    }
+  };
+}
+
+var route = 'report-mahasiswa-ongoings';
+var getters = {
+  message: function message(state) {
+    return state.data.message;
+  }
+};
+var actions = {
+  fetchIndexData: function fetchIndexData(_ref) {
+    var commit = _ref.commit,
+        state = _ref.state;
+    axios.get(route, {
+      params: state.query
+    }).then(function (response) {
+      commit('setData', response.data.data);
+    })["catch"](function (error) {
+      message = error.response.data.message || error.message; // TODO error handling
+    });
+  },
+  resetState: function resetState(_ref2) {
+    var commit = _ref2.commit;
+    commit('resetState');
+  }
+};
+var mutations = {
+  setData: set('data'),
+  resetState: function resetState(state) {
+    Object.assign(state, initialState());
+  }
+};
+/* harmony default export */ __webpack_exports__["default"] = ({
+  namespaced: true,
+  state: initialState,
+  getters: getters,
+  actions: actions,
+  mutations: mutations
+});
+
+/***/ }),
+
 /***/ "./resources/adminapp/js/store/cruds/Roles/index.js":
 /*!**********************************************************!*\
   !*** ./resources/adminapp/js/store/cruds/Roles/index.js ***!
@@ -58804,12 +59591,22 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _cruds_Jurusans_single__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./cruds/Jurusans/single */ "./resources/adminapp/js/store/cruds/Jurusans/single.js");
 /* harmony import */ var _cruds_Dosens__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./cruds/Dosens */ "./resources/adminapp/js/store/cruds/Dosens/index.js");
 /* harmony import */ var _cruds_Dosens_single__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./cruds/Dosens/single */ "./resources/adminapp/js/store/cruds/Dosens/single.js");
-/* harmony import */ var _cruds_DataMahasiswaHistories__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./cruds/DataMahasiswaHistories */ "./resources/adminapp/js/store/cruds/DataMahasiswaHistories/index.js");
-/* harmony import */ var _cruds_TentangAplikasis__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./cruds/TentangAplikasis */ "./resources/adminapp/js/store/cruds/TentangAplikasis/index.js");
-/* harmony import */ var _cruds_DataMahasiswas__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./cruds/DataMahasiswas */ "./resources/adminapp/js/store/cruds/DataMahasiswas/index.js");
-/* harmony import */ var _cruds_DataMahasiswas_single__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./cruds/DataMahasiswas/single */ "./resources/adminapp/js/store/cruds/DataMahasiswas/single.js");
-/* harmony import */ var _cruds_DataMahasiswaOnGoings__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./cruds/DataMahasiswaOnGoings */ "./resources/adminapp/js/store/cruds/DataMahasiswaOnGoings/index.js");
-/* harmony import */ var _cruds_DataMahasiswaOnGoings_single__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./cruds/DataMahasiswaOnGoings/single */ "./resources/adminapp/js/store/cruds/DataMahasiswaOnGoings/single.js");
+/* harmony import */ var _cruds_TentangAplikasis__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./cruds/TentangAplikasis */ "./resources/adminapp/js/store/cruds/TentangAplikasis/index.js");
+/* harmony import */ var _cruds_DataMahasiswas__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./cruds/DataMahasiswas */ "./resources/adminapp/js/store/cruds/DataMahasiswas/index.js");
+/* harmony import */ var _cruds_DataMahasiswas_single__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./cruds/DataMahasiswas/single */ "./resources/adminapp/js/store/cruds/DataMahasiswas/single.js");
+/* harmony import */ var _cruds_DataMahasiswaOnGoings__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./cruds/DataMahasiswaOnGoings */ "./resources/adminapp/js/store/cruds/DataMahasiswaOnGoings/index.js");
+/* harmony import */ var _cruds_DataMahasiswaOnGoings_single__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./cruds/DataMahasiswaOnGoings/single */ "./resources/adminapp/js/store/cruds/DataMahasiswaOnGoings/single.js");
+/* harmony import */ var _cruds_ReportMahasiswaOngoings__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./cruds/ReportMahasiswaOngoings */ "./resources/adminapp/js/store/cruds/ReportMahasiswaOngoings/index.js");
+/* harmony import */ var _cruds_ReportMahasiswaHistories__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./cruds/ReportMahasiswaHistories */ "./resources/adminapp/js/store/cruds/ReportMahasiswaHistories/index.js");
+/* harmony import */ var _cruds_DataPreparations__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./cruds/DataPreparations */ "./resources/adminapp/js/store/cruds/DataPreparations/index.js");
+/* harmony import */ var _cruds_DataPreparations_single__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./cruds/DataPreparations/single */ "./resources/adminapp/js/store/cruds/DataPreparations/single.js");
+/* harmony import */ var _cruds_Kampus__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./cruds/Kampus */ "./resources/adminapp/js/store/cruds/Kampus/index.js");
+/* harmony import */ var _cruds_Kampus_single__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ./cruds/Kampus/single */ "./resources/adminapp/js/store/cruds/Kampus/single.js");
+
+
+
+
+
 
 
 
@@ -58854,12 +59651,17 @@ var debug = "development" !== 'production';
     JurusansSingle: _cruds_Jurusans_single__WEBPACK_IMPORTED_MODULE_15__["default"],
     DosensIndex: _cruds_Dosens__WEBPACK_IMPORTED_MODULE_16__["default"],
     DosensSingle: _cruds_Dosens_single__WEBPACK_IMPORTED_MODULE_17__["default"],
-    DataMahasiswaHistories: _cruds_DataMahasiswaHistories__WEBPACK_IMPORTED_MODULE_18__["default"],
-    TentangAplikasis: _cruds_TentangAplikasis__WEBPACK_IMPORTED_MODULE_19__["default"],
-    DataMahasiswasIndex: _cruds_DataMahasiswas__WEBPACK_IMPORTED_MODULE_20__["default"],
-    DataMahasiswasSingle: _cruds_DataMahasiswas_single__WEBPACK_IMPORTED_MODULE_21__["default"],
-    DataMahasiswaOnGoingsIndex: _cruds_DataMahasiswaOnGoings__WEBPACK_IMPORTED_MODULE_22__["default"],
-    DataMahasiswaOnGoingsSingle: _cruds_DataMahasiswaOnGoings_single__WEBPACK_IMPORTED_MODULE_23__["default"]
+    TentangAplikasis: _cruds_TentangAplikasis__WEBPACK_IMPORTED_MODULE_18__["default"],
+    DataMahasiswasIndex: _cruds_DataMahasiswas__WEBPACK_IMPORTED_MODULE_19__["default"],
+    DataMahasiswasSingle: _cruds_DataMahasiswas_single__WEBPACK_IMPORTED_MODULE_20__["default"],
+    DataMahasiswaOnGoingsIndex: _cruds_DataMahasiswaOnGoings__WEBPACK_IMPORTED_MODULE_21__["default"],
+    DataMahasiswaOnGoingsSingle: _cruds_DataMahasiswaOnGoings_single__WEBPACK_IMPORTED_MODULE_22__["default"],
+    ReportMahasiswaOngoings: _cruds_ReportMahasiswaOngoings__WEBPACK_IMPORTED_MODULE_23__["default"],
+    ReportMahasiswaHistories: _cruds_ReportMahasiswaHistories__WEBPACK_IMPORTED_MODULE_24__["default"],
+    DataPreparationsIndex: _cruds_DataPreparations__WEBPACK_IMPORTED_MODULE_25__["default"],
+    DataPreparationsSingle: _cruds_DataPreparations_single__WEBPACK_IMPORTED_MODULE_26__["default"],
+    KampusIndex: _cruds_Kampus__WEBPACK_IMPORTED_MODULE_27__["default"],
+    KampusSingle: _cruds_Kampus_single__WEBPACK_IMPORTED_MODULE_28__["default"]
   },
   strict: debug
 }));

@@ -58,104 +58,133 @@ __webpack_require__.r(__webpack_exports__);
   data: function data() {
     return {
       sidebarLinks: [{
-        title: "Halaman Utama",
-        icon: "dashboard",
+        title: 'global.dashboard',
+        icon: 'dashboard',
         path: {
-          name: "dashboard"
+          name: 'dashboard'
         }
       }, {
-        title: "cruds.mahasiswa.title",
-        icon: "table_view",
+        title: 'cruds.dataMahasiswa.title',
+        icon: 'table_view',
         path: {
-          name: "mahasiswas.index"
+          name: 'data_mahasiswas.index'
         },
-        gate: "mahasiswa_access"
+        gate: 'data_mahasiswa_access'
       }, {
-        title: "cruds.mataKuliah.title",
-        icon: "table_view",
+        title: 'cruds.dataMahasiswaOnGoing.title',
+        icon: 'table_view',
         path: {
-          name: "mata_kuliahs.index"
+          name: 'data_mahasiswa_on_goings.index'
         },
-        gate: "mata_kuliah_access"
+        gate: 'data_mahasiswa_on_going_access'
       }, {
-        title: "cruds.dosen.title",
-        icon: "table_view",
+        title: 'cruds.dataPreparation.title',
+        icon: 'table_view',
         path: {
-          name: "dosens.index"
+          name: 'data_preparations.index'
         },
-        gate: "dosen_access"
+        gate: 'data_preparation_access'
       }, {
-        title: "cruds.jurusan.title",
-        icon: "table_view",
+        title: 'cruds.report.title',
+        icon: 'table_view',
         path: {
-          name: "jurusans.index"
+          name: 'report'
         },
-        gate: "jurusan_access"
-      }, {
-        title: "cruds.dataMahasiswa.title",
-        icon: "table_view",
-        path: {
-          name: "data_mahasiswas.index"
-        },
-        gate: "data_mahasiswa_access"
-      }, {
-        title: "cruds.dataMahasiswaOnGoing.title",
-        icon: "table_view",
-        path: {
-          name: "data_mahasiswa_on_goings.index"
-        },
-        gate: "data_mahasiswa_on_going_access"
-      }, {
-        title: "cruds.report.title",
-        icon: "table_view",
-        path: {
-          name: "report"
-        },
-        gate: "report_access",
+        gate: 'report_access',
         children: [{
-          title: "cruds.dataMahasiswaHistory.title",
-          icon: "table_view",
+          title: 'cruds.reportMahasiswaOngoing.title',
+          icon: 'table_view',
           path: {
-            name: "data_mahasiswa_histories.index"
+            name: 'report_mahasiswa_ongoings.index'
           },
-          gate: "data_mahasiswa_history_access"
+          gate: 'report_mahasiswa_ongoing_access'
+        }, {
+          title: 'cruds.reportMahasiswaHistory.title',
+          icon: 'table_view',
+          path: {
+            name: 'report_mahasiswa_histories.index'
+          },
+          gate: 'report_mahasiswa_history_access'
         }]
       }, {
-        title: "cruds.userManagement.title",
-        icon: "person",
+        title: 'cruds.userManagement.title',
+        icon: 'person',
         path: {
-          name: "user_management"
+          name: 'user_management'
         },
-        gate: "user_management_access",
+        gate: 'user_management_access',
         children: [{
-          title: "cruds.permission.title",
-          icon: "perm_data_setting",
+          title: 'cruds.permission.title',
+          icon: 'perm_data_setting',
           path: {
-            name: "permissions.index"
+            name: 'permissions.index'
           },
-          gate: "permission_access"
+          gate: 'permission_access'
         }, {
-          title: "cruds.role.title",
-          icon: "group",
+          title: 'cruds.role.title',
+          icon: 'group',
           path: {
-            name: "roles.index"
+            name: 'roles.index'
           },
-          gate: "role_access"
+          gate: 'role_access'
         }, {
-          title: "cruds.user.title",
-          icon: "person",
+          title: 'cruds.user.title',
+          icon: 'person',
           path: {
-            name: "users.index"
+            name: 'users.index'
           },
-          gate: "user_access"
+          gate: 'user_access'
         }]
       }, {
-        title: "cruds.tentangAplikasi.title",
-        icon: "table_view",
+        title: 'cruds.dataMaster.title',
+        icon: 'table_view',
         path: {
-          name: "tentang_aplikasis.index"
+          name: 'data_master'
         },
-        gate: "tentang_aplikasi_access"
+        gate: 'data_master_access',
+        children: [{
+          title: 'cruds.tentangAplikasi.title',
+          icon: 'table_view',
+          path: {
+            name: 'tentang_aplikasis.index'
+          },
+          gate: 'tentang_aplikasi_access'
+        }, {
+          title: 'cruds.mahasiswa.title',
+          icon: 'table_view',
+          path: {
+            name: 'mahasiswas.index'
+          },
+          gate: 'mahasiswa_access'
+        }, {
+          title: 'cruds.mataKuliah.title',
+          icon: 'table_view',
+          path: {
+            name: 'mata_kuliahs.index'
+          },
+          gate: 'mata_kuliah_access'
+        }, {
+          title: 'cruds.dosen.title',
+          icon: 'table_view',
+          path: {
+            name: 'dosens.index'
+          },
+          gate: 'dosen_access'
+        }, {
+          title: 'cruds.jurusan.title',
+          icon: 'table_view',
+          path: {
+            name: 'jurusans.index'
+          },
+          gate: 'jurusan_access'
+        }, {
+          title: 'cruds.kampu.title',
+          icon: 'table_view',
+          path: {
+            name: 'kampus.index'
+          },
+          gate: 'kampu_access'
+        }]
       }]
     };
   }

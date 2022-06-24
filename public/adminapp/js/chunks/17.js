@@ -323,6 +323,44 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -342,12 +380,15 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
   beforeDestroy: function beforeDestroy() {
     this.resetState();
   },
-  methods: _objectSpread(_objectSpread({}, Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapActions"])('DataMahasiswaOnGoingsSingle', ['storeData', 'resetState', 'setNama', 'setDataHistory', 'insertDataMahasiswaFile', 'removeDataMahasiswaFile', 'setHasilPrediksi', 'setLulus', 'setTidakLulus', 'setActive', 'setObservers', 'setAccuracy', 'setRecallLulus', 'setRecallTidakLulus', 'setPrecisionTidakLulus', 'setPrecisionLulus', 'fetchCreateData'])), {}, {
+  methods: _objectSpread(_objectSpread({}, Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapActions"])('DataMahasiswaOnGoingsSingle', ['storeData', 'resetState', 'setNama', 'setDataHistory', 'setMataKuliah', 'insertDataMahasiswaFile', 'removeDataMahasiswaFile', 'setHasilPrediksi', 'setLulus', 'setTidakLulus', 'setActive', 'setObservers', 'setAccuracy', 'setRecallLulus', 'setRecallTidakLulus', 'setPrecisionTidakLulus', 'setPrecisionLulus', 'setPrediksiTidakLulus', 'fetchCreateData'])), {}, {
     updateNama: function updateNama(e) {
       this.setNama(e.target.value);
     },
     updateDataHistory: function updateDataHistory(value) {
       this.setDataHistory(value);
+    },
+    updateMataKuliah: function updateMataKuliah(value) {
+      this.setMataKuliah(value);
     },
     updateHasilPrediksi: function updateHasilPrediksi(e) {
       this.setHasilPrediksi(e.target.value);
@@ -378,6 +419,9 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
     },
     updatePrecisionLulus: function updatePrecisionLulus(e) {
       this.setPrecisionLulus(e.target.value);
+    },
+    updatePrediksiTidakLulus: function updatePrediksiTidakLulus(e) {
+      this.setPrediksiTidakLulus(e.target.value);
     },
     getRoute: function getRoute(name) {
       return "".concat(axios.defaults.baseURL).concat(name, "/media");
@@ -444,7 +488,7 @@ var render = function () {
                 "div",
                 {
                   staticClass:
-                    "card-header card-header-danger card-header-icon",
+                    "card-header card-header-primary card-header-icon",
                 },
                 [
                   _vm._m(0),
@@ -476,33 +520,6 @@ var render = function () {
                   _vm._v(" "),
                   _c("div", { staticClass: "row" }, [
                     _c("div", { staticClass: "col-md-12" }, [
-                      _c(
-                        "div",
-                        {
-                          directives: [
-                            {
-                              name: "show",
-                              rawName: "v-show",
-                              value: _vm.loading,
-                              expression: "loading",
-                            },
-                          ],
-                          staticClass: "table-overlay",
-                        },
-                        [
-                          _c(
-                            "div",
-                            { staticClass: "table-overlay-container" },
-                            [
-                              _c("material-spinner"),
-                              _vm._v(" "),
-                              _c("span", [_vm._v("Loading...")]),
-                            ],
-                            1
-                          ),
-                        ]
-                      ),
-                      _vm._v(" "),
                       _c(
                         "div",
                         {
@@ -609,6 +626,77 @@ var render = function () {
                       _vm._v(" "),
                       _c(
                         "div",
+                        {
+                          staticClass: "form-group bmd-form-group",
+                          class: {
+                            "has-items": _vm.entry.mata_kuliah_id !== null,
+                            "is-focused": _vm.activeField == "mata_kuliah",
+                          },
+                        },
+                        [
+                          _c("label", { staticClass: "bmd-label-floating" }, [
+                            _vm._v(
+                              _vm._s(
+                                _vm.$t(
+                                  "cruds.dataMahasiswaOnGoing.fields.mata_kuliah"
+                                )
+                              )
+                            ),
+                          ]),
+                          _vm._v(" "),
+                          _c("v-select", {
+                            key: "mata_kuliah-field",
+                            attrs: {
+                              name: "mata_kuliah",
+                              label: "nama_mtk",
+                              value: _vm.entry.mata_kuliah_id,
+                              options: _vm.lists.mata_kuliah,
+                              reduce: function (entry) {
+                                return entry.id
+                              },
+                            },
+                            on: {
+                              input: _vm.updateMataKuliah,
+                              search: [
+                                function ($event) {
+                                  if (
+                                    !$event.type.indexOf("key") &&
+                                    _vm._k(
+                                      $event.keyCode,
+                                      "focus",
+                                      undefined,
+                                      $event.key,
+                                      undefined
+                                    )
+                                  ) {
+                                    return null
+                                  }
+                                  return _vm.focusField("mata_kuliah")
+                                },
+                                function ($event) {
+                                  if (
+                                    !$event.type.indexOf("key") &&
+                                    _vm._k(
+                                      $event.keyCode,
+                                      "blur",
+                                      undefined,
+                                      $event.key,
+                                      undefined
+                                    )
+                                  ) {
+                                    return null
+                                  }
+                                  return _vm.clearFocus.apply(null, arguments)
+                                },
+                              ],
+                            },
+                          }),
+                        ],
+                        1
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "div",
                         { staticClass: "form-group" },
                         [
                           _c("label", [
@@ -637,6 +725,396 @@ var render = function () {
                           }),
                         ],
                         1
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        {
+                          staticClass: "form-group bmd-form-group",
+                          class: {
+                            "has-items": _vm.entry.hasil_prediksi,
+                            "is-focused": _vm.activeField == "hasil_prediksi",
+                          },
+                        },
+                        [
+                          _c("label", { staticClass: "bmd-label-floating" }, [
+                            _vm._v(
+                              _vm._s(
+                                _vm.$t(
+                                  "cruds.dataMahasiswaOnGoing.fields.hasil_prediksi"
+                                )
+                              )
+                            ),
+                          ]),
+                          _vm._v(" "),
+                          _c("input", {
+                            staticClass: "form-control",
+                            attrs: { type: "text" },
+                            domProps: { value: _vm.entry.hasil_prediksi },
+                            on: {
+                              input: _vm.updateHasilPrediksi,
+                              focus: function ($event) {
+                                return _vm.focusField("hasil_prediksi")
+                              },
+                              blur: _vm.clearFocus,
+                            },
+                          }),
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        {
+                          staticClass: "form-group bmd-form-group",
+                          class: {
+                            "has-items": _vm.entry.lulus,
+                            "is-focused": _vm.activeField == "lulus",
+                          },
+                        },
+                        [
+                          _c("label", { staticClass: "bmd-label-floating" }, [
+                            _vm._v(
+                              _vm._s(
+                                _vm.$t(
+                                  "cruds.dataMahasiswaOnGoing.fields.lulus"
+                                )
+                              )
+                            ),
+                          ]),
+                          _vm._v(" "),
+                          _c("input", {
+                            staticClass: "form-control",
+                            attrs: { type: "number", step: "1" },
+                            domProps: { value: _vm.entry.lulus },
+                            on: {
+                              input: _vm.updateLulus,
+                              focus: function ($event) {
+                                return _vm.focusField("lulus")
+                              },
+                              blur: _vm.clearFocus,
+                            },
+                          }),
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        {
+                          staticClass: "form-group bmd-form-group",
+                          class: {
+                            "has-items": _vm.entry.tidak_lulus,
+                            "is-focused": _vm.activeField == "tidak_lulus",
+                          },
+                        },
+                        [
+                          _c("label", { staticClass: "bmd-label-floating" }, [
+                            _vm._v(
+                              _vm._s(
+                                _vm.$t(
+                                  "cruds.dataMahasiswaOnGoing.fields.tidak_lulus"
+                                )
+                              )
+                            ),
+                          ]),
+                          _vm._v(" "),
+                          _c("input", {
+                            staticClass: "form-control",
+                            attrs: { type: "number", step: "1" },
+                            domProps: { value: _vm.entry.tidak_lulus },
+                            on: {
+                              input: _vm.updateTidakLulus,
+                              focus: function ($event) {
+                                return _vm.focusField("tidak_lulus")
+                              },
+                              blur: _vm.clearFocus,
+                            },
+                          }),
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        {
+                          staticClass: "form-group bmd-form-group",
+                          class: {
+                            "has-items": _vm.entry.active,
+                            "is-focused": _vm.activeField == "active",
+                          },
+                        },
+                        [
+                          _c("label", { staticClass: "bmd-label-floating" }, [
+                            _vm._v(
+                              _vm._s(
+                                _vm.$t(
+                                  "cruds.dataMahasiswaOnGoing.fields.active"
+                                )
+                              )
+                            ),
+                          ]),
+                          _vm._v(" "),
+                          _c("input", {
+                            staticClass: "form-control",
+                            attrs: { type: "number", step: "1" },
+                            domProps: { value: _vm.entry.active },
+                            on: {
+                              input: _vm.updateActive,
+                              focus: function ($event) {
+                                return _vm.focusField("active")
+                              },
+                              blur: _vm.clearFocus,
+                            },
+                          }),
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        {
+                          staticClass: "form-group bmd-form-group",
+                          class: {
+                            "has-items": _vm.entry.observers,
+                            "is-focused": _vm.activeField == "observers",
+                          },
+                        },
+                        [
+                          _c("label", { staticClass: "bmd-label-floating" }, [
+                            _vm._v(
+                              _vm._s(
+                                _vm.$t(
+                                  "cruds.dataMahasiswaOnGoing.fields.observers"
+                                )
+                              )
+                            ),
+                          ]),
+                          _vm._v(" "),
+                          _c("input", {
+                            staticClass: "form-control",
+                            attrs: { type: "number", step: "1" },
+                            domProps: { value: _vm.entry.observers },
+                            on: {
+                              input: _vm.updateObservers,
+                              focus: function ($event) {
+                                return _vm.focusField("observers")
+                              },
+                              blur: _vm.clearFocus,
+                            },
+                          }),
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        {
+                          staticClass: "form-group bmd-form-group",
+                          class: {
+                            "has-items": _vm.entry.accuracy,
+                            "is-focused": _vm.activeField == "accuracy",
+                          },
+                        },
+                        [
+                          _c("label", { staticClass: "bmd-label-floating" }, [
+                            _vm._v(
+                              _vm._s(
+                                _vm.$t(
+                                  "cruds.dataMahasiswaOnGoing.fields.accuracy"
+                                )
+                              )
+                            ),
+                          ]),
+                          _vm._v(" "),
+                          _c("input", {
+                            staticClass: "form-control",
+                            attrs: { type: "number", step: "0.01" },
+                            domProps: { value: _vm.entry.accuracy },
+                            on: {
+                              input: _vm.updateAccuracy,
+                              focus: function ($event) {
+                                return _vm.focusField("accuracy")
+                              },
+                              blur: _vm.clearFocus,
+                            },
+                          }),
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        {
+                          staticClass: "form-group bmd-form-group",
+                          class: {
+                            "has-items": _vm.entry.recall_lulus,
+                            "is-focused": _vm.activeField == "recall_lulus",
+                          },
+                        },
+                        [
+                          _c("label", { staticClass: "bmd-label-floating" }, [
+                            _vm._v(
+                              _vm._s(
+                                _vm.$t(
+                                  "cruds.dataMahasiswaOnGoing.fields.recall_lulus"
+                                )
+                              )
+                            ),
+                          ]),
+                          _vm._v(" "),
+                          _c("input", {
+                            staticClass: "form-control",
+                            attrs: { type: "number", step: "0.01" },
+                            domProps: { value: _vm.entry.recall_lulus },
+                            on: {
+                              input: _vm.updateRecallLulus,
+                              focus: function ($event) {
+                                return _vm.focusField("recall_lulus")
+                              },
+                              blur: _vm.clearFocus,
+                            },
+                          }),
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        {
+                          staticClass: "form-group bmd-form-group",
+                          class: {
+                            "has-items": _vm.entry.recall_tidak_lulus,
+                            "is-focused":
+                              _vm.activeField == "recall_tidak_lulus",
+                          },
+                        },
+                        [
+                          _c("label", { staticClass: "bmd-label-floating" }, [
+                            _vm._v(
+                              _vm._s(
+                                _vm.$t(
+                                  "cruds.dataMahasiswaOnGoing.fields.recall_tidak_lulus"
+                                )
+                              )
+                            ),
+                          ]),
+                          _vm._v(" "),
+                          _c("input", {
+                            staticClass: "form-control",
+                            attrs: { type: "number", step: "0.01" },
+                            domProps: { value: _vm.entry.recall_tidak_lulus },
+                            on: {
+                              input: _vm.updateRecallTidakLulus,
+                              focus: function ($event) {
+                                return _vm.focusField("recall_tidak_lulus")
+                              },
+                              blur: _vm.clearFocus,
+                            },
+                          }),
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        {
+                          staticClass: "form-group bmd-form-group",
+                          class: {
+                            "has-items": _vm.entry.precision_tidak_lulus,
+                            "is-focused":
+                              _vm.activeField == "precision_tidak_lulus",
+                          },
+                        },
+                        [
+                          _c("label", { staticClass: "bmd-label-floating" }, [
+                            _vm._v(
+                              _vm._s(
+                                _vm.$t(
+                                  "cruds.dataMahasiswaOnGoing.fields.precision_tidak_lulus"
+                                )
+                              )
+                            ),
+                          ]),
+                          _vm._v(" "),
+                          _c("input", {
+                            staticClass: "form-control",
+                            attrs: { type: "number", step: "0.01" },
+                            domProps: {
+                              value: _vm.entry.precision_tidak_lulus,
+                            },
+                            on: {
+                              input: _vm.updatePrecisionTidakLulus,
+                              focus: function ($event) {
+                                return _vm.focusField("precision_tidak_lulus")
+                              },
+                              blur: _vm.clearFocus,
+                            },
+                          }),
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        {
+                          staticClass: "form-group bmd-form-group",
+                          class: {
+                            "has-items": _vm.entry.precision_lulus,
+                            "is-focused": _vm.activeField == "precision_lulus",
+                          },
+                        },
+                        [
+                          _c("label", { staticClass: "bmd-label-floating" }, [
+                            _vm._v(
+                              _vm._s(
+                                _vm.$t(
+                                  "cruds.dataMahasiswaOnGoing.fields.precision_lulus"
+                                )
+                              )
+                            ),
+                          ]),
+                          _vm._v(" "),
+                          _c("input", {
+                            staticClass: "form-control",
+                            attrs: { type: "number", step: "0.01" },
+                            domProps: { value: _vm.entry.precision_lulus },
+                            on: {
+                              input: _vm.updatePrecisionLulus,
+                              focus: function ($event) {
+                                return _vm.focusField("precision_lulus")
+                              },
+                              blur: _vm.clearFocus,
+                            },
+                          }),
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        {
+                          staticClass: "form-group bmd-form-group",
+                          class: {
+                            "has-items": _vm.entry.prediksi_tidak_lulus,
+                            "is-focused":
+                              _vm.activeField == "prediksi_tidak_lulus",
+                          },
+                        },
+                        [
+                          _c("label", { staticClass: "bmd-label-floating" }, [
+                            _vm._v(
+                              _vm._s(
+                                _vm.$t(
+                                  "cruds.dataMahasiswaOnGoing.fields.prediksi_tidak_lulus"
+                                )
+                              )
+                            ),
+                          ]),
+                          _vm._v(" "),
+                          _c("input", {
+                            staticClass: "form-control",
+                            attrs: { type: "number", step: "1" },
+                            domProps: { value: _vm.entry.prediksi_tidak_lulus },
+                            on: {
+                              input: _vm.updatePrediksiTidakLulus,
+                              focus: function ($event) {
+                                return _vm.focusField("prediksi_tidak_lulus")
+                              },
+                              blur: _vm.clearFocus,
+                            },
+                          }),
+                        ]
                       ),
                     ]),
                   ]),

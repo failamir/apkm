@@ -253,7 +253,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
 
 
 
@@ -278,10 +277,6 @@ __webpack_require__.r(__webpack_exports__);
 
     axios.get('dashboard').then(function (response) {
       _this.charts = response.data;
-    });
-    axios.get('excel').then(function (response) {
-      _this.excel = response.data;
-      console.log(_this.excel);
     });
   }
 });
@@ -848,15 +843,6 @@ var render = function () {
       "div",
       { staticClass: "row" },
       [
-        _c("img", {
-          attrs: {
-            src: "/md/img/ice2.png",
-            alt: "ice",
-            width: "100%",
-            height: "100%",
-          },
-        }),
-        _vm._v(" "),
         _vm._l(_vm.charts, function (chart, key) {
           return [
             _c(

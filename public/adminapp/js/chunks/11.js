@@ -323,7 +323,7 @@ var render = function () {
         _c("div", { staticClass: "card" }, [
           _c(
             "div",
-            { staticClass: "card-header card-header-danger card-header-icon" },
+            { staticClass: "card-header card-header-primary card-header-icon" },
             [
               _vm._m(0),
               _vm._v(" "),
@@ -346,7 +346,7 @@ var render = function () {
                 ? _c(
                     "router-link",
                     {
-                      staticClass: "btn btn-danger",
+                      staticClass: "btn btn-primary",
                       attrs: { to: { name: _vm.xprops.route + ".create" } },
                     },
                     [

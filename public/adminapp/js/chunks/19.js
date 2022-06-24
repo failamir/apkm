@@ -123,7 +123,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
         sortable: true
       }, {
         title: 'cruds.dataMahasiswaOnGoing.fields.mata_kuliah',
-        field: 'mata_kuliah.id_mtk',
+        field: 'mata_kuliah.nama_mtk',
         thComp: _components_Datatables_TranslatedHeader__WEBPACK_IMPORTED_MODULE_2__["default"],
         tdComp: _components_Datatables_DatatableSingle__WEBPACK_IMPORTED_MODULE_5__["default"],
         sortable: true

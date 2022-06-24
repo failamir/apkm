@@ -122,7 +122,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
         tdComp: _components_Datatables_DatatableAttachments__WEBPACK_IMPORTED_MODULE_5__["default"]
       }, {
         title: 'cruds.dataMahasiswa.fields.mata_kuliah',
-        field: 'mata_kuliah.id_mtk',
+        field: 'mata_kuliah.nama_mtk',
         thComp: _components_Datatables_TranslatedHeader__WEBPACK_IMPORTED_MODULE_2__["default"],
         tdComp: _components_Datatables_DatatableSingle__WEBPACK_IMPORTED_MODULE_6__["default"],
         sortable: true
@@ -137,8 +137,8 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
         thComp: _components_Datatables_TranslatedHeader__WEBPACK_IMPORTED_MODULE_2__["default"],
         sortable: true
       }, {
-        title: 'cruds.dataMahasiswa.fields.tidaklulus',
-        field: 'tidaklulus',
+        title: 'cruds.dataMahasiswa.fields.tidak_lulus',
+        field: 'tidak_lulus',
         thComp: _components_Datatables_TranslatedHeader__WEBPACK_IMPORTED_MODULE_2__["default"],
         sortable: true
       }, {
