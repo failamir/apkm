@@ -2,16 +2,16 @@
 
 namespace App\Http\Requests;
 
-use App\Models\ListKampu;
+use App\Models\Kampu;
 use Gate;
 use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Http\Response;
 
-class UpdateListKampuRequest extends FormRequest
+class UpdateKampuRequest extends FormRequest
 {
     public function authorize()
     {
-        return Gate::allows('list_kampu_edit');
+        return Gate::allows('kampu_edit');
     }
 
     public function rules()

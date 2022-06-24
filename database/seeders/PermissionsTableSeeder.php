@@ -220,67 +220,87 @@ class PermissionsTableSeeder extends Seeder
             ],
             [
                 'id'    => 53,
-                'title' => 'list_kampu_create',
-            ],
-            [
-                'id'    => 54,
-                'title' => 'list_kampu_edit',
-            ],
-            [
-                'id'    => 55,
-                'title' => 'list_kampu_show',
-            ],
-            [
-                'id'    => 56,
-                'title' => 'list_kampu_delete',
-            ],
-            [
-                'id'    => 57,
-                'title' => 'list_kampu_access',
-            ],
-            [
-                'id'    => 58,
                 'title' => 'data_master_access',
             ],
             [
-                'id'    => 59,
+                'id'    => 54,
                 'title' => 'report_mahasiswa_ongoing_create',
             ],
             [
-                'id'    => 60,
+                'id'    => 55,
                 'title' => 'report_mahasiswa_ongoing_edit',
             ],
             [
-                'id'    => 61,
+                'id'    => 56,
                 'title' => 'report_mahasiswa_ongoing_show',
             ],
             [
-                'id'    => 62,
+                'id'    => 57,
                 'title' => 'report_mahasiswa_ongoing_delete',
             ],
             [
-                'id'    => 63,
+                'id'    => 58,
                 'title' => 'report_mahasiswa_ongoing_access',
             ],
             [
-                'id'    => 64,
+                'id'    => 59,
                 'title' => 'report_mahasiswa_history_create',
             ],
             [
-                'id'    => 65,
+                'id'    => 60,
                 'title' => 'report_mahasiswa_history_edit',
             ],
             [
-                'id'    => 66,
+                'id'    => 61,
                 'title' => 'report_mahasiswa_history_show',
             ],
             [
-                'id'    => 67,
+                'id'    => 62,
                 'title' => 'report_mahasiswa_history_delete',
             ],
             [
-                'id'    => 68,
+                'id'    => 63,
                 'title' => 'report_mahasiswa_history_access',
+            ],
+            [
+                'id'    => 64,
+                'title' => 'data_preparation_create',
+            ],
+            [
+                'id'    => 65,
+                'title' => 'data_preparation_edit',
+            ],
+            [
+                'id'    => 66,
+                'title' => 'data_preparation_show',
+            ],
+            [
+                'id'    => 67,
+                'title' => 'data_preparation_delete',
+            ],
+            [
+                'id'    => 68,
+                'title' => 'data_preparation_access',
+            ],
+            [
+                'id'    => 69,
+                'title' => 'kampu_create',
+            ],
+            [
+                'id'    => 70,
+                'title' => 'kampu_edit',
+            ],
+            [
+                'id'    => 71,
+                'title' => 'kampu_show',
+            ],
+            [
+                'id'    => 72,
+                'title' => 'kampu_delete',
+            ],
+            [
+                'id'    => 73,
+                'title' => 'kampu_access',
             ],
         ];
 

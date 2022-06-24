@@ -104,7 +104,7 @@ export default {
         },
         {
           title: 'cruds.dataMahasiswa.fields.mata_kuliah',
-          field: 'mata_kuliah.id_mtk',
+          field: 'mata_kuliah.nama_mtk',
           thComp: TranslatedHeader,
           tdComp: DatatableSingle,
           sortable: true
@@ -122,8 +122,8 @@ export default {
           sortable: true
         },
         {
-          title: 'cruds.dataMahasiswa.fields.tidaklulus',
-          field: 'tidaklulus',
+          title: 'cruds.dataMahasiswa.fields.tidak_lulus',
+          field: 'tidak_lulus',
           thComp: TranslatedHeader,
           sortable: true
         },

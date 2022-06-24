@@ -9,7 +9,7 @@
             </div>
             <h4 class="card-title">
               {{ $t('global.table') }}
-              <strong>{{ $t('cruds.listKampu.title') }}</strong>
+              <strong>{{ $t('cruds.kampu.title') }}</strong>
             </h4>
           </div>
           <div class="card-body">
@@ -82,32 +82,26 @@ export default {
     return {
       columns: [
         {
-          title: 'cruds.listKampu.fields.id',
+          title: 'cruds.kampu.fields.id',
           field: 'id',
           thComp: TranslatedHeader,
           sortable: true,
           colStyle: 'width: 100px;'
         },
         {
-          title: 'cruds.listKampu.fields.id_kampus',
+          title: 'cruds.kampu.fields.id_kampus',
           field: 'id_kampus',
           thComp: TranslatedHeader,
           sortable: true
         },
         {
-          title: 'cruds.listKampu.fields.nama_kampus',
+          title: 'cruds.kampu.fields.nama_kampus',
           field: 'nama_kampus',
           thComp: TranslatedHeader,
           sortable: true
         },
         {
-          title: 'cruds.listKampu.fields.deskripsi',
-          field: 'deskripsi',
-          thComp: TranslatedHeader,
-          sortable: true
-        },
-        {
-          title: 'cruds.listKampu.fields.alamat',
+          title: 'cruds.kampu.fields.alamat',
           field: 'alamat',
           thComp: TranslatedHeader,
           sortable: true
@@ -124,9 +118,9 @@ export default {
       ],
       query: { sort: 'id', order: 'desc', limit: 100, s: '' },
       xprops: {
-        module: 'ListKampusIndex',
-        route: 'list_kampus',
-        permission_prefix: 'list_kampu_'
+        module: 'KampusIndex',
+        route: 'kampus',
+        permission_prefix: 'kampu_'
       }
     }
   },
@@ -134,7 +128,7 @@ export default {
     this.resetState()
   },
   computed: {
-    ...mapGetters('ListKampusIndex', ['data', 'total', 'loading'])
+    ...mapGetters('KampusIndex', ['data', 'total', 'loading'])
   },
   watch: {
     query: {
@@ -146,11 +140,7 @@ export default {
     }
   },
   methods: {
-    ...mapActions('ListKampusIndex', [
-      'fetchIndexData',
-      'setQuery',
-      'resetState'
-    ])
+    ...mapActions('KampusIndex', ['fetchIndexData', 'setQuery', 'resetState'])
   }
 }
 </script>

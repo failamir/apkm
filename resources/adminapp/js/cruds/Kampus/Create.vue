@@ -10,7 +10,7 @@
               </div>
               <h4 class="card-title">
                 {{ $t('global.create') }}
-                <strong>{{ $t('cruds.listKampu.title_singular') }}</strong>
+                <strong>{{ $t('cruds.kampu.title_singular') }}</strong>
               </h4>
             </div>
             <div class="card-body">
@@ -28,7 +28,7 @@
                     }"
                   >
                     <label class="bmd-label-floating">{{
-                      $t('cruds.listKampu.fields.id_kampus')
+                      $t('cruds.kampu.fields.id_kampus')
                     }}</label>
                     <input
                       class="form-control"
@@ -47,7 +47,7 @@
                     }"
                   >
                     <label class="bmd-label-floating">{{
-                      $t('cruds.listKampu.fields.nama_kampus')
+                      $t('cruds.kampu.fields.nama_kampus')
                     }}</label>
                     <input
                       class="form-control"
@@ -58,24 +58,14 @@
                       @blur="clearFocus"
                     />
                   </div>
-                  <div
-                    class="form-group bmd-form-group"
-                    :class="{
-                      'has-items': entry.deskripsi,
-                      'is-focused': activeField == 'deskripsi'
-                    }"
-                  >
-                    <label class="bmd-label-floating">{{
-                      $t('cruds.listKampu.fields.deskripsi')
-                    }}</label>
-                    <input
-                      class="form-control"
-                      type="text"
+                  <div class="form-group">
+                    <label>{{ $t('cruds.kampu.fields.deskripsi') }}</label>
+                    <ckeditor
+                      :editor="editor"
                       :value="entry.deskripsi"
                       @input="updateDeskripsi"
-                      @focus="focusField('deskripsi')"
-                      @blur="clearFocus"
-                    />
+                    >
+                    </ckeditor>
                   </div>
                   <div
                     class="form-group bmd-form-group"
@@ -85,7 +75,7 @@
                     }"
                   >
                     <label class="bmd-label-floating">{{
-                      $t('cruds.listKampu.fields.alamat')
+                      $t('cruds.kampu.fields.alamat')
                     }}</label>
                     <input
                       class="form-control"
@@ -118,22 +108,27 @@
 
 <script>
 import { mapGetters, mapActions } from 'vuex'
+import ClassicEditor from '@ckeditor/ckeditor5-build-classic'
 
 export default {
+  components: {
+    ClassicEditor
+  },
   data() {
     return {
       status: '',
-      activeField: ''
+      activeField: '',
+      editor: ClassicEditor
     }
   },
   computed: {
-    ...mapGetters('ListKampusSingle', ['entry', 'loading'])
+    ...mapGetters('KampusSingle', ['entry', 'loading'])
   },
   beforeDestroy() {
     this.resetState()
   },
   methods: {
-    ...mapActions('ListKampusSingle', [
+    ...mapActions('KampusSingle', [
       'storeData',
       'resetState',
       'setIdKampus',
@@ -147,8 +142,8 @@ export default {
     updateNamaKampus(e) {
       this.setNamaKampus(e.target.value)
     },
-    updateDeskripsi(e) {
-      this.setDeskripsi(e.target.value)
+    updateDeskripsi(value) {
+      this.setDeskripsi(value)
     },
     updateAlamat(e) {
       this.setAlamat(e.target.value)
@@ -156,7 +151,7 @@ export default {
     submitForm() {
       this.storeData()
         .then(() => {
-          this.$router.push({ name: 'list_kampus.index' })
+          this.$router.push({ name: 'kampus.index' })
           this.$eventHub.$emit('create-success')
         })
         .catch(error => {

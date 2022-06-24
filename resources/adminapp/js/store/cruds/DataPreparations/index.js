@@ -11,7 +11,7 @@ function initialState() {
   }
 }
 
-const route = 'list-kampus'
+const route = 'data-preparations'
 
 const getters = {
   data: state => state.data,

@@ -12,6 +12,7 @@ import BackButton from '@components/BackButton.vue'
 import DatetimePicker from '@components/DatetimePicker.vue'
 import VueRadio from '@components/VueRadio.vue'
 import vSelect from 'vue-select'
+import CKEditor from '@ckeditor/ckeditor5-vue'
 
 const GlobalComponents = {
   install(Vue) {
@@ -21,6 +22,7 @@ const GlobalComponents = {
     Vue.use(EventHub)
     Vue.use(Datatable)
     Vue.use(VueSweetalert2)
+    Vue.use(CKEditor)
     Vue.component('datetime-picker', DatetimePicker)
     Vue.component('back-button', BackButton)
     Vue.component('material-spinner', MaterialSpinner)

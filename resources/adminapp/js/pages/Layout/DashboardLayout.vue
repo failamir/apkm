@@ -46,6 +46,12 @@ export default {
           gate: 'data_mahasiswa_on_going_access'
         },
         {
+          title: 'cruds.dataPreparation.title',
+          icon: 'table_view',
+          path: { name: 'data_preparations.index' },
+          gate: 'data_preparation_access'
+        },
+        {
           title: 'cruds.report.title',
           icon: 'table_view',
           path: { name: 'report' },
@@ -128,10 +134,10 @@ export default {
               gate: 'jurusan_access'
             },
             {
-              title: 'cruds.listKampu.title',
+              title: 'cruds.kampu.title',
               icon: 'table_view',
-              path: { name: 'list_kampus.index' },
-              gate: 'list_kampu_access'
+              path: { name: 'kampus.index' },
+              gate: 'kampu_access'
             }
           ]
         }

@@ -66,6 +66,30 @@ const routes = [
         meta: { title: 'cruds.dataMahasiswaOnGoing.title' }
       },
       {
+        path: 'data-preparations',
+        name: 'data_preparations.index',
+        component: () => import('@cruds/DataPreparations/Index.vue'),
+        meta: { title: 'cruds.dataPreparation.title' }
+      },
+      {
+        path: 'data-preparations/create',
+        name: 'data_preparations.create',
+        component: () => import('@cruds/DataPreparations/Create.vue'),
+        meta: { title: 'cruds.dataPreparation.title' }
+      },
+      {
+        path: 'data-preparations/:id',
+        name: 'data_preparations.show',
+        component: () => import('@cruds/DataPreparations/Show.vue'),
+        meta: { title: 'cruds.dataPreparation.title' }
+      },
+      {
+        path: 'data-preparations/:id/edit',
+        name: 'data_preparations.edit',
+        component: () => import('@cruds/DataPreparations/Edit.vue'),
+        meta: { title: 'cruds.dataPreparation.title' }
+      },
+      {
         path: 'report',
         name: 'report',
         component: View,
@@ -275,28 +299,28 @@ const routes = [
             meta: { title: 'cruds.jurusan.title' }
           },
           {
-            path: 'list-kampus',
-            name: 'list_kampus.index',
-            component: () => import('@cruds/ListKampus/Index.vue'),
-            meta: { title: 'cruds.listKampu.title' }
+            path: 'kampus',
+            name: 'kampus.index',
+            component: () => import('@cruds/Kampus/Index.vue'),
+            meta: { title: 'cruds.kampu.title' }
           },
           {
-            path: 'list-kampus/create',
-            name: 'list_kampus.create',
-            component: () => import('@cruds/ListKampus/Create.vue'),
-            meta: { title: 'cruds.listKampu.title' }
+            path: 'kampus/create',
+            name: 'kampus.create',
+            component: () => import('@cruds/Kampus/Create.vue'),
+            meta: { title: 'cruds.kampu.title' }
           },
           {
-            path: 'list-kampus/:id',
-            name: 'list_kampus.show',
-            component: () => import('@cruds/ListKampus/Show.vue'),
-            meta: { title: 'cruds.listKampu.title' }
+            path: 'kampus/:id',
+            name: 'kampus.show',
+            component: () => import('@cruds/Kampus/Show.vue'),
+            meta: { title: 'cruds.kampu.title' }
           },
           {
-            path: 'list-kampus/:id/edit',
-            name: 'list_kampus.edit',
-            component: () => import('@cruds/ListKampus/Edit.vue'),
-            meta: { title: 'cruds.listKampu.title' }
+            path: 'kampus/:id/edit',
+            name: 'kampus.edit',
+            component: () => import('@cruds/Kampus/Edit.vue'),
+            meta: { title: 'cruds.kampu.title' }
           }
         ]
       }

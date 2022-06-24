@@ -13,7 +13,7 @@ class CreateDataMahasiswasTable extends Migration
             $table->string('nama')->nullable();
             $table->integer('batas_nilai')->nullable();
             $table->integer('lulus')->nullable();
-            $table->integer('tidaklulus')->nullable();
+            $table->integer('tidak_lulus')->nullable();
             $table->integer('active')->nullable();
             $table->integer('observers')->nullable();
             $table->float('accuracy', 15, 2)->nullable();

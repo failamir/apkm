@@ -65,7 +65,7 @@
                     }}</label>
                     <v-select
                       name="mata_kuliah"
-                      label="id_mtk"
+                      label="nama_mtk"
                       :key="'mata_kuliah-field'"
                       :value="entry.mata_kuliah_id"
                       :options="lists.mata_kuliah"
@@ -118,20 +118,20 @@
                   <div
                     class="form-group bmd-form-group"
                     :class="{
-                      'has-items': entry.tidaklulus,
-                      'is-focused': activeField == 'tidaklulus'
+                      'has-items': entry.tidak_lulus,
+                      'is-focused': activeField == 'tidak_lulus'
                     }"
                   >
                     <label class="bmd-label-floating">{{
-                      $t('cruds.dataMahasiswa.fields.tidaklulus')
+                      $t('cruds.dataMahasiswa.fields.tidak_lulus')
                     }}</label>
                     <input
                       class="form-control"
                       type="number"
                       step="1"
-                      :value="entry.tidaklulus"
-                      @input="updateTidaklulus"
-                      @focus="focusField('tidaklulus')"
+                      :value="entry.tidak_lulus"
+                      @input="updateTidakLulus"
+                      @focus="focusField('tidak_lulus')"
                       @blur="clearFocus"
                     />
                   </div>
@@ -347,7 +347,7 @@ export default {
       'setMataKuliah',
       'setBatasNilai',
       'setLulus',
-      'setTidaklulus',
+      'setTidakLulus',
       'setActive',
       'setObservers',
       'setAccuracy',
@@ -370,8 +370,8 @@ export default {
     updateLulus(e) {
       this.setLulus(e.target.value)
     },
-    updateTidaklulus(e) {
-      this.setTidaklulus(e.target.value)
+    updateTidakLulus(e) {
+      this.setTidakLulus(e.target.value)
     },
     updateActive(e) {
       this.setActive(e.target.value)

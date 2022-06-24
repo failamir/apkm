@@ -9,7 +9,7 @@
             </div>
             <h4 class="card-title">
               {{ $t('global.view') }}
-              <strong>{{ $t('cruds.listKampu.title_singular') }}</strong>
+              <strong>{{ $t('cruds.kampu.title_singular') }}</strong>
             </h4>
           </div>
           <div class="card-body">
@@ -23,7 +23,7 @@
                     <tbody>
                       <tr>
                         <td class="text-primary">
-                          {{ $t('cruds.listKampu.fields.id') }}
+                          {{ $t('cruds.kampu.fields.id') }}
                         </td>
                         <td>
                           {{ entry.id }}
@@ -31,7 +31,7 @@
                       </tr>
                       <tr>
                         <td class="text-primary">
-                          {{ $t('cruds.listKampu.fields.id_kampus') }}
+                          {{ $t('cruds.kampu.fields.id_kampus') }}
                         </td>
                         <td>
                           {{ entry.id_kampus }}
@@ -39,7 +39,7 @@
                       </tr>
                       <tr>
                         <td class="text-primary">
-                          {{ $t('cruds.listKampu.fields.nama_kampus') }}
+                          {{ $t('cruds.kampu.fields.nama_kampus') }}
                         </td>
                         <td>
                           {{ entry.nama_kampus }}
@@ -47,15 +47,20 @@
                       </tr>
                       <tr>
                         <td class="text-primary">
-                          {{ $t('cruds.listKampu.fields.deskripsi') }}
+                          {{ $t('cruds.kampu.fields.deskripsi') }}
                         </td>
                         <td>
-                          {{ entry.deskripsi }}
+                          <ckeditor
+                            :editor="editor"
+                            :value="entry.deskripsi"
+                            disabled
+                          >
+                          </ckeditor>
                         </td>
                       </tr>
                       <tr>
                         <td class="text-primary">
-                          {{ $t('cruds.listKampu.fields.alamat') }}
+                          {{ $t('cruds.kampu.fields.alamat') }}
                         </td>
                         <td>
                           {{ entry.alamat }}
@@ -75,16 +80,22 @@
 
 <script>
 import { mapGetters, mapActions } from 'vuex'
+import ClassicEditor from '@ckeditor/ckeditor5-build-classic'
 
 export default {
+  components: {
+    ClassicEditor
+  },
   data() {
-    return {}
+    return {
+      editor: ClassicEditor
+    }
   },
   beforeDestroy() {
     this.resetState()
   },
   computed: {
-    ...mapGetters('ListKampusSingle', ['entry'])
+    ...mapGetters('KampusSingle', ['entry'])
   },
   watch: {
     '$route.params.id': {
@@ -96,7 +107,7 @@ export default {
     }
   },
   methods: {
-    ...mapActions('ListKampusSingle', ['fetchShowData', 'resetState'])
+    ...mapActions('KampusSingle', ['fetchShowData', 'resetState'])
   }
 }
 </script>

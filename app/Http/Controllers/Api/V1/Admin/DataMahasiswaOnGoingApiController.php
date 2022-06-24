@@ -45,7 +45,7 @@ class DataMahasiswaOnGoingApiController extends Controller
         return response([
             'meta' => [
                 'data_history' => DataMahasiswa::get(['id', 'nama']),
-                'mata_kuliah'  => MataKuliah::get(['id', 'id_mtk']),
+                'mata_kuliah'  => MataKuliah::get(['id', 'nama_mtk']),
             ],
         ]);
     }
@@ -76,7 +76,7 @@ class DataMahasiswaOnGoingApiController extends Controller
             'data' => new DataMahasiswaOnGoingResource($dataMahasiswaOnGoing->load(['dataHistory', 'mataKuliah'])),
             'meta' => [
                 'data_history' => DataMahasiswa::get(['id', 'nama']),
-                'mata_kuliah'  => MataKuliah::get(['id', 'id_mtk']),
+                'mata_kuliah'  => MataKuliah::get(['id', 'nama_mtk']),
             ],
         ]);
     }

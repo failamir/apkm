@@ -46,7 +46,7 @@ class StoreDataMahasiswaRequest extends FormRequest
                 'max:2147483647',
                 'nullable',
             ],
-            'tidaklulus' => [
+            'tidak_lulus' => [
                 'integer',
                 'min:-2147483648',
                 'max:2147483647',

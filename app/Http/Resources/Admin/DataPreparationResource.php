@@ -4,7 +4,7 @@ namespace App\Http\Resources\Admin;
 
 use Illuminate\Http\Resources\Json\JsonResource;
 
-class ListKampuResource extends JsonResource
+class DataPreparationResource extends JsonResource
 {
     public function toArray($request)
     {

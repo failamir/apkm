@@ -56,7 +56,7 @@
                         <td>
                           <datatable-single
                             :row="entry"
-                            field="mata_kuliah.id_mtk"
+                            field="mata_kuliah.nama_mtk"
                           >
                           </datatable-single>
                         </td>
@@ -79,10 +79,10 @@
                       </tr>
                       <tr>
                         <td class="text-primary">
-                          {{ $t('cruds.dataMahasiswa.fields.tidaklulus') }}
+                          {{ $t('cruds.dataMahasiswa.fields.tidak_lulus') }}
                         </td>
                         <td>
-                          {{ entry.tidaklulus }}
+                          {{ entry.tidak_lulus }}
                         </td>
                       </tr>
                       <tr>

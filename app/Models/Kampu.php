@@ -8,13 +8,13 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
-class ListKampu extends Model
+class Kampu extends Model
 {
     use HasAdvancedFilter;
     use SoftDeletes;
     use HasFactory;
 
-    public $table = 'list_kampus';
+    public $table = 'kampus';
 
     protected $dates = [
         'created_at',
@@ -26,7 +26,6 @@ class ListKampu extends Model
         'id',
         'id_kampus',
         'nama_kampus',
-        'deskripsi',
         'alamat',
     ];
 
@@ -34,7 +33,6 @@ class ListKampu extends Model
         'id',
         'id_kampus',
         'nama_kampus',
-        'deskripsi',
         'alamat',
     ];
 
