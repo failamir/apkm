@@ -16,12 +16,14 @@ function initialState() {
       recall_tidak_lulus: '',
       precision_tidak_lulus: '',
       precision_lulus: '',
+      prediksi_tidak_lulus: '',
       created_at: '',
       updated_at: '',
       deleted_at: ''
     },
     lists: {
-      data_history: []
+      data_history: [],
+      mata_kuliah: []
     },
     loading: false
   }
@@ -102,11 +104,11 @@ const actions = {
   setNama({ commit }, value) {
     commit('setNama', value)
   },
-  setMataKuliah({ commit }, value) {
-    commit('setMataKuliah', value)
-  },
   setDataHistory({ commit }, value) {
     commit('setDataHistory', value)
+  },
+  setMataKuliah({ commit }, value) {
+    commit('setMataKuliah', value)
   },
   insertDataMahasiswaFile({ commit }, file) {
     commit('insertDataMahasiswaFile', file)
@@ -143,6 +145,9 @@ const actions = {
   },
   setPrecisionLulus({ commit }, value) {
     commit('setPrecisionLulus', value)
+  },
+  setPrediksiTidakLulus({ commit }, value) {
+    commit('setPrediksiTidakLulus', value)
   },
   setCreatedAt({ commit }, value) {
     commit('setCreatedAt', value)
@@ -184,6 +189,9 @@ const mutations = {
   setDataHistory(state, value) {
     state.entry.data_history_id = value
   },
+  setMataKuliah(state, value) {
+    state.entry.mata_kuliah_id = value
+  },
   insertDataMahasiswaFile(state, file) {
     state.entry.data_mahasiswa.push(file)
   },
@@ -207,9 +215,6 @@ const mutations = {
   setObservers(state, value) {
     state.entry.observers = value
   },
-  setMataKuliah(state, value) {
-    state.entry.mata_kuliah_id = value
-  },
   setAccuracy(state, value) {
     state.entry.accuracy = value
   },
@@ -224,6 +229,9 @@ const mutations = {
   },
   setPrecisionLulus(state, value) {
     state.entry.precision_lulus = value
+  },
+  setPrediksiTidakLulus(state, value) {
+    state.entry.prediksi_tidak_lulus = value
   },
   setCreatedAt(state, value) {
     state.entry.created_at = value

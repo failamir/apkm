@@ -1,7 +1,6 @@
 <template>
   <div class="container-fluid">
     <div class="row">
-        <img src="/md/img/ice2.png" alt="ice" width="100%" height="100%">
       <template v-for="(chart, key) in charts">
         <div :class="chart.column_class" :key="key">
           <stats-card
@@ -59,10 +58,6 @@ export default {
   created() {
     axios.get('dashboard').then(response => {
       this.charts = response.data
-    })
-    axios.get('excel').then(response => {
-      this.excel = response.data
-      console.log(this.excel)
     })
   }
 }

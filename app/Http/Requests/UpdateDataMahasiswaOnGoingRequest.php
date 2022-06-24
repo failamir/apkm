@@ -26,6 +26,11 @@ class UpdateDataMahasiswaOnGoingRequest extends FormRequest
                 'exists:data_mahasiswas,id',
                 'nullable',
             ],
+            'mata_kuliah_id' => [
+                'integer',
+                'exists:mata_kuliahs,id',
+                'nullable',
+            ],
             'data_mahasiswa' => [
                 'array',
                 'nullable',
@@ -80,6 +85,12 @@ class UpdateDataMahasiswaOnGoingRequest extends FormRequest
             ],
             'precision_lulus' => [
                 'numeric',
+                'nullable',
+            ],
+            'prediksi_tidak_lulus' => [
+                'integer',
+                'min:-2147483648',
+                'max:2147483647',
                 'nullable',
             ],
         ];

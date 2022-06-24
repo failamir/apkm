@@ -31,10 +31,8 @@
         "vue-i18n": "^8.22.0",
         "chart.js": "^2.9.4",
         "vue-chartjs": "^3.5.1",
-        "vue2-dropzone": "^3.6.0"
-    },
-    "dependencies": {
-        "apexcharts": "^3.35.3",
-        "vue-apexcharts": "^1.6.2"
+        "vue2-dropzone": "^3.6.0",
+        "@ckeditor/ckeditor5-vue": "^1.0.1",
+        "@ckeditor/ckeditor5-build-classic": "^21.0.0"
     }
 }
