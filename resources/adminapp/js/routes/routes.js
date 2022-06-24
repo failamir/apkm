@@ -224,27 +224,6 @@ const routes = [
         ]
       },
       {
-        path: 'report',
-        name: 'report',
-        component: View,
-        redirect: { name: 'report_mahasiswa_ongoings.index' },
-        children: [
-          {
-            path: 'report-mahasiswa-ongoings',
-            name: 'report_mahasiswa_ongoings.index',
-            component: () => import('@cruds/ReportMahasiswaOngoings/Index.vue'),
-            meta: { title: 'cruds.reportMahasiswaOngoing.title' }
-          },
-          {
-            path: 'report-mahasiswa-histories',
-            name: 'report_mahasiswa_histories.index',
-            component: () =>
-              import('@cruds/ReportMahasiswaHistories/Index.vue'),
-            meta: { title: 'cruds.reportMahasiswaHistory.title' }
-          }
-        ]
-      },
-      {
         path: 'user-management',
         name: 'user_management',
         component: View,
@@ -321,6 +300,27 @@ const routes = [
             name: 'users.edit',
             component: () => import('@cruds/Users/Edit.vue'),
             meta: { title: 'cruds.user.title' }
+          }
+        ]
+      },
+      {
+        path: 'report',
+        name: 'report',
+        component: View,
+        redirect: { name: 'report_mahasiswa_ongoings.index' },
+        children: [
+          {
+            path: 'report-mahasiswa-ongoings',
+            name: 'report_mahasiswa_ongoings.index',
+            component: () => import('@cruds/ReportMahasiswaOngoings/Index.vue'),
+            meta: { title: 'cruds.reportMahasiswaOngoing.title' }
+          },
+          {
+            path: 'report-mahasiswa-histories',
+            name: 'report_mahasiswa_histories.index',
+            component: () =>
+              import('@cruds/ReportMahasiswaHistories/Index.vue'),
+            meta: { title: 'cruds.reportMahasiswaHistory.title' }
           }
         ]
       }
