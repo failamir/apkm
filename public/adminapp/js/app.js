@@ -43,7 +43,7 @@
 /******/
 /******/ 	// script path function
 /******/ 	function jsonpScriptSrc(chunkId) {
-/******/ 		return __webpack_require__.p + "adminapp/js/chunks/" + ({}[chunkId]||chunkId) + ".js?id=" + {"0":"0c8674f46a6768a32c51","1":"3cd49b4dc0196faa31fa","2":"68c3a3942f37281ffccc","3":"38112b31e60ce912836c","4":"834eeebe0774129fc9b3","5":"521b0b09ab0691ca0cda","6":"a2d7accfe72bedf72b7e","7":"b3dabde518dbd46ba3f3","8":"fa54b8b78f6ccaf820f3","9":"80ae1883f65cd1300c51","10":"611dfc3d341249994712","11":"0eb5c3439b4093229af2","12":"1b952c90ebe6d1015ea5","13":"ad7dc586028d10c857bb","14":"d822ba29b8f6cb6d448b","15":"43e37330b3bbe8bd209d","16":"7ab1a340ad9edad668c0","17":"f4da84d603a4441f4dce","18":"7fbeb13cf21dc1bf162a","21":"f089237aa8f55f796bf7","22":"1cf5005c869202eef40a","25":"3476c65f2cef7c6ca0fd","26":"055d27b14ca7feb18774","27":"1c7269a95b24e85bd974","28":"3e414542a9119431d062","29":"76c7323da7502a3d7184","30":"a624d1172ce855baf758","31":"1884bfe63110b95d1746","32":"a9dd0eab3a40eff3b6c9","33":"9dd84e6afc0eefea59e2","34":"3118e2aa4d36e186bb17","35":"33527a70c193980a3296","36":"21ba4c592480537eae03","37":"3fca67ebd017f4804d20","38":"5edbe5396d1f2c954997","39":"8b489083bc80f6baf65b","40":"3db694d181d457f52ee7","41":"857f43651486d73b8282","42":"db463308f5f4a5a47d8b","43":"15f9de959eed5c334221","44":"012beb89591290eb64a9","45":"666689b50a9d65990eb2","46":"a29e735d64f6af35513a","47":"72767be0c7829a1e8ba6","48":"4853c38fc96ab3372676","49":"a6fd3d960356ac51e5b9","50":"d160416dda13d305c8f7","51":"69449e89b96b99b34cdf","52":"ef97e01aefe59f2f214c","53":"ee452948585a18e92ba2","54":"d49e3eb3b2d195f91140","55":"710f91459f10f6db08f4","56":"5d81cc88a700421ea8e5","57":"148bbed4bb16031aad8e","58":"2d5058c5b808cda67337","59":"5fd4ca3ddb4816d37933","60":"b2483c752ba3d6a58d11"}[chunkId] + ""
+/******/ 		return __webpack_require__.p + "adminapp/js/chunks/" + ({}[chunkId]||chunkId) + ".js?id=" + {"0":"0c8674f46a6768a32c51","1":"3cd49b4dc0196faa31fa","2":"68c3a3942f37281ffccc","3":"38112b31e60ce912836c","4":"834eeebe0774129fc9b3","5":"521b0b09ab0691ca0cda","6":"25de190a0105ceef73a3","7":"b3dabde518dbd46ba3f3","8":"fa54b8b78f6ccaf820f3","9":"80ae1883f65cd1300c51","10":"611dfc3d341249994712","11":"0eb5c3439b4093229af2","12":"1b952c90ebe6d1015ea5","13":"ad7dc586028d10c857bb","14":"d822ba29b8f6cb6d448b","15":"43e37330b3bbe8bd209d","16":"7ab1a340ad9edad668c0","17":"f4da84d603a4441f4dce","18":"7fbeb13cf21dc1bf162a","21":"f089237aa8f55f796bf7","22":"1cf5005c869202eef40a","25":"3476c65f2cef7c6ca0fd","26":"055d27b14ca7feb18774","27":"1c7269a95b24e85bd974","28":"3e414542a9119431d062","29":"76c7323da7502a3d7184","30":"a624d1172ce855baf758","31":"1884bfe63110b95d1746","32":"a9dd0eab3a40eff3b6c9","33":"9dd84e6afc0eefea59e2","34":"3118e2aa4d36e186bb17","35":"33527a70c193980a3296","36":"21ba4c592480537eae03","37":"3fca67ebd017f4804d20","38":"5edbe5396d1f2c954997","39":"8b489083bc80f6baf65b","40":"3db694d181d457f52ee7","41":"857f43651486d73b8282","42":"db463308f5f4a5a47d8b","43":"15f9de959eed5c334221","44":"012beb89591290eb64a9","45":"666689b50a9d65990eb2","46":"a29e735d64f6af35513a","47":"72767be0c7829a1e8ba6","48":"4853c38fc96ab3372676","49":"a6fd3d960356ac51e5b9","50":"d160416dda13d305c8f7","51":"69449e89b96b99b34cdf","52":"ef97e01aefe59f2f214c","53":"ee452948585a18e92ba2","54":"d29c2891cdb73ffc5498","55":"710f91459f10f6db08f4","56":"5d81cc88a700421ea8e5","57":"148bbed4bb16031aad8e","58":"2d5058c5b808cda67337","59":"5fd4ca3ddb4816d37933","60":"b2483c752ba3d6a58d11"}[chunkId] + ""
 /******/ 	}
 /******/
 /******/ 	// The require function
@@ -55396,45 +55396,9 @@ var routes = [{
     name: 'data_master',
     component: View,
     redirect: {
-      name: 'data_preparations.index'
+      name: 'mahasiswas.index'
     },
     children: [{
-      path: 'data-preparations',
-      name: 'data_preparations.index',
-      component: function component() {
-        return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(27)]).then(__webpack_require__.bind(null, /*! @cruds/DataPreparations/Index.vue */ "./resources/adminapp/js/cruds/DataPreparations/Index.vue"));
-      },
-      meta: {
-        title: 'cruds.dataPreparation.title'
-      }
-    }, {
-      path: 'data-preparations/create',
-      name: 'data_preparations.create',
-      component: function component() {
-        return Promise.all(/*! import() */[__webpack_require__.e(25), __webpack_require__.e(1), __webpack_require__.e(54)]).then(__webpack_require__.bind(null, /*! @cruds/DataPreparations/Create.vue */ "./resources/adminapp/js/cruds/DataPreparations/Create.vue"));
-      },
-      meta: {
-        title: 'cruds.dataPreparation.title'
-      }
-    }, {
-      path: 'data-preparations/:id',
-      name: 'data_preparations.show',
-      component: function component() {
-        return __webpack_require__.e(/*! import() */ 28).then(__webpack_require__.bind(null, /*! @cruds/DataPreparations/Show.vue */ "./resources/adminapp/js/cruds/DataPreparations/Show.vue"));
-      },
-      meta: {
-        title: 'cruds.dataPreparation.title'
-      }
-    }, {
-      path: 'data-preparations/:id/edit',
-      name: 'data_preparations.edit',
-      component: function component() {
-        return __webpack_require__.e(/*! import() */ 26).then(__webpack_require__.bind(null, /*! @cruds/DataPreparations/Edit.vue */ "./resources/adminapp/js/cruds/DataPreparations/Edit.vue"));
-      },
-      meta: {
-        title: 'cruds.dataPreparation.title'
-      }
-    }, {
       path: 'mahasiswas',
       name: 'mahasiswas.index',
       component: function component() {
@@ -55613,6 +55577,42 @@ var routes = [{
       },
       meta: {
         title: 'cruds.kampu.title'
+      }
+    }, {
+      path: 'data-preparations',
+      name: 'data_preparations.index',
+      component: function component() {
+        return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(27)]).then(__webpack_require__.bind(null, /*! @cruds/DataPreparations/Index.vue */ "./resources/adminapp/js/cruds/DataPreparations/Index.vue"));
+      },
+      meta: {
+        title: 'cruds.dataPreparation.title'
+      }
+    }, {
+      path: 'data-preparations/create',
+      name: 'data_preparations.create',
+      component: function component() {
+        return Promise.all(/*! import() */[__webpack_require__.e(25), __webpack_require__.e(1), __webpack_require__.e(54)]).then(__webpack_require__.bind(null, /*! @cruds/DataPreparations/Create.vue */ "./resources/adminapp/js/cruds/DataPreparations/Create.vue"));
+      },
+      meta: {
+        title: 'cruds.dataPreparation.title'
+      }
+    }, {
+      path: 'data-preparations/:id',
+      name: 'data_preparations.show',
+      component: function component() {
+        return __webpack_require__.e(/*! import() */ 28).then(__webpack_require__.bind(null, /*! @cruds/DataPreparations/Show.vue */ "./resources/adminapp/js/cruds/DataPreparations/Show.vue"));
+      },
+      meta: {
+        title: 'cruds.dataPreparation.title'
+      }
+    }, {
+      path: 'data-preparations/:id/edit',
+      name: 'data_preparations.edit',
+      component: function component() {
+        return __webpack_require__.e(/*! import() */ 26).then(__webpack_require__.bind(null, /*! @cruds/DataPreparations/Edit.vue */ "./resources/adminapp/js/cruds/DataPreparations/Edit.vue"));
+      },
+      meta: {
+        title: 'cruds.dataPreparation.title'
       }
     }, {
       path: 'tentang-aplikasis',
@@ -56699,6 +56699,8 @@ function initialState() {
       status_3: '',
       data_log: [],
       data_nilai: [],
+      temp_log: '',
+      temp_nilai: '',
       created_at: '',
       updated_at: '',
       deleted_at: ''
@@ -56844,34 +56846,42 @@ var actions = {
     var commit = _ref18.commit;
     commit('removeDataNilaiFile', file);
   },
-  setCreatedAt: function setCreatedAt(_ref19, value) {
+  setTempLog: function setTempLog(_ref19, value) {
     var commit = _ref19.commit;
+    commit('setTempLog', value);
+  },
+  setTempNilai: function setTempNilai(_ref20, value) {
+    var commit = _ref20.commit;
+    commit('setTempNilai', value);
+  },
+  setCreatedAt: function setCreatedAt(_ref21, value) {
+    var commit = _ref21.commit;
     commit('setCreatedAt', value);
   },
-  setUpdatedAt: function setUpdatedAt(_ref20, value) {
-    var commit = _ref20.commit;
+  setUpdatedAt: function setUpdatedAt(_ref22, value) {
+    var commit = _ref22.commit;
     commit('setUpdatedAt', value);
   },
-  setDeletedAt: function setDeletedAt(_ref21, value) {
-    var commit = _ref21.commit;
+  setDeletedAt: function setDeletedAt(_ref23, value) {
+    var commit = _ref23.commit;
     commit('setDeletedAt', value);
   },
-  fetchEditData: function fetchEditData(_ref22, id) {
-    var commit = _ref22.commit,
-        dispatch = _ref22.dispatch;
+  fetchEditData: function fetchEditData(_ref24, id) {
+    var commit = _ref24.commit,
+        dispatch = _ref24.dispatch;
     axios.get("".concat(route, "/").concat(id, "/edit")).then(function (response) {
       commit('setEntry', response.data.data);
     });
   },
-  fetchShowData: function fetchShowData(_ref23, id) {
-    var commit = _ref23.commit,
-        dispatch = _ref23.dispatch;
+  fetchShowData: function fetchShowData(_ref25, id) {
+    var commit = _ref25.commit,
+        dispatch = _ref25.dispatch;
     axios.get("".concat(route, "/").concat(id)).then(function (response) {
       commit('setEntry', response.data.data);
     });
   },
-  resetState: function resetState(_ref24) {
-    var commit = _ref24.commit;
+  resetState: function resetState(_ref26) {
+    var commit = _ref26.commit;
     commit('resetState');
   }
 };
@@ -56930,6 +56940,12 @@ var mutations = {
     state.entry.data_nilai = state.entry.data_nilai.filter(function (item) {
       return item.id !== file.id;
     });
+  },
+  setTempLog: function setTempLog(state, value) {
+    state.entry.temp_log = value;
+  },
+  setTempNilai: function setTempNilai(state, value) {
+    state.entry.temp_nilai = value;
   },
   setCreatedAt: function setCreatedAt(state, value) {
     state.entry.created_at = value;

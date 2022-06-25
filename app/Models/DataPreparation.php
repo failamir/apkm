@@ -22,6 +22,7 @@ class DataPreparation extends Model implements HasMedia
     protected $appends = [
         'data_log',
         'data_nilai',
+        'data_hasil',
     ];
 
     protected $dates = [
@@ -60,6 +61,8 @@ class DataPreparation extends Model implements HasMedia
         'status_1',
         'status_2',
         'status_3',
+        'temp_nilai',
+        'temp_log',
     ];
 
     protected $fillable = [
@@ -85,6 +88,16 @@ class DataPreparation extends Model implements HasMedia
     public function getDataLogAttribute()
     {
         return $this->getMedia('data_preparation_data_log')->map(function ($item) {
+            $media = $item->toArray();
+            $media['url'] = $item->getUrl();
+
+            return $media;
+        });
+    }
+
+    public function getDataHasilAttribute()
+    {
+        return $this->getMedia('data_preparation_data_hasil')->map(function ($item) {
             $media = $item->toArray();
             $media['url'] = $item->getUrl();
 

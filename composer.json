@@ -11,6 +11,8 @@
         "laravel/framework": "^9.0",
         "laravel/sanctum": "^2.14",
         "laravel/tinker": "^2.7",
+        "shuchkin/simplexlsx": "^1.0",
+        "shuchkin/simplexlsxgen": "^1.2",
         "spatie/laravel-medialibrary": "^10.0.7"
     },
     "require-dev": {
