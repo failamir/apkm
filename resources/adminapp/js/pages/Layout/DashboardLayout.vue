@@ -58,12 +58,6 @@ export default {
           gate: 'data_master_access',
           children: [
             {
-              title: 'cruds.dataPreparation.title',
-              icon: 'table_view',
-              path: { name: 'data_preparations.index' },
-              gate: 'data_preparation_access'
-            },
-            {
               title: 'cruds.mahasiswa.title',
               icon: 'table_view',
               path: { name: 'mahasiswas.index' },
@@ -92,6 +86,12 @@ export default {
               icon: 'table_view',
               path: { name: 'kampus.index' },
               gate: 'kampu_access'
+            },
+            {
+              title: 'cruds.dataPreparation.title',
+              icon: 'table_view',
+              path: { name: 'data_preparations.index' },
+              gate: 'data_preparation_access'
             },
             {
               title: 'cruds.tentangAplikasi.title',

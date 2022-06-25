@@ -7,10 +7,7 @@ use App\Http\Requests\StorePreparationDataRequest;
 use App\Http\Requests\UpdatePreparationDataRequest;
 use App\Http\Resources\Admin\PreparationDataResource;
 use App\Models\PreparationData;
-use App\Models\DataPreparation;
 use Gate;
-use Shuchkin\SimpleXLSX;
-use Shuchkin\SimpleXLSXGen;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Spatie\MediaLibrary\MediaCollections\Models\Media;
@@ -34,134 +31,11 @@ class PreparationDataApiController extends Controller
                 ->update(['model_id' => $preparationData->id]);
         }
 
-        $data_log = public_path() . '/storage/' . $request->input('data_log')[0]["id"] . '/' . $request->input('data_log')[0]["file_name"];
-        // var_dump($log);
-        if($request->input('data_log') != null){
-        if ( $xlsx = SimpleXLSX::parse($data_log) ) {
-            $r = $xlsx->rows();
-
-            // return print_r( $r );
-
-        } else {
-            echo SimpleXLSX::parseError();
-        }
-        if(isset($r)){
-        foreach($r as $d){
-            // echo $d[2];
-            // [0] => Time
-            // [1] => Timestamp
-            // [2] => User full name
-            // [3] => Affected user
-            // [4] => Event context
-            // [5] => Component
-            // [6] => Event name
-            // [7] => IP address
-            $cek = DataPreparation::where('nama',$d[2])->first();
-            // var_dump($cek);
-            if ($cek == null){
-                $buat = PreparationData::create(
-                    ['nama' => $d[2]],
-                    ['akses_file' => 1],
-                    ['akses_video' => 1],
-                    ['akses_forum' => 1],
-                    ['kuis_1' => 1],
-                    ['kuis_2' => 1],
-                    ['tugas_1' => 1],
-                    ['tugas_2' => 1],
-                    ['nilai_akhir' => 1],
-                    ['status_1' => 1],
-                    ['status_2' => 1],
-                    ['status_3' => 1],
-                    ['status_3' => 1],
-                );
-            }
-            else if ($cek->nama == $d[2]){
-                if ($d[5] == 'File'){
-                    DataPreparation::where('nama', $d[2])->update(
-                    ['akses_file' => $cek->akses_file + 1]
-                );}
-                if ($d[5] == 'Forum'){
-                    DataPreparation::where('nama', $d[2])->update(
-                    ['akses_forum' => $cek->akses_forum + 1]
-                );}
-                if ($d[5] == 'URL'){
-                    DataPreparation::where('nama', $d[2])->update(
-                    ['akses_video' => $cek->akses_video + 1]
-                );}
-            }else{
-
-            }
-        }}}
-
         if ($media = $request->input('data_nilai', [])) {
             Media::whereIn('id', data_get($media, '*.id'))
                 ->where('model_id', 0)
-                ->update(['model_id' => $PreparationData->id]);
+                ->update(['model_id' => $preparationData->id]);
         }
-        if($request->input('data_nilai') != null){
-        $data_nilai = public_path() . '/storage/' . $request->input('data_nilai')[0]["id"] . '/' . $request->input('data_nilai')[0]["file_name"];
-        // var_dump($data_nilai);
-        // if(isset($data_nilai))
-        // if ( $xlsx = SimpleXLSX::parse($data_nilai) ) {
-        //     $r = $xlsx->rows();
-
-        //     // return print_r( $r );
-
-        // } else {
-        //     echo SimpleXLSX::parseError();
-        // }
-        // if(isset($r)){
-        // foreach($r as $d){
-        //     // echo $d[2];
-        //     // [0] => Time
-        //     // [1] => Timestamp
-        //     // [2] => User full name
-        //     // [3] => Affected user
-        //     // [4] => Event context
-        //     // [5] => Component
-        //     // [6] => Event name
-        //     // [7] => IP address
-        //     $cek = PreparationData::where('nama',$d[2])->first();
-        //     // var_dump($cek);
-        //     if ($cek == null){
-        //         var_dump(PreparationData::create(
-        //             ['nama' => $d[2]],
-        //             ['akses_file' => 1],
-        //             ['akses_video' => 1],
-        //             ['akses_forum' => 1],
-        //             ['kuis_1' => 1],
-        //             ['kuis_2' => 1],
-        //             ['tugas_1' => 1],
-        //             ['tugas_2' => 1],
-        //             ['nilai_akhir' => 1],
-        //             ['status_1' => 1],
-        //             ['status_2' => 1],
-        //             ['status_3' => 1],
-        //         ));
-        //     }
-        //     else if ($cek->nama == $d[2]){
-        //         if ($d[5] == 'File'){
-        //             PreparationData::where('nama', $d[2])->update(
-        //             ['akses_file' => $cek->akses_file + 1]
-        //         );}
-        //         if ($d[5] == 'Forum'){
-        //             PreparationData::where('nama', $d[2])->update(
-        //             ['akses_forum' => $cek->akses_forum + 1]
-        //         );}
-        //         if ($d[5] == 'Video'){
-        //             PreparationData::where('nama', $d[2])->update(
-        //             ['akses_video' => $cek->akses_video + 1]
-        //         );}
-        //     }else{
-
-        //     }
-        // }}
-    }
-        // if ($media = $request->input('data_nilai', [])) {
-        //     Media::whereIn('id', data_get($media, '*.id'))
-        //         ->where('model_id', 0)
-        //         ->update(['model_id' => $preparationData->id]);
-        // }
 
         if ($media = $request->input('data_hasil', [])) {
             Media::whereIn('id', data_get($media, '*.id'))

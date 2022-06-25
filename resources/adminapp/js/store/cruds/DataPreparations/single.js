@@ -16,6 +16,8 @@ function initialState() {
       status_3: '',
       data_log: [],
       data_nilai: [],
+      temp_log: '',
+      temp_nilai: '',
       created_at: '',
       updated_at: '',
       deleted_at: ''
@@ -143,6 +145,12 @@ const actions = {
   removeDataNilaiFile({ commit }, file) {
     commit('removeDataNilaiFile', file)
   },
+  setTempLog({ commit }, value) {
+    commit('setTempLog', value)
+  },
+  setTempNilai({ commit }, value) {
+    commit('setTempNilai', value)
+  },
   setCreatedAt({ commit }, value) {
     commit('setCreatedAt', value)
   },
@@ -222,6 +230,12 @@ const mutations = {
     state.entry.data_nilai = state.entry.data_nilai.filter(item => {
       return item.id !== file.id
     })
+  },
+  setTempLog(state, value) {
+    state.entry.temp_log = value
+  },
+  setTempNilai(state, value) {
+    state.entry.temp_nilai = value
   },
   setCreatedAt(state, value) {
     state.entry.created_at = value
