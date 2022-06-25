@@ -175,6 +175,9 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
     updateJumlahSks: function updateJumlahSks(e) {
       this.setJumlahSks(e.target.value);
     },
+    getRoute: function getRoute(name) {
+      return "".concat(axios.defaults.baseURL).concat(name, "/media");
+    },
     submitForm: function submitForm() {
       var _this = this;
 
