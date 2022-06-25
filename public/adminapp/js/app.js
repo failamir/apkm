@@ -43,7 +43,7 @@
 /******/
 /******/ 	// script path function
 /******/ 	function jsonpScriptSrc(chunkId) {
-/******/ 		return __webpack_require__.p + "adminapp/js/chunks/" + ({}[chunkId]||chunkId) + ".js?id=" + {"0":"0c8674f46a6768a32c51","1":"3cd49b4dc0196faa31fa","2":"4b0ec9a2865f937a22d5","3":"410d00e047f9472220f6","4":"834eeebe0774129fc9b3","5":"521b0b09ab0691ca0cda","6":"bf2f1b001ca62c958e33","7":"b3dabde518dbd46ba3f3","8":"fa54b8b78f6ccaf820f3","9":"80ae1883f65cd1300c51","10":"611dfc3d341249994712","11":"0eb5c3439b4093229af2","12":"1b952c90ebe6d1015ea5","13":"ad7dc586028d10c857bb","14":"d822ba29b8f6cb6d448b","15":"43e37330b3bbe8bd209d","16":"7ab1a340ad9edad668c0","17":"f4da84d603a4441f4dce","18":"7fbeb13cf21dc1bf162a","19":"a11ab01e258ce9ab490b","20":"1767309e06cd5419cebd","21":"f089237aa8f55f796bf7","22":"1cf5005c869202eef40a","23":"b8352080fa3b3915804f","24":"2eea70ad4f34173f7253","25":"df1a51554632a6d810ec","26":"b95953173b273b92182c","27":"1c7269a95b24e85bd974","28":"3e414542a9119431d062","29":"76c7323da7502a3d7184","30":"a624d1172ce855baf758","31":"1884bfe63110b95d1746","32":"a9dd0eab3a40eff3b6c9","33":"9dd84e6afc0eefea59e2","34":"3118e2aa4d36e186bb17","35":"33527a70c193980a3296","36":"21ba4c592480537eae03","37":"3fca67ebd017f4804d20","38":"5edbe5396d1f2c954997","39":"8b489083bc80f6baf65b","40":"3db694d181d457f52ee7","41":"382632b25fd3c13476e0","42":"b0d1ff92f31951272777","43":"15f9de959eed5c334221","44":"012beb89591290eb64a9","45":"666689b50a9d65990eb2","46":"a29e735d64f6af35513a","47":"72767be0c7829a1e8ba6","48":"4853c38fc96ab3372676","49":"a6fd3d960356ac51e5b9","50":"d160416dda13d305c8f7","51":"69449e89b96b99b34cdf","52":"ef97e01aefe59f2f214c","53":"ee452948585a18e92ba2"}[chunkId] + ""
+/******/ 		return __webpack_require__.p + "adminapp/js/chunks/" + ({}[chunkId]||chunkId) + ".js?id=" + {"0":"0c8674f46a6768a32c51","1":"3cd49b4dc0196faa31fa","2":"4b0ec9a2865f937a22d5","4":"834eeebe0774129fc9b3","5":"521b0b09ab0691ca0cda","6":"5c23f081b64c34eec1a6","7":"b3dabde518dbd46ba3f3","8":"fa54b8b78f6ccaf820f3","9":"80ae1883f65cd1300c51","10":"611dfc3d341249994712","11":"0eb5c3439b4093229af2","12":"1b952c90ebe6d1015ea5","13":"ad7dc586028d10c857bb","14":"d822ba29b8f6cb6d448b","15":"43e37330b3bbe8bd209d","16":"7ab1a340ad9edad668c0","17":"f4da84d603a4441f4dce","18":"7fbeb13cf21dc1bf162a","19":"a11ab01e258ce9ab490b","20":"1767309e06cd5419cebd","21":"f089237aa8f55f796bf7","22":"1cf5005c869202eef40a","23":"b8352080fa3b3915804f","24":"2eea70ad4f34173f7253","25":"3476c65f2cef7c6ca0fd","26":"055d27b14ca7feb18774","27":"1c7269a95b24e85bd974","28":"3e414542a9119431d062","29":"76c7323da7502a3d7184","30":"a624d1172ce855baf758","31":"1884bfe63110b95d1746","32":"a9dd0eab3a40eff3b6c9","33":"9dd84e6afc0eefea59e2","34":"3118e2aa4d36e186bb17","35":"33527a70c193980a3296","36":"21ba4c592480537eae03","37":"3fca67ebd017f4804d20","38":"5edbe5396d1f2c954997","39":"8b489083bc80f6baf65b","40":"3db694d181d457f52ee7","41":"382632b25fd3c13476e0","42":"b0d1ff92f31951272777","43":"15f9de959eed5c334221","44":"012beb89591290eb64a9","45":"666689b50a9d65990eb2","46":"a29e735d64f6af35513a","47":"72767be0c7829a1e8ba6","48":"4853c38fc96ab3372676","49":"a6fd3d960356ac51e5b9","50":"d160416dda13d305c8f7","51":"69449e89b96b99b34cdf","52":"ef97e01aefe59f2f214c","53":"ee452948585a18e92ba2","54":"a2345f01a89ac39bd702"}[chunkId] + ""
 /******/ 	}
 /******/
 /******/ 	// The require function
@@ -55296,7 +55296,7 @@ var routes = [{
     path: 'data-preparations/create',
     name: 'data_preparations.create',
     component: function component() {
-      return __webpack_require__.e(/*! import() */ 25).then(__webpack_require__.bind(null, /*! @cruds/DataPreparations/Create.vue */ "./resources/adminapp/js/cruds/DataPreparations/Create.vue"));
+      return Promise.all(/*! import() */[__webpack_require__.e(25), __webpack_require__.e(1), __webpack_require__.e(54)]).then(__webpack_require__.bind(null, /*! @cruds/DataPreparations/Create.vue */ "./resources/adminapp/js/cruds/DataPreparations/Create.vue"));
     },
     meta: {
       title: 'cruds.dataPreparation.title'
@@ -55332,7 +55332,7 @@ var routes = [{
     path: 'data-mahasiswas/create',
     name: 'data_mahasiswas.create',
     component: function component() {
-      return Promise.all(/*! import() */[__webpack_require__.e(3), __webpack_require__.e(1), __webpack_require__.e(21)]).then(__webpack_require__.bind(null, /*! @cruds/DataMahasiswas/Create.vue */ "./resources/adminapp/js/cruds/DataMahasiswas/Create.vue"));
+      return Promise.all(/*! import() */[__webpack_require__.e(25), __webpack_require__.e(1), __webpack_require__.e(21)]).then(__webpack_require__.bind(null, /*! @cruds/DataMahasiswas/Create.vue */ "./resources/adminapp/js/cruds/DataMahasiswas/Create.vue"));
     },
     meta: {
       title: 'cruds.dataMahasiswa.title'
@@ -55350,7 +55350,7 @@ var routes = [{
     path: 'data-mahasiswas/:id/edit',
     name: 'data_mahasiswas.edit',
     component: function component() {
-      return Promise.all(/*! import() */[__webpack_require__.e(3), __webpack_require__.e(1), __webpack_require__.e(22)]).then(__webpack_require__.bind(null, /*! @cruds/DataMahasiswas/Edit.vue */ "./resources/adminapp/js/cruds/DataMahasiswas/Edit.vue"));
+      return Promise.all(/*! import() */[__webpack_require__.e(25), __webpack_require__.e(1), __webpack_require__.e(22)]).then(__webpack_require__.bind(null, /*! @cruds/DataMahasiswas/Edit.vue */ "./resources/adminapp/js/cruds/DataMahasiswas/Edit.vue"));
     },
     meta: {
       title: 'cruds.dataMahasiswa.title'
@@ -55368,7 +55368,7 @@ var routes = [{
     path: 'data-mahasiswa-on-goings/create',
     name: 'data_mahasiswa_on_goings.create',
     component: function component() {
-      return Promise.all(/*! import() */[__webpack_require__.e(3), __webpack_require__.e(1), __webpack_require__.e(17)]).then(__webpack_require__.bind(null, /*! @cruds/DataMahasiswaOnGoings/Create.vue */ "./resources/adminapp/js/cruds/DataMahasiswaOnGoings/Create.vue"));
+      return Promise.all(/*! import() */[__webpack_require__.e(25), __webpack_require__.e(1), __webpack_require__.e(17)]).then(__webpack_require__.bind(null, /*! @cruds/DataMahasiswaOnGoings/Create.vue */ "./resources/adminapp/js/cruds/DataMahasiswaOnGoings/Create.vue"));
     },
     meta: {
       title: 'cruds.dataMahasiswaOnGoing.title'
@@ -55386,7 +55386,7 @@ var routes = [{
     path: 'data-mahasiswa-on-goings/:id/edit',
     name: 'data_mahasiswa_on_goings.edit',
     component: function component() {
-      return Promise.all(/*! import() */[__webpack_require__.e(3), __webpack_require__.e(1), __webpack_require__.e(18)]).then(__webpack_require__.bind(null, /*! @cruds/DataMahasiswaOnGoings/Edit.vue */ "./resources/adminapp/js/cruds/DataMahasiswaOnGoings/Edit.vue"));
+      return Promise.all(/*! import() */[__webpack_require__.e(25), __webpack_require__.e(1), __webpack_require__.e(18)]).then(__webpack_require__.bind(null, /*! @cruds/DataMahasiswaOnGoings/Edit.vue */ "./resources/adminapp/js/cruds/DataMahasiswaOnGoings/Edit.vue"));
     },
     meta: {
       title: 'cruds.dataMahasiswaOnGoing.title'
@@ -55396,18 +55396,9 @@ var routes = [{
     name: 'data_master',
     component: View,
     redirect: {
-      name: 'tentang_aplikasis.index'
+      name: 'mahasiswas.index'
     },
     children: [{
-      path: 'tentang-aplikasis',
-      name: 'tentang_aplikasis.index',
-      component: function component() {
-        return __webpack_require__.e(/*! import() */ 51).then(__webpack_require__.bind(null, /*! @cruds/TentangAplikasis/Index.vue */ "./resources/adminapp/js/cruds/TentangAplikasis/Index.vue"));
-      },
-      meta: {
-        title: 'cruds.tentangAplikasi.title'
-      }
-    }, {
       path: 'mahasiswas',
       name: 'mahasiswas.index',
       component: function component() {
@@ -55586,6 +55577,15 @@ var routes = [{
       },
       meta: {
         title: 'cruds.kampu.title'
+      }
+    }, {
+      path: 'tentang-aplikasis',
+      name: 'tentang_aplikasis.index',
+      component: function component() {
+        return __webpack_require__.e(/*! import() */ 51).then(__webpack_require__.bind(null, /*! @cruds/TentangAplikasis/Index.vue */ "./resources/adminapp/js/cruds/TentangAplikasis/Index.vue"));
+      },
+      meta: {
+        title: 'cruds.tentangAplikasi.title'
       }
     }]
   }, {
@@ -56661,6 +56661,8 @@ function initialState() {
       status_1: '',
       status_2: '',
       status_3: '',
+      data_log: [],
+      data_nilai: [],
       created_at: '',
       updated_at: '',
       deleted_at: ''
@@ -56790,34 +56792,50 @@ var actions = {
     var commit = _ref14.commit;
     commit('setStatus3', value);
   },
-  setCreatedAt: function setCreatedAt(_ref15, value) {
+  insertDataLogFile: function insertDataLogFile(_ref15, file) {
     var commit = _ref15.commit;
+    commit('insertDataLogFile', file);
+  },
+  removeDataLogFile: function removeDataLogFile(_ref16, file) {
+    var commit = _ref16.commit;
+    commit('removeDataLogFile', file);
+  },
+  insertDataNilaiFile: function insertDataNilaiFile(_ref17, file) {
+    var commit = _ref17.commit;
+    commit('insertDataNilaiFile', file);
+  },
+  removeDataNilaiFile: function removeDataNilaiFile(_ref18, file) {
+    var commit = _ref18.commit;
+    commit('removeDataNilaiFile', file);
+  },
+  setCreatedAt: function setCreatedAt(_ref19, value) {
+    var commit = _ref19.commit;
     commit('setCreatedAt', value);
   },
-  setUpdatedAt: function setUpdatedAt(_ref16, value) {
-    var commit = _ref16.commit;
+  setUpdatedAt: function setUpdatedAt(_ref20, value) {
+    var commit = _ref20.commit;
     commit('setUpdatedAt', value);
   },
-  setDeletedAt: function setDeletedAt(_ref17, value) {
-    var commit = _ref17.commit;
+  setDeletedAt: function setDeletedAt(_ref21, value) {
+    var commit = _ref21.commit;
     commit('setDeletedAt', value);
   },
-  fetchEditData: function fetchEditData(_ref18, id) {
-    var commit = _ref18.commit,
-        dispatch = _ref18.dispatch;
+  fetchEditData: function fetchEditData(_ref22, id) {
+    var commit = _ref22.commit,
+        dispatch = _ref22.dispatch;
     axios.get("".concat(route, "/").concat(id, "/edit")).then(function (response) {
       commit('setEntry', response.data.data);
     });
   },
-  fetchShowData: function fetchShowData(_ref19, id) {
-    var commit = _ref19.commit,
-        dispatch = _ref19.dispatch;
+  fetchShowData: function fetchShowData(_ref23, id) {
+    var commit = _ref23.commit,
+        dispatch = _ref23.dispatch;
     axios.get("".concat(route, "/").concat(id)).then(function (response) {
       commit('setEntry', response.data.data);
     });
   },
-  resetState: function resetState(_ref20) {
-    var commit = _ref20.commit;
+  resetState: function resetState(_ref24) {
+    var commit = _ref24.commit;
     commit('resetState');
   }
 };
@@ -56860,6 +56878,22 @@ var mutations = {
   },
   setStatus3: function setStatus3(state, value) {
     state.entry.status_3 = value;
+  },
+  insertDataLogFile: function insertDataLogFile(state, file) {
+    state.entry.data_log.push(file);
+  },
+  removeDataLogFile: function removeDataLogFile(state, file) {
+    state.entry.data_log = state.entry.data_log.filter(function (item) {
+      return item.id !== file.id;
+    });
+  },
+  insertDataNilaiFile: function insertDataNilaiFile(state, file) {
+    state.entry.data_nilai.push(file);
+  },
+  removeDataNilaiFile: function removeDataNilaiFile(state, file) {
+    state.entry.data_nilai = state.entry.data_nilai.filter(function (item) {
+      return item.id !== file.id;
+    });
   },
   setCreatedAt: function setCreatedAt(state, value) {
     state.entry.created_at = value;

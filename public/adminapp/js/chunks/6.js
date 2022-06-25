@@ -92,13 +92,6 @@ __webpack_require__.r(__webpack_exports__);
         },
         gate: 'data_master_access',
         children: [{
-          title: 'cruds.tentangAplikasi.title',
-          icon: 'table_view',
-          path: {
-            name: 'tentang_aplikasis.index'
-          },
-          gate: 'tentang_aplikasi_access'
-        }, {
           title: 'cruds.mahasiswa.title',
           icon: 'table_view',
           path: {
@@ -133,6 +126,13 @@ __webpack_require__.r(__webpack_exports__);
             name: 'kampus.index'
           },
           gate: 'kampu_access'
+        }, {
+          title: 'cruds.tentangAplikasi.title',
+          icon: 'table_view',
+          path: {
+            name: 'tentang_aplikasis.index'
+          },
+          gate: 'tentang_aplikasi_access'
         }]
       }, {
         title: 'cruds.report.title',
