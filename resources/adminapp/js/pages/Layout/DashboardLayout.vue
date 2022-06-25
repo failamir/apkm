@@ -34,6 +34,12 @@ export default {
           path: { name: 'dashboard' }
         },
         {
+          title: 'cruds.dataPreparation.title',
+          icon: 'table_view',
+          path: { name: 'data_preparations.index' },
+          gate: 'data_preparation_access'
+        },
+        {
           title: 'cruds.dataMahasiswa.title',
           icon: 'table_view',
           path: { name: 'data_mahasiswas.index' },
@@ -44,12 +50,6 @@ export default {
           icon: 'table_view',
           path: { name: 'data_mahasiswa_on_goings.index' },
           gate: 'data_mahasiswa_on_going_access'
-        },
-        {
-          title: 'cruds.dataPreparation.title',
-          icon: 'table_view',
-          path: { name: 'data_preparations.index' },
-          gate: 'data_preparation_access'
         },
         {
           title: 'cruds.dataMaster.title',
