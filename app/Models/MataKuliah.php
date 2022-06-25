@@ -7,14 +7,21 @@ use App\Support\HasAdvancedFilter;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
+use Spatie\MediaLibrary\HasMedia;
+use Spatie\MediaLibrary\InteractsWithMedia;
 
-class MataKuliah extends Model
+class MataKuliah extends Model implements HasMedia
 {
     use HasAdvancedFilter;
     use SoftDeletes;
+    use InteractsWithMedia;
     use HasFactory;
 
     public $table = 'mata_kuliahs';
+
+    protected $appends = [
+        'data_mtk',
+    ];
 
     protected $dates = [
         'created_at',
@@ -47,6 +54,16 @@ class MataKuliah extends Model
         'updated_at',
         'deleted_at',
     ];
+
+    public function getDataMtkAttribute()
+    {
+        return $this->getMedia('mata_kuliah_data_mtk')->map(function ($item) {
+            $media = $item->toArray();
+            $media['url'] = $item->getUrl();
+
+            return $media;
+        });
+    }
 
     public function jurusan()
     {

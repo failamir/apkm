@@ -11,6 +11,7 @@ use App\Models\MataKuliah;
 use Gate;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
+use Spatie\MediaLibrary\MediaCollections\Models\Media;
 
 class MataKuliahApiController extends Controller
 {
@@ -24,6 +25,12 @@ class MataKuliahApiController extends Controller
     public function store(StoreMataKuliahRequest $request)
     {
         $mataKuliah = MataKuliah::create($request->validated());
+
+        if ($media = $request->input('data_mtk', [])) {
+            Media::whereIn('id', data_get($media, '*.id'))
+                ->where('model_id', 0)
+                ->update(['model_id' => $mataKuliah->id]);
+        }
 
         return (new MataKuliahResource($mataKuliah))
             ->response()
@@ -52,6 +59,8 @@ class MataKuliahApiController extends Controller
     {
         $mataKuliah->update($request->validated());
 
+        $mataKuliah->updateMedia($request->input('data_mtk', []), 'mata_kuliah_data_mtk');
+
         return (new MataKuliahResource($mataKuliah))
             ->response()
             ->setStatusCode(Response::HTTP_ACCEPTED);
@@ -76,5 +85,23 @@ class MataKuliahApiController extends Controller
         $mataKuliah->delete();
 
         return response(null, Response::HTTP_NO_CONTENT);
+    }
+
+    public function storeMedia(Request $request)
+    {
+        abort_if(Gate::none(['mata_kuliah_create', 'mata_kuliah_edit']), Response::HTTP_FORBIDDEN, '403 Forbidden');
+
+        if ($request->has('size')) {
+            $this->validate($request, [
+                'file' => 'max:' . $request->input('size') * 1024,
+            ]);
+        }
+
+        $model         = new MataKuliah();
+        $model->id     = $request->input('model_id', 0);
+        $model->exists = true;
+        $media         = $model->addMediaFromRequest('file')->toMediaCollection($request->input('collection_name'));
+
+        return response()->json($media, Response::HTTP_CREATED);
     }
 }

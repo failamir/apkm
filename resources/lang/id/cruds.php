@@ -111,6 +111,8 @@ return [
             'id_mtk_helper'     => ' ',
             'jurusan'           => 'Jurusan',
             'jurusan_helper'    => ' ',
+            'data_mtk'          => 'Data Mata Kuliah',
+            'data_mtk_helper'   => ' ',
         ],
     ],
     'jurusan' => [

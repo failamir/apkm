@@ -24,6 +24,7 @@ Route::group(['prefix' => 'v1', 'as' => 'api.', 'namespace' => 'Api\V1\Admin', '
     Route::resource('mahasiswas', 'MahasiswaApiController');
 
     // Mata Kuliah
+    Route::post('mata-kuliahs/media', 'MataKuliahApiController@storeMedia')->name('mata-kuliahs.storeMedia');
     Route::resource('mata-kuliahs', 'MataKuliahApiController');
 
     // Jurusan
