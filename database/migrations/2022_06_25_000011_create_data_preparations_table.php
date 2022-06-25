@@ -22,6 +22,8 @@ class CreateDataPreparationsTable extends Migration
             $table->string('status_1')->nullable();
             $table->string('status_2')->nullable();
             $table->string('status_3')->nullable();
+            $table->string('temp_log')->nullable();
+            $table->string('temp_nilai')->nullable();
             $table->timestamps();
             $table->softDeletes();
         });

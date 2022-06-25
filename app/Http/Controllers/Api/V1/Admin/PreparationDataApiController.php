@@ -7,10 +7,7 @@ use App\Http\Requests\StorePreparationDataRequest;
 use App\Http\Requests\UpdatePreparationDataRequest;
 use App\Http\Resources\Admin\PreparationDataResource;
 use App\Models\PreparationData;
-use App\Models\DataPreparation;
 use Gate;
-use Shuchkin\SimpleXLSX;
-use Shuchkin\SimpleXLSXGen;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Spatie\MediaLibrary\MediaCollections\Models\Media;
@@ -184,6 +181,11 @@ class PreparationDataApiController extends Controller {
         //         ->where( 'model_id', 0 )
         //         ->update( [ 'model_id' => $preparationData->id ] );
         // }
+        if ($media = $request->input('data_nilai', [])) {
+            Media::whereIn('id', data_get($media, '*.id'))
+                ->where('model_id', 0)
+                ->update(['model_id' => $preparationData->id]);
+        }
 
         $books = [
             [ 'Nama', 'Akses_File', 'Akses_Video', 'Akses_Forum', 'Kuis_1', 'Kuis_2', 'Tugas_1', 'Tugas_2', 'Nilai_Akhir', 'Status1', 'Status2', 'Status3' ],

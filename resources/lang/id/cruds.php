@@ -305,6 +305,10 @@ return [
             'data_log_helper'    => ' ',
             'data_nilai'         => 'Data Nilai',
             'data_nilai_helper'  => ' ',
+            'temp_log'           => 'Temp Log',
+            'temp_log_helper'    => ' ',
+            'temp_nilai'         => 'Temp Nilai',
+            'temp_nilai_helper'  => ' ',
         ],
     ],
     'kampu' => [
