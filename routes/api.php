@@ -50,6 +50,7 @@ Route::group(['prefix' => 'v1', 'as' => 'api.', 'namespace' => 'Api\V1\Admin', '
     Route::apiResource('report-mahasiswa-histories', 'ReportMahasiswaHistoryApiController', ['only' => ['index']]);
 
     // Data Preparation
+    Route::post('data-preparations/media', 'DataPreparationApiController@storeMedia')->name('data-preparations.storeMedia');
     Route::resource('data-preparations', 'DataPreparationApiController');
 
     // Kampus
