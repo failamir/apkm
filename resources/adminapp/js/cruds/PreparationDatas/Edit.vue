@@ -52,19 +52,23 @@
                       :max-files="1"
                     />
                   </div>
-                  <div class="form-group">
-                    <label>{{
+                  <div
+                    class="form-group bmd-form-group"
+                    :class="{
+                      'has-items': entry.data_hasil,
+                      'is-focused': activeField == 'data_hasil'
+                    }"
+                  >
+                    <label class="bmd-label-floating">{{
                       $t('cruds.preparationData.fields.data_hasil')
                     }}</label>
-                    <attachment
-                      :route="getRoute('preparation-datas')"
-                      :collection-name="'preparation_data_data_hasil'"
-                      :media="entry.data_hasil"
-                      :model-id="$route.params.id"
-                      :max-file-size="100"
-                      @file-uploaded="insertDataHasilFile"
-                      @file-removed="removeDataHasilFile"
-                      :max-files="1"
+                    <input
+                      class="form-control"
+                      type="text"
+                      :value="entry.data_hasil"
+                      @input="updateDataHasil"
+                      @focus="focusField('data_hasil')"
+                      @blur="clearFocus"
                     />
                   </div>
                 </div>
@@ -125,9 +129,11 @@ export default {
       'removeDataLogFile',
       'insertDataNilaiFile',
       'removeDataNilaiFile',
-      'insertDataHasilFile',
-      'removeDataHasilFile'
+      'setDataHasil'
     ]),
+    updateDataHasil(e) {
+      this.setDataHasil(e.target.value)
+    },
     getRoute(name) {
       return `${axios.defaults.baseURL}${name}/media`
     },

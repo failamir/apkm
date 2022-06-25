@@ -10,6 +10,7 @@ class CreatePreparationDatasTable extends Migration
     {
         Schema::create('preparation_datas', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->string('data_hasil')->nullable();
             $table->timestamps();
             $table->softDeletes();
         });

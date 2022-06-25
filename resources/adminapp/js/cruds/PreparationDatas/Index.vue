@@ -105,7 +105,7 @@ export default {
           title: 'cruds.preparationData.fields.data_hasil',
           field: 'data_hasil',
           thComp: TranslatedHeader,
-          tdComp: DatatableAttachments
+          sortable: true
         },
         {
           title: 'global.actions',

@@ -125,6 +125,22 @@
                           {{ entry.status_3 }}
                         </td>
                       </tr>
+                      <tr>
+                        <td class="text-primary">
+                          {{ $t('cruds.dataPreparation.fields.temp_log') }}
+                        </td>
+                        <td>
+                          {{ entry.temp_log }}
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="text-primary">
+                          {{ $t('cruds.dataPreparation.fields.temp_nilai') }}
+                        </td>
+                        <td>
+                          {{ entry.temp_nilai }}
+                        </td>
+                      </tr>
                     </tbody>
                   </div>
                 </div>

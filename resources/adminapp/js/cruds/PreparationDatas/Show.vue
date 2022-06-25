@@ -58,11 +58,7 @@
                           {{ $t('cruds.preparationData.fields.data_hasil') }}
                         </td>
                         <td>
-                          <datatable-attachments
-                            :row="entry"
-                            :field="'data_hasil'"
-                          >
-                          </datatable-attachments>
+                          {{ entry.data_hasil }}
                         </td>
                       </tr>
                     </tbody>

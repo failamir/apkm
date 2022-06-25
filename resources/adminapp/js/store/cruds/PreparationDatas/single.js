@@ -4,7 +4,7 @@ function initialState() {
       id: null,
       data_log: [],
       data_nilai: [],
-      data_hasil: [],
+      data_hasil: '',
       created_at: '',
       updated_at: '',
       deleted_at: ''
@@ -96,11 +96,8 @@ const actions = {
   removeDataNilaiFile({ commit }, file) {
     commit('removeDataNilaiFile', file)
   },
-  insertDataHasilFile({ commit }, file) {
-    commit('insertDataHasilFile', file)
-  },
-  removeDataHasilFile({ commit }, file) {
-    commit('removeDataHasilFile', file)
+  setDataHasil({ commit }, value) {
+    commit('setDataHasil', value)
   },
   setCreatedAt({ commit }, value) {
     commit('setCreatedAt', value)
@@ -146,13 +143,8 @@ const mutations = {
       return item.id !== file.id
     })
   },
-  insertDataHasilFile(state, file) {
-    state.entry.data_hasil.push(file)
-  },
-  removeDataHasilFile(state, file) {
-    state.entry.data_hasil = state.entry.data_hasil.filter(item => {
-      return item.id !== file.id
-    })
+  setDataHasil(state, value) {
+    state.entry.data_hasil = value
   },
   setCreatedAt(state, value) {
     state.entry.created_at = value
