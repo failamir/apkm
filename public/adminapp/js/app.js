@@ -43,7 +43,7 @@
 /******/
 /******/ 	// script path function
 /******/ 	function jsonpScriptSrc(chunkId) {
-/******/ 		return __webpack_require__.p + "adminapp/js/chunks/" + ({}[chunkId]||chunkId) + ".js?id=" + {"0":"0c8674f46a6768a32c51","1":"3cd49b4dc0196faa31fa","2":"4b0ec9a2865f937a22d5","3":"38112b31e60ce912836c","4":"834eeebe0774129fc9b3","5":"521b0b09ab0691ca0cda","6":"5c23f081b64c34eec1a6","7":"b3dabde518dbd46ba3f3","8":"fa54b8b78f6ccaf820f3","9":"80ae1883f65cd1300c51","10":"611dfc3d341249994712","11":"0eb5c3439b4093229af2","12":"1b952c90ebe6d1015ea5","13":"ad7dc586028d10c857bb","14":"d822ba29b8f6cb6d448b","15":"43e37330b3bbe8bd209d","16":"7ab1a340ad9edad668c0","17":"f4da84d603a4441f4dce","18":"7fbeb13cf21dc1bf162a","19":"a11ab01e258ce9ab490b","20":"1767309e06cd5419cebd","21":"f089237aa8f55f796bf7","22":"1cf5005c869202eef40a","23":"b8352080fa3b3915804f","24":"2eea70ad4f34173f7253","25":"3476c65f2cef7c6ca0fd","26":"055d27b14ca7feb18774","27":"1c7269a95b24e85bd974","28":"3e414542a9119431d062","29":"76c7323da7502a3d7184","30":"a624d1172ce855baf758","31":"1884bfe63110b95d1746","32":"a9dd0eab3a40eff3b6c9","33":"9dd84e6afc0eefea59e2","34":"3118e2aa4d36e186bb17","35":"33527a70c193980a3296","36":"21ba4c592480537eae03","37":"3fca67ebd017f4804d20","38":"5edbe5396d1f2c954997","39":"8b489083bc80f6baf65b","40":"3db694d181d457f52ee7","42":"db463308f5f4a5a47d8b","43":"15f9de959eed5c334221","44":"012beb89591290eb64a9","45":"666689b50a9d65990eb2","46":"a29e735d64f6af35513a","47":"72767be0c7829a1e8ba6","48":"4853c38fc96ab3372676","49":"a6fd3d960356ac51e5b9","50":"d160416dda13d305c8f7","51":"69449e89b96b99b34cdf","52":"ef97e01aefe59f2f214c","53":"ee452948585a18e92ba2","54":"d49e3eb3b2d195f91140"}[chunkId] + ""
+/******/ 		return __webpack_require__.p + "adminapp/js/chunks/" + ({}[chunkId]||chunkId) + ".js?id=" + {"0":"0c8674f46a6768a32c51","1":"3cd49b4dc0196faa31fa","2":"68c3a3942f37281ffccc","3":"38112b31e60ce912836c","4":"834eeebe0774129fc9b3","5":"521b0b09ab0691ca0cda","6":"a2d7accfe72bedf72b7e","7":"b3dabde518dbd46ba3f3","8":"fa54b8b78f6ccaf820f3","9":"80ae1883f65cd1300c51","10":"611dfc3d341249994712","11":"0eb5c3439b4093229af2","12":"1b952c90ebe6d1015ea5","13":"ad7dc586028d10c857bb","14":"d822ba29b8f6cb6d448b","15":"43e37330b3bbe8bd209d","16":"7ab1a340ad9edad668c0","17":"f4da84d603a4441f4dce","18":"7fbeb13cf21dc1bf162a","21":"f089237aa8f55f796bf7","22":"1cf5005c869202eef40a","25":"3476c65f2cef7c6ca0fd","26":"055d27b14ca7feb18774","27":"1c7269a95b24e85bd974","28":"3e414542a9119431d062","29":"76c7323da7502a3d7184","30":"a624d1172ce855baf758","31":"1884bfe63110b95d1746","32":"a9dd0eab3a40eff3b6c9","33":"9dd84e6afc0eefea59e2","34":"3118e2aa4d36e186bb17","35":"33527a70c193980a3296","36":"21ba4c592480537eae03","37":"3fca67ebd017f4804d20","38":"5edbe5396d1f2c954997","39":"8b489083bc80f6baf65b","40":"3db694d181d457f52ee7","41":"857f43651486d73b8282","42":"db463308f5f4a5a47d8b","43":"15f9de959eed5c334221","44":"012beb89591290eb64a9","45":"666689b50a9d65990eb2","46":"a29e735d64f6af35513a","47":"72767be0c7829a1e8ba6","48":"4853c38fc96ab3372676","49":"a6fd3d960356ac51e5b9","50":"d160416dda13d305c8f7","51":"69449e89b96b99b34cdf","52":"ef97e01aefe59f2f214c","53":"ee452948585a18e92ba2","54":"d49e3eb3b2d195f91140","55":"710f91459f10f6db08f4","56":"5d81cc88a700421ea8e5","57":"148bbed4bb16031aad8e","58":"2d5058c5b808cda67337","59":"5fd4ca3ddb4816d37933","60":"b2483c752ba3d6a58d11"}[chunkId] + ""
 /******/ 	}
 /******/
 /******/ 	// The require function
@@ -55284,46 +55284,46 @@ var routes = [{
       title: 'global.dashboard'
     }
   }, {
-    path: 'data-preparations',
-    name: 'data_preparations.index',
+    path: 'preparation-datas',
+    name: 'preparation_datas.index',
     component: function component() {
-      return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(27)]).then(__webpack_require__.bind(null, /*! @cruds/DataPreparations/Index.vue */ "./resources/adminapp/js/cruds/DataPreparations/Index.vue"));
+      return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(57)]).then(__webpack_require__.bind(null, /*! @cruds/PreparationDatas/Index.vue */ "./resources/adminapp/js/cruds/PreparationDatas/Index.vue"));
     },
     meta: {
-      title: 'cruds.dataPreparation.title'
+      title: 'cruds.preparationData.title'
     }
   }, {
-    path: 'data-preparations/create',
-    name: 'data_preparations.create',
+    path: 'preparation-datas/create',
+    name: 'preparation_datas.create',
     component: function component() {
-      return Promise.all(/*! import() */[__webpack_require__.e(25), __webpack_require__.e(1), __webpack_require__.e(54)]).then(__webpack_require__.bind(null, /*! @cruds/DataPreparations/Create.vue */ "./resources/adminapp/js/cruds/DataPreparations/Create.vue"));
+      return Promise.all(/*! import() */[__webpack_require__.e(25), __webpack_require__.e(1), __webpack_require__.e(59)]).then(__webpack_require__.bind(null, /*! @cruds/PreparationDatas/Create.vue */ "./resources/adminapp/js/cruds/PreparationDatas/Create.vue"));
     },
     meta: {
-      title: 'cruds.dataPreparation.title'
+      title: 'cruds.preparationData.title'
     }
   }, {
-    path: 'data-preparations/:id',
-    name: 'data_preparations.show',
+    path: 'preparation-datas/:id',
+    name: 'preparation_datas.show',
     component: function component() {
-      return __webpack_require__.e(/*! import() */ 28).then(__webpack_require__.bind(null, /*! @cruds/DataPreparations/Show.vue */ "./resources/adminapp/js/cruds/DataPreparations/Show.vue"));
+      return __webpack_require__.e(/*! import() */ 58).then(__webpack_require__.bind(null, /*! @cruds/PreparationDatas/Show.vue */ "./resources/adminapp/js/cruds/PreparationDatas/Show.vue"));
     },
     meta: {
-      title: 'cruds.dataPreparation.title'
+      title: 'cruds.preparationData.title'
     }
   }, {
-    path: 'data-preparations/:id/edit',
-    name: 'data_preparations.edit',
+    path: 'preparation-datas/:id/edit',
+    name: 'preparation_datas.edit',
     component: function component() {
-      return __webpack_require__.e(/*! import() */ 26).then(__webpack_require__.bind(null, /*! @cruds/DataPreparations/Edit.vue */ "./resources/adminapp/js/cruds/DataPreparations/Edit.vue"));
+      return Promise.all(/*! import() */[__webpack_require__.e(25), __webpack_require__.e(1), __webpack_require__.e(60)]).then(__webpack_require__.bind(null, /*! @cruds/PreparationDatas/Edit.vue */ "./resources/adminapp/js/cruds/PreparationDatas/Edit.vue"));
     },
     meta: {
-      title: 'cruds.dataPreparation.title'
+      title: 'cruds.preparationData.title'
     }
   }, {
     path: 'data-mahasiswas',
     name: 'data_mahasiswas.index',
     component: function component() {
-      return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(2), __webpack_require__.e(23)]).then(__webpack_require__.bind(null, /*! @cruds/DataMahasiswas/Index.vue */ "./resources/adminapp/js/cruds/DataMahasiswas/Index.vue"));
+      return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(55)]).then(__webpack_require__.bind(null, /*! @cruds/DataMahasiswas/Index.vue */ "./resources/adminapp/js/cruds/DataMahasiswas/Index.vue"));
     },
     meta: {
       title: 'cruds.dataMahasiswa.title'
@@ -55341,7 +55341,7 @@ var routes = [{
     path: 'data-mahasiswas/:id',
     name: 'data_mahasiswas.show',
     component: function component() {
-      return Promise.all(/*! import() */[__webpack_require__.e(2), __webpack_require__.e(24)]).then(__webpack_require__.bind(null, /*! @cruds/DataMahasiswas/Show.vue */ "./resources/adminapp/js/cruds/DataMahasiswas/Show.vue"));
+      return __webpack_require__.e(/*! import() */ 56).then(__webpack_require__.bind(null, /*! @cruds/DataMahasiswas/Show.vue */ "./resources/adminapp/js/cruds/DataMahasiswas/Show.vue"));
     },
     meta: {
       title: 'cruds.dataMahasiswa.title'
@@ -55359,7 +55359,7 @@ var routes = [{
     path: 'data-mahasiswa-on-goings',
     name: 'data_mahasiswa_on_goings.index',
     component: function component() {
-      return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(2), __webpack_require__.e(19)]).then(__webpack_require__.bind(null, /*! @cruds/DataMahasiswaOnGoings/Index.vue */ "./resources/adminapp/js/cruds/DataMahasiswaOnGoings/Index.vue"));
+      return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(2)]).then(__webpack_require__.bind(null, /*! @cruds/DataMahasiswaOnGoings/Index.vue */ "./resources/adminapp/js/cruds/DataMahasiswaOnGoings/Index.vue"));
     },
     meta: {
       title: 'cruds.dataMahasiswaOnGoing.title'
@@ -55377,7 +55377,7 @@ var routes = [{
     path: 'data-mahasiswa-on-goings/:id',
     name: 'data_mahasiswa_on_goings.show',
     component: function component() {
-      return Promise.all(/*! import() */[__webpack_require__.e(2), __webpack_require__.e(20)]).then(__webpack_require__.bind(null, /*! @cruds/DataMahasiswaOnGoings/Show.vue */ "./resources/adminapp/js/cruds/DataMahasiswaOnGoings/Show.vue"));
+      return __webpack_require__.e(/*! import() */ 41).then(__webpack_require__.bind(null, /*! @cruds/DataMahasiswaOnGoings/Show.vue */ "./resources/adminapp/js/cruds/DataMahasiswaOnGoings/Show.vue"));
     },
     meta: {
       title: 'cruds.dataMahasiswaOnGoing.title'
@@ -55396,9 +55396,45 @@ var routes = [{
     name: 'data_master',
     component: View,
     redirect: {
-      name: 'mahasiswas.index'
+      name: 'data_preparations.index'
     },
     children: [{
+      path: 'data-preparations',
+      name: 'data_preparations.index',
+      component: function component() {
+        return Promise.all(/*! import() */[__webpack_require__.e(0), __webpack_require__.e(27)]).then(__webpack_require__.bind(null, /*! @cruds/DataPreparations/Index.vue */ "./resources/adminapp/js/cruds/DataPreparations/Index.vue"));
+      },
+      meta: {
+        title: 'cruds.dataPreparation.title'
+      }
+    }, {
+      path: 'data-preparations/create',
+      name: 'data_preparations.create',
+      component: function component() {
+        return Promise.all(/*! import() */[__webpack_require__.e(25), __webpack_require__.e(1), __webpack_require__.e(54)]).then(__webpack_require__.bind(null, /*! @cruds/DataPreparations/Create.vue */ "./resources/adminapp/js/cruds/DataPreparations/Create.vue"));
+      },
+      meta: {
+        title: 'cruds.dataPreparation.title'
+      }
+    }, {
+      path: 'data-preparations/:id',
+      name: 'data_preparations.show',
+      component: function component() {
+        return __webpack_require__.e(/*! import() */ 28).then(__webpack_require__.bind(null, /*! @cruds/DataPreparations/Show.vue */ "./resources/adminapp/js/cruds/DataPreparations/Show.vue"));
+      },
+      meta: {
+        title: 'cruds.dataPreparation.title'
+      }
+    }, {
+      path: 'data-preparations/:id/edit',
+      name: 'data_preparations.edit',
+      component: function component() {
+        return __webpack_require__.e(/*! import() */ 26).then(__webpack_require__.bind(null, /*! @cruds/DataPreparations/Edit.vue */ "./resources/adminapp/js/cruds/DataPreparations/Edit.vue"));
+      },
+      meta: {
+        title: 'cruds.dataPreparation.title'
+      }
+    }, {
       path: 'mahasiswas',
       name: 'mahasiswas.index',
       component: function component() {
@@ -58659,6 +58695,305 @@ var mutations = {
 
 /***/ }),
 
+/***/ "./resources/adminapp/js/store/cruds/PreparationDatas/index.js":
+/*!*********************************************************************!*\
+  !*** ./resources/adminapp/js/store/cruds/PreparationDatas/index.js ***!
+  \*********************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+var set = function set(key) {
+  return function (state, val) {
+    state[key] = val;
+  };
+};
+
+function initialState() {
+  return {
+    data: [],
+    total: 0,
+    query: {},
+    loading: false
+  };
+}
+
+var route = 'preparation-datas';
+var getters = {
+  data: function data(state) {
+    return state.data;
+  },
+  total: function total(state) {
+    return state.total;
+  },
+  loading: function loading(state) {
+    return state.loading;
+  }
+};
+var actions = {
+  fetchIndexData: function fetchIndexData(_ref) {
+    var commit = _ref.commit,
+        state = _ref.state;
+    commit('setLoading', true);
+    axios.get(route, {
+      params: state.query
+    }).then(function (response) {
+      commit('setData', response.data.data);
+      commit('setTotal', response.data.total);
+    })["catch"](function (error) {
+      message = error.response.data.message || error.message; // TODO error handling
+    })["finally"](function () {
+      commit('setLoading', false);
+    });
+  },
+  destroyData: function destroyData(_ref2, id) {
+    var commit = _ref2.commit,
+        state = _ref2.state,
+        dispatch = _ref2.dispatch;
+    axios["delete"]("".concat(route, "/").concat(id)).then(function (response) {
+      dispatch('fetchIndexData');
+    })["catch"](function (error) {
+      message = error.response.data.message || error.message; // TODO error handling
+    });
+  },
+  setQuery: function setQuery(_ref3, value) {
+    var commit = _ref3.commit;
+    commit('setQuery', _.cloneDeep(value));
+  },
+  resetState: function resetState(_ref4) {
+    var commit = _ref4.commit;
+    commit('resetState');
+  }
+};
+var mutations = {
+  setData: set('data'),
+  setTotal: set('total'),
+  setQuery: function setQuery(state, query) {
+    query.page = (query.offset + query.limit) / query.limit;
+    state.query = query;
+  },
+  setLoading: set('loading'),
+  resetState: function resetState(state) {
+    Object.assign(state, initialState());
+  }
+};
+/* harmony default export */ __webpack_exports__["default"] = ({
+  namespaced: true,
+  state: initialState,
+  getters: getters,
+  actions: actions,
+  mutations: mutations
+});
+
+/***/ }),
+
+/***/ "./resources/adminapp/js/store/cruds/PreparationDatas/single.js":
+/*!**********************************************************************!*\
+  !*** ./resources/adminapp/js/store/cruds/PreparationDatas/single.js ***!
+  \**********************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+function initialState() {
+  return {
+    entry: {
+      id: null,
+      data_log: [],
+      data_nilai: [],
+      data_hasil: [],
+      created_at: '',
+      updated_at: '',
+      deleted_at: ''
+    },
+    loading: false
+  };
+}
+
+var route = 'preparation-datas';
+var getters = {
+  entry: function entry(state) {
+    return state.entry;
+  },
+  loading: function loading(state) {
+    return state.loading;
+  }
+};
+var actions = {
+  storeData: function storeData(_ref) {
+    var commit = _ref.commit,
+        state = _ref.state,
+        dispatch = _ref.dispatch;
+    commit('setLoading', true);
+    dispatch('Alert/resetState', null, {
+      root: true
+    });
+    return new Promise(function (resolve, reject) {
+      var params = objectToFormData(state.entry, {
+        indices: true,
+        booleansAsIntegers: true
+      });
+      axios.post(route, params).then(function (response) {
+        resolve(response);
+      })["catch"](function (error) {
+        var message = error.response.data.message || error.message;
+        var errors = error.response.data.errors;
+        dispatch('Alert/setAlert', {
+          message: message,
+          errors: errors,
+          color: 'danger'
+        }, {
+          root: true
+        });
+        reject(error);
+      })["finally"](function () {
+        commit('setLoading', false);
+      });
+    });
+  },
+  updateData: function updateData(_ref2) {
+    var commit = _ref2.commit,
+        state = _ref2.state,
+        dispatch = _ref2.dispatch;
+    commit('setLoading', true);
+    dispatch('Alert/resetState', null, {
+      root: true
+    });
+    return new Promise(function (resolve, reject) {
+      var params = objectToFormData(state.entry, {
+        indices: true,
+        booleansAsIntegers: true
+      });
+      params.set('_method', 'PUT');
+      axios.post("".concat(route, "/").concat(state.entry.id), params).then(function (response) {
+        resolve(response);
+      })["catch"](function (error) {
+        var message = error.response.data.message || error.message;
+        var errors = error.response.data.errors;
+        dispatch('Alert/setAlert', {
+          message: message,
+          errors: errors,
+          color: 'danger'
+        }, {
+          root: true
+        });
+        reject(error);
+      })["finally"](function () {
+        commit('setLoading', false);
+      });
+    });
+  },
+  insertDataLogFile: function insertDataLogFile(_ref3, file) {
+    var commit = _ref3.commit;
+    commit('insertDataLogFile', file);
+  },
+  removeDataLogFile: function removeDataLogFile(_ref4, file) {
+    var commit = _ref4.commit;
+    commit('removeDataLogFile', file);
+  },
+  insertDataNilaiFile: function insertDataNilaiFile(_ref5, file) {
+    var commit = _ref5.commit;
+    commit('insertDataNilaiFile', file);
+  },
+  removeDataNilaiFile: function removeDataNilaiFile(_ref6, file) {
+    var commit = _ref6.commit;
+    commit('removeDataNilaiFile', file);
+  },
+  insertDataHasilFile: function insertDataHasilFile(_ref7, file) {
+    var commit = _ref7.commit;
+    commit('insertDataHasilFile', file);
+  },
+  removeDataHasilFile: function removeDataHasilFile(_ref8, file) {
+    var commit = _ref8.commit;
+    commit('removeDataHasilFile', file);
+  },
+  setCreatedAt: function setCreatedAt(_ref9, value) {
+    var commit = _ref9.commit;
+    commit('setCreatedAt', value);
+  },
+  setUpdatedAt: function setUpdatedAt(_ref10, value) {
+    var commit = _ref10.commit;
+    commit('setUpdatedAt', value);
+  },
+  setDeletedAt: function setDeletedAt(_ref11, value) {
+    var commit = _ref11.commit;
+    commit('setDeletedAt', value);
+  },
+  fetchEditData: function fetchEditData(_ref12, id) {
+    var commit = _ref12.commit,
+        dispatch = _ref12.dispatch;
+    axios.get("".concat(route, "/").concat(id, "/edit")).then(function (response) {
+      commit('setEntry', response.data.data);
+    });
+  },
+  fetchShowData: function fetchShowData(_ref13, id) {
+    var commit = _ref13.commit,
+        dispatch = _ref13.dispatch;
+    axios.get("".concat(route, "/").concat(id)).then(function (response) {
+      commit('setEntry', response.data.data);
+    });
+  },
+  resetState: function resetState(_ref14) {
+    var commit = _ref14.commit;
+    commit('resetState');
+  }
+};
+var mutations = {
+  setEntry: function setEntry(state, entry) {
+    state.entry = entry;
+  },
+  insertDataLogFile: function insertDataLogFile(state, file) {
+    state.entry.data_log.push(file);
+  },
+  removeDataLogFile: function removeDataLogFile(state, file) {
+    state.entry.data_log = state.entry.data_log.filter(function (item) {
+      return item.id !== file.id;
+    });
+  },
+  insertDataNilaiFile: function insertDataNilaiFile(state, file) {
+    state.entry.data_nilai.push(file);
+  },
+  removeDataNilaiFile: function removeDataNilaiFile(state, file) {
+    state.entry.data_nilai = state.entry.data_nilai.filter(function (item) {
+      return item.id !== file.id;
+    });
+  },
+  insertDataHasilFile: function insertDataHasilFile(state, file) {
+    state.entry.data_hasil.push(file);
+  },
+  removeDataHasilFile: function removeDataHasilFile(state, file) {
+    state.entry.data_hasil = state.entry.data_hasil.filter(function (item) {
+      return item.id !== file.id;
+    });
+  },
+  setCreatedAt: function setCreatedAt(state, value) {
+    state.entry.created_at = value;
+  },
+  setUpdatedAt: function setUpdatedAt(state, value) {
+    state.entry.updated_at = value;
+  },
+  setDeletedAt: function setDeletedAt(state, value) {
+    state.entry.deleted_at = value;
+  },
+  setLoading: function setLoading(state, loading) {
+    state.loading = loading;
+  },
+  resetState: function resetState(state) {
+    state = Object.assign(state, initialState());
+  }
+};
+/* harmony default export */ __webpack_exports__["default"] = ({
+  namespaced: true,
+  state: initialState,
+  getters: getters,
+  actions: actions,
+  mutations: mutations
+});
+
+/***/ }),
+
 /***/ "./resources/adminapp/js/store/cruds/ReportMahasiswaHistories/index.js":
 /*!*****************************************************************************!*\
   !*** ./resources/adminapp/js/store/cruds/ReportMahasiswaHistories/index.js ***!
@@ -59650,6 +59985,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _cruds_DataPreparations_single__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./cruds/DataPreparations/single */ "./resources/adminapp/js/store/cruds/DataPreparations/single.js");
 /* harmony import */ var _cruds_Kampus__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./cruds/Kampus */ "./resources/adminapp/js/store/cruds/Kampus/index.js");
 /* harmony import */ var _cruds_Kampus_single__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ./cruds/Kampus/single */ "./resources/adminapp/js/store/cruds/Kampus/single.js");
+/* harmony import */ var _cruds_PreparationDatas__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ./cruds/PreparationDatas */ "./resources/adminapp/js/store/cruds/PreparationDatas/index.js");
+/* harmony import */ var _cruds_PreparationDatas_single__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ./cruds/PreparationDatas/single */ "./resources/adminapp/js/store/cruds/PreparationDatas/single.js");
+
+
 
 
 
@@ -59709,7 +60048,9 @@ var debug = "development" !== 'production';
     DataPreparationsIndex: _cruds_DataPreparations__WEBPACK_IMPORTED_MODULE_25__["default"],
     DataPreparationsSingle: _cruds_DataPreparations_single__WEBPACK_IMPORTED_MODULE_26__["default"],
     KampusIndex: _cruds_Kampus__WEBPACK_IMPORTED_MODULE_27__["default"],
-    KampusSingle: _cruds_Kampus_single__WEBPACK_IMPORTED_MODULE_28__["default"]
+    KampusSingle: _cruds_Kampus_single__WEBPACK_IMPORTED_MODULE_28__["default"],
+    PreparationDatasIndex: _cruds_PreparationDatas__WEBPACK_IMPORTED_MODULE_29__["default"],
+    PreparationDatasSingle: _cruds_PreparationDatas_single__WEBPACK_IMPORTED_MODULE_30__["default"]
   },
   strict: debug
 }));

@@ -64,12 +64,12 @@ __webpack_require__.r(__webpack_exports__);
           name: 'dashboard'
         }
       }, {
-        title: 'cruds.dataPreparation.title',
+        title: 'cruds.preparationData.title',
         icon: 'table_view',
         path: {
-          name: 'data_preparations.index'
+          name: 'preparation_datas.index'
         },
-        gate: 'data_preparation_access'
+        gate: 'preparation_data_access'
       }, {
         title: 'cruds.dataMahasiswa.title',
         icon: 'table_view',
@@ -92,6 +92,13 @@ __webpack_require__.r(__webpack_exports__);
         },
         gate: 'data_master_access',
         children: [{
+          title: 'cruds.dataPreparation.title',
+          icon: 'table_view',
+          path: {
+            name: 'data_preparations.index'
+          },
+          gate: 'data_preparation_access'
+        }, {
           title: 'cruds.mahasiswa.title',
           icon: 'table_view',
           path: {
