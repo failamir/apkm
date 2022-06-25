@@ -161,6 +161,18 @@ export default {
           sortable: true
         },
         {
+          title: 'cruds.dataPreparation.fields.temp_log',
+          field: 'temp_log',
+          thComp: TranslatedHeader,
+          sortable: true
+        },
+        {
+          title: 'cruds.dataPreparation.fields.temp_nilai',
+          field: 'temp_nilai',
+          thComp: TranslatedHeader,
+          sortable: true
+        },
+        {
           title: 'global.actions',
           thComp: TranslatedHeader,
           tdComp: DatatableActions,

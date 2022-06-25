@@ -34,12 +34,8 @@ class UpdatePreparationDataRequest extends FormRequest
                 'exists:media,id',
             ],
             'data_hasil' => [
-                'array',
+                'string',
                 'nullable',
-            ],
-            'data_hasil.*.id' => [
-                'integer',
-                'exists:media,id',
             ],
         ];
     }

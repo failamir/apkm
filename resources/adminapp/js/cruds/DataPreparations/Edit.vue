@@ -257,6 +257,44 @@
                       @blur="clearFocus"
                     />
                   </div>
+                  <div
+                    class="form-group bmd-form-group"
+                    :class="{
+                      'has-items': entry.temp_log,
+                      'is-focused': activeField == 'temp_log'
+                    }"
+                  >
+                    <label class="bmd-label-floating">{{
+                      $t('cruds.dataPreparation.fields.temp_log')
+                    }}</label>
+                    <input
+                      class="form-control"
+                      type="text"
+                      :value="entry.temp_log"
+                      @input="updateTempLog"
+                      @focus="focusField('temp_log')"
+                      @blur="clearFocus"
+                    />
+                  </div>
+                  <div
+                    class="form-group bmd-form-group"
+                    :class="{
+                      'has-items': entry.temp_nilai,
+                      'is-focused': activeField == 'temp_nilai'
+                    }"
+                  >
+                    <label class="bmd-label-floating">{{
+                      $t('cruds.dataPreparation.fields.temp_nilai')
+                    }}</label>
+                    <input
+                      class="form-control"
+                      type="text"
+                      :value="entry.temp_nilai"
+                      @input="updateTempNilai"
+                      @focus="focusField('temp_nilai')"
+                      @blur="clearFocus"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
@@ -318,7 +356,9 @@ export default {
       'setNilaiAkhir',
       'setStatus1',
       'setStatus2',
-      'setStatus3'
+      'setStatus3',
+      'setTempLog',
+      'setTempNilai'
     ]),
     updateNama(e) {
       this.setNama(e.target.value)
@@ -355,6 +395,12 @@ export default {
     },
     updateStatus3(e) {
       this.setStatus3(e.target.value)
+    },
+    updateTempLog(e) {
+      this.setTempLog(e.target.value)
+    },
+    updateTempNilai(e) {
+      this.setTempNilai(e.target.value)
     },
     getRoute(name) {
       return `${axios.defaults.baseURL}${name}/media`

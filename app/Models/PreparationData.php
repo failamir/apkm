@@ -21,16 +21,17 @@ class PreparationData extends Model implements HasMedia
 
     protected $orderable = [
         'id',
+        'data_hasil',
     ];
 
     protected $filterable = [
         'id',
+        'data_hasil',
     ];
 
     protected $appends = [
         'data_log',
         'data_nilai',
-        'data_hasil',
     ];
 
     protected $dates = [
@@ -40,6 +41,7 @@ class PreparationData extends Model implements HasMedia
     ];
 
     protected $fillable = [
+        'data_hasil',
         'created_at',
         'updated_at',
         'deleted_at',
@@ -58,16 +60,6 @@ class PreparationData extends Model implements HasMedia
     public function getDataNilaiAttribute()
     {
         return $this->getMedia('preparation_data_data_nilai')->map(function ($item) {
-            $media = $item->toArray();
-            $media['url'] = $item->getUrl();
-
-            return $media;
-        });
-    }
-
-    public function getDataHasilAttribute()
-    {
-        return $this->getMedia('preparation_data_data_hasil')->map(function ($item) {
             $media = $item->toArray();
             $media['url'] = $item->getUrl();
 
