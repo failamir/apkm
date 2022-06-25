@@ -75,6 +75,8 @@ class DataPreparation extends Model implements HasMedia
         'status_1',
         'status_2',
         'status_3',
+        'temp_log',
+        'temp_nilai',
         'created_at',
         'updated_at',
         'deleted_at',

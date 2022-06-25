@@ -93,32 +93,8 @@ const routes = [
         path: 'data-master',
         name: 'data_master',
         component: View,
-        redirect: { name: 'data_preparations.index' },
+        redirect: { name: 'mahasiswas.index' },
         children: [
-          {
-            path: 'data-preparations',
-            name: 'data_preparations.index',
-            component: () => import('@cruds/DataPreparations/Index.vue'),
-            meta: { title: 'cruds.dataPreparation.title' }
-          },
-          {
-            path: 'data-preparations/create',
-            name: 'data_preparations.create',
-            component: () => import('@cruds/DataPreparations/Create.vue'),
-            meta: { title: 'cruds.dataPreparation.title' }
-          },
-          {
-            path: 'data-preparations/:id',
-            name: 'data_preparations.show',
-            component: () => import('@cruds/DataPreparations/Show.vue'),
-            meta: { title: 'cruds.dataPreparation.title' }
-          },
-          {
-            path: 'data-preparations/:id/edit',
-            name: 'data_preparations.edit',
-            component: () => import('@cruds/DataPreparations/Edit.vue'),
-            meta: { title: 'cruds.dataPreparation.title' }
-          },
           {
             path: 'mahasiswas',
             name: 'mahasiswas.index',
@@ -238,6 +214,30 @@ const routes = [
             name: 'kampus.edit',
             component: () => import('@cruds/Kampus/Edit.vue'),
             meta: { title: 'cruds.kampu.title' }
+          },
+          {
+            path: 'data-preparations',
+            name: 'data_preparations.index',
+            component: () => import('@cruds/DataPreparations/Index.vue'),
+            meta: { title: 'cruds.dataPreparation.title' }
+          },
+          {
+            path: 'data-preparations/create',
+            name: 'data_preparations.create',
+            component: () => import('@cruds/DataPreparations/Create.vue'),
+            meta: { title: 'cruds.dataPreparation.title' }
+          },
+          {
+            path: 'data-preparations/:id',
+            name: 'data_preparations.show',
+            component: () => import('@cruds/DataPreparations/Show.vue'),
+            meta: { title: 'cruds.dataPreparation.title' }
+          },
+          {
+            path: 'data-preparations/:id/edit',
+            name: 'data_preparations.edit',
+            component: () => import('@cruds/DataPreparations/Edit.vue'),
+            meta: { title: 'cruds.dataPreparation.title' }
           },
           {
             path: 'tentang-aplikasis',
