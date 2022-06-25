@@ -43,7 +43,7 @@
 /******/
 /******/ 	// script path function
 /******/ 	function jsonpScriptSrc(chunkId) {
-/******/ 		return __webpack_require__.p + "adminapp/js/chunks/" + ({}[chunkId]||chunkId) + ".js?id=" + {"0":"0c8674f46a6768a32c51","1":"3cd49b4dc0196faa31fa","2":"4b0ec9a2865f937a22d5","4":"834eeebe0774129fc9b3","5":"521b0b09ab0691ca0cda","6":"5c23f081b64c34eec1a6","7":"b3dabde518dbd46ba3f3","8":"fa54b8b78f6ccaf820f3","9":"80ae1883f65cd1300c51","10":"611dfc3d341249994712","11":"0eb5c3439b4093229af2","12":"1b952c90ebe6d1015ea5","13":"ad7dc586028d10c857bb","14":"d822ba29b8f6cb6d448b","15":"43e37330b3bbe8bd209d","16":"7ab1a340ad9edad668c0","17":"f4da84d603a4441f4dce","18":"7fbeb13cf21dc1bf162a","19":"a11ab01e258ce9ab490b","20":"1767309e06cd5419cebd","21":"f089237aa8f55f796bf7","22":"1cf5005c869202eef40a","23":"b8352080fa3b3915804f","24":"2eea70ad4f34173f7253","25":"3476c65f2cef7c6ca0fd","26":"055d27b14ca7feb18774","27":"1c7269a95b24e85bd974","28":"3e414542a9119431d062","29":"76c7323da7502a3d7184","30":"a624d1172ce855baf758","31":"1884bfe63110b95d1746","32":"a9dd0eab3a40eff3b6c9","33":"9dd84e6afc0eefea59e2","34":"3118e2aa4d36e186bb17","35":"33527a70c193980a3296","36":"21ba4c592480537eae03","37":"3fca67ebd017f4804d20","38":"5edbe5396d1f2c954997","39":"8b489083bc80f6baf65b","40":"3db694d181d457f52ee7","41":"382632b25fd3c13476e0","42":"b0d1ff92f31951272777","43":"15f9de959eed5c334221","44":"012beb89591290eb64a9","45":"666689b50a9d65990eb2","46":"a29e735d64f6af35513a","47":"72767be0c7829a1e8ba6","48":"4853c38fc96ab3372676","49":"a6fd3d960356ac51e5b9","50":"d160416dda13d305c8f7","51":"69449e89b96b99b34cdf","52":"ef97e01aefe59f2f214c","53":"ee452948585a18e92ba2","54":"a2345f01a89ac39bd702"}[chunkId] + ""
+/******/ 		return __webpack_require__.p + "adminapp/js/chunks/" + ({}[chunkId]||chunkId) + ".js?id=" + {"0":"0c8674f46a6768a32c51","1":"3cd49b4dc0196faa31fa","2":"4b0ec9a2865f937a22d5","3":"38112b31e60ce912836c","4":"834eeebe0774129fc9b3","5":"521b0b09ab0691ca0cda","6":"5c23f081b64c34eec1a6","7":"b3dabde518dbd46ba3f3","8":"fa54b8b78f6ccaf820f3","9":"80ae1883f65cd1300c51","10":"611dfc3d341249994712","11":"0eb5c3439b4093229af2","12":"1b952c90ebe6d1015ea5","13":"ad7dc586028d10c857bb","14":"d822ba29b8f6cb6d448b","15":"43e37330b3bbe8bd209d","16":"7ab1a340ad9edad668c0","17":"f4da84d603a4441f4dce","18":"7fbeb13cf21dc1bf162a","19":"a11ab01e258ce9ab490b","20":"1767309e06cd5419cebd","21":"f089237aa8f55f796bf7","22":"1cf5005c869202eef40a","23":"b8352080fa3b3915804f","24":"2eea70ad4f34173f7253","25":"3476c65f2cef7c6ca0fd","26":"055d27b14ca7feb18774","27":"1c7269a95b24e85bd974","28":"3e414542a9119431d062","29":"76c7323da7502a3d7184","30":"a624d1172ce855baf758","31":"1884bfe63110b95d1746","32":"a9dd0eab3a40eff3b6c9","33":"9dd84e6afc0eefea59e2","34":"3118e2aa4d36e186bb17","35":"33527a70c193980a3296","36":"21ba4c592480537eae03","37":"3fca67ebd017f4804d20","38":"5edbe5396d1f2c954997","39":"8b489083bc80f6baf65b","40":"3db694d181d457f52ee7","42":"db463308f5f4a5a47d8b","43":"15f9de959eed5c334221","44":"012beb89591290eb64a9","45":"666689b50a9d65990eb2","46":"a29e735d64f6af35513a","47":"72767be0c7829a1e8ba6","48":"4853c38fc96ab3372676","49":"a6fd3d960356ac51e5b9","50":"d160416dda13d305c8f7","51":"69449e89b96b99b34cdf","52":"ef97e01aefe59f2f214c","53":"ee452948585a18e92ba2","54":"d49e3eb3b2d195f91140"}[chunkId] + ""
 /******/ 	}
 /******/
 /******/ 	// The require function
@@ -55447,7 +55447,7 @@ var routes = [{
       path: 'mata-kuliahs/create',
       name: 'mata_kuliahs.create',
       component: function component() {
-        return __webpack_require__.e(/*! import() */ 41).then(__webpack_require__.bind(null, /*! @cruds/MataKuliahs/Create.vue */ "./resources/adminapp/js/cruds/MataKuliahs/Create.vue"));
+        return Promise.all(/*! import() */[__webpack_require__.e(25), __webpack_require__.e(1), __webpack_require__.e(3)]).then(__webpack_require__.bind(null, /*! @cruds/MataKuliahs/Create.vue */ "./resources/adminapp/js/cruds/MataKuliahs/Create.vue"));
       },
       meta: {
         title: 'cruds.mataKuliah.title'
@@ -58196,6 +58196,7 @@ function initialState() {
   return {
     entry: {
       id: null,
+      data_mtk: [],
       id_mtk: '',
       nama_mtk: '',
       jurusan_id: null,
@@ -58287,63 +58288,79 @@ var actions = {
       });
     });
   },
-  setIdMtk: function setIdMtk(_ref3, value) {
+  insertDataMtkFile: function insertDataMtkFile(_ref3, file) {
     var commit = _ref3.commit;
+    commit('insertDataMtkFile', file);
+  },
+  removeDataMtkFile: function removeDataMtkFile(_ref4, file) {
+    var commit = _ref4.commit;
+    commit('removeDataMtkFile', file);
+  },
+  setIdMtk: function setIdMtk(_ref5, value) {
+    var commit = _ref5.commit;
     commit('setIdMtk', value);
   },
-  setNamaMtk: function setNamaMtk(_ref4, value) {
-    var commit = _ref4.commit;
+  setNamaMtk: function setNamaMtk(_ref6, value) {
+    var commit = _ref6.commit;
     commit('setNamaMtk', value);
   },
-  setJurusan: function setJurusan(_ref5, value) {
-    var commit = _ref5.commit;
+  setJurusan: function setJurusan(_ref7, value) {
+    var commit = _ref7.commit;
     commit('setJurusan', value);
   },
-  setJumlahSks: function setJumlahSks(_ref6, value) {
-    var commit = _ref6.commit;
+  setJumlahSks: function setJumlahSks(_ref8, value) {
+    var commit = _ref8.commit;
     commit('setJumlahSks', value);
   },
-  setCreatedAt: function setCreatedAt(_ref7, value) {
-    var commit = _ref7.commit;
+  setCreatedAt: function setCreatedAt(_ref9, value) {
+    var commit = _ref9.commit;
     commit('setCreatedAt', value);
   },
-  setUpdatedAt: function setUpdatedAt(_ref8, value) {
-    var commit = _ref8.commit;
+  setUpdatedAt: function setUpdatedAt(_ref10, value) {
+    var commit = _ref10.commit;
     commit('setUpdatedAt', value);
   },
-  setDeletedAt: function setDeletedAt(_ref9, value) {
-    var commit = _ref9.commit;
+  setDeletedAt: function setDeletedAt(_ref11, value) {
+    var commit = _ref11.commit;
     commit('setDeletedAt', value);
   },
-  fetchCreateData: function fetchCreateData(_ref10) {
-    var commit = _ref10.commit;
+  fetchCreateData: function fetchCreateData(_ref12) {
+    var commit = _ref12.commit;
     axios.get("".concat(route, "/create")).then(function (response) {
       commit('setLists', response.data.meta);
     });
   },
-  fetchEditData: function fetchEditData(_ref11, id) {
-    var commit = _ref11.commit,
-        dispatch = _ref11.dispatch;
+  fetchEditData: function fetchEditData(_ref13, id) {
+    var commit = _ref13.commit,
+        dispatch = _ref13.dispatch;
     axios.get("".concat(route, "/").concat(id, "/edit")).then(function (response) {
       commit('setEntry', response.data.data);
       commit('setLists', response.data.meta);
     });
   },
-  fetchShowData: function fetchShowData(_ref12, id) {
-    var commit = _ref12.commit,
-        dispatch = _ref12.dispatch;
+  fetchShowData: function fetchShowData(_ref14, id) {
+    var commit = _ref14.commit,
+        dispatch = _ref14.dispatch;
     axios.get("".concat(route, "/").concat(id)).then(function (response) {
       commit('setEntry', response.data.data);
     });
   },
-  resetState: function resetState(_ref13) {
-    var commit = _ref13.commit;
+  resetState: function resetState(_ref15) {
+    var commit = _ref15.commit;
     commit('resetState');
   }
 };
 var mutations = {
   setEntry: function setEntry(state, entry) {
     state.entry = entry;
+  },
+  insertDataMtkFile: function insertDataMtkFile(state, file) {
+    state.entry.data_mtk.push(file);
+  },
+  removeDataMtkFile: function removeDataMtkFile(state, file) {
+    state.entry.data_mtk = state.entry.data_mtk.filter(function (item) {
+      return item.id !== file.id;
+    });
   },
   setIdMtk: function setIdMtk(state, value) {
     state.entry.id_mtk = value;
