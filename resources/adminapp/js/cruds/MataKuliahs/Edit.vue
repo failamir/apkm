@@ -170,6 +170,9 @@ export default {
     updateJumlahSks(e) {
       this.setJumlahSks(e.target.value)
     },
+    getRoute(name) {
+      return `${axios.defaults.baseURL}${name}/media`
+    },
     submitForm() {
       this.updateData()
         .then(() => {

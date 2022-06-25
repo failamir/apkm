@@ -17,6 +17,14 @@ class StoreMataKuliahRequest extends FormRequest
     public function rules()
     {
         return [
+            'data_mtk' => [
+                'array',
+                'nullable',
+            ],
+            'data_mtk.*.id' => [
+                'integer',
+                'exists:media,id',
+            ],
             'id_mtk' => [
                 'integer',
                 'min:-2147483648',

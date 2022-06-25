@@ -2,6 +2,7 @@ function initialState() {
   return {
     entry: {
       id: null,
+      data_mtk: [],
       id_mtk: '',
       nama_mtk: '',
       jurusan_id: null,
@@ -89,6 +90,12 @@ const actions = {
         })
     })
   },
+  insertDataMtkFile({ commit }, file) {
+    commit('insertDataMtkFile', file)
+  },
+  removeDataMtkFile({ commit }, file) {
+    commit('removeDataMtkFile', file)
+  },
   setIdMtk({ commit }, value) {
     commit('setIdMtk', value)
   },
@@ -134,6 +141,14 @@ const actions = {
 const mutations = {
   setEntry(state, entry) {
     state.entry = entry
+  },
+  insertDataMtkFile(state, file) {
+    state.entry.data_mtk.push(file)
+  },
+  removeDataMtkFile(state, file) {
+    state.entry.data_mtk = state.entry.data_mtk.filter(item => {
+      return item.id !== file.id
+    })
   },
   setIdMtk(state, value) {
     state.entry.id_mtk = value

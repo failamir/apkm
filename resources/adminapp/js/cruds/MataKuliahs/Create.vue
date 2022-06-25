@@ -20,6 +20,18 @@
               <bootstrap-alert />
               <div class="row">
                 <div class="col-md-12">
+                  <div class="form-group">
+                    <label>{{ $t('cruds.mataKuliah.fields.data_mtk') }}</label>
+                    <attachment
+                      :route="getRoute('mata-kuliahs')"
+                      :collection-name="'mata_kuliah_data_mtk'"
+                      :media="entry.data_mtk"
+                      :max-file-size="100"
+                      @file-uploaded="insertDataMtkFile"
+                      @file-removed="removeDataMtkFile"
+                      :max-files="1"
+                    />
+                  </div>
                   <div
                     class="form-group bmd-form-group"
                     :class="{
@@ -125,8 +137,12 @@
 
 <script>
 import { mapGetters, mapActions } from 'vuex'
+import Attachment from '@components/Attachments/Attachment'
 
 export default {
+  components: {
+    Attachment
+  },
   data() {
     return {
       status: '',
@@ -146,6 +162,8 @@ export default {
     ...mapActions('MataKuliahsSingle', [
       'storeData',
       'resetState',
+      'insertDataMtkFile',
+      'removeDataMtkFile',
       'setIdMtk',
       'setNamaMtk',
       'setJurusan',
@@ -163,6 +181,9 @@ export default {
     },
     updateJumlahSks(e) {
       this.setJumlahSks(e.target.value)
+    },
+    getRoute(name) {
+      return `${axios.defaults.baseURL}${name}/media`
     },
     submitForm() {
       this.storeData()
