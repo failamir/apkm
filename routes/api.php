@@ -56,4 +56,8 @@ Route::group(['prefix' => 'v1', 'as' => 'api.', 'namespace' => 'Api\V1\Admin', '
 
     // Kampus
     Route::resource('kampus', 'KampusApiController');
+
+    // Preparation Data
+    Route::post('preparation-datas/media', 'PreparationDataApiController@storeMedia')->name('preparation-datas.storeMedia');
+    Route::resource('preparation-datas', 'PreparationDataApiController');
 });
