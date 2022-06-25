@@ -9,8 +9,8 @@ return [
     'moment_datetime_format' => 'DD-MM-YYYY HH:mm:ss',
     'supported_languages'    => [
         [
-            'title'      => 'English',
-            'short_code' => 'en',
+            'title'      => 'Indonesian',
+            'short_code' => 'id',
         ],
     ],
 ];
