@@ -29,6 +29,8 @@ import DataPreparationsIndex from './cruds/DataPreparations'
 import DataPreparationsSingle from './cruds/DataPreparations/single'
 import KampusIndex from './cruds/Kampus'
 import KampusSingle from './cruds/Kampus/single'
+import PreparationDatasIndex from './cruds/PreparationDatas'
+import PreparationDatasSingle from './cruds/PreparationDatas/single'
 
 Vue.use(Vuex)
 
@@ -62,7 +64,9 @@ export default new Vuex.Store({
     DataPreparationsIndex,
     DataPreparationsSingle,
     KampusIndex,
-    KampusSingle
+    KampusSingle,
+    PreparationDatasIndex,
+    PreparationDatasSingle
   },
   strict: debug
 })

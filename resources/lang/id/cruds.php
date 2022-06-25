@@ -266,8 +266,8 @@ return [
         'title_singular' => 'Report Mahasiswa History',
     ],
     'dataPreparation' => [
-        'title'          => 'Data Preparation',
-        'title_singular' => 'Data Preparation',
+        'title'          => 'Data Preparation Show',
+        'title_singular' => 'Data Preparation Show',
         'fields'         => [
             'id'                 => 'ID',
             'id_helper'          => ' ',
@@ -327,6 +327,26 @@ return [
             'deleted_at_helper'  => ' ',
             'deskripsi'          => 'Deskripsi',
             'deskripsi_helper'   => ' ',
+        ],
+    ],
+    'preparationData' => [
+        'title'          => 'Data Preparation',
+        'title_singular' => 'Data Preparation',
+        'fields'         => [
+            'id'                => 'ID',
+            'id_helper'         => ' ',
+            'data_log'          => 'Data Log',
+            'data_log_helper'   => ' ',
+            'data_nilai'        => 'Data Nilai',
+            'data_nilai_helper' => ' ',
+            'data_hasil'        => 'Data Hasil',
+            'data_hasil_helper' => ' ',
+            'created_at'        => 'Created at',
+            'created_at_helper' => ' ',
+            'updated_at'        => 'Updated at',
+            'updated_at_helper' => ' ',
+            'deleted_at'        => 'Deleted at',
+            'deleted_at_helper' => ' ',
         ],
     ],
 ];

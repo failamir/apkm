@@ -302,6 +302,26 @@ class PermissionsTableSeeder extends Seeder
                 'id'    => 73,
                 'title' => 'kampu_access',
             ],
+            [
+                'id'    => 74,
+                'title' => 'preparation_data_create',
+            ],
+            [
+                'id'    => 75,
+                'title' => 'preparation_data_edit',
+            ],
+            [
+                'id'    => 76,
+                'title' => 'preparation_data_show',
+            ],
+            [
+                'id'    => 77,
+                'title' => 'preparation_data_delete',
+            ],
+            [
+                'id'    => 78,
+                'title' => 'preparation_data_access',
+            ],
         ];
 
         Permission::insert($permissions);
