@@ -18,28 +18,28 @@ const routes = [
         meta: { title: 'global.dashboard' }
       },
       {
-        path: 'data-preparations',
-        name: 'data_preparations.index',
-        component: () => import('@cruds/DataPreparations/Index.vue'),
-        meta: { title: 'cruds.dataPreparation.title' }
+        path: 'preparation-datas',
+        name: 'preparation_datas.index',
+        component: () => import('@cruds/PreparationDatas/Index.vue'),
+        meta: { title: 'cruds.preparationData.title' }
       },
       {
-        path: 'data-preparations/create',
-        name: 'data_preparations.create',
-        component: () => import('@cruds/DataPreparations/Create.vue'),
-        meta: { title: 'cruds.dataPreparation.title' }
+        path: 'preparation-datas/create',
+        name: 'preparation_datas.create',
+        component: () => import('@cruds/PreparationDatas/Create.vue'),
+        meta: { title: 'cruds.preparationData.title' }
       },
       {
-        path: 'data-preparations/:id',
-        name: 'data_preparations.show',
-        component: () => import('@cruds/DataPreparations/Show.vue'),
-        meta: { title: 'cruds.dataPreparation.title' }
+        path: 'preparation-datas/:id',
+        name: 'preparation_datas.show',
+        component: () => import('@cruds/PreparationDatas/Show.vue'),
+        meta: { title: 'cruds.preparationData.title' }
       },
       {
-        path: 'data-preparations/:id/edit',
-        name: 'data_preparations.edit',
-        component: () => import('@cruds/DataPreparations/Edit.vue'),
-        meta: { title: 'cruds.dataPreparation.title' }
+        path: 'preparation-datas/:id/edit',
+        name: 'preparation_datas.edit',
+        component: () => import('@cruds/PreparationDatas/Edit.vue'),
+        meta: { title: 'cruds.preparationData.title' }
       },
       {
         path: 'data-mahasiswas',
@@ -93,8 +93,32 @@ const routes = [
         path: 'data-master',
         name: 'data_master',
         component: View,
-        redirect: { name: 'mahasiswas.index' },
+        redirect: { name: 'data_preparations.index' },
         children: [
+          {
+            path: 'data-preparations',
+            name: 'data_preparations.index',
+            component: () => import('@cruds/DataPreparations/Index.vue'),
+            meta: { title: 'cruds.dataPreparation.title' }
+          },
+          {
+            path: 'data-preparations/create',
+            name: 'data_preparations.create',
+            component: () => import('@cruds/DataPreparations/Create.vue'),
+            meta: { title: 'cruds.dataPreparation.title' }
+          },
+          {
+            path: 'data-preparations/:id',
+            name: 'data_preparations.show',
+            component: () => import('@cruds/DataPreparations/Show.vue'),
+            meta: { title: 'cruds.dataPreparation.title' }
+          },
+          {
+            path: 'data-preparations/:id/edit',
+            name: 'data_preparations.edit',
+            component: () => import('@cruds/DataPreparations/Edit.vue'),
+            meta: { title: 'cruds.dataPreparation.title' }
+          },
           {
             path: 'mahasiswas',
             name: 'mahasiswas.index',
