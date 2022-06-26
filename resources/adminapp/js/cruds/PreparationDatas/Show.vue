@@ -58,7 +58,8 @@
                           {{ $t('cruds.preparationData.fields.data_hasil') }}
                         </td>
                         <td>
-                          {{ entry.data_hasil }}
+                          <a :href="entry.data_hasil"> Download </a>
+                          <!-- {{ entry.data_hasil }} -->
                         </td>
                       </tr>
                     </tbody>

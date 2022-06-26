@@ -8,6 +8,7 @@ use App\Http\Requests\UpdateMataKuliahRequest;
 use App\Http\Resources\Admin\MataKuliahResource;
 use App\Models\Jurusan;
 use App\Models\MataKuliah;
+use Shuchkin\SimpleXLSX;
 use Gate;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
@@ -24,12 +25,78 @@ class MataKuliahApiController extends Controller
 
     public function store(StoreMataKuliahRequest $request)
     {
+        if ($request->input('data_mtk') != null) {
+        $request->input('id_mtk',11111111);
+            $request->input('nama_mtk','qwerty');}
         $mataKuliah = MataKuliah::create($request->validated());
 
         if ($media = $request->input('data_mtk', [])) {
             Media::whereIn('id', data_get($media, '*.id'))
                 ->where('model_id', 0)
                 ->update(['model_id' => $mataKuliah->id]);
+        }
+
+        // var_dump( $log );
+        if ($request->input('data_mtk') != null) {
+            
+            $data_log = public_path() . '/storage/' . $request->input('data_mtk')[0]['id'] . '/' . $request->input('data_mtk')[0]['file_name'];
+            if ($xlsx = SimpleXLSX::parse($data_log)) {
+                $r = $xlsx->rows();
+
+                // return var_dump( $r );
+
+            } else {
+                echo SimpleXLSX::parseError();
+            }
+            if (isset($r)) {
+                foreach ($r as $d) {
+                    if ($d[0] != 'ID MTK') {
+                        $cek = MataKuliah::where('id_mtk', $d[0])->first();
+                        // var_dump($cek);
+                        // var_dump($d[2]);
+                        // die;
+
+                        //   $d[2];
+                        // var_dump($cek->nama);
+                        if ($cek == NULL) {
+                            $nilai = array(
+                                'id_mtk' => $d[0],
+                                'nama_mtk' => $d[1],
+                                'jurusan' => $d[2],
+                                'jumlah_sks' => $d[3],
+                                // 'tugas_2' => $d[0],
+                                // 'nilai_akhir' => 1,
+                                // 'temp_nilai' => 1,
+                                // 'temp_log' => 1
+                            );
+                            $buat = MataKuliah::create(
+                                $nilai
+                            );
+                            // var_dump($buat);
+                        } else
+                    if ($cek->id_mtk == $d[0]) {
+                        echo "sama";
+                        // $j = Jurusan::where('nama_jurusan', $d[2])->first();
+                        // echo $j->id;
+                        $nilai = array(['nama_mtk' => $d[1]],
+                        ['jurusan_id' => Jurusan::where('nama_jurusan', $d[2])->first()->id],
+                        ['jumlah_sks' => $d[3]]);
+                        var_dump($nilai);
+                            var_dump(MataKuliah::where('id_mtk', $d[0])->update(
+                                $nilai
+                            ));
+                        } else {
+                        }
+                    }
+                }
+            }
+        }
+
+        $data = MataKuliah::where('jumlah_sks', null)
+            ->get();
+        foreach ($data as $d) {
+            // $d->delete();
+            $d->forceDelete();
         }
 
         return (new MataKuliahResource($mataKuliah))

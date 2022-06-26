@@ -88,6 +88,18 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -167,6 +179,16 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
         thComp: _components_Datatables_TranslatedHeader__WEBPACK_IMPORTED_MODULE_2__["default"],
         sortable: true
       }, {
+        title: 'cruds.dataPreparation.fields.temp_log',
+        field: 'temp_log',
+        thComp: _components_Datatables_TranslatedHeader__WEBPACK_IMPORTED_MODULE_2__["default"],
+        sortable: true
+      }, {
+        title: 'cruds.dataPreparation.fields.temp_nilai',
+        field: 'temp_nilai',
+        thComp: _components_Datatables_TranslatedHeader__WEBPACK_IMPORTED_MODULE_2__["default"],
+        sortable: true
+      }, {
         title: 'global.actions',
         thComp: _components_Datatables_TranslatedHeader__WEBPACK_IMPORTED_MODULE_2__["default"],
         tdComp: _components_Datatables_DatatableActions__WEBPACK_IMPORTED_MODULE_1__["default"],
@@ -197,11 +219,12 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       handler: function handler(query) {
         this.setQuery(query);
         this.fetchIndexData();
+        this.Reset();
       },
       deep: true
     }
   },
-  methods: _objectSpread({}, Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapActions"])('DataPreparationsIndex', ['fetchIndexData', 'setQuery', 'resetState']))
+  methods: _objectSpread({}, Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapActions"])('DataPreparationsIndex', ['fetchIndexData', 'Reset', 'setQuery', 'resetState']))
 });
 
 /***/ }),
@@ -289,6 +312,29 @@ var render = function () {
                     "\n            " +
                       _vm._s(_vm.$t("global.refresh")) +
                       "\n          "
+                  ),
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "button",
+                {
+                  staticClass: "btn btn-default",
+                  class: { disabled: _vm.loading },
+                  attrs: { type: "button", disabled: _vm.loading },
+                  on: { click: _vm.Reset },
+                },
+                [
+                  _c(
+                    "i",
+                    {
+                      staticClass: "material-icons",
+                      class: { "fa-spin": _vm.loading },
+                    },
+                    [_vm._v("\n              refresh\n            ")]
+                  ),
+                  _vm._v(
+                    "\n            " + _vm._s(_vm.$t("Reset")) + "\n          "
                   ),
                 ]
               ),

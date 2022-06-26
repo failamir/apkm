@@ -29,12 +29,12 @@ class StoreMataKuliahRequest extends FormRequest
                 'integer',
                 'min:-2147483648',
                 'max:2147483647',
-                'required',
+                'nullable',
                 'unique:mata_kuliahs',
             ],
             'nama_mtk' => [
                 'string',
-                'required',
+                'nullable',
             ],
             'jurusan_id' => [
                 'integer',

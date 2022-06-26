@@ -39,7 +39,7 @@
                       'is-focused': activeField == 'id_mtk'
                     }"
                   >
-                    <label class="bmd-label-floating required">{{
+                    <label class="bmd-label-floating ">{{
                       $t('cruds.mataKuliah.fields.id_mtk')
                     }}</label>
                     <input
@@ -50,7 +50,7 @@
                       @input="updateIdMtk"
                       @focus="focusField('id_mtk')"
                       @blur="clearFocus"
-                      required
+                      
                     />
                   </div>
                   <div
@@ -60,7 +60,7 @@
                       'is-focused': activeField == 'nama_mtk'
                     }"
                   >
-                    <label class="bmd-label-floating required">{{
+                    <label class="bmd-label-floating ">{{
                       $t('cruds.mataKuliah.fields.nama_mtk')
                     }}</label>
                     <input
@@ -70,7 +70,7 @@
                       @input="updateNamaMtk"
                       @focus="focusField('nama_mtk')"
                       @blur="clearFocus"
-                      required
+                      
                     />
                   </div>
                   <div

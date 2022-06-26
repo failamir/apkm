@@ -155,6 +155,22 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
@@ -489,6 +505,48 @@ var render = function () {
                           _vm._v(
                             "\n                        " +
                               _vm._s(_vm.entry.status_3) +
+                              "\n                      "
+                          ),
+                        ]),
+                      ]),
+                      _vm._v(" "),
+                      _c("tr", [
+                        _c("td", { staticClass: "text-primary" }, [
+                          _vm._v(
+                            "\n                        " +
+                              _vm._s(
+                                _vm.$t("cruds.dataPreparation.fields.temp_log")
+                              ) +
+                              "\n                      "
+                          ),
+                        ]),
+                        _vm._v(" "),
+                        _c("td", [
+                          _vm._v(
+                            "\n                        " +
+                              _vm._s(_vm.entry.temp_log) +
+                              "\n                      "
+                          ),
+                        ]),
+                      ]),
+                      _vm._v(" "),
+                      _c("tr", [
+                        _c("td", { staticClass: "text-primary" }, [
+                          _vm._v(
+                            "\n                        " +
+                              _vm._s(
+                                _vm.$t(
+                                  "cruds.dataPreparation.fields.temp_nilai"
+                                )
+                              ) +
+                              "\n                      "
+                          ),
+                        ]),
+                        _vm._v(" "),
+                        _c("td", [
+                          _vm._v(
+                            "\n                        " +
+                              _vm._s(_vm.entry.temp_nilai) +
                               "\n                      "
                           ),
                         ]),

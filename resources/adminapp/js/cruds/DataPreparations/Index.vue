@@ -35,6 +35,18 @@
               </i>
               {{ $t('global.refresh') }}
             </button>
+            <button
+              type="button"
+              class="btn btn-default"
+              @click="Reset"
+              :disabled="loading"
+              :class="{ disabled: loading }"
+            >
+              <i class="material-icons" :class="{ 'fa-spin': loading }">
+                refresh
+              </i>
+              {{ $t('Reset') }}
+            </button>
           </div>
           <div class="card-body">
             <div class="row">
@@ -201,6 +213,7 @@ export default {
       handler(query) {
         this.setQuery(query)
         this.fetchIndexData()
+        this.Reset()
       },
       deep: true
     }
@@ -208,6 +221,7 @@ export default {
   methods: {
     ...mapActions('DataPreparationsIndex', [
       'fetchIndexData',
+      'Reset',
       'setQuery',
       'resetState'
     ])

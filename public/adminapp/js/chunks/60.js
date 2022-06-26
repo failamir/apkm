@@ -106,6 +106,10 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
+//
+//
+//
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -131,7 +135,10 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       }
     }
   },
-  methods: _objectSpread(_objectSpread({}, Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapActions"])('PreparationDatasSingle', ['fetchEditData', 'updateData', 'resetState', 'insertDataLogFile', 'removeDataLogFile', 'insertDataNilaiFile', 'removeDataNilaiFile', 'insertDataHasilFile', 'removeDataHasilFile'])), {}, {
+  methods: _objectSpread(_objectSpread({}, Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapActions"])('PreparationDatasSingle', ['fetchEditData', 'updateData', 'resetState', 'insertDataLogFile', 'removeDataLogFile', 'insertDataNilaiFile', 'removeDataNilaiFile', 'setDataHasil'])), {}, {
+    updateDataHasil: function updateDataHasil(e) {
+      this.setDataHasil(e.target.value);
+    },
     getRoute: function getRoute(name) {
       return "".concat(axios.defaults.baseURL).concat(name, "/media");
     },
@@ -291,9 +298,15 @@ var render = function () {
                       _vm._v(" "),
                       _c(
                         "div",
-                        { staticClass: "form-group" },
+                        {
+                          staticClass: "form-group bmd-form-group",
+                          class: {
+                            "has-items": _vm.entry.data_hasil,
+                            "is-focused": _vm.activeField == "data_hasil",
+                          },
+                        },
                         [
-                          _c("label", [
+                          _c("label", { staticClass: "bmd-label-floating" }, [
                             _vm._v(
                               _vm._s(
                                 _vm.$t(
@@ -303,22 +316,19 @@ var render = function () {
                             ),
                           ]),
                           _vm._v(" "),
-                          _c("attachment", {
-                            attrs: {
-                              route: _vm.getRoute("preparation-datas"),
-                              "collection-name": "preparation_data_data_hasil",
-                              media: _vm.entry.data_hasil,
-                              "model-id": _vm.$route.params.id,
-                              "max-file-size": 100,
-                              "max-files": 1,
-                            },
+                          _c("input", {
+                            staticClass: "form-control",
+                            attrs: { type: "text" },
+                            domProps: { value: _vm.entry.data_hasil },
                             on: {
-                              "file-uploaded": _vm.insertDataHasilFile,
-                              "file-removed": _vm.removeDataHasilFile,
+                              input: _vm.updateDataHasil,
+                              focus: function ($event) {
+                                return _vm.focusField("data_hasil")
+                              },
+                              blur: _vm.clearFocus,
                             },
                           }),
-                        ],
-                        1
+                        ]
                       ),
                     ]),
                   ]),

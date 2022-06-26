@@ -316,19 +316,15 @@ var render = function () {
                           },
                         },
                         [
-                          _c(
-                            "label",
-                            { staticClass: "bmd-label-floating required" },
-                            [
-                              _vm._v(
-                                _vm._s(_vm.$t("cruds.mataKuliah.fields.id_mtk"))
-                              ),
-                            ]
-                          ),
+                          _c("label", { staticClass: "bmd-label-floating " }, [
+                            _vm._v(
+                              _vm._s(_vm.$t("cruds.mataKuliah.fields.id_mtk"))
+                            ),
+                          ]),
                           _vm._v(" "),
                           _c("input", {
                             staticClass: "form-control",
-                            attrs: { type: "number", step: "1", required: "" },
+                            attrs: { type: "number", step: "1" },
                             domProps: { value: _vm.entry.id_mtk },
                             on: {
                               input: _vm.updateIdMtk,
@@ -351,21 +347,15 @@ var render = function () {
                           },
                         },
                         [
-                          _c(
-                            "label",
-                            { staticClass: "bmd-label-floating required" },
-                            [
-                              _vm._v(
-                                _vm._s(
-                                  _vm.$t("cruds.mataKuliah.fields.nama_mtk")
-                                )
-                              ),
-                            ]
-                          ),
+                          _c("label", { staticClass: "bmd-label-floating " }, [
+                            _vm._v(
+                              _vm._s(_vm.$t("cruds.mataKuliah.fields.nama_mtk"))
+                            ),
+                          ]),
                           _vm._v(" "),
                           _c("input", {
                             staticClass: "form-control",
-                            attrs: { type: "text", required: "" },
+                            attrs: { type: "text" },
                             domProps: { value: _vm.entry.nama_mtk },
                             on: {
                               input: _vm.updateNamaMtk,

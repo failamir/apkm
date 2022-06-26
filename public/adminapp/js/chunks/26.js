@@ -295,6 +295,44 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
@@ -316,7 +354,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       }
     }
   },
-  methods: _objectSpread(_objectSpread({}, Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapActions"])('DataPreparationsSingle', ['fetchEditData', 'updateData', 'resetState', 'setNama', 'setAksesFile', 'setAksesVideo', 'setAksesForum', 'setKuis1', 'setKuis2', 'setTugas1', 'setTugas2', 'setNilaiAkhir', 'setStatus1', 'setStatus2', 'setStatus3'])), {}, {
+  methods: _objectSpread(_objectSpread({}, Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapActions"])('DataPreparationsSingle', ['fetchEditData', 'updateData', 'resetState', 'setNama', 'setAksesFile', 'setAksesVideo', 'setAksesForum', 'setKuis1', 'setKuis2', 'setTugas1', 'setTugas2', 'setNilaiAkhir', 'setStatus1', 'setStatus2', 'setStatus3', 'setTempLog', 'setTempNilai'])), {}, {
     updateNama: function updateNama(e) {
       this.setNama(e.target.value);
     },
@@ -352,6 +390,12 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
     },
     updateStatus3: function updateStatus3(e) {
       this.setStatus3(e.target.value);
+    },
+    updateTempLog: function updateTempLog(e) {
+      this.setTempLog(e.target.value);
+    },
+    updateTempNilai: function updateTempNilai(e) {
+      this.setTempNilai(e.target.value);
     },
     getRoute: function getRoute(name) {
       return "".concat(axios.defaults.baseURL).concat(name, "/media");
@@ -845,6 +889,74 @@ var render = function () {
                               input: _vm.updateStatus3,
                               focus: function ($event) {
                                 return _vm.focusField("status_3")
+                              },
+                              blur: _vm.clearFocus,
+                            },
+                          }),
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        {
+                          staticClass: "form-group bmd-form-group",
+                          class: {
+                            "has-items": _vm.entry.temp_log,
+                            "is-focused": _vm.activeField == "temp_log",
+                          },
+                        },
+                        [
+                          _c("label", { staticClass: "bmd-label-floating" }, [
+                            _vm._v(
+                              _vm._s(
+                                _vm.$t("cruds.dataPreparation.fields.temp_log")
+                              )
+                            ),
+                          ]),
+                          _vm._v(" "),
+                          _c("input", {
+                            staticClass: "form-control",
+                            attrs: { type: "text" },
+                            domProps: { value: _vm.entry.temp_log },
+                            on: {
+                              input: _vm.updateTempLog,
+                              focus: function ($event) {
+                                return _vm.focusField("temp_log")
+                              },
+                              blur: _vm.clearFocus,
+                            },
+                          }),
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        {
+                          staticClass: "form-group bmd-form-group",
+                          class: {
+                            "has-items": _vm.entry.temp_nilai,
+                            "is-focused": _vm.activeField == "temp_nilai",
+                          },
+                        },
+                        [
+                          _c("label", { staticClass: "bmd-label-floating" }, [
+                            _vm._v(
+                              _vm._s(
+                                _vm.$t(
+                                  "cruds.dataPreparation.fields.temp_nilai"
+                                )
+                              )
+                            ),
+                          ]),
+                          _vm._v(" "),
+                          _c("input", {
+                            staticClass: "form-control",
+                            attrs: { type: "text" },
+                            domProps: { value: _vm.entry.temp_nilai },
+                            on: {
+                              input: _vm.updateTempNilai,
+                              focus: function ($event) {
+                                return _vm.focusField("temp_nilai")
                               },
                               blur: _vm.clearFocus,
                             },

@@ -118,9 +118,6 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
-//
-//
-//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -363,15 +360,11 @@ var render = function () {
                           ),
                         ]),
                         _vm._v(" "),
-                        _c(
-                          "td",
-                          [
-                            _c("datatable-attachments", {
-                              attrs: { row: _vm.entry, field: "data_hasil" },
-                            }),
-                          ],
-                          1
-                        ),
+                        _c("td", [
+                          _c("a", { attrs: { href: _vm.entry.data_hasil } }, [
+                            _vm._v(" Download "),
+                          ]),
+                        ]),
                       ]),
                     ]),
                   ]),
