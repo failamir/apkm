@@ -18,11 +18,8 @@ class UpdateMataKuliahRequest extends FormRequest
     {
         return [
             'id_mtk' => [
-                'integer',
-                'min:-2147483648',
-                'max:2147483647',
-                'required',
-                'unique:mata_kuliahs,id_mtk,' . request()->route('mata_kuliah')->id,
+                'string',
+                'nullable',
             ],
             'nama_mtk' => [
                 'string',

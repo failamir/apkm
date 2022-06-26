@@ -20,6 +20,25 @@
               <bootstrap-alert />
               <div class="row">
                 <div class="col-md-12">
+                  <div
+                    class="form-group bmd-form-group"
+                    :class="{
+                      'has-items': entry.id_mtk,
+                      'is-focused': activeField == 'id_mtk'
+                    }"
+                  >
+                    <label class="bmd-label-floating">{{
+                      $t('cruds.mataKuliah.fields.id_mtk')
+                    }}</label>
+                    <input
+                      class="form-control"
+                      type="text"
+                      :value="entry.id_mtk"
+                      @input="updateIdMtk"
+                      @focus="focusField('id_mtk')"
+                      @blur="clearFocus"
+                    />
+                  </div>
                   <div class="form-group">
                     <label>{{ $t('cruds.mataKuliah.fields.data_mtk') }}</label>
                     <attachment
@@ -30,27 +49,6 @@
                       @file-uploaded="insertDataMtkFile"
                       @file-removed="removeDataMtkFile"
                       :max-files="1"
-                    />
-                  </div>
-                  <div
-                    class="form-group bmd-form-group"
-                    :class="{
-                      'has-items': entry.id_mtk,
-                      'is-focused': activeField == 'id_mtk'
-                    }"
-                  >
-                    <label class="bmd-label-floating required">{{
-                      $t('cruds.mataKuliah.fields.id_mtk')
-                    }}</label>
-                    <input
-                      class="form-control"
-                      type="number"
-                      step="1"
-                      :value="entry.id_mtk"
-                      @input="updateIdMtk"
-                      @focus="focusField('id_mtk')"
-                      @blur="clearFocus"
-                      required
                     />
                   </div>
                   <div
@@ -162,9 +160,9 @@ export default {
     ...mapActions('MataKuliahsSingle', [
       'storeData',
       'resetState',
+      'setIdMtk',
       'insertDataMtkFile',
       'removeDataMtkFile',
-      'setIdMtk',
       'setNamaMtk',
       'setJurusan',
       'setJumlahSks',

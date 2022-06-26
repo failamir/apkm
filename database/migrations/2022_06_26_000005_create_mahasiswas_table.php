@@ -4,15 +4,15 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateDosensTable extends Migration
+class CreateMahasiswasTable extends Migration
 {
     public function up()
     {
-        Schema::create('dosens', function (Blueprint $table) {
+        Schema::create('mahasiswas', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->integer('id_dosen')->unique();
-            $table->string('nama_dosen');
-            $table->string('title')->nullable();
+            $table->string('id_mahasiswa')->nullable();
+            $table->string('nama');
+            $table->integer('angkatan')->nullable();
             $table->string('email')->nullable();
             $table->string('no_hp')->nullable();
             $table->timestamps();
