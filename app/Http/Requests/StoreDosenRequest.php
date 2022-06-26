@@ -19,11 +19,8 @@ class StoreDosenRequest extends FormRequest
     {
         return [
             'id_dosen' => [
-                'integer',
-                'min:-2147483648',
-                'max:2147483647',
-                'required',
-                'unique:dosens',
+                'string',
+                'nullable',
             ],
             'nama_dosen' => [
                 'string',

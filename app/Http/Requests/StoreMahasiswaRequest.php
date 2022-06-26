@@ -18,11 +18,8 @@ class StoreMahasiswaRequest extends FormRequest
     {
         return [
             'id_mahasiswa' => [
-                'integer',
-                'min:-2147483648',
-                'max:2147483647',
-                'required',
-                'unique:mahasiswas',
+                'string',
+                'nullable',
             ],
             'nama' => [
                 'string',

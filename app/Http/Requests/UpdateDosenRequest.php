@@ -19,11 +19,8 @@ class UpdateDosenRequest extends FormRequest
     {
         return [
             'id_dosen' => [
-                'integer',
-                'min:-2147483648',
-                'max:2147483647',
-                'required',
-                'unique:dosens,id_dosen,' . request()->route('dosen')->id,
+                'string',
+                'nullable',
             ],
             'nama_dosen' => [
                 'string',
