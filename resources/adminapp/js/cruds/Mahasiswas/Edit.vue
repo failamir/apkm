@@ -27,18 +27,16 @@
                       'is-focused': activeField == 'id_mahasiswa'
                     }"
                   >
-                    <label class="bmd-label-floating required">{{
+                    <label class="bmd-label-floating">{{
                       $t('cruds.mahasiswa.fields.id_mahasiswa')
                     }}</label>
                     <input
                       class="form-control"
-                      type="number"
-                      step="1"
+                      type="text"
                       :value="entry.id_mahasiswa"
                       @input="updateIdMahasiswa"
                       @focus="focusField('id_mahasiswa')"
                       @blur="clearFocus"
-                      required
                     />
                   </div>
                   <div
