@@ -155,8 +155,11 @@ class DataMahasiswaApiController extends Controller
 
         // $dataMahasiswa->andri = 'cantik';
         $a = $request->input('batas_nilai');
-        $b = public_path() . '/storage/' . $request->input('data_mahasiswa')[0]["id"] . '/' . $request->input('data_mahasiswa')[0]["file_name"];
         // $b = $request->input('data_mahasiswa')[0]["file_name"];
+        // var_dump($b);
+        $b = public_path() . '/storage/' . $request->input('data_mahasiswa')[0]["id"] . '/' . $request->input('data_mahasiswa')[0]["file_name"];
+        // var_dump($b);
+        
         // var_dump(base_path());
         // var_dump(storage_path());
         $date = date('dmYhsi');
@@ -172,12 +175,17 @@ class DataMahasiswaApiController extends Controller
 
         // echo $process->getOutput();
         $py = env('PYPATH',);
+        // $e = "'$py' ".public_path()."/Proses.py '$a' '$b' '$date'  2>&1";
+        // var_dump($e);
+        // $andri = exec("'$py' ".public_path()."/Proses.py '$a' '$b' '$date'  2>&1", $out, $ret);
         $andri = exec("'$py' Proses.py '$a' '$b' '$date'  2>&1", $out, $ret);
         // $andri = exec("python3 ../../../../Proses.py '$a' '$date'", $out, $ret);
-        var_dump($andri);
+        // echo 111;
+        // var_dump($andri);
+        // echo 222;
         $text = str_replace("'", '"', $andri);
         $andri = json_decode($text);
-
+        // var_dump($andri);
         // $dataMahasiswa = DataMahasiswa::whereId($dataMahasiswa->id)->update(
         //  ['Lulusdantidak_lulus' => 22],
         //  ['MahasiswaActivedanObservers' => 1223],
@@ -188,15 +196,15 @@ class DataMahasiswaApiController extends Controller
         //  ['PrecisionLulus' => 123]);
         $dataMahasiswa->update(array_merge(
             $request->validated(),
-            ['lulus' => $andri->Lulusdantidak_lulus[0]],
-            ['tidak_lulus' => $andri->Lulusdantidak_lulus[1]],
+            ['lulus' => $andri->LulusdanTidakLulus[0]],
+            ['tidak_lulus' => $andri->LulusdanTidakLulus[1]],
             ['active' => $andri->MahasiswaActivedanObservers[0]],
             ['observers' => $andri->MahasiswaActivedanObservers[1]],
             ['accuracy' => $andri->Accuracy],
             ['recall_lulus' => $andri->RecallLulus],
-            ['recall_tidak_lulus' => $andri->Recalltidak_lulus],
+            ['recall_tidak_lulus' => $andri->RecallTidakLulus],
             ['precision_lulus' => $andri->PrecisionLulus],
-            ['precision_tidak_lulus' => $andri->Precisiontidak_lulus],
+            ['precision_tidak_lulus' => $andri->PrecisionTidakLulus],
             ['location' => $b]
         ));
         return (new DataMahasiswaResource($dataMahasiswa))

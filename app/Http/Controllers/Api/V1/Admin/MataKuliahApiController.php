@@ -49,7 +49,7 @@ class MataKuliahApiController extends Controller {
             if ( isset( $r ) ) {
                 foreach ( $r as $d ) {
                     if ( is_string( $d[ 0 ] ) == FALSE ) {
-                        // echo $d[ 0 ].' angka';
+                        echo $d[ 0 ].' angka .. | ';
                         $cek = MataKuliah::where( 'id_mtk', $d[ 0 ] )->get();
                         // $cek = MataKuliah::where( 'nama_mtk', 'Bhs Arab' )->get()[ 0 ];
                         // var_dump( $cek );
@@ -57,28 +57,29 @@ class MataKuliahApiController extends Controller {
                         // die;
 
                         //   $d[ 2 ];
-                        // var_dump( $cek );
+                        // var_dump( 'cek'.$cek );
+                        if($cek->isEmpty()){
+                            echo 'tidak ada';
+                        }else{
+                            echo 'ada |';
+                        }
                         // die;
                         // var_dump( $d[ 0 ] );
-                        if ( $cek == NULL ) {
+                        if ( $cek->isEmpty() ) {
                             $nilai = array(
-                                [ 'id_mtk' => $d[ 0 ] ],
-                                [ 'nama_mtk' => $d[ 1 ] ],
-                                [ 'jurusan_id' => Jurusan::where( 'nama_jurusan', $d[ 2 ] )->get()[ 0 ]->id ],
-                                [ 'jumlah_sks' => $d[ 3 ] ],
-                                // 'tugas_2' => $d[ 0 ],
-                                // 'nilai_akhir' => 1,
-                                // 'temp_nilai' => 1,
-                                // 'temp_log' => 1
+                                 'id_mtk' => $d[ 0 ] ,
+                                 'nama_mtk' => $d[ 1 ] ,
+                                 'jurusan_id' => Jurusan::where( 'nama_jurusan', $d[ 2 ] )->get()[ 0 ]->id ,
+                                 'jumlah_sks' => $d[ 3 ] ,
+                                'data_mtk' => [] 
                             );
                             $buat = MataKuliah::create(
-                                [ 'id_mtk' => $d[ 0 ] ],
-                                [ 'nama_mtk' => $d[ 1 ] ],
-                                [ 'jumlah_sks' => $d[ 3 ] ]
+                                $nilai
                             );
-                            var_dump( $buat );
+                            var_dump( $nilai );
+                            var_dump('buat'. $buat );
                         } else
-                        if ( $cek != NULL ) {
+                        if ( $cek->isNotEmpty() ) {
                             // var_dump( $cek );
                             // die;
                             // $cek->id_mtk == $d[ 0 ]
@@ -95,8 +96,10 @@ class MataKuliahApiController extends Controller {
                                 [ 'jurusan_id' => $jj ],
                                 [ 'jumlah_sks' => $d[ 3 ] ]
                             );
-                            // var_dump( $up );
+                            // var_dump('jj', $jj );
+                            // var_dump('up'. $up );
                         } else {
+                            echo "wropng";
                         }
                     }
                 }

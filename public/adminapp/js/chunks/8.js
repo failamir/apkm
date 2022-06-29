@@ -192,57 +192,67 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
         field: 'batas_nilai',
         thComp: _components_Datatables_TranslatedHeader__WEBPACK_IMPORTED_MODULE_2__["default"],
         sortable: true
-      }, {
-        title: 'cruds.dataMahasiswa.fields.lulus',
-        field: 'lulus',
-        thComp: _components_Datatables_TranslatedHeader__WEBPACK_IMPORTED_MODULE_2__["default"],
-        sortable: true
-      }, {
-        title: 'cruds.dataMahasiswa.fields.tidak_lulus',
-        field: 'tidak_lulus',
-        thComp: _components_Datatables_TranslatedHeader__WEBPACK_IMPORTED_MODULE_2__["default"],
-        sortable: true
-      }, {
-        title: 'cruds.dataMahasiswa.fields.active',
-        field: 'active',
-        thComp: _components_Datatables_TranslatedHeader__WEBPACK_IMPORTED_MODULE_2__["default"],
-        sortable: true
-      }, {
-        title: 'cruds.dataMahasiswa.fields.observers',
-        field: 'observers',
-        thComp: _components_Datatables_TranslatedHeader__WEBPACK_IMPORTED_MODULE_2__["default"],
-        sortable: true
-      }, {
-        title: 'cruds.dataMahasiswa.fields.accuracy',
-        field: 'accuracy',
-        thComp: _components_Datatables_TranslatedHeader__WEBPACK_IMPORTED_MODULE_2__["default"],
-        sortable: true
-      }, {
-        title: 'cruds.dataMahasiswa.fields.recall_lulus',
-        field: 'recall_lulus',
-        thComp: _components_Datatables_TranslatedHeader__WEBPACK_IMPORTED_MODULE_2__["default"],
-        sortable: true
-      }, {
-        title: 'cruds.dataMahasiswa.fields.recall_tidak_lulus',
-        field: 'recall_tidak_lulus',
-        thComp: _components_Datatables_TranslatedHeader__WEBPACK_IMPORTED_MODULE_2__["default"],
-        sortable: true
-      }, {
-        title: 'cruds.dataMahasiswa.fields.precision_tidak_lulus',
-        field: 'precision_tidak_lulus',
-        thComp: _components_Datatables_TranslatedHeader__WEBPACK_IMPORTED_MODULE_2__["default"],
-        sortable: true
-      }, {
-        title: 'cruds.dataMahasiswa.fields.precision_lulus',
-        field: 'precision_lulus',
-        thComp: _components_Datatables_TranslatedHeader__WEBPACK_IMPORTED_MODULE_2__["default"],
-        sortable: true
-      }, {
-        title: 'cruds.dataMahasiswa.fields.location',
-        field: 'location',
-        thComp: _components_Datatables_TranslatedHeader__WEBPACK_IMPORTED_MODULE_2__["default"],
-        sortable: true
-      }, {
+      }, // {
+      //   title: 'cruds.dataMahasiswa.fields.lulus',
+      //   field: 'lulus',
+      //   thComp: TranslatedHeader,
+      //   sortable: true
+      // },
+      // {
+      //   title: 'cruds.dataMahasiswa.fields.tidak_lulus',
+      //   field: 'tidak_lulus',
+      //   thComp: TranslatedHeader,
+      //   sortable: true
+      // },
+      // {
+      //   title: 'cruds.dataMahasiswa.fields.active',
+      //   field: 'active',
+      //   thComp: TranslatedHeader,
+      //   sortable: true
+      // },
+      // {
+      //   title: 'cruds.dataMahasiswa.fields.observers',
+      //   field: 'observers',
+      //   thComp: TranslatedHeader,
+      //   sortable: true
+      // },
+      // {
+      //   title: 'cruds.dataMahasiswa.fields.accuracy',
+      //   field: 'accuracy',
+      //   thComp: TranslatedHeader,
+      //   sortable: true
+      // },
+      // {
+      //   title: 'cruds.dataMahasiswa.fields.recall_lulus',
+      //   field: 'recall_lulus',
+      //   thComp: TranslatedHeader,
+      //   sortable: true
+      // },
+      // {
+      //   title: 'cruds.dataMahasiswa.fields.recall_tidak_lulus',
+      //   field: 'recall_tidak_lulus',
+      //   thComp: TranslatedHeader,
+      //   sortable: true
+      // },
+      // {
+      //   title: 'cruds.dataMahasiswa.fields.precision_tidak_lulus',
+      //   field: 'precision_tidak_lulus',
+      //   thComp: TranslatedHeader,
+      //   sortable: true
+      // },
+      // {
+      //   title: 'cruds.dataMahasiswa.fields.precision_lulus',
+      //   field: 'precision_lulus',
+      //   thComp: TranslatedHeader,
+      //   sortable: true
+      // },
+      // {
+      //   title: 'cruds.dataMahasiswa.fields.location',
+      //   field: 'location',
+      //   thComp: TranslatedHeader,
+      //   sortable: true
+      // },
+      {
         title: 'global.actions',
         thComp: _components_Datatables_TranslatedHeader__WEBPACK_IMPORTED_MODULE_2__["default"],
         tdComp: _components_Datatables_DatatableActions__WEBPACK_IMPORTED_MODULE_1__["default"],

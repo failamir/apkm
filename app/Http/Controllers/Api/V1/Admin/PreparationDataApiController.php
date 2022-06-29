@@ -212,14 +212,14 @@ class PreparationDataApiController extends Controller {
             $books = [
                 [ 'Nama', 'Akses_File', 'Akses_Video', 'Akses_Forum', 'Kuis_1', 'Kuis_2', 'Tugas_1', 'Tugas_2', 'Nilai_Akhir', 'Status1', 'Status2', 'Status3' ],
             ];
-            $data = DataPreparation::
-            where( 'akses_file', '!=', null )
-            ->where( 'akses_video', '!=', null )
-            ->where( 'akses_forum', '!=', null )
-            ->where( 'status_1', '!=', null )
-            ->where( 'status_2', '!=', null )
-            ->where( 'status_3', '!=', null )
-            ->where( 'temp_log', '!=', 1 )->get();
+            $data = DataPreparation::all();
+            // where( 'akses_file', '!=', null )
+            // ->where( 'akses_video', '!=', null )
+            // ->where( 'akses_forum', '!=', null )
+            // ->where( 'status_1', '!=', null )
+            // ->where( 'status_2', '!=', null )
+            // ->where( 'status_3', '!=', null )
+            // ->where( 'temp_log', '!=', 1 )->get();
             // var_dump( $data );
             // $andri = array();
             // $l = 0;
@@ -245,10 +245,11 @@ class PreparationDataApiController extends Controller {
             // var_dump( $books );
 
             $xlsx = SimpleXLSXGen::fromArray( $books );
-            $hasil = $xlsx->saveAs( public_path() . '/storage/' . $request->input( 'data_nilai' )[ 0 ][ 'id' ] . '/' . 'hasil.xlsx' );
+            $save = 'storage/' . $request->input( 'data_nilai' )[ 0 ][ 'id' ] . '/' .date('dmYhsi'). 'hasil.xlsx';
+            $hasil = $xlsx->saveAs( $save );
             // or downloadAs( 'books.xlsx' ) or $xlsx_content = ( string ) $xlsx
 
-            $original_url  = Url( '/storage/'. $request->input( 'data_nilai' )[ 0 ][ 'id' ] .'/hasil.xlsx' );
+            $original_url  = Url( $save );
             $preparationData->update( [
                 // 'data_hasil' => "<a data-v-28a596d8 href='". $original_url ."' title='data_hasil' target='_blank'>Download</a>"
                 'data_hasil' => $original_url

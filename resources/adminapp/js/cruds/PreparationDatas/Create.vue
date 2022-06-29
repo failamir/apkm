@@ -50,7 +50,7 @@
                       :max-files="1"
                     />
                   </div>
-                  <div
+                  <!-- <div
                     class="form-group bmd-form-group"
                     :class="{
                       'has-items': entry.data_hasil,
@@ -68,7 +68,7 @@
                       @focus="focusField('data_hasil')"
                       @blur="clearFocus"
                     />
-                  </div>
+                  </div> -->
                 </div>
               </div>
             </div>

@@ -25,21 +25,19 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/cruds/PreparationDatas/Index.vue?vue&type=script&lang=js&":
-/*!*************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/adminapp/js/cruds/PreparationDatas/Index.vue?vue&type=script&lang=js& ***!
-  \*************************************************************************************************************************************************************************************/
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/cruds/DataMahasiswas/Show.vue?vue&type=script&lang=js&":
+/*!**********************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/adminapp/js/cruds/DataMahasiswas/Show.vue?vue&type=script&lang=js& ***!
+  \**********************************************************************************************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vuex__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vuex */ "./node_modules/vuex/dist/vuex.esm.js");
-/* harmony import */ var _components_Datatables_DatatableActions__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @components/Datatables/DatatableActions */ "./resources/adminapp/js/components/Datatables/DatatableActions.vue");
-/* harmony import */ var _components_Datatables_TranslatedHeader__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @components/Datatables/TranslatedHeader */ "./resources/adminapp/js/components/Datatables/TranslatedHeader.vue");
-/* harmony import */ var _components_Datatables_HeaderSettings__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @components/Datatables/HeaderSettings */ "./resources/adminapp/js/components/Datatables/HeaderSettings.vue");
-/* harmony import */ var _components_Datatables_GlobalSearch__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @components/Datatables/GlobalSearch */ "./resources/adminapp/js/components/Datatables/GlobalSearch.vue");
-/* harmony import */ var _components_Datatables_DatatableAttachments__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @components/Datatables/DatatableAttachments */ "./resources/adminapp/js/components/Datatables/DatatableAttachments.vue");
+/* harmony import */ var _components_Datatables_DatatableAttachments__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @components/Datatables/DatatableAttachments */ "./resources/adminapp/js/components/Datatables/DatatableAttachments.vue");
+/* harmony import */ var vue_apexcharts__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! vue-apexcharts */ "./node_modules/vue-apexcharts/dist/vue-apexcharts.js");
+/* harmony import */ var vue_apexcharts__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(vue_apexcharts__WEBPACK_IMPORTED_MODULE_2__);
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
 
 function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { _defineProperty(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
@@ -114,77 +112,229 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
-
-
-
+ // import show from './show.js';
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-  components: {
-    GlobalSearch: _components_Datatables_GlobalSearch__WEBPACK_IMPORTED_MODULE_4__["default"],
-    HeaderSettings: _components_Datatables_HeaderSettings__WEBPACK_IMPORTED_MODULE_3__["default"]
+  mounted: function mounted() {//  show()
+    // this.a= "";
+    // this.b= "";
+    // this.c= "";
+    // this.d= "";
+    // this.a= this.$store.getters['DataMahasiswasSingle/entry'].Lulus;
+    // a= this.$store.getters['DataMahasiswasSingle/entry'].Lulus;
+    // this.b= this.$store.getters['DataMahasiswasSingle/entry'].TidakLulus;
+    // this.c= this.$store.getters['DataMahasiswasSingle/entry'].Active;
+    // this.d= this.$store.getters['DataMahasiswasSingle/entry'].Observers;
+    // console.log(a)
+    // console.log(this.a)
+    // console.log(['entry'], 'andri')
+    // console.log(['fetchShowData'])
+    // console.log(this.$store.getters.DataMahasiswasSingle)
+    // if (this['entry'].Lulus){
+    //   this.andri = this.entry.Lulus
+    // }
+    // coba()
+    // console.log(charts,'kelsi')
+    // console.log(this.charts,'kelsi')
+    // console.log(this.coba,'kelsi')
+    // console.log(this.coba1,'kelsi')
+    // console.log(this.serisL,'kelsi')
+    // console.log(this.serisT,'kelsi')
+    // this.andri = this.entry.Lulus,
+    // this.cantik = this.entry.TidakLulus
+    // console.log(['entry'].nama)
   },
+  components: {
+    DatatableAttachments: _components_Datatables_DatatableAttachments__WEBPACK_IMPORTED_MODULE_1__["default"],
+    apexchart: vue_apexcharts__WEBPACK_IMPORTED_MODULE_2___default.a
+  },
+  // data() {
+  //   return {}
+  // },
   data: function data() {
     return {
-      columns: [{
-        title: 'cruds.preparationData.fields.id',
-        field: 'id',
-        thComp: _components_Datatables_TranslatedHeader__WEBPACK_IMPORTED_MODULE_2__["default"],
-        sortable: true,
-        colStyle: 'width: 100px;'
-      }, {
-        title: 'cruds.preparationData.fields.data_log',
-        field: 'data_log',
-        thComp: _components_Datatables_TranslatedHeader__WEBPACK_IMPORTED_MODULE_2__["default"],
-        tdComp: _components_Datatables_DatatableAttachments__WEBPACK_IMPORTED_MODULE_5__["default"]
-      }, {
-        title: 'cruds.preparationData.fields.data_nilai',
-        field: 'data_nilai',
-        thComp: _components_Datatables_TranslatedHeader__WEBPACK_IMPORTED_MODULE_2__["default"],
-        tdComp: _components_Datatables_DatatableAttachments__WEBPACK_IMPORTED_MODULE_5__["default"]
-      }, {
-        title: 'cruds.preparationData.fields.data_hasil',
-        field: 'data_hasil',
-        thComp: _components_Datatables_TranslatedHeader__WEBPACK_IMPORTED_MODULE_2__["default"],
-        sortable: true
-      }, {
-        title: 'global.actions',
-        thComp: _components_Datatables_TranslatedHeader__WEBPACK_IMPORTED_MODULE_2__["default"],
-        tdComp: _components_Datatables_DatatableActions__WEBPACK_IMPORTED_MODULE_1__["default"],
-        visible: true,
-        thClass: 'text-right',
-        tdClass: 'text-right td-actions',
-        colStyle: 'width: 150px;'
-      }],
-      query: {
-        sort: 'id',
-        order: 'desc',
-        limit: 100,
-        s: ''
+      seen: false,
+      series: [1, 1],
+      series1: [1, 1],
+      chartOptions: {
+        title: {
+          text: "Proporsi Jumlah Lulus dan Tidak Lulus",
+          align: "left",
+          margin: 10,
+          offsetX: 0,
+          offsetY: 0,
+          floating: false,
+          style: {
+            fontSize: "14px",
+            fontWeight: "bold",
+            fontFamily: "Roboto",
+            color: "#263238"
+          }
+        },
+        chart: {
+          width: 380,
+          type: "pie"
+        },
+        labels: ["Lulus", "Tidak Lulus"],
+        responsive: [{
+          breakpoint: 480,
+          options: {
+            chart: {
+              width: 200
+            },
+            legend: {
+              position: "bottom"
+            }
+          }
+        }]
       },
-      xprops: {
-        module: 'PreparationDatasIndex',
-        route: 'preparation_datas',
-        permission_prefix: 'preparation_data_'
+      // series1: [entry.Active, entry.Observers],
+      // series1: [12, 42],
+      // series1: [this.charts.data.Active, this.charts.data.Observers],
+      chartOptions1: {
+        title: {
+          text: "Proporsi Mahasiswa Aktif dan Observers",
+          align: "left",
+          margin: 10,
+          offsetX: 0,
+          offsetY: 0,
+          floating: false,
+          style: {
+            fontSize: "14px",
+            fontWeight: "bold",
+            fontFamily: "Roboto",
+            color: "#263238"
+          }
+        },
+        chart: {
+          width: 380,
+          type: "pie"
+        },
+        labels: ["Active", "Observers"],
+        responsive: [{
+          breakpoint: 480,
+          options: {
+            chart: {
+              width: 200
+            },
+            legend: {
+              position: "bottom"
+            }
+          }
+        }]
       }
     };
   },
   beforeDestroy: function beforeDestroy() {
     this.resetState();
   },
-  computed: _objectSpread({}, Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapGetters"])('PreparationDatasIndex', ['data', 'total', 'loading'])),
+  computed: _objectSpread({}, Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapGetters"])("DataMahasiswasSingle", ["entry"])),
+  // andri: entry.Lulus,
+  //     cantik:entry.TidakLulus,
+  // },
   watch: {
-    query: {
-      handler: function handler(query) {
-        this.setQuery(query);
-        this.fetchIndexData();
-      },
-      deep: true
+    "$route.params.id": {
+      immediate: true,
+      handler: function handler() {
+        this.resetState();
+        this.fetchShowData(this.$route.params.id); // this.fetchChartData(this.$route.params.id)
+      }
     }
   },
-  methods: _objectSpread({}, Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapActions"])('PreparationDatasIndex', ['fetchIndexData', 'setQuery', 'resetState']))
-});
+  methods: _objectSpread({}, Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapActions"])("DataMahasiswasSingle", ["fetchShowData", "resetState"])),
+  created: function created() {
+    var _this = this;
+
+    var route = "data-mahasiswas";
+    axios.get("".concat(route, "/").concat(this.$route.params.id)).then(function (response) {
+      _this.charts = response.data.data;
+      console.log(_this.charts, "andri");
+      _this.a = [_this.charts.lulus, _this.charts.tidak_lulus];
+      _this.b = [_this.charts.active, _this.charts.observers]; // console.log(this.a)
+
+      _this.series = _this.a;
+      _this.series1 = _this.b;
+    });
+  }
+}); // new Vue({
+// el:'#wrapper',
+// data:{
+//     seen: true
+// }
+// });
 
 /***/ }),
 
@@ -276,10 +426,10 @@ render._withStripped = true
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/cruds/PreparationDatas/Index.vue?vue&type=template&id=c81ce8a0&":
-/*!*****************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/adminapp/js/cruds/PreparationDatas/Index.vue?vue&type=template&id=c81ce8a0& ***!
-  \*****************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/cruds/DataMahasiswas/Show.vue?vue&type=template&id=5de1551e&":
+/*!**************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/adminapp/js/cruds/DataMahasiswas/Show.vue?vue&type=template&id=5de1551e& ***!
+  \**************************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -297,137 +447,264 @@ var render = function () {
         _c("div", { staticClass: "card" }, [
           _c(
             "div",
-            { staticClass: "card-header card-header-primary card-header-icon" },
+            { staticClass: "card-header card-header-danger card-header-icon" },
             [
               _vm._m(0),
               _vm._v(" "),
               _c("h4", { staticClass: "card-title" }, [
                 _vm._v(
                   "\n            " +
-                    _vm._s(_vm.$t("global.table")) +
+                    _vm._s(_vm.$t("global.view")) +
                     "\n            "
                 ),
                 _c("strong", [
-                  _vm._v(_vm._s(_vm.$t("cruds.preparationData.title"))),
+                  _vm._v(_vm._s(_vm.$t("cruds.dataMahasiswa.title_singular"))),
                 ]),
               ]),
             ]
           ),
           _vm._v(" "),
-          _c(
-            "div",
-            { staticClass: "card-body" },
-            [
-              _vm.$can(_vm.xprops.permission_prefix + "create")
-                ? _c(
-                    "router-link",
-                    {
-                      staticClass: "btn btn-primary",
-                      attrs: { to: { name: _vm.xprops.route + ".create" } },
-                    },
-                    [
-                      _c("i", { staticClass: "material-icons" }, [
-                        _vm._v("\n              add\n            "),
-                      ]),
-                      _vm._v(
-                        "\n            " +
-                          _vm._s(_vm.$t("global.add")) +
-                          "\n          "
-                      ),
-                    ]
-                  )
-                : _vm._e(),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  staticClass: "btn btn-default",
-                  class: { disabled: _vm.loading },
-                  attrs: { type: "button", disabled: _vm.loading },
-                  on: { click: _vm.fetchIndexData },
-                },
-                [
-                  _c(
-                    "i",
-                    {
-                      staticClass: "material-icons",
-                      class: { "fa-spin": _vm.loading },
-                    },
-                    [_vm._v("\n              refresh\n            ")]
-                  ),
-                  _vm._v(
-                    "\n            " +
-                      _vm._s(_vm.$t("global.refresh")) +
-                      "\n          "
-                  ),
-                ]
-              ),
-            ],
-            1
-          ),
+          _c("div", { staticClass: "card-body" }, [_c("back-button")], 1),
           _vm._v(" "),
           _c("div", { staticClass: "card-body" }, [
             _c("div", { staticClass: "row" }, [
+              _c("div", { staticClass: "col-md-12" }, [
+                _c("div", { staticClass: "table-responsive" }, [
+                  _c("div", { staticClass: "table" }, [
+                    _c("tbody", [
+                      _c("tr", [
+                        _c("td", { staticClass: "text-primary" }, [
+                          _vm._v(
+                            "\n                        " +
+                              _vm._s(_vm.$t("cruds.dataMahasiswa.fields.id")) +
+                              "\n                      "
+                          ),
+                        ]),
+                        _vm._v(" "),
+                        _c("td", [
+                          _vm._v(
+                            "\n                        " +
+                              _vm._s(_vm.entry.id) +
+                              "\n                      "
+                          ),
+                        ]),
+                      ]),
+                      _vm._v(" "),
+                      _c("tr", [
+                        _c("td", { staticClass: "text-primary" }, [
+                          _vm._v(
+                            "\n                        " +
+                              _vm._s(
+                                _vm.$t("cruds.dataMahasiswa.fields.nama")
+                              ) +
+                              "\n                      "
+                          ),
+                        ]),
+                        _vm._v(" "),
+                        _c("td", [
+                          _vm._v(
+                            "\n                        " +
+                              _vm._s(_vm.entry.nama) +
+                              "\n                      "
+                          ),
+                        ]),
+                      ]),
+                      _vm._v(" "),
+                      _c("tr", [
+                        _c("td", { staticClass: "text-primary" }, [
+                          _vm._v(
+                            "\n                        " +
+                              _vm._s(
+                                _vm.$t("cruds.dataMahasiswa.fields.mata_kuliah")
+                              ) +
+                              "\n                      "
+                          ),
+                        ]),
+                        _vm._v(" "),
+                        _c(
+                          "td",
+                          [
+                            _c("datatable-single", {
+                              attrs: {
+                                row: _vm.entry,
+                                field: "mata_kuliah.nama_mtk",
+                              },
+                            }),
+                          ],
+                          1
+                        ),
+                      ]),
+                      _vm._v(" "),
+                      _c("tr", [
+                        _c("td", { staticClass: "text-primary" }, [
+                          _vm._v(
+                            "\n                        " +
+                              _vm._s(
+                                _vm.$t(
+                                  "cruds.dataMahasiswa.fields.data_mahasiswa"
+                                )
+                              ) +
+                              "\n                      "
+                          ),
+                        ]),
+                        _vm._v(" "),
+                        _c(
+                          "td",
+                          [
+                            _c("datatable-attachments", {
+                              attrs: {
+                                row: _vm.entry,
+                                field: "data_mahasiswa",
+                              },
+                            }),
+                          ],
+                          1
+                        ),
+                      ]),
+                      _vm._v(" "),
+                      _c("tr", [
+                        _c("td", { staticClass: "text-primary" }, [
+                          _vm._v(
+                            "\n                        " +
+                              _vm._s(
+                                _vm.$t("cruds.dataMahasiswa.fields.batas_nilai")
+                              ) +
+                              "\n                      "
+                          ),
+                        ]),
+                        _vm._v(" "),
+                        _c("td", [
+                          _vm._v(
+                            "\n                        " +
+                              _vm._s(_vm.entry.batas_nilai) +
+                              "\n                      "
+                          ),
+                        ]),
+                      ]),
+                    ]),
+                  ]),
+                ]),
+              ]),
+            ]),
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-md-12" }, [
+            _c("div", { staticClass: "row" }, [
               _c(
                 "div",
-                { staticClass: "col-md-12" },
+                { staticClass: "col", attrs: { id: "chart" } },
                 [
-                  _c(
-                    "div",
-                    {
-                      directives: [
-                        {
-                          name: "show",
-                          rawName: "v-show",
-                          value: _vm.loading,
-                          expression: "loading",
-                        },
-                      ],
-                      staticClass: "table-overlay",
+                  _c("apexchart", {
+                    attrs: {
+                      type: "pie",
+                      width: "380",
+                      options: _vm.chartOptions,
+                      series: _vm.series,
                     },
-                    [
-                      _c(
-                        "div",
-                        { staticClass: "table-overlay-container" },
-                        [
-                          _c("material-spinner"),
-                          _vm._v(" "),
-                          _c("span", [_vm._v("Loading...")]),
-                        ],
-                        1
-                      ),
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "datatable",
-                    {
-                      attrs: {
-                        columns: _vm.columns,
-                        data: _vm.data,
-                        total: _vm.total,
-                        query: _vm.query,
-                        xprops: _vm.xprops,
-                        HeaderSettings: false,
-                        pageSizeOptions: [10, 25, 50, 100],
-                      },
-                    },
-                    [
-                      _c("global-search", {
-                        staticClass: "pull-left",
-                        attrs: { query: _vm.query },
-                      }),
-                      _vm._v(" "),
-                      _c("header-settings", {
-                        staticClass: "pull-right",
-                        attrs: { columns: _vm.columns },
-                      }),
-                    ],
-                    1
-                  ),
+                  }),
                 ],
                 1
               ),
+              _vm._v(" "),
+              _c(
+                "div",
+                { staticClass: "col", attrs: { id: "chart" } },
+                [
+                  _c("apexchart", {
+                    attrs: {
+                      type: "pie",
+                      width: "380",
+                      options: _vm.chartOptions1,
+                      series: _vm.series1,
+                    },
+                  }),
+                ],
+                1
+              ),
+            ]),
+            _vm._v(" "),
+            _c("div", { attrs: { id: "wrapper" } }, [
+              _c(
+                "div",
+                {
+                  staticClass: "control",
+                  attrs: { id: "app" },
+                  on: {
+                    click: function ($event) {
+                      _vm.seen = !_vm.seen
+                    },
+                  },
+                },
+                [_c("button", [_vm._v("Show Nilai Accuracy and Recall")])]
+              ),
+              _vm._v(" "),
+              _vm.seen
+                ? _c("div", { attrs: { id: "hide" } }, [
+                    _c("br"),
+                    _vm._v(" "),
+                    _c("p", { staticClass: "font-weight-bold" }, [
+                      _vm._v("Lulus : " + _vm._s(_vm.entry.lulus)),
+                    ]),
+                    _vm._v(" "),
+                    _c("p", { staticClass: "font-weight-bold" }, [
+                      _vm._v(
+                        "\n                Tidak Lulus : " +
+                          _vm._s(_vm.entry.tidak_lulus) +
+                          "\n              "
+                      ),
+                    ]),
+                    _vm._v(" "),
+                    _c("p", { staticClass: "font-weight-bold" }, [
+                      _vm._v("Active : " + _vm._s(_vm.entry.active)),
+                    ]),
+                    _vm._v(" "),
+                    _c("p", { staticClass: "font-weight-bold" }, [
+                      _vm._v(
+                        "\n                Observers : " +
+                          _vm._s(_vm.entry.observers) +
+                          "\n              "
+                      ),
+                    ]),
+                    _vm._v(" "),
+                    _c("p", { staticClass: "font-weight-bold" }, [
+                      _vm._v(
+                        "Accuracy : " + _vm._s(_vm.entry.accuracy * 100) + "%"
+                      ),
+                    ]),
+                    _vm._v(" "),
+                    _c("p", { staticClass: "font-weight-bold" }, [
+                      _vm._v(
+                        "\n                Recall Lulus : " +
+                          _vm._s(_vm.entry.recall_lulus * 100) +
+                          "%\n              "
+                      ),
+                    ]),
+                    _vm._v(" "),
+                    _c("p", { staticClass: "font-weight-bold" }, [
+                      _vm._v(
+                        "\n                Recall Tidak Lulus : " +
+                          _vm._s(_vm.entry.recall_tidak_lulus * 100) +
+                          "%\n              "
+                      ),
+                    ]),
+                    _vm._v(" "),
+                    _c("p", { staticClass: "font-weight-bold" }, [
+                      _vm._v(
+                        "\n                Precision Lulus : " +
+                          _vm._s(_vm.entry.precision_lulus * 100) +
+                          "%\n              "
+                      ),
+                    ]),
+                    _vm._v(" "),
+                    _c("p", { staticClass: "font-weight-bold" }, [
+                      _vm._v(
+                        "\n                Precision Tidak Lulus : " +
+                          _vm._s(_vm.entry.precision_tidak_lulus * 100) +
+                          "%\n              "
+                      ),
+                    ]),
+                  ])
+                : _vm._e(),
             ]),
           ]),
         ]),
@@ -441,7 +718,7 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "card-icon" }, [
-      _c("i", { staticClass: "material-icons" }, [_vm._v("assignment")]),
+      _c("i", { staticClass: "material-icons" }, [_vm._v("remove_red_eye")]),
     ])
   },
 ]
@@ -538,17 +815,17 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./resources/adminapp/js/cruds/PreparationDatas/Index.vue":
-/*!****************************************************************!*\
-  !*** ./resources/adminapp/js/cruds/PreparationDatas/Index.vue ***!
-  \****************************************************************/
+/***/ "./resources/adminapp/js/cruds/DataMahasiswas/Show.vue":
+/*!*************************************************************!*\
+  !*** ./resources/adminapp/js/cruds/DataMahasiswas/Show.vue ***!
+  \*************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Index_vue_vue_type_template_id_c81ce8a0___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Index.vue?vue&type=template&id=c81ce8a0& */ "./resources/adminapp/js/cruds/PreparationDatas/Index.vue?vue&type=template&id=c81ce8a0&");
-/* harmony import */ var _Index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Index.vue?vue&type=script&lang=js& */ "./resources/adminapp/js/cruds/PreparationDatas/Index.vue?vue&type=script&lang=js&");
+/* harmony import */ var _Show_vue_vue_type_template_id_5de1551e___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Show.vue?vue&type=template&id=5de1551e& */ "./resources/adminapp/js/cruds/DataMahasiswas/Show.vue?vue&type=template&id=5de1551e&");
+/* harmony import */ var _Show_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Show.vue?vue&type=script&lang=js& */ "./resources/adminapp/js/cruds/DataMahasiswas/Show.vue?vue&type=script&lang=js&");
 /* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
@@ -558,9 +835,9 @@ __webpack_require__.r(__webpack_exports__);
 /* normalize component */
 
 var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
-  _Index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _Index_vue_vue_type_template_id_c81ce8a0___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _Index_vue_vue_type_template_id_c81ce8a0___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  _Show_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _Show_vue_vue_type_template_id_5de1551e___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Show_vue_vue_type_template_id_5de1551e___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
   null,
   null,
@@ -570,38 +847,38 @@ var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_
 
 /* hot reload */
 if (false) { var api; }
-component.options.__file = "resources/adminapp/js/cruds/PreparationDatas/Index.vue"
+component.options.__file = "resources/adminapp/js/cruds/DataMahasiswas/Show.vue"
 /* harmony default export */ __webpack_exports__["default"] = (component.exports);
 
 /***/ }),
 
-/***/ "./resources/adminapp/js/cruds/PreparationDatas/Index.vue?vue&type=script&lang=js&":
-/*!*****************************************************************************************!*\
-  !*** ./resources/adminapp/js/cruds/PreparationDatas/Index.vue?vue&type=script&lang=js& ***!
-  \*****************************************************************************************/
+/***/ "./resources/adminapp/js/cruds/DataMahasiswas/Show.vue?vue&type=script&lang=js&":
+/*!**************************************************************************************!*\
+  !*** ./resources/adminapp/js/cruds/DataMahasiswas/Show.vue?vue&type=script&lang=js& ***!
+  \**************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../node_modules/vue-loader/lib??vue-loader-options!./Index.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/cruds/PreparationDatas/Index.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Show_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../node_modules/vue-loader/lib??vue-loader-options!./Show.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/cruds/DataMahasiswas/Show.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Show_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
 
 /***/ }),
 
-/***/ "./resources/adminapp/js/cruds/PreparationDatas/Index.vue?vue&type=template&id=c81ce8a0&":
-/*!***********************************************************************************************!*\
-  !*** ./resources/adminapp/js/cruds/PreparationDatas/Index.vue?vue&type=template&id=c81ce8a0& ***!
-  \***********************************************************************************************/
+/***/ "./resources/adminapp/js/cruds/DataMahasiswas/Show.vue?vue&type=template&id=5de1551e&":
+/*!********************************************************************************************!*\
+  !*** ./resources/adminapp/js/cruds/DataMahasiswas/Show.vue?vue&type=template&id=5de1551e& ***!
+  \********************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Index_vue_vue_type_template_id_c81ce8a0___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../node_modules/vue-loader/lib??vue-loader-options!./Index.vue?vue&type=template&id=c81ce8a0& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/cruds/PreparationDatas/Index.vue?vue&type=template&id=c81ce8a0&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Index_vue_vue_type_template_id_c81ce8a0___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Show_vue_vue_type_template_id_5de1551e___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../node_modules/vue-loader/lib??vue-loader-options!./Show.vue?vue&type=template&id=5de1551e& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/cruds/DataMahasiswas/Show.vue?vue&type=template&id=5de1551e&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Show_vue_vue_type_template_id_5de1551e___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Index_vue_vue_type_template_id_c81ce8a0___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Show_vue_vue_type_template_id_5de1551e___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 

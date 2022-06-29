@@ -32,5 +32,9 @@
         "chart.js": "^2.9.4",
         "vue-chartjs": "^3.5.1",
         "vue2-dropzone": "^3.6.0"
+    },
+    "dependencies": {
+        "apexcharts": "^3.35.3",
+        "vue-apexcharts": "^1.6.2"
     }
 }

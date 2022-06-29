@@ -161,9 +161,9 @@ class DataMahasiswaOnGoingApiController extends Controller
         // $a = '../../../../public/storage/'.$request->input('data_mahasiswa')[0]["id"].'/'.$request->input('data_mahasiswa')[0]["file_name"];
         // var_dump($a);
         // var_dump($b);
-        var_dump($request->input('data_history_id'));
+        // var_dump($request->input('data_history_id'));
         $andri = DataMahasiswa::find($request->input('data_history_id'));
-        var_dump($andri);
+        // var_dump($andri);
         // die;
         $a = $andri->batas_nilai;
         // $c = public_path().'/storage/'.$request->input('data_mahasiswa')[0]["id"].'/'.$request->input('data_mahasiswa')[0]["file_name"];
@@ -171,13 +171,13 @@ class DataMahasiswaOnGoingApiController extends Controller
 
         // $batas = '40';
         $b = $andri->location;
-        var_dump($b);
+        // var_dump($b);
         $c = public_path() . '/storage/' . $request->input('data_mahasiswa')[0]["id"] . '/' . $request->input('data_mahasiswa')[0]["file_name"];
-        var_dump($c);
+        // var_dump($c);
         $date = date('dmYhsi');
-        var_dump($date);
+        // var_dump($date);
         $u = $date . 'HasilPrediksi.xlsx';
-        var_dump($u);
+        // var_dump($u);
         // $process = new Process(["python3", "Proses.py '$a' '$b' '$date'"]);
         // $process = new Process(["python3", "ProsesH.py '$a' '$b' '$date'"]);
         // $process->run();
@@ -204,9 +204,9 @@ class DataMahasiswaOnGoingApiController extends Controller
             ['observers' => $andri->MahasiswaActivedanObserversDataOngoing[1]],
             ['accuracy' => $andri->Accuracy],
             ['recall_lulus' => $andri->RecallLulus],
-            ['recall_tidak_lulus' => $andri->Recalltidak_lulus],
+            ['recall_tidak_lulus' => $andri->RecallTidakLulus],
             ['precision_lulus' => $andri->PrecisionLulus],
-            ['precision_tidak_lulus' => $andri->Precisiontidak_lulus],
+            ['precision_tidak_lulus' => $andri->PrecisionTidakLulus],
             ['hasil_prediksi' => $u],
             ['data_history_id' => $request->input('data_history_id')],
         ));

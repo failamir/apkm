@@ -95,7 +95,7 @@
                       @blur="clearFocus"
                     />
                   </div>
-                  <div
+                  <!-- <div
                     class="form-group bmd-form-group"
                     :class="{
                       'has-items': entry.lulus,
@@ -293,7 +293,7 @@
                       @focus="focusField('location')"
                       @blur="clearFocus"
                     />
-                  </div>
+                  </div> -->
                 </div>
               </div>
             </div>

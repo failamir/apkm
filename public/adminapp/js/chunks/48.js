@@ -282,41 +282,6 @@ var render = function () {
                         ],
                         1
                       ),
-                      _vm._v(" "),
-                      _c(
-                        "div",
-                        {
-                          staticClass: "form-group bmd-form-group",
-                          class: {
-                            "has-items": _vm.entry.data_hasil,
-                            "is-focused": _vm.activeField == "data_hasil",
-                          },
-                        },
-                        [
-                          _c("label", { staticClass: "bmd-label-floating" }, [
-                            _vm._v(
-                              _vm._s(
-                                _vm.$t(
-                                  "cruds.preparationData.fields.data_hasil"
-                                )
-                              )
-                            ),
-                          ]),
-                          _vm._v(" "),
-                          _c("input", {
-                            staticClass: "form-control",
-                            attrs: { type: "text" },
-                            domProps: { value: _vm.entry.data_hasil },
-                            on: {
-                              input: _vm.updateDataHasil,
-                              focus: function ($event) {
-                                return _vm.focusField("data_hasil")
-                              },
-                              blur: _vm.clearFocus,
-                            },
-                          }),
-                        ]
-                      ),
                     ]),
                   ]),
                 ],
