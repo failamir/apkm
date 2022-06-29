@@ -1,19 +1,15 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([[27],{
 
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/cruds/DataPreparations/Index.vue?vue&type=script&lang=js&":
-/*!*************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/adminapp/js/cruds/DataPreparations/Index.vue?vue&type=script&lang=js& ***!
-  \*************************************************************************************************************************************************************************************/
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/cruds/DataPreparations/Edit.vue?vue&type=script&lang=js&":
+/*!************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/adminapp/js/cruds/DataPreparations/Edit.vue?vue&type=script&lang=js& ***!
+  \************************************************************************************************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vuex__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vuex */ "./node_modules/vuex/dist/vuex.esm.js");
-/* harmony import */ var _components_Datatables_DatatableActions__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @components/Datatables/DatatableActions */ "./resources/adminapp/js/components/Datatables/DatatableActions.vue");
-/* harmony import */ var _components_Datatables_TranslatedHeader__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @components/Datatables/TranslatedHeader */ "./resources/adminapp/js/components/Datatables/TranslatedHeader.vue");
-/* harmony import */ var _components_Datatables_HeaderSettings__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @components/Datatables/HeaderSettings */ "./resources/adminapp/js/components/Datatables/HeaderSettings.vue");
-/* harmony import */ var _components_Datatables_GlobalSearch__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @components/Datatables/GlobalSearch */ "./resources/adminapp/js/components/Datatables/GlobalSearch.vue");
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
 
 function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { _defineProperty(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
@@ -100,139 +96,342 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
-
-
-
-
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-  components: {
-    GlobalSearch: _components_Datatables_GlobalSearch__WEBPACK_IMPORTED_MODULE_4__["default"],
-    HeaderSettings: _components_Datatables_HeaderSettings__WEBPACK_IMPORTED_MODULE_3__["default"]
-  },
   data: function data() {
     return {
-      columns: [{
-        title: 'cruds.dataPreparation.fields.id',
-        field: 'id',
-        thComp: _components_Datatables_TranslatedHeader__WEBPACK_IMPORTED_MODULE_2__["default"],
-        sortable: true,
-        colStyle: 'width: 100px;'
-      }, {
-        title: 'cruds.dataPreparation.fields.nama',
-        field: 'nama',
-        thComp: _components_Datatables_TranslatedHeader__WEBPACK_IMPORTED_MODULE_2__["default"],
-        sortable: true
-      }, {
-        title: 'cruds.dataPreparation.fields.akses_file',
-        field: 'akses_file',
-        thComp: _components_Datatables_TranslatedHeader__WEBPACK_IMPORTED_MODULE_2__["default"],
-        sortable: true
-      }, {
-        title: 'cruds.dataPreparation.fields.akses_video',
-        field: 'akses_video',
-        thComp: _components_Datatables_TranslatedHeader__WEBPACK_IMPORTED_MODULE_2__["default"],
-        sortable: true
-      }, {
-        title: 'cruds.dataPreparation.fields.akses_forum',
-        field: 'akses_forum',
-        thComp: _components_Datatables_TranslatedHeader__WEBPACK_IMPORTED_MODULE_2__["default"],
-        sortable: true
-      }, {
-        title: 'cruds.dataPreparation.fields.kuis_1',
-        field: 'kuis_1',
-        thComp: _components_Datatables_TranslatedHeader__WEBPACK_IMPORTED_MODULE_2__["default"],
-        sortable: true
-      }, {
-        title: 'cruds.dataPreparation.fields.kuis_2',
-        field: 'kuis_2',
-        thComp: _components_Datatables_TranslatedHeader__WEBPACK_IMPORTED_MODULE_2__["default"],
-        sortable: true
-      }, {
-        title: 'cruds.dataPreparation.fields.tugas_1',
-        field: 'tugas_1',
-        thComp: _components_Datatables_TranslatedHeader__WEBPACK_IMPORTED_MODULE_2__["default"],
-        sortable: true
-      }, {
-        title: 'cruds.dataPreparation.fields.tugas_2',
-        field: 'tugas_2',
-        thComp: _components_Datatables_TranslatedHeader__WEBPACK_IMPORTED_MODULE_2__["default"],
-        sortable: true
-      }, {
-        title: 'cruds.dataPreparation.fields.nilai_akhir',
-        field: 'nilai_akhir',
-        thComp: _components_Datatables_TranslatedHeader__WEBPACK_IMPORTED_MODULE_2__["default"],
-        sortable: true
-      }, {
-        title: 'cruds.dataPreparation.fields.status_1',
-        field: 'status_1',
-        thComp: _components_Datatables_TranslatedHeader__WEBPACK_IMPORTED_MODULE_2__["default"],
-        sortable: true
-      }, {
-        title: 'cruds.dataPreparation.fields.status_2',
-        field: 'status_2',
-        thComp: _components_Datatables_TranslatedHeader__WEBPACK_IMPORTED_MODULE_2__["default"],
-        sortable: true
-      }, {
-        title: 'cruds.dataPreparation.fields.status_3',
-        field: 'status_3',
-        thComp: _components_Datatables_TranslatedHeader__WEBPACK_IMPORTED_MODULE_2__["default"],
-        sortable: true
-      }, {
-        title: 'cruds.dataPreparation.fields.temp_log',
-        field: 'temp_log',
-        thComp: _components_Datatables_TranslatedHeader__WEBPACK_IMPORTED_MODULE_2__["default"],
-        sortable: true
-      }, {
-        title: 'cruds.dataPreparation.fields.temp_nilai',
-        field: 'temp_nilai',
-        thComp: _components_Datatables_TranslatedHeader__WEBPACK_IMPORTED_MODULE_2__["default"],
-        sortable: true
-      }, {
-        title: 'global.actions',
-        thComp: _components_Datatables_TranslatedHeader__WEBPACK_IMPORTED_MODULE_2__["default"],
-        tdComp: _components_Datatables_DatatableActions__WEBPACK_IMPORTED_MODULE_1__["default"],
-        visible: true,
-        thClass: 'text-right',
-        tdClass: 'text-right td-actions',
-        colStyle: 'width: 150px;'
-      }],
-      query: {
-        sort: 'id',
-        order: 'desc',
-        limit: 100,
-        s: ''
-      },
-      xprops: {
-        module: 'DataPreparationsIndex',
-        route: 'data_preparations',
-        permission_prefix: 'data_preparation_'
-      }
+      status: '',
+      activeField: ''
     };
   },
+  computed: _objectSpread({}, Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapGetters"])('DataPreparationsSingle', ['entry', 'loading'])),
   beforeDestroy: function beforeDestroy() {
     this.resetState();
   },
-  computed: _objectSpread({}, Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapGetters"])('DataPreparationsIndex', ['data', 'total', 'loading'])),
   watch: {
-    query: {
-      handler: function handler(query) {
-        this.setQuery(query);
-        this.fetchIndexData();
-        this.Reset();
-      },
-      deep: true
+    '$route.params.id': {
+      immediate: true,
+      handler: function handler() {
+        this.resetState();
+        this.fetchEditData(this.$route.params.id);
+      }
     }
   },
-  methods: _objectSpread({}, Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapActions"])('DataPreparationsIndex', ['fetchIndexData', 'Reset', 'setQuery', 'resetState']))
+  methods: _objectSpread(_objectSpread({}, Object(vuex__WEBPACK_IMPORTED_MODULE_0__["mapActions"])('DataPreparationsSingle', ['fetchEditData', 'updateData', 'resetState', 'setNama', 'setAksesFile', 'setAksesVideo', 'setAksesForum', 'setKuis1', 'setKuis2', 'setTugas1', 'setTugas2', 'setNilaiAkhir', 'setStatus1', 'setStatus2', 'setStatus3', 'setTempLog', 'setTempNilai'])), {}, {
+    updateNama: function updateNama(e) {
+      this.setNama(e.target.value);
+    },
+    updateAksesFile: function updateAksesFile(e) {
+      this.setAksesFile(e.target.value);
+    },
+    updateAksesVideo: function updateAksesVideo(e) {
+      this.setAksesVideo(e.target.value);
+    },
+    updateAksesForum: function updateAksesForum(e) {
+      this.setAksesForum(e.target.value);
+    },
+    updateKuis1: function updateKuis1(e) {
+      this.setKuis1(e.target.value);
+    },
+    updateKuis2: function updateKuis2(e) {
+      this.setKuis2(e.target.value);
+    },
+    updateTugas1: function updateTugas1(e) {
+      this.setTugas1(e.target.value);
+    },
+    updateTugas2: function updateTugas2(e) {
+      this.setTugas2(e.target.value);
+    },
+    updateNilaiAkhir: function updateNilaiAkhir(e) {
+      this.setNilaiAkhir(e.target.value);
+    },
+    updateStatus1: function updateStatus1(e) {
+      this.setStatus1(e.target.value);
+    },
+    updateStatus2: function updateStatus2(e) {
+      this.setStatus2(e.target.value);
+    },
+    updateStatus3: function updateStatus3(e) {
+      this.setStatus3(e.target.value);
+    },
+    updateTempLog: function updateTempLog(e) {
+      this.setTempLog(e.target.value);
+    },
+    updateTempNilai: function updateTempNilai(e) {
+      this.setTempNilai(e.target.value);
+    },
+    getRoute: function getRoute(name) {
+      return "".concat(axios.defaults.baseURL).concat(name, "/media");
+    },
+    submitForm: function submitForm() {
+      var _this = this;
+
+      this.updateData().then(function () {
+        _this.$router.push({
+          name: 'data_preparations.index'
+        });
+
+        _this.$eventHub.$emit('update-success');
+      })["catch"](function (error) {
+        _this.status = 'failed';
+
+        _.delay(function () {
+          _this.status = '';
+        }, 3000);
+      });
+    },
+    focusField: function focusField(name) {
+      this.activeField = name;
+    },
+    clearFocus: function clearFocus() {
+      this.activeField = '';
+    }
+  })
 });
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/cruds/DataPreparations/Index.vue?vue&type=template&id=c171c2f8&":
-/*!*****************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/adminapp/js/cruds/DataPreparations/Index.vue?vue&type=template&id=c171c2f8& ***!
-  \*****************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/cruds/DataPreparations/Edit.vue?vue&type=template&id=45152448&":
+/*!****************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/adminapp/js/cruds/DataPreparations/Edit.vue?vue&type=template&id=45152448& ***!
+  \****************************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -245,161 +444,552 @@ var render = function () {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "container-fluid" }, [
-    _c("div", { staticClass: "row" }, [
-      _c("div", { staticClass: "col-md-12" }, [
-        _c("div", { staticClass: "card" }, [
-          _c(
-            "div",
-            { staticClass: "card-header card-header-primary card-header-icon" },
-            [
-              _vm._m(0),
-              _vm._v(" "),
-              _c("h4", { staticClass: "card-title" }, [
-                _vm._v(
-                  "\n            " +
-                    _vm._s(_vm.$t("global.table")) +
-                    "\n            "
-                ),
-                _c("strong", [
-                  _vm._v(_vm._s(_vm.$t("cruds.dataPreparation.title"))),
-                ]),
-              ]),
-            ]
-          ),
-          _vm._v(" "),
-          _c(
-            "div",
-            { staticClass: "card-body" },
-            [
-              _vm.$can(_vm.xprops.permission_prefix + "create")
-                ? _c(
-                    "router-link",
-                    {
-                      staticClass: "btn btn-primary",
-                      attrs: { to: { name: _vm.xprops.route + ".create" } },
-                    },
-                    [
-                      _c("i", { staticClass: "material-icons" }, [
-                        _vm._v("\n              add\n            "),
-                      ]),
-                      _vm._v(
-                        "\n            " +
-                          _vm._s(_vm.$t("global.add")) +
-                          "\n          "
-                      ),
-                    ]
-                  )
-                : _vm._e(),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  staticClass: "btn btn-default",
-                  class: { disabled: _vm.loading },
-                  attrs: { type: "button", disabled: _vm.loading },
-                  on: { click: _vm.fetchIndexData },
-                },
-                [
-                  _c(
-                    "i",
-                    {
-                      staticClass: "material-icons",
-                      class: { "fa-spin": _vm.loading },
-                    },
-                    [_vm._v("\n              refresh\n            ")]
-                  ),
-                  _vm._v(
-                    "\n            " +
-                      _vm._s(_vm.$t("global.refresh")) +
-                      "\n          "
-                  ),
-                ]
-              ),
-              _vm._v(" "),
-              _c(
-                "button",
-                {
-                  staticClass: "btn btn-default",
-                  class: { disabled: _vm.loading },
-                  attrs: { type: "button", disabled: _vm.loading },
-                  on: { click: _vm.Reset },
-                },
-                [
-                  _c(
-                    "i",
-                    {
-                      staticClass: "material-icons",
-                      class: { "fa-spin": _vm.loading },
-                    },
-                    [_vm._v("\n              refresh\n            ")]
-                  ),
-                  _vm._v(
-                    "\n            " + _vm._s(_vm.$t("Reset")) + "\n          "
-                  ),
-                ]
-              ),
-            ],
-            1
-          ),
-          _vm._v(" "),
-          _c("div", { staticClass: "card-body" }, [
-            _c("div", { staticClass: "row" }, [
+    _c(
+      "form",
+      {
+        on: {
+          submit: function ($event) {
+            $event.preventDefault()
+            return _vm.submitForm.apply(null, arguments)
+          },
+        },
+      },
+      [
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col-md-12" }, [
+            _c("div", { staticClass: "card" }, [
               _c(
                 "div",
-                { staticClass: "col-md-12" },
+                {
+                  staticClass:
+                    "card-header card-header-danger card-header-icon",
+                },
                 [
-                  _c(
-                    "div",
-                    {
-                      directives: [
-                        {
-                          name: "show",
-                          rawName: "v-show",
-                          value: _vm.loading,
-                          expression: "loading",
-                        },
-                      ],
-                      staticClass: "table-overlay",
-                    },
-                    [
+                  _vm._m(0),
+                  _vm._v(" "),
+                  _c("h4", { staticClass: "card-title" }, [
+                    _vm._v(
+                      "\n              " +
+                        _vm._s(_vm.$t("global.edit")) +
+                        "\n              "
+                    ),
+                    _c("strong", [
+                      _vm._v(
+                        _vm._s(_vm.$t("cruds.dataPreparation.title_singular"))
+                      ),
+                    ]),
+                  ]),
+                ]
+              ),
+              _vm._v(" "),
+              _c("div", { staticClass: "card-body" }, [_c("back-button")], 1),
+              _vm._v(" "),
+              _c(
+                "div",
+                { staticClass: "card-body" },
+                [
+                  _c("bootstrap-alert"),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "row" }, [
+                    _c("div", { staticClass: "col-md-12" }, [
                       _c(
                         "div",
-                        { staticClass: "table-overlay-container" },
+                        {
+                          staticClass: "form-group bmd-form-group",
+                          class: {
+                            "has-items": _vm.entry.nama,
+                            "is-focused": _vm.activeField == "nama",
+                          },
+                        },
                         [
-                          _c("material-spinner"),
+                          _c("label", { staticClass: "bmd-label-floating" }, [
+                            _vm._v(
+                              _vm._s(
+                                _vm.$t("cruds.dataPreparation.fields.nama")
+                              )
+                            ),
+                          ]),
                           _vm._v(" "),
-                          _c("span", [_vm._v("Loading...")]),
-                        ],
-                        1
+                          _c("input", {
+                            staticClass: "form-control",
+                            attrs: { type: "text" },
+                            domProps: { value: _vm.entry.nama },
+                            on: {
+                              input: _vm.updateNama,
+                              focus: function ($event) {
+                                return _vm.focusField("nama")
+                              },
+                              blur: _vm.clearFocus,
+                            },
+                          }),
+                        ]
                       ),
-                    ]
-                  ),
-                  _vm._v(" "),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        {
+                          staticClass: "form-group bmd-form-group",
+                          class: {
+                            "has-items": _vm.entry.akses_file,
+                            "is-focused": _vm.activeField == "akses_file",
+                          },
+                        },
+                        [
+                          _c("label", { staticClass: "bmd-label-floating" }, [
+                            _vm._v(
+                              _vm._s(
+                                _vm.$t(
+                                  "cruds.dataPreparation.fields.akses_file"
+                                )
+                              )
+                            ),
+                          ]),
+                          _vm._v(" "),
+                          _c("input", {
+                            staticClass: "form-control",
+                            attrs: { type: "number", step: "1" },
+                            domProps: { value: _vm.entry.akses_file },
+                            on: {
+                              input: _vm.updateAksesFile,
+                              focus: function ($event) {
+                                return _vm.focusField("akses_file")
+                              },
+                              blur: _vm.clearFocus,
+                            },
+                          }),
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        {
+                          staticClass: "form-group bmd-form-group",
+                          class: {
+                            "has-items": _vm.entry.akses_video,
+                            "is-focused": _vm.activeField == "akses_video",
+                          },
+                        },
+                        [
+                          _c("label", { staticClass: "bmd-label-floating" }, [
+                            _vm._v(
+                              _vm._s(
+                                _vm.$t(
+                                  "cruds.dataPreparation.fields.akses_video"
+                                )
+                              )
+                            ),
+                          ]),
+                          _vm._v(" "),
+                          _c("input", {
+                            staticClass: "form-control",
+                            attrs: { type: "number", step: "1" },
+                            domProps: { value: _vm.entry.akses_video },
+                            on: {
+                              input: _vm.updateAksesVideo,
+                              focus: function ($event) {
+                                return _vm.focusField("akses_video")
+                              },
+                              blur: _vm.clearFocus,
+                            },
+                          }),
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        {
+                          staticClass: "form-group bmd-form-group",
+                          class: {
+                            "has-items": _vm.entry.akses_forum,
+                            "is-focused": _vm.activeField == "akses_forum",
+                          },
+                        },
+                        [
+                          _c("label", { staticClass: "bmd-label-floating" }, [
+                            _vm._v(
+                              _vm._s(
+                                _vm.$t(
+                                  "cruds.dataPreparation.fields.akses_forum"
+                                )
+                              )
+                            ),
+                          ]),
+                          _vm._v(" "),
+                          _c("input", {
+                            staticClass: "form-control",
+                            attrs: { type: "number", step: "1" },
+                            domProps: { value: _vm.entry.akses_forum },
+                            on: {
+                              input: _vm.updateAksesForum,
+                              focus: function ($event) {
+                                return _vm.focusField("akses_forum")
+                              },
+                              blur: _vm.clearFocus,
+                            },
+                          }),
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        {
+                          staticClass: "form-group bmd-form-group",
+                          class: {
+                            "has-items": _vm.entry.kuis_1,
+                            "is-focused": _vm.activeField == "kuis_1",
+                          },
+                        },
+                        [
+                          _c("label", { staticClass: "bmd-label-floating" }, [
+                            _vm._v(
+                              _vm._s(
+                                _vm.$t("cruds.dataPreparation.fields.kuis_1")
+                              )
+                            ),
+                          ]),
+                          _vm._v(" "),
+                          _c("input", {
+                            staticClass: "form-control",
+                            attrs: { type: "number", step: "0.01" },
+                            domProps: { value: _vm.entry.kuis_1 },
+                            on: {
+                              input: _vm.updateKuis1,
+                              focus: function ($event) {
+                                return _vm.focusField("kuis_1")
+                              },
+                              blur: _vm.clearFocus,
+                            },
+                          }),
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        {
+                          staticClass: "form-group bmd-form-group",
+                          class: {
+                            "has-items": _vm.entry.kuis_2,
+                            "is-focused": _vm.activeField == "kuis_2",
+                          },
+                        },
+                        [
+                          _c("label", { staticClass: "bmd-label-floating" }, [
+                            _vm._v(
+                              _vm._s(
+                                _vm.$t("cruds.dataPreparation.fields.kuis_2")
+                              )
+                            ),
+                          ]),
+                          _vm._v(" "),
+                          _c("input", {
+                            staticClass: "form-control",
+                            attrs: { type: "number", step: "0.01" },
+                            domProps: { value: _vm.entry.kuis_2 },
+                            on: {
+                              input: _vm.updateKuis2,
+                              focus: function ($event) {
+                                return _vm.focusField("kuis_2")
+                              },
+                              blur: _vm.clearFocus,
+                            },
+                          }),
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        {
+                          staticClass: "form-group bmd-form-group",
+                          class: {
+                            "has-items": _vm.entry.tugas_1,
+                            "is-focused": _vm.activeField == "tugas_1",
+                          },
+                        },
+                        [
+                          _c("label", { staticClass: "bmd-label-floating" }, [
+                            _vm._v(
+                              _vm._s(
+                                _vm.$t("cruds.dataPreparation.fields.tugas_1")
+                              )
+                            ),
+                          ]),
+                          _vm._v(" "),
+                          _c("input", {
+                            staticClass: "form-control",
+                            attrs: { type: "number", step: "0.01" },
+                            domProps: { value: _vm.entry.tugas_1 },
+                            on: {
+                              input: _vm.updateTugas1,
+                              focus: function ($event) {
+                                return _vm.focusField("tugas_1")
+                              },
+                              blur: _vm.clearFocus,
+                            },
+                          }),
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        {
+                          staticClass: "form-group bmd-form-group",
+                          class: {
+                            "has-items": _vm.entry.tugas_2,
+                            "is-focused": _vm.activeField == "tugas_2",
+                          },
+                        },
+                        [
+                          _c("label", { staticClass: "bmd-label-floating" }, [
+                            _vm._v(
+                              _vm._s(
+                                _vm.$t("cruds.dataPreparation.fields.tugas_2")
+                              )
+                            ),
+                          ]),
+                          _vm._v(" "),
+                          _c("input", {
+                            staticClass: "form-control",
+                            attrs: { type: "text" },
+                            domProps: { value: _vm.entry.tugas_2 },
+                            on: {
+                              input: _vm.updateTugas2,
+                              focus: function ($event) {
+                                return _vm.focusField("tugas_2")
+                              },
+                              blur: _vm.clearFocus,
+                            },
+                          }),
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        {
+                          staticClass: "form-group bmd-form-group",
+                          class: {
+                            "has-items": _vm.entry.nilai_akhir,
+                            "is-focused": _vm.activeField == "nilai_akhir",
+                          },
+                        },
+                        [
+                          _c("label", { staticClass: "bmd-label-floating" }, [
+                            _vm._v(
+                              _vm._s(
+                                _vm.$t(
+                                  "cruds.dataPreparation.fields.nilai_akhir"
+                                )
+                              )
+                            ),
+                          ]),
+                          _vm._v(" "),
+                          _c("input", {
+                            staticClass: "form-control",
+                            attrs: { type: "number", step: "0.01" },
+                            domProps: { value: _vm.entry.nilai_akhir },
+                            on: {
+                              input: _vm.updateNilaiAkhir,
+                              focus: function ($event) {
+                                return _vm.focusField("nilai_akhir")
+                              },
+                              blur: _vm.clearFocus,
+                            },
+                          }),
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        {
+                          staticClass: "form-group bmd-form-group",
+                          class: {
+                            "has-items": _vm.entry.status_1,
+                            "is-focused": _vm.activeField == "status_1",
+                          },
+                        },
+                        [
+                          _c("label", { staticClass: "bmd-label-floating" }, [
+                            _vm._v(
+                              _vm._s(
+                                _vm.$t("cruds.dataPreparation.fields.status_1")
+                              )
+                            ),
+                          ]),
+                          _vm._v(" "),
+                          _c("input", {
+                            staticClass: "form-control",
+                            attrs: { type: "text" },
+                            domProps: { value: _vm.entry.status_1 },
+                            on: {
+                              input: _vm.updateStatus1,
+                              focus: function ($event) {
+                                return _vm.focusField("status_1")
+                              },
+                              blur: _vm.clearFocus,
+                            },
+                          }),
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        {
+                          staticClass: "form-group bmd-form-group",
+                          class: {
+                            "has-items": _vm.entry.status_2,
+                            "is-focused": _vm.activeField == "status_2",
+                          },
+                        },
+                        [
+                          _c("label", { staticClass: "bmd-label-floating" }, [
+                            _vm._v(
+                              _vm._s(
+                                _vm.$t("cruds.dataPreparation.fields.status_2")
+                              )
+                            ),
+                          ]),
+                          _vm._v(" "),
+                          _c("input", {
+                            staticClass: "form-control",
+                            attrs: { type: "text" },
+                            domProps: { value: _vm.entry.status_2 },
+                            on: {
+                              input: _vm.updateStatus2,
+                              focus: function ($event) {
+                                return _vm.focusField("status_2")
+                              },
+                              blur: _vm.clearFocus,
+                            },
+                          }),
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        {
+                          staticClass: "form-group bmd-form-group",
+                          class: {
+                            "has-items": _vm.entry.status_3,
+                            "is-focused": _vm.activeField == "status_3",
+                          },
+                        },
+                        [
+                          _c("label", { staticClass: "bmd-label-floating" }, [
+                            _vm._v(
+                              _vm._s(
+                                _vm.$t("cruds.dataPreparation.fields.status_3")
+                              )
+                            ),
+                          ]),
+                          _vm._v(" "),
+                          _c("input", {
+                            staticClass: "form-control",
+                            attrs: { type: "text" },
+                            domProps: { value: _vm.entry.status_3 },
+                            on: {
+                              input: _vm.updateStatus3,
+                              focus: function ($event) {
+                                return _vm.focusField("status_3")
+                              },
+                              blur: _vm.clearFocus,
+                            },
+                          }),
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        {
+                          staticClass: "form-group bmd-form-group",
+                          class: {
+                            "has-items": _vm.entry.temp_log,
+                            "is-focused": _vm.activeField == "temp_log",
+                          },
+                        },
+                        [
+                          _c("label", { staticClass: "bmd-label-floating" }, [
+                            _vm._v(
+                              _vm._s(
+                                _vm.$t("cruds.dataPreparation.fields.temp_log")
+                              )
+                            ),
+                          ]),
+                          _vm._v(" "),
+                          _c("input", {
+                            staticClass: "form-control",
+                            attrs: { type: "text" },
+                            domProps: { value: _vm.entry.temp_log },
+                            on: {
+                              input: _vm.updateTempLog,
+                              focus: function ($event) {
+                                return _vm.focusField("temp_log")
+                              },
+                              blur: _vm.clearFocus,
+                            },
+                          }),
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        {
+                          staticClass: "form-group bmd-form-group",
+                          class: {
+                            "has-items": _vm.entry.temp_nilai,
+                            "is-focused": _vm.activeField == "temp_nilai",
+                          },
+                        },
+                        [
+                          _c("label", { staticClass: "bmd-label-floating" }, [
+                            _vm._v(
+                              _vm._s(
+                                _vm.$t(
+                                  "cruds.dataPreparation.fields.temp_nilai"
+                                )
+                              )
+                            ),
+                          ]),
+                          _vm._v(" "),
+                          _c("input", {
+                            staticClass: "form-control",
+                            attrs: { type: "text" },
+                            domProps: { value: _vm.entry.temp_nilai },
+                            on: {
+                              input: _vm.updateTempNilai,
+                              focus: function ($event) {
+                                return _vm.focusField("temp_nilai")
+                              },
+                              blur: _vm.clearFocus,
+                            },
+                          }),
+                        ]
+                      ),
+                    ]),
+                  ]),
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                { staticClass: "card-footer" },
+                [
                   _c(
-                    "datatable",
+                    "vue-button-spinner",
                     {
+                      staticClass: "btn-primary",
                       attrs: {
-                        columns: _vm.columns,
-                        data: _vm.data,
-                        total: _vm.total,
-                        query: _vm.query,
-                        xprops: _vm.xprops,
-                        HeaderSettings: false,
-                        pageSizeOptions: [10, 25, 50, 100],
+                        status: _vm.status,
+                        isLoading: _vm.loading,
+                        disabled: _vm.loading,
                       },
                     },
                     [
-                      _c("global-search", {
-                        staticClass: "pull-left",
-                        attrs: { query: _vm.query },
-                      }),
-                      _vm._v(" "),
-                      _c("header-settings", {
-                        staticClass: "pull-right",
-                        attrs: { columns: _vm.columns },
-                      }),
-                    ],
-                    1
+                      _vm._v(
+                        "\n              " +
+                          _vm._s(_vm.$t("global.save")) +
+                          "\n            "
+                      ),
+                    ]
                   ),
                 ],
                 1
@@ -407,8 +997,8 @@ var render = function () {
             ]),
           ]),
         ]),
-      ]),
-    ]),
+      ]
+    ),
   ])
 }
 var staticRenderFns = [
@@ -417,7 +1007,7 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "card-icon" }, [
-      _c("i", { staticClass: "material-icons" }, [_vm._v("assignment")]),
+      _c("i", { staticClass: "material-icons" }, [_vm._v("edit")]),
     ])
   },
 ]
@@ -427,17 +1017,17 @@ render._withStripped = true
 
 /***/ }),
 
-/***/ "./resources/adminapp/js/cruds/DataPreparations/Index.vue":
-/*!****************************************************************!*\
-  !*** ./resources/adminapp/js/cruds/DataPreparations/Index.vue ***!
-  \****************************************************************/
+/***/ "./resources/adminapp/js/cruds/DataPreparations/Edit.vue":
+/*!***************************************************************!*\
+  !*** ./resources/adminapp/js/cruds/DataPreparations/Edit.vue ***!
+  \***************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Index_vue_vue_type_template_id_c171c2f8___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Index.vue?vue&type=template&id=c171c2f8& */ "./resources/adminapp/js/cruds/DataPreparations/Index.vue?vue&type=template&id=c171c2f8&");
-/* harmony import */ var _Index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Index.vue?vue&type=script&lang=js& */ "./resources/adminapp/js/cruds/DataPreparations/Index.vue?vue&type=script&lang=js&");
+/* harmony import */ var _Edit_vue_vue_type_template_id_45152448___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Edit.vue?vue&type=template&id=45152448& */ "./resources/adminapp/js/cruds/DataPreparations/Edit.vue?vue&type=template&id=45152448&");
+/* harmony import */ var _Edit_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Edit.vue?vue&type=script&lang=js& */ "./resources/adminapp/js/cruds/DataPreparations/Edit.vue?vue&type=script&lang=js&");
 /* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
@@ -447,9 +1037,9 @@ __webpack_require__.r(__webpack_exports__);
 /* normalize component */
 
 var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
-  _Index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _Index_vue_vue_type_template_id_c171c2f8___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _Index_vue_vue_type_template_id_c171c2f8___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  _Edit_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _Edit_vue_vue_type_template_id_45152448___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Edit_vue_vue_type_template_id_45152448___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
   null,
   null,
@@ -459,38 +1049,38 @@ var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_
 
 /* hot reload */
 if (false) { var api; }
-component.options.__file = "resources/adminapp/js/cruds/DataPreparations/Index.vue"
+component.options.__file = "resources/adminapp/js/cruds/DataPreparations/Edit.vue"
 /* harmony default export */ __webpack_exports__["default"] = (component.exports);
 
 /***/ }),
 
-/***/ "./resources/adminapp/js/cruds/DataPreparations/Index.vue?vue&type=script&lang=js&":
-/*!*****************************************************************************************!*\
-  !*** ./resources/adminapp/js/cruds/DataPreparations/Index.vue?vue&type=script&lang=js& ***!
-  \*****************************************************************************************/
+/***/ "./resources/adminapp/js/cruds/DataPreparations/Edit.vue?vue&type=script&lang=js&":
+/*!****************************************************************************************!*\
+  !*** ./resources/adminapp/js/cruds/DataPreparations/Edit.vue?vue&type=script&lang=js& ***!
+  \****************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../node_modules/vue-loader/lib??vue-loader-options!./Index.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/cruds/DataPreparations/Index.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Edit_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../node_modules/vue-loader/lib??vue-loader-options!./Edit.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/cruds/DataPreparations/Edit.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Edit_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
 
 /***/ }),
 
-/***/ "./resources/adminapp/js/cruds/DataPreparations/Index.vue?vue&type=template&id=c171c2f8&":
-/*!***********************************************************************************************!*\
-  !*** ./resources/adminapp/js/cruds/DataPreparations/Index.vue?vue&type=template&id=c171c2f8& ***!
-  \***********************************************************************************************/
+/***/ "./resources/adminapp/js/cruds/DataPreparations/Edit.vue?vue&type=template&id=45152448&":
+/*!**********************************************************************************************!*\
+  !*** ./resources/adminapp/js/cruds/DataPreparations/Edit.vue?vue&type=template&id=45152448& ***!
+  \**********************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Index_vue_vue_type_template_id_c171c2f8___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../node_modules/vue-loader/lib??vue-loader-options!./Index.vue?vue&type=template&id=c171c2f8& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/cruds/DataPreparations/Index.vue?vue&type=template&id=c171c2f8&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Index_vue_vue_type_template_id_c171c2f8___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Edit_vue_vue_type_template_id_45152448___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../node_modules/vue-loader/lib??vue-loader-options!./Edit.vue?vue&type=template&id=45152448& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/adminapp/js/cruds/DataPreparations/Edit.vue?vue&type=template&id=45152448&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Edit_vue_vue_type_template_id_45152448___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Index_vue_vue_type_template_id_c171c2f8___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Edit_vue_vue_type_template_id_45152448___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 

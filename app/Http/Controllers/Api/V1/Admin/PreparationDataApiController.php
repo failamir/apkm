@@ -266,7 +266,7 @@ class PreparationDataApiController extends Controller {
                 // $d->delete();
                 $d->forceDelete();
             }
-
+        }
             return ( new PreparationDataResource( $preparationData ) )
             ->response()
             ->setStatusCode( Response::HTTP_CREATED );
