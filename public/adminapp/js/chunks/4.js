@@ -253,6 +253,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 
 
 
@@ -843,6 +844,15 @@ var render = function () {
       "div",
       { staticClass: "row" },
       [
+        _c("img", {
+          attrs: {
+            src: "/md/img/login.jpg",
+            alt: "ice",
+            width: "100%",
+            height: "100%",
+          },
+        }),
+        _vm._v(" "),
         _vm._l(_vm.charts, function (chart, key) {
           return [
             _c(
