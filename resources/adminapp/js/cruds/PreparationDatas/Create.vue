@@ -4,7 +4,7 @@
       <div class="row">
         <div class="col-md-12">
           <div class="card">
-            <div class="card-header card-header-danger card-header-icon">
+            <div class="card-header card-header-primary card-header-icon">
               <div class="card-icon">
                 <i class="material-icons">add</i>
               </div>
@@ -22,6 +22,25 @@
               <bootstrap-alert />
               <div class="row">
                 <div class="col-md-12">
+                  <div
+                    class="form-group bmd-form-group"
+                    :class="{
+                      'has-items': entry.nama,
+                      'is-focused': activeField == 'nama'
+                    }"
+                  >
+                    <label class="bmd-label-floating">{{
+                      $t('cruds.preparationData.fields.nama')
+                    }}</label>
+                    <input
+                      class="form-control"
+                      type="text"
+                      :value="entry.nama"
+                      @input="updateNama"
+                      @focus="focusField('nama')"
+                      @blur="clearFocus"
+                    />
+                  </div>
                   <div class="form-group">
                     <label>{{
                       $t('cruds.preparationData.fields.data_log')
@@ -50,7 +69,7 @@
                       :max-files="1"
                     />
                   </div>
-                  <!-- <div
+                  <div
                     class="form-group bmd-form-group"
                     :class="{
                       'has-items': entry.data_hasil,
@@ -68,7 +87,29 @@
                       @focus="focusField('data_hasil')"
                       @blur="clearFocus"
                     />
-                  </div> -->
+                  </div>
+                  <div
+                    class="form-group bmd-form-group"
+                    :class="{
+                      'has-items': entry.mata_kuliah_id !== null,
+                      'is-focused': activeField == 'mata_kuliah'
+                    }"
+                  >
+                    <label class="bmd-label-floating">{{
+                      $t('cruds.preparationData.fields.mata_kuliah')
+                    }}</label>
+                    <v-select
+                      name="mata_kuliah"
+                      label="nama_mtk"
+                      :key="'mata_kuliah-field'"
+                      :value="entry.mata_kuliah_id"
+                      :options="lists.mata_kuliah"
+                      :reduce="entry => entry.id"
+                      @input="updateMataKuliah"
+                      @search.focus="focusField('mata_kuliah')"
+                      @search.blur="clearFocus"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
@@ -104,7 +145,10 @@ export default {
     }
   },
   computed: {
-    ...mapGetters('PreparationDatasSingle', ['entry', 'loading'])
+    ...mapGetters('PreparationDatasSingle', ['entry', 'loading', 'lists'])
+  },
+  mounted() {
+    this.fetchCreateData()
   },
   beforeDestroy() {
     this.resetState()
@@ -113,14 +157,23 @@ export default {
     ...mapActions('PreparationDatasSingle', [
       'storeData',
       'resetState',
+      'setNama',
       'insertDataLogFile',
       'removeDataLogFile',
       'insertDataNilaiFile',
       'removeDataNilaiFile',
-      'setDataHasil'
+      'setDataHasil',
+      'setMataKuliah',
+      'fetchCreateData'
     ]),
+    updateNama(e) {
+      this.setNama(e.target.value)
+    },
     updateDataHasil(e) {
       this.setDataHasil(e.target.value)
+    },
+    updateMataKuliah(value) {
+      this.setMataKuliah(value)
     },
     getRoute(name) {
       return `${axios.defaults.baseURL}${name}/media`

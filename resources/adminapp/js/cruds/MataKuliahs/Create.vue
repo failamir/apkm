@@ -4,7 +4,7 @@
       <div class="row">
         <div class="col-md-12">
           <div class="card">
-            <div class="card-header card-header-danger card-header-icon">
+            <div class="card-header card-header-primary card-header-icon">
               <div class="card-icon">
                 <i class="material-icons">add</i>
               </div>
@@ -58,7 +58,7 @@
                       'is-focused': activeField == 'nama_mtk'
                     }"
                   >
-                    <label class="bmd-label-floating ">{{
+                    <label class="bmd-label-floating required">{{
                       $t('cruds.mataKuliah.fields.nama_mtk')
                     }}</label>
                     <input
@@ -68,7 +68,7 @@
                       @input="updateNamaMtk"
                       @focus="focusField('nama_mtk')"
                       @blur="clearFocus"
-                      
+                      required
                     />
                   </div>
                   <div

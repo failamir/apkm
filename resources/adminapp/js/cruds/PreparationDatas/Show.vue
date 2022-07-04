@@ -3,7 +3,7 @@
     <div class="row">
       <div class="col-md-12">
         <div class="card">
-          <div class="card-header card-header-danger card-header-icon">
+          <div class="card-header card-header-primary card-header-icon">
             <div class="card-icon">
               <i class="material-icons">remove_red_eye</i>
             </div>
@@ -27,6 +27,14 @@
                         </td>
                         <td>
                           {{ entry.id }}
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="text-primary">
+                          {{ $t('cruds.preparationData.fields.nama') }}
+                        </td>
+                        <td>
+                          {{ entry.nama }}
                         </td>
                       </tr>
                       <tr>
@@ -58,8 +66,19 @@
                           {{ $t('cruds.preparationData.fields.data_hasil') }}
                         </td>
                         <td>
-                          <a :href="entry.data_hasil"> Download </a>
-                          <!-- {{ entry.data_hasil }} -->
+                          {{ entry.data_hasil }}
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="text-primary">
+                          {{ $t('cruds.preparationData.fields.mata_kuliah') }}
+                        </td>
+                        <td>
+                          <datatable-single
+                            :row="entry"
+                            field="mata_kuliah.nama_mtk"
+                          >
+                          </datatable-single>
                         </td>
                       </tr>
                     </tbody>
@@ -77,10 +96,12 @@
 <script>
 import { mapGetters, mapActions } from 'vuex'
 import DatatableAttachments from '@components/Datatables/DatatableAttachments'
+import DatatableSingle from '@components/Datatables/DatatableSingle'
 
 export default {
   components: {
-    DatatableAttachments
+    DatatableAttachments,
+    DatatableSingle
   },
   data() {
     return {}

@@ -28,7 +28,7 @@ class UpdateMataKuliahRequest extends FormRequest
             'jurusan_id' => [
                 'integer',
                 'exists:jurusans,id',
-                // 'nullable',
+                'nullable',
             ],
             'jumlah_sks' => [
                 'integer',

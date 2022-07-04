@@ -36,21 +36,6 @@ const actions = {
         commit('setLoading', false)
       })
   },
-  Reset({ commit, state, dispatch }, id) {
-    commit('setLoading', true)
-    axios
-      .get(route + '/reset')
-      .then(response => {
-        dispatch('fetchIndexData')
-      })
-      .catch(error => {
-        message = error.response.data.message || error.message
-        // TODO error handling
-      })
-      .finally(() => {
-        commit('setLoading', false)
-      })
-  },
   destroyData({ commit, state, dispatch }, id) {
     axios
       .delete(`${route}/${id}`)

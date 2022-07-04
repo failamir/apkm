@@ -31,7 +31,7 @@ class StoreMataKuliahRequest extends FormRequest
             ],
             'nama_mtk' => [
                 'string',
-                'nullable',
+                'required',
             ],
             'jurusan_id' => [
                 'integer',

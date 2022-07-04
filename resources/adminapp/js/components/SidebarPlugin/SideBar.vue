@@ -57,7 +57,7 @@ export default {
     },
     backgroundColor: {
       type: String,
-      default: 'white',
+      default: 'black',
       validator: value => {
         let acceptedValues = ['', 'white', 'black']
         return acceptedValues.indexOf(value) !== -1
@@ -65,7 +65,7 @@ export default {
     },
     itemColor: {
       type: String,
-      default: 'danger',
+      default: 'purple',
       validator: value => {
         let acceptedValues = [
           '',
