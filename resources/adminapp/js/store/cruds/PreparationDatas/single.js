@@ -2,12 +2,17 @@ function initialState() {
   return {
     entry: {
       id: null,
+      nama: '',
       data_log: [],
       data_nilai: [],
       data_hasil: '',
+      mata_kuliah_id: null,
       created_at: '',
       updated_at: '',
       deleted_at: ''
+    },
+    lists: {
+      mata_kuliah: []
     },
     loading: false
   }
@@ -17,6 +22,7 @@ const route = 'preparation-datas'
 
 const getters = {
   entry: state => state.entry,
+  lists: state => state.lists,
   loading: state => state.loading
 }
 
@@ -84,6 +90,9 @@ const actions = {
         })
     })
   },
+  setNama({ commit }, value) {
+    commit('setNama', value)
+  },
   insertDataLogFile({ commit }, file) {
     commit('insertDataLogFile', file)
   },
@@ -99,6 +108,9 @@ const actions = {
   setDataHasil({ commit }, value) {
     commit('setDataHasil', value)
   },
+  setMataKuliah({ commit }, value) {
+    commit('setMataKuliah', value)
+  },
   setCreatedAt({ commit }, value) {
     commit('setCreatedAt', value)
   },
@@ -108,9 +120,15 @@ const actions = {
   setDeletedAt({ commit }, value) {
     commit('setDeletedAt', value)
   },
+  fetchCreateData({ commit }) {
+    axios.get(`${route}/create`).then(response => {
+      commit('setLists', response.data.meta)
+    })
+  },
   fetchEditData({ commit, dispatch }, id) {
     axios.get(`${route}/${id}/edit`).then(response => {
       commit('setEntry', response.data.data)
+      commit('setLists', response.data.meta)
     })
   },
   fetchShowData({ commit, dispatch }, id) {
@@ -126,6 +144,9 @@ const actions = {
 const mutations = {
   setEntry(state, entry) {
     state.entry = entry
+  },
+  setNama(state, value) {
+    state.entry.nama = value
   },
   insertDataLogFile(state, file) {
     state.entry.data_log.push(file)
@@ -146,6 +167,9 @@ const mutations = {
   setDataHasil(state, value) {
     state.entry.data_hasil = value
   },
+  setMataKuliah(state, value) {
+    state.entry.mata_kuliah_id = value
+  },
   setCreatedAt(state, value) {
     state.entry.created_at = value
   },
@@ -154,6 +178,9 @@ const mutations = {
   },
   setDeletedAt(state, value) {
     state.entry.deleted_at = value
+  },
+  setLists(state, lists) {
+    state.lists = lists
   },
   setLoading(state, loading) {
     state.loading = loading

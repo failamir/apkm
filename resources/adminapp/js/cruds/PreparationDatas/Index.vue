@@ -3,7 +3,7 @@
     <div class="row">
       <div class="col-md-12">
         <div class="card">
-          <div class="card-header card-header-danger card-header-icon">
+          <div class="card-header card-header-primary card-header-icon">
             <div class="card-icon">
               <i class="material-icons">assignment</i>
             </div>
@@ -14,7 +14,7 @@
           </div>
           <div class="card-body">
             <router-link
-              class="btn btn-danger"
+              class="btn btn-primary"
               v-if="$can(xprops.permission_prefix + 'create')"
               :to="{ name: xprops.route + '.create' }"
             >
@@ -73,6 +73,7 @@ import TranslatedHeader from '@components/Datatables/TranslatedHeader'
 import HeaderSettings from '@components/Datatables/HeaderSettings'
 import GlobalSearch from '@components/Datatables/GlobalSearch'
 import DatatableAttachments from '@components/Datatables/DatatableAttachments'
+import DatatableSingle from '@components/Datatables/DatatableSingle'
 
 export default {
   components: {
@@ -90,6 +91,12 @@ export default {
           colStyle: 'width: 100px;'
         },
         {
+          title: 'cruds.preparationData.fields.nama',
+          field: 'nama',
+          thComp: TranslatedHeader,
+          sortable: true
+        },
+        {
           title: 'cruds.preparationData.fields.data_log',
           field: 'data_log',
           thComp: TranslatedHeader,
@@ -105,6 +112,13 @@ export default {
           title: 'cruds.preparationData.fields.data_hasil',
           field: 'data_hasil',
           thComp: TranslatedHeader,
+          sortable: true
+        },
+        {
+          title: 'cruds.preparationData.fields.mata_kuliah',
+          field: 'mata_kuliah.nama_mtk',
+          thComp: TranslatedHeader,
+          tdComp: DatatableSingle,
           sortable: true
         },
         {

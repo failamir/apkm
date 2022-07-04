@@ -19,16 +19,6 @@ class PreparationData extends Model implements HasMedia
 
     public $table = 'preparation_datas';
 
-    protected $orderable = [
-        'id',
-        'data_hasil',
-    ];
-
-    protected $filterable = [
-        'id',
-        'data_hasil',
-    ];
-
     protected $appends = [
         'data_log',
         'data_nilai',
@@ -40,8 +30,24 @@ class PreparationData extends Model implements HasMedia
         'deleted_at',
     ];
 
-    protected $fillable = [
+    protected $orderable = [
+        'id',
+        'nama',
         'data_hasil',
+        'mata_kuliah.nama_mtk',
+    ];
+
+    protected $filterable = [
+        'id',
+        'nama',
+        'data_hasil',
+        'mata_kuliah.nama_mtk',
+    ];
+
+    protected $fillable = [
+        'nama',
+        'data_hasil',
+        'mata_kuliah_id',
         'created_at',
         'updated_at',
         'deleted_at',
@@ -65,6 +71,11 @@ class PreparationData extends Model implements HasMedia
 
             return $media;
         });
+    }
+
+    public function mataKuliah()
+    {
+        return $this->belongsTo(MataKuliah::class);
     }
 
     protected function serializeDate(DateTimeInterface $date)

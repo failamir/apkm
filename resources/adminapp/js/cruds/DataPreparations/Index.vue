@@ -3,7 +3,7 @@
     <div class="row">
       <div class="col-md-12">
         <div class="card">
-          <div class="card-header card-header-danger card-header-icon">
+          <div class="card-header card-header-primary card-header-icon">
             <div class="card-icon">
               <i class="material-icons">assignment</i>
             </div>
@@ -14,7 +14,7 @@
           </div>
           <div class="card-body">
             <router-link
-              class="btn btn-danger"
+              class="btn btn-primary"
               v-if="$can(xprops.permission_prefix + 'create')"
               :to="{ name: xprops.route + '.create' }"
             >
@@ -34,18 +34,6 @@
                 refresh
               </i>
               {{ $t('global.refresh') }}
-            </button>
-            <button
-              type="button"
-              class="btn btn-default"
-              @click="Reset"
-              :disabled="loading"
-              :class="{ disabled: loading }"
-            >
-              <i class="material-icons" :class="{ 'fa-spin': loading }">
-                refresh
-              </i>
-              {{ $t('Reset') }}
             </button>
           </div>
           <div class="card-body">
@@ -213,7 +201,6 @@ export default {
       handler(query) {
         this.setQuery(query)
         this.fetchIndexData()
-        this.Reset()
       },
       deep: true
     }
@@ -221,7 +208,6 @@ export default {
   methods: {
     ...mapActions('DataPreparationsIndex', [
       'fetchIndexData',
-      'Reset',
       'setQuery',
       'resetState'
     ])

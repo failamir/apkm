@@ -52,7 +52,6 @@ Route::group(['prefix' => 'v1', 'as' => 'api.', 'namespace' => 'Api\V1\Admin', '
 
     // Data Preparation
     Route::post('data-preparations/media', 'DataPreparationApiController@storeMedia')->name('data-preparations.storeMedia');
-    Route::delete('data-preparations/reset', 'PreparationDataApiController@reset')->name('data-preparations.reset');
     Route::resource('data-preparations', 'DataPreparationApiController');
 
     // Kampus

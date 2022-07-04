@@ -17,6 +17,10 @@ class StorePreparationDataRequest extends FormRequest
     public function rules()
     {
         return [
+            'nama' => [
+                'string',
+                'nullable',
+            ],
             'data_log' => [
                 'array',
                 'nullable',
@@ -35,6 +39,11 @@ class StorePreparationDataRequest extends FormRequest
             ],
             'data_hasil' => [
                 'string',
+                'nullable',
+            ],
+            'mata_kuliah_id' => [
+                'integer',
+                'exists:mata_kuliahs,id',
                 'nullable',
             ],
         ];

@@ -1,7 +1,6 @@
 <template>
   <div class="container-fluid">
     <div class="row">
-      <img src="/md/img/login.jpg" alt="ice" width="100%" height="100%"></img>
       <template v-for="(chart, key) in charts">
         <div :class="chart.column_class" :key="key">
           <stats-card
@@ -13,7 +12,7 @@
             :chart-data="chart"
           ></latest-card>
           <div v-else class="card">
-            <div class="card-header card-header-danger card-header-icon">
+            <div class="card-header card-header-primary card-header-icon">
               <div class="card-icon">
                 <i class="material-icons">{{ chart.icon }}</i>
               </div>
